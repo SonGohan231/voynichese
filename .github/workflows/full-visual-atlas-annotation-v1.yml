@@ -9,17 +9,27 @@ on:
       - .github/workflows/full-visual-atlas-annotation-v1.yml
       - atlas/**
       - data/yale_hq_scans/import_report.json
+  pull_request:
+    branches:
+      - master
+    types: [opened, synchronize, reopened]
+    paths:
+      - tools/annotate_full_corpus_v1.py
+      - .github/workflows/full-visual-atlas-annotation-v1.yml
+      - atlas/**
+      - data/yale_hq_scans/import_report.json
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: full-visual-atlas-annotation-v1
+  group: full-visual-atlas-annotation-v1-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   annotate:
+    if: github.event_name != 'pull_request' || github.head_ref == 'full-visual-atlas-annotation-v1-2026-07-23'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
