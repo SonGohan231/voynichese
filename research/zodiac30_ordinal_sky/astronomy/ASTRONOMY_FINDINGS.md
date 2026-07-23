@@ -1,15 +1,15 @@
 # Astronomy 1404–1430: computed findings
 
-Calculations use the Julian calendar and Swiss Ephemeris/Moshier. Reference locations are sampling points, not a provenance claim.
+Calculations use the Julian calendar and Swiss Ephemeris/Moshier. Reference locations are sampling points, not a provenance claim. A conjunction here means equality of geocentric tropical ecliptic longitude; full spherical angular separation is reported separately.
 
 ## Jupiter–Saturn
 
-- 1405-01-16 20:02 UT (Julian): separation 0.0000°, longitude 323.77°, solar elongation 18.2°.
-- 1425-02-14 14:47 UT (Julian): separation 0.0000°, longitude 227.30°, solar elongation 107.5°.
-- 1425-03-18 07:33 UT (Julian): separation 0.0000°, longitude 226.55°, solar elongation 139.7°.
-- 1425-08-26 07:33 UT (Julian): separation 0.0000°, longitude 222.67°, solar elongation 61.5°.
+- 1405-01-16 20:02 UT (Julian): longitude difference 0.00001°, angular separation 0.488°, longitude 323.77°, solar elongation 18.2°.
+- 1425-02-14 14:47 UT (Julian): longitude difference 0.00000°, angular separation 1.178°, longitude 227.30°, solar elongation 107.5°.
+- 1425-03-18 07:33 UT (Julian): longitude difference 0.00000°, angular separation 1.200°, longitude 226.55°, solar elongation 139.7°.
+- 1425-08-26 07:33 UT (Julian): longitude difference 0.00001°, angular separation 1.262°, longitude 222.67°, solar elongation 61.5°.
 
-The 1425 event is a triple conjunction in tropical Scorpio and is the strongest historically specific candidate in the manuscript date window. The 1405 conjunction was only about 18° from the Sun and was much less observable.
+The 1425 event is a triple longitude conjunction in tropical Scorpio and is the strongest historically specific candidate in the manuscript date window. The planets were about 1.18–1.26° apart on the sphere. The 1405 conjunction was only about 18° from the Sun and was much less observable.
 
 ## Major solar eclipses in the European reference belt
 
