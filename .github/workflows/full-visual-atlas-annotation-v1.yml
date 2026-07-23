@@ -1,0 +1,66 @@
+name: Build full visual atlas annotation v1
+
+on:
+  push:
+    branches:
+      - full-visual-atlas-annotation-v1-2026-07-23
+    paths:
+      - tools/annotate_full_corpus_v1.py
+      - .github/workflows/full-visual-atlas-annotation-v1.yml
+      - atlas/**
+      - data/yale_hq_scans/import_report.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: full-visual-atlas-annotation-v1
+  cancel-in-progress: true
+
+jobs:
+  annotate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: full-visual-atlas-annotation-v1-2026-07-23
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install image-analysis dependencies
+        run: python -m pip install --upgrade pillow numpy opencv-python-headless
+
+      - name: Generate all 206 marked overlays and records
+        run: python tools/annotate_full_corpus_v1.py --repo-root . --output analysis_output --max-side 1400
+
+      - name: Verify completed corpus
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          summary = json.loads(Path("analysis_output/analysis_summary.json").read_text())
+          assert summary["status"] == "PASS", summary
+          assert summary["completed_records"] == 206, summary
+          assert summary["overlay_count"] == 206, summary
+          assert summary["record_count"] == 206, summary
+          print(json.dumps(summary, indent=2))
+
+      - name: Upload final marked bundle and combined preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: voynich-annotated-final-v1
+          path: |
+            analysis_output/voynich_annotated_final_v1.zip
+            analysis_output/voynich_full_corpus_preview.html
+            analysis_output/analysis_summary.json
+            analysis_output/cross_page_graph.json
+            analysis_output/README.md
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
