@@ -1,0 +1,78 @@
+name: Build zodiac 30 research package
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-zodiac30-research
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.head_ref == 'research-zodiac30-historical-sky-2026-07-23' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research-zodiac30-historical-sky-2026-07-23
+          fetch-depth: 0
+
+      - name: Generate frozen atlas skeleton
+        run: python research/zodiac30/scripts/generate_atlas_skeleton.py
+
+      - name: Reproduce count-only comparison
+        run: python research/zodiac30/scripts/count_model_comparison.py > research/zodiac30/COUNT_MODEL_RESULT.json
+
+      - name: Verify corrected denominator
+        run: |
+          python - <<'PY'
+          import importlib.util
+          from pathlib import Path
+          path=Path('research/zodiac30/scripts/validate_atlas_gate.py')
+          spec=importlib.util.spec_from_file_location('validator',path)
+          module=importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          assert sum(module.EXPECTED.values()) == 299
+          PY
+
+      - name: Run hard atlas gate
+        shell: bash
+        run: |
+          set +e
+          python research/zodiac30/scripts/validate_atlas_gate.py \
+            research/zodiac30/data/atlas_299_skeleton.csv \
+            --json-out research/zodiac30/ATLAS_GATE_REPORT.json \
+            --max-errors 25
+          code=$?
+          set -e
+          test "$code" -eq 2
+          python - <<'PY'
+          import json
+          report=json.load(open('research/zodiac30/ATLAS_GATE_REPORT.json',encoding='utf-8'))
+          assert report['status'] == 'BLOCKED_INCOMPLETE_ATLAS'
+          assert report['row_count'] == 299
+          PY
+
+      - name: Compile executable package
+        run: python -m compileall -q research/zodiac30/scripts research/zodiac30/tests
+
+      - name: Commit reproducible generated artifacts
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/zodiac30/data/atlas_299_skeleton.csv research/zodiac30/COUNT_MODEL_RESULT.json research/zodiac30/ATLAS_GATE_REPORT.json
+          if git diff --cached --quiet; then
+            echo "Generated artifacts are current."
+            exit 0
+          fi
+          git commit -m "Generate frozen zodiac 299 atlas gate artifacts"
+          git push origin HEAD:research-zodiac30-historical-sky-2026-07-23
