@@ -1,0 +1,27 @@
+{
+  "experiment_id": "FOUR-OPPOSITION-TRANSFER-HELDOUT-01",
+  "scientific_status": "PILOT_NOT_CONFIRMATORY",
+  "primary": {
+    "size_multiplier": 1.0,
+    "dx_fraction": 0.0,
+    "dy_fraction": 0.0,
+    "training_pairing": "NW_ES",
+    "heldout_preferences": {
+      "H1_67v": "NW_ES",
+      "H2_69v70r": "NW_ES",
+      "H3_85r86v_sun": "NW_ES",
+      "H4_ROSETTES": "NE_SW"
+    },
+    "heldout_wins": 3,
+    "exact_permutation_p": 0.07317073170731707,
+    "lower_or_equal_null_assignments": 5,
+    "null_assignment_count": 81,
+    "observed_transfer_score": 28.59233336127045,
+    "numeric_status": "FAIL"
+  },
+  "training_pairing_stability": 1.0,
+  "sensitivity_numeric_pass_rate": 0.3333333333333333,
+  "final_conclusion": "FAIL_NO_HELDOUT_TRANSFER_AT_95_PERCENT",
+  "interpretation": "The frozen pairing did not beat the exact permutation null at p < 0.05 and must not be used as evidence for a shared allegorical opposition system.",
+  "source_policy": "Official Yale JPEG files were SHA-verified, resized only in memory, and never modified."
+}
