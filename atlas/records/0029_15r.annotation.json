@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "CANVAS-0029-15r",
+  "source": {
+    "source_file_id": "YALE-MS408-0029",
+    "relative_path": "data/yale_hq_scans/2/0029_15r.jpg",
+    "filename": "0029_15r.jpg",
+    "sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+    "bytes": 2104790,
+    "mime": "image/jpeg",
+    "image_file_grid_px": {
+      "width": 2648,
+      "height": 3729
+    },
+    "native_scan_grid_status": "VERIFIED_NATIVE",
+    "folio_or_cover_id": "15r",
+    "logical_role": "FOLIO",
+    "rotation_deg": 0,
+    "provenance": {
+      "classification": "ORIGINAL_NATIVE",
+      "verification_status": "VERIFIED",
+      "measurement_permission": "NATIVE_PIXEL_MEASUREMENT_ALLOWED",
+      "evidence": [
+        "Official Yale University Library Beinecke MS 408 IIIF canvas.",
+        "Repository import_report.json records the canvas identifier, full-resolution IIIF URL, byte count and SHA-256.",
+        "This generator recomputed the SHA-256 and read the JPEG dimensions without rewriting the source image."
+      ],
+      "source_url_or_catalog_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006102",
+      "image_url": "https://collections.library.yale.edu/iiif/2/1006102/full/full/0/default.jpg"
+    }
+  },
+  "canonical_context": {
+    "state_status": "STATE_RECONCILED",
+    "start_here_note": {
+      "id": 334,
+      "version": 2
+    },
+    "current_state_attachment": {
+      "id": 604,
+      "sha256_verified": true,
+      "sha256": "ff3b2f8e175400f72de93ad8b9a7535daeb83cd710e50bdeedfa084141af6769"
+    },
+    "project_changelog_attachment": {
+      "id": 603,
+      "sha256_verified": true,
+      "sha256": "6938ddab76a61331e98e9975aad74f2ab14230c6e6c370ce4fe358cddc1474fb"
+    },
+    "active_rules": [
+      10,
+      14,
+      16,
+      17,
+      18,
+      19
+    ],
+    "scope_decision": "FULL_EXECUTION_ALLOWED",
+    "scope_note": "The user explicitly ordered schema application to all folios. This creates source-verified records only; it does not fabricate visual annotations or cross-page matches."
+  },
+  "page_inventory": {
+    "regions": [],
+    "coverage_status": {
+      "parchment_field": "NOT_ASSESSED",
+      "main_text_fields": "NOT_ASSESSED",
+      "main_illustration_fields": "NOT_ASSESSED",
+      "diagrams": "NOT_ASSESSED",
+      "margins": "NOT_ASSESSED",
+      "damage": "NOT_ASSESSED",
+      "overlap": "NOT_ASSESSED"
+    }
+  },
+  "illustration_inventory": {
+    "objects": [],
+    "repeat_groups": [],
+    "hierarchy_validated": false
+  },
+  "text_geometry": {
+    "regions": [],
+    "segmentation_status": "NOT_ASSESSED",
+    "text_illustration_link_policy": "GEOMETRY_ONLY",
+    "transliteration_policy": "REFERENCE_ONLY_NOT_BOUNDARY_AUTHORITY"
+  },
+  "local_relations": [],
+  "overlay": {
+    "overlay_status": "NOT_RENDERED",
+    "source_sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+    "id_policy": "EVERY_VISIBLE_ANNOTATED_ENTITY_HAS_UNIQUE_ID",
+    "layers": [
+      {
+        "layer_id": "L01_PAGE_REGIONS",
+        "entity_types": [
+          "PAGE_REGION"
+        ],
+        "z_index": 10,
+        "label_ids": true,
+        "opacity": 0.65
+      },
+      {
+        "layer_id": "L02_ILLUSTRATION_OBJECTS",
+        "entity_types": [
+          "ILLUSTRATION_OBJECT"
+        ],
+        "z_index": 20,
+        "label_ids": true,
+        "opacity": 0.75
+      },
+      {
+        "layer_id": "L03_TEXT_GEOMETRY",
+        "entity_types": [
+          "TEXT_REGION"
+        ],
+        "z_index": 30,
+        "label_ids": true,
+        "opacity": 0.7
+      },
+      {
+        "layer_id": "L04_LOCAL_RELATIONS",
+        "entity_types": [
+          "LOCAL_RELATION"
+        ],
+        "z_index": 40,
+        "label_ids": true,
+        "opacity": 0.85
+      }
+    ],
+    "output": {
+      "filename": null,
+      "mime": null,
+      "sha256": null
+    }
+  },
+  "quality_control": {
+    "id_uniqueness": "PASS",
+    "hierarchy_acyclic": "PASS",
+    "geometry_within_source": "PASS",
+    "transliteration_not_used_for_boundaries": "PASS",
+    "reading_order_only_when_observable": "PASS",
+    "semantic_naming_audit": "PASS",
+    "review_status": "NOT_REVIEWED",
+    "issues": [
+      "Visual annotation has not yet been performed.",
+      "No text/illustration relation or cross-page similarity is asserted by this schema-instantiation pass."
+    ]
+  },
+  "execution_status": "SCHEMA_READY",
+  "deferred_reason": null
+}

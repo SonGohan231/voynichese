@@ -1,0 +1,1265 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-23T12:49:30+00:00",
+  "nodes": [
+    {
+      "node_id": "CANVAS-0001-Front_cover",
+      "sequence": 1,
+      "folio_or_cover_id": "Front cover",
+      "record_path": "atlas/records/0001_Front_cover.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0002-Inside_front_cover",
+      "sequence": 2,
+      "folio_or_cover_id": "Inside front cover",
+      "record_path": "atlas/records/0002_Inside_front_cover.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0003-1r",
+      "sequence": 3,
+      "folio_or_cover_id": "1r",
+      "record_path": "atlas/records/0003_1r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0004-1v",
+      "sequence": 4,
+      "folio_or_cover_id": "1v",
+      "record_path": "atlas/records/0004_1v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0005-2r",
+      "sequence": 5,
+      "folio_or_cover_id": "2r",
+      "record_path": "atlas/records/0005_2r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0006-2v",
+      "sequence": 6,
+      "folio_or_cover_id": "2v",
+      "record_path": "atlas/records/0006_2v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0007-3r",
+      "sequence": 7,
+      "folio_or_cover_id": "3r",
+      "record_path": "atlas/records/0007_3r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0008-3v",
+      "sequence": 8,
+      "folio_or_cover_id": "3v",
+      "record_path": "atlas/records/0008_3v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0009-4r",
+      "sequence": 9,
+      "folio_or_cover_id": "4r",
+      "record_path": "atlas/records/0009_4r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0010-4v",
+      "sequence": 10,
+      "folio_or_cover_id": "4v",
+      "record_path": "atlas/records/0010_4v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0011-5r",
+      "sequence": 11,
+      "folio_or_cover_id": "5r",
+      "record_path": "atlas/records/0011_5r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0012-5v",
+      "sequence": 12,
+      "folio_or_cover_id": "5v",
+      "record_path": "atlas/records/0012_5v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0013-6r",
+      "sequence": 13,
+      "folio_or_cover_id": "6r",
+      "record_path": "atlas/records/0013_6r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0014-6v",
+      "sequence": 14,
+      "folio_or_cover_id": "6v",
+      "record_path": "atlas/records/0014_6v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0015-7r",
+      "sequence": 15,
+      "folio_or_cover_id": "7r",
+      "record_path": "atlas/records/0015_7r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0016-7v",
+      "sequence": 16,
+      "folio_or_cover_id": "7v",
+      "record_path": "atlas/records/0016_7v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0017-8r",
+      "sequence": 17,
+      "folio_or_cover_id": "8r",
+      "record_path": "atlas/records/0017_8r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0018-8v",
+      "sequence": 18,
+      "folio_or_cover_id": "8v",
+      "record_path": "atlas/records/0018_8v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0019-9r",
+      "sequence": 19,
+      "folio_or_cover_id": "9r",
+      "record_path": "atlas/records/0019_9r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0020-9v",
+      "sequence": 20,
+      "folio_or_cover_id": "9v",
+      "record_path": "atlas/records/0020_9v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0021-10r",
+      "sequence": 21,
+      "folio_or_cover_id": "10r",
+      "record_path": "atlas/records/0021_10r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0022-10v",
+      "sequence": 22,
+      "folio_or_cover_id": "10v",
+      "record_path": "atlas/records/0022_10v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0023-11r",
+      "sequence": 23,
+      "folio_or_cover_id": "11r",
+      "record_path": "atlas/records/0023_11r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0024-11v",
+      "sequence": 24,
+      "folio_or_cover_id": "11v",
+      "record_path": "atlas/records/0024_11v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0025-13r",
+      "sequence": 25,
+      "folio_or_cover_id": "13r",
+      "record_path": "atlas/records/0025_13r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0026-13v",
+      "sequence": 26,
+      "folio_or_cover_id": "13v",
+      "record_path": "atlas/records/0026_13v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0027-14r",
+      "sequence": 27,
+      "folio_or_cover_id": "14r",
+      "record_path": "atlas/records/0027_14r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0028-14v",
+      "sequence": 28,
+      "folio_or_cover_id": "14v",
+      "record_path": "atlas/records/0028_14v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0029-15r",
+      "sequence": 29,
+      "folio_or_cover_id": "15r",
+      "record_path": "atlas/records/0029_15r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0030-15v",
+      "sequence": 30,
+      "folio_or_cover_id": "15v",
+      "record_path": "atlas/records/0030_15v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0031-16r",
+      "sequence": 31,
+      "folio_or_cover_id": "16r",
+      "record_path": "atlas/records/0031_16r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0032-16v",
+      "sequence": 32,
+      "folio_or_cover_id": "16v",
+      "record_path": "atlas/records/0032_16v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0033-17r",
+      "sequence": 33,
+      "folio_or_cover_id": "17r",
+      "record_path": "atlas/records/0033_17r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0034-17v",
+      "sequence": 34,
+      "folio_or_cover_id": "17v",
+      "record_path": "atlas/records/0034_17v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0035-18r",
+      "sequence": 35,
+      "folio_or_cover_id": "18r",
+      "record_path": "atlas/records/0035_18r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0036-18v",
+      "sequence": 36,
+      "folio_or_cover_id": "18v",
+      "record_path": "atlas/records/0036_18v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0037-19r",
+      "sequence": 37,
+      "folio_or_cover_id": "19r",
+      "record_path": "atlas/records/0037_19r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0038-19v",
+      "sequence": 38,
+      "folio_or_cover_id": "19v",
+      "record_path": "atlas/records/0038_19v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0039-20r",
+      "sequence": 39,
+      "folio_or_cover_id": "20r",
+      "record_path": "atlas/records/0039_20r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0040-20v",
+      "sequence": 40,
+      "folio_or_cover_id": "20v",
+      "record_path": "atlas/records/0040_20v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0041-21r",
+      "sequence": 41,
+      "folio_or_cover_id": "21r",
+      "record_path": "atlas/records/0041_21r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0042-21v",
+      "sequence": 42,
+      "folio_or_cover_id": "21v",
+      "record_path": "atlas/records/0042_21v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0043-22r",
+      "sequence": 43,
+      "folio_or_cover_id": "22r",
+      "record_path": "atlas/records/0043_22r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0044-22v",
+      "sequence": 44,
+      "folio_or_cover_id": "22v",
+      "record_path": "atlas/records/0044_22v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0045-23r",
+      "sequence": 45,
+      "folio_or_cover_id": "23r",
+      "record_path": "atlas/records/0045_23r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0046-23v",
+      "sequence": 46,
+      "folio_or_cover_id": "23v",
+      "record_path": "atlas/records/0046_23v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0047-24r",
+      "sequence": 47,
+      "folio_or_cover_id": "24r",
+      "record_path": "atlas/records/0047_24r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0048-24v",
+      "sequence": 48,
+      "folio_or_cover_id": "24v",
+      "record_path": "atlas/records/0048_24v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0049-25r",
+      "sequence": 49,
+      "folio_or_cover_id": "25r",
+      "record_path": "atlas/records/0049_25r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0050-25v",
+      "sequence": 50,
+      "folio_or_cover_id": "25v",
+      "record_path": "atlas/records/0050_25v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0051-26r",
+      "sequence": 51,
+      "folio_or_cover_id": "26r",
+      "record_path": "atlas/records/0051_26r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0052-26v",
+      "sequence": 52,
+      "folio_or_cover_id": "26v",
+      "record_path": "atlas/records/0052_26v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0053-27r",
+      "sequence": 53,
+      "folio_or_cover_id": "27r",
+      "record_path": "atlas/records/0053_27r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0054-27v",
+      "sequence": 54,
+      "folio_or_cover_id": "27v",
+      "record_path": "atlas/records/0054_27v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0055-28r",
+      "sequence": 55,
+      "folio_or_cover_id": "28r",
+      "record_path": "atlas/records/0055_28r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0056-28v",
+      "sequence": 56,
+      "folio_or_cover_id": "28v",
+      "record_path": "atlas/records/0056_28v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0057-29r",
+      "sequence": 57,
+      "folio_or_cover_id": "29r",
+      "record_path": "atlas/records/0057_29r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0058-29v",
+      "sequence": 58,
+      "folio_or_cover_id": "29v",
+      "record_path": "atlas/records/0058_29v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0059-30r",
+      "sequence": 59,
+      "folio_or_cover_id": "30r",
+      "record_path": "atlas/records/0059_30r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0060-30v",
+      "sequence": 60,
+      "folio_or_cover_id": "30v",
+      "record_path": "atlas/records/0060_30v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0061-31r",
+      "sequence": 61,
+      "folio_or_cover_id": "31r",
+      "record_path": "atlas/records/0061_31r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0062-31v",
+      "sequence": 62,
+      "folio_or_cover_id": "31v",
+      "record_path": "atlas/records/0062_31v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0063-32r",
+      "sequence": 63,
+      "folio_or_cover_id": "32r",
+      "record_path": "atlas/records/0063_32r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0064-32v",
+      "sequence": 64,
+      "folio_or_cover_id": "32v",
+      "record_path": "atlas/records/0064_32v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0065-33r",
+      "sequence": 65,
+      "folio_or_cover_id": "33r",
+      "record_path": "atlas/records/0065_33r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0066-33v",
+      "sequence": 66,
+      "folio_or_cover_id": "33v",
+      "record_path": "atlas/records/0066_33v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0067-34r",
+      "sequence": 67,
+      "folio_or_cover_id": "34r",
+      "record_path": "atlas/records/0067_34r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0068-34v",
+      "sequence": 68,
+      "folio_or_cover_id": "34v",
+      "record_path": "atlas/records/0068_34v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0069-35r",
+      "sequence": 69,
+      "folio_or_cover_id": "35r",
+      "record_path": "atlas/records/0069_35r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0070-35v",
+      "sequence": 70,
+      "folio_or_cover_id": "35v",
+      "record_path": "atlas/records/0070_35v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0071-36r",
+      "sequence": 71,
+      "folio_or_cover_id": "36r",
+      "record_path": "atlas/records/0071_36r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0072-36v",
+      "sequence": 72,
+      "folio_or_cover_id": "36v",
+      "record_path": "atlas/records/0072_36v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0073-37r",
+      "sequence": 73,
+      "folio_or_cover_id": "37r",
+      "record_path": "atlas/records/0073_37r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0074-37v",
+      "sequence": 74,
+      "folio_or_cover_id": "37v",
+      "record_path": "atlas/records/0074_37v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0075-38r",
+      "sequence": 75,
+      "folio_or_cover_id": "38r",
+      "record_path": "atlas/records/0075_38r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0076-38v",
+      "sequence": 76,
+      "folio_or_cover_id": "38v",
+      "record_path": "atlas/records/0076_38v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0077-39r",
+      "sequence": 77,
+      "folio_or_cover_id": "39r",
+      "record_path": "atlas/records/0077_39r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0078-39v",
+      "sequence": 78,
+      "folio_or_cover_id": "39v",
+      "record_path": "atlas/records/0078_39v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0079-40r",
+      "sequence": 79,
+      "folio_or_cover_id": "40r",
+      "record_path": "atlas/records/0079_40r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0080-40v",
+      "sequence": 80,
+      "folio_or_cover_id": "40v",
+      "record_path": "atlas/records/0080_40v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0081-41r",
+      "sequence": 81,
+      "folio_or_cover_id": "41r",
+      "record_path": "atlas/records/0081_41r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0082-41v",
+      "sequence": 82,
+      "folio_or_cover_id": "41v",
+      "record_path": "atlas/records/0082_41v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0083-42r",
+      "sequence": 83,
+      "folio_or_cover_id": "42r",
+      "record_path": "atlas/records/0083_42r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0084-42v",
+      "sequence": 84,
+      "folio_or_cover_id": "42v",
+      "record_path": "atlas/records/0084_42v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0085-43r",
+      "sequence": 85,
+      "folio_or_cover_id": "43r",
+      "record_path": "atlas/records/0085_43r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0086-43v",
+      "sequence": 86,
+      "folio_or_cover_id": "43v",
+      "record_path": "atlas/records/0086_43v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0087-44r",
+      "sequence": 87,
+      "folio_or_cover_id": "44r",
+      "record_path": "atlas/records/0087_44r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0088-44v",
+      "sequence": 88,
+      "folio_or_cover_id": "44v",
+      "record_path": "atlas/records/0088_44v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0089-45r",
+      "sequence": 89,
+      "folio_or_cover_id": "45r",
+      "record_path": "atlas/records/0089_45r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0090-45v",
+      "sequence": 90,
+      "folio_or_cover_id": "45v",
+      "record_path": "atlas/records/0090_45v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0091-46r",
+      "sequence": 91,
+      "folio_or_cover_id": "46r",
+      "record_path": "atlas/records/0091_46r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0092-46v",
+      "sequence": 92,
+      "folio_or_cover_id": "46v",
+      "record_path": "atlas/records/0092_46v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0093-47r",
+      "sequence": 93,
+      "folio_or_cover_id": "47r",
+      "record_path": "atlas/records/0093_47r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0094-47v",
+      "sequence": 94,
+      "folio_or_cover_id": "47v",
+      "record_path": "atlas/records/0094_47v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0095-48r",
+      "sequence": 95,
+      "folio_or_cover_id": "48r",
+      "record_path": "atlas/records/0095_48r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0096-48v",
+      "sequence": 96,
+      "folio_or_cover_id": "48v",
+      "record_path": "atlas/records/0096_48v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0097-49r",
+      "sequence": 97,
+      "folio_or_cover_id": "49r",
+      "record_path": "atlas/records/0097_49r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0098-49v",
+      "sequence": 98,
+      "folio_or_cover_id": "49v",
+      "record_path": "atlas/records/0098_49v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0099-50r",
+      "sequence": 99,
+      "folio_or_cover_id": "50r",
+      "record_path": "atlas/records/0099_50r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0100-50v",
+      "sequence": 100,
+      "folio_or_cover_id": "50v",
+      "record_path": "atlas/records/0100_50v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0101-51r",
+      "sequence": 101,
+      "folio_or_cover_id": "51r",
+      "record_path": "atlas/records/0101_51r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0102-51v",
+      "sequence": 102,
+      "folio_or_cover_id": "51v",
+      "record_path": "atlas/records/0102_51v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0103-52r",
+      "sequence": 103,
+      "folio_or_cover_id": "52r",
+      "record_path": "atlas/records/0103_52r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0104-52v",
+      "sequence": 104,
+      "folio_or_cover_id": "52v",
+      "record_path": "atlas/records/0104_52v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0105-53r",
+      "sequence": 105,
+      "folio_or_cover_id": "53r",
+      "record_path": "atlas/records/0105_53r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0106-53v",
+      "sequence": 106,
+      "folio_or_cover_id": "53v",
+      "record_path": "atlas/records/0106_53v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0107-54r",
+      "sequence": 107,
+      "folio_or_cover_id": "54r",
+      "record_path": "atlas/records/0107_54r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0108-54v",
+      "sequence": 108,
+      "folio_or_cover_id": "54v",
+      "record_path": "atlas/records/0108_54v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0109-55r",
+      "sequence": 109,
+      "folio_or_cover_id": "55r",
+      "record_path": "atlas/records/0109_55r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0110-55v",
+      "sequence": 110,
+      "folio_or_cover_id": "55v",
+      "record_path": "atlas/records/0110_55v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0111-56r",
+      "sequence": 111,
+      "folio_or_cover_id": "56r",
+      "record_path": "atlas/records/0111_56r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0112-56v",
+      "sequence": 112,
+      "folio_or_cover_id": "56v",
+      "record_path": "atlas/records/0112_56v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0113-57r",
+      "sequence": 113,
+      "folio_or_cover_id": "57r",
+      "record_path": "atlas/records/0113_57r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0114-57v",
+      "sequence": 114,
+      "folio_or_cover_id": "57v",
+      "record_path": "atlas/records/0114_57v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0115-58r",
+      "sequence": 115,
+      "folio_or_cover_id": "58r",
+      "record_path": "atlas/records/0115_58r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0116-58v",
+      "sequence": 116,
+      "folio_or_cover_id": "58v",
+      "record_path": "atlas/records/0116_58v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0117-65r",
+      "sequence": 117,
+      "folio_or_cover_id": "65r",
+      "record_path": "atlas/records/0117_65r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0118-65v",
+      "sequence": 118,
+      "folio_or_cover_id": "65v",
+      "record_path": "atlas/records/0118_65v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0119-66r",
+      "sequence": 119,
+      "folio_or_cover_id": "66r",
+      "record_path": "atlas/records/0119_66r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0120-66v",
+      "sequence": 120,
+      "folio_or_cover_id": "66v",
+      "record_path": "atlas/records/0120_66v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0121-67r",
+      "sequence": 121,
+      "folio_or_cover_id": "67r",
+      "record_path": "atlas/records/0121_67r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0122-67v",
+      "sequence": 122,
+      "folio_or_cover_id": "67v",
+      "record_path": "atlas/records/0122_67v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0123-68r",
+      "sequence": 123,
+      "folio_or_cover_id": "68r",
+      "record_path": "atlas/records/0123_68r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0124-68v",
+      "sequence": 124,
+      "folio_or_cover_id": "68v",
+      "record_path": "atlas/records/0124_68v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0125-69r",
+      "sequence": 125,
+      "folio_or_cover_id": "69r",
+      "record_path": "atlas/records/0125_69r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0126-69v_and_70r",
+      "sequence": 126,
+      "folio_or_cover_id": "69v and 70r",
+      "record_path": "atlas/records/0126_69v_and_70r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0127-70v_part",
+      "sequence": 127,
+      "folio_or_cover_id": "70v (part)",
+      "record_path": "atlas/records/0127_70v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0128-70v_part",
+      "sequence": 128,
+      "folio_or_cover_id": "70v (part)",
+      "record_path": "atlas/records/0128_70v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0129-71r",
+      "sequence": 129,
+      "folio_or_cover_id": "71r",
+      "record_path": "atlas/records/0129_71r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0130-71v_and_72r",
+      "sequence": 130,
+      "folio_or_cover_id": "71v and 72r",
+      "record_path": "atlas/records/0130_71v_and_72r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0131-72v_part",
+      "sequence": 131,
+      "folio_or_cover_id": "72v (part)",
+      "record_path": "atlas/records/0131_72v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0132-72v_part",
+      "sequence": 132,
+      "folio_or_cover_id": "72v (part)",
+      "record_path": "atlas/records/0132_72v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0133-73r",
+      "sequence": 133,
+      "folio_or_cover_id": "73r",
+      "record_path": "atlas/records/0133_73r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0134-73v",
+      "sequence": 134,
+      "folio_or_cover_id": "73v",
+      "record_path": "atlas/records/0134_73v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0135-75r",
+      "sequence": 135,
+      "folio_or_cover_id": "75r",
+      "record_path": "atlas/records/0135_75r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0136-75v",
+      "sequence": 136,
+      "folio_or_cover_id": "75v",
+      "record_path": "atlas/records/0136_75v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0137-76r",
+      "sequence": 137,
+      "folio_or_cover_id": "76r",
+      "record_path": "atlas/records/0137_76r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0138-76v",
+      "sequence": 138,
+      "folio_or_cover_id": "76v",
+      "record_path": "atlas/records/0138_76v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0139-77r",
+      "sequence": 139,
+      "folio_or_cover_id": "77r",
+      "record_path": "atlas/records/0139_77r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0140-77v",
+      "sequence": 140,
+      "folio_or_cover_id": "77v",
+      "record_path": "atlas/records/0140_77v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0141-78r",
+      "sequence": 141,
+      "folio_or_cover_id": "78r",
+      "record_path": "atlas/records/0141_78r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0142-78v",
+      "sequence": 142,
+      "folio_or_cover_id": "78v",
+      "record_path": "atlas/records/0142_78v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0143-79r",
+      "sequence": 143,
+      "folio_or_cover_id": "79r",
+      "record_path": "atlas/records/0143_79r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0144-79v",
+      "sequence": 144,
+      "folio_or_cover_id": "79v",
+      "record_path": "atlas/records/0144_79v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0145-80r",
+      "sequence": 145,
+      "folio_or_cover_id": "80r",
+      "record_path": "atlas/records/0145_80r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0146-80v",
+      "sequence": 146,
+      "folio_or_cover_id": "80v",
+      "record_path": "atlas/records/0146_80v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0147-81r",
+      "sequence": 147,
+      "folio_or_cover_id": "81r",
+      "record_path": "atlas/records/0147_81r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0148-81v",
+      "sequence": 148,
+      "folio_or_cover_id": "81v",
+      "record_path": "atlas/records/0148_81v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0149-82r",
+      "sequence": 149,
+      "folio_or_cover_id": "82r",
+      "record_path": "atlas/records/0149_82r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0150-82v",
+      "sequence": 150,
+      "folio_or_cover_id": "82v",
+      "record_path": "atlas/records/0150_82v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0151-83r",
+      "sequence": 151,
+      "folio_or_cover_id": "83r",
+      "record_path": "atlas/records/0151_83r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0152-83v",
+      "sequence": 152,
+      "folio_or_cover_id": "83v",
+      "record_path": "atlas/records/0152_83v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0153-84r",
+      "sequence": 153,
+      "folio_or_cover_id": "84r",
+      "record_path": "atlas/records/0153_84r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0154-84v",
+      "sequence": 154,
+      "folio_or_cover_id": "84v",
+      "record_path": "atlas/records/0154_84v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0155-85r_part_part_of_85-86_foldout",
+      "sequence": 155,
+      "folio_or_cover_id": "85r (part) (part of 85-86 foldout)",
+      "record_path": "atlas/records/0155_85r_part_part_of_85-86_foldout.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0156-85r_part_86v_part_part_of_85-86_foldout",
+      "sequence": 156,
+      "folio_or_cover_id": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "record_path": "atlas/records/0156_85r_part_86v_part_part_of_85-86_foldout.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0157-86v_part_part_of_85-86_foldout",
+      "sequence": 157,
+      "folio_or_cover_id": "86v (part) (part of 85-86 foldout)",
+      "record_path": "atlas/records/0157_86v_part_part_of_85-86_foldout.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0158-85v_and_86r_foldout",
+      "sequence": 158,
+      "folio_or_cover_id": "85v and 86r (foldout)",
+      "record_path": "atlas/records/0158_85v_and_86r_foldout.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0159-87r",
+      "sequence": 159,
+      "folio_or_cover_id": "87r",
+      "record_path": "atlas/records/0159_87r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0160-87v",
+      "sequence": 160,
+      "folio_or_cover_id": "87v",
+      "record_path": "atlas/records/0160_87v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0161-88r",
+      "sequence": 161,
+      "folio_or_cover_id": "88r",
+      "record_path": "atlas/records/0161_88r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0162-88v_and_89r",
+      "sequence": 162,
+      "folio_or_cover_id": "88v and 89r",
+      "record_path": "atlas/records/0162_88v_and_89r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0163-89v_part",
+      "sequence": 163,
+      "folio_or_cover_id": "89v (part)",
+      "record_path": "atlas/records/0163_89v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0164-89v_part_and_90r",
+      "sequence": 164,
+      "folio_or_cover_id": "89v (part) and 90r",
+      "record_path": "atlas/records/0164_89v_part_and_90r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0165-90r",
+      "sequence": 165,
+      "folio_or_cover_id": "90r",
+      "record_path": "atlas/records/0165_90r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0166-90v_part",
+      "sequence": 166,
+      "folio_or_cover_id": "90v (part)",
+      "record_path": "atlas/records/0166_90v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0167-93r",
+      "sequence": 167,
+      "folio_or_cover_id": "93r",
+      "record_path": "atlas/records/0167_93r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0168-93v",
+      "sequence": 168,
+      "folio_or_cover_id": "93v",
+      "record_path": "atlas/records/0168_93v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0169-94r",
+      "sequence": 169,
+      "folio_or_cover_id": "94r",
+      "record_path": "atlas/records/0169_94r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0170-94v_and_95r",
+      "sequence": 170,
+      "folio_or_cover_id": "94v and 95r",
+      "record_path": "atlas/records/0170_94v_and_95r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0171-95v_part",
+      "sequence": 171,
+      "folio_or_cover_id": "95v (part)",
+      "record_path": "atlas/records/0171_95v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0172-95v",
+      "sequence": 172,
+      "folio_or_cover_id": "95v",
+      "record_path": "atlas/records/0172_95v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0173-96r",
+      "sequence": 173,
+      "folio_or_cover_id": "96r",
+      "record_path": "atlas/records/0173_96r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0174-96v",
+      "sequence": 174,
+      "folio_or_cover_id": "96v",
+      "record_path": "atlas/records/0174_96v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0175-99r",
+      "sequence": 175,
+      "folio_or_cover_id": "99r",
+      "record_path": "atlas/records/0175_99r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0176-99v",
+      "sequence": 176,
+      "folio_or_cover_id": "99v",
+      "record_path": "atlas/records/0176_99v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0177-100r",
+      "sequence": 177,
+      "folio_or_cover_id": "100r",
+      "record_path": "atlas/records/0177_100r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0178-100v_and_101r",
+      "sequence": 178,
+      "folio_or_cover_id": "100v and 101r",
+      "record_path": "atlas/records/0178_100v_and_101r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0179-101v_part",
+      "sequence": 179,
+      "folio_or_cover_id": "101v (part)",
+      "record_path": "atlas/records/0179_101v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0180-101v_part_and_102r",
+      "sequence": 180,
+      "folio_or_cover_id": "101v (part) and 102r",
+      "record_path": "atlas/records/0180_101v_part_and_102r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0181-102v_part",
+      "sequence": 181,
+      "folio_or_cover_id": "102v (part)",
+      "record_path": "atlas/records/0181_102v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0182-102v_part",
+      "sequence": 182,
+      "folio_or_cover_id": "102v (part)",
+      "record_path": "atlas/records/0182_102v_part.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0183-103r",
+      "sequence": 183,
+      "folio_or_cover_id": "103r",
+      "record_path": "atlas/records/0183_103r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0184-103v",
+      "sequence": 184,
+      "folio_or_cover_id": "103v",
+      "record_path": "atlas/records/0184_103v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0185-104r",
+      "sequence": 185,
+      "folio_or_cover_id": "104r",
+      "record_path": "atlas/records/0185_104r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0186-104v",
+      "sequence": 186,
+      "folio_or_cover_id": "104v",
+      "record_path": "atlas/records/0186_104v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0187-105r",
+      "sequence": 187,
+      "folio_or_cover_id": "105r",
+      "record_path": "atlas/records/0187_105r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0188-105v",
+      "sequence": 188,
+      "folio_or_cover_id": "105v",
+      "record_path": "atlas/records/0188_105v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0189-106r",
+      "sequence": 189,
+      "folio_or_cover_id": "106r",
+      "record_path": "atlas/records/0189_106r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0190-106v",
+      "sequence": 190,
+      "folio_or_cover_id": "106v",
+      "record_path": "atlas/records/0190_106v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0191-107r",
+      "sequence": 191,
+      "folio_or_cover_id": "107r",
+      "record_path": "atlas/records/0191_107r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0192-107v",
+      "sequence": 192,
+      "folio_or_cover_id": "107v",
+      "record_path": "atlas/records/0192_107v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0193-108r",
+      "sequence": 193,
+      "folio_or_cover_id": "108r",
+      "record_path": "atlas/records/0193_108r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0194-108v",
+      "sequence": 194,
+      "folio_or_cover_id": "108v",
+      "record_path": "atlas/records/0194_108v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0195-111r",
+      "sequence": 195,
+      "folio_or_cover_id": "111r",
+      "record_path": "atlas/records/0195_111r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0196-111v",
+      "sequence": 196,
+      "folio_or_cover_id": "111v",
+      "record_path": "atlas/records/0196_111v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0197-112r",
+      "sequence": 197,
+      "folio_or_cover_id": "112r",
+      "record_path": "atlas/records/0197_112r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0198-112v",
+      "sequence": 198,
+      "folio_or_cover_id": "112v",
+      "record_path": "atlas/records/0198_112v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0199-113r",
+      "sequence": 199,
+      "folio_or_cover_id": "113r",
+      "record_path": "atlas/records/0199_113r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0200-113v",
+      "sequence": 200,
+      "folio_or_cover_id": "113v",
+      "record_path": "atlas/records/0200_113v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0201-114r",
+      "sequence": 201,
+      "folio_or_cover_id": "114r",
+      "record_path": "atlas/records/0201_114r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0202-114v",
+      "sequence": 202,
+      "folio_or_cover_id": "114v",
+      "record_path": "atlas/records/0202_114v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0203-115r",
+      "sequence": 203,
+      "folio_or_cover_id": "115r",
+      "record_path": "atlas/records/0203_115r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0204-115v",
+      "sequence": 204,
+      "folio_or_cover_id": "115v",
+      "record_path": "atlas/records/0204_115v.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0205-116r",
+      "sequence": 205,
+      "folio_or_cover_id": "116r",
+      "record_path": "atlas/records/0205_116r.annotation.json"
+    },
+    {
+      "node_id": "CANVAS-0206-116v",
+      "sequence": 206,
+      "folio_or_cover_id": "116v",
+      "record_path": "atlas/records/0206_116v.annotation.json"
+    }
+  ],
+  "edges": [],
+  "edge_status": "NOT_EVALUATED",
+  "candidate_features": [
+    "TOPOLOGY",
+    "PART_COUNT",
+    "CONNECTION_LAYOUT",
+    "CLOSURE",
+    "BRANCHING",
+    "DIRECTION",
+    "INPUT_OUTPUT_RELATION",
+    "POSITION_RELATIVE_TO_TEXT"
+  ],
+  "edge_requirements": [
+    "MATCHING_FEATURES",
+    "CONFLICTING_FEATURES",
+    "METHOD",
+    "NEGATIVE_CONTROL",
+    "CONFIDENCE_STATUS"
+  ],
+  "prohibited_shortcuts": [
+    "SIMILAR_BBOX_SIZE_ONLY",
+    "SIMILAR_BACKGROUND_COLOR_ONLY"
+  ]
+}

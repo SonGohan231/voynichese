@@ -1,0 +1,45 @@
+name: Build canonical Voynich atlas records
+
+on:
+  push:
+    branches:
+      - apply-canonical-atlas-schema-all-folios-2026-07-23
+    paths:
+      - tools/build_canonical_atlas.py
+      - data/yale_hq_scans/**
+      - .github/workflows/build-canonical-atlas.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-canonical-voynich-atlas
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: apply-canonical-atlas-schema-all-folios-2026-07-23
+          fetch-depth: 0
+
+      - name: Generate and validate all canonical records
+        run: python tools/build_canonical_atlas.py
+
+      - name: Commit generated atlas
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add atlas
+          if git diff --cached --quiet; then
+            echo "Atlas is already current."
+            exit 0
+          fi
+          git commit -m "Apply canonical atlas schema to all Yale scan positions"
+          git push origin HEAD:apply-canonical-atlas-schema-all-folios-2026-07-23
