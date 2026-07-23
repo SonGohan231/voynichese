@@ -1,0 +1,13 @@
+{
+  "observed_sign_totals": [29, 30, 30, 30, 30, 30, 30, 30, 30, 30],
+  "observed_total": 299,
+  "models": {
+    "FIXED_30_WITH_ONE_OMISSION": {"description_bits": 5.554697218282904, "status": "SURVIVES"},
+    "LUNAR_29_30_IID_P_EQ_0_5": {"description_bits": 10.0, "status": "DISFAVORED_EXACT_MODEL"},
+    "LUNAR_29_30_STRICT_ALTERNATION": {"description_bits": 8.714245517666122, "status": "DISFAVORED_EXACT_MODEL"},
+    "MANSIONS_28_EXACT_COUNT": {"description_bits": 15.264662506490405, "status": "FAIL_EXACT_MODEL"},
+    "CIVIL_MONTH_30_31_SIMPLE_MAPPING_LOWER_BOUND": {"description_bits": 10.562242424221072, "status": "DISFAVORED_EXACT_MODEL"}
+  },
+  "count_only_verdict": "INCONCLUSIVE_BETWEEN_M_FORMAT_M_DEGREE_M_DECAN",
+  "next_test": "BOUNDARY-PERIODICITY-10-vs-15-HELDOUT-01"
+}
