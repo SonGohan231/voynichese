@@ -1,11 +1,10 @@
 name: Import Yale Voynich scans
 
 on:
-  push:
+  pull_request:
     branches:
-      - import-voynich-yale-scans-2026-07-23
-    paths:
-      - .github/workflows/import-yale-voynich-scans.yml
+      - master
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 permissions:
@@ -13,10 +12,11 @@ permissions:
 
 concurrency:
   group: import-yale-voynich-scans
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   import:
+    if: github.head_ref == 'import-voynich-yale-scans-2026-07-23' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
@@ -35,7 +35,6 @@ jobs:
           import time
           import urllib.request
 
-          BRANCH = "import-voynich-yale-scans-2026-07-23"
           MANIFEST_URL = "https://collections.library.yale.edu/manifests/2002046"
           ROOT = pathlib.Path("data/yale_hq_scans")
           USER_AGENT = "VoynichResearchImport/1.0 (+https://github.com/SonGohan231/voynichese)"
