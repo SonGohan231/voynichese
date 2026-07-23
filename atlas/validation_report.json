@@ -1,0 +1,3322 @@
+{
+  "schema_version": "1.0.0",
+  "generator_version": "1.0.0",
+  "generated_at": "2026-07-23T12:49:30+00:00",
+  "status": "PASS",
+  "expected_source_rows": 207,
+  "actual_source_rows": 207,
+  "expected_unique_sequences": 206,
+  "actual_unique_sequences": 206,
+  "generated_record_count": 206,
+  "source_checks": [
+    {
+      "sequence": 1,
+      "relative_path": "data/yale_hq_scans/1/0001__Front cover_.jpg",
+      "exists": true,
+      "expected_bytes": 2057677,
+      "actual_bytes": 2057677,
+      "expected_sha256": "a2af37b5735b76e49a4fb2033f3ac54187d08aee7d910479c1fd04cb4e8b8a14",
+      "actual_sha256": "a2af37b5735b76e49a4fb2033f3ac54187d08aee7d910479c1fd04cb4e8b8a14",
+      "match": true
+    },
+    {
+      "sequence": 2,
+      "relative_path": "data/yale_hq_scans/1/0002__Inside front cover_.jpg",
+      "exists": true,
+      "expected_bytes": 1807387,
+      "actual_bytes": 1807387,
+      "expected_sha256": "1f609ec3e91977e339099d1f864993f985246ac345e89896427392078b601dd2",
+      "actual_sha256": "1f609ec3e91977e339099d1f864993f985246ac345e89896427392078b601dd2",
+      "match": true
+    },
+    {
+      "sequence": 3,
+      "relative_path": "data/yale_hq_scans/1/0003_1r.jpg",
+      "exists": true,
+      "expected_bytes": 2309265,
+      "actual_bytes": 2309265,
+      "expected_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+      "actual_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+      "match": true
+    },
+    {
+      "sequence": 4,
+      "relative_path": "data/yale_hq_scans/1/0004_1v.jpg",
+      "exists": true,
+      "expected_bytes": 2343486,
+      "actual_bytes": 2343486,
+      "expected_sha256": "43065eacad8a743816eb2b7d9acd8cf882a9bb498f1cea84602d12fede99f77d",
+      "actual_sha256": "43065eacad8a743816eb2b7d9acd8cf882a9bb498f1cea84602d12fede99f77d",
+      "match": true
+    },
+    {
+      "sequence": 5,
+      "relative_path": "data/yale_hq_scans/1/0005_2r.jpg",
+      "exists": true,
+      "expected_bytes": 2169315,
+      "actual_bytes": 2169315,
+      "expected_sha256": "826533a0760798acf5a4caa01ac29fe95eb1ed13a9fb26ac82900a8aea11d53f",
+      "actual_sha256": "826533a0760798acf5a4caa01ac29fe95eb1ed13a9fb26ac82900a8aea11d53f",
+      "match": true
+    },
+    {
+      "sequence": 6,
+      "relative_path": "data/yale_hq_scans/1/0006_2v.jpg",
+      "exists": true,
+      "expected_bytes": 2415827,
+      "actual_bytes": 2415827,
+      "expected_sha256": "ae2e9591c75389fe093e7f35d5c670781d196c253d472030dd4a1d1c86ae1cb7",
+      "actual_sha256": "ae2e9591c75389fe093e7f35d5c670781d196c253d472030dd4a1d1c86ae1cb7",
+      "match": true
+    },
+    {
+      "sequence": 7,
+      "relative_path": "data/yale_hq_scans/1/0007_3r.jpg",
+      "exists": true,
+      "expected_bytes": 2201720,
+      "actual_bytes": 2201720,
+      "expected_sha256": "6ea4d4023a3b199463eee9e30508726a9314391f05a613bce3f87ae8d23fd151",
+      "actual_sha256": "6ea4d4023a3b199463eee9e30508726a9314391f05a613bce3f87ae8d23fd151",
+      "match": true
+    },
+    {
+      "sequence": 8,
+      "relative_path": "data/yale_hq_scans/1/0008_3v.jpg",
+      "exists": true,
+      "expected_bytes": 2287993,
+      "actual_bytes": 2287993,
+      "expected_sha256": "b9c19a872d6456fa58f76f15dec1d61bc80cc353fceff33f11abdaae87ce199e",
+      "actual_sha256": "b9c19a872d6456fa58f76f15dec1d61bc80cc353fceff33f11abdaae87ce199e",
+      "match": true
+    },
+    {
+      "sequence": 9,
+      "relative_path": "data/yale_hq_scans/1/0009_4r.jpg",
+      "exists": true,
+      "expected_bytes": 2325087,
+      "actual_bytes": 2325087,
+      "expected_sha256": "fb166d0fe36d8cb635bb73b1d70b7d62e51a5f1ebf896f51921bd1854a06d904",
+      "actual_sha256": "fb166d0fe36d8cb635bb73b1d70b7d62e51a5f1ebf896f51921bd1854a06d904",
+      "match": true
+    },
+    {
+      "sequence": 10,
+      "relative_path": "data/yale_hq_scans/1/0010_4v.jpg",
+      "exists": true,
+      "expected_bytes": 2408540,
+      "actual_bytes": 2408540,
+      "expected_sha256": "afec0f17556cb8cec1f1bc529ba4b572fc32363702091bacda4c7c1e0ebf37bc",
+      "actual_sha256": "afec0f17556cb8cec1f1bc529ba4b572fc32363702091bacda4c7c1e0ebf37bc",
+      "match": true
+    },
+    {
+      "sequence": 11,
+      "relative_path": "data/yale_hq_scans/1/0011_5r.jpg",
+      "exists": true,
+      "expected_bytes": 2424178,
+      "actual_bytes": 2424178,
+      "expected_sha256": "e0e966c2a24f6b434b34cd1e1d4ee9aef2cec281c6ad071847e8e8b50d799acb",
+      "actual_sha256": "e0e966c2a24f6b434b34cd1e1d4ee9aef2cec281c6ad071847e8e8b50d799acb",
+      "match": true
+    },
+    {
+      "sequence": 12,
+      "relative_path": "data/yale_hq_scans/1/0012_5v.jpg",
+      "exists": true,
+      "expected_bytes": 2362440,
+      "actual_bytes": 2362440,
+      "expected_sha256": "c294a7576438c7673149f7b6294378127721daa5a48d045643feb812a6c49f40",
+      "actual_sha256": "c294a7576438c7673149f7b6294378127721daa5a48d045643feb812a6c49f40",
+      "match": true
+    },
+    {
+      "sequence": 13,
+      "relative_path": "data/yale_hq_scans/1/0013_6r.jpg",
+      "exists": true,
+      "expected_bytes": 2331837,
+      "actual_bytes": 2331837,
+      "expected_sha256": "2e9e318c945c1a961ab676c81827b4ee71c993d3d02a1adb9365bbb007ffa4dc",
+      "actual_sha256": "2e9e318c945c1a961ab676c81827b4ee71c993d3d02a1adb9365bbb007ffa4dc",
+      "match": true
+    },
+    {
+      "sequence": 14,
+      "relative_path": "data/yale_hq_scans/1/0014_6v.jpg",
+      "exists": true,
+      "expected_bytes": 2277617,
+      "actual_bytes": 2277617,
+      "expected_sha256": "c05ffc33745eca87cb0387cf47868f2a0a62f2cf6c3f7929a35a2e64834c40dc",
+      "actual_sha256": "c05ffc33745eca87cb0387cf47868f2a0a62f2cf6c3f7929a35a2e64834c40dc",
+      "match": true
+    },
+    {
+      "sequence": 15,
+      "relative_path": "data/yale_hq_scans/1/0015_7r.jpg",
+      "exists": true,
+      "expected_bytes": 2218752,
+      "actual_bytes": 2218752,
+      "expected_sha256": "fd4529ff994cfaefe9bf75966a59eede9ab0ea59e3514bf3aaf0a45c0df0e2a0",
+      "actual_sha256": "fd4529ff994cfaefe9bf75966a59eede9ab0ea59e3514bf3aaf0a45c0df0e2a0",
+      "match": true
+    },
+    {
+      "sequence": 16,
+      "relative_path": "data/yale_hq_scans/1/0016_7v.jpg",
+      "exists": true,
+      "expected_bytes": 2182142,
+      "actual_bytes": 2182142,
+      "expected_sha256": "81fed5fa8e1b174ff1176899b76d08003148445bdc6f68f3c7f59f8c6729e841",
+      "actual_sha256": "81fed5fa8e1b174ff1176899b76d08003148445bdc6f68f3c7f59f8c6729e841",
+      "match": true
+    },
+    {
+      "sequence": 17,
+      "relative_path": "data/yale_hq_scans/1/0017_8r.jpg",
+      "exists": true,
+      "expected_bytes": 2318868,
+      "actual_bytes": 2318868,
+      "expected_sha256": "2dfbbfab02ca4220a7ad1ade4b6be69d0401df9a64762e3883ffa87640e07e7e",
+      "actual_sha256": "2dfbbfab02ca4220a7ad1ade4b6be69d0401df9a64762e3883ffa87640e07e7e",
+      "match": true
+    },
+    {
+      "sequence": 18,
+      "relative_path": "data/yale_hq_scans/1/0018_8v.jpg",
+      "exists": true,
+      "expected_bytes": 2177365,
+      "actual_bytes": 2177365,
+      "expected_sha256": "726c5a8de19709f2286423802e7d1e18f2c58cc558d5680e57a3377e9623ca1c",
+      "actual_sha256": "726c5a8de19709f2286423802e7d1e18f2c58cc558d5680e57a3377e9623ca1c",
+      "match": true
+    },
+    {
+      "sequence": 19,
+      "relative_path": "data/yale_hq_scans/1/0019_9r.jpg",
+      "exists": true,
+      "expected_bytes": 2414246,
+      "actual_bytes": 2414246,
+      "expected_sha256": "a5f3a7b1a3f9c0e791a3365d801884c64d996749719d84ffb11f0f06fbb30925",
+      "actual_sha256": "a5f3a7b1a3f9c0e791a3365d801884c64d996749719d84ffb11f0f06fbb30925",
+      "match": true
+    },
+    {
+      "sequence": 20,
+      "relative_path": "data/yale_hq_scans/1/0020_9v.jpg",
+      "exists": true,
+      "expected_bytes": 2312352,
+      "actual_bytes": 2312352,
+      "expected_sha256": "790a7493a31133cf9375fb7471d1d1167df4988bcadeb74ea2528a0ba562e693",
+      "actual_sha256": "790a7493a31133cf9375fb7471d1d1167df4988bcadeb74ea2528a0ba562e693",
+      "match": true
+    },
+    {
+      "sequence": 21,
+      "relative_path": "data/yale_hq_scans/1/0021_10r.jpg",
+      "exists": true,
+      "expected_bytes": 2349652,
+      "actual_bytes": 2349652,
+      "expected_sha256": "8d8d5636691bae1be1ff908afad1388c25c53154e8808be572675ae8500c2ac5",
+      "actual_sha256": "8d8d5636691bae1be1ff908afad1388c25c53154e8808be572675ae8500c2ac5",
+      "match": true
+    },
+    {
+      "sequence": 22,
+      "relative_path": "data/yale_hq_scans/1/0022_10v.jpg",
+      "exists": true,
+      "expected_bytes": 2277816,
+      "actual_bytes": 2277816,
+      "expected_sha256": "5cff25a923f5e8173a2a8ad21ec247d7c9bd090ac379322d5dda4d17be916403",
+      "actual_sha256": "5cff25a923f5e8173a2a8ad21ec247d7c9bd090ac379322d5dda4d17be916403",
+      "match": true
+    },
+    {
+      "sequence": 23,
+      "relative_path": "data/yale_hq_scans/1/0023_11r.jpg",
+      "exists": true,
+      "expected_bytes": 2255232,
+      "actual_bytes": 2255232,
+      "expected_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "actual_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "match": true
+    },
+    {
+      "sequence": 23,
+      "relative_path": "data/yale_hq_scans/2/0023_11r.jpg",
+      "exists": true,
+      "expected_bytes": 2255232,
+      "actual_bytes": 2255232,
+      "expected_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "actual_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "match": true
+    },
+    {
+      "sequence": 24,
+      "relative_path": "data/yale_hq_scans/2/0024_11v.jpg",
+      "exists": true,
+      "expected_bytes": 2430042,
+      "actual_bytes": 2430042,
+      "expected_sha256": "896a5297fd4ac6a4ca215ae5e000ac8d6a50ea6063283a28b42ba1974d681d51",
+      "actual_sha256": "896a5297fd4ac6a4ca215ae5e000ac8d6a50ea6063283a28b42ba1974d681d51",
+      "match": true
+    },
+    {
+      "sequence": 25,
+      "relative_path": "data/yale_hq_scans/2/0025_13r.jpg",
+      "exists": true,
+      "expected_bytes": 2246956,
+      "actual_bytes": 2246956,
+      "expected_sha256": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+      "actual_sha256": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+      "match": true
+    },
+    {
+      "sequence": 26,
+      "relative_path": "data/yale_hq_scans/2/0026_13v.jpg",
+      "exists": true,
+      "expected_bytes": 2541873,
+      "actual_bytes": 2541873,
+      "expected_sha256": "79ac3ff85ed178229cd4bafc6332c606684dd0eba37221758a7ec430c86544f0",
+      "actual_sha256": "79ac3ff85ed178229cd4bafc6332c606684dd0eba37221758a7ec430c86544f0",
+      "match": true
+    },
+    {
+      "sequence": 27,
+      "relative_path": "data/yale_hq_scans/2/0027_14r.jpg",
+      "exists": true,
+      "expected_bytes": 2566544,
+      "actual_bytes": 2566544,
+      "expected_sha256": "1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c",
+      "actual_sha256": "1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c",
+      "match": true
+    },
+    {
+      "sequence": 28,
+      "relative_path": "data/yale_hq_scans/2/0028_14v.jpg",
+      "exists": true,
+      "expected_bytes": 2266429,
+      "actual_bytes": 2266429,
+      "expected_sha256": "97dbdbe273597957d62db2cf3a6d9769a0121cba1d0bb682c8008a6d2de622a6",
+      "actual_sha256": "97dbdbe273597957d62db2cf3a6d9769a0121cba1d0bb682c8008a6d2de622a6",
+      "match": true
+    },
+    {
+      "sequence": 29,
+      "relative_path": "data/yale_hq_scans/2/0029_15r.jpg",
+      "exists": true,
+      "expected_bytes": 2104790,
+      "actual_bytes": 2104790,
+      "expected_sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+      "actual_sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+      "match": true
+    },
+    {
+      "sequence": 30,
+      "relative_path": "data/yale_hq_scans/2/0030_15v.jpg",
+      "exists": true,
+      "expected_bytes": 2407748,
+      "actual_bytes": 2407748,
+      "expected_sha256": "d224773e2e39ef02719c25560e8072e6407bdea9f8d1bdf8da515adb5c2fc127",
+      "actual_sha256": "d224773e2e39ef02719c25560e8072e6407bdea9f8d1bdf8da515adb5c2fc127",
+      "match": true
+    },
+    {
+      "sequence": 31,
+      "relative_path": "data/yale_hq_scans/2/0031_16r.jpg",
+      "exists": true,
+      "expected_bytes": 2157068,
+      "actual_bytes": 2157068,
+      "expected_sha256": "1a7e9d3d9e6c647d73899317cf21c2967ded0e30517c5020e7c2093f6d99f265",
+      "actual_sha256": "1a7e9d3d9e6c647d73899317cf21c2967ded0e30517c5020e7c2093f6d99f265",
+      "match": true
+    },
+    {
+      "sequence": 32,
+      "relative_path": "data/yale_hq_scans/2/0032_16v.jpg",
+      "exists": true,
+      "expected_bytes": 2474638,
+      "actual_bytes": 2474638,
+      "expected_sha256": "0001f9fb64430a47afa2c9dfa94e8eba1b6423ab0d3c3b9ae2a7c43e406d3a5e",
+      "actual_sha256": "0001f9fb64430a47afa2c9dfa94e8eba1b6423ab0d3c3b9ae2a7c43e406d3a5e",
+      "match": true
+    },
+    {
+      "sequence": 33,
+      "relative_path": "data/yale_hq_scans/2/0033_17r.jpg",
+      "exists": true,
+      "expected_bytes": 2245151,
+      "actual_bytes": 2245151,
+      "expected_sha256": "9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f",
+      "actual_sha256": "9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f",
+      "match": true
+    },
+    {
+      "sequence": 34,
+      "relative_path": "data/yale_hq_scans/2/0034_17v.jpg",
+      "exists": true,
+      "expected_bytes": 2262791,
+      "actual_bytes": 2262791,
+      "expected_sha256": "61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec",
+      "actual_sha256": "61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec",
+      "match": true
+    },
+    {
+      "sequence": 35,
+      "relative_path": "data/yale_hq_scans/2/0035_18r.jpg",
+      "exists": true,
+      "expected_bytes": 2037604,
+      "actual_bytes": 2037604,
+      "expected_sha256": "01659aa94a6176b56c621f50c9cbe8c467836d6265a03d8edb1e97e236126e78",
+      "actual_sha256": "01659aa94a6176b56c621f50c9cbe8c467836d6265a03d8edb1e97e236126e78",
+      "match": true
+    },
+    {
+      "sequence": 36,
+      "relative_path": "data/yale_hq_scans/2/0036_18v.jpg",
+      "exists": true,
+      "expected_bytes": 2348011,
+      "actual_bytes": 2348011,
+      "expected_sha256": "a0f14ccc11f76d832def734e32e33dccea82222e0b198ac3d73c93e8d1fcc47f",
+      "actual_sha256": "a0f14ccc11f76d832def734e32e33dccea82222e0b198ac3d73c93e8d1fcc47f",
+      "match": true
+    },
+    {
+      "sequence": 37,
+      "relative_path": "data/yale_hq_scans/2/0037_19r.jpg",
+      "exists": true,
+      "expected_bytes": 2080239,
+      "actual_bytes": 2080239,
+      "expected_sha256": "c05e13bd154a93d77e2f601f11d9bd886fdf4524a49dbae0339b0bd864f7283c",
+      "actual_sha256": "c05e13bd154a93d77e2f601f11d9bd886fdf4524a49dbae0339b0bd864f7283c",
+      "match": true
+    },
+    {
+      "sequence": 38,
+      "relative_path": "data/yale_hq_scans/2/0038_19v.jpg",
+      "exists": true,
+      "expected_bytes": 2380623,
+      "actual_bytes": 2380623,
+      "expected_sha256": "7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3",
+      "actual_sha256": "7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3",
+      "match": true
+    },
+    {
+      "sequence": 39,
+      "relative_path": "data/yale_hq_scans/2/0039_20r.jpg",
+      "exists": true,
+      "expected_bytes": 2246148,
+      "actual_bytes": 2246148,
+      "expected_sha256": "2090ee8a14985ae1db08d465bb9229a7490620ac9f5c288118f3c37cc4c9398e",
+      "actual_sha256": "2090ee8a14985ae1db08d465bb9229a7490620ac9f5c288118f3c37cc4c9398e",
+      "match": true
+    },
+    {
+      "sequence": 40,
+      "relative_path": "data/yale_hq_scans/2/0040_20v.jpg",
+      "exists": true,
+      "expected_bytes": 2345948,
+      "actual_bytes": 2345948,
+      "expected_sha256": "472ca57a0abf61ab000cd26c6065b007073a95a0cf662ff4cc7d4158c94b52b7",
+      "actual_sha256": "472ca57a0abf61ab000cd26c6065b007073a95a0cf662ff4cc7d4158c94b52b7",
+      "match": true
+    },
+    {
+      "sequence": 41,
+      "relative_path": "data/yale_hq_scans/2/0041_21r.jpg",
+      "exists": true,
+      "expected_bytes": 2203478,
+      "actual_bytes": 2203478,
+      "expected_sha256": "0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88",
+      "actual_sha256": "0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88",
+      "match": true
+    },
+    {
+      "sequence": 42,
+      "relative_path": "data/yale_hq_scans/2/0042_21v.jpg",
+      "exists": true,
+      "expected_bytes": 2515369,
+      "actual_bytes": 2515369,
+      "expected_sha256": "f10bf37a910e69fb8ea1f34d74b79522b6c7d0bebed77fe13ce40240f792ab53",
+      "actual_sha256": "f10bf37a910e69fb8ea1f34d74b79522b6c7d0bebed77fe13ce40240f792ab53",
+      "match": true
+    },
+    {
+      "sequence": 43,
+      "relative_path": "data/yale_hq_scans/2/0043_22r.jpg",
+      "exists": true,
+      "expected_bytes": 2286657,
+      "actual_bytes": 2286657,
+      "expected_sha256": "7bfb7bf49850d6d8df30ebae5a1ea8adc7b27bb714cb0e24453724805bd72a3e",
+      "actual_sha256": "7bfb7bf49850d6d8df30ebae5a1ea8adc7b27bb714cb0e24453724805bd72a3e",
+      "match": true
+    },
+    {
+      "sequence": 44,
+      "relative_path": "data/yale_hq_scans/2/0044_22v.jpg",
+      "exists": true,
+      "expected_bytes": 2312904,
+      "actual_bytes": 2312904,
+      "expected_sha256": "0243271c28759a1a45350cd058270a12ea131860652cf1a3f7c14e47fe4ed6b2",
+      "actual_sha256": "0243271c28759a1a45350cd058270a12ea131860652cf1a3f7c14e47fe4ed6b2",
+      "match": true
+    },
+    {
+      "sequence": 45,
+      "relative_path": "data/yale_hq_scans/3/0045_23r.jpg",
+      "exists": true,
+      "expected_bytes": 2271913,
+      "actual_bytes": 2271913,
+      "expected_sha256": "accaf5bdc2bcbbb97171d591f8352258329671eb68d095f4fe3f556979ff2e07",
+      "actual_sha256": "accaf5bdc2bcbbb97171d591f8352258329671eb68d095f4fe3f556979ff2e07",
+      "match": true
+    },
+    {
+      "sequence": 46,
+      "relative_path": "data/yale_hq_scans/3/0046_23v.jpg",
+      "exists": true,
+      "expected_bytes": 2322426,
+      "actual_bytes": 2322426,
+      "expected_sha256": "4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3",
+      "actual_sha256": "4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3",
+      "match": true
+    },
+    {
+      "sequence": 47,
+      "relative_path": "data/yale_hq_scans/3/0047_24r.jpg",
+      "exists": true,
+      "expected_bytes": 2089220,
+      "actual_bytes": 2089220,
+      "expected_sha256": "3700fe396154e836b0acd3da86aef1d307f9d2da773208e476ee9db2e80de9e6",
+      "actual_sha256": "3700fe396154e836b0acd3da86aef1d307f9d2da773208e476ee9db2e80de9e6",
+      "match": true
+    },
+    {
+      "sequence": 48,
+      "relative_path": "data/yale_hq_scans/3/0048_24v.jpg",
+      "exists": true,
+      "expected_bytes": 2441968,
+      "actual_bytes": 2441968,
+      "expected_sha256": "0b814f58b56dff9351ae0d2f0db18a965fd6d67bb9f8302265b76f8ce5cd9f87",
+      "actual_sha256": "0b814f58b56dff9351ae0d2f0db18a965fd6d67bb9f8302265b76f8ce5cd9f87",
+      "match": true
+    },
+    {
+      "sequence": 49,
+      "relative_path": "data/yale_hq_scans/3/0049_25r.jpg",
+      "exists": true,
+      "expected_bytes": 2142361,
+      "actual_bytes": 2142361,
+      "expected_sha256": "1089c404ba05823109860af916e7dba2833cf99b98834c1534f3c66fcfaad1a4",
+      "actual_sha256": "1089c404ba05823109860af916e7dba2833cf99b98834c1534f3c66fcfaad1a4",
+      "match": true
+    },
+    {
+      "sequence": 50,
+      "relative_path": "data/yale_hq_scans/3/0050_25v.jpg",
+      "exists": true,
+      "expected_bytes": 2476763,
+      "actual_bytes": 2476763,
+      "expected_sha256": "0f135a9525a84dfccf038a2221c7178dfbfb3b1a1fe4b6d0f62aeb6e8b655d73",
+      "actual_sha256": "0f135a9525a84dfccf038a2221c7178dfbfb3b1a1fe4b6d0f62aeb6e8b655d73",
+      "match": true
+    },
+    {
+      "sequence": 51,
+      "relative_path": "data/yale_hq_scans/3/0051_26r.jpg",
+      "exists": true,
+      "expected_bytes": 2353112,
+      "actual_bytes": 2353112,
+      "expected_sha256": "a593efb741d70ec23ae25c3725dbf2c8e8b3f8d2392cea6eb06921ac5949a6db",
+      "actual_sha256": "a593efb741d70ec23ae25c3725dbf2c8e8b3f8d2392cea6eb06921ac5949a6db",
+      "match": true
+    },
+    {
+      "sequence": 52,
+      "relative_path": "data/yale_hq_scans/3/0052_26v.jpg",
+      "exists": true,
+      "expected_bytes": 2397269,
+      "actual_bytes": 2397269,
+      "expected_sha256": "3378e154f7ef8a45405cb008277aa1dc2229388c456cd3c66438bcca54d02c6b",
+      "actual_sha256": "3378e154f7ef8a45405cb008277aa1dc2229388c456cd3c66438bcca54d02c6b",
+      "match": true
+    },
+    {
+      "sequence": 53,
+      "relative_path": "data/yale_hq_scans/3/0053_27r.jpg",
+      "exists": true,
+      "expected_bytes": 2206347,
+      "actual_bytes": 2206347,
+      "expected_sha256": "978616e82efb3a452075ab98f7cde7351c373af0ecf668896c77af4f48abb9d5",
+      "actual_sha256": "978616e82efb3a452075ab98f7cde7351c373af0ecf668896c77af4f48abb9d5",
+      "match": true
+    },
+    {
+      "sequence": 54,
+      "relative_path": "data/yale_hq_scans/3/0054_27v.jpg",
+      "exists": true,
+      "expected_bytes": 2539302,
+      "actual_bytes": 2539302,
+      "expected_sha256": "a84bedb17fc768a2e3c5e335b158c86cbef92636d010ef5811fa90b68951d608",
+      "actual_sha256": "a84bedb17fc768a2e3c5e335b158c86cbef92636d010ef5811fa90b68951d608",
+      "match": true
+    },
+    {
+      "sequence": 55,
+      "relative_path": "data/yale_hq_scans/3/0055_28r.jpg",
+      "exists": true,
+      "expected_bytes": 2408951,
+      "actual_bytes": 2408951,
+      "expected_sha256": "b7c3fa283b7d2647e512dac6a665c5d37945e5aab8e21798292069ef26d67c04",
+      "actual_sha256": "b7c3fa283b7d2647e512dac6a665c5d37945e5aab8e21798292069ef26d67c04",
+      "match": true
+    },
+    {
+      "sequence": 56,
+      "relative_path": "data/yale_hq_scans/3/0056_28v.jpg",
+      "exists": true,
+      "expected_bytes": 2403851,
+      "actual_bytes": 2403851,
+      "expected_sha256": "2d325310e4ec264132340974cb71ec7f0cdb2f62820f97e644145dec72d84605",
+      "actual_sha256": "2d325310e4ec264132340974cb71ec7f0cdb2f62820f97e644145dec72d84605",
+      "match": true
+    },
+    {
+      "sequence": 57,
+      "relative_path": "data/yale_hq_scans/3/0057_29r.jpg",
+      "exists": true,
+      "expected_bytes": 2263746,
+      "actual_bytes": 2263746,
+      "expected_sha256": "ea8217a4cea6a3861e183a95e82d3e4ee3308aef8025bc2e9c9bce8a7a0c92d6",
+      "actual_sha256": "ea8217a4cea6a3861e183a95e82d3e4ee3308aef8025bc2e9c9bce8a7a0c92d6",
+      "match": true
+    },
+    {
+      "sequence": 58,
+      "relative_path": "data/yale_hq_scans/3/0058_29v.jpg",
+      "exists": true,
+      "expected_bytes": 2578857,
+      "actual_bytes": 2578857,
+      "expected_sha256": "1739f36ccfddb9121b2acec4faea712136aeeb4ad5fb2889ba5484549d791503",
+      "actual_sha256": "1739f36ccfddb9121b2acec4faea712136aeeb4ad5fb2889ba5484549d791503",
+      "match": true
+    },
+    {
+      "sequence": 59,
+      "relative_path": "data/yale_hq_scans/3/0059_30r.jpg",
+      "exists": true,
+      "expected_bytes": 2463510,
+      "actual_bytes": 2463510,
+      "expected_sha256": "df1a0812c502a83e77529d664416c5fec91f23353fd83f75f9d40c12fceb03b6",
+      "actual_sha256": "df1a0812c502a83e77529d664416c5fec91f23353fd83f75f9d40c12fceb03b6",
+      "match": true
+    },
+    {
+      "sequence": 60,
+      "relative_path": "data/yale_hq_scans/3/0060_30v.jpg",
+      "exists": true,
+      "expected_bytes": 2424515,
+      "actual_bytes": 2424515,
+      "expected_sha256": "d6eed32377c25b7c13b88e83cb6981a9d16b5dcbe3c433b7611c4e0105cb0035",
+      "actual_sha256": "d6eed32377c25b7c13b88e83cb6981a9d16b5dcbe3c433b7611c4e0105cb0035",
+      "match": true
+    },
+    {
+      "sequence": 61,
+      "relative_path": "data/yale_hq_scans/3/0061_31r.jpg",
+      "exists": true,
+      "expected_bytes": 2275542,
+      "actual_bytes": 2275542,
+      "expected_sha256": "3968b083d7346a556796d60e97a9ea66a4bb911fa1d085cfa046e9e0b37edc64",
+      "actual_sha256": "3968b083d7346a556796d60e97a9ea66a4bb911fa1d085cfa046e9e0b37edc64",
+      "match": true
+    },
+    {
+      "sequence": 62,
+      "relative_path": "data/yale_hq_scans/3/0062_31v.jpg",
+      "exists": true,
+      "expected_bytes": 2511446,
+      "actual_bytes": 2511446,
+      "expected_sha256": "666bd3a13edd196866270ff7d8034b8c65695139087cd4ae0da6fdfa31133921",
+      "actual_sha256": "666bd3a13edd196866270ff7d8034b8c65695139087cd4ae0da6fdfa31133921",
+      "match": true
+    },
+    {
+      "sequence": 63,
+      "relative_path": "data/yale_hq_scans/3/0063_32r.jpg",
+      "exists": true,
+      "expected_bytes": 2447039,
+      "actual_bytes": 2447039,
+      "expected_sha256": "fd6f925e17822b61b6339a768dff769f29b132ed6cb0ccb7efee616a1d4db26b",
+      "actual_sha256": "fd6f925e17822b61b6339a768dff769f29b132ed6cb0ccb7efee616a1d4db26b",
+      "match": true
+    },
+    {
+      "sequence": 64,
+      "relative_path": "data/yale_hq_scans/3/0064_32v.jpg",
+      "exists": true,
+      "expected_bytes": 2403521,
+      "actual_bytes": 2403521,
+      "expected_sha256": "e664856322574dcfb8bcf225a9d880ce28ab6d65bf6236e47624ae05c7d3764b",
+      "actual_sha256": "e664856322574dcfb8bcf225a9d880ce28ab6d65bf6236e47624ae05c7d3764b",
+      "match": true
+    },
+    {
+      "sequence": 65,
+      "relative_path": "data/yale_hq_scans/3/0065_33r.jpg",
+      "exists": true,
+      "expected_bytes": 2386980,
+      "actual_bytes": 2386980,
+      "expected_sha256": "28e6d9f02b9ca96b85275b7c6dd6e94453d3a2f5c6038d9966933d0229da9e74",
+      "actual_sha256": "28e6d9f02b9ca96b85275b7c6dd6e94453d3a2f5c6038d9966933d0229da9e74",
+      "match": true
+    },
+    {
+      "sequence": 66,
+      "relative_path": "data/yale_hq_scans/3/0066_33v.jpg",
+      "exists": true,
+      "expected_bytes": 2481281,
+      "actual_bytes": 2481281,
+      "expected_sha256": "41b148c40e9cf73c63044c5415d3c2bbeebffc20153a36762f35e8134da42941",
+      "actual_sha256": "41b148c40e9cf73c63044c5415d3c2bbeebffc20153a36762f35e8134da42941",
+      "match": true
+    },
+    {
+      "sequence": 67,
+      "relative_path": "data/yale_hq_scans/4/0067_34r.jpg",
+      "exists": true,
+      "expected_bytes": 2546157,
+      "actual_bytes": 2546157,
+      "expected_sha256": "4108828356258d68d2b53ef29d484f0648c269ecc4984781248e7803ba51e353",
+      "actual_sha256": "4108828356258d68d2b53ef29d484f0648c269ecc4984781248e7803ba51e353",
+      "match": true
+    },
+    {
+      "sequence": 68,
+      "relative_path": "data/yale_hq_scans/4/0068_34v.jpg",
+      "exists": true,
+      "expected_bytes": 2447734,
+      "actual_bytes": 2447734,
+      "expected_sha256": "2f68183982075a405f7e2cc11ea06b76b263f80f20f01083279e7f03dcb4f78a",
+      "actual_sha256": "2f68183982075a405f7e2cc11ea06b76b263f80f20f01083279e7f03dcb4f78a",
+      "match": true
+    },
+    {
+      "sequence": 69,
+      "relative_path": "data/yale_hq_scans/4/0069_35r.jpg",
+      "exists": true,
+      "expected_bytes": 2358222,
+      "actual_bytes": 2358222,
+      "expected_sha256": "d190cd19497ea5e59b702d3abaf8513b3b706b79f16cd24947b5615efa455d71",
+      "actual_sha256": "d190cd19497ea5e59b702d3abaf8513b3b706b79f16cd24947b5615efa455d71",
+      "match": true
+    },
+    {
+      "sequence": 70,
+      "relative_path": "data/yale_hq_scans/4/0070_35v.jpg",
+      "exists": true,
+      "expected_bytes": 2487494,
+      "actual_bytes": 2487494,
+      "expected_sha256": "564412e99b04406f51afe2c8f9ab20320518b3e71b91deee48fb16ee1ad3ffbd",
+      "actual_sha256": "564412e99b04406f51afe2c8f9ab20320518b3e71b91deee48fb16ee1ad3ffbd",
+      "match": true
+    },
+    {
+      "sequence": 71,
+      "relative_path": "data/yale_hq_scans/4/0071_36r.jpg",
+      "exists": true,
+      "expected_bytes": 2284575,
+      "actual_bytes": 2284575,
+      "expected_sha256": "807e9b5aa1ea72b90c39f71c5ae1cfa4aa0c303b4dd889340c2814f1cff62da2",
+      "actual_sha256": "807e9b5aa1ea72b90c39f71c5ae1cfa4aa0c303b4dd889340c2814f1cff62da2",
+      "match": true
+    },
+    {
+      "sequence": 72,
+      "relative_path": "data/yale_hq_scans/4/0072_36v.jpg",
+      "exists": true,
+      "expected_bytes": 2498755,
+      "actual_bytes": 2498755,
+      "expected_sha256": "fbbf69e740ae7a922f7e4f6cff836004827df15ab917eb6bcc43430a5c89edc2",
+      "actual_sha256": "fbbf69e740ae7a922f7e4f6cff836004827df15ab917eb6bcc43430a5c89edc2",
+      "match": true
+    },
+    {
+      "sequence": 73,
+      "relative_path": "data/yale_hq_scans/4/0073_37r.jpg",
+      "exists": true,
+      "expected_bytes": 2414081,
+      "actual_bytes": 2414081,
+      "expected_sha256": "4daf7373cfed96fcd9e3d6cb6a9a50cf413e27cc93cf507fee17bee93d8f6d28",
+      "actual_sha256": "4daf7373cfed96fcd9e3d6cb6a9a50cf413e27cc93cf507fee17bee93d8f6d28",
+      "match": true
+    },
+    {
+      "sequence": 74,
+      "relative_path": "data/yale_hq_scans/4/0074_37v.jpg",
+      "exists": true,
+      "expected_bytes": 2282211,
+      "actual_bytes": 2282211,
+      "expected_sha256": "56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649",
+      "actual_sha256": "56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649",
+      "match": true
+    },
+    {
+      "sequence": 75,
+      "relative_path": "data/yale_hq_scans/4/0075_38r.jpg",
+      "exists": true,
+      "expected_bytes": 2447400,
+      "actual_bytes": 2447400,
+      "expected_sha256": "9e4ea17ac6b9b184dae0a423bea8feab3eab48eb203dddcf786b3201e6e76b2a",
+      "actual_sha256": "9e4ea17ac6b9b184dae0a423bea8feab3eab48eb203dddcf786b3201e6e76b2a",
+      "match": true
+    },
+    {
+      "sequence": 76,
+      "relative_path": "data/yale_hq_scans/4/0076_38v.jpg",
+      "exists": true,
+      "expected_bytes": 2385887,
+      "actual_bytes": 2385887,
+      "expected_sha256": "4a24360ad6ad267cbc3f8cc3b50a5b84e332b8d2bb655e85683e8b5de2768161",
+      "actual_sha256": "4a24360ad6ad267cbc3f8cc3b50a5b84e332b8d2bb655e85683e8b5de2768161",
+      "match": true
+    },
+    {
+      "sequence": 77,
+      "relative_path": "data/yale_hq_scans/4/0077_39r.jpg",
+      "exists": true,
+      "expected_bytes": 2275064,
+      "actual_bytes": 2275064,
+      "expected_sha256": "c86b9bc0182e1385136465d92ce9c43f31320bfab55d7b2e87e1ea81a7330bf0",
+      "actual_sha256": "c86b9bc0182e1385136465d92ce9c43f31320bfab55d7b2e87e1ea81a7330bf0",
+      "match": true
+    },
+    {
+      "sequence": 78,
+      "relative_path": "data/yale_hq_scans/4/0078_39v.jpg",
+      "exists": true,
+      "expected_bytes": 2542588,
+      "actual_bytes": 2542588,
+      "expected_sha256": "13cafc785fd69c7471bc670480becc6338cf20682e1d196c2ef14f03abee8586",
+      "actual_sha256": "13cafc785fd69c7471bc670480becc6338cf20682e1d196c2ef14f03abee8586",
+      "match": true
+    },
+    {
+      "sequence": 79,
+      "relative_path": "data/yale_hq_scans/4/0079_40r.jpg",
+      "exists": true,
+      "expected_bytes": 2320825,
+      "actual_bytes": 2320825,
+      "expected_sha256": "540cff9e3a031c5de5ba9d5c7e388cd50980b0d225a1f89b97bda2c6f0de60b7",
+      "actual_sha256": "540cff9e3a031c5de5ba9d5c7e388cd50980b0d225a1f89b97bda2c6f0de60b7",
+      "match": true
+    },
+    {
+      "sequence": 80,
+      "relative_path": "data/yale_hq_scans/4/0080_40v.jpg",
+      "exists": true,
+      "expected_bytes": 2500919,
+      "actual_bytes": 2500919,
+      "expected_sha256": "bce0c42319b096126ad9fe0558ecfb8a61335867cbd1869e0865eaacf54c1087",
+      "actual_sha256": "bce0c42319b096126ad9fe0558ecfb8a61335867cbd1869e0865eaacf54c1087",
+      "match": true
+    },
+    {
+      "sequence": 81,
+      "relative_path": "data/yale_hq_scans/4/0081_41r.jpg",
+      "exists": true,
+      "expected_bytes": 2320992,
+      "actual_bytes": 2320992,
+      "expected_sha256": "7631b874dbb3e2f48ade864485a0210cb207f2c7878181e458582beba86877ba",
+      "actual_sha256": "7631b874dbb3e2f48ade864485a0210cb207f2c7878181e458582beba86877ba",
+      "match": true
+    },
+    {
+      "sequence": 82,
+      "relative_path": "data/yale_hq_scans/4/0082_41v.jpg",
+      "exists": true,
+      "expected_bytes": 2452899,
+      "actual_bytes": 2452899,
+      "expected_sha256": "bc753d5f30cfcbd5ad6479bb16205652d55b94da16fcbba1d78574674e3743ea",
+      "actual_sha256": "bc753d5f30cfcbd5ad6479bb16205652d55b94da16fcbba1d78574674e3743ea",
+      "match": true
+    },
+    {
+      "sequence": 83,
+      "relative_path": "data/yale_hq_scans/4/0083_42r.jpg",
+      "exists": true,
+      "expected_bytes": 2304066,
+      "actual_bytes": 2304066,
+      "expected_sha256": "5e86508e3ecdb425b791fdcba0305f51cdf9a78182d082055a3da0b55012660a",
+      "actual_sha256": "5e86508e3ecdb425b791fdcba0305f51cdf9a78182d082055a3da0b55012660a",
+      "match": true
+    },
+    {
+      "sequence": 84,
+      "relative_path": "data/yale_hq_scans/4/0084_42v.jpg",
+      "exists": true,
+      "expected_bytes": 2420565,
+      "actual_bytes": 2420565,
+      "expected_sha256": "bd2a7f2bbaf4c789d51f239248d81c151f4fc1c9f5ab6f51c148646a9d301f66",
+      "actual_sha256": "bd2a7f2bbaf4c789d51f239248d81c151f4fc1c9f5ab6f51c148646a9d301f66",
+      "match": true
+    },
+    {
+      "sequence": 85,
+      "relative_path": "data/yale_hq_scans/4/0085_43r.jpg",
+      "exists": true,
+      "expected_bytes": 2546968,
+      "actual_bytes": 2546968,
+      "expected_sha256": "cf92565c8f400c987e59359d77c297fc52afc2f6996bd60e5421cbc1074a4bd2",
+      "actual_sha256": "cf92565c8f400c987e59359d77c297fc52afc2f6996bd60e5421cbc1074a4bd2",
+      "match": true
+    },
+    {
+      "sequence": 86,
+      "relative_path": "data/yale_hq_scans/4/0086_43v.jpg",
+      "exists": true,
+      "expected_bytes": 2374588,
+      "actual_bytes": 2374588,
+      "expected_sha256": "13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133",
+      "actual_sha256": "13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133",
+      "match": true
+    },
+    {
+      "sequence": 87,
+      "relative_path": "data/yale_hq_scans/4/0087_44r.jpg",
+      "exists": true,
+      "expected_bytes": 2401007,
+      "actual_bytes": 2401007,
+      "expected_sha256": "f9cd059bb34057bf9635a1d1443cafd3b358cdb64ec0c5e1ff73bfc091da0eb3",
+      "actual_sha256": "f9cd059bb34057bf9635a1d1443cafd3b358cdb64ec0c5e1ff73bfc091da0eb3",
+      "match": true
+    },
+    {
+      "sequence": 88,
+      "relative_path": "data/yale_hq_scans/4/0088_44v.jpg",
+      "exists": true,
+      "expected_bytes": 2364267,
+      "actual_bytes": 2364267,
+      "expected_sha256": "dd57f4055f9c933913cf550f76b2786cdeeeeea74fd9641c55f148903e4cd3db",
+      "actual_sha256": "dd57f4055f9c933913cf550f76b2786cdeeeeea74fd9641c55f148903e4cd3db",
+      "match": true
+    },
+    {
+      "sequence": 89,
+      "relative_path": "data/yale_hq_scans/5/0089_45r.jpg",
+      "exists": true,
+      "expected_bytes": 2317232,
+      "actual_bytes": 2317232,
+      "expected_sha256": "32afa9bda4154db2e3236081b0d7603dfc34bf11b1844a5084881b764dafe4f8",
+      "actual_sha256": "32afa9bda4154db2e3236081b0d7603dfc34bf11b1844a5084881b764dafe4f8",
+      "match": true
+    },
+    {
+      "sequence": 90,
+      "relative_path": "data/yale_hq_scans/5/0090_45v.jpg",
+      "exists": true,
+      "expected_bytes": 2595090,
+      "actual_bytes": 2595090,
+      "expected_sha256": "f49fcf1b8abb327483cdf272104a0dc628f31394a413908c866eb0094bd2d224",
+      "actual_sha256": "f49fcf1b8abb327483cdf272104a0dc628f31394a413908c866eb0094bd2d224",
+      "match": true
+    },
+    {
+      "sequence": 91,
+      "relative_path": "data/yale_hq_scans/5/0091_46r.jpg",
+      "exists": true,
+      "expected_bytes": 2390615,
+      "actual_bytes": 2390615,
+      "expected_sha256": "bc11de34e89d67f2b61c63473c3273256aa45d3d6beac4195c95625c07422740",
+      "actual_sha256": "bc11de34e89d67f2b61c63473c3273256aa45d3d6beac4195c95625c07422740",
+      "match": true
+    },
+    {
+      "sequence": 92,
+      "relative_path": "data/yale_hq_scans/5/0092_46v.jpg",
+      "exists": true,
+      "expected_bytes": 2616301,
+      "actual_bytes": 2616301,
+      "expected_sha256": "bee511bff7d50d8ef83a70b598e1c2d8733cd1e6ad72b070f7fbd4e2171cb0ec",
+      "actual_sha256": "bee511bff7d50d8ef83a70b598e1c2d8733cd1e6ad72b070f7fbd4e2171cb0ec",
+      "match": true
+    },
+    {
+      "sequence": 93,
+      "relative_path": "data/yale_hq_scans/5/0093_47r.jpg",
+      "exists": true,
+      "expected_bytes": 2357654,
+      "actual_bytes": 2357654,
+      "expected_sha256": "5a0a7f262b1fbccb44cd7e6ae69097476b92ff38f4124a50532a79e4f2619033",
+      "actual_sha256": "5a0a7f262b1fbccb44cd7e6ae69097476b92ff38f4124a50532a79e4f2619033",
+      "match": true
+    },
+    {
+      "sequence": 94,
+      "relative_path": "data/yale_hq_scans/5/0094_47v.jpg",
+      "exists": true,
+      "expected_bytes": 2364698,
+      "actual_bytes": 2364698,
+      "expected_sha256": "bcdae68e9bf1f172ad100b598b3189a2eff85cb7b67a151f7bb4a44f1f56f94e",
+      "actual_sha256": "bcdae68e9bf1f172ad100b598b3189a2eff85cb7b67a151f7bb4a44f1f56f94e",
+      "match": true
+    },
+    {
+      "sequence": 95,
+      "relative_path": "data/yale_hq_scans/5/0095_48r.jpg",
+      "exists": true,
+      "expected_bytes": 2448267,
+      "actual_bytes": 2448267,
+      "expected_sha256": "f34ccbd6fbb72b5a469ca16b1b07ded862be76e01e0dcf9133940ffdd10c672e",
+      "actual_sha256": "f34ccbd6fbb72b5a469ca16b1b07ded862be76e01e0dcf9133940ffdd10c672e",
+      "match": true
+    },
+    {
+      "sequence": 96,
+      "relative_path": "data/yale_hq_scans/5/0096_48v.jpg",
+      "exists": true,
+      "expected_bytes": 2430994,
+      "actual_bytes": 2430994,
+      "expected_sha256": "c0ecc85912878c5c27ad64d560dd088e703ea95e68a87aaecb112a4aabcbe516",
+      "actual_sha256": "c0ecc85912878c5c27ad64d560dd088e703ea95e68a87aaecb112a4aabcbe516",
+      "match": true
+    },
+    {
+      "sequence": 97,
+      "relative_path": "data/yale_hq_scans/5/0097_49r.jpg",
+      "exists": true,
+      "expected_bytes": 2364265,
+      "actual_bytes": 2364265,
+      "expected_sha256": "c125a5ffc5121e31e07dbaebd4515d6375e2f71feff312690dc943e62e0d8d56",
+      "actual_sha256": "c125a5ffc5121e31e07dbaebd4515d6375e2f71feff312690dc943e62e0d8d56",
+      "match": true
+    },
+    {
+      "sequence": 98,
+      "relative_path": "data/yale_hq_scans/5/0098_49v.jpg",
+      "exists": true,
+      "expected_bytes": 2665282,
+      "actual_bytes": 2665282,
+      "expected_sha256": "3c03e0e8b3d3e75f93ba7a7619a029b7ffbe33d7243f32222ad59ac7555dfd96",
+      "actual_sha256": "3c03e0e8b3d3e75f93ba7a7619a029b7ffbe33d7243f32222ad59ac7555dfd96",
+      "match": true
+    },
+    {
+      "sequence": 99,
+      "relative_path": "data/yale_hq_scans/5/0099_50r.jpg",
+      "exists": true,
+      "expected_bytes": 2469159,
+      "actual_bytes": 2469159,
+      "expected_sha256": "a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d",
+      "actual_sha256": "a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d",
+      "match": true
+    },
+    {
+      "sequence": 100,
+      "relative_path": "data/yale_hq_scans/5/0100_50v.jpg",
+      "exists": true,
+      "expected_bytes": 2504671,
+      "actual_bytes": 2504671,
+      "expected_sha256": "bbd4d60e069704fdfe91394ac07387022341c6cf08eb7d6d2160a34ea5b7677d",
+      "actual_sha256": "bbd4d60e069704fdfe91394ac07387022341c6cf08eb7d6d2160a34ea5b7677d",
+      "match": true
+    },
+    {
+      "sequence": 101,
+      "relative_path": "data/yale_hq_scans/5/0101_51r.jpg",
+      "exists": true,
+      "expected_bytes": 2464029,
+      "actual_bytes": 2464029,
+      "expected_sha256": "d3335f9fe15abe0d4473e881f411f658fe7a4db70fcb03c13dad8a2f49cf6cc1",
+      "actual_sha256": "d3335f9fe15abe0d4473e881f411f658fe7a4db70fcb03c13dad8a2f49cf6cc1",
+      "match": true
+    },
+    {
+      "sequence": 102,
+      "relative_path": "data/yale_hq_scans/5/0102_51v.jpg",
+      "exists": true,
+      "expected_bytes": 2392238,
+      "actual_bytes": 2392238,
+      "expected_sha256": "7e794abb1dfddce9f2cee013a7f1aaec880b86e884ae17298354863b0108734e",
+      "actual_sha256": "7e794abb1dfddce9f2cee013a7f1aaec880b86e884ae17298354863b0108734e",
+      "match": true
+    },
+    {
+      "sequence": 103,
+      "relative_path": "data/yale_hq_scans/5/0103_52r.jpg",
+      "exists": true,
+      "expected_bytes": 2368581,
+      "actual_bytes": 2368581,
+      "expected_sha256": "002748147666ab2ec1d81be186248a7a9b58e001a8b61a53498b8d7f49193206",
+      "actual_sha256": "002748147666ab2ec1d81be186248a7a9b58e001a8b61a53498b8d7f49193206",
+      "match": true
+    },
+    {
+      "sequence": 104,
+      "relative_path": "data/yale_hq_scans/5/0104_52v.jpg",
+      "exists": true,
+      "expected_bytes": 2556232,
+      "actual_bytes": 2556232,
+      "expected_sha256": "9792c5070fa339a220781439d0b8864d48b2e2dc071cd051b24e501d565ddb39",
+      "actual_sha256": "9792c5070fa339a220781439d0b8864d48b2e2dc071cd051b24e501d565ddb39",
+      "match": true
+    },
+    {
+      "sequence": 105,
+      "relative_path": "data/yale_hq_scans/5/0105_53r.jpg",
+      "exists": true,
+      "expected_bytes": 2480129,
+      "actual_bytes": 2480129,
+      "expected_sha256": "a415de024d9cf57a8a607c764d9a8d038803dcaabda8a77f7325645fa0c73f89",
+      "actual_sha256": "a415de024d9cf57a8a607c764d9a8d038803dcaabda8a77f7325645fa0c73f89",
+      "match": true
+    },
+    {
+      "sequence": 106,
+      "relative_path": "data/yale_hq_scans/5/0106_53v.jpg",
+      "exists": true,
+      "expected_bytes": 2491136,
+      "actual_bytes": 2491136,
+      "expected_sha256": "717481f74b5552c603f38ec3b2ae4de2f447320e18d3aaf368a8ccd211e1df11",
+      "actual_sha256": "717481f74b5552c603f38ec3b2ae4de2f447320e18d3aaf368a8ccd211e1df11",
+      "match": true
+    },
+    {
+      "sequence": 107,
+      "relative_path": "data/yale_hq_scans/5/0107_54r.jpg",
+      "exists": true,
+      "expected_bytes": 1712121,
+      "actual_bytes": 1712121,
+      "expected_sha256": "471b393530cf2f80116e8bcfb9712b43e991db175b919e594a1587cca21f2eaa",
+      "actual_sha256": "471b393530cf2f80116e8bcfb9712b43e991db175b919e594a1587cca21f2eaa",
+      "match": true
+    },
+    {
+      "sequence": 108,
+      "relative_path": "data/yale_hq_scans/5/0108_54v.jpg",
+      "exists": true,
+      "expected_bytes": 2612218,
+      "actual_bytes": 2612218,
+      "expected_sha256": "97c02cfada6ad1c2450bdac0e345cddc4d4788570813b84ac65ccdcd360dbc13",
+      "actual_sha256": "97c02cfada6ad1c2450bdac0e345cddc4d4788570813b84ac65ccdcd360dbc13",
+      "match": true
+    },
+    {
+      "sequence": 109,
+      "relative_path": "data/yale_hq_scans/5/0109_55r.jpg",
+      "exists": true,
+      "expected_bytes": 2429358,
+      "actual_bytes": 2429358,
+      "expected_sha256": "24e4b496a7e198a6bcd8d98044112d45418c157f2f2a54fdf997e01de6d53126",
+      "actual_sha256": "24e4b496a7e198a6bcd8d98044112d45418c157f2f2a54fdf997e01de6d53126",
+      "match": true
+    },
+    {
+      "sequence": 110,
+      "relative_path": "data/yale_hq_scans/5/0110_55v.jpg",
+      "exists": true,
+      "expected_bytes": 2472922,
+      "actual_bytes": 2472922,
+      "expected_sha256": "0e9b1dac025cad189bc7258f41fb8cafc6fcff70f9c4e5bb4f85c9bb79ad5a80",
+      "actual_sha256": "0e9b1dac025cad189bc7258f41fb8cafc6fcff70f9c4e5bb4f85c9bb79ad5a80",
+      "match": true
+    },
+    {
+      "sequence": 111,
+      "relative_path": "data/yale_hq_scans/6/0111_56r.jpg",
+      "exists": true,
+      "expected_bytes": 2375075,
+      "actual_bytes": 2375075,
+      "expected_sha256": "d81272aa14671b1b6672fe7556c15ac177c734685d9ef7448237a2cc08dc899d",
+      "actual_sha256": "d81272aa14671b1b6672fe7556c15ac177c734685d9ef7448237a2cc08dc899d",
+      "match": true
+    },
+    {
+      "sequence": 112,
+      "relative_path": "data/yale_hq_scans/6/0112_56v.jpg",
+      "exists": true,
+      "expected_bytes": 2431108,
+      "actual_bytes": 2431108,
+      "expected_sha256": "d92ba733bf53dc49e8d81df2d1873d5f36c52f98cf67292ea43e66a844a61cc9",
+      "actual_sha256": "d92ba733bf53dc49e8d81df2d1873d5f36c52f98cf67292ea43e66a844a61cc9",
+      "match": true
+    },
+    {
+      "sequence": 113,
+      "relative_path": "data/yale_hq_scans/6/0113_57r.jpg",
+      "exists": true,
+      "expected_bytes": 2514436,
+      "actual_bytes": 2514436,
+      "expected_sha256": "473727b2ea1dd000a4a15eaa57302a48c410d4f6e670abdd607cd7c7461ff98c",
+      "actual_sha256": "473727b2ea1dd000a4a15eaa57302a48c410d4f6e670abdd607cd7c7461ff98c",
+      "match": true
+    },
+    {
+      "sequence": 114,
+      "relative_path": "data/yale_hq_scans/6/0114_57v.jpg",
+      "exists": true,
+      "expected_bytes": 2470040,
+      "actual_bytes": 2470040,
+      "expected_sha256": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+      "actual_sha256": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+      "match": true
+    },
+    {
+      "sequence": 115,
+      "relative_path": "data/yale_hq_scans/6/0115_58r.jpg",
+      "exists": true,
+      "expected_bytes": 2379242,
+      "actual_bytes": 2379242,
+      "expected_sha256": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+      "actual_sha256": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+      "match": true
+    },
+    {
+      "sequence": 116,
+      "relative_path": "data/yale_hq_scans/6/0116_58v.jpg",
+      "exists": true,
+      "expected_bytes": 2342333,
+      "actual_bytes": 2342333,
+      "expected_sha256": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+      "actual_sha256": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+      "match": true
+    },
+    {
+      "sequence": 117,
+      "relative_path": "data/yale_hq_scans/6/0117_65r.jpg",
+      "exists": true,
+      "expected_bytes": 2278211,
+      "actual_bytes": 2278211,
+      "expected_sha256": "dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f",
+      "actual_sha256": "dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f",
+      "match": true
+    },
+    {
+      "sequence": 118,
+      "relative_path": "data/yale_hq_scans/6/0118_65v.jpg",
+      "exists": true,
+      "expected_bytes": 2659154,
+      "actual_bytes": 2659154,
+      "expected_sha256": "d3ebd8bfcf12a0a98f9ecc96ee345e82c7cc15d5c786c93c63ccd2f923ea1714",
+      "actual_sha256": "d3ebd8bfcf12a0a98f9ecc96ee345e82c7cc15d5c786c93c63ccd2f923ea1714",
+      "match": true
+    },
+    {
+      "sequence": 119,
+      "relative_path": "data/yale_hq_scans/6/0119_66r.jpg",
+      "exists": true,
+      "expected_bytes": 2438243,
+      "actual_bytes": 2438243,
+      "expected_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+      "actual_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+      "match": true
+    },
+    {
+      "sequence": 120,
+      "relative_path": "data/yale_hq_scans/6/0120_66v.jpg",
+      "exists": true,
+      "expected_bytes": 2777718,
+      "actual_bytes": 2777718,
+      "expected_sha256": "8304c6ba3605207c67f4f843974e60e947b423f21255a06656d6af3055fa53ce",
+      "actual_sha256": "8304c6ba3605207c67f4f843974e60e947b423f21255a06656d6af3055fa53ce",
+      "match": true
+    },
+    {
+      "sequence": 121,
+      "relative_path": "data/yale_hq_scans/6/0121_67r.jpg",
+      "exists": true,
+      "expected_bytes": 4023408,
+      "actual_bytes": 4023408,
+      "expected_sha256": "0518312a566ee713a46c9887d8b8b9d7141d14095e360661789c1dad9b5c0d1c",
+      "actual_sha256": "0518312a566ee713a46c9887d8b8b9d7141d14095e360661789c1dad9b5c0d1c",
+      "match": true
+    },
+    {
+      "sequence": 122,
+      "relative_path": "data/yale_hq_scans/6/0122_67v.jpg",
+      "exists": true,
+      "expected_bytes": 4446668,
+      "actual_bytes": 4446668,
+      "expected_sha256": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+      "actual_sha256": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+      "match": true
+    },
+    {
+      "sequence": 123,
+      "relative_path": "data/yale_hq_scans/6/0123_68r.jpg",
+      "exists": true,
+      "expected_bytes": 7286292,
+      "actual_bytes": 7286292,
+      "expected_sha256": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+      "actual_sha256": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+      "match": true
+    },
+    {
+      "sequence": 124,
+      "relative_path": "data/yale_hq_scans/6/0124_68v.jpg",
+      "exists": true,
+      "expected_bytes": 6296138,
+      "actual_bytes": 6296138,
+      "expected_sha256": "06d33798cd4f901771b9869078d3f29f7e7ef5a490a9abc6dd09f3a3adec867f",
+      "actual_sha256": "06d33798cd4f901771b9869078d3f29f7e7ef5a490a9abc6dd09f3a3adec867f",
+      "match": true
+    },
+    {
+      "sequence": 125,
+      "relative_path": "data/yale_hq_scans/6/0125_69r.jpg",
+      "exists": true,
+      "expected_bytes": 2310730,
+      "actual_bytes": 2310730,
+      "expected_sha256": "b830e74480830c0d5e8f7b56025473e051743f9ec50685b6fe316ecd493f0f01",
+      "actual_sha256": "b830e74480830c0d5e8f7b56025473e051743f9ec50685b6fe316ecd493f0f01",
+      "match": true
+    },
+    {
+      "sequence": 126,
+      "relative_path": "data/yale_hq_scans/8/0126_69v and 70r.jpg",
+      "exists": true,
+      "expected_bytes": 7504623,
+      "actual_bytes": 7504623,
+      "expected_sha256": "709419c3c6861c216b1746261884e08a38f1b5a2b052ad129e78cdd73697b5e9",
+      "actual_sha256": "709419c3c6861c216b1746261884e08a38f1b5a2b052ad129e78cdd73697b5e9",
+      "match": true
+    },
+    {
+      "sequence": 127,
+      "relative_path": "data/yale_hq_scans/8/0127_70v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 3460553,
+      "actual_bytes": 3460553,
+      "expected_sha256": "062ff6a9f14d0c16eb12dc8f6dc480771b7c19746ebdb20302b998e66181ccea",
+      "actual_sha256": "062ff6a9f14d0c16eb12dc8f6dc480771b7c19746ebdb20302b998e66181ccea",
+      "match": true
+    },
+    {
+      "sequence": 128,
+      "relative_path": "data/yale_hq_scans/8/0128_70v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 2452475,
+      "actual_bytes": 2452475,
+      "expected_sha256": "c8f24b6be5451aba49eb793784c43cb7fc8341dca8a58ff43fc1eebf4877b60c",
+      "actual_sha256": "c8f24b6be5451aba49eb793784c43cb7fc8341dca8a58ff43fc1eebf4877b60c",
+      "match": true
+    },
+    {
+      "sequence": 129,
+      "relative_path": "data/yale_hq_scans/8/0129_71r.jpg",
+      "exists": true,
+      "expected_bytes": 2497713,
+      "actual_bytes": 2497713,
+      "expected_sha256": "6405841a75a8fa24dd9e5c93ad090ee56bf26c77757f3b1634487e27b509e61b",
+      "actual_sha256": "6405841a75a8fa24dd9e5c93ad090ee56bf26c77757f3b1634487e27b509e61b",
+      "match": true
+    },
+    {
+      "sequence": 130,
+      "relative_path": "data/yale_hq_scans/8/0130_71v and 72r.jpg",
+      "exists": true,
+      "expected_bytes": 4057262,
+      "actual_bytes": 4057262,
+      "expected_sha256": "45f7caf4b58744fdcd4928887661b56a135538a5a40a24fea6ca6c5239898269",
+      "actual_sha256": "45f7caf4b58744fdcd4928887661b56a135538a5a40a24fea6ca6c5239898269",
+      "match": true
+    },
+    {
+      "sequence": 131,
+      "relative_path": "data/yale_hq_scans/8/0131_72v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 5185933,
+      "actual_bytes": 5185933,
+      "expected_sha256": "2552b2eafb7948d182e52ec49e96a5d92a774917924aea594fb1ac3af3bfcdc5",
+      "actual_sha256": "2552b2eafb7948d182e52ec49e96a5d92a774917924aea594fb1ac3af3bfcdc5",
+      "match": true
+    },
+    {
+      "sequence": 132,
+      "relative_path": "data/yale_hq_scans/8/0132_72v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 2656012,
+      "actual_bytes": 2656012,
+      "expected_sha256": "c0ac0dbc3e4b4a6eb2b8edf26dc762a7f9bf26ac9c385fa6bdc770725622b1e7",
+      "actual_sha256": "c0ac0dbc3e4b4a6eb2b8edf26dc762a7f9bf26ac9c385fa6bdc770725622b1e7",
+      "match": true
+    },
+    {
+      "sequence": 133,
+      "relative_path": "data/yale_hq_scans/8/0133_73r.jpg",
+      "exists": true,
+      "expected_bytes": 2417083,
+      "actual_bytes": 2417083,
+      "expected_sha256": "5bc8e07dbd61cc1f218cfc4449cd527be118aa7884878ec4c8e568e9c2d89bad",
+      "actual_sha256": "5bc8e07dbd61cc1f218cfc4449cd527be118aa7884878ec4c8e568e9c2d89bad",
+      "match": true
+    },
+    {
+      "sequence": 134,
+      "relative_path": "data/yale_hq_scans/8/0134_73v.jpg",
+      "exists": true,
+      "expected_bytes": 2509279,
+      "actual_bytes": 2509279,
+      "expected_sha256": "4227e5261bb5986e605ddb4f58fa1526640955d778c06916a1c34734bb431141",
+      "actual_sha256": "4227e5261bb5986e605ddb4f58fa1526640955d778c06916a1c34734bb431141",
+      "match": true
+    },
+    {
+      "sequence": 135,
+      "relative_path": "data/yale_hq_scans/8/0135_75r.jpg",
+      "exists": true,
+      "expected_bytes": 2481871,
+      "actual_bytes": 2481871,
+      "expected_sha256": "6fd33917722a97ef0c93f905885963332645c1a1c81f60f03a165b12007a7fc3",
+      "actual_sha256": "6fd33917722a97ef0c93f905885963332645c1a1c81f60f03a165b12007a7fc3",
+      "match": true
+    },
+    {
+      "sequence": 136,
+      "relative_path": "data/yale_hq_scans/8/0136_75v.jpg",
+      "exists": true,
+      "expected_bytes": 2379752,
+      "actual_bytes": 2379752,
+      "expected_sha256": "654edf15a65d1a2bb0d7bb4995f8f6fba1625d5eed847c9b6969d1c44e385a23",
+      "actual_sha256": "654edf15a65d1a2bb0d7bb4995f8f6fba1625d5eed847c9b6969d1c44e385a23",
+      "match": true
+    },
+    {
+      "sequence": 137,
+      "relative_path": "data/yale_hq_scans/8/0137_76r.jpg",
+      "exists": true,
+      "expected_bytes": 2495259,
+      "actual_bytes": 2495259,
+      "expected_sha256": "39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68",
+      "actual_sha256": "39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68",
+      "match": true
+    },
+    {
+      "sequence": 138,
+      "relative_path": "data/yale_hq_scans/8/0138_76v.jpg",
+      "exists": true,
+      "expected_bytes": 2437408,
+      "actual_bytes": 2437408,
+      "expected_sha256": "affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e",
+      "actual_sha256": "affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e",
+      "match": true
+    },
+    {
+      "sequence": 139,
+      "relative_path": "data/yale_hq_scans/8/0139_77r.jpg",
+      "exists": true,
+      "expected_bytes": 2502790,
+      "actual_bytes": 2502790,
+      "expected_sha256": "9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad",
+      "actual_sha256": "9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad",
+      "match": true
+    },
+    {
+      "sequence": 140,
+      "relative_path": "data/yale_hq_scans/8/0140_77v.jpg",
+      "exists": true,
+      "expected_bytes": 2444513,
+      "actual_bytes": 2444513,
+      "expected_sha256": "e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2",
+      "actual_sha256": "e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2",
+      "match": true
+    },
+    {
+      "sequence": 141,
+      "relative_path": "data/yale_hq_scans/8/0141_78r.jpg",
+      "exists": true,
+      "expected_bytes": 2440887,
+      "actual_bytes": 2440887,
+      "expected_sha256": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893",
+      "actual_sha256": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893",
+      "match": true
+    },
+    {
+      "sequence": 142,
+      "relative_path": "data/yale_hq_scans/8/0142_78v.jpg",
+      "exists": true,
+      "expected_bytes": 2477344,
+      "actual_bytes": 2477344,
+      "expected_sha256": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+      "actual_sha256": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+      "match": true
+    },
+    {
+      "sequence": 143,
+      "relative_path": "data/yale_hq_scans/9/0143_79r.jpg",
+      "exists": true,
+      "expected_bytes": 2480261,
+      "actual_bytes": 2480261,
+      "expected_sha256": "a0f51d21267270b55ac69fc947a4a3443e2a32fc263b162c51a27ad9745eb979",
+      "actual_sha256": "a0f51d21267270b55ac69fc947a4a3443e2a32fc263b162c51a27ad9745eb979",
+      "match": true
+    },
+    {
+      "sequence": 144,
+      "relative_path": "data/yale_hq_scans/9/0144_79v.jpg",
+      "exists": true,
+      "expected_bytes": 2349308,
+      "actual_bytes": 2349308,
+      "expected_sha256": "81d647bbc752211d5bf671f7791c59fc8dceaa60e20e7f7a075319b44ed879c1",
+      "actual_sha256": "81d647bbc752211d5bf671f7791c59fc8dceaa60e20e7f7a075319b44ed879c1",
+      "match": true
+    },
+    {
+      "sequence": 145,
+      "relative_path": "data/yale_hq_scans/9/0145_80r.jpg",
+      "exists": true,
+      "expected_bytes": 2458868,
+      "actual_bytes": 2458868,
+      "expected_sha256": "81223a0b0aa0a24fe821cf62a9bdf4ac504f222ab3cfcb89fcedd7946bceada0",
+      "actual_sha256": "81223a0b0aa0a24fe821cf62a9bdf4ac504f222ab3cfcb89fcedd7946bceada0",
+      "match": true
+    },
+    {
+      "sequence": 146,
+      "relative_path": "data/yale_hq_scans/9/0146_80v.jpg",
+      "exists": true,
+      "expected_bytes": 2565980,
+      "actual_bytes": 2565980,
+      "expected_sha256": "29c94fba8ec872eb71faab93fc4a02e09cd4ef31d1b9001bd44f011d141cfb0b",
+      "actual_sha256": "29c94fba8ec872eb71faab93fc4a02e09cd4ef31d1b9001bd44f011d141cfb0b",
+      "match": true
+    },
+    {
+      "sequence": 147,
+      "relative_path": "data/yale_hq_scans/9/0147_81r.jpg",
+      "exists": true,
+      "expected_bytes": 2489043,
+      "actual_bytes": 2489043,
+      "expected_sha256": "e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe",
+      "actual_sha256": "e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe",
+      "match": true
+    },
+    {
+      "sequence": 148,
+      "relative_path": "data/yale_hq_scans/9/0148_81v.jpg",
+      "exists": true,
+      "expected_bytes": 2314288,
+      "actual_bytes": 2314288,
+      "expected_sha256": "bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf",
+      "actual_sha256": "bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf",
+      "match": true
+    },
+    {
+      "sequence": 149,
+      "relative_path": "data/yale_hq_scans/9/0149_82r.jpg",
+      "exists": true,
+      "expected_bytes": 2361120,
+      "actual_bytes": 2361120,
+      "expected_sha256": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+      "actual_sha256": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+      "match": true
+    },
+    {
+      "sequence": 150,
+      "relative_path": "data/yale_hq_scans/9/0150_82v.jpg",
+      "exists": true,
+      "expected_bytes": 2476549,
+      "actual_bytes": 2476549,
+      "expected_sha256": "4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142",
+      "actual_sha256": "4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142",
+      "match": true
+    },
+    {
+      "sequence": 151,
+      "relative_path": "data/yale_hq_scans/9/0151_83r.jpg",
+      "exists": true,
+      "expected_bytes": 2534965,
+      "actual_bytes": 2534965,
+      "expected_sha256": "dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729",
+      "actual_sha256": "dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729",
+      "match": true
+    },
+    {
+      "sequence": 152,
+      "relative_path": "data/yale_hq_scans/9/0152_83v.jpg",
+      "exists": true,
+      "expected_bytes": 2577846,
+      "actual_bytes": 2577846,
+      "expected_sha256": "dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9",
+      "actual_sha256": "dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9",
+      "match": true
+    },
+    {
+      "sequence": 153,
+      "relative_path": "data/yale_hq_scans/9/0153_84r.jpg",
+      "exists": true,
+      "expected_bytes": 2430526,
+      "actual_bytes": 2430526,
+      "expected_sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe",
+      "actual_sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe",
+      "match": true
+    },
+    {
+      "sequence": 154,
+      "relative_path": "data/yale_hq_scans/9/0154_84v.jpg",
+      "exists": true,
+      "expected_bytes": 2581927,
+      "actual_bytes": 2581927,
+      "expected_sha256": "e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f",
+      "actual_sha256": "e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f",
+      "match": true
+    },
+    {
+      "sequence": 155,
+      "relative_path": "data/yale_hq_scans/9/0155_85r _part_ _part of 85-86 foldout_.jpg",
+      "exists": true,
+      "expected_bytes": 2400324,
+      "actual_bytes": 2400324,
+      "expected_sha256": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+      "actual_sha256": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+      "match": true
+    },
+    {
+      "sequence": 156,
+      "relative_path": "data/yale_hq_scans/9/0156_85r _part_ 86v _part_ _part of 85-86 foldout_.jpg",
+      "exists": true,
+      "expected_bytes": 6679215,
+      "actual_bytes": 6679215,
+      "expected_sha256": "dde619e85e35601b9206051389873f6cb092a17f04a8fcd02b32fe3961ea37ce",
+      "actual_sha256": "dde619e85e35601b9206051389873f6cb092a17f04a8fcd02b32fe3961ea37ce",
+      "match": true
+    },
+    {
+      "sequence": 157,
+      "relative_path": "data/yale_hq_scans/9/0157_86v _part_ _part of 85-86 foldout_.jpg",
+      "exists": true,
+      "expected_bytes": 4051973,
+      "actual_bytes": 4051973,
+      "expected_sha256": "4c5f7642e7da2be07242968faa92a2d0bb1cb88e8589d30f5d2acbfc3cc7e0be",
+      "actual_sha256": "4c5f7642e7da2be07242968faa92a2d0bb1cb88e8589d30f5d2acbfc3cc7e0be",
+      "match": true
+    },
+    {
+      "sequence": 158,
+      "relative_path": "data/yale_hq_scans/10/0158_85v and 86r _foldout_.jpg",
+      "exists": true,
+      "expected_bytes": 12711585,
+      "actual_bytes": 12711585,
+      "expected_sha256": "4b08afeee514691b0a511099ca299aed544d6fd1782b7dee8df163dfc06354ed",
+      "actual_sha256": "4b08afeee514691b0a511099ca299aed544d6fd1782b7dee8df163dfc06354ed",
+      "match": true
+    },
+    {
+      "sequence": 159,
+      "relative_path": "data/yale_hq_scans/10/0159_87r.jpg",
+      "exists": true,
+      "expected_bytes": 2318631,
+      "actual_bytes": 2318631,
+      "expected_sha256": "eb9c7020f670d4d9070a4d37130db9e250b9b4ecf33ab34ffb0596512fa53a6c",
+      "actual_sha256": "eb9c7020f670d4d9070a4d37130db9e250b9b4ecf33ab34ffb0596512fa53a6c",
+      "match": true
+    },
+    {
+      "sequence": 160,
+      "relative_path": "data/yale_hq_scans/10/0160_87v.jpg",
+      "exists": true,
+      "expected_bytes": 2515219,
+      "actual_bytes": 2515219,
+      "expected_sha256": "3bac9e01c7bd848fa947b4877d1166f8e9f38822c7bd209e9574a88f6cb181c0",
+      "actual_sha256": "3bac9e01c7bd848fa947b4877d1166f8e9f38822c7bd209e9574a88f6cb181c0",
+      "match": true
+    },
+    {
+      "sequence": 161,
+      "relative_path": "data/yale_hq_scans/10/0161_88r.jpg",
+      "exists": true,
+      "expected_bytes": 2165186,
+      "actual_bytes": 2165186,
+      "expected_sha256": "a1d21ccad0df430b47f3b3df2829bbefb8c4d1644cb70310e6d1de4b01c20013",
+      "actual_sha256": "a1d21ccad0df430b47f3b3df2829bbefb8c4d1644cb70310e6d1de4b01c20013",
+      "match": true
+    },
+    {
+      "sequence": 162,
+      "relative_path": "data/yale_hq_scans/10/0162_88v and 89r.jpg",
+      "exists": true,
+      "expected_bytes": 7549178,
+      "actual_bytes": 7549178,
+      "expected_sha256": "3b553c70d0c068cb39a276d391127165c5d9d868ec08e7f5eb2e73b32bb95d1e",
+      "actual_sha256": "3b553c70d0c068cb39a276d391127165c5d9d868ec08e7f5eb2e73b32bb95d1e",
+      "match": true
+    },
+    {
+      "sequence": 163,
+      "relative_path": "data/yale_hq_scans/10/0163_89v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 3354371,
+      "actual_bytes": 3354371,
+      "expected_sha256": "b6b0dd8ba7cd316f3b09a8b156d1eed0eb36ad8ec9086b975969f4f8f7dd5406",
+      "actual_sha256": "b6b0dd8ba7cd316f3b09a8b156d1eed0eb36ad8ec9086b975969f4f8f7dd5406",
+      "match": true
+    },
+    {
+      "sequence": 164,
+      "relative_path": "data/yale_hq_scans/10/0164_89v _part_ and 90r.jpg",
+      "exists": true,
+      "expected_bytes": 6065709,
+      "actual_bytes": 6065709,
+      "expected_sha256": "6aaa777945f288a8ba206921709292eaaf4ea972f9a0bb59cdf3040aaed3e15a",
+      "actual_sha256": "6aaa777945f288a8ba206921709292eaaf4ea972f9a0bb59cdf3040aaed3e15a",
+      "match": true
+    },
+    {
+      "sequence": 165,
+      "relative_path": "data/yale_hq_scans/10/0165_90r.jpg",
+      "exists": true,
+      "expected_bytes": 2321881,
+      "actual_bytes": 2321881,
+      "expected_sha256": "f315895bc403e9b78bdda4d207789ed7b5a38654a47715e4571fdfc140c619c6",
+      "actual_sha256": "f315895bc403e9b78bdda4d207789ed7b5a38654a47715e4571fdfc140c619c6",
+      "match": true
+    },
+    {
+      "sequence": 166,
+      "relative_path": "data/yale_hq_scans/10/0166_90v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 2325893,
+      "actual_bytes": 2325893,
+      "expected_sha256": "4fe01cc0f7c1424c62cdd0fbd83092ab928493b908970b05eb112ab9d91a7793",
+      "actual_sha256": "4fe01cc0f7c1424c62cdd0fbd83092ab928493b908970b05eb112ab9d91a7793",
+      "match": true
+    },
+    {
+      "sequence": 167,
+      "relative_path": "data/yale_hq_scans/10/0167_93r.jpg",
+      "exists": true,
+      "expected_bytes": 2295952,
+      "actual_bytes": 2295952,
+      "expected_sha256": "e8ab4d7dcf7d758e2f0e05f9579ef5366a846c273f309ae603616a5e74bbec3a",
+      "actual_sha256": "e8ab4d7dcf7d758e2f0e05f9579ef5366a846c273f309ae603616a5e74bbec3a",
+      "match": true
+    },
+    {
+      "sequence": 168,
+      "relative_path": "data/yale_hq_scans/10/0168_93v.jpg",
+      "exists": true,
+      "expected_bytes": 2346206,
+      "actual_bytes": 2346206,
+      "expected_sha256": "ed9a4f5e3c4be33611749ce05c303aa7553c5cf3523882d87d05c7aac86e0e32",
+      "actual_sha256": "ed9a4f5e3c4be33611749ce05c303aa7553c5cf3523882d87d05c7aac86e0e32",
+      "match": true
+    },
+    {
+      "sequence": 169,
+      "relative_path": "data/yale_hq_scans/10/0169_94r.jpg",
+      "exists": true,
+      "expected_bytes": 2256276,
+      "actual_bytes": 2256276,
+      "expected_sha256": "ad33592ad7f29a6e9fc6b9e45444286231f06a903d95b54d1195b17cfdca417b",
+      "actual_sha256": "ad33592ad7f29a6e9fc6b9e45444286231f06a903d95b54d1195b17cfdca417b",
+      "match": true
+    },
+    {
+      "sequence": 170,
+      "relative_path": "data/yale_hq_scans/10/0170_94v and 95r.jpg",
+      "exists": true,
+      "expected_bytes": 6490884,
+      "actual_bytes": 6490884,
+      "expected_sha256": "04405b1d121a3c73571bad7f5b887b8cf3776a829ee6482e8a82ca095918071d",
+      "actual_sha256": "04405b1d121a3c73571bad7f5b887b8cf3776a829ee6482e8a82ca095918071d",
+      "match": true
+    },
+    {
+      "sequence": 171,
+      "relative_path": "data/yale_hq_scans/10/0171_95v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 2366068,
+      "actual_bytes": 2366068,
+      "expected_sha256": "9cdbb63ffcc2b43314bf5b9d812e59f1c0f0ce17c811270bc977a1ae71e7a960",
+      "actual_sha256": "9cdbb63ffcc2b43314bf5b9d812e59f1c0f0ce17c811270bc977a1ae71e7a960",
+      "match": true
+    },
+    {
+      "sequence": 172,
+      "relative_path": "data/yale_hq_scans/10/0172_95v.jpg",
+      "exists": true,
+      "expected_bytes": 2409920,
+      "actual_bytes": 2409920,
+      "expected_sha256": "e9f7a4ceb162f393086b1f0be4d5c11edf4d72b8e8ea3420fdb13d8ff58efb51",
+      "actual_sha256": "e9f7a4ceb162f393086b1f0be4d5c11edf4d72b8e8ea3420fdb13d8ff58efb51",
+      "match": true
+    },
+    {
+      "sequence": 173,
+      "relative_path": "data/yale_hq_scans/10/0173_96r.jpg",
+      "exists": true,
+      "expected_bytes": 2288765,
+      "actual_bytes": 2288765,
+      "expected_sha256": "3feb9d44f6498e7dc085dd9f3eee9a5f29db941d2d401accd54948d5fae3b613",
+      "actual_sha256": "3feb9d44f6498e7dc085dd9f3eee9a5f29db941d2d401accd54948d5fae3b613",
+      "match": true
+    },
+    {
+      "sequence": 174,
+      "relative_path": "data/yale_hq_scans/10/0174_96v.jpg",
+      "exists": true,
+      "expected_bytes": 2428082,
+      "actual_bytes": 2428082,
+      "expected_sha256": "7aad14a896b53ddc78f3c7239d358389f215654c26fd9db7dfc43329439c1f15",
+      "actual_sha256": "7aad14a896b53ddc78f3c7239d358389f215654c26fd9db7dfc43329439c1f15",
+      "match": true
+    },
+    {
+      "sequence": 175,
+      "relative_path": "data/yale_hq_scans/10/0175_99r.jpg",
+      "exists": true,
+      "expected_bytes": 2251701,
+      "actual_bytes": 2251701,
+      "expected_sha256": "f17eba5496a1b1d92f589c33ee9be256a379ec8d2bba3da1ebe2ff5a2e3e2901",
+      "actual_sha256": "f17eba5496a1b1d92f589c33ee9be256a379ec8d2bba3da1ebe2ff5a2e3e2901",
+      "match": true
+    },
+    {
+      "sequence": 176,
+      "relative_path": "data/yale_hq_scans/10/0176_99v.jpg",
+      "exists": true,
+      "expected_bytes": 2543597,
+      "actual_bytes": 2543597,
+      "expected_sha256": "111f6dfc34b8ecb9230cb5a0d144afef4cbd788048ddda2f440108941c91d5e5",
+      "actual_sha256": "111f6dfc34b8ecb9230cb5a0d144afef4cbd788048ddda2f440108941c91d5e5",
+      "match": true
+    },
+    {
+      "sequence": 177,
+      "relative_path": "data/yale_hq_scans/10/0177_100r.jpg",
+      "exists": true,
+      "expected_bytes": 2278638,
+      "actual_bytes": 2278638,
+      "expected_sha256": "6dcf72a0d7eac14da2232987c9cc1521e6d70c9f0f92d3eb39b55fc075520429",
+      "actual_sha256": "6dcf72a0d7eac14da2232987c9cc1521e6d70c9f0f92d3eb39b55fc075520429",
+      "match": true
+    },
+    {
+      "sequence": 178,
+      "relative_path": "data/yale_hq_scans/10/0178_100v and 101r.jpg",
+      "exists": true,
+      "expected_bytes": 6794523,
+      "actual_bytes": 6794523,
+      "expected_sha256": "72637b9770f40f7a8ff6b96a551e64775e88994ae69bafec0b43d48974364c33",
+      "actual_sha256": "72637b9770f40f7a8ff6b96a551e64775e88994ae69bafec0b43d48974364c33",
+      "match": true
+    },
+    {
+      "sequence": 179,
+      "relative_path": "data/yale_hq_scans/10/0179_101v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 2418725,
+      "actual_bytes": 2418725,
+      "expected_sha256": "1122f1b13afdf1509402334816f95e5e9baa2b6c94aa9e347b04aa2e4e54f36b",
+      "actual_sha256": "1122f1b13afdf1509402334816f95e5e9baa2b6c94aa9e347b04aa2e4e54f36b",
+      "match": true
+    },
+    {
+      "sequence": 180,
+      "relative_path": "data/yale_hq_scans/10/0180_101v _part_ and 102r.jpg",
+      "exists": true,
+      "expected_bytes": 7307954,
+      "actual_bytes": 7307954,
+      "expected_sha256": "30fd529fc6bf8999d5be48024ee6a1676af55e8d66dc0a4f77993fe2565e9d94",
+      "actual_sha256": "30fd529fc6bf8999d5be48024ee6a1676af55e8d66dc0a4f77993fe2565e9d94",
+      "match": true
+    },
+    {
+      "sequence": 181,
+      "relative_path": "data/yale_hq_scans/10/0181_102v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 2576704,
+      "actual_bytes": 2576704,
+      "expected_sha256": "8cdb1030d805b968932146124915cb0d86f7abf853167ffec028b59599820fad",
+      "actual_sha256": "8cdb1030d805b968932146124915cb0d86f7abf853167ffec028b59599820fad",
+      "match": true
+    },
+    {
+      "sequence": 182,
+      "relative_path": "data/yale_hq_scans/10/0182_102v _part_.jpg",
+      "exists": true,
+      "expected_bytes": 2321583,
+      "actual_bytes": 2321583,
+      "expected_sha256": "e3ed770ad77b1c1127b8e60b2ee2d9e226ab4089d4861b85dbf22299925397ce",
+      "actual_sha256": "e3ed770ad77b1c1127b8e60b2ee2d9e226ab4089d4861b85dbf22299925397ce",
+      "match": true
+    },
+    {
+      "sequence": 183,
+      "relative_path": "data/yale_hq_scans/10/0183_103r.jpg",
+      "exists": true,
+      "expected_bytes": 2339024,
+      "actual_bytes": 2339024,
+      "expected_sha256": "28a65644ebf9a16dc41c073e6535117d924765fae6af474dbd1e3fe2b167beda",
+      "actual_sha256": "28a65644ebf9a16dc41c073e6535117d924765fae6af474dbd1e3fe2b167beda",
+      "match": true
+    },
+    {
+      "sequence": 184,
+      "relative_path": "data/yale_hq_scans/10/0184_103v.jpg",
+      "exists": true,
+      "expected_bytes": 2431962,
+      "actual_bytes": 2431962,
+      "expected_sha256": "dd2444928b8dd5d1e60fbd58e04e4be38ed877f9d491058a7c6b779ceb18a75b",
+      "actual_sha256": "dd2444928b8dd5d1e60fbd58e04e4be38ed877f9d491058a7c6b779ceb18a75b",
+      "match": true
+    },
+    {
+      "sequence": 185,
+      "relative_path": "data/yale_hq_scans/10/0185_104r.jpg",
+      "exists": true,
+      "expected_bytes": 2488386,
+      "actual_bytes": 2488386,
+      "expected_sha256": "2ee5f2a32ed2e242d60dcb34398c9b8be6af0341872a476e3905f1314ebe716f",
+      "actual_sha256": "2ee5f2a32ed2e242d60dcb34398c9b8be6af0341872a476e3905f1314ebe716f",
+      "match": true
+    },
+    {
+      "sequence": 186,
+      "relative_path": "data/yale_hq_scans/10/0186_104v.jpg",
+      "exists": true,
+      "expected_bytes": 2292513,
+      "actual_bytes": 2292513,
+      "expected_sha256": "c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd",
+      "actual_sha256": "c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd",
+      "match": true
+    },
+    {
+      "sequence": 187,
+      "relative_path": "data/yale_hq_scans/10/0187_105r.jpg",
+      "exists": true,
+      "expected_bytes": 2394628,
+      "actual_bytes": 2394628,
+      "expected_sha256": "0401750e6d83ed74cd4fea79f99c2aba5e2c8dcd90ed0f2641be81c7b722e82f",
+      "actual_sha256": "0401750e6d83ed74cd4fea79f99c2aba5e2c8dcd90ed0f2641be81c7b722e82f",
+      "match": true
+    },
+    {
+      "sequence": 188,
+      "relative_path": "data/yale_hq_scans/11/0188_105v.jpg",
+      "exists": true,
+      "expected_bytes": 2156614,
+      "actual_bytes": 2156614,
+      "expected_sha256": "540787c3d0aa7a13c1cc620fe222a13d0b2409eaa69e19de56d2544cfdf3c678",
+      "actual_sha256": "540787c3d0aa7a13c1cc620fe222a13d0b2409eaa69e19de56d2544cfdf3c678",
+      "match": true
+    },
+    {
+      "sequence": 189,
+      "relative_path": "data/yale_hq_scans/11/0189_106r.jpg",
+      "exists": true,
+      "expected_bytes": 2345469,
+      "actual_bytes": 2345469,
+      "expected_sha256": "1aad6bd53b227df51ba6f9b19812558a8b4f4313f97dd1a8b272ee4c60fefb31",
+      "actual_sha256": "1aad6bd53b227df51ba6f9b19812558a8b4f4313f97dd1a8b272ee4c60fefb31",
+      "match": true
+    },
+    {
+      "sequence": 190,
+      "relative_path": "data/yale_hq_scans/11/0190_106v.jpg",
+      "exists": true,
+      "expected_bytes": 2135119,
+      "actual_bytes": 2135119,
+      "expected_sha256": "41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5",
+      "actual_sha256": "41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5",
+      "match": true
+    },
+    {
+      "sequence": 191,
+      "relative_path": "data/yale_hq_scans/11/0191_107r.jpg",
+      "exists": true,
+      "expected_bytes": 2177003,
+      "actual_bytes": 2177003,
+      "expected_sha256": "eb97d7b784be55eaa92781031d3ccefc3e37f9eda41314a9ed996e711a041a58",
+      "actual_sha256": "eb97d7b784be55eaa92781031d3ccefc3e37f9eda41314a9ed996e711a041a58",
+      "match": true
+    },
+    {
+      "sequence": 192,
+      "relative_path": "data/yale_hq_scans/11/0192_107v.jpg",
+      "exists": true,
+      "expected_bytes": 2351206,
+      "actual_bytes": 2351206,
+      "expected_sha256": "46316d4cb82f2ccdd1c8d414ee99ad60f72d6154c28b888d00c484245d75704c",
+      "actual_sha256": "46316d4cb82f2ccdd1c8d414ee99ad60f72d6154c28b888d00c484245d75704c",
+      "match": true
+    },
+    {
+      "sequence": 193,
+      "relative_path": "data/yale_hq_scans/11/0193_108r.jpg",
+      "exists": true,
+      "expected_bytes": 2425346,
+      "actual_bytes": 2425346,
+      "expected_sha256": "afad28189500567259ef2041cd1c591644bf6d6c86ac6a39cd1c09503693ad76",
+      "actual_sha256": "afad28189500567259ef2041cd1c591644bf6d6c86ac6a39cd1c09503693ad76",
+      "match": true
+    },
+    {
+      "sequence": 194,
+      "relative_path": "data/yale_hq_scans/11/0194_108v.jpg",
+      "exists": true,
+      "expected_bytes": 2336859,
+      "actual_bytes": 2336859,
+      "expected_sha256": "df3fce237ad489c5fcdc1c8dab2a5b21b7c338bc3b88ca588cc79434f9499a7b",
+      "actual_sha256": "df3fce237ad489c5fcdc1c8dab2a5b21b7c338bc3b88ca588cc79434f9499a7b",
+      "match": true
+    },
+    {
+      "sequence": 195,
+      "relative_path": "data/yale_hq_scans/11/0195_111r.jpg",
+      "exists": true,
+      "expected_bytes": 2325154,
+      "actual_bytes": 2325154,
+      "expected_sha256": "12ea5325dcdc68d0ea9480bb369d1d95b4dc3accd1ff0d9b84beea8827cfdf31",
+      "actual_sha256": "12ea5325dcdc68d0ea9480bb369d1d95b4dc3accd1ff0d9b84beea8827cfdf31",
+      "match": true
+    },
+    {
+      "sequence": 196,
+      "relative_path": "data/yale_hq_scans/11/0196_111v.jpg",
+      "exists": true,
+      "expected_bytes": 2405510,
+      "actual_bytes": 2405510,
+      "expected_sha256": "00729a36de336f57b387fc364441057b31b4bc51f6c5e915352d9185121cbcbf",
+      "actual_sha256": "00729a36de336f57b387fc364441057b31b4bc51f6c5e915352d9185121cbcbf",
+      "match": true
+    },
+    {
+      "sequence": 197,
+      "relative_path": "data/yale_hq_scans/11/0197_112r.jpg",
+      "exists": true,
+      "expected_bytes": 2264657,
+      "actual_bytes": 2264657,
+      "expected_sha256": "f59b3420ff3fdbe6f360c12993304a12b11acdef1a2978784efcd77541c0d9b3",
+      "actual_sha256": "f59b3420ff3fdbe6f360c12993304a12b11acdef1a2978784efcd77541c0d9b3",
+      "match": true
+    },
+    {
+      "sequence": 198,
+      "relative_path": "data/yale_hq_scans/11/0198_112v.jpg",
+      "exists": true,
+      "expected_bytes": 2028100,
+      "actual_bytes": 2028100,
+      "expected_sha256": "c421f574928c767cada83c01295370c078b66234610d262e286079a7a5a4cc1a",
+      "actual_sha256": "c421f574928c767cada83c01295370c078b66234610d262e286079a7a5a4cc1a",
+      "match": true
+    },
+    {
+      "sequence": 199,
+      "relative_path": "data/yale_hq_scans/11/0199_113r.jpg",
+      "exists": true,
+      "expected_bytes": 2092549,
+      "actual_bytes": 2092549,
+      "expected_sha256": "ad748f9012b174be520b7ac837fdadf913e49a696323920ca655ecf5474afb5c",
+      "actual_sha256": "ad748f9012b174be520b7ac837fdadf913e49a696323920ca655ecf5474afb5c",
+      "match": true
+    },
+    {
+      "sequence": 200,
+      "relative_path": "data/yale_hq_scans/11/0200_113v.jpg",
+      "exists": true,
+      "expected_bytes": 2246955,
+      "actual_bytes": 2246955,
+      "expected_sha256": "d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3",
+      "actual_sha256": "d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3",
+      "match": true
+    },
+    {
+      "sequence": 201,
+      "relative_path": "data/yale_hq_scans/11/0201_114r.jpg",
+      "exists": true,
+      "expected_bytes": 2163029,
+      "actual_bytes": 2163029,
+      "expected_sha256": "fc76cfcb2e6f8911b3928c59772c9c4eca7854dd2a260bec81972f78b883aa37",
+      "actual_sha256": "fc76cfcb2e6f8911b3928c59772c9c4eca7854dd2a260bec81972f78b883aa37",
+      "match": true
+    },
+    {
+      "sequence": 202,
+      "relative_path": "data/yale_hq_scans/11/0202_114v.jpg",
+      "exists": true,
+      "expected_bytes": 2302398,
+      "actual_bytes": 2302398,
+      "expected_sha256": "159d08488392d651c1818e825d3defce83187ad6997610d179dbfe76be30e4e3",
+      "actual_sha256": "159d08488392d651c1818e825d3defce83187ad6997610d179dbfe76be30e4e3",
+      "match": true
+    },
+    {
+      "sequence": 203,
+      "relative_path": "data/yale_hq_scans/11/0203_115r.jpg",
+      "exists": true,
+      "expected_bytes": 2060756,
+      "actual_bytes": 2060756,
+      "expected_sha256": "6de34408de10afa401805534c691341824f0660e054d836f9be5e8620cb17668",
+      "actual_sha256": "6de34408de10afa401805534c691341824f0660e054d836f9be5e8620cb17668",
+      "match": true
+    },
+    {
+      "sequence": 204,
+      "relative_path": "data/yale_hq_scans/11/0204_115v.jpg",
+      "exists": true,
+      "expected_bytes": 2213260,
+      "actual_bytes": 2213260,
+      "expected_sha256": "5700486404459fe1abfc11f6347aa0171bd651e39bcf71d594beecfb170ed8a3",
+      "actual_sha256": "5700486404459fe1abfc11f6347aa0171bd651e39bcf71d594beecfb170ed8a3",
+      "match": true
+    },
+    {
+      "sequence": 205,
+      "relative_path": "data/yale_hq_scans/11/0205_116r.jpg",
+      "exists": true,
+      "expected_bytes": 2132637,
+      "actual_bytes": 2132637,
+      "expected_sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c",
+      "actual_sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c",
+      "match": true
+    },
+    {
+      "sequence": 206,
+      "relative_path": "data/yale_hq_scans/11/0206_116v.jpg",
+      "exists": true,
+      "expected_bytes": 1994539,
+      "actual_bytes": 1994539,
+      "expected_sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+      "actual_sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+      "match": true
+    }
+  ],
+  "record_validation": [
+    {
+      "record_id": "CANVAS-0001-Front_cover",
+      "path": "atlas/records/0001_Front_cover.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0002-Inside_front_cover",
+      "path": "atlas/records/0002_Inside_front_cover.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0003-1r",
+      "path": "atlas/records/0003_1r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0004-1v",
+      "path": "atlas/records/0004_1v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0005-2r",
+      "path": "atlas/records/0005_2r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0006-2v",
+      "path": "atlas/records/0006_2v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0007-3r",
+      "path": "atlas/records/0007_3r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0008-3v",
+      "path": "atlas/records/0008_3v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0009-4r",
+      "path": "atlas/records/0009_4r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0010-4v",
+      "path": "atlas/records/0010_4v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0011-5r",
+      "path": "atlas/records/0011_5r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0012-5v",
+      "path": "atlas/records/0012_5v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0013-6r",
+      "path": "atlas/records/0013_6r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0014-6v",
+      "path": "atlas/records/0014_6v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0015-7r",
+      "path": "atlas/records/0015_7r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0016-7v",
+      "path": "atlas/records/0016_7v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0017-8r",
+      "path": "atlas/records/0017_8r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0018-8v",
+      "path": "atlas/records/0018_8v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0019-9r",
+      "path": "atlas/records/0019_9r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0020-9v",
+      "path": "atlas/records/0020_9v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0021-10r",
+      "path": "atlas/records/0021_10r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0022-10v",
+      "path": "atlas/records/0022_10v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0023-11r",
+      "path": "atlas/records/0023_11r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0024-11v",
+      "path": "atlas/records/0024_11v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0025-13r",
+      "path": "atlas/records/0025_13r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0026-13v",
+      "path": "atlas/records/0026_13v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0027-14r",
+      "path": "atlas/records/0027_14r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0028-14v",
+      "path": "atlas/records/0028_14v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0029-15r",
+      "path": "atlas/records/0029_15r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0030-15v",
+      "path": "atlas/records/0030_15v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0031-16r",
+      "path": "atlas/records/0031_16r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0032-16v",
+      "path": "atlas/records/0032_16v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0033-17r",
+      "path": "atlas/records/0033_17r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0034-17v",
+      "path": "atlas/records/0034_17v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0035-18r",
+      "path": "atlas/records/0035_18r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0036-18v",
+      "path": "atlas/records/0036_18v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0037-19r",
+      "path": "atlas/records/0037_19r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0038-19v",
+      "path": "atlas/records/0038_19v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0039-20r",
+      "path": "atlas/records/0039_20r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0040-20v",
+      "path": "atlas/records/0040_20v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0041-21r",
+      "path": "atlas/records/0041_21r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0042-21v",
+      "path": "atlas/records/0042_21v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0043-22r",
+      "path": "atlas/records/0043_22r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0044-22v",
+      "path": "atlas/records/0044_22v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0045-23r",
+      "path": "atlas/records/0045_23r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0046-23v",
+      "path": "atlas/records/0046_23v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0047-24r",
+      "path": "atlas/records/0047_24r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0048-24v",
+      "path": "atlas/records/0048_24v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0049-25r",
+      "path": "atlas/records/0049_25r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0050-25v",
+      "path": "atlas/records/0050_25v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0051-26r",
+      "path": "atlas/records/0051_26r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0052-26v",
+      "path": "atlas/records/0052_26v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0053-27r",
+      "path": "atlas/records/0053_27r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0054-27v",
+      "path": "atlas/records/0054_27v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0055-28r",
+      "path": "atlas/records/0055_28r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0056-28v",
+      "path": "atlas/records/0056_28v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0057-29r",
+      "path": "atlas/records/0057_29r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0058-29v",
+      "path": "atlas/records/0058_29v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0059-30r",
+      "path": "atlas/records/0059_30r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0060-30v",
+      "path": "atlas/records/0060_30v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0061-31r",
+      "path": "atlas/records/0061_31r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0062-31v",
+      "path": "atlas/records/0062_31v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0063-32r",
+      "path": "atlas/records/0063_32r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0064-32v",
+      "path": "atlas/records/0064_32v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0065-33r",
+      "path": "atlas/records/0065_33r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0066-33v",
+      "path": "atlas/records/0066_33v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0067-34r",
+      "path": "atlas/records/0067_34r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0068-34v",
+      "path": "atlas/records/0068_34v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0069-35r",
+      "path": "atlas/records/0069_35r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0070-35v",
+      "path": "atlas/records/0070_35v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0071-36r",
+      "path": "atlas/records/0071_36r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0072-36v",
+      "path": "atlas/records/0072_36v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0073-37r",
+      "path": "atlas/records/0073_37r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0074-37v",
+      "path": "atlas/records/0074_37v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0075-38r",
+      "path": "atlas/records/0075_38r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0076-38v",
+      "path": "atlas/records/0076_38v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0077-39r",
+      "path": "atlas/records/0077_39r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0078-39v",
+      "path": "atlas/records/0078_39v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0079-40r",
+      "path": "atlas/records/0079_40r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0080-40v",
+      "path": "atlas/records/0080_40v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0081-41r",
+      "path": "atlas/records/0081_41r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0082-41v",
+      "path": "atlas/records/0082_41v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0083-42r",
+      "path": "atlas/records/0083_42r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0084-42v",
+      "path": "atlas/records/0084_42v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0085-43r",
+      "path": "atlas/records/0085_43r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0086-43v",
+      "path": "atlas/records/0086_43v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0087-44r",
+      "path": "atlas/records/0087_44r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0088-44v",
+      "path": "atlas/records/0088_44v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0089-45r",
+      "path": "atlas/records/0089_45r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0090-45v",
+      "path": "atlas/records/0090_45v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0091-46r",
+      "path": "atlas/records/0091_46r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0092-46v",
+      "path": "atlas/records/0092_46v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0093-47r",
+      "path": "atlas/records/0093_47r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0094-47v",
+      "path": "atlas/records/0094_47v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0095-48r",
+      "path": "atlas/records/0095_48r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0096-48v",
+      "path": "atlas/records/0096_48v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0097-49r",
+      "path": "atlas/records/0097_49r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0098-49v",
+      "path": "atlas/records/0098_49v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0099-50r",
+      "path": "atlas/records/0099_50r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0100-50v",
+      "path": "atlas/records/0100_50v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0101-51r",
+      "path": "atlas/records/0101_51r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0102-51v",
+      "path": "atlas/records/0102_51v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0103-52r",
+      "path": "atlas/records/0103_52r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0104-52v",
+      "path": "atlas/records/0104_52v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0105-53r",
+      "path": "atlas/records/0105_53r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0106-53v",
+      "path": "atlas/records/0106_53v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0107-54r",
+      "path": "atlas/records/0107_54r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0108-54v",
+      "path": "atlas/records/0108_54v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0109-55r",
+      "path": "atlas/records/0109_55r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0110-55v",
+      "path": "atlas/records/0110_55v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0111-56r",
+      "path": "atlas/records/0111_56r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0112-56v",
+      "path": "atlas/records/0112_56v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0113-57r",
+      "path": "atlas/records/0113_57r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0114-57v",
+      "path": "atlas/records/0114_57v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0115-58r",
+      "path": "atlas/records/0115_58r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0116-58v",
+      "path": "atlas/records/0116_58v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0117-65r",
+      "path": "atlas/records/0117_65r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0118-65v",
+      "path": "atlas/records/0118_65v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0119-66r",
+      "path": "atlas/records/0119_66r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0120-66v",
+      "path": "atlas/records/0120_66v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0121-67r",
+      "path": "atlas/records/0121_67r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0122-67v",
+      "path": "atlas/records/0122_67v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0123-68r",
+      "path": "atlas/records/0123_68r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0124-68v",
+      "path": "atlas/records/0124_68v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0125-69r",
+      "path": "atlas/records/0125_69r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0126-69v_and_70r",
+      "path": "atlas/records/0126_69v_and_70r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0127-70v_part",
+      "path": "atlas/records/0127_70v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0128-70v_part",
+      "path": "atlas/records/0128_70v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0129-71r",
+      "path": "atlas/records/0129_71r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0130-71v_and_72r",
+      "path": "atlas/records/0130_71v_and_72r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0131-72v_part",
+      "path": "atlas/records/0131_72v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0132-72v_part",
+      "path": "atlas/records/0132_72v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0133-73r",
+      "path": "atlas/records/0133_73r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0134-73v",
+      "path": "atlas/records/0134_73v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0135-75r",
+      "path": "atlas/records/0135_75r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0136-75v",
+      "path": "atlas/records/0136_75v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0137-76r",
+      "path": "atlas/records/0137_76r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0138-76v",
+      "path": "atlas/records/0138_76v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0139-77r",
+      "path": "atlas/records/0139_77r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0140-77v",
+      "path": "atlas/records/0140_77v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0141-78r",
+      "path": "atlas/records/0141_78r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0142-78v",
+      "path": "atlas/records/0142_78v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0143-79r",
+      "path": "atlas/records/0143_79r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0144-79v",
+      "path": "atlas/records/0144_79v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0145-80r",
+      "path": "atlas/records/0145_80r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0146-80v",
+      "path": "atlas/records/0146_80v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0147-81r",
+      "path": "atlas/records/0147_81r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0148-81v",
+      "path": "atlas/records/0148_81v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0149-82r",
+      "path": "atlas/records/0149_82r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0150-82v",
+      "path": "atlas/records/0150_82v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0151-83r",
+      "path": "atlas/records/0151_83r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0152-83v",
+      "path": "atlas/records/0152_83v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0153-84r",
+      "path": "atlas/records/0153_84r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0154-84v",
+      "path": "atlas/records/0154_84v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0155-85r_part_part_of_85-86_foldout",
+      "path": "atlas/records/0155_85r_part_part_of_85-86_foldout.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0156-85r_part_86v_part_part_of_85-86_foldout",
+      "path": "atlas/records/0156_85r_part_86v_part_part_of_85-86_foldout.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0157-86v_part_part_of_85-86_foldout",
+      "path": "atlas/records/0157_86v_part_part_of_85-86_foldout.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0158-85v_and_86r_foldout",
+      "path": "atlas/records/0158_85v_and_86r_foldout.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0159-87r",
+      "path": "atlas/records/0159_87r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0160-87v",
+      "path": "atlas/records/0160_87v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0161-88r",
+      "path": "atlas/records/0161_88r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0162-88v_and_89r",
+      "path": "atlas/records/0162_88v_and_89r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0163-89v_part",
+      "path": "atlas/records/0163_89v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0164-89v_part_and_90r",
+      "path": "atlas/records/0164_89v_part_and_90r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0165-90r",
+      "path": "atlas/records/0165_90r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0166-90v_part",
+      "path": "atlas/records/0166_90v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0167-93r",
+      "path": "atlas/records/0167_93r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0168-93v",
+      "path": "atlas/records/0168_93v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0169-94r",
+      "path": "atlas/records/0169_94r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0170-94v_and_95r",
+      "path": "atlas/records/0170_94v_and_95r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0171-95v_part",
+      "path": "atlas/records/0171_95v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0172-95v",
+      "path": "atlas/records/0172_95v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0173-96r",
+      "path": "atlas/records/0173_96r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0174-96v",
+      "path": "atlas/records/0174_96v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0175-99r",
+      "path": "atlas/records/0175_99r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0176-99v",
+      "path": "atlas/records/0176_99v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0177-100r",
+      "path": "atlas/records/0177_100r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0178-100v_and_101r",
+      "path": "atlas/records/0178_100v_and_101r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0179-101v_part",
+      "path": "atlas/records/0179_101v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0180-101v_part_and_102r",
+      "path": "atlas/records/0180_101v_part_and_102r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0181-102v_part",
+      "path": "atlas/records/0181_102v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0182-102v_part",
+      "path": "atlas/records/0182_102v_part.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0183-103r",
+      "path": "atlas/records/0183_103r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0184-103v",
+      "path": "atlas/records/0184_103v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0185-104r",
+      "path": "atlas/records/0185_104r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0186-104v",
+      "path": "atlas/records/0186_104v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0187-105r",
+      "path": "atlas/records/0187_105r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0188-105v",
+      "path": "atlas/records/0188_105v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0189-106r",
+      "path": "atlas/records/0189_106r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0190-106v",
+      "path": "atlas/records/0190_106v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0191-107r",
+      "path": "atlas/records/0191_107r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0192-107v",
+      "path": "atlas/records/0192_107v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0193-108r",
+      "path": "atlas/records/0193_108r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0194-108v",
+      "path": "atlas/records/0194_108v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0195-111r",
+      "path": "atlas/records/0195_111r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0196-111v",
+      "path": "atlas/records/0196_111v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0197-112r",
+      "path": "atlas/records/0197_112r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0198-112v",
+      "path": "atlas/records/0198_112v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0199-113r",
+      "path": "atlas/records/0199_113r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0200-113v",
+      "path": "atlas/records/0200_113v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0201-114r",
+      "path": "atlas/records/0201_114r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0202-114v",
+      "path": "atlas/records/0202_114v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0203-115r",
+      "path": "atlas/records/0203_115r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0204-115v",
+      "path": "atlas/records/0204_115v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0205-116r",
+      "path": "atlas/records/0205_116r.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "record_id": "CANVAS-0206-116v",
+      "path": "atlas/records/0206_116v.annotation.json",
+      "issues": [],
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,852 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SonGohan231/voynichese/blob/master/atlas/schemas/voynich_page_atlas.schema.json",
+  "title": "Voynich full-page visual and text geometry atlas record",
+  "description": "Neutral geometry-first schema. Transliteration is reference-only and cannot define visual boundaries.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "canonical_context",
+    "execution_status",
+    "illustration_inventory",
+    "local_relations",
+    "overlay",
+    "page_inventory",
+    "quality_control",
+    "record_id",
+    "schema_version",
+    "source",
+    "text_geometry"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_file_id",
+        "relative_path",
+        "filename",
+        "sha256",
+        "bytes",
+        "mime",
+        "image_file_grid_px",
+        "folio_or_cover_id",
+        "logical_role",
+        "rotation_deg",
+        "provenance"
+      ],
+      "properties": {
+        "source_file_id": {
+          "type": "string"
+        },
+        "relative_path": {
+          "type": "string"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mime": {
+          "const": "image/jpeg"
+        },
+        "image_file_grid_px": {
+          "type": "object",
+          "required": [
+            "width",
+            "height"
+          ],
+          "properties": {
+            "width": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "native_scan_grid_status": {
+          "enum": [
+            "VERIFIED_NATIVE",
+            "SCALED_FROM_NATIVE",
+            "UNVERIFIED"
+          ]
+        },
+        "folio_or_cover_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "logical_role": {
+          "enum": [
+            "FOLIO",
+            "COVER",
+            "UNRESOLVED"
+          ]
+        },
+        "rotation_deg": {
+          "type": "number"
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "classification",
+            "verification_status",
+            "measurement_permission",
+            "evidence"
+          ],
+          "properties": {
+            "classification": {
+              "enum": [
+                "ORIGINAL_NATIVE",
+                "ORIGINAL_SCALED",
+                "DERIVATIVE_PDF",
+                "DERIVED_CROP",
+                "UNVERIFIED_LARGE",
+                "WORKING_SMALL",
+                "SYNTHETIC"
+              ]
+            },
+            "verification_status": {
+              "enum": [
+                "VERIFIED",
+                "UNVERIFIED",
+                "PARTIAL"
+              ]
+            },
+            "measurement_permission": {
+              "enum": [
+                "NATIVE_PIXEL_MEASUREMENT_ALLOWED",
+                "MEASUREMENT_WITH_SCALE_REQUIRED",
+                "LAYOUT_ORIENTATION_ONLY",
+                "ANALYSIS_NOT_ALLOWED"
+              ]
+            },
+            "evidence": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "source_url_or_catalog_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "image_url": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "canonical_context": {
+      "type": "object"
+    },
+    "page_inventory": {
+      "type": "object",
+      "required": [
+        "regions",
+        "coverage_status"
+      ],
+      "properties": {
+        "regions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pageRegion"
+          }
+        },
+        "coverage_status": {
+          "type": "object",
+          "required": [
+            "parchment_field",
+            "main_text_fields",
+            "main_illustration_fields",
+            "diagrams",
+            "margins",
+            "damage",
+            "overlap"
+          ],
+          "properties": {
+            "parchment_field": {
+              "enum": [
+                "COMPLETE",
+                "PARTIAL",
+                "NONE_VISIBLE",
+                "NOT_ASSESSED"
+              ]
+            },
+            "main_text_fields": {
+              "enum": [
+                "COMPLETE",
+                "PARTIAL",
+                "NONE_VISIBLE",
+                "NOT_ASSESSED"
+              ]
+            },
+            "main_illustration_fields": {
+              "enum": [
+                "COMPLETE",
+                "PARTIAL",
+                "NONE_VISIBLE",
+                "NOT_ASSESSED"
+              ]
+            },
+            "diagrams": {
+              "enum": [
+                "COMPLETE",
+                "PARTIAL",
+                "NONE_VISIBLE",
+                "NOT_ASSESSED"
+              ]
+            },
+            "margins": {
+              "enum": [
+                "COMPLETE",
+                "PARTIAL",
+                "NONE_VISIBLE",
+                "NOT_ASSESSED"
+              ]
+            },
+            "damage": {
+              "enum": [
+                "COMPLETE",
+                "PARTIAL",
+                "NONE_VISIBLE",
+                "NOT_ASSESSED"
+              ]
+            },
+            "overlap": {
+              "enum": [
+                "COMPLETE",
+                "PARTIAL",
+                "NONE_VISIBLE",
+                "NOT_ASSESSED"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "illustration_inventory": {
+      "type": "object",
+      "required": [
+        "objects",
+        "repeat_groups",
+        "hierarchy_validated"
+      ],
+      "properties": {
+        "objects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/illustrationObject"
+          }
+        },
+        "repeat_groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/repeatGroup"
+          }
+        },
+        "hierarchy_validated": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "text_geometry": {
+      "type": "object",
+      "required": [
+        "regions",
+        "segmentation_status",
+        "text_illustration_link_policy",
+        "transliteration_policy"
+      ],
+      "properties": {
+        "regions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/textRegion"
+          }
+        },
+        "segmentation_status": {
+          "enum": [
+            "NOT_ASSESSED",
+            "BLOCKS_ONLY",
+            "BLOCKS_AND_PARAGRAPHS",
+            "LINES_PARTIAL",
+            "LINES_COMPLETE"
+          ]
+        },
+        "text_illustration_link_policy": {
+          "const": "GEOMETRY_ONLY"
+        },
+        "transliteration_policy": {
+          "const": "REFERENCE_ONLY_NOT_BOUNDARY_AUTHORITY"
+        }
+      },
+      "additionalProperties": false
+    },
+    "local_relations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/localRelation"
+      }
+    },
+    "overlay": {
+      "type": "object"
+    },
+    "quality_control": {
+      "type": "object",
+      "required": [
+        "id_uniqueness",
+        "hierarchy_acyclic",
+        "geometry_within_source",
+        "transliteration_not_used_for_boundaries",
+        "reading_order_only_when_observable",
+        "semantic_naming_audit",
+        "review_status"
+      ],
+      "properties": {
+        "id_uniqueness": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "hierarchy_acyclic": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "geometry_within_source": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "transliteration_not_used_for_boundaries": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "reading_order_only_when_observable": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "semantic_naming_audit": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "NOT_RUN"
+          ]
+        },
+        "review_status": {
+          "enum": [
+            "NOT_REVIEWED",
+            "SINGLE_REVIEW",
+            "DOUBLE_REVIEW",
+            "ADJUDICATED"
+          ]
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "execution_status": {
+      "enum": [
+        "SCHEMA_READY",
+        "NOT_STARTED",
+        "IN_PROGRESS",
+        "ANNOTATED_DRAFT",
+        "VERIFIED",
+        "AMBIGUOUS",
+        "DEFERRED_BY_ACTIVE_RULE_19"
+      ]
+    },
+    "deferred_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "point": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "bbox": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "geometry": {
+      "type": "object",
+      "required": [
+        "geometry_type",
+        "coordinate_space",
+        "source_width_px",
+        "source_height_px",
+        "rotation_deg",
+        "relation_tolerance_px",
+        "source_to_geometry_transform"
+      ],
+      "properties": {
+        "geometry_type": {
+          "enum": [
+            "BBOX",
+            "POLYGON",
+            "MASK"
+          ]
+        },
+        "coordinate_space": {
+          "enum": [
+            "SOURCE_IMAGE_PX",
+            "VERIFIED_NATIVE_SCAN_PX",
+            "CROP_PX",
+            "NORMALIZED_0_1"
+          ]
+        },
+        "source_width_px": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_height_px": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "bbox": {
+          "$ref": "#/$defs/bbox"
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "$ref": "#/$defs/point"
+          }
+        },
+        "mask_artifact_id": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ]
+        },
+        "rotation_deg": {
+          "type": "number"
+        },
+        "relation_tolerance_px": {
+          "type": "number",
+          "minimum": 0
+        },
+        "source_to_geometry_transform": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "method",
+        "annotator_id",
+        "blind_to_semantic_hypotheses",
+        "confidence",
+        "ambiguity_status",
+        "evidence_note"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "MANUAL_VISUAL",
+            "AUTOMATIC",
+            "SEMI_AUTOMATIC",
+            "MULTIMODAL_REVIEW"
+          ]
+        },
+        "annotator_id": {
+          "type": "string"
+        },
+        "blind_to_semantic_hypotheses": {
+          "type": "boolean"
+        },
+        "confidence": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW",
+            "AMBIGUOUS",
+            "NOT_ASSESSED"
+          ]
+        },
+        "ambiguity_status": {
+          "enum": [
+            "UNAMBIGUOUS",
+            "AMBIGUOUS",
+            "NOT_ASSESSED"
+          ]
+        },
+        "evidence_note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "pageRegion": {
+      "type": "object",
+      "required": [
+        "region_id",
+        "class",
+        "geometry",
+        "observation"
+      ],
+      "properties": {
+        "region_id": {
+          "type": "string"
+        },
+        "class": {
+          "enum": [
+            "PARCHMENT_FIELD",
+            "MAIN_TEXT_FIELD",
+            "MAIN_ILLUSTRATION_FIELD",
+            "DIAGRAM_FIELD",
+            "MARGIN_TOP",
+            "MARGIN_BOTTOM",
+            "MARGIN_LEFT",
+            "MARGIN_RIGHT",
+            "DAMAGE_AREA",
+            "TEXT_ILLUSTRATION_OVERLAP",
+            "UNCLASSIFIED_PAGE_AREA"
+          ]
+        },
+        "geometry": {
+          "$ref": "#/$defs/geometry"
+        },
+        "observation": {
+          "$ref": "#/$defs/observation"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "illustrationObject": {
+      "type": "object",
+      "required": [
+        "object_id",
+        "parent_id",
+        "neutral_class",
+        "geometry",
+        "count",
+        "attributes",
+        "observation"
+      ],
+      "properties": {
+        "object_id": {
+          "type": "string"
+        },
+        "parent_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "child_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "neutral_class": {
+          "type": "string"
+        },
+        "geometry": {
+          "$ref": "#/$defs/geometry"
+        },
+        "count": {
+          "type": "object"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "position",
+            "orientation",
+            "direction",
+            "colors",
+            "neighbor_ids",
+            "connection_ids"
+          ],
+          "properties": {
+            "position": {
+              "type": "object"
+            },
+            "orientation": {
+              "type": [
+                "string",
+                "number",
+                "null"
+              ]
+            },
+            "direction": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "colors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "neighbor_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "connection_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "observation": {
+          "$ref": "#/$defs/observation"
+        }
+      },
+      "additionalProperties": true
+    },
+    "repeatGroup": {
+      "type": "object",
+      "required": [
+        "repeat_group_id",
+        "member_ids",
+        "count"
+      ],
+      "properties": {
+        "repeat_group_id": {
+          "type": "string"
+        },
+        "member_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "count": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    },
+    "textRegion": {
+      "type": "object",
+      "required": [
+        "text_id",
+        "parent_id",
+        "type",
+        "geometry",
+        "reading_order",
+        "transliteration_refs",
+        "observation"
+      ],
+      "properties": {
+        "text_id": {
+          "type": "string"
+        },
+        "parent_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "child_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "type": {
+          "enum": [
+            "MAIN_BLOCK",
+            "PARAGRAPH",
+            "LINE",
+            "LABEL",
+            "CIRCULAR",
+            "RADIAL",
+            "MARGINAL",
+            "OTHER"
+          ]
+        },
+        "geometry": {
+          "$ref": "#/$defs/geometry"
+        },
+        "reading_order": {
+          "type": "object"
+        },
+        "transliteration_refs": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "observation": {
+          "$ref": "#/$defs/observation"
+        }
+      },
+      "additionalProperties": true
+    },
+    "localRelation": {
+      "type": "object",
+      "required": [
+        "relation_id",
+        "subject_id",
+        "predicate",
+        "object_id",
+        "geometry_only",
+        "method",
+        "confidence",
+        "evidence"
+      ],
+      "properties": {
+        "relation_id": {
+          "type": "string"
+        },
+        "subject_id": {
+          "type": "string"
+        },
+        "predicate": {
+          "enum": [
+            "ABOVE",
+            "BELOW",
+            "LEFT_OF",
+            "RIGHT_OF",
+            "INSIDE",
+            "CONTAINS",
+            "TOUCHES",
+            "CONNECTED_TO",
+            "OVERLAPS",
+            "INTERRUPTS_TEXT",
+            "TEXT_SURROUNDS_OBJECT",
+            "SAME_RING",
+            "SAME_SECTOR",
+            "SAME_ROW",
+            "SAME_SEQUENCE",
+            "ADJACENT_TO",
+            "ALIGNED_WITH"
+          ]
+        },
+        "object_id": {
+          "type": "string"
+        },
+        "geometry_only": {
+          "const": true
+        },
+        "method": {
+          "enum": [
+            "BBOX_WITH_TOLERANCE",
+            "POLYGON_INTERSECTION",
+            "MASK_CONTACT",
+            "CENTERLINE_TOPOLOGY",
+            "MANUAL_VISUAL"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW",
+            "AMBIGUOUS",
+            "NOT_ASSESSED"
+          ]
+        },
+        "evidence": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

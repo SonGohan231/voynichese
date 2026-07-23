@@ -1,0 +1,16 @@
+{
+  "aliases": [
+    {
+      "sequence": 23,
+      "canonical_source": "data/yale_hq_scans/1/0023_11r.jpg",
+      "canonical_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "additional_sources": [
+        {
+          "relative_path": "data/yale_hq_scans/2/0023_11r.jpg",
+          "sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+          "same_bytes_as_canonical": true
+        }
+      ]
+    }
+  ]
+}

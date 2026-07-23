@@ -1,0 +1,2908 @@
+{
+  "schema_version": "1.0.0",
+  "generator_version": "1.0.0",
+  "generated_at": "2026-07-23T12:49:30+00:00",
+  "project": "Voynich canonical full-page visual and text geometry atlas",
+  "source_manifest": "https://collections.library.yale.edu/manifests/2002046",
+  "source_import_report": "data/yale_hq_scans/import_report.json",
+  "source_import_report_git_blob_sha": "8591c22f2918ac2d9e56266a4ac4cfda99547327",
+  "source_rows": 207,
+  "canonical_page_positions": 206,
+  "duplicate_source_sequences": [
+    23
+  ],
+  "records": [
+    {
+      "sequence": 1,
+      "record_id": "CANVAS-0001-Front_cover",
+      "folio_or_cover_id": "Front cover",
+      "logical_role": "COVER",
+      "record_path": "atlas/records/0001_Front_cover.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0001__Front cover_.jpg",
+      "source_sha256": "a2af37b5735b76e49a4fb2033f3ac54187d08aee7d910479c1fd04cb4e8b8a14",
+      "image_file_grid_px": {
+        "width": 2931,
+        "height": 3865
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 2,
+      "record_id": "CANVAS-0002-Inside_front_cover",
+      "folio_or_cover_id": "Inside front cover",
+      "logical_role": "COVER",
+      "record_path": "atlas/records/0002_Inside_front_cover.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0002__Inside front cover_.jpg",
+      "source_sha256": "1f609ec3e91977e339099d1f864993f985246ac345e89896427392078b601dd2",
+      "image_file_grid_px": {
+        "width": 2812,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 3,
+      "record_id": "CANVAS-0003-1r",
+      "folio_or_cover_id": "1r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0003_1r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0003_1r.jpg",
+      "source_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+      "image_file_grid_px": {
+        "width": 2972,
+        "height": 3766
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 4,
+      "record_id": "CANVAS-0004-1v",
+      "folio_or_cover_id": "1v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0004_1v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0004_1v.jpg",
+      "source_sha256": "43065eacad8a743816eb2b7d9acd8cf882a9bb498f1cea84602d12fede99f77d",
+      "image_file_grid_px": {
+        "width": 2804,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 5,
+      "record_id": "CANVAS-0005-2r",
+      "folio_or_cover_id": "2r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0005_2r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0005_2r.jpg",
+      "source_sha256": "826533a0760798acf5a4caa01ac29fe95eb1ed13a9fb26ac82900a8aea11d53f",
+      "image_file_grid_px": {
+        "width": 2691,
+        "height": 3770
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 6,
+      "record_id": "CANVAS-0006-2v",
+      "folio_or_cover_id": "2v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0006_2v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0006_2v.jpg",
+      "source_sha256": "ae2e9591c75389fe093e7f35d5c670781d196c253d472030dd4a1d1c86ae1cb7",
+      "image_file_grid_px": {
+        "width": 2771,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 7,
+      "record_id": "CANVAS-0007-3r",
+      "folio_or_cover_id": "3r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0007_3r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0007_3r.jpg",
+      "source_sha256": "6ea4d4023a3b199463eee9e30508726a9314391f05a613bce3f87ae8d23fd151",
+      "image_file_grid_px": {
+        "width": 2691,
+        "height": 3770
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 8,
+      "record_id": "CANVAS-0008-3v",
+      "folio_or_cover_id": "3v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0008_3v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0008_3v.jpg",
+      "source_sha256": "b9c19a872d6456fa58f76f15dec1d61bc80cc353fceff33f11abdaae87ce199e",
+      "image_file_grid_px": {
+        "width": 2762,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 9,
+      "record_id": "CANVAS-0009-4r",
+      "folio_or_cover_id": "4r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0009_4r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0009_4r.jpg",
+      "source_sha256": "fb166d0fe36d8cb635bb73b1d70b7d62e51a5f1ebf896f51921bd1854a06d904",
+      "image_file_grid_px": {
+        "width": 2682,
+        "height": 3740
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 10,
+      "record_id": "CANVAS-0010-4v",
+      "folio_or_cover_id": "4v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0010_4v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0010_4v.jpg",
+      "source_sha256": "afec0f17556cb8cec1f1bc529ba4b572fc32363702091bacda4c7c1e0ebf37bc",
+      "image_file_grid_px": {
+        "width": 2768,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 11,
+      "record_id": "CANVAS-0011-5r",
+      "folio_or_cover_id": "5r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0011_5r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0011_5r.jpg",
+      "source_sha256": "e0e966c2a24f6b434b34cd1e1d4ee9aef2cec281c6ad071847e8e8b50d799acb",
+      "image_file_grid_px": {
+        "width": 2636,
+        "height": 3723
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 12,
+      "record_id": "CANVAS-0012-5v",
+      "folio_or_cover_id": "5v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0012_5v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0012_5v.jpg",
+      "source_sha256": "c294a7576438c7673149f7b6294378127721daa5a48d045643feb812a6c49f40",
+      "image_file_grid_px": {
+        "width": 2759,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 13,
+      "record_id": "CANVAS-0013-6r",
+      "folio_or_cover_id": "6r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0013_6r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0013_6r.jpg",
+      "source_sha256": "2e9e318c945c1a961ab676c81827b4ee71c993d3d02a1adb9365bbb007ffa4dc",
+      "image_file_grid_px": {
+        "width": 2662,
+        "height": 3727
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 14,
+      "record_id": "CANVAS-0014-6v",
+      "folio_or_cover_id": "6v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0014_6v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0014_6v.jpg",
+      "source_sha256": "c05ffc33745eca87cb0387cf47868f2a0a62f2cf6c3f7929a35a2e64834c40dc",
+      "image_file_grid_px": {
+        "width": 2753,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 15,
+      "record_id": "CANVAS-0015-7r",
+      "folio_or_cover_id": "7r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0015_7r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0015_7r.jpg",
+      "source_sha256": "fd4529ff994cfaefe9bf75966a59eede9ab0ea59e3514bf3aaf0a45c0df0e2a0",
+      "image_file_grid_px": {
+        "width": 2656,
+        "height": 3721
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 16,
+      "record_id": "CANVAS-0016-7v",
+      "folio_or_cover_id": "7v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0016_7v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0016_7v.jpg",
+      "source_sha256": "81fed5fa8e1b174ff1176899b76d08003148445bdc6f68f3c7f59f8c6729e841",
+      "image_file_grid_px": {
+        "width": 2806,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 17,
+      "record_id": "CANVAS-0017-8r",
+      "folio_or_cover_id": "8r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0017_8r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0017_8r.jpg",
+      "source_sha256": "2dfbbfab02ca4220a7ad1ade4b6be69d0401df9a64762e3883ffa87640e07e7e",
+      "image_file_grid_px": {
+        "width": 2660,
+        "height": 3719
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 18,
+      "record_id": "CANVAS-0018-8v",
+      "folio_or_cover_id": "8v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0018_8v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0018_8v.jpg",
+      "source_sha256": "726c5a8de19709f2286423802e7d1e18f2c58cc558d5680e57a3377e9623ca1c",
+      "image_file_grid_px": {
+        "width": 2791,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 19,
+      "record_id": "CANVAS-0019-9r",
+      "folio_or_cover_id": "9r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0019_9r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0019_9r.jpg",
+      "source_sha256": "a5f3a7b1a3f9c0e791a3365d801884c64d996749719d84ffb11f0f06fbb30925",
+      "image_file_grid_px": {
+        "width": 2691,
+        "height": 3737
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 20,
+      "record_id": "CANVAS-0020-9v",
+      "folio_or_cover_id": "9v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0020_9v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0020_9v.jpg",
+      "source_sha256": "790a7493a31133cf9375fb7471d1d1167df4988bcadeb74ea2528a0ba562e693",
+      "image_file_grid_px": {
+        "width": 2812,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 21,
+      "record_id": "CANVAS-0021-10r",
+      "folio_or_cover_id": "10r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0021_10r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0021_10r.jpg",
+      "source_sha256": "8d8d5636691bae1be1ff908afad1388c25c53154e8808be572675ae8500c2ac5",
+      "image_file_grid_px": {
+        "width": 2691,
+        "height": 3739
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 22,
+      "record_id": "CANVAS-0022-10v",
+      "folio_or_cover_id": "10v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0022_10v.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0022_10v.jpg",
+      "source_sha256": "5cff25a923f5e8173a2a8ad21ec247d7c9bd090ac379322d5dda4d17be916403",
+      "image_file_grid_px": {
+        "width": 2839,
+        "height": 3797
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 23,
+      "record_id": "CANVAS-0023-11r",
+      "folio_or_cover_id": "11r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0023_11r.annotation.json",
+      "source_path": "data/yale_hq_scans/1/0023_11r.jpg",
+      "source_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "image_file_grid_px": {
+        "width": 2672,
+        "height": 3744
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 24,
+      "record_id": "CANVAS-0024-11v",
+      "folio_or_cover_id": "11v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0024_11v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0024_11v.jpg",
+      "source_sha256": "896a5297fd4ac6a4ca215ae5e000ac8d6a50ea6063283a28b42ba1974d681d51",
+      "image_file_grid_px": {
+        "width": 2825,
+        "height": 3775
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 25,
+      "record_id": "CANVAS-0025-13r",
+      "folio_or_cover_id": "13r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0025_13r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0025_13r.jpg",
+      "source_sha256": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+      "image_file_grid_px": {
+        "width": 2601,
+        "height": 3723
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 26,
+      "record_id": "CANVAS-0026-13v",
+      "folio_or_cover_id": "13v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0026_13v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0026_13v.jpg",
+      "source_sha256": "79ac3ff85ed178229cd4bafc6332c606684dd0eba37221758a7ec430c86544f0",
+      "image_file_grid_px": {
+        "width": 2812,
+        "height": 3770
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 27,
+      "record_id": "CANVAS-0027-14r",
+      "folio_or_cover_id": "14r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0027_14r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0027_14r.jpg",
+      "source_sha256": "1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c",
+      "image_file_grid_px": {
+        "width": 2662,
+        "height": 3739
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 28,
+      "record_id": "CANVAS-0028-14v",
+      "folio_or_cover_id": "14v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0028_14v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0028_14v.jpg",
+      "source_sha256": "97dbdbe273597957d62db2cf3a6d9769a0121cba1d0bb682c8008a6d2de622a6",
+      "image_file_grid_px": {
+        "width": 2812,
+        "height": 3772
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 29,
+      "record_id": "CANVAS-0029-15r",
+      "folio_or_cover_id": "15r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0029_15r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0029_15r.jpg",
+      "source_sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+      "image_file_grid_px": {
+        "width": 2648,
+        "height": 3729
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 30,
+      "record_id": "CANVAS-0030-15v",
+      "folio_or_cover_id": "15v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0030_15v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0030_15v.jpg",
+      "source_sha256": "d224773e2e39ef02719c25560e8072e6407bdea9f8d1bdf8da515adb5c2fc127",
+      "image_file_grid_px": {
+        "width": 2835,
+        "height": 3776
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 31,
+      "record_id": "CANVAS-0031-16r",
+      "folio_or_cover_id": "16r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0031_16r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0031_16r.jpg",
+      "source_sha256": "1a7e9d3d9e6c647d73899317cf21c2967ded0e30517c5020e7c2093f6d99f265",
+      "image_file_grid_px": {
+        "width": 2658,
+        "height": 3758
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 32,
+      "record_id": "CANVAS-0032-16v",
+      "folio_or_cover_id": "16v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0032_16v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0032_16v.jpg",
+      "source_sha256": "0001f9fb64430a47afa2c9dfa94e8eba1b6423ab0d3c3b9ae2a7c43e406d3a5e",
+      "image_file_grid_px": {
+        "width": 2840,
+        "height": 3793
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 33,
+      "record_id": "CANVAS-0033-17r",
+      "folio_or_cover_id": "17r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0033_17r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0033_17r.jpg",
+      "source_sha256": "9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f",
+      "image_file_grid_px": {
+        "width": 2649,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 34,
+      "record_id": "CANVAS-0034-17v",
+      "folio_or_cover_id": "17v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0034_17v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0034_17v.jpg",
+      "source_sha256": "61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec",
+      "image_file_grid_px": {
+        "width": 2843,
+        "height": 3775
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 35,
+      "record_id": "CANVAS-0035-18r",
+      "folio_or_cover_id": "18r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0035_18r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0035_18r.jpg",
+      "source_sha256": "01659aa94a6176b56c621f50c9cbe8c467836d6265a03d8edb1e97e236126e78",
+      "image_file_grid_px": {
+        "width": 2649,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 36,
+      "record_id": "CANVAS-0036-18v",
+      "folio_or_cover_id": "18v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0036_18v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0036_18v.jpg",
+      "source_sha256": "a0f14ccc11f76d832def734e32e33dccea82222e0b198ac3d73c93e8d1fcc47f",
+      "image_file_grid_px": {
+        "width": 2846,
+        "height": 3781
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 37,
+      "record_id": "CANVAS-0037-19r",
+      "folio_or_cover_id": "19r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0037_19r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0037_19r.jpg",
+      "source_sha256": "c05e13bd154a93d77e2f601f11d9bd886fdf4524a49dbae0339b0bd864f7283c",
+      "image_file_grid_px": {
+        "width": 2649,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 38,
+      "record_id": "CANVAS-0038-19v",
+      "folio_or_cover_id": "19v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0038_19v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0038_19v.jpg",
+      "source_sha256": "7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 39,
+      "record_id": "CANVAS-0039-20r",
+      "folio_or_cover_id": "20r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0039_20r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0039_20r.jpg",
+      "source_sha256": "2090ee8a14985ae1db08d465bb9229a7490620ac9f5c288118f3c37cc4c9398e",
+      "image_file_grid_px": {
+        "width": 2649,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 40,
+      "record_id": "CANVAS-0040-20v",
+      "folio_or_cover_id": "20v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0040_20v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0040_20v.jpg",
+      "source_sha256": "472ca57a0abf61ab000cd26c6065b007073a95a0cf662ff4cc7d4158c94b52b7",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 41,
+      "record_id": "CANVAS-0041-21r",
+      "folio_or_cover_id": "21r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0041_21r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0041_21r.jpg",
+      "source_sha256": "0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88",
+      "image_file_grid_px": {
+        "width": 2649,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 42,
+      "record_id": "CANVAS-0042-21v",
+      "folio_or_cover_id": "21v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0042_21v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0042_21v.jpg",
+      "source_sha256": "f10bf37a910e69fb8ea1f34d74b79522b6c7d0bebed77fe13ce40240f792ab53",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 43,
+      "record_id": "CANVAS-0043-22r",
+      "folio_or_cover_id": "22r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0043_22r.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0043_22r.jpg",
+      "source_sha256": "7bfb7bf49850d6d8df30ebae5a1ea8adc7b27bb714cb0e24453724805bd72a3e",
+      "image_file_grid_px": {
+        "width": 2649,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 44,
+      "record_id": "CANVAS-0044-22v",
+      "folio_or_cover_id": "22v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0044_22v.annotation.json",
+      "source_path": "data/yale_hq_scans/2/0044_22v.jpg",
+      "source_sha256": "0243271c28759a1a45350cd058270a12ea131860652cf1a3f7c14e47fe4ed6b2",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3795
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 45,
+      "record_id": "CANVAS-0045-23r",
+      "folio_or_cover_id": "23r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0045_23r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0045_23r.jpg",
+      "source_sha256": "accaf5bdc2bcbbb97171d591f8352258329671eb68d095f4fe3f556979ff2e07",
+      "image_file_grid_px": {
+        "width": 2650,
+        "height": 3705
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 46,
+      "record_id": "CANVAS-0046-23v",
+      "folio_or_cover_id": "23v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0046_23v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0046_23v.jpg",
+      "source_sha256": "4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3780
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 47,
+      "record_id": "CANVAS-0047-24r",
+      "folio_or_cover_id": "24r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0047_24r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0047_24r.jpg",
+      "source_sha256": "3700fe396154e836b0acd3da86aef1d307f9d2da773208e476ee9db2e80de9e6",
+      "image_file_grid_px": {
+        "width": 2688,
+        "height": 3719
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 48,
+      "record_id": "CANVAS-0048-24v",
+      "folio_or_cover_id": "24v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0048_24v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0048_24v.jpg",
+      "source_sha256": "0b814f58b56dff9351ae0d2f0db18a965fd6d67bb9f8302265b76f8ce5cd9f87",
+      "image_file_grid_px": {
+        "width": 2864,
+        "height": 3771
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 49,
+      "record_id": "CANVAS-0049-25r",
+      "folio_or_cover_id": "25r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0049_25r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0049_25r.jpg",
+      "source_sha256": "1089c404ba05823109860af916e7dba2833cf99b98834c1534f3c66fcfaad1a4",
+      "image_file_grid_px": {
+        "width": 2709,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 50,
+      "record_id": "CANVAS-0050-25v",
+      "folio_or_cover_id": "25v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0050_25v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0050_25v.jpg",
+      "source_sha256": "0f135a9525a84dfccf038a2221c7178dfbfb3b1a1fe4b6d0f62aeb6e8b655d73",
+      "image_file_grid_px": {
+        "width": 2863,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 51,
+      "record_id": "CANVAS-0051-26r",
+      "folio_or_cover_id": "26r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0051_26r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0051_26r.jpg",
+      "source_sha256": "a593efb741d70ec23ae25c3725dbf2c8e8b3f8d2392cea6eb06921ac5949a6db",
+      "image_file_grid_px": {
+        "width": 2727,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 52,
+      "record_id": "CANVAS-0052-26v",
+      "folio_or_cover_id": "26v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0052_26v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0052_26v.jpg",
+      "source_sha256": "3378e154f7ef8a45405cb008277aa1dc2229388c456cd3c66438bcca54d02c6b",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 53,
+      "record_id": "CANVAS-0053-27r",
+      "folio_or_cover_id": "27r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0053_27r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0053_27r.jpg",
+      "source_sha256": "978616e82efb3a452075ab98f7cde7351c373af0ecf668896c77af4f48abb9d5",
+      "image_file_grid_px": {
+        "width": 2708,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 54,
+      "record_id": "CANVAS-0054-27v",
+      "folio_or_cover_id": "27v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0054_27v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0054_27v.jpg",
+      "source_sha256": "a84bedb17fc768a2e3c5e335b158c86cbef92636d010ef5811fa90b68951d608",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 55,
+      "record_id": "CANVAS-0055-28r",
+      "folio_or_cover_id": "28r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0055_28r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0055_28r.jpg",
+      "source_sha256": "b7c3fa283b7d2647e512dac6a665c5d37945e5aab8e21798292069ef26d67c04",
+      "image_file_grid_px": {
+        "width": 2727,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 56,
+      "record_id": "CANVAS-0056-28v",
+      "folio_or_cover_id": "28v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0056_28v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0056_28v.jpg",
+      "source_sha256": "2d325310e4ec264132340974cb71ec7f0cdb2f62820f97e644145dec72d84605",
+      "image_file_grid_px": {
+        "width": 2885,
+        "height": 3780
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 57,
+      "record_id": "CANVAS-0057-29r",
+      "folio_or_cover_id": "29r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0057_29r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0057_29r.jpg",
+      "source_sha256": "ea8217a4cea6a3861e183a95e82d3e4ee3308aef8025bc2e9c9bce8a7a0c92d6",
+      "image_file_grid_px": {
+        "width": 2718,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 58,
+      "record_id": "CANVAS-0058-29v",
+      "folio_or_cover_id": "29v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0058_29v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0058_29v.jpg",
+      "source_sha256": "1739f36ccfddb9121b2acec4faea712136aeeb4ad5fb2889ba5484549d791503",
+      "image_file_grid_px": {
+        "width": 2876,
+        "height": 3777
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 59,
+      "record_id": "CANVAS-0059-30r",
+      "folio_or_cover_id": "30r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0059_30r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0059_30r.jpg",
+      "source_sha256": "df1a0812c502a83e77529d664416c5fec91f23353fd83f75f9d40c12fceb03b6",
+      "image_file_grid_px": {
+        "width": 2742,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 60,
+      "record_id": "CANVAS-0060-30v",
+      "folio_or_cover_id": "30v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0060_30v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0060_30v.jpg",
+      "source_sha256": "d6eed32377c25b7c13b88e83cb6981a9d16b5dcbe3c433b7611c4e0105cb0035",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 61,
+      "record_id": "CANVAS-0061-31r",
+      "folio_or_cover_id": "31r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0061_31r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0061_31r.jpg",
+      "source_sha256": "3968b083d7346a556796d60e97a9ea66a4bb911fa1d085cfa046e9e0b37edc64",
+      "image_file_grid_px": {
+        "width": 2717,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 62,
+      "record_id": "CANVAS-0062-31v",
+      "folio_or_cover_id": "31v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0062_31v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0062_31v.jpg",
+      "source_sha256": "666bd3a13edd196866270ff7d8034b8c65695139087cd4ae0da6fdfa31133921",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 63,
+      "record_id": "CANVAS-0063-32r",
+      "folio_or_cover_id": "32r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0063_32r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0063_32r.jpg",
+      "source_sha256": "fd6f925e17822b61b6339a768dff769f29b132ed6cb0ccb7efee616a1d4db26b",
+      "image_file_grid_px": {
+        "width": 2734,
+        "height": 3731
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 64,
+      "record_id": "CANVAS-0064-32v",
+      "folio_or_cover_id": "32v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0064_32v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0064_32v.jpg",
+      "source_sha256": "e664856322574dcfb8bcf225a9d880ce28ab6d65bf6236e47624ae05c7d3764b",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 65,
+      "record_id": "CANVAS-0065-33r",
+      "folio_or_cover_id": "33r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0065_33r.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0065_33r.jpg",
+      "source_sha256": "28e6d9f02b9ca96b85275b7c6dd6e94453d3a2f5c6038d9966933d0229da9e74",
+      "image_file_grid_px": {
+        "width": 2766,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 66,
+      "record_id": "CANVAS-0066-33v",
+      "folio_or_cover_id": "33v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0066_33v.annotation.json",
+      "source_path": "data/yale_hq_scans/3/0066_33v.jpg",
+      "source_sha256": "41b148c40e9cf73c63044c5415d3c2bbeebffc20153a36762f35e8134da42941",
+      "image_file_grid_px": {
+        "width": 2871,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 67,
+      "record_id": "CANVAS-0067-34r",
+      "folio_or_cover_id": "34r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0067_34r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0067_34r.jpg",
+      "source_sha256": "4108828356258d68d2b53ef29d484f0648c269ecc4984781248e7803ba51e353",
+      "image_file_grid_px": {
+        "width": 2777,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 68,
+      "record_id": "CANVAS-0068-34v",
+      "folio_or_cover_id": "34v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0068_34v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0068_34v.jpg",
+      "source_sha256": "2f68183982075a405f7e2cc11ea06b76b263f80f20f01083279e7f03dcb4f78a",
+      "image_file_grid_px": {
+        "width": 2881,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 69,
+      "record_id": "CANVAS-0069-35r",
+      "folio_or_cover_id": "35r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0069_35r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0069_35r.jpg",
+      "source_sha256": "d190cd19497ea5e59b702d3abaf8513b3b706b79f16cd24947b5615efa455d71",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 70,
+      "record_id": "CANVAS-0070-35v",
+      "folio_or_cover_id": "35v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0070_35v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0070_35v.jpg",
+      "source_sha256": "564412e99b04406f51afe2c8f9ab20320518b3e71b91deee48fb16ee1ad3ffbd",
+      "image_file_grid_px": {
+        "width": 2853,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 71,
+      "record_id": "CANVAS-0071-36r",
+      "folio_or_cover_id": "36r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0071_36r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0071_36r.jpg",
+      "source_sha256": "807e9b5aa1ea72b90c39f71c5ae1cfa4aa0c303b4dd889340c2814f1cff62da2",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 72,
+      "record_id": "CANVAS-0072-36v",
+      "folio_or_cover_id": "36v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0072_36v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0072_36v.jpg",
+      "source_sha256": "fbbf69e740ae7a922f7e4f6cff836004827df15ab917eb6bcc43430a5c89edc2",
+      "image_file_grid_px": {
+        "width": 2849,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 73,
+      "record_id": "CANVAS-0073-37r",
+      "folio_or_cover_id": "37r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0073_37r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0073_37r.jpg",
+      "source_sha256": "4daf7373cfed96fcd9e3d6cb6a9a50cf413e27cc93cf507fee17bee93d8f6d28",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 74,
+      "record_id": "CANVAS-0074-37v",
+      "folio_or_cover_id": "37v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0074_37v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0074_37v.jpg",
+      "source_sha256": "56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 75,
+      "record_id": "CANVAS-0075-38r",
+      "folio_or_cover_id": "38r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0075_38r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0075_38r.jpg",
+      "source_sha256": "9e4ea17ac6b9b184dae0a423bea8feab3eab48eb203dddcf786b3201e6e76b2a",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 76,
+      "record_id": "CANVAS-0076-38v",
+      "folio_or_cover_id": "38v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0076_38v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0076_38v.jpg",
+      "source_sha256": "4a24360ad6ad267cbc3f8cc3b50a5b84e332b8d2bb655e85683e8b5de2768161",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 77,
+      "record_id": "CANVAS-0077-39r",
+      "folio_or_cover_id": "39r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0077_39r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0077_39r.jpg",
+      "source_sha256": "c86b9bc0182e1385136465d92ce9c43f31320bfab55d7b2e87e1ea81a7330bf0",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 78,
+      "record_id": "CANVAS-0078-39v",
+      "folio_or_cover_id": "39v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0078_39v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0078_39v.jpg",
+      "source_sha256": "13cafc785fd69c7471bc670480becc6338cf20682e1d196c2ef14f03abee8586",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 79,
+      "record_id": "CANVAS-0079-40r",
+      "folio_or_cover_id": "40r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0079_40r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0079_40r.jpg",
+      "source_sha256": "540cff9e3a031c5de5ba9d5c7e388cd50980b0d225a1f89b97bda2c6f0de60b7",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3734
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 80,
+      "record_id": "CANVAS-0080-40v",
+      "folio_or_cover_id": "40v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0080_40v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0080_40v.jpg",
+      "source_sha256": "bce0c42319b096126ad9fe0558ecfb8a61335867cbd1869e0865eaacf54c1087",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 81,
+      "record_id": "CANVAS-0081-41r",
+      "folio_or_cover_id": "41r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0081_41r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0081_41r.jpg",
+      "source_sha256": "7631b874dbb3e2f48ade864485a0210cb207f2c7878181e458582beba86877ba",
+      "image_file_grid_px": {
+        "width": 2840,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 82,
+      "record_id": "CANVAS-0082-41v",
+      "folio_or_cover_id": "41v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0082_41v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0082_41v.jpg",
+      "source_sha256": "bc753d5f30cfcbd5ad6479bb16205652d55b94da16fcbba1d78574674e3743ea",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 83,
+      "record_id": "CANVAS-0083-42r",
+      "folio_or_cover_id": "42r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0083_42r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0083_42r.jpg",
+      "source_sha256": "5e86508e3ecdb425b791fdcba0305f51cdf9a78182d082055a3da0b55012660a",
+      "image_file_grid_px": {
+        "width": 2843,
+        "height": 3743
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 84,
+      "record_id": "CANVAS-0084-42v",
+      "folio_or_cover_id": "42v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0084_42v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0084_42v.jpg",
+      "source_sha256": "bd2a7f2bbaf4c789d51f239248d81c151f4fc1c9f5ab6f51c148646a9d301f66",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 85,
+      "record_id": "CANVAS-0085-43r",
+      "folio_or_cover_id": "43r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0085_43r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0085_43r.jpg",
+      "source_sha256": "cf92565c8f400c987e59359d77c297fc52afc2f6996bd60e5421cbc1074a4bd2",
+      "image_file_grid_px": {
+        "width": 2837,
+        "height": 3751
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 86,
+      "record_id": "CANVAS-0086-43v",
+      "folio_or_cover_id": "43v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0086_43v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0086_43v.jpg",
+      "source_sha256": "13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 87,
+      "record_id": "CANVAS-0087-44r",
+      "folio_or_cover_id": "44r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0087_44r.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0087_44r.jpg",
+      "source_sha256": "f9cd059bb34057bf9635a1d1443cafd3b358cdb64ec0c5e1ff73bfc091da0eb3",
+      "image_file_grid_px": {
+        "width": 2799,
+        "height": 3728
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 88,
+      "record_id": "CANVAS-0088-44v",
+      "folio_or_cover_id": "44v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0088_44v.annotation.json",
+      "source_path": "data/yale_hq_scans/4/0088_44v.jpg",
+      "source_sha256": "dd57f4055f9c933913cf550f76b2786cdeeeeea74fd9641c55f148903e4cd3db",
+      "image_file_grid_px": {
+        "width": 2882,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 89,
+      "record_id": "CANVAS-0089-45r",
+      "folio_or_cover_id": "45r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0089_45r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0089_45r.jpg",
+      "source_sha256": "32afa9bda4154db2e3236081b0d7603dfc34bf11b1844a5084881b764dafe4f8",
+      "image_file_grid_px": {
+        "width": 2823,
+        "height": 3706
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 90,
+      "record_id": "CANVAS-0090-45v",
+      "folio_or_cover_id": "45v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0090_45v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0090_45v.jpg",
+      "source_sha256": "f49fcf1b8abb327483cdf272104a0dc628f31394a413908c866eb0094bd2d224",
+      "image_file_grid_px": {
+        "width": 2900,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 91,
+      "record_id": "CANVAS-0091-46r",
+      "folio_or_cover_id": "46r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0091_46r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0091_46r.jpg",
+      "source_sha256": "bc11de34e89d67f2b61c63473c3273256aa45d3d6beac4195c95625c07422740",
+      "image_file_grid_px": {
+        "width": 2865,
+        "height": 3719
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 92,
+      "record_id": "CANVAS-0092-46v",
+      "folio_or_cover_id": "46v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0092_46v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0092_46v.jpg",
+      "source_sha256": "bee511bff7d50d8ef83a70b598e1c2d8733cd1e6ad72b070f7fbd4e2171cb0ec",
+      "image_file_grid_px": {
+        "width": 2938,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 93,
+      "record_id": "CANVAS-0093-47r",
+      "folio_or_cover_id": "47r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0093_47r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0093_47r.jpg",
+      "source_sha256": "5a0a7f262b1fbccb44cd7e6ae69097476b92ff38f4124a50532a79e4f2619033",
+      "image_file_grid_px": {
+        "width": 2826,
+        "height": 3716
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 94,
+      "record_id": "CANVAS-0094-47v",
+      "folio_or_cover_id": "47v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0094_47v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0094_47v.jpg",
+      "source_sha256": "bcdae68e9bf1f172ad100b598b3189a2eff85cb7b67a151f7bb4a44f1f56f94e",
+      "image_file_grid_px": {
+        "width": 2932,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 95,
+      "record_id": "CANVAS-0095-48r",
+      "folio_or_cover_id": "48r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0095_48r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0095_48r.jpg",
+      "source_sha256": "f34ccbd6fbb72b5a469ca16b1b07ded862be76e01e0dcf9133940ffdd10c672e",
+      "image_file_grid_px": {
+        "width": 2859,
+        "height": 3719
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 96,
+      "record_id": "CANVAS-0096-48v",
+      "folio_or_cover_id": "48v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0096_48v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0096_48v.jpg",
+      "source_sha256": "c0ecc85912878c5c27ad64d560dd088e703ea95e68a87aaecb112a4aabcbe516",
+      "image_file_grid_px": {
+        "width": 2950,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 97,
+      "record_id": "CANVAS-0097-49r",
+      "folio_or_cover_id": "49r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0097_49r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0097_49r.jpg",
+      "source_sha256": "c125a5ffc5121e31e07dbaebd4515d6375e2f71feff312690dc943e62e0d8d56",
+      "image_file_grid_px": {
+        "width": 2837,
+        "height": 3762
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 98,
+      "record_id": "CANVAS-0098-49v",
+      "folio_or_cover_id": "49v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0098_49v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0098_49v.jpg",
+      "source_sha256": "3c03e0e8b3d3e75f93ba7a7619a029b7ffbe33d7243f32222ad59ac7555dfd96",
+      "image_file_grid_px": {
+        "width": 2935,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 99,
+      "record_id": "CANVAS-0099-50r",
+      "folio_or_cover_id": "50r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0099_50r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0099_50r.jpg",
+      "source_sha256": "a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d",
+      "image_file_grid_px": {
+        "width": 2840,
+        "height": 3751
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 100,
+      "record_id": "CANVAS-0100-50v",
+      "folio_or_cover_id": "50v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0100_50v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0100_50v.jpg",
+      "source_sha256": "bbd4d60e069704fdfe91394ac07387022341c6cf08eb7d6d2160a34ea5b7677d",
+      "image_file_grid_px": {
+        "width": 2942,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 101,
+      "record_id": "CANVAS-0101-51r",
+      "folio_or_cover_id": "51r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0101_51r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0101_51r.jpg",
+      "source_sha256": "d3335f9fe15abe0d4473e881f411f658fe7a4db70fcb03c13dad8a2f49cf6cc1",
+      "image_file_grid_px": {
+        "width": 2835,
+        "height": 3764
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 102,
+      "record_id": "CANVAS-0102-51v",
+      "folio_or_cover_id": "51v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0102_51v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0102_51v.jpg",
+      "source_sha256": "7e794abb1dfddce9f2cee013a7f1aaec880b86e884ae17298354863b0108734e",
+      "image_file_grid_px": {
+        "width": 2927,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 103,
+      "record_id": "CANVAS-0103-52r",
+      "folio_or_cover_id": "52r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0103_52r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0103_52r.jpg",
+      "source_sha256": "002748147666ab2ec1d81be186248a7a9b58e001a8b61a53498b8d7f49193206",
+      "image_file_grid_px": {
+        "width": 2826,
+        "height": 3757
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 104,
+      "record_id": "CANVAS-0104-52v",
+      "folio_or_cover_id": "52v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0104_52v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0104_52v.jpg",
+      "source_sha256": "9792c5070fa339a220781439d0b8864d48b2e2dc071cd051b24e501d565ddb39",
+      "image_file_grid_px": {
+        "width": 2935,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 105,
+      "record_id": "CANVAS-0105-53r",
+      "folio_or_cover_id": "53r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0105_53r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0105_53r.jpg",
+      "source_sha256": "a415de024d9cf57a8a607c764d9a8d038803dcaabda8a77f7325645fa0c73f89",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3707
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 106,
+      "record_id": "CANVAS-0106-53v",
+      "folio_or_cover_id": "53v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0106_53v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0106_53v.jpg",
+      "source_sha256": "717481f74b5552c603f38ec3b2ae4de2f447320e18d3aaf368a8ccd211e1df11",
+      "image_file_grid_px": {
+        "width": 2940,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 107,
+      "record_id": "CANVAS-0107-54r",
+      "folio_or_cover_id": "54r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0107_54r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0107_54r.jpg",
+      "source_sha256": "471b393530cf2f80116e8bcfb9712b43e991db175b919e594a1587cca21f2eaa",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3718
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 108,
+      "record_id": "CANVAS-0108-54v",
+      "folio_or_cover_id": "54v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0108_54v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0108_54v.jpg",
+      "source_sha256": "97c02cfada6ad1c2450bdac0e345cddc4d4788570813b84ac65ccdcd360dbc13",
+      "image_file_grid_px": {
+        "width": 2999,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 109,
+      "record_id": "CANVAS-0109-55r",
+      "folio_or_cover_id": "55r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0109_55r.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0109_55r.jpg",
+      "source_sha256": "24e4b496a7e198a6bcd8d98044112d45418c157f2f2a54fdf997e01de6d53126",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3738
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 110,
+      "record_id": "CANVAS-0110-55v",
+      "folio_or_cover_id": "55v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0110_55v.annotation.json",
+      "source_path": "data/yale_hq_scans/5/0110_55v.jpg",
+      "source_sha256": "0e9b1dac025cad189bc7258f41fb8cafc6fcff70f9c4e5bb4f85c9bb79ad5a80",
+      "image_file_grid_px": {
+        "width": 2979,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 111,
+      "record_id": "CANVAS-0111-56r",
+      "folio_or_cover_id": "56r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0111_56r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0111_56r.jpg",
+      "source_sha256": "d81272aa14671b1b6672fe7556c15ac177c734685d9ef7448237a2cc08dc899d",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3707
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 112,
+      "record_id": "CANVAS-0112-56v",
+      "folio_or_cover_id": "56v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0112_56v.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0112_56v.jpg",
+      "source_sha256": "d92ba733bf53dc49e8d81df2d1873d5f36c52f98cf67292ea43e66a844a61cc9",
+      "image_file_grid_px": {
+        "width": 2979,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 113,
+      "record_id": "CANVAS-0113-57r",
+      "folio_or_cover_id": "57r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0113_57r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0113_57r.jpg",
+      "source_sha256": "473727b2ea1dd000a4a15eaa57302a48c410d4f6e670abdd607cd7c7461ff98c",
+      "image_file_grid_px": {
+        "width": 2823,
+        "height": 3733
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 114,
+      "record_id": "CANVAS-0114-57v",
+      "folio_or_cover_id": "57v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0114_57v.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0114_57v.jpg",
+      "source_sha256": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+      "image_file_grid_px": {
+        "width": 3028,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 115,
+      "record_id": "CANVAS-0115-58r",
+      "folio_or_cover_id": "58r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0115_58r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0115_58r.jpg",
+      "source_sha256": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3749
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 116,
+      "record_id": "CANVAS-0116-58v",
+      "folio_or_cover_id": "58v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0116_58v.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0116_58v.jpg",
+      "source_sha256": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+      "image_file_grid_px": {
+        "width": 2986,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 117,
+      "record_id": "CANVAS-0117-65r",
+      "folio_or_cover_id": "65r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0117_65r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0117_65r.jpg",
+      "source_sha256": "dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3707
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 118,
+      "record_id": "CANVAS-0118-65v",
+      "folio_or_cover_id": "65v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0118_65v.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0118_65v.jpg",
+      "source_sha256": "d3ebd8bfcf12a0a98f9ecc96ee345e82c7cc15d5c786c93c63ccd2f923ea1714",
+      "image_file_grid_px": {
+        "width": 3010,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 119,
+      "record_id": "CANVAS-0119-66r",
+      "folio_or_cover_id": "66r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0119_66r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0119_66r.jpg",
+      "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3707
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 120,
+      "record_id": "CANVAS-0120-66v",
+      "folio_or_cover_id": "66v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0120_66v.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0120_66v.jpg",
+      "source_sha256": "8304c6ba3605207c67f4f843974e60e947b423f21255a06656d6af3055fa53ce",
+      "image_file_grid_px": {
+        "width": 2997,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 121,
+      "record_id": "CANVAS-0121-67r",
+      "folio_or_cover_id": "67r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0121_67r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0121_67r.jpg",
+      "source_sha256": "0518312a566ee713a46c9887d8b8b9d7141d14095e360661789c1dad9b5c0d1c",
+      "image_file_grid_px": {
+        "width": 4972,
+        "height": 3738
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 122,
+      "record_id": "CANVAS-0122-67v",
+      "folio_or_cover_id": "67v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0122_67v.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0122_67v.jpg",
+      "source_sha256": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+      "image_file_grid_px": {
+        "width": 5059,
+        "height": 3753
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 123,
+      "record_id": "CANVAS-0123-68r",
+      "folio_or_cover_id": "68r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0123_68r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0123_68r.jpg",
+      "source_sha256": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+      "image_file_grid_px": {
+        "width": 7993,
+        "height": 3828
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 124,
+      "record_id": "CANVAS-0124-68v",
+      "folio_or_cover_id": "68v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0124_68v.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0124_68v.jpg",
+      "source_sha256": "06d33798cd4f901771b9869078d3f29f7e7ef5a490a9abc6dd09f3a3adec867f",
+      "image_file_grid_px": {
+        "width": 8135,
+        "height": 3843
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 125,
+      "record_id": "CANVAS-0125-69r",
+      "folio_or_cover_id": "69r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0125_69r.annotation.json",
+      "source_path": "data/yale_hq_scans/6/0125_69r.jpg",
+      "source_sha256": "b830e74480830c0d5e8f7b56025473e051743f9ec50685b6fe316ecd493f0f01",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3763
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 126,
+      "record_id": "CANVAS-0126-69v_and_70r",
+      "folio_or_cover_id": "69v and 70r",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0126_69v_and_70r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0126_69v and 70r.jpg",
+      "source_sha256": "709419c3c6861c216b1746261884e08a38f1b5a2b052ad129e78cdd73697b5e9",
+      "image_file_grid_px": {
+        "width": 8886,
+        "height": 3876
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 127,
+      "record_id": "CANVAS-0127-70v_part",
+      "folio_or_cover_id": "70v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0127_70v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0127_70v _part_.jpg",
+      "source_sha256": "062ff6a9f14d0c16eb12dc8f6dc480771b7c19746ebdb20302b998e66181ccea",
+      "image_file_grid_px": {
+        "width": 3945,
+        "height": 3772
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 128,
+      "record_id": "CANVAS-0128-70v_part",
+      "folio_or_cover_id": "70v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0128_70v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0128_70v _part_.jpg",
+      "source_sha256": "c8f24b6be5451aba49eb793784c43cb7fc8341dca8a58ff43fc1eebf4877b60c",
+      "image_file_grid_px": {
+        "width": 2979,
+        "height": 3700
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 129,
+      "record_id": "CANVAS-0129-71r",
+      "folio_or_cover_id": "71r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0129_71r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0129_71r.jpg",
+      "source_sha256": "6405841a75a8fa24dd9e5c93ad090ee56bf26c77757f3b1634487e27b509e61b",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3762
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 130,
+      "record_id": "CANVAS-0130-71v_and_72r",
+      "folio_or_cover_id": "71v and 72r",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0130_71v_and_72r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0130_71v and 72r.jpg",
+      "source_sha256": "45f7caf4b58744fdcd4928887661b56a135538a5a40a24fea6ca6c5239898269",
+      "image_file_grid_px": {
+        "width": 8865,
+        "height": 3018
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 131,
+      "record_id": "CANVAS-0131-72v_part",
+      "folio_or_cover_id": "72v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0131_72v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0131_72v _part_.jpg",
+      "source_sha256": "2552b2eafb7948d182e52ec49e96a5d92a774917924aea594fb1ac3af3bfcdc5",
+      "image_file_grid_px": {
+        "width": 5976,
+        "height": 3794
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 132,
+      "record_id": "CANVAS-0132-72v_part",
+      "folio_or_cover_id": "72v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0132_72v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0132_72v _part_.jpg",
+      "source_sha256": "c0ac0dbc3e4b4a6eb2b8edf26dc762a7f9bf26ac9c385fa6bdc770725622b1e7",
+      "image_file_grid_px": {
+        "width": 2979,
+        "height": 3712
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 133,
+      "record_id": "CANVAS-0133-73r",
+      "folio_or_cover_id": "73r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0133_73r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0133_73r.jpg",
+      "source_sha256": "5bc8e07dbd61cc1f218cfc4449cd527be118aa7884878ec4c8e568e9c2d89bad",
+      "image_file_grid_px": {
+        "width": 2834,
+        "height": 3761
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 134,
+      "record_id": "CANVAS-0134-73v",
+      "folio_or_cover_id": "73v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0134_73v.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0134_73v.jpg",
+      "source_sha256": "4227e5261bb5986e605ddb4f58fa1526640955d778c06916a1c34734bb431141",
+      "image_file_grid_px": {
+        "width": 2979,
+        "height": 3724
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 135,
+      "record_id": "CANVAS-0135-75r",
+      "folio_or_cover_id": "75r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0135_75r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0135_75r.jpg",
+      "source_sha256": "6fd33917722a97ef0c93f905885963332645c1a1c81f60f03a165b12007a7fc3",
+      "image_file_grid_px": {
+        "width": 2852,
+        "height": 3759
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 136,
+      "record_id": "CANVAS-0136-75v",
+      "folio_or_cover_id": "75v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0136_75v.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0136_75v.jpg",
+      "source_sha256": "654edf15a65d1a2bb0d7bb4995f8f6fba1625d5eed847c9b6969d1c44e385a23",
+      "image_file_grid_px": {
+        "width": 2868,
+        "height": 3735
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 137,
+      "record_id": "CANVAS-0137-76r",
+      "folio_or_cover_id": "76r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0137_76r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0137_76r.jpg",
+      "source_sha256": "39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3769
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 138,
+      "record_id": "CANVAS-0138-76v",
+      "folio_or_cover_id": "76v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0138_76v.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0138_76v.jpg",
+      "source_sha256": "affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e",
+      "image_file_grid_px": {
+        "width": 2823,
+        "height": 3712
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 139,
+      "record_id": "CANVAS-0139-77r",
+      "folio_or_cover_id": "77r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0139_77r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0139_77r.jpg",
+      "source_sha256": "9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3752
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 140,
+      "record_id": "CANVAS-0140-77v",
+      "folio_or_cover_id": "77v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0140_77v.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0140_77v.jpg",
+      "source_sha256": "e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2",
+      "image_file_grid_px": {
+        "width": 2861,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 141,
+      "record_id": "CANVAS-0141-78r",
+      "folio_or_cover_id": "78r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0141_78r.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0141_78r.jpg",
+      "source_sha256": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3761
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 142,
+      "record_id": "CANVAS-0142-78v",
+      "folio_or_cover_id": "78v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0142_78v.annotation.json",
+      "source_path": "data/yale_hq_scans/8/0142_78v.jpg",
+      "source_sha256": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+      "image_file_grid_px": {
+        "width": 2841,
+        "height": 3706
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 143,
+      "record_id": "CANVAS-0143-79r",
+      "folio_or_cover_id": "79r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0143_79r.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0143_79r.jpg",
+      "source_sha256": "a0f51d21267270b55ac69fc947a4a3443e2a32fc263b162c51a27ad9745eb979",
+      "image_file_grid_px": {
+        "width": 2784,
+        "height": 3755
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 144,
+      "record_id": "CANVAS-0144-79v",
+      "folio_or_cover_id": "79v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0144_79v.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0144_79v.jpg",
+      "source_sha256": "81d647bbc752211d5bf671f7791c59fc8dceaa60e20e7f7a075319b44ed879c1",
+      "image_file_grid_px": {
+        "width": 2811,
+        "height": 3714
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 145,
+      "record_id": "CANVAS-0145-80r",
+      "folio_or_cover_id": "80r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0145_80r.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0145_80r.jpg",
+      "source_sha256": "81223a0b0aa0a24fe821cf62a9bdf4ac504f222ab3cfcb89fcedd7946bceada0",
+      "image_file_grid_px": {
+        "width": 2793,
+        "height": 3733
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 146,
+      "record_id": "CANVAS-0146-80v",
+      "folio_or_cover_id": "80v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0146_80v.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0146_80v.jpg",
+      "source_sha256": "29c94fba8ec872eb71faab93fc4a02e09cd4ef31d1b9001bd44f011d141cfb0b",
+      "image_file_grid_px": {
+        "width": 2837,
+        "height": 3712
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 147,
+      "record_id": "CANVAS-0147-81r",
+      "folio_or_cover_id": "81r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0147_81r.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0147_81r.jpg",
+      "source_sha256": "e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe",
+      "image_file_grid_px": {
+        "width": 2776,
+        "height": 3737
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 148,
+      "record_id": "CANVAS-0148-81v",
+      "folio_or_cover_id": "81v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0148_81v.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0148_81v.jpg",
+      "source_sha256": "bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf",
+      "image_file_grid_px": {
+        "width": 2835,
+        "height": 3705
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 149,
+      "record_id": "CANVAS-0149-82r",
+      "folio_or_cover_id": "82r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0149_82r.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0149_82r.jpg",
+      "source_sha256": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+      "image_file_grid_px": {
+        "width": 2753,
+        "height": 3745
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 150,
+      "record_id": "CANVAS-0150-82v",
+      "folio_or_cover_id": "82v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0150_82v.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0150_82v.jpg",
+      "source_sha256": "4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142",
+      "image_file_grid_px": {
+        "width": 2821,
+        "height": 3709
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 151,
+      "record_id": "CANVAS-0151-83r",
+      "folio_or_cover_id": "83r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0151_83r.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0151_83r.jpg",
+      "source_sha256": "dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729",
+      "image_file_grid_px": {
+        "width": 2753,
+        "height": 3745
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 152,
+      "record_id": "CANVAS-0152-83v",
+      "folio_or_cover_id": "83v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0152_83v.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0152_83v.jpg",
+      "source_sha256": "dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9",
+      "image_file_grid_px": {
+        "width": 2858,
+        "height": 3693
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 153,
+      "record_id": "CANVAS-0153-84r",
+      "folio_or_cover_id": "84r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0153_84r.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0153_84r.jpg",
+      "source_sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe",
+      "image_file_grid_px": {
+        "width": 2753,
+        "height": 3745
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 154,
+      "record_id": "CANVAS-0154-84v",
+      "folio_or_cover_id": "84v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0154_84v.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0154_84v.jpg",
+      "source_sha256": "e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f",
+      "image_file_grid_px": {
+        "width": 2838,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 155,
+      "record_id": "CANVAS-0155-85r_part_part_of_85-86_foldout",
+      "folio_or_cover_id": "85r (part) (part of 85-86 foldout)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0155_85r_part_part_of_85-86_foldout.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0155_85r _part_ _part of 85-86 foldout_.jpg",
+      "source_sha256": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+      "image_file_grid_px": {
+        "width": 2775,
+        "height": 3745
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 156,
+      "record_id": "CANVAS-0156-85r_part_86v_part_part_of_85-86_foldout",
+      "folio_or_cover_id": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0156_85r_part_86v_part_part_of_85-86_foldout.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0156_85r _part_ 86v _part_ _part of 85-86 foldout_.jpg",
+      "source_sha256": "dde619e85e35601b9206051389873f6cb092a17f04a8fcd02b32fe3961ea37ce",
+      "image_file_grid_px": {
+        "width": 7754,
+        "height": 3890
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 157,
+      "record_id": "CANVAS-0157-86v_part_part_of_85-86_foldout",
+      "folio_or_cover_id": "86v (part) (part of 85-86 foldout)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0157_86v_part_part_of_85-86_foldout.annotation.json",
+      "source_path": "data/yale_hq_scans/9/0157_86v _part_ _part of 85-86 foldout_.jpg",
+      "source_sha256": "4c5f7642e7da2be07242968faa92a2d0bb1cb88e8589d30f5d2acbfc3cc7e0be",
+      "image_file_grid_px": {
+        "width": 4897,
+        "height": 3788
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 158,
+      "record_id": "CANVAS-0158-85v_and_86r_foldout",
+      "folio_or_cover_id": "85v and 86r (foldout)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0158_85v_and_86r_foldout.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0158_85v and 86r _foldout_.jpg",
+      "source_sha256": "4b08afeee514691b0a511099ca299aed544d6fd1782b7dee8df163dfc06354ed",
+      "image_file_grid_px": {
+        "width": 7925,
+        "height": 7268
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 159,
+      "record_id": "CANVAS-0159-87r",
+      "folio_or_cover_id": "87r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0159_87r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0159_87r.jpg",
+      "source_sha256": "eb9c7020f670d4d9070a4d37130db9e250b9b4ecf33ab34ffb0596512fa53a6c",
+      "image_file_grid_px": {
+        "width": 2753,
+        "height": 3745
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 160,
+      "record_id": "CANVAS-0160-87v",
+      "folio_or_cover_id": "87v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0160_87v.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0160_87v.jpg",
+      "source_sha256": "3bac9e01c7bd848fa947b4877d1166f8e9f38822c7bd209e9574a88f6cb181c0",
+      "image_file_grid_px": {
+        "width": 2893,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 161,
+      "record_id": "CANVAS-0161-88r",
+      "folio_or_cover_id": "88r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0161_88r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0161_88r.jpg",
+      "source_sha256": "a1d21ccad0df430b47f3b3df2829bbefb8c4d1644cb70310e6d1de4b01c20013",
+      "image_file_grid_px": {
+        "width": 2714,
+        "height": 3735
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 162,
+      "record_id": "CANVAS-0162-88v_and_89r",
+      "folio_or_cover_id": "88v and 89r",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0162_88v_and_89r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0162_88v and 89r.jpg",
+      "source_sha256": "3b553c70d0c068cb39a276d391127165c5d9d868ec08e7f5eb2e73b32bb95d1e",
+      "image_file_grid_px": {
+        "width": 9078,
+        "height": 3777
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 163,
+      "record_id": "CANVAS-0163-89v_part",
+      "folio_or_cover_id": "89v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0163_89v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0163_89v _part_.jpg",
+      "source_sha256": "b6b0dd8ba7cd316f3b09a8b156d1eed0eb36ad8ec9086b975969f4f8f7dd5406",
+      "image_file_grid_px": {
+        "width": 4204,
+        "height": 3809
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 164,
+      "record_id": "CANVAS-0164-89v_part_and_90r",
+      "folio_or_cover_id": "89v (part) and 90r",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0164_89v_part_and_90r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0164_89v _part_ and 90r.jpg",
+      "source_sha256": "6aaa777945f288a8ba206921709292eaaf4ea972f9a0bb59cdf3040aaed3e15a",
+      "image_file_grid_px": {
+        "width": 7796,
+        "height": 3761
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 165,
+      "record_id": "CANVAS-0165-90r",
+      "folio_or_cover_id": "90r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0165_90r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0165_90r.jpg",
+      "source_sha256": "f315895bc403e9b78bdda4d207789ed7b5a38654a47715e4571fdfc140c619c6",
+      "image_file_grid_px": {
+        "width": 2737,
+        "height": 3752
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 166,
+      "record_id": "CANVAS-0166-90v_part",
+      "folio_or_cover_id": "90v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0166_90v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0166_90v _part_.jpg",
+      "source_sha256": "4fe01cc0f7c1424c62cdd0fbd83092ab928493b908970b05eb112ab9d91a7793",
+      "image_file_grid_px": {
+        "width": 2838,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 167,
+      "record_id": "CANVAS-0167-93r",
+      "folio_or_cover_id": "93r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0167_93r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0167_93r.jpg",
+      "source_sha256": "e8ab4d7dcf7d758e2f0e05f9579ef5366a846c273f309ae603616a5e74bbec3a",
+      "image_file_grid_px": {
+        "width": 2718,
+        "height": 3758
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 168,
+      "record_id": "CANVAS-0168-93v",
+      "folio_or_cover_id": "93v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0168_93v.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0168_93v.jpg",
+      "source_sha256": "ed9a4f5e3c4be33611749ce05c303aa7553c5cf3523882d87d05c7aac86e0e32",
+      "image_file_grid_px": {
+        "width": 2838,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 169,
+      "record_id": "CANVAS-0169-94r",
+      "folio_or_cover_id": "94r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0169_94r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0169_94r.jpg",
+      "source_sha256": "ad33592ad7f29a6e9fc6b9e45444286231f06a903d95b54d1195b17cfdca417b",
+      "image_file_grid_px": {
+        "width": 2728,
+        "height": 3754
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 170,
+      "record_id": "CANVAS-0170-94v_and_95r",
+      "folio_or_cover_id": "94v and 95r",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0170_94v_and_95r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0170_94v and 95r.jpg",
+      "source_sha256": "04405b1d121a3c73571bad7f5b887b8cf3776a829ee6482e8a82ca095918071d",
+      "image_file_grid_px": {
+        "width": 7642,
+        "height": 3801
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 171,
+      "record_id": "CANVAS-0171-95v_part",
+      "folio_or_cover_id": "95v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0171_95v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0171_95v _part_.jpg",
+      "source_sha256": "9cdbb63ffcc2b43314bf5b9d812e59f1c0f0ce17c811270bc977a1ae71e7a960",
+      "image_file_grid_px": {
+        "width": 2731,
+        "height": 3750
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 172,
+      "record_id": "CANVAS-0172-95v",
+      "folio_or_cover_id": "95v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0172_95v.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0172_95v.jpg",
+      "source_sha256": "e9f7a4ceb162f393086b1f0be4d5c11edf4d72b8e8ea3420fdb13d8ff58efb51",
+      "image_file_grid_px": {
+        "width": 2838,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 173,
+      "record_id": "CANVAS-0173-96r",
+      "folio_or_cover_id": "96r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0173_96r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0173_96r.jpg",
+      "source_sha256": "3feb9d44f6498e7dc085dd9f3eee9a5f29db941d2d401accd54948d5fae3b613",
+      "image_file_grid_px": {
+        "width": 2699,
+        "height": 3745
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 174,
+      "record_id": "CANVAS-0174-96v",
+      "folio_or_cover_id": "96v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0174_96v.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0174_96v.jpg",
+      "source_sha256": "7aad14a896b53ddc78f3c7239d358389f215654c26fd9db7dfc43329439c1f15",
+      "image_file_grid_px": {
+        "width": 2858,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 175,
+      "record_id": "CANVAS-0175-99r",
+      "folio_or_cover_id": "99r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0175_99r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0175_99r.jpg",
+      "source_sha256": "f17eba5496a1b1d92f589c33ee9be256a379ec8d2bba3da1ebe2ff5a2e3e2901",
+      "image_file_grid_px": {
+        "width": 2702,
+        "height": 3765
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 176,
+      "record_id": "CANVAS-0176-99v",
+      "folio_or_cover_id": "99v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0176_99v.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0176_99v.jpg",
+      "source_sha256": "111f6dfc34b8ecb9230cb5a0d144afef4cbd788048ddda2f440108941c91d5e5",
+      "image_file_grid_px": {
+        "width": 2802,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 177,
+      "record_id": "CANVAS-0177-100r",
+      "folio_or_cover_id": "100r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0177_100r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0177_100r.jpg",
+      "source_sha256": "6dcf72a0d7eac14da2232987c9cc1521e6d70c9f0f92d3eb39b55fc075520429",
+      "image_file_grid_px": {
+        "width": 2676,
+        "height": 3756
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 178,
+      "record_id": "CANVAS-0178-100v_and_101r",
+      "folio_or_cover_id": "100v and 101r",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0178_100v_and_101r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0178_100v and 101r.jpg",
+      "source_sha256": "72637b9770f40f7a8ff6b96a551e64775e88994ae69bafec0b43d48974364c33",
+      "image_file_grid_px": {
+        "width": 7486,
+        "height": 3715
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 179,
+      "record_id": "CANVAS-0179-101v_part",
+      "folio_or_cover_id": "101v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0179_101v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0179_101v _part_.jpg",
+      "source_sha256": "1122f1b13afdf1509402334816f95e5e9baa2b6c94aa9e347b04aa2e4e54f36b",
+      "image_file_grid_px": {
+        "width": 2698,
+        "height": 3779
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 180,
+      "record_id": "CANVAS-0180-101v_part_and_102r",
+      "folio_or_cover_id": "101v (part) and 102r",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0180_101v_part_and_102r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0180_101v _part_ and 102r.jpg",
+      "source_sha256": "30fd529fc6bf8999d5be48024ee6a1676af55e8d66dc0a4f77993fe2565e9d94",
+      "image_file_grid_px": {
+        "width": 8176,
+        "height": 3864
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 181,
+      "record_id": "CANVAS-0181-102v_part",
+      "folio_or_cover_id": "102v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0181_102v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0181_102v _part_.jpg",
+      "source_sha256": "8cdb1030d805b968932146124915cb0d86f7abf853167ffec028b59599820fad",
+      "image_file_grid_px": {
+        "width": 2981,
+        "height": 3795
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 182,
+      "record_id": "CANVAS-0182-102v_part",
+      "folio_or_cover_id": "102v (part)",
+      "logical_role": "UNRESOLVED",
+      "record_path": "atlas/records/0182_102v_part.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0182_102v _part_.jpg",
+      "source_sha256": "e3ed770ad77b1c1127b8e60b2ee2d9e226ab4089d4861b85dbf22299925397ce",
+      "image_file_grid_px": {
+        "width": 2838,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 183,
+      "record_id": "CANVAS-0183-103r",
+      "folio_or_cover_id": "103r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0183_103r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0183_103r.jpg",
+      "source_sha256": "28a65644ebf9a16dc41c073e6535117d924765fae6af474dbd1e3fe2b167beda",
+      "image_file_grid_px": {
+        "width": 2688,
+        "height": 3805
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 184,
+      "record_id": "CANVAS-0184-103v",
+      "folio_or_cover_id": "103v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0184_103v.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0184_103v.jpg",
+      "source_sha256": "dd2444928b8dd5d1e60fbd58e04e4be38ed877f9d491058a7c6b779ceb18a75b",
+      "image_file_grid_px": {
+        "width": 2762,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 185,
+      "record_id": "CANVAS-0185-104r",
+      "folio_or_cover_id": "104r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0185_104r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0185_104r.jpg",
+      "source_sha256": "2ee5f2a32ed2e242d60dcb34398c9b8be6af0341872a476e3905f1314ebe716f",
+      "image_file_grid_px": {
+        "width": 2677,
+        "height": 3811
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 186,
+      "record_id": "CANVAS-0186-104v",
+      "folio_or_cover_id": "104v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0186_104v.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0186_104v.jpg",
+      "source_sha256": "c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd",
+      "image_file_grid_px": {
+        "width": 2744,
+        "height": 3704
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 187,
+      "record_id": "CANVAS-0187-105r",
+      "folio_or_cover_id": "105r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0187_105r.annotation.json",
+      "source_path": "data/yale_hq_scans/10/0187_105r.jpg",
+      "source_sha256": "0401750e6d83ed74cd4fea79f99c2aba5e2c8dcd90ed0f2641be81c7b722e82f",
+      "image_file_grid_px": {
+        "width": 2662,
+        "height": 3771
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 188,
+      "record_id": "CANVAS-0188-105v",
+      "folio_or_cover_id": "105v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0188_105v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0188_105v.jpg",
+      "source_sha256": "540787c3d0aa7a13c1cc620fe222a13d0b2409eaa69e19de56d2544cfdf3c678",
+      "image_file_grid_px": {
+        "width": 2663,
+        "height": 3701
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 189,
+      "record_id": "CANVAS-0189-106r",
+      "folio_or_cover_id": "106r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0189_106r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0189_106r.jpg",
+      "source_sha256": "1aad6bd53b227df51ba6f9b19812558a8b4f4313f97dd1a8b272ee4c60fefb31",
+      "image_file_grid_px": {
+        "width": 2635,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 190,
+      "record_id": "CANVAS-0190-106v",
+      "folio_or_cover_id": "106v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0190_106v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0190_106v.jpg",
+      "source_sha256": "41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5",
+      "image_file_grid_px": {
+        "width": 2670,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 191,
+      "record_id": "CANVAS-0191-107r",
+      "folio_or_cover_id": "107r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0191_107r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0191_107r.jpg",
+      "source_sha256": "eb97d7b784be55eaa92781031d3ccefc3e37f9eda41314a9ed996e711a041a58",
+      "image_file_grid_px": {
+        "width": 2641,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 192,
+      "record_id": "CANVAS-0192-107v",
+      "folio_or_cover_id": "107v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0192_107v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0192_107v.jpg",
+      "source_sha256": "46316d4cb82f2ccdd1c8d414ee99ad60f72d6154c28b888d00c484245d75704c",
+      "image_file_grid_px": {
+        "width": 2689,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 193,
+      "record_id": "CANVAS-0193-108r",
+      "folio_or_cover_id": "108r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0193_108r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0193_108r.jpg",
+      "source_sha256": "afad28189500567259ef2041cd1c591644bf6d6c86ac6a39cd1c09503693ad76",
+      "image_file_grid_px": {
+        "width": 2641,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 194,
+      "record_id": "CANVAS-0194-108v",
+      "folio_or_cover_id": "108v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0194_108v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0194_108v.jpg",
+      "source_sha256": "df3fce237ad489c5fcdc1c8dab2a5b21b7c338bc3b88ca588cc79434f9499a7b",
+      "image_file_grid_px": {
+        "width": 2649,
+        "height": 3706
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 195,
+      "record_id": "CANVAS-0195-111r",
+      "folio_or_cover_id": "111r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0195_111r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0195_111r.jpg",
+      "source_sha256": "12ea5325dcdc68d0ea9480bb369d1d95b4dc3accd1ff0d9b84beea8827cfdf31",
+      "image_file_grid_px": {
+        "width": 2622,
+        "height": 3783
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 196,
+      "record_id": "CANVAS-0196-111v",
+      "folio_or_cover_id": "111v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0196_111v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0196_111v.jpg",
+      "source_sha256": "00729a36de336f57b387fc364441057b31b4bc51f6c5e915352d9185121cbcbf",
+      "image_file_grid_px": {
+        "width": 2666,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 197,
+      "record_id": "CANVAS-0197-112r",
+      "folio_or_cover_id": "112r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0197_112r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0197_112r.jpg",
+      "source_sha256": "f59b3420ff3fdbe6f360c12993304a12b11acdef1a2978784efcd77541c0d9b3",
+      "image_file_grid_px": {
+        "width": 2602,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 198,
+      "record_id": "CANVAS-0198-112v",
+      "folio_or_cover_id": "112v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0198_112v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0198_112v.jpg",
+      "source_sha256": "c421f574928c767cada83c01295370c078b66234610d262e286079a7a5a4cc1a",
+      "image_file_grid_px": {
+        "width": 2664,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 199,
+      "record_id": "CANVAS-0199-113r",
+      "folio_or_cover_id": "113r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0199_113r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0199_113r.jpg",
+      "source_sha256": "ad748f9012b174be520b7ac837fdadf913e49a696323920ca655ecf5474afb5c",
+      "image_file_grid_px": {
+        "width": 2582,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 200,
+      "record_id": "CANVAS-0200-113v",
+      "folio_or_cover_id": "113v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0200_113v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0200_113v.jpg",
+      "source_sha256": "d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3",
+      "image_file_grid_px": {
+        "width": 2666,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 201,
+      "record_id": "CANVAS-0201-114r",
+      "folio_or_cover_id": "114r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0201_114r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0201_114r.jpg",
+      "source_sha256": "fc76cfcb2e6f8911b3928c59772c9c4eca7854dd2a260bec81972f78b883aa37",
+      "image_file_grid_px": {
+        "width": 2599,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 202,
+      "record_id": "CANVAS-0202-114v",
+      "folio_or_cover_id": "114v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0202_114v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0202_114v.jpg",
+      "source_sha256": "159d08488392d651c1818e825d3defce83187ad6997610d179dbfe76be30e4e3",
+      "image_file_grid_px": {
+        "width": 2671,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 203,
+      "record_id": "CANVAS-0203-115r",
+      "folio_or_cover_id": "115r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0203_115r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0203_115r.jpg",
+      "source_sha256": "6de34408de10afa401805534c691341824f0660e054d836f9be5e8620cb17668",
+      "image_file_grid_px": {
+        "width": 2584,
+        "height": 3786
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 204,
+      "record_id": "CANVAS-0204-115v",
+      "folio_or_cover_id": "115v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0204_115v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0204_115v.jpg",
+      "source_sha256": "5700486404459fe1abfc11f6347aa0171bd651e39bcf71d594beecfb170ed8a3",
+      "image_file_grid_px": {
+        "width": 2676,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 205,
+      "record_id": "CANVAS-0205-116r",
+      "folio_or_cover_id": "116r",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0205_116r.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0205_116r.jpg",
+      "source_sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c",
+      "image_file_grid_px": {
+        "width": 2559,
+        "height": 3787
+      },
+      "execution_status": "SCHEMA_READY"
+    },
+    {
+      "sequence": 206,
+      "record_id": "CANVAS-0206-116v",
+      "folio_or_cover_id": "116v",
+      "logical_role": "FOLIO",
+      "record_path": "atlas/records/0206_116v.annotation.json",
+      "source_path": "data/yale_hq_scans/11/0206_116v.jpg",
+      "source_sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+      "image_file_grid_px": {
+        "width": 2686,
+        "height": 3697
+      },
+      "execution_status": "SCHEMA_READY"
+    }
+  ],
+  "annotation_policy": {
+    "neutral_visual_classes_only": true,
+    "transliteration_reference_only": true,
+    "reading_order_only_when_observable": true,
+    "text_illustration_links_geometry_only": true,
+    "cross_page_links_require_matches_mismatches_method_negative_control_confidence": true,
+    "bbox_size_or_background_color_alone_is_insufficient": true
+  }
+}
