@@ -1,0 +1,105 @@
+{
+  "experiment_id": "ZODIAC-30-ORDINAL-LABEL-TRANSFER-01",
+  "source_url": "https://www.voynich.nu/data/RF1b-er.txt",
+  "source_bytes": 343891,
+  "total_Lz_loci": 299,
+  "counts_by_sign": {
+    "Pisces": 30,
+    "Aries": 30,
+    "Taurus": 30,
+    "Gemini": 29,
+    "Cancer": 30,
+    "Leo": 30,
+    "Virgo": 30,
+    "Libra": 30,
+    "Scorpio": 30,
+    "Sagittarius": 30
+  },
+  "calibration": [
+    "Aries",
+    "Taurus"
+  ],
+  "heldout": [
+    "Pisces",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius"
+  ],
+  "missing_label_sign": "Gemini",
+  "primary": {
+    "observed": 0.23753352766149,
+    "null_mean": 0.23945300210520953,
+    "effect": -0.0019194744437195377,
+    "null_sd": 0.003077658695966724,
+    "z": -0.6236800871503431,
+    "p_perm": 0.7303726962730372,
+    "permutations": 100000,
+    "seed": 3001425,
+    "concordant_signs": 4,
+    "heldout_n": 7,
+    "verdict": "FAIL_EXACT_REFERENCE_LOCUS_ORDER_MODEL"
+  },
+  "per_sign": {
+    "Pisces": {
+      "observed": 0.28333534300398955,
+      "null_mean_all_shifts": 0.27892833336834477,
+      "effect": 0.004407009635644776,
+      "best_shift": 3,
+      "best_score": 0.29764501551653255
+    },
+    "Cancer": {
+      "observed": 0.22290617016282652,
+      "null_mean_all_shifts": 0.23897913023893896,
+      "effect": -0.016072960076112447,
+      "best_shift": 24,
+      "best_score": 0.26208219976941544
+    },
+    "Leo": {
+      "observed": 0.23391365301365302,
+      "null_mean_all_shifts": 0.23690872908790944,
+      "effect": -0.0029950760742564198,
+      "best_shift": 17,
+      "best_score": 0.25852298695904835
+    },
+    "Virgo": {
+      "observed": 0.2456942063927358,
+      "null_mean_all_shifts": 0.24312445719119544,
+      "effect": 0.00256974920154035,
+      "best_shift": 16,
+      "best_score": 0.2696026680220414
+    },
+    "Libra": {
+      "observed": 0.22649116236360817,
+      "null_mean_all_shifts": 0.23038234690312887,
+      "effect": -0.003891184539520698,
+      "best_shift": 11,
+      "best_score": 0.24784070150981916
+    },
+    "Scorpio": {
+      "observed": 0.2379725912975913,
+      "null_mean_all_shifts": 0.2358215623417777,
+      "effect": 0.002151028955813594,
+      "best_shift": 26,
+      "best_score": 0.2512459374703957
+    },
+    "Sagittarius": {
+      "observed": 0.2124215673960256,
+      "null_mean_all_shifts": 0.21197263627405236,
+      "effect": 0.0004489311219732506,
+      "best_shift": 21,
+      "best_score": 0.22830333011215365
+    }
+  },
+  "one_gap_stress": {
+    "sign": "Gemini",
+    "best_gap_1_based": 29,
+    "best_shift": 13,
+    "best_score": 0.29910085125602365,
+    "exact_shift_null_p": 0.06666666666666667,
+    "note": "exploratory stress test; maximization over all 30 gaps is included in null"
+  },
+  "interpretation_limit": "Tests RF1b locus order as ordinal proxy; does not certify physical zodiac-degree order."
+}
