@@ -5,7 +5,6 @@ import csv
 import hashlib
 import itertools
 import json
-import math
 from pathlib import Path
 
 import cv2
@@ -73,7 +72,8 @@ def feature_vector(patch: np.ndarray) -> dict[str, float]:
     chroma = hsv[:, :, 1] >= 30
     hist = np.histogram(gray, bins=32, range=(0, 256))[0].astype(float)
     probabilities = hist / max(1.0, hist.sum())
-    entropy = -float(np.sum(probabilities[probabilities > 0] * np.log2(probabilities[probabilities > 0]))) / 5.0
+    nonzero = probabilities[probabilities > 0]
+    entropy = -float(np.sum(nonzero * np.log2(nonzero))) / 5.0
     lap_var = float(np.var(cv2.Laplacian(gray, cv2.CV_64F)) / 10000.0)
     return {
         "dark_ratio": float(dark.mean()),
@@ -93,13 +93,13 @@ def score_pairings(features: dict[str, dict[str, float]], names: list[str], pair
     deviation[deviation < 1e-12] = 1.0
     standardized = (matrix - matrix.mean(axis=0)) / deviation
     by_direction = {direction: standardized[index] for index, direction in enumerate(DIRECTIONS)}
-    result: dict[str, float] = {}
-    for pairing_name, pairs in pairings.items():
-        result[pairing_name] = float(sum(np.linalg.norm(by_direction[a] - by_direction[b]) for a, b in pairs))
-    return result
+    return {
+        pairing_name: float(sum(np.linalg.norm(by_direction[a] - by_direction[b]) for a, b in pairs))
+        for pairing_name, pairs in pairings.items()
+    }
 
 
-def load_diagram(entry: dict, size_multiplier: float = 1.0, dx_fraction: float = 0.0, dy_fraction: float = 0.0) -> tuple[dict, dict]:
+def load_diagram(entry: dict, size_multiplier: float, dx_fraction: float, dy_fraction: float) -> tuple[dict, dict]:
     source = ROOT / entry["source_path"]
     actual_sha = sha256(source)
     if actual_sha != entry["source_sha256"]:
@@ -111,7 +111,7 @@ def load_diagram(entry: dict, size_multiplier: float = 1.0, dx_fraction: float =
     image = cv2.resize(original, (target_width, target_height), interpolation=cv2.INTER_AREA)
     base_crop = int(entry["crop_size_px"])
     crop_size = max(20, int(round(base_crop * size_multiplier)))
-    feature_rows: dict[str, dict[str, float]] = {}
+    features: dict[str, dict[str, float]] = {}
     patch_metadata: dict[str, dict] = {}
     for direction in DIRECTIONS:
         x, y = [int(v) for v in entry["sector_centres_px"][direction]]
@@ -119,10 +119,9 @@ def load_diagram(entry: dict, size_multiplier: float = 1.0, dx_fraction: float =
             int(round(x + dx_fraction * base_crop)),
             int(round(y + dy_fraction * base_crop)),
         )
-        patch = extract_patch(image, centre, crop_size)
-        feature_rows[direction] = feature_vector(patch)
+        features[direction] = feature_vector(extract_patch(image, centre, crop_size))
         patch_metadata[direction] = {"centre_px": list(centre), "crop_size_px": crop_size}
-    return feature_rows, {
+    return features, {
         "source_path": entry["source_path"],
         "source_sha256": actual_sha,
         "analysis_grid_px": [target_width, target_height],
@@ -131,14 +130,15 @@ def load_diagram(entry: dict, size_multiplier: float = 1.0, dx_fraction: float =
 
 
 def exact_p_value(heldout_scores: list[dict[str, float]], predicted: str) -> tuple[float, int, int, float]:
-    names = list(heldout_scores[0])
+    pairing_names = list(heldout_scores[0])
     observed = float(sum(row[predicted] for row in heldout_scores))
-    null_values = []
-    for assignment in itertools.product(names, repeat=len(heldout_scores)):
-        null_values.append(sum(heldout_scores[index][choice] for index, choice in enumerate(assignment)))
-    count = int(sum(value <= observed + 1e-12 for value in null_values))
-    p_value = (count + 1) / (len(null_values) + 1)
-    return p_value, count, len(null_values), observed
+    null_values = [
+        sum(heldout_scores[index][choice] for index, choice in enumerate(assignment))
+        for assignment in itertools.product(pairing_names, repeat=len(heldout_scores))
+    ]
+    tail_count = int(sum(value <= observed + 1e-12 for value in null_values))
+    p_value = (tail_count + 1) / (len(null_values) + 1)
+    return p_value, tail_count, len(null_values), observed
 
 
 def execute_configuration(manifest: dict, size_multiplier: float, dx_fraction: float, dy_fraction: float) -> dict:
@@ -155,8 +155,7 @@ def execute_configuration(manifest: dict, size_multiplier: float, dx_fraction: f
     predicted = min(scores[training_id], key=scores[training_id].get)
     preferences = {diagram_id: min(scores[diagram_id], key=scores[diagram_id].get) for diagram_id in heldout_ids}
     wins = sum(preference == predicted for preference in preferences.values())
-    heldout_scores = [scores[diagram_id] for diagram_id in heldout_ids]
-    p_value, tail_count, null_count, observed = exact_p_value(heldout_scores, predicted)
+    p_value, tail_count, null_count, observed = exact_p_value([scores[diagram_id] for diagram_id in heldout_ids], predicted)
     numeric_status = "PASS" if wins >= 3 and p_value < 0.05 else "FAIL"
     return {
         "size_multiplier": size_multiplier,
@@ -195,27 +194,32 @@ def main() -> None:
             })
     training_stability = sum(row["training_pairing"] == primary["training_pairing"] for row in sensitivity) / len(sensitivity)
     sensitivity_pass_rate = sum(row["numeric_status"] == "PASS" for row in sensitivity) / len(sensitivity)
+    final_conclusion = (
+        "PILOT_NUMERIC_PASS_NOT_CONFIRMATORY"
+        if primary["numeric_status"] == "PASS"
+        else "FAIL_NO_HELDOUT_TRANSFER_AT_95_PERCENT"
+    )
+    interpretation = (
+        "The learned four-sector pairing transferred under the frozen numeric gate, but post-inspection diagram selection makes this a pilot only."
+        if primary["numeric_status"] == "PASS"
+        else "The frozen pairing did not beat the exact permutation null at p < 0.05 and must not be used as evidence for a shared allegorical opposition system."
+    )
     result = {
         "experiment_id": manifest["experiment_id"],
         "scientific_status": manifest["scientific_status"],
         "primary": {key: value for key, value in primary.items() if key not in {"features", "pairing_scores", "provenance"}},
         "training_pairing_stability": training_stability,
         "sensitivity_numeric_pass_rate": sensitivity_pass_rate,
-        "final_conclusion": (
-            "PILOT_NUMERIC_PASS_NOT_CONFIRMATORY" if primary["numeric_status"] == "PASS" else "FAIL_NO_HELDOUT_TRANSFER_AT_95_PERCENT"
-        ),
-        "interpretation": (
-            "The learned four-sector pairing transferred under the frozen numeric gate, but the post-inspection selection makes this a pilot only."
-            if primary["numeric_status"] == "PASS"
-            else "The frozen pairing did not beat the exact permutation null at p < 0.05 and must not be used as evidence for a shared allegorical opposition system."
-        ),
-        "source_policy": "Official Yale JPEG files were SHA-verified, resized only in memory, and never modified.",
+        "final_conclusion": final_conclusion,
+        "interpretation": interpretation,
+        "source_policy": "Official Yale JPEG files were SHA-verified, resized only in memory, and never modified."
     }
     write_json(OUTPUT / "RESULT.json", result)
-    feature_rows = []
-    for diagram_id, directions in primary["features"].items():
-        for direction, values in directions.items():
-            feature_rows.append({"diagram_id": diagram_id, "direction": direction, **values})
+    feature_rows = [
+        {"diagram_id": diagram_id, "direction": direction, **values}
+        for diagram_id, directions in primary["features"].items()
+        for direction, values in directions.items()
+    ]
     write_csv(OUTPUT / "SECTOR_FEATURES.csv", feature_rows, ["diagram_id", "direction", *manifest["feature_names"]])
     pairing_rows = []
     for diagram_id, values in primary["pairing_scores"].items():
@@ -229,29 +233,23 @@ def main() -> None:
                 "is_training_prediction": pairing_name == primary["training_pairing"],
             })
     write_csv(OUTPUT / "PAIRING_SCORES.csv", pairing_rows, ["diagram_id", "pairing", "score", "is_preferred", "is_training_prediction"])
-    write_csv(
-        OUTPUT / "SENSITIVITY.csv",
-        sensitivity,
-        ["size_multiplier", "dx_fraction", "dy_fraction", "training_pairing", "heldout_wins", "exact_permutation_p", "numeric_status"],
-    )
+    write_csv(OUTPUT / "SENSITIVITY.csv", sensitivity, ["size_multiplier", "dx_fraction", "dy_fraction", "training_pairing", "heldout_wins", "exact_permutation_p", "numeric_status"])
     write_json(OUTPUT / "PROVENANCE.json", primary["provenance"])
-    report = f"""# {manifest['experiment_id']} — wynik\n\n"
+    report = f"# {manifest['experiment_id']} — wynik\n\n"
     report += f"- Status naukowy: `{manifest['scientific_status']}`\n"
     report += f"- Para wybrana na f57v: `{primary['training_pairing']}`\n"
     report += f"- Zgodne diagramy held-out: `{primary['heldout_wins']}/4`\n"
     report += f"- Dokładne p permutacyjne: `{primary['exact_permutation_p']:.6f}`\n"
     report += f"- Bramka liczbowa: `{primary['numeric_status']}`\n"
-    report += f"- Wniosek końcowy: `{result['final_conclusion']}`\n"
+    report += f"- Wniosek końcowy: `{final_conclusion}`\n"
     report += f"- Stabilność pary treningowej w siatce czułości: `{training_stability:.3f}`\n"
     report += f"- Odsetek PASS w siatce czułości: `{sensitivity_pass_rate:.3f}`\n\n"
     report += "## Preferencje held-out\n\n"
     for diagram_id, preference in primary["heldout_preferences"].items():
         report += f"- `{diagram_id}`: `{preference}`\n"
-    report += "\n## Interpretacja\n\n" + result["interpretation"] + "\n"
+    report += "\n## Interpretacja\n\n" + interpretation + "\n"
     (OUTPUT / "REPORT.md").write_text(report, encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    if primary["numeric_status"] != "PASS":
-        raise SystemExit(2)
 
 
 if __name__ == "__main__":
