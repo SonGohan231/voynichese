@@ -1,0 +1,13 @@
+panel_id,zodiac_role,expected_count,panel_class
+f70v2,Pisces,29,single_29
+f70v1,Aries_A,15,split_half
+f71r,Aries_B,15,split_half
+f71v,Taurus_A,15,split_half
+f72r1,Taurus_B,15,split_half
+f72r2,Gemini,30,full_30
+f72r3,Cancer,30,full_30
+f72v1,Leo,30,full_30
+f72v2,Virgo,30,full_30
+f72v3,Libra,30,full_30
+f73r,Scorpio,30,full_30
+f73v,Sagittarius,30,full_30

@@ -1,0 +1,13 @@
+panel_id,candidate_source_file,repository_directory,mapping_status
+f70v1,0127_70v _part_.jpg OR 0128_70v _part_.jpg,data/yale_hq_scans/8/,UNRESOLVED_NEEDS_VISUAL_CROP
+f70v2,0127_70v _part_.jpg OR 0128_70v _part_.jpg,data/yale_hq_scans/8/,UNRESOLVED_NEEDS_VISUAL_CROP
+f71r,0129_71r.jpg,data/yale_hq_scans/8/,PAGE_IDENTIFIED_PANEL_CROP_NEEDED
+f71v,0130_71v and 72r.jpg,data/yale_hq_scans/8/,COMPOSITE_IMAGE_PANEL_CROP_NEEDED
+f72r1,0130_71v and 72r.jpg,data/yale_hq_scans/8/,COMPOSITE_IMAGE_PANEL_CROP_NEEDED
+f72r2,0130_71v and 72r.jpg,data/yale_hq_scans/8/,COMPOSITE_IMAGE_PANEL_CROP_NEEDED
+f72r3,0130_71v and 72r.jpg,data/yale_hq_scans/8/,COMPOSITE_IMAGE_PANEL_CROP_NEEDED
+f72v1,0131_72v _part_.jpg OR 0132_72v _part_.jpg,data/yale_hq_scans/8/,UNRESOLVED_NEEDS_VISUAL_CROP
+f72v2,0131_72v _part_.jpg OR 0132_72v _part_.jpg,data/yale_hq_scans/8/,UNRESOLVED_NEEDS_VISUAL_CROP
+f72v3,0131_72v _part_.jpg OR 0132_72v _part_.jpg,data/yale_hq_scans/8/,UNRESOLVED_NEEDS_VISUAL_CROP
+f73r,0133_73r.jpg,data/yale_hq_scans/8/,PAGE_IDENTIFIED_PANEL_CROP_NEEDED
+f73v,0134_73v.jpg,data/yale_hq_scans/8/,PAGE_IDENTIFIED_PANEL_CROP_NEEDED
