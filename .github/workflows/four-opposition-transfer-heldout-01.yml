@@ -1,0 +1,55 @@
+name: Run four-opposition transfer held-out pilot
+
+on:
+  push:
+    branches:
+      - four-opposition-transfer-heldout-01-2026-07-23
+    paths:
+      - research/historical_allegory/experiments/FOUR-OPPOSITION-TRANSFER-HELDOUT-01/**
+      - .github/workflows/four-opposition-transfer-heldout-01.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: four-opposition-transfer-heldout-01-2026-07-23
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install numerical and image dependencies
+        run: python -m pip install --upgrade numpy opencv-python-headless
+
+      - name: Execute frozen experiment
+        run: python research/historical_allegory/experiments/FOUR-OPPOSITION-TRANSFER-HELDOUT-01/run_experiment.py
+
+      - name: Verify complete output set
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          root = Path("research/historical_allegory/experiments/FOUR-OPPOSITION-TRANSFER-HELDOUT-01/generated")
+          required = ["RESULT.json", "REPORT.md", "SECTOR_FEATURES.csv", "PAIRING_SCORES.csv", "SENSITIVITY.csv", "PROVENANCE.json"]
+          missing = [name for name in required if not (root / name).is_file()]
+          assert not missing, missing
+          result = json.loads((root / "RESULT.json").read_text())
+          assert result["experiment_id"] == "FOUR-OPPOSITION-TRANSFER-HELDOUT-01"
+          assert result["primary"]["numeric_status"] in {"PASS", "FAIL"}
+          print(json.dumps(result, indent=2))
+
+      - name: Upload experiment evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: four-opposition-transfer-heldout-01
+          path: research/historical_allegory/experiments/FOUR-OPPOSITION-TRANSFER-HELDOUT-01/generated/
+          if-no-files-found: error
+          retention-days: 90
