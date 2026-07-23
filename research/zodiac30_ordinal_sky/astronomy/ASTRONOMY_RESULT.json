@@ -1,0 +1,163 @@
+{
+  "method": {
+    "calendar": "Julian",
+    "ephemeris": "Swiss Ephemeris / Moshier",
+    "range": "1404-01-01 through 1430-12-31",
+    "reference_locations": {
+      "Paris": [
+        2.35,
+        48.86,
+        35
+      ],
+      "Milan": [
+        9.19,
+        45.46,
+        120
+      ],
+      "Prague": [
+        14.42,
+        50.08,
+        200
+      ],
+      "Vienna": [
+        16.37,
+        48.21,
+        170
+      ]
+    },
+    "conjunction_definition": "equality of geocentric tropical ecliptic longitude; full angular separation reported separately"
+  },
+  "great_conjunctions": [
+    {
+      "body_a": "Jupiter",
+      "body_b": "Saturn",
+      "date": "1405-01-16 20:02 UT (Julian)",
+      "jd_ut": 2234250.3347222055,
+      "longitude_difference_deg": 1.3146284004506015e-05,
+      "angular_separation_deg": 0.4877902170056477,
+      "ecliptic_longitude_deg": 323.77064837725453,
+      "solar_elongation_deg": 18.167691144832304,
+      "event_class": "great_conjunction"
+    },
+    {
+      "body_a": "Jupiter",
+      "body_b": "Saturn",
+      "date": "1425-02-14 14:47 UT (Julian)",
+      "jd_ut": 2241584.115972205,
+      "longitude_difference_deg": 4.416088216885328e-06,
+      "angular_separation_deg": 1.17775262416385,
+      "ecliptic_longitude_deg": 227.3032443158997,
+      "solar_elongation_deg": 107.47648627030526,
+      "event_class": "great_conjunction"
+    },
+    {
+      "body_a": "Jupiter",
+      "body_b": "Saturn",
+      "date": "1425-03-18 07:33 UT (Julian)",
+      "jd_ut": 2241615.814583317,
+      "longitude_difference_deg": 4.103895292928428e-06,
+      "angular_separation_deg": 1.1999955860317715,
+      "ecliptic_longitude_deg": 226.5501902913433,
+      "solar_elongation_deg": 139.7133019397777,
+      "event_class": "great_conjunction"
+    },
+    {
+      "body_a": "Jupiter",
+      "body_b": "Saturn",
+      "date": "1425-08-26 07:33 UT (Julian)",
+      "jd_ut": 2241776.814583317,
+      "longitude_difference_deg": 1.191297246805334e-05,
+      "angular_separation_deg": 1.2618214889173451,
+      "ecliptic_longitude_deg": 222.67265221489876,
+      "solar_elongation_deg": 61.467461195990325,
+      "event_class": "great_conjunction"
+    }
+  ],
+  "major_solar_eclipses_reference_belt": [
+    [
+      "1406-06-16",
+      "Paris",
+      "total",
+      1.0137910713728444
+    ],
+    [
+      "1409-04-15",
+      "Prague",
+      "partial",
+      0.892704677320785
+    ],
+    [
+      "1411-08-19",
+      "Paris",
+      "partial",
+      0.929343529187508
+    ],
+    [
+      "1415-06-07",
+      "Prague",
+      "total",
+      1.0093503276161808
+    ],
+    [
+      "1424-06-26",
+      "Prague",
+      "partial",
+      0.948828626619992
+    ]
+  ],
+  "total_lunar_eclipses_visible_reference_belt": [
+    [
+      "1406-11-25",
+      1.3054470104775515
+    ],
+    [
+      "1407-05-22",
+      1.4898873471698686
+    ],
+    [
+      "1410-03-21",
+      1.413395259977498
+    ],
+    [
+      "1414-01-06",
+      1.1104442047723848
+    ],
+    [
+      "1414-12-26",
+      1.1411662046992694
+    ],
+    [
+      "1417-10-25",
+      1.2118114636663628
+    ],
+    [
+      "1418-10-14",
+      1.1234714552962546
+    ],
+    [
+      "1421-02-17",
+      1.4148609623237165
+    ],
+    [
+      "1424-12-06",
+      1.297535272360294
+    ],
+    [
+      "1425-11-25",
+      1.1976815653343829
+    ],
+    [
+      "1428-09-23",
+      1.0487902821894555
+    ],
+    [
+      "1429-03-20",
+      1.0686283684398241
+    ],
+    [
+      "1429-09-13",
+      1.2578092343242995
+    ]
+  ],
+  "precession_across_26_years_deg": 0.36320555555555556
+}
