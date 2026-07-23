@@ -1,0 +1,23 @@
+{
+  "folio_record_id": "VM-FOLIO-{{label}}",
+  "canonical_folio_label": "{{label}}",
+  "record_kind": "FOLIO_RECTO",
+  "source": {
+    "source_sequence": null,
+    "source_filename": "",
+    "sha256": null,
+    "width_px": null,
+    "height_px": null,
+    "rotation_deg": 0,
+    "transform_original_to_working": null
+  },
+  "page_regions": [],
+  "objects": [],
+  "object_attributes": [],
+  "text_groups": [],
+  "relations": [],
+  "continuities": [],
+  "cross_page_edges": [],
+  "overlay_manifest": [],
+  "notes": null
+}
