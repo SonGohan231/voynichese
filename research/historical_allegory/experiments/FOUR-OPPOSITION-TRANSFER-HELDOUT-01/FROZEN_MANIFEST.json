@@ -1,0 +1,91 @@
+{
+  "experiment_id": "FOUR-OPPOSITION-TRANSFER-HELDOUT-01",
+  "frozen_at": "2026-07-23T16:30:00Z",
+  "scientific_status": "PILOT_NOT_CONFIRMATORY",
+  "selection_disclosure": "The training and held-out diagrams were selected after visual inspection of the full-corpus atlas. The numerical test is frozen before reading its clean-source output, but the experiment is a pilot and cannot by itself establish an allegorical system.",
+  "directions": ["N", "E", "S", "W"],
+  "pairings": {
+    "NS_EW": [["N", "S"], ["E", "W"]],
+    "NE_SW": [["N", "E"], ["S", "W"]],
+    "NW_ES": [["N", "W"], ["E", "S"]]
+  },
+  "feature_names": [
+    "dark_ratio",
+    "edge_density",
+    "blue_ratio",
+    "chroma_ratio",
+    "entropy",
+    "largest_component",
+    "component_count",
+    "lap_var"
+  ],
+  "primary_rule": {
+    "training_selection": "Choose the pairing with the minimum sum of within-pair Euclidean distances after feature-wise z-scoring across the four sectors of f57v.",
+    "transfer_statistic": "Apply the selected pairing without rotating or relabelling any held-out page. Sum its pairing score over all held-out diagrams.",
+    "null": "Independently permute the pairing identity on each held-out diagram; enumerate all 3^4 assignments.",
+    "pass": "At least 3 of 4 held-out diagrams prefer the frozen training pairing and the exact lower-tail permutation p-value is < 0.05.",
+    "fail": "Fewer than 3 held-out preferences, p >= 0.05, or page-specific rotation/relabeling is required."
+  },
+  "sensitivity_grid": {
+    "crop_size_multipliers": [0.85, 1.0, 1.15],
+    "common_page_translations_in_base_crop_fraction": [[0.0, 0.0], [0.05, 0.0], [-0.05, 0.0], [0.0, 0.05], [0.0, -0.05]],
+    "interpretation": "Sensitivity cannot rescue a failed primary result; it only measures dependence on crop geometry."
+  },
+  "diagrams": [
+    {
+      "id": "TRAIN_57v",
+      "role": "TRAIN",
+      "folio": "57v",
+      "source_path": "data/yale_hq_scans/6/0114_57v.jpg",
+      "source_sha256": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+      "analysis_grid_px": [1124, 1400],
+      "crop_size_px": 120,
+      "sector_centres_px": {"N": [650, 420], "E": [790, 540], "S": [640, 665], "W": [500, 540]},
+      "observable_basis": "Four heads around the central flower-like mark."
+    },
+    {
+      "id": "H1_67v",
+      "role": "HELD_OUT",
+      "folio": "67v",
+      "source_path": "data/yale_hq_scans/6/0122_67v.jpg",
+      "source_sha256": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+      "analysis_grid_px": [1400, 1038],
+      "crop_size_px": 90,
+      "sector_centres_px": {"N": [330, 155], "E": [520, 335], "S": [380, 560], "W": [155, 340]},
+      "observable_basis": "Four small peripheral figures around a central flower-like form."
+    },
+    {
+      "id": "H2_69v70r",
+      "role": "HELD_OUT",
+      "folio": "69v and 70r foldout, middle diagram",
+      "source_path": "data/yale_hq_scans/8/0126_69v and 70r.jpg",
+      "source_sha256": "709419c3c6861c216b1746261884e08a38f1b5a2b052ad129e78cdd73697b5e9",
+      "analysis_grid_px": [1400, 610],
+      "crop_size_px": 110,
+      "sector_centres_px": {"N": [670, 180], "E": [760, 290], "S": [670, 400], "W": [580, 290]},
+      "observable_basis": "Four dominant lobes around a central circular wheel."
+    },
+    {
+      "id": "H3_85r86v_sun",
+      "role": "HELD_OUT",
+      "folio": "85r/86v foldout, left solar diagram",
+      "source_path": "data/yale_hq_scans/9/0156_85r _part_ 86v _part_ _part of 85-86 foldout_.jpg",
+      "source_sha256": "dde619e85e35601b9206051389873f6cb092a17f04a8fcd02b32fe3961ea37ce",
+      "analysis_grid_px": [1400, 702],
+      "crop_size_px": 120,
+      "sector_centres_px": {"N": [350, 205], "E": [495, 350], "S": [350, 515], "W": [205, 350]},
+      "observable_basis": "Four surrounding lobed structures around a central solar face."
+    },
+    {
+      "id": "H4_ROSETTES",
+      "role": "HELD_OUT",
+      "folio": "85v and 86r foldout",
+      "source_path": "data/yale_hq_scans/10/0158_85v and 86r _foldout_.jpg",
+      "source_sha256": "4b08afeee514691b0a511099ca299aed544d6fd1782b7dee8df163dfc06354ed",
+      "analysis_grid_px": [1400, 1283],
+      "crop_size_px": 250,
+      "sector_centres_px": {"N": [760, 200], "E": [1150, 620], "S": [760, 1045], "W": [300, 620]},
+      "observable_basis": "Four cardinal rosettes around the central rosette."
+    }
+  ]
+}
