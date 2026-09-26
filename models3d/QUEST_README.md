@@ -76,3 +76,21 @@ Nie wykonano renderowanego testu w przeglądarce ani testu na fizycznych goglach
 
 Pełnej jakości modele: https://drive.google.com/drive/folders/1l2nL2ZkjsyhgHJQF2FXIhDjcHXBqn9YX
 Kod: https://github.com/SonGohan231/voynichese/tree/models3d/atlas-206-2026-09-26/models3d
+
+
+## Pracownia badawcza — kandydat VR4 (2026-09-27)
+
+Nowa wersja jest przygotowana w kodzie, lecz nie została opublikowana. Akceptacja pomysłów dotyczy układu i referencji. Build 3D Game Rooms wymaga jeszcze przeglądu Form oraz Runtime przed publikacją pokoju.
+
+- Pokój 6 × 5 m według układu sprawdzonego w Blenderze; osobno ukrywana architektura MR.
+- Prawdziwe skany w kodeksie i stronicowanym stojaku 12 kart; pełny katalog 206 skanów zachowany.
+- Wyjmowanie kopii stron, dowolne przypinanie do dwóch tablic z zachowaniem obrotu, odpinanie i cofanie.
+- Grip chwyta świecę, lupę, miarkę i półprzezroczystą nakładkę. Lupa pokazuje teksturę źródłową; pomiar podaje piksele tekstury.
+- Sześć checklist opartych na czterech odczytanych dokumentach GitHub/Drive, z odrębną hipotezą swobodnych układów użytkownika.
+- Dźwięki Mirelo: tło pracowni i szelest strony. Dźwięk domyślnie wyłączony.
+- Otwieranie wybranego adresu HTTPS lub źródła w przeglądarce, zapis przed opuszczeniem sesji XR. Nie jest to wbudowana dowolna przeglądarka 3D.
+- Format projektu v6 zapisuje przypięcia, checklisty, notatki i narzędzia. Odczyt v1–v5 zachowany.
+
+Testy matematyki i rzeczywistych procedur programu z atrapą DOM/XR przeszły. Brak testu renderowanej aplikacji i fizycznego Quest. Blender jest osobną sceną; jego render nie jest zrzutem aplikacji.
+
+Przegląd źródeł obejmuje research/hypotheses.json, nie całą historię projektu Manuskrypt 2.0. Manusvoynus był niedostępny. Oryginalny VCT_PIN_INSTRUKCJA.md nie został udostępniony w środowisku.

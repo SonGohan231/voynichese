@@ -8,7 +8,7 @@
     "range": "0001..0206; includes covers, foldouts, partial scans",
     "validation": "GLB structure, index bounds, finite coordinates, SHA256, referenced asset/module/control existence; first three plant masks and CPU render inspected",
     "browser_interaction_test": "NOT_PERFORMED",
-    "vr_revision": "VR3 preview, 180-degree rotation and independent split",
+    "vr_revision": "VR4 research room candidate, not published",
     "vr_tests": [
       "Three.js matrix/selection/group/snap tests PASS",
       "Actual quest.js handler tests with mocked DOM/XR I/O PASS",
@@ -18,7 +18,7 @@
     "vr_editing": {
       "rotation": "continuous controller rotation and XYZ +/-15 degree pivot-preserving steps",
       "crop": "reversible local-axis triangle clipping with interpolated UV; cut edges open",
-      "project_format": 5,
+      "project_format": 6,
       "tests": "test_mesh_edit.mjs and actual handler save/restore test PASS"
     },
     "vr3_validation": [
@@ -27,12 +27,12 @@
       "Actual handlers with mocked DOM/XR: independent split and duplicate save/restore PASS",
       "180-degree rotation PASS; preview scene and panel picking PASS"
     ],
-    "publication": {
-      "url": "https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html",
-      "source_sha": "6e99191a229cf7ffa390075700dcf8b568123032",
-      "deployment_id": "appgdep_6ab85246a65081919850e6d5f1cbf2b4",
-      "status": "succeeded"
-    }
+    "vr4_validation": [
+      "v6 pin pose/save/restore PASS",
+      "checklist and notes persistence PASS",
+      "MR shell visibility and candle controls PASS",
+      "full prior geometry/grouping/split tests PASS"
+    ]
   },
   "INTERPRETATION": {
     "geometry": "textured 2.5D relief with synthetic thickness/back, source colors",
@@ -41,9 +41,9 @@
   "HYPOTHESIS": "No plant identification, decoding, or measured-depth hypothesis is asserted.",
   "HANDOFF_PACKET": {
     "skill": "manusvoynus-execution-environment-router",
-    "task_id": "voynich-vr3-preview-split-2026-09-27",
+    "task_id": "voynich-vr4-room-2026-09-27",
     "execution_route": "HYBRID",
-    "execution_state": "PUBLISHED; GITHUB_MIRROR_THIS_COMMIT; PHYSICAL_QUEST_TEST_PENDING",
+    "execution_state": "IMPLEMENTED_TESTED_PENDING_FORM_RUNTIME_REVIEW",
     "canonical_inputs": [
       {
         "entity_type": "scan_corpus_manifest",
@@ -80,12 +80,6 @@
         "id_or_path": "assets/validation.json",
         "sha256": "1a00e8dbbe9da378e7165d60c309a54dece93eabb80d0e7639eb6adf3b13bc1d",
         "status": "CANDIDATE"
-      },
-      {
-        "type": "VR3_SITE",
-        "id_or_path": "https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html",
-        "status": "PUBLISHED",
-        "source_sha": "6e99191a229cf7ffa390075700dcf8b568123032"
       }
     ],
     "uncertainty_register": [
@@ -99,35 +93,22 @@
     ],
     "project_writeback": {
       "completed": false,
-      "records": [
-        {
-          "system": "Sites",
-          "status": "succeeded",
-          "source_sha": "6e99191a229cf7ffa390075700dcf8b568123032",
-          "deployment_id": "appgdep_6ab85246a65081919850e6d5f1cbf2b4"
-        },
-        {
-          "system": "GitHub",
-          "status": "THIS_COMMIT"
-        },
-        {
-          "system": "Google Drive",
-          "status": "UPDATED",
-          "file_id": "1AGEEaPN-5XkRsLPWNM5HTKrEUwMha1R3"
-        },
-        {
-          "system": "Manusvoynus",
-          "status": "PENDING_FROM_PRIOR_TURN",
-          "reason": "Prior IN/OUT endpoint returned UNAVAILABLE; missing original instruction attachment; no new journal call this turn"
-        }
-      ]
+      "records": []
     },
     "open_items": [
       "Physical Quest and rendered browser QA not performed",
       "Manusvoynus journal unavailable; IN/OUT sync pending",
       "Manual contour review remains CANDIDATE"
     ],
-    "next_action": "Physical Quest acceptance for preview readability, controller interaction and split-piece handling; manual review of source categories/contours remains open.",
+    "next_action": "Publish and save code/instructions; physical Quest acceptance remains pending",
     "next_role": "manusvoynus-execution-environment-router"
+  },
+  "ROOM_REVIEW": {
+    "blender_project": "https://higgsfield.ai/3d-jutsu/a155b902-e8eb-4655-890b-fe8da3ee9ca3",
+    "blender_revision": 2,
+    "function_direction_approved": true,
+    "form_approved": false,
+    "runtime_approved": false,
+    "published": false
   }
 }
