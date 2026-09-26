@@ -1,0 +1,124 @@
+{
+  "FACT": {
+    "source_scans": 206,
+    "full_quality_glb_files": 3029,
+    "scan_models": 206,
+    "contour_assemblies": 203,
+    "fragments": 2619,
+    "combined_corpus": 1,
+    "source_repairs": 9,
+    "published_url": "https://voynich-herbarium-3d.songoku222.chatgpt.site",
+    "quest_route": "quest.html",
+    "site_source_commit": "105fdc4d2e0b6e21046e05eb4b22456e1bb41285",
+    "github_implementation_commit": "14591716958203d79f421cc9e40e08c2c3689c66",
+    "physical_quest_test": "NOT_PERFORMED"
+  },
+  "INTERPRETATION": {
+    "geometry": "source-textured 2.5D relief, synthetic depth and reverse surfaces",
+    "whole_manuscript": "editorial atlas layout of all scans, not reconstructed book binding",
+    "perspective": "WebXR device projection and head pose; uniform scaling; source-relative coordinates retained"
+  },
+  "HYPOTHESIS": "No identification of plants or decipherment hypothesis asserted.",
+  "HANDOFF_PACKET": {
+    "skill": "manusvoynus-execution-environment-router",
+    "task_id": "voynich-atlas-quest-2026-09-26",
+    "execution_route": "HYBRID",
+    "execution_state": "PUBLISHED; MANUSVOYNUS_WRITEBACK_BLOCKED",
+    "canonical_inputs": [
+      {
+        "entity_type": "scan_corpus",
+        "id": "models3d/dist/assets/source_manifest.json",
+        "sha256": "03c2c71655903e1a1902e3ba6ec8e0cbbf56ab3c80328e239a6044a098be9477",
+        "version": "ten user archives; nine complete image versions recovered from user's GitHub"
+      }
+    ],
+    "completed_actions": [
+      {
+        "action": "Generate and structurally validate full-quality relief corpus",
+        "function_or_tool": "Python GLB pipeline",
+        "artifact_id_or_path": "Manuskrypt_206_modele_3D.zip"
+      },
+      {
+        "action": "Persist full package",
+        "function_or_tool": "Library",
+        "artifact_id_or_path": "libfile_e91f0725ee3c8191a5da27d33cdd5243"
+      },
+      {
+        "action": "Upload seven sequential scan packs and verify sizes",
+        "function_or_tool": "Google Drive",
+        "artifact_id_or_path": "1l2nL2ZkjsyhgHJQF2FXIhDjcHXBqn9YX"
+      },
+      {
+        "action": "Publish atlas and Quest WebXR workshop",
+        "function_or_tool": "Sites",
+        "artifact_id_or_path": "appgdep_6ab7ec64e9788191a3bf6b01967dfa37"
+      },
+      {
+        "action": "Test controller reparenting, relative transforms, snapping and scale",
+        "function_or_tool": "node scripts/test_xr.mjs",
+        "artifact_id_or_path": "models3d/scripts/test_xr.mjs"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "model_package",
+        "id_or_path": "Manuskrypt_206_modele_3D.zip",
+        "sha256": "1b5673fe4949372968601b8e9016bff4816f09cfed93404293d54b0f18accdbd",
+        "status": "CANDIDATE; SAVED"
+      },
+      {
+        "type": "web_application",
+        "id_or_path": "https://voynich-herbarium-3d.songoku222.chatgpt.site",
+        "sha256": "NOT_APPLICABLE; source commit105fdc4d2e0b6e21046e05eb4b22456e1bb41285",
+        "status": "PUBLISHED"
+      },
+      {
+        "type": "source_code",
+        "id_or_path": "https://github.com/SonGohan231/voynichese/tree/models3d/atlas-206-2026-09-26/models3d",
+        "sha256": "NOT_APPLICABLE; Git commit tracked",
+        "status": "SAVED"
+      }
+    ],
+    "uncertainty_register": [
+      {
+        "issue": "Automatic segmentation may retain text/background and omit faint lines",
+        "effect": "Not all semantic drawings have separate audited labels",
+        "accepted_by_user": "NOT_EXPLICITLY_ACCEPTED",
+        "allowed_claim_scope": "Full scan coverage, individually editable candidate fragments and manual crop creation",
+        "forbidden_claim_scope": "All drawings independently identified and segmented"
+      },
+      {
+        "issue": "Single-view drawings do not determine true depth",
+        "effect": "Relief depth and backs are editorial",
+        "accepted_by_user": "NOT_EXPLICITLY_ACCEPTED",
+        "allowed_claim_scope": "Spatial relief models with retained source proportions",
+        "forbidden_claim_scope": "Established original 3D anatomy or physical scale"
+      },
+      {
+        "issue": "No physical headset available",
+        "effect": "XR performance and controller/MR behaviour not hardware-validated",
+        "accepted_by_user": "NOT_APPLICABLE",
+        "allowed_claim_scope": "Implemented WebXR modes and passed transformation tests",
+        "forbidden_claim_scope": "Tested successfully on physical Meta Quest"
+      }
+    ],
+    "project_writeback": {
+      "completed": false,
+      "records": [
+        "Library package saved",
+        "Google Drive seven packs saved",
+        "GitHub code committed",
+        "Sites deployment succeeded"
+      ],
+      "blocked_target": "Manusvoynus: UNAVAILABLE Connection failed; OUT note not saved"
+    },
+    "open_items": [
+      "Physical Meta Quest acceptance test",
+      "Manual semantic segmentation review",
+      "Retry Manusvoynus OUT after connection recovery",
+      "VCT_PIN_INSTRUKCJA.md did not materialize; user may reattach"
+    ],
+    "next_action": "Validate comfort, controllers and passthrough on physical Quest; preserve original source frame during further modeling",
+    "next_role": "manusvoynus-execution-environment-router"
+  }
+}
