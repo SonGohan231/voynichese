@@ -10,3 +10,13 @@ controller.rotation.y+=.4;controller.position.x+=.15;scene.updateMatrixWorld(tru
 applyTransform(piece,home);piece.position.x+=.02;assert.ok(canSnap(piece,home,origin));piece.rotation.y=.5;assert.ok(!canSnap(piece,home,origin));applyTransform(piece,home);piece.scale.set(1.1,1.1,1.1);assert.ok(!canSnap(piece,home,origin));
 uniformScale(assembly,1.25);approx(assembly.scale.toArray(),[.8125,.8125,.8125]);assert.ok(validTransform(home));assert.ok(!validTransform({...home,s:[1,2,1]}));assert.ok(!validTransform({...home,p:[NaN,0,0]}));
 console.log('PASS: controller reparenting preserves world pose; held-object serialization is non-mutating; world/local roundtrip; position/rotation/scale snap guards; uniform scale and data validation.');
+const {snapMetrics,canGrab,joinPiece,detachPiece,pieceRecord,restorePiece}=await import('../dist/xr-math.js');
+const cluster=new T.Group();origin.add(cluster);const entry={root:assembly,origin,cluster,home:new Map([[piece.name,home]]),joined:new Set()};
+applyTransform(piece,home);const anchor=new T.Vector3(1,0,0);piece.rotation.z=.15;
+assert.ok(!snapMetrics(piece,home,cluster,anchor,.06,22).ready,'offset geometry must not snap just because its origin matches');
+applyTransform(piece,home);joinPiece(entry,piece);assert.ok(entry.joined.has(piece.name));cluster.position.set(.3,-.1,.2);cluster.rotation.set(.2,.4,-.1);scene.updateMatrixWorld(true);const clusterMoved=piece.matrixWorld.clone();detachPiece(entry,piece);scene.updateMatrixWorld(true);approx(piece.matrixWorld.elements,clusterMoved.elements);assert.ok(!entry.joined.has(piece.name));
+const loose=new T.Mesh(new T.BoxGeometry(.1,.1,.01));loose.name='other';origin.add(loose);entry.home.set(loose.name,homeTransform(loose));joinPiece(entry,piece);controller.attach(cluster);
+assert.ok(canGrab(entry,loose,[{entry,object:cluster}]));assert.ok(canGrab(entry,loose,[{entry,object:piece}]));assert.ok(!canGrab(entry,assembly,[{entry,object:loose}]));assert.ok(!canGrab(entry,cluster,[{entry,object:cluster}]));
+joinPiece(entry,loose);const snapshot=pieceRecord(entry,loose);assert.equal(snapshot.joined,true);detachPiece(entry,loose);restorePiece(entry,loose,snapshot);assert.equal(loose.parent,cluster);assert.ok(snapMetrics(loose,entry.home.get(loose.name),cluster).ready);
+const qBad={...home,q:[0,0,0,0]};assert.ok(!validTransform(qBad));
+console.log('PASS: geometry-centre snap measurement, rigid groups, pose-preserving detach, same-folio two-controller eligibility, held-cluster targets, joined save roundtrip.');

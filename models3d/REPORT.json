@@ -1,0 +1,122 @@
+{
+  "FACT": {
+    "scans": 206,
+    "assembled_contour_models": 203,
+    "fragment_models": 2619,
+    "total_glb": 3029,
+    "repaired_JPEG": 9,
+    "range": "0001..0206; includes covers, foldouts, partial scans",
+    "validation": "GLB structure, index bounds, finite coordinates, SHA256, referenced asset/module/control existence; first three plant masks and CPU render inspected",
+    "browser_interaction_test": "NOT_PERFORMED",
+    "vr_revision": "VR2 custom arrangements",
+    "vr_tests": [
+      "Three.js matrix/selection/group/snap tests PASS",
+      "Actual quest.js handler tests with mocked DOM/XR I/O PASS",
+      "206 scans, 2619 fragments and module/control links verified"
+    ],
+    "headset_test": "NOT_PERFORMED",
+    "publication": {
+      "url": "https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html",
+      "source_sha": "f2b684434a1255b0f325bf28028906d8ef23cf8e",
+      "deployment_id": "appgdep_6ab800c060c08191b9e4be679464b84d",
+      "status": "succeeded"
+    }
+  },
+  "INTERPRETATION": {
+    "geometry": "textured 2.5D relief with synthetic thickness/back, source colors",
+    "assembled_manuscript": "editorial atlas grid, separate named nodes, not binding reconstruction"
+  },
+  "HYPOTHESIS": "No plant identification, decoding, or measured-depth hypothesis is asserted.",
+  "HANDOFF_PACKET": {
+    "skill": "manusvoynus-execution-environment-router",
+    "task_id": "voynich-vr2-free-layout-2026-09-26",
+    "execution_route": "HYBRID",
+    "execution_state": "PUBLISHED; GITHUB_MIRROR_THIS_COMMIT; MANUSVOYNUS_OUT_PENDING_UNAVAILABLE",
+    "canonical_inputs": [
+      {
+        "entity_type": "scan_corpus_manifest",
+        "id": "assets/source_manifest.json",
+        "sha256": "03c2c71655903e1a1902e3ba6ec8e0cbbf56ab3c80328e239a6044a098be9477",
+        "version": "user archives + 9 complete GitHub image versions"
+      }
+    ],
+    "completed_actions": [
+      {
+        "action": "Extract, identify duplicates, recover9 incomplete JPEG, generate reliefs and interactive atlas",
+        "function_or_tool": "local Python / Three.js",
+        "artifact_id_or_path": "assets/atlas.json"
+      },
+      {
+        "action": "Add arbitrary-pose cross-folio groups, source snap guides, two-controller operation, larger menu, flat source colors and optional contrast backing",
+        "function_or_tool": "Three.js / WebXR handlers; Node tests",
+        "artifact_id_or_path": "dist/quest.js"
+      },
+      {
+        "action": "Publish owner-private Site and save instructions to Drive",
+        "function_or_tool": "Sites and Google Drive",
+        "artifact_id_or_path": "https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "GLB_MANIFEST",
+        "id_or_path": "assets/validation.json",
+        "sha256": "1a00e8dbbe9da378e7165d60c309a54dece93eabb80d0e7639eb6adf3b13bc1d",
+        "status": "CANDIDATE"
+      },
+      {
+        "type": "SITE_SOURCE",
+        "id_or_path": "f2b684434a1255b0f325bf28028906d8ef23cf8e",
+        "status": "PUBLISHED",
+        "deployment_id": "appgdep_6ab800c060c08191b9e4be679464b84d"
+      },
+      {
+        "type": "VR_INSTRUCTIONS",
+        "id_or_path": "https://drive.google.com/file/d/1AGEEaPN-5XkRsLPWNM5HTKrEUwMha1R3/view",
+        "status": "SAVED"
+      }
+    ],
+    "uncertainty_register": [
+      {
+        "issue": "Automatic contours contain some text/noise and omit pale elements; hidden surfaces are synthetic",
+        "effect": "Not a complete semantic reconstruction of all drawings or biological anatomy",
+        "accepted_by_user": "NOT_EXPLICITLY_ACCEPTED",
+        "allowed_claim_scope": "Full scan coverage and independently usable relief geometry",
+        "forbidden_claim_scope": "Scientifically established 3D shape; all semantic illustrations individually audited"
+      }
+    ],
+    "project_writeback": {
+      "completed": false,
+      "records": [
+        {
+          "system": "Manusvoynus",
+          "operation": "IN and OUT add_research_note",
+          "status": "UNAVAILABLE",
+          "reason": "McpServerError: Connection failed."
+        },
+        {
+          "system": "GitHub",
+          "operation": "code, tests, instructions, report and handoff",
+          "status": "THIS_COMMIT"
+        },
+        {
+          "system": "Sites",
+          "status": "succeeded",
+          "source_sha": "f2b684434a1255b0f325bf28028906d8ef23cf8e"
+        },
+        {
+          "system": "Google Drive",
+          "status": "SAVED",
+          "file_id": "1AGEEaPN-5XkRsLPWNM5HTKrEUwMha1R3"
+        }
+      ]
+    },
+    "open_items": [
+      "Physical Quest and rendered browser QA not performed",
+      "Manusvoynus journal unavailable; IN/OUT sync pending",
+      "Manual contour review remains CANDIDATE"
+    ],
+    "next_action": "Test physical Meta Quest VR/MR interaction and performance; retry pending Manusvoynus journal when available.",
+    "next_role": "manusvoynus-execution-environment-router"
+  }
+}
