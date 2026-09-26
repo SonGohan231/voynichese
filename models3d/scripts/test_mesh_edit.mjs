@@ -1,0 +1,9 @@
+import assert from 'node:assert/strict';
+import * as T from '../dist/vendor/three.module.js';
+import {FULL_CUT,validCut,cropGeometry,rotateAroundAnchor} from '../dist/mesh-edit.js';
+const original=new T.PlaneGeometry(2,2);const cropped=cropGeometry(original,new T.Box3(new T.Vector3(0,-1,-1),new T.Vector3(1,1,1)));
+const p=cropped.attributes.position,uv=cropped.attributes.uv;assert.ok(p.count>0);for(let i=0;i<p.count;i++){assert.ok(p.getX(i)>=-1e-8&&p.getX(i)<=1+1e-8);assert.ok(Math.abs(uv.getX(i)-(p.getX(i)+1)/2)<1e-6);assert.ok(Math.abs(uv.getY(i)-(p.getY(i)+1)/2)<1e-6);}assert.equal(original.attributes.position.count,4,'source geometry unchanged');assert.equal(cropped.index,null);
+const cube=new T.BoxGeometry(2,2,2),half=cropGeometry(cube,new T.Box3(new T.Vector3(-1,-1,-1),new T.Vector3(.8,.6,1)));assert.ok(half.groups.length>1);for(const a of Object.values(half.attributes))assert.ok([...a.array].every(Number.isFinite));
+const piece=new T.Mesh(original);piece.position.set(.3,1,-1);piece.rotation.set(.3,.5,.4);piece.scale.setScalar(.65);const anchor=new T.Vector3(.4,-.3,.1);piece.updateMatrixWorld();const before=piece.matrixWorld.clone(),centre=anchor.clone().applyMatrix4(before);for(const axis of [0,1,2]){for(let i=0;i<24;i++){rotateAroundAnchor(piece,axis,Math.PI/12,anchor);assert.ok(anchor.clone().applyMatrix4(piece.matrixWorld).distanceTo(centre)<1e-6);}assert.ok(piece.matrixWorld.elements.every((v,i)=>Math.abs(v-before.elements[i])<1e-6));}
+assert.ok(validCut(FULL_CUT));assert.ok(!validCut({...FULL_CUT,xMin:.99}));assert.ok(!validCut({...FULL_CUT,zMax:NaN}));
+console.log('PASS: CPU triangle crop bounds, exact source UV interpolation, material groups, immutable originals, finite mesh attributes, full 360-degree rotation about visible anchor on X/Y/Z. Cut surfaces intentionally remain open.');

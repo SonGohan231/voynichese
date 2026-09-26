@@ -23,9 +23,9 @@
       "artifact_id_or_path": "dist/quest.js"
     },
     {
-      "action": "Publish owner-private Site and save instructions to Drive",
-      "function_or_tool": "Sites and Google Drive",
-      "artifact_id_or_path": "https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html"
+      "action": "Add full 360-degree rotation and reversible geometry crop, JSON v4 persistence and GLB export of edited geometry",
+      "function_or_tool": "Three.js / CPU triangle clipping",
+      "artifact_id_or_path": "dist/mesh-edit.js"
     }
   ],
   "outputs": [
@@ -37,14 +37,14 @@
     },
     {
       "type": "SITE_SOURCE",
-      "id_or_path": "f2b684434a1255b0f325bf28028906d8ef23cf8e",
+      "id_or_path": "b4266bc55f7e601d583bd6616187ea96bc9c980e",
       "status": "PUBLISHED",
-      "deployment_id": "appgdep_6ab800c060c08191b9e4be679464b84d"
+      "deployment_id": "appgdep_6ab802a00200819186583ddc410b698a"
     },
     {
       "type": "VR_INSTRUCTIONS",
       "id_or_path": "https://drive.google.com/file/d/1AGEEaPN-5XkRsLPWNM5HTKrEUwMha1R3/view",
-      "status": "SAVED"
+      "status": "UPDATED_WITH_ROTATION_AND_CROP"
     }
   ],
   "uncertainty_register": [
@@ -54,6 +54,12 @@
       "accepted_by_user": "NOT_EXPLICITLY_ACCEPTED",
       "allowed_claim_scope": "Full scan coverage and independently usable relief geometry",
       "forbidden_claim_scope": "Scientifically established 3D shape; all semantic illustrations individually audited"
+    },
+    {
+      "issue": "Planar crop interpolates UV but leaves open edges",
+      "effect": "Edited GLB is not guaranteed watertight",
+      "allowed_claim_scope": "Reversible visual surface crop and exported geometry",
+      "forbidden_claim_scope": "Closed Boolean solid suitable for 3D printing"
     }
   ],
   "project_writeback": {
@@ -73,11 +79,11 @@
       {
         "system": "Sites",
         "status": "succeeded",
-        "source_sha": "f2b684434a1255b0f325bf28028906d8ef23cf8e"
+        "source_sha": "b4266bc55f7e601d583bd6616187ea96bc9c980e"
       },
       {
         "system": "Google Drive",
-        "status": "SAVED",
+        "status": "UPDATED",
         "file_id": "1AGEEaPN-5XkRsLPWNM5HTKrEUwMha1R3"
       }
     ]
@@ -87,6 +93,6 @@
     "Manusvoynus journal unavailable; IN/OUT sync pending",
     "Manual contour review remains CANDIDATE"
   ],
-  "next_action": "Test physical Meta Quest VR/MR interaction and performance; retry pending Manusvoynus journal when available.",
+  "next_action": "Test physical Meta Quest VR/MR, arbitrary groups, 360-degree rotation and reversible surface crop; retry pending Manusvoynus journal.",
   "next_role": "manusvoynus-execution-environment-router"
 }
