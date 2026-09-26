@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import * as T from '../dist/vendor/three.module.js';
+import {homeTransform,applyTransform,uniformScale,canSnap,validTransform,relativeTransform} from '../dist/xr-math.js';
+const scene=new T.Scene(),assembly=new T.Group(),origin=new T.Group(),piece=new T.Mesh(new T.BoxGeometry(.3,.1,.012)),controller=new T.Group();
+scene.add(assembly,controller);assembly.add(origin);origin.add(piece);assembly.position.set(.2,1.25,-1.1);assembly.rotation.y=.31;assembly.scale.setScalar(.65);origin.position.set(-.1,.05,0);piece.position.set(.25,.15,0);const home=homeTransform(piece);
+scene.updateMatrixWorld(true);const original=piece.matrixWorld.clone();controller.position.set(.4,1.1,-.3);controller.rotation.set(.2,-.1,.3);scene.updateMatrixWorld(true);controller.attach(piece);scene.updateMatrixWorld(true);
+const approx=(a,b,eps=1e-6)=>assert.ok(a.every((x,i)=>Math.abs(x-b[i])<eps));approx(piece.matrixWorld.elements,original.elements);
+const rel=relativeTransform(piece,origin);approx(rel.p,home.p);approx(rel.q,home.q);approx(rel.s,home.s);assert.equal(piece.parent,controller,'serialization must not release either hand');
+controller.rotation.y+=.4;controller.position.x+=.15;scene.updateMatrixWorld(true);const moved=piece.matrixWorld.clone();const record=relativeTransform(piece,origin);origin.attach(piece);applyTransform(piece,record);scene.updateMatrixWorld(true);approx(piece.matrixWorld.elements,moved.elements);assert.ok(!canSnap(piece,home,origin));
+applyTransform(piece,home);piece.position.x+=.02;assert.ok(canSnap(piece,home,origin));piece.rotation.y=.5;assert.ok(!canSnap(piece,home,origin));applyTransform(piece,home);piece.scale.set(1.1,1.1,1.1);assert.ok(!canSnap(piece,home,origin));
+uniformScale(assembly,1.25);approx(assembly.scale.toArray(),[.8125,.8125,.8125]);assert.ok(validTransform(home));assert.ok(!validTransform({...home,s:[1,2,1]}));assert.ok(!validTransform({...home,p:[NaN,0,0]}));
+console.log('PASS: controller reparenting preserves world pose; held-object serialization is non-mutating; world/local roundtrip; position/rotation/scale snap guards; uniform scale and data validation.');
