@@ -1,4 +1,4 @@
-# Pracownia Manuskryptu — VR 2 / własne układy
+# Pracownia Manuskryptu — VR 3 / podgląd, kategorie i podział
 
 Otwórz w Meta Quest Browser: https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html
 
@@ -13,7 +13,7 @@ Wybierz **Wejdź do VR** (wirtualne tło) albo **MR / otoczenie** (przezroczyste
 5. Chwycenie części należącej do grupy porusza całą grupą. **Odłącz wybrany** uwalnia wskazaną część bez zmiany jej położenia.
 6. **Nowa grupa** rozpoczyna kolejny niezależny zestaw. **Następna grupa** wybiera istniejący cel dołączania. Wybranie części już zgrupowanej aktywuje jej grupę; aby przenieść ją do nowej, wybierz tę część, następnie Nowa grupa i Dołącz wybrany.
 
-Menu ma zakładki Karty, Składanie, Własny układ i Edycja. Przycisk Własny / skan przełącza zasady łączenia. Górny wiersz pokazuje bieżący tryb i numer aktywnej własnej grupy. Nie ma obowiązku odtwarzania kompozycji manuskryptu.
+Menu ma zakładki Karty, Składanie, Własny układ, Edycja i Podział. Przycisk Własny / skan przełącza zasady łączenia. Górny wiersz pokazuje bieżący tryb i numer aktywnej własnej grupy. Nie ma obowiązku odtwarzania kompozycji manuskryptu.
 
 ## Składanie według skanu — opcjonalne
 
@@ -32,6 +32,24 @@ Jedną ręką możesz trzymać połączoną grupę z danej karty, a drugą dokł
 - Zestaw nie może być chwycony jako całość, gdy druga ręka trzyma jego luźny element. Dwie różne luźne części tej samej karty mogą być trzymane równocześnie.
 - Na komputerze kliknięcie wybiera część, a obrót i zoom działają myszą. Manipulacja sześcioma stopniami swobody jest obsługiwana kontrolerami XR.
 
+## Podgląd każdego modelu i kategorie
+
+Po prawej stronie menu w VR/MR znajduje się osobny podgląd: obracany model 3D, karta źródłowa i zaznaczenie miejsca wybranego fragmentu. Przyciskami Karta oraz Fragment przeglądasz wszystkie dostępne modele. Cały rysunek wraca do zestawu fragmentów wybranej karty. Pełny skan i Cały atlas wybierzesz w zakładce Karty. Obrót podglądu możesz zatrzymać lub obrócić go o 180°.
+
+**Dodaj model** dodaje dokładnie model wybrany w katalogu podglądu, także pojedynczy fragment. Wskazanie części w pracowni pokazuje jej aktualny kształt po edycji lub podziale; przycisk podglądu zmienia się wtedy na **Duplikuj część**, tworzący niezależną kopię. Podgląd nie jest częścią zapisu ani eksportowanej sceny.
+
+Kategoria w panelu VR przełącza filtry. Sortuj kategoriami w zakładce Karty przełącza porządek według kategorii lub numerów kart. Na komputerze dostępne są listy kategorii, kolejności, kart i fragmentów oraz miniatura skanu.
+
+Kategorie pochodzą z roboczych metadanych atlasu: Rośliny (125), Tekst i drobne znaki (30), Sceny i postacie (20), Małe rośliny i naczynia (12), Diagramy (9), Zodiak (8), Okładki (2). Filtr dotyczy katalogu, nie usuwa ułożonych modeli. Podgląd pomaga porównywać kształty i pochodzenie; nie wskazuje potwierdzonego rozwiązania manuskryptu.
+
+## Obrót o 180° i podział na niezależne części
+
+W zakładce **Podział** są przyciski X 180°, Y 180° i Z 180°. Na komputerze wybierz oś i naciśnij 180°. Obrót zachowuje środek fragmentu i odłącza go od grupy.
+
+Wybierz fragment, oś podziału X/Y/Z i liczbę części: **2, 3 lub 4**. Podziel fragment przecina aktualny zakres na równe pasy w lokalnej osi. Każdy niepusty pas staje się osobno chwytanym obiektem, z zachowaną teksturą i położeniem. Dla nieregularnego rysunku liczba niepustych części może być mniejsza od wybranej; przy mniej niż dwóch podział nie zastępuje oryginału.
+
+Oryginał jest ukryty, a nowe części początkowo przylegają do siebie — chwyć część i odsuń ją ręcznie. Możesz je dowolnie obracać, ponownie dzielić, duplikować i łączyć z innymi kartami. **Cofnij** odzyskuje stan sprzed podziału. JSON w wersji 5 odtwarza osobne części, ukryty oryginał i grupy. GLB zawiera widoczne części. Cięte powierzchnie nadal mają otwarte krawędzie.
+
 ## Obracanie i przycinanie
 
 W zakładce **Edycja** masz osobne przyciski obrotu X, Y, Z w krokach ±15°. Każda oś pozwala wykonać pełne 360° i dowolną liczbę dalszych obrotów. Środek widocznego fragmentu pozostaje na miejscu. Swobodny obrót nadgarstkiem oraz ciągły obrót drążkiem działają podczas chwytu. Obrót pojedynczego fragmentu przyciskami odłącza go od grupy; po edycji możesz dołączyć go ponownie.
@@ -46,13 +64,13 @@ Widok i projekcję obu oczu dostarcza WebXR. Aplikacja nie zmienia FOV ani IPD g
 
 Dostępne są 206 skanów, 2619 fragmentów oraz atlas zbiorczy. Automatyczna segmentacja ma status CANDIDATE, obejmuje także szum/tekst i wymaga przeglądu. Nie jest to potwierdzona rekonstrukcja anatomii roślin. Pełne skany zachowują całą treść.
 
-Projekt zapisuje się lokalnie po manipulacjach. JSON w wersji 4 zachowuje własne grupy, dowolne położenia i grupy źródłowe. Starsze projekty wersji 1, 2 i 3 nadal można wczytać. Zapisz projekt JSON / Wczytaj JSON przenosi pracę między urządzeniami. Eksport GLB zapisuje widoczną scenę, również własne grupy. Limit jednej pracowni: 30 zestawów i 30 własnych grup; zbiorczy atlas wszystkich 206 skanów liczy się jako jeden zestaw.
+Projekt zapisuje się lokalnie po manipulacjach. JSON w wersji 5 zachowuje własne grupy, dowolne położenia i grupy źródłowe. Starsze projekty wersji 1, 2, 3 i 4 nadal można wczytać. Zapisz projekt JSON / Wczytaj JSON przenosi pracę między urządzeniami. Eksport GLB zapisuje widoczną scenę, również własne grupy. Limit jednej pracowni: 30 zestawów i 30 własnych grup; zbiorczy atlas wszystkich 206 skanów liczy się jako jeden zestaw.
 
 MR nie mapuje ścian ani nie zasłania modeli prawdziwymi meblami. Zapis nie jest trwałą kotwicą fizycznego pomieszczenia. W razie potrzeby użyj Przed sobą po kolejnym wejściu.
 
 ## Weryfikacja
 
-Przeszły testy przycinania trójkątów, interpolacji UV i obrotu 360° wokół środka fragmentu (`node scripts/test_mesh_edit.mjs`), testy matematyki Three.js (`node scripts/test_xr.mjs`), testy rzeczywistych procedur aplikacji z zastąpionym wejściem/wyjściem DOM i XR (`node --experimental-vm-modules scripts/test_quest_runtime.mjs`) oraz kompletności zasobów i kontrolek (`node scripts/check_site.mjs`). Testy obejmują grupowanie między kartami bez zmiany pozycji, rozłączanie, zapis/odczyt wersji 4, odczyt wersji 1, grupy źródłowe, dwa trzymane obiekty, podgląd celu oraz zachowanie poprzedniej sceny po błędzie wczytywania.
+Przeszły testy kategorii, podziałów 2/3/4 i zachowania sumy pól powierzchni (`node scripts/test_catalog_split.mjs`), testy podglądu i ponownego odczytu części po podziale oraz testy przycinania trójkątów, interpolacji UV i obrotu 360° wokół środka fragmentu (`node scripts/test_mesh_edit.mjs`), testy matematyki Three.js (`node scripts/test_xr.mjs`), testy rzeczywistych procedur aplikacji z zastąpionym wejściem/wyjściem DOM i XR (`node --experimental-vm-modules scripts/test_quest_runtime.mjs`) oraz kompletności zasobów i kontrolek (`node scripts/check_site.mjs`). Testy obejmują grupowanie między kartami bez zmiany pozycji, rozłączanie, zapis/odczyt wersji 4, odczyt wersji 1, grupy źródłowe, dwa trzymane obiekty, podgląd celu oraz zachowanie poprzedniej sceny po błędzie wczytywania.
 
 Nie wykonano renderowanego testu w przeglądarce ani testu na fizycznych goglach Quest. Komfort, czytelność w passthrough i płynność wymagają odbioru na urządzeniu.
 

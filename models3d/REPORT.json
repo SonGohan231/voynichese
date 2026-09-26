@@ -8,7 +8,7 @@
     "range": "0001..0206; includes covers, foldouts, partial scans",
     "validation": "GLB structure, index bounds, finite coordinates, SHA256, referenced asset/module/control existence; first three plant masks and CPU render inspected",
     "browser_interaction_test": "NOT_PERFORMED",
-    "vr_revision": "VR2 custom arrangements",
+    "vr_revision": "VR3 preview, 180-degree rotation and independent split",
     "vr_tests": [
       "Three.js matrix/selection/group/snap tests PASS",
       "Actual quest.js handler tests with mocked DOM/XR I/O PASS",
@@ -18,13 +18,19 @@
     "vr_editing": {
       "rotation": "continuous controller rotation and XYZ +/-15 degree pivot-preserving steps",
       "crop": "reversible local-axis triangle clipping with interpolated UV; cut edges open",
-      "project_format": 4,
+      "project_format": 5,
       "tests": "test_mesh_edit.mjs and actual handler save/restore test PASS"
     },
+    "vr3_validation": [
+      "7 catalog categories, 206 images and thumbnails verified",
+      "2/3/4-way surface area conservation PASS",
+      "Actual handlers with mocked DOM/XR: independent split and duplicate save/restore PASS",
+      "180-degree rotation PASS; preview scene and panel picking PASS"
+    ],
     "publication": {
       "url": "https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html",
-      "source_sha": "b4266bc55f7e601d583bd6616187ea96bc9c980e",
-      "deployment_id": "appgdep_6ab802a00200819186583ddc410b698a",
+      "source_sha": "6e99191a229cf7ffa390075700dcf8b568123032",
+      "deployment_id": "appgdep_6ab85246a65081919850e6d5f1cbf2b4",
       "status": "succeeded"
     }
   },
@@ -35,9 +41,9 @@
   "HYPOTHESIS": "No plant identification, decoding, or measured-depth hypothesis is asserted.",
   "HANDOFF_PACKET": {
     "skill": "manusvoynus-execution-environment-router",
-    "task_id": "voynich-vr2-free-layout-2026-09-26",
+    "task_id": "voynich-vr3-preview-split-2026-09-27",
     "execution_route": "HYBRID",
-    "execution_state": "PUBLISHED; GITHUB_MIRROR_THIS_COMMIT; MANUSVOYNUS_OUT_PENDING_UNAVAILABLE",
+    "execution_state": "PUBLISHED; GITHUB_MIRROR_THIS_COMMIT; PHYSICAL_QUEST_TEST_PENDING",
     "canonical_inputs": [
       {
         "entity_type": "scan_corpus_manifest",
@@ -61,6 +67,11 @@
         "action": "Add full 360-degree rotation and reversible geometry crop, JSON v4 persistence and GLB export of edited geometry",
         "function_or_tool": "Three.js / CPU triangle clipping",
         "artifact_id_or_path": "dist/mesh-edit.js"
+      },
+      {
+        "action": "Add 180-degree XYZ controls; independent split into 2/3/4 pieces; isolated VR model preview with source image, bounding box, fragment navigation; category filtering/sorting",
+        "function_or_tool": "Three.js / CPU geometry / Node tests",
+        "artifact_id_or_path": "dist/quest.js, dist/model-preview.js, dist/catalog.js"
       }
     ],
     "outputs": [
@@ -71,15 +82,10 @@
         "status": "CANDIDATE"
       },
       {
-        "type": "SITE_SOURCE",
-        "id_or_path": "b4266bc55f7e601d583bd6616187ea96bc9c980e",
+        "type": "VR3_SITE",
+        "id_or_path": "https://voynich-herbarium-3d.songoku222.chatgpt.site/quest.html",
         "status": "PUBLISHED",
-        "deployment_id": "appgdep_6ab802a00200819186583ddc410b698a"
-      },
-      {
-        "type": "VR_INSTRUCTIONS",
-        "id_or_path": "https://drive.google.com/file/d/1AGEEaPN-5XkRsLPWNM5HTKrEUwMha1R3/view",
-        "status": "UPDATED_WITH_ROTATION_AND_CROP"
+        "source_sha": "6e99191a229cf7ffa390075700dcf8b568123032"
       }
     ],
     "uncertainty_register": [
@@ -89,37 +95,30 @@
         "accepted_by_user": "NOT_EXPLICITLY_ACCEPTED",
         "allowed_claim_scope": "Full scan coverage and independently usable relief geometry",
         "forbidden_claim_scope": "Scientifically established 3D shape; all semantic illustrations individually audited"
-      },
-      {
-        "issue": "Planar crop interpolates UV but leaves open edges",
-        "effect": "Edited GLB is not guaranteed watertight",
-        "allowed_claim_scope": "Reversible visual surface crop and exported geometry",
-        "forbidden_claim_scope": "Closed Boolean solid suitable for 3D printing"
       }
     ],
     "project_writeback": {
       "completed": false,
       "records": [
         {
-          "system": "Manusvoynus",
-          "operation": "IN and OUT add_research_note",
-          "status": "UNAVAILABLE",
-          "reason": "McpServerError: Connection failed."
+          "system": "Sites",
+          "status": "succeeded",
+          "source_sha": "6e99191a229cf7ffa390075700dcf8b568123032",
+          "deployment_id": "appgdep_6ab85246a65081919850e6d5f1cbf2b4"
         },
         {
           "system": "GitHub",
-          "operation": "code, tests, instructions, report and handoff",
           "status": "THIS_COMMIT"
-        },
-        {
-          "system": "Sites",
-          "status": "succeeded",
-          "source_sha": "b4266bc55f7e601d583bd6616187ea96bc9c980e"
         },
         {
           "system": "Google Drive",
           "status": "UPDATED",
           "file_id": "1AGEEaPN-5XkRsLPWNM5HTKrEUwMha1R3"
+        },
+        {
+          "system": "Manusvoynus",
+          "status": "PENDING_FROM_PRIOR_TURN",
+          "reason": "Prior IN/OUT endpoint returned UNAVAILABLE; missing original instruction attachment; no new journal call this turn"
         }
       ]
     },
@@ -128,7 +127,7 @@
       "Manusvoynus journal unavailable; IN/OUT sync pending",
       "Manual contour review remains CANDIDATE"
     ],
-    "next_action": "Test physical Meta Quest VR/MR, arbitrary groups, 360-degree rotation and reversible surface crop; retry pending Manusvoynus journal.",
+    "next_action": "Physical Quest acceptance for preview readability, controller interaction and split-piece handling; manual review of source categories/contours remains open.",
     "next_role": "manusvoynus-execution-environment-router"
   }
 }
