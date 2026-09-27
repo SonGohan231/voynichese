@@ -26,7 +26,7 @@ const close=(a,b)=>assert.ok(a.every((x,i)=>Math.abs(x-b[i])<1e-6));
 assert.equal(a.state().entries.length,1,'startup loaded initial model');assert.equal(a.state().layoutMode,'free');
 let e=a.state().active,p=e.pieces[0];a.setActive(e,p);p.position.set(.7,.2,-.1);p.rotation.set(.2,.3,.4);p.updateWorldMatrix(true,false);const custom=p.matrixWorld.clone();a.joinSelected();p.updateWorldMatrix(true,false);close(p.matrixWorld.elements,custom.elements);assert.equal(a.state().freeGroups.length,1);
 let e2=await a.addEntry(data.pages[5].id);const p2=e2.pieces[1];a.setActive(e2,p2);p2.updateWorldMatrix(true,false);const custom2=p2.matrixWorld.clone();a.joinSelected();p2.updateWorldMatrix(true,false);close(p2.matrixWorld.elements,custom2.elements);assert.equal(p.parent,p2.parent,'cross-folio pieces join one custom group');
-let saved=a.capture();assert.equal(saved.version,6);assert.equal(saved.freeGroups.length,1);assert.equal(saved.entries[1].pieces[1].freeGroup,saved.freeGroups[0].id);await a.restore(saved);e=a.state().entries[0];e2=a.state().entries[1];p=e.pieces[0];p.updateWorldMatrix(true,false);close(p.matrixWorld.elements,custom.elements);assert.equal(a.state().freeMembership.size,2);
+let saved=a.capture();assert.equal(saved.version,7);assert.equal(saved.freeGroups.length,1);assert.equal(saved.entries[1].pieces[1].freeGroup,saved.freeGroups[0].id);await a.restore(saved);e=a.state().entries[0];e2=a.state().entries[1];p=e.pieces[0];p.updateWorldMatrix(true,false);close(p.matrixWorld.elements,custom.elements);assert.equal(a.state().freeMembership.size,2);
 a.setActive(e,p);a.detachSelected();p.updateWorldMatrix(true,false);close(p.matrixWorld.elements,custom.elements);assert.ok(!a.state().freeMembership.has(p));
 a.toggleLayout();assert.equal(a.state().layoutMode,'source');a.joinSelected();assert.ok(e.joined.has(p.name));close(p.position.toArray(),e.home.get(p.name).p);
 // Hold the assembled group with one controller and a loose part from the same folio with the other.
@@ -51,9 +51,24 @@ const chosen=a.state().selectedPiece;chosen.rotation.set(.25,.36,.17);chosen.upd
 const board=a.study.pinBoards[0];a.study.root.updateMatrixWorld(true);
 a.pinSelected({object:board,point:board.getWorldPosition(new T.Vector3())},'left');
 assert.equal(chosen.userData.pinned,true);assert.ok(chosen.getWorldQuaternion(new T.Quaternion()).angleTo(orientation)<1e-6);
-a.study.checks['end-1:0']=true;a.study.notes['end-1']='Kontrola folio';const roomSave=a.capture();assert.equal(roomSave.version,6);await a.restore(roomSave);
+a.study.checks['end-1:0']=true;a.study.notes['end-1']='Kontrola folio';const roomSave=a.capture();assert.equal(roomSave.version,7);await a.restore(roomSave);
 assert.equal(a.study.checks['end-1:0'],true);assert.equal(a.study.notes['end-1'],'Kontrola folio');
 const pinned=a.state().entries[0].pieces.find(p=>p.userData.pinned);assert.ok(pinned);a.setActive(a.state().entries[0],pinned);a.unpinSelected();assert.equal(pinned.userData.pinned,false);
 a.study.setVisible(true,true);assert.equal(a.study.shell.visible,false);assert.equal(a.study.root.visible,true);a.study.setVisible(true,false);assert.equal(a.study.shell.visible,true);
 a.study.toggleCandle();assert.equal(a.study.candleLight.visible,false);assert.equal(a.study.flame.visible,false);
 console.log('PASS: study room v6: pin orientation, pin persistence, unpin, source checklist and notes roundtrip, VR/MR architecture visibility, candle control. No headset/rendered claim.');
+
+// UV-space angle uses texture aspect, not screen/world perspective; markers follow moving pieces.
+const texPiece=a.state().entries[0].pieces.find(p=>p.visible);a.setActive(a.state().entries[0],texPiece);
+texPiece.material.map=new T.Texture({width:200,height:100});
+const hit=(u,v)=>({object:texPiece,uv:new T.Vector2(u,v),point:texPiece.localToWorld(new T.Vector3(.01,.02,0))});
+a.study.setMode('angle');a.study.measureHit(hit(0,0),'source');a.study.measureHit(hit(.5,0),'source');a.study.measureHit(hit(.5,1),'source');assert.match(a.study.measureResult,/90.0°/);
+a.study.measureHit(hit(.5,0),'source');a.study.measureHit(hit(.5,0),'source');a.study.measureHit(hit(.5,1),'source');assert.match(a.study.measureResult,/powtarzają/);
+a.study.setMode('distance');a.study.measureHit(hit(0,0),'source');a.study.measureHit(hit(1,0),'different');assert.equal(a.study.measurePoints.length,1);a.study.measureHit(hit(1,0),'source');assert.match(a.study.measureResult,/200.0 px/);
+a.study.setMode('mark');const me=a.state().entries[0];a.study.markHit(hit(.2,.4),me,texPiece);assert.equal(a.study.markers.length,1);const annotation=a.study.markers[0],local=annotation.record.p.slice();texPiece.position.x+=.5;texPiece.rotation.y+=Math.PI/3;a.study.updateMarkers();close(annotation.sprite.getWorldPosition(new T.Vector3()).toArray(),texPiece.localToWorld(new T.Vector3().fromArray(local)).toArray());
+const poses=a.capture().entries;a.study.setRoom(2);assert.deepEqual(a.capture().entries,poses);assert.equal(a.study.variants[2].visible,true);assert.equal(a.study.variants[0].visible,false);
+const withMarks=a.capture();await a.restore(withMarks);assert.equal(a.study.markers.length,1);assert.equal(a.study.roomMode,2);close(a.study.markers[0].record.p,local);a.study.removeMarker();assert.equal(a.study.markers.length,0);
+const tool=a.study.protractor;a.hands[0].controller.attach(tool);a.hands[0].held={object:tool,tool:true,whole:true};a.study.recallTools();assert.equal(a.hands[0].held,null);assert.equal(tool.parent,a.study.root);assert.ok(Number.isFinite(tool.position.z));assert.equal(tool.quaternion.w,1);
+const extras=a.study.capture();a.study.restore({...extras,markers:[{p:[NaN]}],tools:{bad:true}});assert.equal(a.study.markers.length,0);
+const v6=a.capture();v6.version=6;delete v6.study.roomMode;delete v6.study.markers;await a.restore(v6);assert.equal(a.study.roomMode,0);assert.equal(a.study.markers.length,0);
+console.log('PASS: v7 extras: aspect-aware angle/distance, repeated points and cross-source rejection, marker follows piece transform, marker JSON roundtrip, room switch preserves layout, tool recall releases hand, malformed optional input, v6 migration.');

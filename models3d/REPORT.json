@@ -8,7 +8,7 @@
     "range": "0001..0206; includes covers, foldouts, partial scans",
     "validation": "GLB structure, index bounds, finite coordinates, SHA256, referenced asset/module/control existence; first three plant masks and CPU render inspected",
     "browser_interaction_test": "NOT_PERFORMED",
-    "vr_revision": "VR4 research room candidate, not published",
+    "vr_revision": "VR4.1 approved test release, project format v7",
     "vr_tests": [
       "Three.js matrix/selection/group/snap tests PASS",
       "Actual quest.js handler tests with mocked DOM/XR I/O PASS",
@@ -18,7 +18,7 @@
     "vr_editing": {
       "rotation": "continuous controller rotation and XYZ +/-15 degree pivot-preserving steps",
       "crop": "reversible local-axis triangle clipping with interpolated UV; cut edges open",
-      "project_format": 6,
+      "project_format": 7,
       "tests": "test_mesh_edit.mjs and actual handler save/restore test PASS"
     },
     "vr3_validation": [
@@ -32,7 +32,31 @@
       "checklist and notes persistence PASS",
       "MR shell visibility and candle controls PASS",
       "full prior geometry/grouping/split tests PASS"
-    ]
+    ],
+    "extras_validation": [
+      "UV texture angle and distance PASS",
+      "Degenerate and cross-source point rejection PASS",
+      "Marker transform and JSON roundtrip PASS",
+      "Room decor switching preserves model layout PASS",
+      "Tool recall releases controller PASS",
+      "v6 migration PASS"
+    ],
+    "manusvoynus_writeback": "JOURNAL_IN attempted 2026-09-27: UNAVAILABLE connection failed; local provenance retained",
+    "deployment": {
+      "id": "appgdep_6ab85fda45208191b7971c3faae38e8c",
+      "project_id": "appgprj_6aa654f374648191971b3d05df9bb21f",
+      "title": "Manuskrypt · Herbarium 3D",
+      "version_id": "appgprj_6aa654f374648191971b3d05df9bb21f~appgver_cc873887b444819189e3b08f41e78596",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://voynich-herbarium-3d.songoku222.chatgpt.site",
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6aa654f374648191971b3d05df9bb21f",
+      "failure_message": null,
+      "env_set_revision": 0,
+      "updated_at": "2026-09-27T00:14:39.648781+00:00",
+      "source_commit": "ca2665769c78f114004d57c93dbb9315e90bdf47"
+    }
   },
   "INTERPRETATION": {
     "geometry": "textured 2.5D relief with synthetic thickness/back, source colors",
@@ -41,15 +65,21 @@
   "HYPOTHESIS": "No plant identification, decoding, or measured-depth hypothesis is asserted.",
   "HANDOFF_PACKET": {
     "skill": "manusvoynus-execution-environment-router",
-    "task_id": "voynich-vr4-room-2026-09-27",
+    "task_id": "voynich-vr41-approved-room-2026-09-27",
     "execution_route": "HYBRID",
-    "execution_state": "IMPLEMENTED_TESTED_PENDING_FORM_RUNTIME_REVIEW",
+    "execution_state": "DEPLOYED_APPROVED_TEST_RELEASE",
     "canonical_inputs": [
       {
         "entity_type": "scan_corpus_manifest",
         "id": "assets/source_manifest.json",
         "sha256": "03c2c71655903e1a1902e3ba6ec8e0cbbf56ab3c80328e239a6044a098be9477",
         "version": "user archives + 9 complete GitHub image versions"
+      },
+      {
+        "entity_type": "VCT instructions identical copies",
+        "id": "VCT_PIN_INSTRUKCJA(9)(1).md",
+        "sha256": "fd3498274ae0be7a590905b9e468415198f71d9dab75b99b0b0801b1975496c6",
+        "version": "read 2026-09-27; confidential content excluded"
       }
     ],
     "completed_actions": [
@@ -72,6 +102,11 @@
         "action": "Add 180-degree XYZ controls; independent split into 2/3/4 pieces; isolated VR model preview with source image, bounding box, fragment navigation; category filtering/sorting",
         "function_or_tool": "Three.js / CPU geometry / Node tests",
         "artifact_id_or_path": "dist/quest.js, dist/model-preview.js, dist/catalog.js"
+      },
+      {
+        "action": "User-approved room test release; angle tool, 3-color anchored markers, tool recall and three room furnishing modes sharing model layout",
+        "function_or_tool": "Three.js / actual handlers with mocked XR / Sites",
+        "artifact_id_or_path": "dist/study-room.js, dist/quest.js"
       }
     ],
     "outputs": [
@@ -80,6 +115,24 @@
         "id_or_path": "assets/validation.json",
         "sha256": "1a00e8dbbe9da378e7165d60c309a54dece93eabb80d0e7639eb6adf3b13bc1d",
         "status": "CANDIDATE"
+      },
+      {
+        "type": "SOURCE",
+        "id_or_path": "dist/study-room.js",
+        "sha256": "640e67cc51f4e789867184168e544a6c7a8b393b289afd7e6e2cd64258a5c30e",
+        "status": "CANDIDATE_TEST_RELEASE"
+      },
+      {
+        "type": "SOURCE",
+        "id_or_path": "dist/quest.js",
+        "sha256": "bf50a15e401a003866b0acc71c8d9510dbd0a852a31580ec4b449a36ff87d6b6",
+        "status": "CANDIDATE_TEST_RELEASE"
+      },
+      {
+        "type": "SOURCE",
+        "id_or_path": "dist/quest.html",
+        "sha256": "97185cf8cdb25fd959246f05422d1a88a0c3ac7299e4b1d096fa1dc6b59b6811",
+        "status": "CANDIDATE_TEST_RELEASE"
       }
     ],
     "uncertainty_register": [
@@ -100,15 +153,19 @@
       "Manusvoynus journal unavailable; IN/OUT sync pending",
       "Manual contour review remains CANDIDATE"
     ],
-    "next_action": "Publish and save code/instructions; physical Quest acceptance remains pending",
+    "next_action": "Physical Meta Quest acceptance: comfort, text readability, controller interactions, passthrough and frame rate.",
     "next_role": "manusvoynus-execution-environment-router"
   },
   "ROOM_REVIEW": {
     "blender_project": "https://higgsfield.ai/3d-jutsu/a155b902-e8eb-4655-890b-fe8da3ee9ca3",
     "blender_revision": 2,
     "function_direction_approved": true,
-    "form_approved": false,
+    "form_approved": true,
     "runtime_approved": false,
-    "published": false
+    "published": true,
+    "test_deployment_approved": true,
+    "approval_quote": "Jest super, zatwierdzam! Dodaj więcej dodatków i będzie idealnie, a potem kolejne pokoje",
+    "approval_scope": "User acceptance of shown room for test deployment and added accessories. Does not assert rendered runtime or physical headset QA.",
+    "room_variants": "Three furnishing modes of shared shell; shared workspace, not separate spatial rooms"
   }
 }

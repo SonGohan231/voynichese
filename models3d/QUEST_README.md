@@ -64,7 +64,7 @@ Widok i projekcję obu oczu dostarcza WebXR. Aplikacja nie zmienia FOV ani IPD g
 
 Dostępne są 206 skanów, 2619 fragmentów oraz atlas zbiorczy. Automatyczna segmentacja ma status CANDIDATE, obejmuje także szum/tekst i wymaga przeglądu. Nie jest to potwierdzona rekonstrukcja anatomii roślin. Pełne skany zachowują całą treść.
 
-Projekt zapisuje się lokalnie po manipulacjach. JSON w wersji 5 zachowuje własne grupy, dowolne położenia i grupy źródłowe. Starsze projekty wersji 1, 2, 3 i 4 nadal można wczytać. Zapisz projekt JSON / Wczytaj JSON przenosi pracę między urządzeniami. Eksport GLB zapisuje widoczną scenę, również własne grupy. Limit jednej pracowni: 30 zestawów i 30 własnych grup; zbiorczy atlas wszystkich 206 skanów liczy się jako jeden zestaw.
+Projekt zapisuje się lokalnie po manipulacjach. JSON w wersji 7 zachowuje własne grupy, dowolne położenia i grupy źródłowe. Starsze projekty wersji 1–6 nadal można wczytać. Zapisz projekt JSON / Wczytaj JSON przenosi pracę między urządzeniami. Eksport GLB zapisuje widoczną scenę, również własne grupy. Limit jednej pracowni: 30 zestawów i 30 własnych grup; zbiorczy atlas wszystkich 206 skanów liczy się jako jeden zestaw.
 
 MR nie mapuje ścian ani nie zasłania modeli prawdziwymi meblami. Zapis nie jest trwałą kotwicą fizycznego pomieszczenia. W razie potrzeby użyj Przed sobą po kolejnym wejściu.
 
@@ -78,9 +78,9 @@ Pełnej jakości modele: https://drive.google.com/drive/folders/1l2nL2ZkjsyhgHJQ
 Kod: https://github.com/SonGohan231/voynichese/tree/models3d/atlas-206-2026-09-26/models3d
 
 
-## Pracownia badawcza — kandydat VR4 (2026-09-27)
+## Pracownia badawcza — zatwierdzona wersja testowa (2026-09-27)
 
-Nowa wersja jest przygotowana w kodzie, lecz nie została opublikowana. Akceptacja pomysłów dotyczy układu i referencji. Build 3D Game Rooms wymaga jeszcze przeglądu Form oraz Runtime przed publikacją pokoju.
+Użytkownik zatwierdził przedstawiony pokój do wdrożenia testowego: „Jest super, zatwierdzam!”. Ta aktualizacja obejmuje pokój oraz dodatkowe narzędzia i wystroje. Akceptacja wdrożenia nie oznacza wykonanego testu na goglach.
 
 - Pokój 6 × 5 m według układu sprawdzonego w Blenderze; osobno ukrywana architektura MR.
 - Prawdziwe skany w kodeksie i stronicowanym stojaku 12 kart; pełny katalog 206 skanów zachowany.
@@ -93,4 +93,18 @@ Nowa wersja jest przygotowana w kodzie, lecz nie została opublikowana. Akceptac
 
 Testy matematyki i rzeczywistych procedur programu z atrapą DOM/XR przeszły. Brak testu renderowanej aplikacji i fizycznego Quest. Blender jest osobną sceną; jego render nie jest zrzutem aplikacji.
 
-Przegląd źródeł obejmuje research/hypotheses.json, nie całą historię projektu Manuskrypt 2.0. Manusvoynus był niedostępny. Oryginalny VCT_PIN_INSTRUKCJA.md nie został udostępniony w środowisku.
+Przegląd źródeł obejmuje research/hypotheses.json, nie całą historię projektu Manuskrypt 2.0. Manusvoynus był niedostępny. Dostarczone kopie instrukcji VCT zostały odczytane; ich poufna zawartość nie jest częścią aplikacji.
+
+
+## Dodatki i kolejne wystroje — projekt v7
+
+- **Archiwum, Gabinet botaniczny, Sala diagramów**: przełączanie wystroju i wyposażenia tej samej pracowni. To wspólna przestrzeń robocza: wszystkie modele, przypięcia i znaczniki pozostają na swoich miejscach. Nie ma teleportacji między odległymi pokojami ani osobnych zapisów każdego pokoju. Dekoracyjne tarcze i puste ramki nie są dowodem badawczym.
+- **Kątomierz A–B–C**: wskaż trzy punkty na tej samej części, drugi jest wierzchołkiem. Kąt jest liczony w pikselach tekstury z uwzględnieniem jej proporcji, niezależnie od perspektywy kamery. To poglądowy pomiar tekstury, nie skalibrowany pomiar natywnego skanu czy przestrzennej rośliny. Grip chwyta mosiężny kątomierz, spust przełącza jego tryb.
+- **Znaczniki**: wybierz narzędzie, kliknij powierzchnię modelu. Do 100 numerowanych znaczników w trzech kolorach. Poruszają się i obracają z przypisaną częścią; zapisują identyfikator zestawu/części, lokalny punkt, UV oraz wymiary tekstury. Adnotacje są widoczne ponad modelem; nie zmieniają skanu. Znacznik nie przechodzi automatycznie na nowe fragmenty po podziale — ukrycie części ukrywa jej znaczniki. Duplikaty nie dziedziczą adnotacji. Usuń ostatni i Cofnij pozwalają poprawić oznaczenie.
+- **Przywołaj narzędzia**: odkłada wszystkie pięć narzędzi w zasięgu przed aktualnym widokiem; zwalnia obiekty trzymane w kontrolerach.
+- Panel narzędzi w VR znajduje się powyżej obszaru pracy, z przyciskami pokoi, koloru, usuwania znacznika i kończenia pomiaru. Po pomiarze wybierz Zakończ pomiar, aby wrócić do chwytania.
+- Projekt JSON v7 zachowuje wystrój, znaczniki i wcześniejsze dane. Import v1–v6 zachowany. Eksport GLB obejmuje modele; narzędzia, checklisty i adnotacje przenoś przez JSON.
+
+Nowe testy rzeczywistych procedur: kąt 90°, poprawna skala pikselowa tekstury, odrzucenie powtórzonych punktów i mieszania źródeł, podążanie znaczników za obrotem/przesunięciem, zapis/odczyt adnotacji, zachowanie układu podczas zmiany wystroju, przywołanie trzymanego narzędzia, odczyt v6 — PASS. DOM i XR są zastąpione w teście; brak pomiaru FPS lub testu fizycznego Quest.
+
+Kod pracowni: https://github.com/SonGohan231/voynichese/tree/models3d/research-room-2026-09-27/models3d
