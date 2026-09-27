@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Manuskrypt_Blender_Partia21_10_Modeli.zip",
+    "bytes": 123668675,
+    "sha256": "9bbc47246abc7f7ecc35b3f1320c243b03052f29708f87f6e30052f32164ab23",
+    "models": 10
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia22_10_Modeli.zip",
+    "bytes": 110973559,
+    "sha256": "f4ad4372c11bbba5683613d2c20bddbaf6fd6557084b00483b724f9770b72dcc",
+    "models": 10
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia23_10_Modeli.zip",
+    "bytes": 116019637,
+    "sha256": "cffc31f2a38fb34c409a0f6bc597fab6106bea9013accc2dd1fc44f67cdb31af",
+    "models": 10
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia24_10_Modeli.zip",
+    "bytes": 105517045,
+    "sha256": "f2650972c6efb97a7246fa59f25ecedfeb2d34a285ab29acc9b44c527afcdd2c",
+    "models": 10
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia25_10_Modeli.zip",
+    "bytes": 97303756,
+    "sha256": "293abfb68d753d05bd50173c4890880d0b4d8a579250cdb1978b0ba2474d37c9",
+    "models": 10
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia26_10_Modeli.zip",
+    "bytes": 93730020,
+    "sha256": "676229cb3144208f741b76d8c8a2085871a05160ecc09fccaa94b6365b68a056",
+    "models": 10
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia27_1_Modeli.zip",
+    "bytes": 8703114,
+    "sha256": "9f679efa89b407f2c9e5cc52231ab0b073eed32d6802f475d44cd16a2c2b4728",
+    "models": 1
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia28_10_Modeli.zip",
+    "bytes": 8739907,
+    "sha256": "6a28f2ca70e482af852341d60ec7b6b2840e4359612052b2c00d31be2d73e6e3",
+    "models": 10
+  }
+]

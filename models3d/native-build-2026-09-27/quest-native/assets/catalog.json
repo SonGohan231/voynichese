@@ -23,7 +23,8 @@
     "native_glb_sha256": "62403e8b521475bb13e4411019f28dad3619be3a3aafd421846750508fef3525",
     "native_parts": 85,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0004.glb"
   },
   {
     "scan": "s0005",
@@ -49,7 +50,8 @@
     "native_glb_sha256": "91a67fd360c4233bb50e35be79b47402c753624aab2195be5473e3ef969bbef7",
     "native_parts": 172,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0005.glb"
   },
   {
     "scan": "s0006",
@@ -75,7 +77,8 @@
     "native_glb_sha256": "eb710b5ec78d6d6d3da734bd978a516ab321abb1d3c6b434d253dfe485411ef3",
     "native_parts": 14,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0006.glb"
   },
   {
     "scan": "s0007",
@@ -101,7 +104,8 @@
     "native_glb_sha256": "6d6100ab58afe3b2139a9288e3704edfeab74c28b6c86dcf777d9fcfba2a3462",
     "native_parts": 55,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0007.glb"
   },
   {
     "scan": "s0008",
@@ -127,7 +131,8 @@
     "native_glb_sha256": "752628d5247badb250062ebe4cd3d864adf934869caba30db5781c545e056d5a",
     "native_parts": 69,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0008.glb"
   },
   {
     "scan": "s0009",
@@ -153,7 +158,8 @@
     "native_glb_sha256": "163e2e964772f1f244978f1aebb5db7712a63b7d5a7cc9c660f9ac80cc8d2f17",
     "native_parts": 253,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0009.glb"
   },
   {
     "scan": "s0010",
@@ -179,7 +185,8 @@
     "native_glb_sha256": "f49302899c360db7830c286a1b1eef7d53ac317f4f88d7ab51f58c27bb8ffac0",
     "native_parts": 84,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0010.glb"
   },
   {
     "scan": "s0011",
@@ -205,7 +212,8 @@
     "native_glb_sha256": "0cb3bff56c50b1c6ad077b7e1928266a9ccda9608196f81d26c8d83f994cda14",
     "native_parts": 15,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0011.glb"
   },
   {
     "scan": "s0012",
@@ -231,7 +239,8 @@
     "native_glb_sha256": "569e3c7cc9be1011680e7de7d8e94924c2e758c79f49d15fdbcf1c58791bb6b3",
     "native_parts": 133,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0012.glb"
   },
   {
     "scan": "s0013",
@@ -257,7 +266,8 @@
     "native_glb_sha256": "82a0694d1186ff99bf2f50bca37b411f693f4e2aaef60d2f00e702c98d062922",
     "native_parts": 122,
     "native_blender": "4.5.4 LTS",
-    "native_revision": "independent-components-2026-09-27"
+    "native_revision": "independent-components-2026-09-27",
+    "display_model": "res://assets/display/s0013.glb"
   },
   {
     "scan": "s0014",
@@ -275,7 +285,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "34aa95ce48f6a1c7bc5563a56a05862098748ed964409326475976b84be5d2f6",
     "contour_verified": false,
-    "native_glb_sha256": "34aa95ce48f6a1c7bc5563a56a05862098748ed964409326475976b84be5d2f6"
+    "native_glb_sha256": "34aa95ce48f6a1c7bc5563a56a05862098748ed964409326475976b84be5d2f6",
+    "display_model": "res://assets/display/s0014.glb"
   },
   {
     "scan": "s0015",
@@ -293,7 +304,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "ccb97c52b34b164d7a1f082617617cb61764ab480b99f4b89fc5853907a8897b",
     "contour_verified": false,
-    "native_glb_sha256": "ccb97c52b34b164d7a1f082617617cb61764ab480b99f4b89fc5853907a8897b"
+    "native_glb_sha256": "ccb97c52b34b164d7a1f082617617cb61764ab480b99f4b89fc5853907a8897b",
+    "display_model": "res://assets/display/s0015.glb"
   },
   {
     "scan": "s0016",
@@ -311,7 +323,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "c40bb3c57f223d3b94f74034c4c40ce9dc3da92e8f73457e1d3196861f1d4669",
     "contour_verified": false,
-    "native_glb_sha256": "c40bb3c57f223d3b94f74034c4c40ce9dc3da92e8f73457e1d3196861f1d4669"
+    "native_glb_sha256": "c40bb3c57f223d3b94f74034c4c40ce9dc3da92e8f73457e1d3196861f1d4669",
+    "display_model": "res://assets/display/s0016.glb"
   },
   {
     "scan": "s0017",
@@ -329,7 +342,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "dc92ce08b036f0f8a1c18798c8c689d69f21cdc0652d4276e9d4c35e7cac49b7",
     "contour_verified": false,
-    "native_glb_sha256": "dc92ce08b036f0f8a1c18798c8c689d69f21cdc0652d4276e9d4c35e7cac49b7"
+    "native_glb_sha256": "dc92ce08b036f0f8a1c18798c8c689d69f21cdc0652d4276e9d4c35e7cac49b7",
+    "display_model": "res://assets/display/s0017.glb"
   },
   {
     "scan": "s0018",
@@ -347,7 +361,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "e614a84bb2c1d3f9689af38889e8a25b98bed03dc00789c05096579de066bbcb",
     "contour_verified": false,
-    "native_glb_sha256": "e614a84bb2c1d3f9689af38889e8a25b98bed03dc00789c05096579de066bbcb"
+    "native_glb_sha256": "e614a84bb2c1d3f9689af38889e8a25b98bed03dc00789c05096579de066bbcb",
+    "display_model": "res://assets/display/s0018.glb"
   },
   {
     "scan": "s0019",
@@ -365,7 +380,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "7e5366c082ce605f93887c09b1430653f00faa8f476f5d537e05ec452aefb3a5",
     "contour_verified": false,
-    "native_glb_sha256": "7e5366c082ce605f93887c09b1430653f00faa8f476f5d537e05ec452aefb3a5"
+    "native_glb_sha256": "7e5366c082ce605f93887c09b1430653f00faa8f476f5d537e05ec452aefb3a5",
+    "display_model": "res://assets/display/s0019.glb"
   },
   {
     "scan": "s0020",
@@ -383,7 +399,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "9a3ef1c99ad3ed852830c82ee49b04d05abbc8a8b6a900912bf8e2c07384cd95",
     "contour_verified": false,
-    "native_glb_sha256": "9a3ef1c99ad3ed852830c82ee49b04d05abbc8a8b6a900912bf8e2c07384cd95"
+    "native_glb_sha256": "9a3ef1c99ad3ed852830c82ee49b04d05abbc8a8b6a900912bf8e2c07384cd95",
+    "display_model": "res://assets/display/s0020.glb"
   },
   {
     "scan": "s0021",
@@ -401,7 +418,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "2a2947f23568f695fe039d1c208965af5b3802eab904d33d82b4d3820b2e39c6",
     "contour_verified": false,
-    "native_glb_sha256": "2a2947f23568f695fe039d1c208965af5b3802eab904d33d82b4d3820b2e39c6"
+    "native_glb_sha256": "2a2947f23568f695fe039d1c208965af5b3802eab904d33d82b4d3820b2e39c6",
+    "display_model": "res://assets/display/s0021.glb"
   },
   {
     "scan": "s0022",
@@ -419,7 +437,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "fd5aff9c0de3bbbd7a8cbc35b3f8a6af066386b2beda879be8be5dc4c0394b93",
     "contour_verified": false,
-    "native_glb_sha256": "fd5aff9c0de3bbbd7a8cbc35b3f8a6af066386b2beda879be8be5dc4c0394b93"
+    "native_glb_sha256": "fd5aff9c0de3bbbd7a8cbc35b3f8a6af066386b2beda879be8be5dc4c0394b93",
+    "display_model": "res://assets/display/s0022.glb"
   },
   {
     "scan": "s0023",
@@ -437,7 +456,8 @@
     "blender_revision": 2,
     "editable_glb_sha256": "87e51a3288f67384b11bba64c3f3e95ca033ab35ee025490e5c21dfd42a41072",
     "contour_verified": false,
-    "native_glb_sha256": "87e51a3288f67384b11bba64c3f3e95ca033ab35ee025490e5c21dfd42a41072"
+    "native_glb_sha256": "87e51a3288f67384b11bba64c3f3e95ca033ab35ee025490e5c21dfd42a41072",
+    "display_model": "res://assets/display/s0023.glb"
   },
   {
     "scan": "s0024",
@@ -453,7 +473,8 @@
     "editable_glb_sha256": "6df94f59284a1ef8a7ecb5eaaa917789cff6cbcd01fbe03d09a59b3a9ab775d6",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "6df94f59284a1ef8a7ecb5eaaa917789cff6cbcd01fbe03d09a59b3a9ab775d6"
+    "native_glb_sha256": "6df94f59284a1ef8a7ecb5eaaa917789cff6cbcd01fbe03d09a59b3a9ab775d6",
+    "display_model": "res://assets/display/s0024.glb"
   },
   {
     "scan": "s0025",
@@ -469,7 +490,8 @@
     "editable_glb_sha256": "a44d29dab0c8f8780a83dfda32d17747a8ba731a4a5a9cf57936f407ea763f7e",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "a44d29dab0c8f8780a83dfda32d17747a8ba731a4a5a9cf57936f407ea763f7e"
+    "native_glb_sha256": "a44d29dab0c8f8780a83dfda32d17747a8ba731a4a5a9cf57936f407ea763f7e",
+    "display_model": "res://assets/display/s0025.glb"
   },
   {
     "scan": "s0026",
@@ -485,7 +507,8 @@
     "editable_glb_sha256": "46cba0412993aaedc052d5d54dd92ab0399152fb1780a60bec38e2f1f0a22851",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "46cba0412993aaedc052d5d54dd92ab0399152fb1780a60bec38e2f1f0a22851"
+    "native_glb_sha256": "46cba0412993aaedc052d5d54dd92ab0399152fb1780a60bec38e2f1f0a22851",
+    "display_model": "res://assets/display/s0026.glb"
   },
   {
     "scan": "s0027",
@@ -501,7 +524,8 @@
     "editable_glb_sha256": "6e88ec14ff2a0baa9e289687592298ba03dbb093a495474ed83dd4db6605d099",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "6e88ec14ff2a0baa9e289687592298ba03dbb093a495474ed83dd4db6605d099"
+    "native_glb_sha256": "6e88ec14ff2a0baa9e289687592298ba03dbb093a495474ed83dd4db6605d099",
+    "display_model": "res://assets/display/s0027.glb"
   },
   {
     "scan": "s0028",
@@ -517,7 +541,8 @@
     "editable_glb_sha256": "7f9d6dc14bb8a65706076d3587f46c7d1932d14e5dc415507acc2df9f06a758b",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "7f9d6dc14bb8a65706076d3587f46c7d1932d14e5dc415507acc2df9f06a758b"
+    "native_glb_sha256": "7f9d6dc14bb8a65706076d3587f46c7d1932d14e5dc415507acc2df9f06a758b",
+    "display_model": "res://assets/display/s0028.glb"
   },
   {
     "scan": "s0029",
@@ -533,7 +558,8 @@
     "editable_glb_sha256": "fb158dd2a1da109132ace6bb1f175a1bee651652447a3b013a2e76af51ec864d",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "fb158dd2a1da109132ace6bb1f175a1bee651652447a3b013a2e76af51ec864d"
+    "native_glb_sha256": "fb158dd2a1da109132ace6bb1f175a1bee651652447a3b013a2e76af51ec864d",
+    "display_model": "res://assets/display/s0029.glb"
   },
   {
     "scan": "s0030",
@@ -549,7 +575,8 @@
     "editable_glb_sha256": "670e11187f656d6229cc0c89894ffa764962e5413161e90afb582a9de8dd449f",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "670e11187f656d6229cc0c89894ffa764962e5413161e90afb582a9de8dd449f"
+    "native_glb_sha256": "670e11187f656d6229cc0c89894ffa764962e5413161e90afb582a9de8dd449f",
+    "display_model": "res://assets/display/s0030.glb"
   },
   {
     "scan": "s0031",
@@ -565,7 +592,8 @@
     "editable_glb_sha256": "4f67c1489a6aec33bd427bd2ac2a71b2f8c36b788ae731a1af558848129e460b",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "4f67c1489a6aec33bd427bd2ac2a71b2f8c36b788ae731a1af558848129e460b"
+    "native_glb_sha256": "4f67c1489a6aec33bd427bd2ac2a71b2f8c36b788ae731a1af558848129e460b",
+    "display_model": "res://assets/display/s0031.glb"
   },
   {
     "scan": "s0032",
@@ -581,7 +609,8 @@
     "editable_glb_sha256": "67a46e267cca387aa521982d9d24d27e9ac9e2e87b05e6e20a58795f4c07f27a",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "67a46e267cca387aa521982d9d24d27e9ac9e2e87b05e6e20a58795f4c07f27a"
+    "native_glb_sha256": "67a46e267cca387aa521982d9d24d27e9ac9e2e87b05e6e20a58795f4c07f27a",
+    "display_model": "res://assets/display/s0032.glb"
   },
   {
     "scan": "s0033",
@@ -597,7 +626,8 @@
     "editable_glb_sha256": "36d8ac180bfd1d3c13ff41ef2f2b269bae832a28e6f6a03b8ba6518a74c7e43e",
     "category": "Rośliny",
     "contour_verified": false,
-    "native_glb_sha256": "36d8ac180bfd1d3c13ff41ef2f2b269bae832a28e6f6a03b8ba6518a74c7e43e"
+    "native_glb_sha256": "36d8ac180bfd1d3c13ff41ef2f2b269bae832a28e6f6a03b8ba6518a74c7e43e",
+    "display_model": "res://assets/display/s0033.glb"
   },
   {
     "scan": "s0034",
@@ -615,7 +645,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "504b7479a4a8c141e365c81130c4d41daedd93964a4b9a585323994d8b813c8c",
     "contour_verified": false,
-    "native_glb_sha256": "504b7479a4a8c141e365c81130c4d41daedd93964a4b9a585323994d8b813c8c"
+    "native_glb_sha256": "504b7479a4a8c141e365c81130c4d41daedd93964a4b9a585323994d8b813c8c",
+    "display_model": "res://assets/display/s0034.glb"
   },
   {
     "scan": "s0035",
@@ -633,7 +664,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9716cda3f42415cc6e79c75a45ceb663b208ca3ae6011109b4eb8835ec188863",
     "contour_verified": false,
-    "native_glb_sha256": "9716cda3f42415cc6e79c75a45ceb663b208ca3ae6011109b4eb8835ec188863"
+    "native_glb_sha256": "9716cda3f42415cc6e79c75a45ceb663b208ca3ae6011109b4eb8835ec188863",
+    "display_model": "res://assets/display/s0035.glb"
   },
   {
     "scan": "s0036",
@@ -651,7 +683,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "db13a7adaecde2e996037edd2d8286f128b7c64e68c97271fd2918e587b314c2",
     "contour_verified": false,
-    "native_glb_sha256": "db13a7adaecde2e996037edd2d8286f128b7c64e68c97271fd2918e587b314c2"
+    "native_glb_sha256": "db13a7adaecde2e996037edd2d8286f128b7c64e68c97271fd2918e587b314c2",
+    "display_model": "res://assets/display/s0036.glb"
   },
   {
     "scan": "s0037",
@@ -669,7 +702,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "795f068b31fbbf86200e23c2290fd4b97b634c02c50c1c7014225d2771ea7181",
     "contour_verified": false,
-    "native_glb_sha256": "795f068b31fbbf86200e23c2290fd4b97b634c02c50c1c7014225d2771ea7181"
+    "native_glb_sha256": "795f068b31fbbf86200e23c2290fd4b97b634c02c50c1c7014225d2771ea7181",
+    "display_model": "res://assets/display/s0037.glb"
   },
   {
     "scan": "s0038",
@@ -687,7 +721,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "792f8359991ea74be42feea55c4b36ab24911c51ebfbaa53e937491e7a843a17",
     "contour_verified": false,
-    "native_glb_sha256": "792f8359991ea74be42feea55c4b36ab24911c51ebfbaa53e937491e7a843a17"
+    "native_glb_sha256": "792f8359991ea74be42feea55c4b36ab24911c51ebfbaa53e937491e7a843a17",
+    "display_model": "res://assets/display/s0038.glb"
   },
   {
     "scan": "s0039",
@@ -705,7 +740,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a101d8b1640b995cc2da0972e6d89cd427689c6ba231e53dff3b94325c5f8edb",
     "contour_verified": false,
-    "native_glb_sha256": "a101d8b1640b995cc2da0972e6d89cd427689c6ba231e53dff3b94325c5f8edb"
+    "native_glb_sha256": "a101d8b1640b995cc2da0972e6d89cd427689c6ba231e53dff3b94325c5f8edb",
+    "display_model": "res://assets/display/s0039.glb"
   },
   {
     "scan": "s0040",
@@ -723,7 +759,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9d51ac617e144f5ea75ddea1d1df5c96b08e4d16ed020416cd29e43172c0904d",
     "contour_verified": false,
-    "native_glb_sha256": "9d51ac617e144f5ea75ddea1d1df5c96b08e4d16ed020416cd29e43172c0904d"
+    "native_glb_sha256": "9d51ac617e144f5ea75ddea1d1df5c96b08e4d16ed020416cd29e43172c0904d",
+    "display_model": "res://assets/display/s0040.glb"
   },
   {
     "scan": "s0041",
@@ -741,7 +778,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "95cf9b0072ae10b3c9535b57102abb88894abf52a8308fd22806051df13de158",
     "contour_verified": false,
-    "native_glb_sha256": "95cf9b0072ae10b3c9535b57102abb88894abf52a8308fd22806051df13de158"
+    "native_glb_sha256": "95cf9b0072ae10b3c9535b57102abb88894abf52a8308fd22806051df13de158",
+    "display_model": "res://assets/display/s0041.glb"
   },
   {
     "scan": "s0042",
@@ -759,7 +797,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "1c9b739172d8d354de299d7b879aca1737c36033b05cd37d3028417d11fe03d9",
     "contour_verified": false,
-    "native_glb_sha256": "1c9b739172d8d354de299d7b879aca1737c36033b05cd37d3028417d11fe03d9"
+    "native_glb_sha256": "1c9b739172d8d354de299d7b879aca1737c36033b05cd37d3028417d11fe03d9",
+    "display_model": "res://assets/display/s0042.glb"
   },
   {
     "scan": "s0043",
@@ -777,7 +816,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9ee36a49fb9babf4163b35bb7e85815e43a76c40ee5830b2d008731b4d1e6211",
     "contour_verified": false,
-    "native_glb_sha256": "9ee36a49fb9babf4163b35bb7e85815e43a76c40ee5830b2d008731b4d1e6211"
+    "native_glb_sha256": "9ee36a49fb9babf4163b35bb7e85815e43a76c40ee5830b2d008731b4d1e6211",
+    "display_model": "res://assets/display/s0043.glb"
   },
   {
     "scan": "s0044",
@@ -795,7 +835,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "f3a1a3d471aeb4163d74016a483fbd189e3a6bf0b31f8090dce6463e4c2109a8",
     "contour_verified": false,
-    "native_glb_sha256": "f3a1a3d471aeb4163d74016a483fbd189e3a6bf0b31f8090dce6463e4c2109a8"
+    "native_glb_sha256": "f3a1a3d471aeb4163d74016a483fbd189e3a6bf0b31f8090dce6463e4c2109a8",
+    "display_model": "res://assets/display/s0044.glb"
   },
   {
     "scan": "s0045",
@@ -813,7 +854,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "c9d0b86bd238cafdd304bfddc458e48314a2d5737405bf8595637c0dc8a061b0",
     "contour_verified": false,
-    "native_glb_sha256": "c9d0b86bd238cafdd304bfddc458e48314a2d5737405bf8595637c0dc8a061b0"
+    "native_glb_sha256": "c9d0b86bd238cafdd304bfddc458e48314a2d5737405bf8595637c0dc8a061b0",
+    "display_model": "res://assets/display/s0045.glb"
   },
   {
     "scan": "s0046",
@@ -831,7 +873,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "ce86a5a8f046d219fc7e51a944d26a1d53260f0cbf170a32d9efd5696e5b5d15",
     "contour_verified": false,
-    "native_glb_sha256": "ce86a5a8f046d219fc7e51a944d26a1d53260f0cbf170a32d9efd5696e5b5d15"
+    "native_glb_sha256": "ce86a5a8f046d219fc7e51a944d26a1d53260f0cbf170a32d9efd5696e5b5d15",
+    "display_model": "res://assets/display/s0046.glb"
   },
   {
     "scan": "s0047",
@@ -849,7 +892,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a781e507a698819a690cd6d46c9728bb90db316ae441d53a35fb99118f75a233",
     "contour_verified": false,
-    "native_glb_sha256": "a781e507a698819a690cd6d46c9728bb90db316ae441d53a35fb99118f75a233"
+    "native_glb_sha256": "a781e507a698819a690cd6d46c9728bb90db316ae441d53a35fb99118f75a233",
+    "display_model": "res://assets/display/s0047.glb"
   },
   {
     "scan": "s0048",
@@ -867,7 +911,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "25df6a0eaa6411014e40923d65219bfa6ee9343887ce7b2a5332ce681b47ca9e",
     "contour_verified": false,
-    "native_glb_sha256": "25df6a0eaa6411014e40923d65219bfa6ee9343887ce7b2a5332ce681b47ca9e"
+    "native_glb_sha256": "25df6a0eaa6411014e40923d65219bfa6ee9343887ce7b2a5332ce681b47ca9e",
+    "display_model": "res://assets/display/s0048.glb"
   },
   {
     "scan": "s0049",
@@ -885,7 +930,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "68967911d6a247033e7680e330d4d2bc8e70cba2fe8883bd8f4c707191c16450",
     "contour_verified": false,
-    "native_glb_sha256": "68967911d6a247033e7680e330d4d2bc8e70cba2fe8883bd8f4c707191c16450"
+    "native_glb_sha256": "68967911d6a247033e7680e330d4d2bc8e70cba2fe8883bd8f4c707191c16450",
+    "display_model": "res://assets/display/s0049.glb"
   },
   {
     "scan": "s0050",
@@ -903,7 +949,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "812042cb0693cd8558d74b24682e1cfe19b5fad791f7e6e38fba5ddda61b121f",
     "contour_verified": false,
-    "native_glb_sha256": "812042cb0693cd8558d74b24682e1cfe19b5fad791f7e6e38fba5ddda61b121f"
+    "native_glb_sha256": "812042cb0693cd8558d74b24682e1cfe19b5fad791f7e6e38fba5ddda61b121f",
+    "display_model": "res://assets/display/s0050.glb"
   },
   {
     "scan": "s0051",
@@ -921,7 +968,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a705009db81118d4a7342154e71273309c0ceef94662a78c346c5560b6a8a783",
     "contour_verified": false,
-    "native_glb_sha256": "a705009db81118d4a7342154e71273309c0ceef94662a78c346c5560b6a8a783"
+    "native_glb_sha256": "a705009db81118d4a7342154e71273309c0ceef94662a78c346c5560b6a8a783",
+    "display_model": "res://assets/display/s0051.glb"
   },
   {
     "scan": "s0052",
@@ -939,7 +987,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "f43646e1d24ac9aa57b8d2b95d23c52404d4ac0164f9311d98b85f599d69c834",
     "contour_verified": false,
-    "native_glb_sha256": "f43646e1d24ac9aa57b8d2b95d23c52404d4ac0164f9311d98b85f599d69c834"
+    "native_glb_sha256": "f43646e1d24ac9aa57b8d2b95d23c52404d4ac0164f9311d98b85f599d69c834",
+    "display_model": "res://assets/display/s0052.glb"
   },
   {
     "scan": "s0053",
@@ -957,7 +1006,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "27795ebb3ba255229f76d9af1008fb3fdefddbe2e2a43dec512d34ef7279ba9c",
     "contour_verified": false,
-    "native_glb_sha256": "27795ebb3ba255229f76d9af1008fb3fdefddbe2e2a43dec512d34ef7279ba9c"
+    "native_glb_sha256": "27795ebb3ba255229f76d9af1008fb3fdefddbe2e2a43dec512d34ef7279ba9c",
+    "display_model": "res://assets/display/s0053.glb"
   },
   {
     "scan": "s0054",
@@ -975,7 +1025,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "727ad8009b78348a6ef1d3028aede482daf541173c4cd47b7769805e0be89317",
     "contour_verified": false,
-    "native_glb_sha256": "727ad8009b78348a6ef1d3028aede482daf541173c4cd47b7769805e0be89317"
+    "native_glb_sha256": "727ad8009b78348a6ef1d3028aede482daf541173c4cd47b7769805e0be89317",
+    "display_model": "res://assets/display/s0054.glb"
   },
   {
     "scan": "s0055",
@@ -993,7 +1044,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "29298ff2bfcb81b5b4c670f88066f067a077438c6e193b0bab421e4e4042aaac",
     "contour_verified": false,
-    "native_glb_sha256": "29298ff2bfcb81b5b4c670f88066f067a077438c6e193b0bab421e4e4042aaac"
+    "native_glb_sha256": "29298ff2bfcb81b5b4c670f88066f067a077438c6e193b0bab421e4e4042aaac",
+    "display_model": "res://assets/display/s0055.glb"
   },
   {
     "scan": "s0056",
@@ -1011,7 +1063,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "97cc27acf41b37a19d0434fdbfbf23b8cf22ff62e286b6e3d900bcc83a7e0558",
     "contour_verified": false,
-    "native_glb_sha256": "97cc27acf41b37a19d0434fdbfbf23b8cf22ff62e286b6e3d900bcc83a7e0558"
+    "native_glb_sha256": "97cc27acf41b37a19d0434fdbfbf23b8cf22ff62e286b6e3d900bcc83a7e0558",
+    "display_model": "res://assets/display/s0056.glb"
   },
   {
     "scan": "s0057",
@@ -1029,7 +1082,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "51fbcc612d4f3f0f0fbe02c4c5b514373c8a8c82bf03a02033ad8a9f957adad1",
     "contour_verified": false,
-    "native_glb_sha256": "51fbcc612d4f3f0f0fbe02c4c5b514373c8a8c82bf03a02033ad8a9f957adad1"
+    "native_glb_sha256": "51fbcc612d4f3f0f0fbe02c4c5b514373c8a8c82bf03a02033ad8a9f957adad1",
+    "display_model": "res://assets/display/s0057.glb"
   },
   {
     "scan": "s0058",
@@ -1047,7 +1101,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "f1b0a6b5a770c4fe0cbde89186f947504a91bbf1f44a4920a2594391264aed46",
     "contour_verified": false,
-    "native_glb_sha256": "f1b0a6b5a770c4fe0cbde89186f947504a91bbf1f44a4920a2594391264aed46"
+    "native_glb_sha256": "f1b0a6b5a770c4fe0cbde89186f947504a91bbf1f44a4920a2594391264aed46",
+    "display_model": "res://assets/display/s0058.glb"
   },
   {
     "scan": "s0059",
@@ -1065,7 +1120,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "4651383c43c62c2ba6e50e7a8961780b48c444f1583cea5ccf13706d827b6c5b",
     "contour_verified": false,
-    "native_glb_sha256": "4651383c43c62c2ba6e50e7a8961780b48c444f1583cea5ccf13706d827b6c5b"
+    "native_glb_sha256": "4651383c43c62c2ba6e50e7a8961780b48c444f1583cea5ccf13706d827b6c5b",
+    "display_model": "res://assets/display/s0059.glb"
   },
   {
     "scan": "s0060",
@@ -1083,7 +1139,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "b7bbd75f222306d14b1162eed1bd28c6012a83a8ff68fe8f494430c17936ec39",
     "contour_verified": false,
-    "native_glb_sha256": "b7bbd75f222306d14b1162eed1bd28c6012a83a8ff68fe8f494430c17936ec39"
+    "native_glb_sha256": "b7bbd75f222306d14b1162eed1bd28c6012a83a8ff68fe8f494430c17936ec39",
+    "display_model": "res://assets/display/s0060.glb"
   },
   {
     "scan": "s0061",
@@ -1101,7 +1158,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "858b6275c00c62fa5e48761797d2704b4bf4331be70f54ef78232a4558b847e4",
     "contour_verified": false,
-    "native_glb_sha256": "858b6275c00c62fa5e48761797d2704b4bf4331be70f54ef78232a4558b847e4"
+    "native_glb_sha256": "858b6275c00c62fa5e48761797d2704b4bf4331be70f54ef78232a4558b847e4",
+    "display_model": "res://assets/display/s0061.glb"
   },
   {
     "scan": "s0062",
@@ -1119,7 +1177,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "ef27e6af1477533406378f01257ea5042afa17beeec1874daa8d9fc9ecca6b6a",
     "contour_verified": false,
-    "native_glb_sha256": "ef27e6af1477533406378f01257ea5042afa17beeec1874daa8d9fc9ecca6b6a"
+    "native_glb_sha256": "ef27e6af1477533406378f01257ea5042afa17beeec1874daa8d9fc9ecca6b6a",
+    "display_model": "res://assets/display/s0062.glb"
   },
   {
     "scan": "s0063",
@@ -1137,7 +1196,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "71a18a9e033ed7f6aa11982c09077c9a3713c33f7e1e52aaac7c04c0b89feeec",
     "contour_verified": false,
-    "native_glb_sha256": "71a18a9e033ed7f6aa11982c09077c9a3713c33f7e1e52aaac7c04c0b89feeec"
+    "native_glb_sha256": "71a18a9e033ed7f6aa11982c09077c9a3713c33f7e1e52aaac7c04c0b89feeec",
+    "display_model": "res://assets/display/s0063.glb"
   },
   {
     "scan": "s0064",
@@ -1155,7 +1215,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "e157d9370ed8ea1c33b0508a235ec34b3824e73d3f3ef78c26039cf0a71c5ea8",
     "contour_verified": false,
-    "native_glb_sha256": "e157d9370ed8ea1c33b0508a235ec34b3824e73d3f3ef78c26039cf0a71c5ea8"
+    "native_glb_sha256": "e157d9370ed8ea1c33b0508a235ec34b3824e73d3f3ef78c26039cf0a71c5ea8",
+    "display_model": "res://assets/display/s0064.glb"
   },
   {
     "scan": "s0065",
@@ -1173,7 +1234,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "afcf8f3851dc3e9575754cc2ff853ede118356a63f6446dc38860806bc50c28f",
     "contour_verified": false,
-    "native_glb_sha256": "afcf8f3851dc3e9575754cc2ff853ede118356a63f6446dc38860806bc50c28f"
+    "native_glb_sha256": "afcf8f3851dc3e9575754cc2ff853ede118356a63f6446dc38860806bc50c28f",
+    "display_model": "res://assets/display/s0065.glb"
   },
   {
     "scan": "s0066",
@@ -1191,7 +1253,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "6279cc8a5afb876f81fec67bad5db0924806d0e8e0ea120406a9a7d1da8148d6",
     "contour_verified": false,
-    "native_glb_sha256": "6279cc8a5afb876f81fec67bad5db0924806d0e8e0ea120406a9a7d1da8148d6"
+    "native_glb_sha256": "6279cc8a5afb876f81fec67bad5db0924806d0e8e0ea120406a9a7d1da8148d6",
+    "display_model": "res://assets/display/s0066.glb"
   },
   {
     "scan": "s0067",
@@ -1209,7 +1272,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "71f08d3778ce31a24890dc2adec5953a98121cb8d73bae80d393f8d1aca89a30",
     "contour_verified": false,
-    "native_glb_sha256": "71f08d3778ce31a24890dc2adec5953a98121cb8d73bae80d393f8d1aca89a30"
+    "native_glb_sha256": "71f08d3778ce31a24890dc2adec5953a98121cb8d73bae80d393f8d1aca89a30",
+    "display_model": "res://assets/display/s0067.glb"
   },
   {
     "scan": "s0068",
@@ -1227,7 +1291,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "1465a6520b8a7ca3e3c8ec5b734273fda28de7f3e77449ad9dfdbb3114b439a4",
     "contour_verified": false,
-    "native_glb_sha256": "1465a6520b8a7ca3e3c8ec5b734273fda28de7f3e77449ad9dfdbb3114b439a4"
+    "native_glb_sha256": "1465a6520b8a7ca3e3c8ec5b734273fda28de7f3e77449ad9dfdbb3114b439a4",
+    "display_model": "res://assets/display/s0068.glb"
   },
   {
     "scan": "s0069",
@@ -1245,7 +1310,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "38fdd21511ec00adb4141079258e42faa30711086d7a76ff82e9c6c69785b349",
     "contour_verified": false,
-    "native_glb_sha256": "38fdd21511ec00adb4141079258e42faa30711086d7a76ff82e9c6c69785b349"
+    "native_glb_sha256": "38fdd21511ec00adb4141079258e42faa30711086d7a76ff82e9c6c69785b349",
+    "display_model": "res://assets/display/s0069.glb"
   },
   {
     "scan": "s0070",
@@ -1263,7 +1329,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "3c4ace9446f71064dd549c085da03ebba2832b5dab34e17e681a9a353de9334d",
     "contour_verified": false,
-    "native_glb_sha256": "3c4ace9446f71064dd549c085da03ebba2832b5dab34e17e681a9a353de9334d"
+    "native_glb_sha256": "3c4ace9446f71064dd549c085da03ebba2832b5dab34e17e681a9a353de9334d",
+    "display_model": "res://assets/display/s0070.glb"
   },
   {
     "scan": "s0071",
@@ -1281,7 +1348,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "f13c49520001359c91ca7566f68bd4623fbd281c68c75e25554a99350b75f273",
     "contour_verified": false,
-    "native_glb_sha256": "f13c49520001359c91ca7566f68bd4623fbd281c68c75e25554a99350b75f273"
+    "native_glb_sha256": "f13c49520001359c91ca7566f68bd4623fbd281c68c75e25554a99350b75f273",
+    "display_model": "res://assets/display/s0071.glb"
   },
   {
     "scan": "s0072",
@@ -1299,7 +1367,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "c42ae7f739f6661ef88553b8f8652c028cc58cd8bacf66bc09151937201260f5",
     "contour_verified": false,
-    "native_glb_sha256": "c42ae7f739f6661ef88553b8f8652c028cc58cd8bacf66bc09151937201260f5"
+    "native_glb_sha256": "c42ae7f739f6661ef88553b8f8652c028cc58cd8bacf66bc09151937201260f5",
+    "display_model": "res://assets/display/s0072.glb"
   },
   {
     "scan": "s0073",
@@ -1317,7 +1386,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "2fe020dd7605275fc8665d71156e2e2ce0f3af8916488b9581d075fa35e63315",
     "contour_verified": false,
-    "native_glb_sha256": "2fe020dd7605275fc8665d71156e2e2ce0f3af8916488b9581d075fa35e63315"
+    "native_glb_sha256": "2fe020dd7605275fc8665d71156e2e2ce0f3af8916488b9581d075fa35e63315",
+    "display_model": "res://assets/display/s0073.glb"
   },
   {
     "scan": "s0074",
@@ -1335,7 +1405,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "3ad4caa5380501f31b4d661b4ad4f0198d598c8d25dd5b367627b84031b4fb45",
     "contour_verified": false,
-    "native_glb_sha256": "3ad4caa5380501f31b4d661b4ad4f0198d598c8d25dd5b367627b84031b4fb45"
+    "native_glb_sha256": "3ad4caa5380501f31b4d661b4ad4f0198d598c8d25dd5b367627b84031b4fb45",
+    "display_model": "res://assets/display/s0074.glb"
   },
   {
     "scan": "s0075",
@@ -1353,7 +1424,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "58b6abd71ef627cc0fc2549264dbf941063f79b55fb7f6654e0afd87f74e3660",
     "contour_verified": false,
-    "native_glb_sha256": "58b6abd71ef627cc0fc2549264dbf941063f79b55fb7f6654e0afd87f74e3660"
+    "native_glb_sha256": "58b6abd71ef627cc0fc2549264dbf941063f79b55fb7f6654e0afd87f74e3660",
+    "display_model": "res://assets/display/s0075.glb"
   },
   {
     "scan": "s0076",
@@ -1371,7 +1443,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "204f30e0814b3cb71585fdd05048a01ac2ffcce8daee9a784e36b19ab59851a4",
     "contour_verified": false,
-    "native_glb_sha256": "204f30e0814b3cb71585fdd05048a01ac2ffcce8daee9a784e36b19ab59851a4"
+    "native_glb_sha256": "204f30e0814b3cb71585fdd05048a01ac2ffcce8daee9a784e36b19ab59851a4",
+    "display_model": "res://assets/display/s0076.glb"
   },
   {
     "scan": "s0077",
@@ -1389,7 +1462,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "3434179a4e11173697c39be67dd48ec251fd2210020f7061631de4dde44fc4db",
     "contour_verified": false,
-    "native_glb_sha256": "3434179a4e11173697c39be67dd48ec251fd2210020f7061631de4dde44fc4db"
+    "native_glb_sha256": "3434179a4e11173697c39be67dd48ec251fd2210020f7061631de4dde44fc4db",
+    "display_model": "res://assets/display/s0077.glb"
   },
   {
     "scan": "s0078",
@@ -1407,7 +1481,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "45f0bdb7b61d164e75bd54f4766b45814cac2f56714652288507b2309f879ace",
     "contour_verified": false,
-    "native_glb_sha256": "45f0bdb7b61d164e75bd54f4766b45814cac2f56714652288507b2309f879ace"
+    "native_glb_sha256": "45f0bdb7b61d164e75bd54f4766b45814cac2f56714652288507b2309f879ace",
+    "display_model": "res://assets/display/s0078.glb"
   },
   {
     "scan": "s0079",
@@ -1425,7 +1500,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "82c7e551b120edb0d59ae412568080bf7fd939989dcd33c973dd5ef8b72673f6",
     "contour_verified": false,
-    "native_glb_sha256": "82c7e551b120edb0d59ae412568080bf7fd939989dcd33c973dd5ef8b72673f6"
+    "native_glb_sha256": "82c7e551b120edb0d59ae412568080bf7fd939989dcd33c973dd5ef8b72673f6",
+    "display_model": "res://assets/display/s0079.glb"
   },
   {
     "scan": "s0080",
@@ -1443,7 +1519,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "5f3b55a6e03d061d76eb951789b08341d8a5229ebe0deeef2cd6af2e5b93a2f3",
     "contour_verified": false,
-    "native_glb_sha256": "5f3b55a6e03d061d76eb951789b08341d8a5229ebe0deeef2cd6af2e5b93a2f3"
+    "native_glb_sha256": "5f3b55a6e03d061d76eb951789b08341d8a5229ebe0deeef2cd6af2e5b93a2f3",
+    "display_model": "res://assets/display/s0080.glb"
   },
   {
     "scan": "s0081",
@@ -1461,7 +1538,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "b31f5006daf72df7f109619f2c0719082cc37f6ab52c57081f1ab27d66253657",
     "contour_verified": false,
-    "native_glb_sha256": "b31f5006daf72df7f109619f2c0719082cc37f6ab52c57081f1ab27d66253657"
+    "native_glb_sha256": "b31f5006daf72df7f109619f2c0719082cc37f6ab52c57081f1ab27d66253657",
+    "display_model": "res://assets/display/s0081.glb"
   },
   {
     "scan": "s0082",
@@ -1479,7 +1557,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "e54a063a5186c4e261dc7f56843c56394424faface9381ed2ddb2748f01f2332",
     "contour_verified": false,
-    "native_glb_sha256": "e54a063a5186c4e261dc7f56843c56394424faface9381ed2ddb2748f01f2332"
+    "native_glb_sha256": "e54a063a5186c4e261dc7f56843c56394424faface9381ed2ddb2748f01f2332",
+    "display_model": "res://assets/display/s0082.glb"
   },
   {
     "scan": "s0083",
@@ -1497,7 +1576,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "7414835de278c9aa358579b3e1885567329eed4ecabc8775beb1094b6ab4e5bd",
     "contour_verified": false,
-    "native_glb_sha256": "7414835de278c9aa358579b3e1885567329eed4ecabc8775beb1094b6ab4e5bd"
+    "native_glb_sha256": "7414835de278c9aa358579b3e1885567329eed4ecabc8775beb1094b6ab4e5bd",
+    "display_model": "res://assets/display/s0083.glb"
   },
   {
     "scan": "s0084",
@@ -1515,7 +1595,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "024474e673f5e6cea58fe4e59407507985ea8128d02527cbb293163ba0fd58aa",
     "contour_verified": false,
-    "native_glb_sha256": "024474e673f5e6cea58fe4e59407507985ea8128d02527cbb293163ba0fd58aa"
+    "native_glb_sha256": "024474e673f5e6cea58fe4e59407507985ea8128d02527cbb293163ba0fd58aa",
+    "display_model": "res://assets/display/s0084.glb"
   },
   {
     "scan": "s0085",
@@ -1533,7 +1614,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "609a44b56c13326574018585f04c6b7deb9dcb01224fbbeced89333d98a1f92e",
     "contour_verified": false,
-    "native_glb_sha256": "609a44b56c13326574018585f04c6b7deb9dcb01224fbbeced89333d98a1f92e"
+    "native_glb_sha256": "609a44b56c13326574018585f04c6b7deb9dcb01224fbbeced89333d98a1f92e",
+    "display_model": "res://assets/display/s0085.glb"
   },
   {
     "scan": "s0086",
@@ -1551,7 +1633,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "e1b032b58340c02f174c016427159b05a8db42235a6bc62f0cd85d0fe145b80b",
     "contour_verified": false,
-    "native_glb_sha256": "e1b032b58340c02f174c016427159b05a8db42235a6bc62f0cd85d0fe145b80b"
+    "native_glb_sha256": "e1b032b58340c02f174c016427159b05a8db42235a6bc62f0cd85d0fe145b80b",
+    "display_model": "res://assets/display/s0086.glb"
   },
   {
     "scan": "s0087",
@@ -1569,7 +1652,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a080e08072323fabe9433b83bb8fc437412e63a9bc53e1f1a12dfd6af0450ab9",
     "contour_verified": false,
-    "native_glb_sha256": "a080e08072323fabe9433b83bb8fc437412e63a9bc53e1f1a12dfd6af0450ab9"
+    "native_glb_sha256": "a080e08072323fabe9433b83bb8fc437412e63a9bc53e1f1a12dfd6af0450ab9",
+    "display_model": "res://assets/display/s0087.glb"
   },
   {
     "scan": "s0088",
@@ -1587,7 +1671,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "10bf9260d5820a09c3f291fc23939e6decd005c6b170d7bf9822fc621b0c3f31",
     "contour_verified": false,
-    "native_glb_sha256": "10bf9260d5820a09c3f291fc23939e6decd005c6b170d7bf9822fc621b0c3f31"
+    "native_glb_sha256": "10bf9260d5820a09c3f291fc23939e6decd005c6b170d7bf9822fc621b0c3f31",
+    "display_model": "res://assets/display/s0088.glb"
   },
   {
     "scan": "s0089",
@@ -1605,7 +1690,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "f98e6e29b286bf01d5c50e4e32902fdd39830c2b04c284c29b0fb47c22ed0d1b",
     "contour_verified": false,
-    "native_glb_sha256": "f98e6e29b286bf01d5c50e4e32902fdd39830c2b04c284c29b0fb47c22ed0d1b"
+    "native_glb_sha256": "f98e6e29b286bf01d5c50e4e32902fdd39830c2b04c284c29b0fb47c22ed0d1b",
+    "display_model": "res://assets/display/s0089.glb"
   },
   {
     "scan": "s0090",
@@ -1623,7 +1709,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "25b3418591e1df27104bea0d22af0d441262e9a6692e27d59cf701812ee8114f",
     "contour_verified": false,
-    "native_glb_sha256": "25b3418591e1df27104bea0d22af0d441262e9a6692e27d59cf701812ee8114f"
+    "native_glb_sha256": "25b3418591e1df27104bea0d22af0d441262e9a6692e27d59cf701812ee8114f",
+    "display_model": "res://assets/display/s0090.glb"
   },
   {
     "scan": "s0091",
@@ -1641,7 +1728,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "03844bd42b427ef9d0e49702c506d9b5114dc3294993fd4caaa496dbd64e1f34",
     "contour_verified": false,
-    "native_glb_sha256": "03844bd42b427ef9d0e49702c506d9b5114dc3294993fd4caaa496dbd64e1f34"
+    "native_glb_sha256": "03844bd42b427ef9d0e49702c506d9b5114dc3294993fd4caaa496dbd64e1f34",
+    "display_model": "res://assets/display/s0091.glb"
   },
   {
     "scan": "s0092",
@@ -1659,7 +1747,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "837a2de41e269fefaefc8c3408ee80d165af04eeef5d220c4b7242817e68079f",
     "contour_verified": false,
-    "native_glb_sha256": "837a2de41e269fefaefc8c3408ee80d165af04eeef5d220c4b7242817e68079f"
+    "native_glb_sha256": "837a2de41e269fefaefc8c3408ee80d165af04eeef5d220c4b7242817e68079f",
+    "display_model": "res://assets/display/s0092.glb"
   },
   {
     "scan": "s0093",
@@ -1677,7 +1766,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "09ccdfec779a310a656bf6df870eb967b492bdcd528384c8e7325e0cfa5aff18",
     "contour_verified": false,
-    "native_glb_sha256": "09ccdfec779a310a656bf6df870eb967b492bdcd528384c8e7325e0cfa5aff18"
+    "native_glb_sha256": "09ccdfec779a310a656bf6df870eb967b492bdcd528384c8e7325e0cfa5aff18",
+    "display_model": "res://assets/display/s0093.glb"
   },
   {
     "scan": "s0094",
@@ -1695,7 +1785,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "eb2d2247c03e6e6d0db5820bc665fd6961ecb0d446d4d0d0fb5a8b33c9dadb0e",
     "contour_verified": false,
-    "native_glb_sha256": "eb2d2247c03e6e6d0db5820bc665fd6961ecb0d446d4d0d0fb5a8b33c9dadb0e"
+    "native_glb_sha256": "eb2d2247c03e6e6d0db5820bc665fd6961ecb0d446d4d0d0fb5a8b33c9dadb0e",
+    "display_model": "res://assets/display/s0094.glb"
   },
   {
     "scan": "s0095",
@@ -1713,7 +1804,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "6dc9b737e5a091842dc7d888cbb51859ebe38ec5c8bf8e17e0a2f0f2d151b858",
     "contour_verified": false,
-    "native_glb_sha256": "6dc9b737e5a091842dc7d888cbb51859ebe38ec5c8bf8e17e0a2f0f2d151b858"
+    "native_glb_sha256": "6dc9b737e5a091842dc7d888cbb51859ebe38ec5c8bf8e17e0a2f0f2d151b858",
+    "display_model": "res://assets/display/s0095.glb"
   },
   {
     "scan": "s0096",
@@ -1731,7 +1823,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "78458561f37c9c9100fe32f59e65f01ee0ebe0b887e19fc3789459d256e2894c",
     "contour_verified": false,
-    "native_glb_sha256": "78458561f37c9c9100fe32f59e65f01ee0ebe0b887e19fc3789459d256e2894c"
+    "native_glb_sha256": "78458561f37c9c9100fe32f59e65f01ee0ebe0b887e19fc3789459d256e2894c",
+    "display_model": "res://assets/display/s0096.glb"
   },
   {
     "scan": "s0097",
@@ -1749,7 +1842,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "60575bfb9592583630e3e1c7cbf1ee5ca834fd578cab3c28226f91ace177d9b9",
     "contour_verified": false,
-    "native_glb_sha256": "60575bfb9592583630e3e1c7cbf1ee5ca834fd578cab3c28226f91ace177d9b9"
+    "native_glb_sha256": "60575bfb9592583630e3e1c7cbf1ee5ca834fd578cab3c28226f91ace177d9b9",
+    "display_model": "res://assets/display/s0097.glb"
   },
   {
     "scan": "s0098",
@@ -1767,7 +1861,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "21a1fbd07d9c77b43a488138fa2e0da88b4c6cb5c01635f4417234c19a643ee7",
     "contour_verified": false,
-    "native_glb_sha256": "21a1fbd07d9c77b43a488138fa2e0da88b4c6cb5c01635f4417234c19a643ee7"
+    "native_glb_sha256": "21a1fbd07d9c77b43a488138fa2e0da88b4c6cb5c01635f4417234c19a643ee7",
+    "display_model": "res://assets/display/s0098.glb"
   },
   {
     "scan": "s0099",
@@ -1785,7 +1880,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "98a183c668d5aa12af0bb9419a94fc3b29f9918f520742df02f3b54c1c0e9275",
     "contour_verified": false,
-    "native_glb_sha256": "98a183c668d5aa12af0bb9419a94fc3b29f9918f520742df02f3b54c1c0e9275"
+    "native_glb_sha256": "98a183c668d5aa12af0bb9419a94fc3b29f9918f520742df02f3b54c1c0e9275",
+    "display_model": "res://assets/display/s0099.glb"
   },
   {
     "scan": "s0100",
@@ -1803,7 +1899,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "aeebff0c8d42193dd54fbdb4e8df71340441d2231736db4f55b5ddc267fa8415",
     "contour_verified": false,
-    "native_glb_sha256": "aeebff0c8d42193dd54fbdb4e8df71340441d2231736db4f55b5ddc267fa8415"
+    "native_glb_sha256": "aeebff0c8d42193dd54fbdb4e8df71340441d2231736db4f55b5ddc267fa8415",
+    "display_model": "res://assets/display/s0100.glb"
   },
   {
     "scan": "s0101",
@@ -1821,7 +1918,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "cf8c1e9deff49dd5b572eb40f67c82b2c6a7231e8a4dfc8a4163c1da8ffb30d3",
     "contour_verified": false,
-    "native_glb_sha256": "cf8c1e9deff49dd5b572eb40f67c82b2c6a7231e8a4dfc8a4163c1da8ffb30d3"
+    "native_glb_sha256": "cf8c1e9deff49dd5b572eb40f67c82b2c6a7231e8a4dfc8a4163c1da8ffb30d3",
+    "display_model": "res://assets/display/s0101.glb"
   },
   {
     "scan": "s0102",
@@ -1839,7 +1937,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "763272bbeada4f2abe91fdf9e35fd989ffb416a0045792fd75d10a7f2ec234c7",
     "contour_verified": false,
-    "native_glb_sha256": "763272bbeada4f2abe91fdf9e35fd989ffb416a0045792fd75d10a7f2ec234c7"
+    "native_glb_sha256": "763272bbeada4f2abe91fdf9e35fd989ffb416a0045792fd75d10a7f2ec234c7",
+    "display_model": "res://assets/display/s0102.glb"
   },
   {
     "scan": "s0103",
@@ -1857,7 +1956,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "d4156ea4656e89c79f7053b5b8ee5805fff49506c54534fe87b480d889e0f441",
     "contour_verified": false,
-    "native_glb_sha256": "d4156ea4656e89c79f7053b5b8ee5805fff49506c54534fe87b480d889e0f441"
+    "native_glb_sha256": "d4156ea4656e89c79f7053b5b8ee5805fff49506c54534fe87b480d889e0f441",
+    "display_model": "res://assets/display/s0103.glb"
   },
   {
     "scan": "s0104",
@@ -1875,7 +1975,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "c1a1e2dc1204ecdc3ee981637bfb628fd797ff9e8cfe1320a09302a4da5cf086",
     "contour_verified": false,
-    "native_glb_sha256": "c1a1e2dc1204ecdc3ee981637bfb628fd797ff9e8cfe1320a09302a4da5cf086"
+    "native_glb_sha256": "c1a1e2dc1204ecdc3ee981637bfb628fd797ff9e8cfe1320a09302a4da5cf086",
+    "display_model": "res://assets/display/s0104.glb"
   },
   {
     "scan": "s0105",
@@ -1893,7 +1994,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "4d33755a210b94a45b1644e232b85bbfb10472987de0b8bda830aa6634c488f9",
     "contour_verified": false,
-    "native_glb_sha256": "4d33755a210b94a45b1644e232b85bbfb10472987de0b8bda830aa6634c488f9"
+    "native_glb_sha256": "4d33755a210b94a45b1644e232b85bbfb10472987de0b8bda830aa6634c488f9",
+    "display_model": "res://assets/display/s0105.glb"
   },
   {
     "scan": "s0106",
@@ -1911,7 +2013,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a9aafec389b544d901b8739a078cceea63cd168360cb8b919c6405715dd95130",
     "contour_verified": false,
-    "native_glb_sha256": "a9aafec389b544d901b8739a078cceea63cd168360cb8b919c6405715dd95130"
+    "native_glb_sha256": "a9aafec389b544d901b8739a078cceea63cd168360cb8b919c6405715dd95130",
+    "display_model": "res://assets/display/s0106.glb"
   },
   {
     "scan": "s0107",
@@ -1929,7 +2032,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "7f1c1e67f1dd7be3c0af850de8a9fa00213640bc1c4623feb81399203c719381",
     "contour_verified": false,
-    "native_glb_sha256": "7f1c1e67f1dd7be3c0af850de8a9fa00213640bc1c4623feb81399203c719381"
+    "native_glb_sha256": "7f1c1e67f1dd7be3c0af850de8a9fa00213640bc1c4623feb81399203c719381",
+    "display_model": "res://assets/display/s0107.glb"
   },
   {
     "scan": "s0108",
@@ -1947,7 +2051,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "834a8286fd39a466a43b0da5e6bbb88674d08788417469eb60c8be851a6fb855",
     "contour_verified": false,
-    "native_glb_sha256": "834a8286fd39a466a43b0da5e6bbb88674d08788417469eb60c8be851a6fb855"
+    "native_glb_sha256": "834a8286fd39a466a43b0da5e6bbb88674d08788417469eb60c8be851a6fb855",
+    "display_model": "res://assets/display/s0108.glb"
   },
   {
     "scan": "s0109",
@@ -1965,7 +2070,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "5a79586a74a21a1d20c3dc9a93537e5a6919e164db4ff7218e7a689c1c2ecd8c",
     "contour_verified": false,
-    "native_glb_sha256": "5a79586a74a21a1d20c3dc9a93537e5a6919e164db4ff7218e7a689c1c2ecd8c"
+    "native_glb_sha256": "5a79586a74a21a1d20c3dc9a93537e5a6919e164db4ff7218e7a689c1c2ecd8c",
+    "display_model": "res://assets/display/s0109.glb"
   },
   {
     "scan": "s0110",
@@ -1983,7 +2089,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "862dc21607ba6f2a4a725d94549c23452531ea064a780e26206512891972bba2",
     "contour_verified": false,
-    "native_glb_sha256": "862dc21607ba6f2a4a725d94549c23452531ea064a780e26206512891972bba2"
+    "native_glb_sha256": "862dc21607ba6f2a4a725d94549c23452531ea064a780e26206512891972bba2",
+    "display_model": "res://assets/display/s0110.glb"
   },
   {
     "scan": "s0111",
@@ -2001,7 +2108,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "7a55eb036835e005ceb39f7c869dce4ff8dd5fe9f9e3cbaaffc00485a39466d0",
     "contour_verified": false,
-    "native_glb_sha256": "7a55eb036835e005ceb39f7c869dce4ff8dd5fe9f9e3cbaaffc00485a39466d0"
+    "native_glb_sha256": "7a55eb036835e005ceb39f7c869dce4ff8dd5fe9f9e3cbaaffc00485a39466d0",
+    "display_model": "res://assets/display/s0111.glb"
   },
   {
     "scan": "s0112",
@@ -2019,7 +2127,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "131c73701d154b4363d6ee10f0ed51da8ab5018b6d198bfddf0dea24e4a1396d",
     "contour_verified": false,
-    "native_glb_sha256": "131c73701d154b4363d6ee10f0ed51da8ab5018b6d198bfddf0dea24e4a1396d"
+    "native_glb_sha256": "131c73701d154b4363d6ee10f0ed51da8ab5018b6d198bfddf0dea24e4a1396d",
+    "display_model": "res://assets/display/s0112.glb"
   },
   {
     "scan": "s0113",
@@ -2037,7 +2146,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "c0a1287a3632c19ccbb0a2bb472789c6f355b922493fa2eb39b998390dfa41cb",
     "contour_verified": false,
-    "native_glb_sha256": "c0a1287a3632c19ccbb0a2bb472789c6f355b922493fa2eb39b998390dfa41cb"
+    "native_glb_sha256": "c0a1287a3632c19ccbb0a2bb472789c6f355b922493fa2eb39b998390dfa41cb",
+    "display_model": "res://assets/display/s0113.glb"
   },
   {
     "scan": "s0114",
@@ -2055,7 +2165,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "af93d02ab598cc7597990d581682556271154a0a88763a5666d47d8dd21b1b87",
     "contour_verified": false,
-    "native_glb_sha256": "af93d02ab598cc7597990d581682556271154a0a88763a5666d47d8dd21b1b87"
+    "native_glb_sha256": "af93d02ab598cc7597990d581682556271154a0a88763a5666d47d8dd21b1b87",
+    "display_model": "res://assets/display/s0114.glb"
   },
   {
     "scan": "s0117",
@@ -2073,7 +2184,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "2fa488399363f8ba0f66330c6ec81cef2d76ade9831af4db5d5f049894cd1a44",
     "contour_verified": false,
-    "native_glb_sha256": "2fa488399363f8ba0f66330c6ec81cef2d76ade9831af4db5d5f049894cd1a44"
+    "native_glb_sha256": "2fa488399363f8ba0f66330c6ec81cef2d76ade9831af4db5d5f049894cd1a44",
+    "display_model": "res://assets/display/s0117.glb"
   },
   {
     "scan": "s0118",
@@ -2091,7 +2203,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "658ff56b30076354062a7beab1534ecd6d6616e67938fd6e730d99c51a82a99b",
     "contour_verified": false,
-    "native_glb_sha256": "658ff56b30076354062a7beab1534ecd6d6616e67938fd6e730d99c51a82a99b"
+    "native_glb_sha256": "658ff56b30076354062a7beab1534ecd6d6616e67938fd6e730d99c51a82a99b",
+    "display_model": "res://assets/display/s0118.glb"
   },
   {
     "scan": "s0120",
@@ -2109,7 +2222,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "35a8f83ed717d3dde4409eb53ee3504d5c49df875dbd2a51d2f2e120f389f807",
     "contour_verified": false,
-    "native_glb_sha256": "35a8f83ed717d3dde4409eb53ee3504d5c49df875dbd2a51d2f2e120f389f807"
+    "native_glb_sha256": "35a8f83ed717d3dde4409eb53ee3504d5c49df875dbd2a51d2f2e120f389f807",
+    "display_model": "res://assets/display/s0120.glb"
   },
   {
     "scan": "s0121",
@@ -2127,7 +2241,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "824a655ffcc78087d17b33b8c3060e2ed019fe8cc5a0d5d92ece1d89d6b10f9e",
     "contour_verified": false,
-    "native_glb_sha256": "824a655ffcc78087d17b33b8c3060e2ed019fe8cc5a0d5d92ece1d89d6b10f9e"
+    "native_glb_sha256": "824a655ffcc78087d17b33b8c3060e2ed019fe8cc5a0d5d92ece1d89d6b10f9e",
+    "display_model": "res://assets/display/s0121.glb"
   },
   {
     "scan": "s0122",
@@ -2145,7 +2260,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "92aa814b57e4704c13b3028eeab1db24e0ed63d4a8dc1612fffebe75ecf836d5",
     "contour_verified": false,
-    "native_glb_sha256": "92aa814b57e4704c13b3028eeab1db24e0ed63d4a8dc1612fffebe75ecf836d5"
+    "native_glb_sha256": "92aa814b57e4704c13b3028eeab1db24e0ed63d4a8dc1612fffebe75ecf836d5",
+    "display_model": "res://assets/display/s0122.glb"
   },
   {
     "scan": "s0123",
@@ -2163,7 +2279,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "4e971a1ffb88fdbf7ae89b57343dbbd0bb8ef4ca0e0d9ae62f607f99fa8da4e1",
     "contour_verified": false,
-    "native_glb_sha256": "4e971a1ffb88fdbf7ae89b57343dbbd0bb8ef4ca0e0d9ae62f607f99fa8da4e1"
+    "native_glb_sha256": "4e971a1ffb88fdbf7ae89b57343dbbd0bb8ef4ca0e0d9ae62f607f99fa8da4e1",
+    "display_model": "res://assets/display/s0123.glb"
   },
   {
     "scan": "s0124",
@@ -2181,7 +2298,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "551d319cdb633d65e8c14a398614514eabea8526f19ce08bf924ce70b24c3d9d",
     "contour_verified": false,
-    "native_glb_sha256": "551d319cdb633d65e8c14a398614514eabea8526f19ce08bf924ce70b24c3d9d"
+    "native_glb_sha256": "551d319cdb633d65e8c14a398614514eabea8526f19ce08bf924ce70b24c3d9d",
+    "display_model": "res://assets/display/s0124.glb"
   },
   {
     "scan": "s0125",
@@ -2199,7 +2317,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "6b8df0075e59342a1d4a2461e082833ec9e4690664c98eb7ccc626d357ebe8c4",
     "contour_verified": false,
-    "native_glb_sha256": "6b8df0075e59342a1d4a2461e082833ec9e4690664c98eb7ccc626d357ebe8c4"
+    "native_glb_sha256": "6b8df0075e59342a1d4a2461e082833ec9e4690664c98eb7ccc626d357ebe8c4",
+    "display_model": "res://assets/display/s0125.glb"
   },
   {
     "scan": "s0126",
@@ -2217,7 +2336,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a9cd507351255352e3d521f95da91d609fe88370eeee3eafd200f6954631197b",
     "contour_verified": false,
-    "native_glb_sha256": "a9cd507351255352e3d521f95da91d609fe88370eeee3eafd200f6954631197b"
+    "native_glb_sha256": "a9cd507351255352e3d521f95da91d609fe88370eeee3eafd200f6954631197b",
+    "display_model": "res://assets/display/s0126.glb"
   },
   {
     "scan": "s0127",
@@ -2235,7 +2355,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "76a8ef8a4ede1e630e198e1351d9e21bfdb5e02af9098ceee2bfa0d37570a2a2",
     "contour_verified": false,
-    "native_glb_sha256": "76a8ef8a4ede1e630e198e1351d9e21bfdb5e02af9098ceee2bfa0d37570a2a2"
+    "native_glb_sha256": "76a8ef8a4ede1e630e198e1351d9e21bfdb5e02af9098ceee2bfa0d37570a2a2",
+    "display_model": "res://assets/display/s0127.glb"
   },
   {
     "scan": "s0128",
@@ -2253,7 +2374,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "f72ec38fabab4add8edb5d49f16fdd622fb3ef82778f708c22b3a3c5c109e4d9",
     "contour_verified": false,
-    "native_glb_sha256": "f72ec38fabab4add8edb5d49f16fdd622fb3ef82778f708c22b3a3c5c109e4d9"
+    "native_glb_sha256": "f72ec38fabab4add8edb5d49f16fdd622fb3ef82778f708c22b3a3c5c109e4d9",
+    "display_model": "res://assets/display/s0128.glb"
   },
   {
     "scan": "s0129",
@@ -2271,7 +2393,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "39fa7d327d808e2323f30d02d46bd727137160f16a1b5e87dacff692d0a93153",
     "contour_verified": false,
-    "native_glb_sha256": "39fa7d327d808e2323f30d02d46bd727137160f16a1b5e87dacff692d0a93153"
+    "native_glb_sha256": "39fa7d327d808e2323f30d02d46bd727137160f16a1b5e87dacff692d0a93153",
+    "display_model": "res://assets/display/s0129.glb"
   },
   {
     "scan": "s0130",
@@ -2289,7 +2412,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "d60e9c4c6491e3694925fa55049cd533e10b60a271c75b142cd90894cdd5a53a",
     "contour_verified": false,
-    "native_glb_sha256": "d60e9c4c6491e3694925fa55049cd533e10b60a271c75b142cd90894cdd5a53a"
+    "native_glb_sha256": "d60e9c4c6491e3694925fa55049cd533e10b60a271c75b142cd90894cdd5a53a",
+    "display_model": "res://assets/display/s0130.glb"
   },
   {
     "scan": "s0131",
@@ -2307,7 +2431,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "35c1581c396e061611ccf1137007b4f2ff1f72785ce86d5393d6cc433910a4ab",
     "contour_verified": false,
-    "native_glb_sha256": "35c1581c396e061611ccf1137007b4f2ff1f72785ce86d5393d6cc433910a4ab"
+    "native_glb_sha256": "35c1581c396e061611ccf1137007b4f2ff1f72785ce86d5393d6cc433910a4ab",
+    "display_model": "res://assets/display/s0131.glb"
   },
   {
     "scan": "s0132",
@@ -2325,7 +2450,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "92cb9be0bb7180adb008ea57d6dd5f7760b5a86951fdffa08ff6df2591e886ef",
     "contour_verified": false,
-    "native_glb_sha256": "92cb9be0bb7180adb008ea57d6dd5f7760b5a86951fdffa08ff6df2591e886ef"
+    "native_glb_sha256": "92cb9be0bb7180adb008ea57d6dd5f7760b5a86951fdffa08ff6df2591e886ef",
+    "display_model": "res://assets/display/s0132.glb"
   },
   {
     "scan": "s0133",
@@ -2343,7 +2469,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "3cee3a1c6d626f90dea7d41bff4221f1bc72b34cc8cd0e437bd952e141256d76",
     "contour_verified": false,
-    "native_glb_sha256": "3cee3a1c6d626f90dea7d41bff4221f1bc72b34cc8cd0e437bd952e141256d76"
+    "native_glb_sha256": "3cee3a1c6d626f90dea7d41bff4221f1bc72b34cc8cd0e437bd952e141256d76",
+    "display_model": "res://assets/display/s0133.glb"
   },
   {
     "scan": "s0134",
@@ -2361,7 +2488,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9e272e569d7a0051276472cba60d0b7d2ef5e2be72160013a51f4aaea9ee8dbb",
     "contour_verified": false,
-    "native_glb_sha256": "9e272e569d7a0051276472cba60d0b7d2ef5e2be72160013a51f4aaea9ee8dbb"
+    "native_glb_sha256": "9e272e569d7a0051276472cba60d0b7d2ef5e2be72160013a51f4aaea9ee8dbb",
+    "display_model": "res://assets/display/s0134.glb"
   },
   {
     "scan": "s0135",
@@ -2379,7 +2507,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9f57da08fa6dc56091f827afd86d3cbf90e489da96ad9aa7880ac3066d3937b8",
     "contour_verified": false,
-    "native_glb_sha256": "9f57da08fa6dc56091f827afd86d3cbf90e489da96ad9aa7880ac3066d3937b8"
+    "native_glb_sha256": "9f57da08fa6dc56091f827afd86d3cbf90e489da96ad9aa7880ac3066d3937b8",
+    "display_model": "res://assets/display/s0135.glb"
   },
   {
     "scan": "s0136",
@@ -2397,7 +2526,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "19755a77d09b4314969c723a6ffa123e711f4588064b1b90cf09a3731372885e",
     "contour_verified": false,
-    "native_glb_sha256": "19755a77d09b4314969c723a6ffa123e711f4588064b1b90cf09a3731372885e"
+    "native_glb_sha256": "19755a77d09b4314969c723a6ffa123e711f4588064b1b90cf09a3731372885e",
+    "display_model": "res://assets/display/s0136.glb"
   },
   {
     "scan": "s0138",
@@ -2415,7 +2545,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "0e36192478cf8a5c79ed39571dc83b1224c448ffe4ff2d58363cfab344e2e55f",
     "contour_verified": false,
-    "native_glb_sha256": "0e36192478cf8a5c79ed39571dc83b1224c448ffe4ff2d58363cfab344e2e55f"
+    "native_glb_sha256": "0e36192478cf8a5c79ed39571dc83b1224c448ffe4ff2d58363cfab344e2e55f",
+    "display_model": "res://assets/display/s0138.glb"
   },
   {
     "scan": "s0139",
@@ -2433,7 +2564,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "45c12f4333d032df95450bf4fdebb6247bef41e44cccf3d3d8975c9d982dd5c7",
     "contour_verified": false,
-    "native_glb_sha256": "45c12f4333d032df95450bf4fdebb6247bef41e44cccf3d3d8975c9d982dd5c7"
+    "native_glb_sha256": "45c12f4333d032df95450bf4fdebb6247bef41e44cccf3d3d8975c9d982dd5c7",
+    "display_model": "res://assets/display/s0139.glb"
   },
   {
     "scan": "s0140",
@@ -2451,7 +2583,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "2c90b2c2b9a6213a71802c028ddfe2ba06393dafe56c6d7c0db24d6e277ee72d",
     "contour_verified": false,
-    "native_glb_sha256": "2c90b2c2b9a6213a71802c028ddfe2ba06393dafe56c6d7c0db24d6e277ee72d"
+    "native_glb_sha256": "2c90b2c2b9a6213a71802c028ddfe2ba06393dafe56c6d7c0db24d6e277ee72d",
+    "display_model": "res://assets/display/s0140.glb"
   },
   {
     "scan": "s0141",
@@ -2469,7 +2602,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "27a13b90bad99ecde77d3d976ea69cf2cc9a6f3796f21197df8d8a1bf2d9f73e",
     "contour_verified": false,
-    "native_glb_sha256": "27a13b90bad99ecde77d3d976ea69cf2cc9a6f3796f21197df8d8a1bf2d9f73e"
+    "native_glb_sha256": "27a13b90bad99ecde77d3d976ea69cf2cc9a6f3796f21197df8d8a1bf2d9f73e",
+    "display_model": "res://assets/display/s0141.glb"
   },
   {
     "scan": "s0142",
@@ -2487,7 +2621,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "be1fa8a8be4c33e6c01c0f22a6d2f4bfabe97143075e87e76ace7226796cc3b4",
     "contour_verified": false,
-    "native_glb_sha256": "be1fa8a8be4c33e6c01c0f22a6d2f4bfabe97143075e87e76ace7226796cc3b4"
+    "native_glb_sha256": "be1fa8a8be4c33e6c01c0f22a6d2f4bfabe97143075e87e76ace7226796cc3b4",
+    "display_model": "res://assets/display/s0142.glb"
   },
   {
     "scan": "s0143",
@@ -2505,7 +2640,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "c6552c82dcddfa534384d1c5ad7b4f0272f41d70fa0072443496ef1a5190abc5",
     "contour_verified": false,
-    "native_glb_sha256": "c6552c82dcddfa534384d1c5ad7b4f0272f41d70fa0072443496ef1a5190abc5"
+    "native_glb_sha256": "c6552c82dcddfa534384d1c5ad7b4f0272f41d70fa0072443496ef1a5190abc5",
+    "display_model": "res://assets/display/s0143.glb"
   },
   {
     "scan": "s0144",
@@ -2523,7 +2659,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "b32ef4a11f8b1329c1f8722c01387bf07fad4ca25d181a58c9a7acab2d63c745",
     "contour_verified": false,
-    "native_glb_sha256": "b32ef4a11f8b1329c1f8722c01387bf07fad4ca25d181a58c9a7acab2d63c745"
+    "native_glb_sha256": "b32ef4a11f8b1329c1f8722c01387bf07fad4ca25d181a58c9a7acab2d63c745",
+    "display_model": "res://assets/display/s0144.glb"
   },
   {
     "scan": "s0145",
@@ -2541,7 +2678,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "3d3ed38386c426ef68f845b049edf515e79bbdb41dfb90d529e0b26e18b848cf",
     "contour_verified": false,
-    "native_glb_sha256": "3d3ed38386c426ef68f845b049edf515e79bbdb41dfb90d529e0b26e18b848cf"
+    "native_glb_sha256": "3d3ed38386c426ef68f845b049edf515e79bbdb41dfb90d529e0b26e18b848cf",
+    "display_model": "res://assets/display/s0145.glb"
   },
   {
     "scan": "s0146",
@@ -2559,7 +2697,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a1d306d483d2990643a508e4aa6709c024e9f2e7f1cbd294f94d9d8afcafb173",
     "contour_verified": false,
-    "native_glb_sha256": "a1d306d483d2990643a508e4aa6709c024e9f2e7f1cbd294f94d9d8afcafb173"
+    "native_glb_sha256": "a1d306d483d2990643a508e4aa6709c024e9f2e7f1cbd294f94d9d8afcafb173",
+    "display_model": "res://assets/display/s0146.glb"
   },
   {
     "scan": "s0147",
@@ -2577,7 +2716,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9781881b456c8630a3fd5750c15ffd16538ced53b849addab57d5722e6107cfd",
     "contour_verified": false,
-    "native_glb_sha256": "9781881b456c8630a3fd5750c15ffd16538ced53b849addab57d5722e6107cfd"
+    "native_glb_sha256": "9781881b456c8630a3fd5750c15ffd16538ced53b849addab57d5722e6107cfd",
+    "display_model": "res://assets/display/s0147.glb"
   },
   {
     "scan": "s0148",
@@ -2595,7 +2735,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "ea7362f2ea841cc904a16aa6f5b71ea7a34e0a046c6dd84806127e71a62f5465",
     "contour_verified": false,
-    "native_glb_sha256": "ea7362f2ea841cc904a16aa6f5b71ea7a34e0a046c6dd84806127e71a62f5465"
+    "native_glb_sha256": "ea7362f2ea841cc904a16aa6f5b71ea7a34e0a046c6dd84806127e71a62f5465",
+    "display_model": "res://assets/display/s0148.glb"
   },
   {
     "scan": "s0149",
@@ -2613,7 +2754,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "91adfaf17c7e01e343c4be8fd96dd4a66b0f94ac35599ec4610b175905c10c33",
     "contour_verified": false,
-    "native_glb_sha256": "91adfaf17c7e01e343c4be8fd96dd4a66b0f94ac35599ec4610b175905c10c33"
+    "native_glb_sha256": "91adfaf17c7e01e343c4be8fd96dd4a66b0f94ac35599ec4610b175905c10c33",
+    "display_model": "res://assets/display/s0149.glb"
   },
   {
     "scan": "s0150",
@@ -2631,7 +2773,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "ba3712d959c3f308f8f0ad458730b4f42783129747e4e080c6f2c91e562c0601",
     "contour_verified": false,
-    "native_glb_sha256": "ba3712d959c3f308f8f0ad458730b4f42783129747e4e080c6f2c91e562c0601"
+    "native_glb_sha256": "ba3712d959c3f308f8f0ad458730b4f42783129747e4e080c6f2c91e562c0601",
+    "display_model": "res://assets/display/s0150.glb"
   },
   {
     "scan": "s0151",
@@ -2649,7 +2792,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "0461d1a280846809777c91cb949445ce972788b34fcf1a852c36462c396baccd",
     "contour_verified": false,
-    "native_glb_sha256": "0461d1a280846809777c91cb949445ce972788b34fcf1a852c36462c396baccd"
+    "native_glb_sha256": "0461d1a280846809777c91cb949445ce972788b34fcf1a852c36462c396baccd",
+    "display_model": "res://assets/display/s0151.glb"
   },
   {
     "scan": "s0152",
@@ -2667,7 +2811,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "8a6c00125ba763139e31584be3b5fa5ec2da367fc872b29e17d7ddf6ce81138e",
     "contour_verified": false,
-    "native_glb_sha256": "8a6c00125ba763139e31584be3b5fa5ec2da367fc872b29e17d7ddf6ce81138e"
+    "native_glb_sha256": "8a6c00125ba763139e31584be3b5fa5ec2da367fc872b29e17d7ddf6ce81138e",
+    "display_model": "res://assets/display/s0152.glb"
   },
   {
     "scan": "s0153",
@@ -2685,7 +2830,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "e0b8738d129edfe82485a7ef25b61169659c0c16984eabb3dec0ae1e9ac41857",
     "contour_verified": false,
-    "native_glb_sha256": "e0b8738d129edfe82485a7ef25b61169659c0c16984eabb3dec0ae1e9ac41857"
+    "native_glb_sha256": "e0b8738d129edfe82485a7ef25b61169659c0c16984eabb3dec0ae1e9ac41857",
+    "display_model": "res://assets/display/s0153.glb"
   },
   {
     "scan": "s0154",
@@ -2703,7 +2849,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "64e3ae05aba4b3fc4829bfee3fa268ca004a5343b6cea0ab378c205b3ddf98b4",
     "contour_verified": false,
-    "native_glb_sha256": "64e3ae05aba4b3fc4829bfee3fa268ca004a5343b6cea0ab378c205b3ddf98b4"
+    "native_glb_sha256": "64e3ae05aba4b3fc4829bfee3fa268ca004a5343b6cea0ab378c205b3ddf98b4",
+    "display_model": "res://assets/display/s0154.glb"
   },
   {
     "scan": "s0156",
@@ -2721,7 +2868,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "614781f67adcaef10bdd0a166df3705d4e9116223cf26e5986f84032e5650eda",
     "contour_verified": false,
-    "native_glb_sha256": "614781f67adcaef10bdd0a166df3705d4e9116223cf26e5986f84032e5650eda"
+    "native_glb_sha256": "614781f67adcaef10bdd0a166df3705d4e9116223cf26e5986f84032e5650eda",
+    "display_model": "res://assets/display/s0156.glb"
   },
   {
     "scan": "s0158",
@@ -2739,7 +2887,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "4774d43c88fb9f09fd7d98af819fc3be016bada085d569f19d7842ff56ba4053",
     "contour_verified": false,
-    "native_glb_sha256": "4774d43c88fb9f09fd7d98af819fc3be016bada085d569f19d7842ff56ba4053"
+    "native_glb_sha256": "4774d43c88fb9f09fd7d98af819fc3be016bada085d569f19d7842ff56ba4053",
+    "display_model": "res://assets/display/s0158.glb"
   },
   {
     "scan": "s0159",
@@ -2757,7 +2906,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9a24e989ae71cb0c6bdb3ed338e7947a04c1049e16edcad744f5923f92fd5be1",
     "contour_verified": false,
-    "native_glb_sha256": "9a24e989ae71cb0c6bdb3ed338e7947a04c1049e16edcad744f5923f92fd5be1"
+    "native_glb_sha256": "9a24e989ae71cb0c6bdb3ed338e7947a04c1049e16edcad744f5923f92fd5be1",
+    "display_model": "res://assets/display/s0159.glb"
   },
   {
     "scan": "s0160",
@@ -2775,7 +2925,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "867025c9298009a8a3c69e46f0a2b4b68e0f5ffa867c06c80859a5b1438fc092",
     "contour_verified": false,
-    "native_glb_sha256": "867025c9298009a8a3c69e46f0a2b4b68e0f5ffa867c06c80859a5b1438fc092"
+    "native_glb_sha256": "867025c9298009a8a3c69e46f0a2b4b68e0f5ffa867c06c80859a5b1438fc092",
+    "display_model": "res://assets/display/s0160.glb"
   },
   {
     "scan": "s0161",
@@ -2793,7 +2944,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "393af1fa714fd060521c2f3f77754812dae1124d6faaa098d545caec8b6f5a5e",
-    "native_glb_sha256": "393af1fa714fd060521c2f3f77754812dae1124d6faaa098d545caec8b6f5a5e"
+    "native_glb_sha256": "393af1fa714fd060521c2f3f77754812dae1124d6faaa098d545caec8b6f5a5e",
+    "display_model": "res://assets/display/s0161.glb"
   },
   {
     "scan": "s0162",
@@ -2811,7 +2963,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "b6363594ed799c4e0317091587af0a8275aa64a4428802320d391b3817928f3a",
-    "native_glb_sha256": "b6363594ed799c4e0317091587af0a8275aa64a4428802320d391b3817928f3a"
+    "native_glb_sha256": "b6363594ed799c4e0317091587af0a8275aa64a4428802320d391b3817928f3a",
+    "display_model": "res://assets/display/s0162.glb"
   },
   {
     "scan": "s0163",
@@ -2829,7 +2982,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "a7228d489a7e48511f2c9ce7bbad16c79681f823ec1d9dfad8b31d2a5fb1eee0",
-    "native_glb_sha256": "a7228d489a7e48511f2c9ce7bbad16c79681f823ec1d9dfad8b31d2a5fb1eee0"
+    "native_glb_sha256": "a7228d489a7e48511f2c9ce7bbad16c79681f823ec1d9dfad8b31d2a5fb1eee0",
+    "display_model": "res://assets/display/s0163.glb"
   },
   {
     "scan": "s0164",
@@ -2847,7 +3001,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "5391376a85262689830ef9a88fd1897fb4318fef9c9709593bcc19f54f3a1f4d",
-    "native_glb_sha256": "5391376a85262689830ef9a88fd1897fb4318fef9c9709593bcc19f54f3a1f4d"
+    "native_glb_sha256": "5391376a85262689830ef9a88fd1897fb4318fef9c9709593bcc19f54f3a1f4d",
+    "display_model": "res://assets/display/s0164.glb"
   },
   {
     "scan": "s0165",
@@ -2865,7 +3020,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "1fc3126e44f15a8c890ef92fe80657abed7051266357bea79c50e2a856cee4bc",
     "contour_verified": false,
-    "native_glb_sha256": "1fc3126e44f15a8c890ef92fe80657abed7051266357bea79c50e2a856cee4bc"
+    "native_glb_sha256": "1fc3126e44f15a8c890ef92fe80657abed7051266357bea79c50e2a856cee4bc",
+    "display_model": "res://assets/display/s0165.glb"
   },
   {
     "scan": "s0166",
@@ -2883,7 +3039,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "0d3256546bc86fb16383623a4809053c5bc7c2b5a5f7735f268bb806c9fa12b9",
     "contour_verified": false,
-    "native_glb_sha256": "0d3256546bc86fb16383623a4809053c5bc7c2b5a5f7735f268bb806c9fa12b9"
+    "native_glb_sha256": "0d3256546bc86fb16383623a4809053c5bc7c2b5a5f7735f268bb806c9fa12b9",
+    "display_model": "res://assets/display/s0166.glb"
   },
   {
     "scan": "s0167",
@@ -2901,7 +3058,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "9874ac7f968ecf20b12303fc38074d56bd2ccc994eb988ad38b3bfcb1d5aade8",
     "contour_verified": false,
-    "native_glb_sha256": "9874ac7f968ecf20b12303fc38074d56bd2ccc994eb988ad38b3bfcb1d5aade8"
+    "native_glb_sha256": "9874ac7f968ecf20b12303fc38074d56bd2ccc994eb988ad38b3bfcb1d5aade8",
+    "display_model": "res://assets/display/s0167.glb"
   },
   {
     "scan": "s0168",
@@ -2919,7 +3077,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "f90c506cf9fe9fc348d1faecca9b86c06e9c903da3a2d7a5c57e031290f9af27",
     "contour_verified": false,
-    "native_glb_sha256": "f90c506cf9fe9fc348d1faecca9b86c06e9c903da3a2d7a5c57e031290f9af27"
+    "native_glb_sha256": "f90c506cf9fe9fc348d1faecca9b86c06e9c903da3a2d7a5c57e031290f9af27",
+    "display_model": "res://assets/display/s0168.glb"
   },
   {
     "scan": "s0169",
@@ -2937,7 +3096,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "e868176c0e72893022865ce1cb6b6327047324d8026fe32ce89a9a974e7aea84",
     "contour_verified": false,
-    "native_glb_sha256": "e868176c0e72893022865ce1cb6b6327047324d8026fe32ce89a9a974e7aea84"
+    "native_glb_sha256": "e868176c0e72893022865ce1cb6b6327047324d8026fe32ce89a9a974e7aea84",
+    "display_model": "res://assets/display/s0169.glb"
   },
   {
     "scan": "s0170",
@@ -2955,7 +3115,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "dc250948907f2c52fe7039e18105846e3c4f31052c103f34cb383774040dde19",
     "contour_verified": false,
-    "native_glb_sha256": "dc250948907f2c52fe7039e18105846e3c4f31052c103f34cb383774040dde19"
+    "native_glb_sha256": "dc250948907f2c52fe7039e18105846e3c4f31052c103f34cb383774040dde19",
+    "display_model": "res://assets/display/s0170.glb"
   },
   {
     "scan": "s0171",
@@ -2973,7 +3134,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "4d299f1480a8fc287f92a2a911bcd4c5a4b8f5641c18fd66cb205c6eab9221c2",
     "contour_verified": false,
-    "native_glb_sha256": "4d299f1480a8fc287f92a2a911bcd4c5a4b8f5641c18fd66cb205c6eab9221c2"
+    "native_glb_sha256": "4d299f1480a8fc287f92a2a911bcd4c5a4b8f5641c18fd66cb205c6eab9221c2",
+    "display_model": "res://assets/display/s0171.glb"
   },
   {
     "scan": "s0172",
@@ -2991,7 +3153,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "50d78bab5852acd8df16f225359194e04e52916c5a74d03e71010ee19ee71a7e",
     "contour_verified": false,
-    "native_glb_sha256": "50d78bab5852acd8df16f225359194e04e52916c5a74d03e71010ee19ee71a7e"
+    "native_glb_sha256": "50d78bab5852acd8df16f225359194e04e52916c5a74d03e71010ee19ee71a7e",
+    "display_model": "res://assets/display/s0172.glb"
   },
   {
     "scan": "s0173",
@@ -3009,7 +3172,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "d21a4699dabbdf433f340e04aa2ac2ef94f067a7271847e6de58adc0a84f02e4",
     "contour_verified": false,
-    "native_glb_sha256": "d21a4699dabbdf433f340e04aa2ac2ef94f067a7271847e6de58adc0a84f02e4"
+    "native_glb_sha256": "d21a4699dabbdf433f340e04aa2ac2ef94f067a7271847e6de58adc0a84f02e4",
+    "display_model": "res://assets/display/s0173.glb"
   },
   {
     "scan": "s0174",
@@ -3027,7 +3191,8 @@
     "blender_revision": 1,
     "editable_glb_sha256": "a183012a2845f65aa0a0e022b6b43c2c69a433d474baa2982ebfdfac7e42baf6",
     "contour_verified": false,
-    "native_glb_sha256": "a183012a2845f65aa0a0e022b6b43c2c69a433d474baa2982ebfdfac7e42baf6"
+    "native_glb_sha256": "a183012a2845f65aa0a0e022b6b43c2c69a433d474baa2982ebfdfac7e42baf6",
+    "display_model": "res://assets/display/s0174.glb"
   },
   {
     "scan": "s0175",
@@ -3045,7 +3210,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "1d7d5bd06b39690948f9ef1f0907189f74446da6a80826a3fd199455def06c47",
-    "native_glb_sha256": "1d7d5bd06b39690948f9ef1f0907189f74446da6a80826a3fd199455def06c47"
+    "native_glb_sha256": "1d7d5bd06b39690948f9ef1f0907189f74446da6a80826a3fd199455def06c47",
+    "display_model": "res://assets/display/s0175.glb"
   },
   {
     "scan": "s0176",
@@ -3063,7 +3229,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "13340d9a322837032923d909ee09ad09b607a4e03ade6949a9e1db25c0a80fd1",
-    "native_glb_sha256": "13340d9a322837032923d909ee09ad09b607a4e03ade6949a9e1db25c0a80fd1"
+    "native_glb_sha256": "13340d9a322837032923d909ee09ad09b607a4e03ade6949a9e1db25c0a80fd1",
+    "display_model": "res://assets/display/s0176.glb"
   },
   {
     "scan": "s0177",
@@ -3081,7 +3248,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "8b6d011f4a488faaffbc01a8ae52c41a8d76fcadeb38204080cd04aa54d3a504",
-    "native_glb_sha256": "8b6d011f4a488faaffbc01a8ae52c41a8d76fcadeb38204080cd04aa54d3a504"
+    "native_glb_sha256": "8b6d011f4a488faaffbc01a8ae52c41a8d76fcadeb38204080cd04aa54d3a504",
+    "display_model": "res://assets/display/s0177.glb"
   },
   {
     "scan": "s0178",
@@ -3099,7 +3267,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "0d3a482c7e20aee5f296300830a39fd0af1c5310e6c148e2217869d85a08458d",
-    "native_glb_sha256": "0d3a482c7e20aee5f296300830a39fd0af1c5310e6c148e2217869d85a08458d"
+    "native_glb_sha256": "0d3a482c7e20aee5f296300830a39fd0af1c5310e6c148e2217869d85a08458d",
+    "display_model": "res://assets/display/s0178.glb"
   },
   {
     "scan": "s0179",
@@ -3117,7 +3286,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "67ac576c973f4caa61eff8ecc822eb74b0be6ee5832ee9ce0280e74bd5c65a42",
-    "native_glb_sha256": "67ac576c973f4caa61eff8ecc822eb74b0be6ee5832ee9ce0280e74bd5c65a42"
+    "native_glb_sha256": "67ac576c973f4caa61eff8ecc822eb74b0be6ee5832ee9ce0280e74bd5c65a42",
+    "display_model": "res://assets/display/s0179.glb"
   },
   {
     "scan": "s0180",
@@ -3135,7 +3305,8 @@
     "blender_revision": 1,
     "contour_verified": false,
     "editable_glb_sha256": "63af50e092f67a2334c1ae253abd13b5a987ded6902dc1bcba8605246d0dfff2",
-    "native_glb_sha256": "63af50e092f67a2334c1ae253abd13b5a987ded6902dc1bcba8605246d0dfff2"
+    "native_glb_sha256": "63af50e092f67a2334c1ae253abd13b5a987ded6902dc1bcba8605246d0dfff2",
+    "display_model": "res://assets/display/s0180.glb"
   },
   {
     "scan": "s0181",
@@ -3152,7 +3323,8 @@
     "blender_project": "20a90a4f-42db-4cff-9c08-a63816388d21",
     "blender_revision": 1,
     "editable_glb_sha256": "21f687b85e60e21c5786d05a44301196e9fdf3efc5022c3c458a69ef853616b1",
-    "native_glb_sha256": "21f687b85e60e21c5786d05a44301196e9fdf3efc5022c3c458a69ef853616b1"
+    "native_glb_sha256": "21f687b85e60e21c5786d05a44301196e9fdf3efc5022c3c458a69ef853616b1",
+    "display_model": "res://assets/display/s0181.glb"
   },
   {
     "scan": "s0182",
@@ -3169,7 +3341,8 @@
     "blender_project": "20a90a4f-42db-4cff-9c08-a63816388d21",
     "blender_revision": 1,
     "editable_glb_sha256": "6f0c756b2b722ff0932b90542c8505b2fb89355a15c0480c294e86b05385bcba",
-    "native_glb_sha256": "6f0c756b2b722ff0932b90542c8505b2fb89355a15c0480c294e86b05385bcba"
+    "native_glb_sha256": "6f0c756b2b722ff0932b90542c8505b2fb89355a15c0480c294e86b05385bcba",
+    "display_model": "res://assets/display/s0182.glb"
   },
   {
     "id": "vessel_s0161_01",
@@ -3281,7 +3454,8 @@
     "profile_center_x": 112,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "493188dd3cd84620adae565f9a4d410ae51559c23395bf7aa241652fd38cfa96"
+    "sha256": "493188dd3cd84620adae565f9a4d410ae51559c23395bf7aa241652fd38cfa96",
+    "display_model": "res://assets/display/vessel_s0161_01.glb"
   },
   {
     "id": "vessel_s0161_02",
@@ -3405,7 +3579,8 @@
     "profile_center_x": 126,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "b0f8fa0b9cc2f218b190322de52b02eab297c2be2919ec2e7f839d79511e0cde"
+    "sha256": "b0f8fa0b9cc2f218b190322de52b02eab297c2be2919ec2e7f839d79511e0cde",
+    "display_model": "res://assets/display/vessel_s0161_02.glb"
   },
   {
     "id": "vessel_s0161_03",
@@ -3529,7 +3704,8 @@
     "profile_center_x": 128,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "9a69d07041b8894a270cbf165b485ae38160a6bf42c99c824078166685fe2525"
+    "sha256": "9a69d07041b8894a270cbf165b485ae38160a6bf42c99c824078166685fe2525",
+    "display_model": "res://assets/display/vessel_s0161_03.glb"
   },
   {
     "id": "vessel_s0163_01",
@@ -3629,7 +3805,8 @@
     "profile_center_x": 123,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "e7f07518af0f2812a3593b05183842811fb03703c14ccb7d056350c219ce3d09"
+    "sha256": "e7f07518af0f2812a3593b05183842811fb03703c14ccb7d056350c219ce3d09",
+    "display_model": "res://assets/display/vessel_s0163_01.glb"
   },
   {
     "id": "vessel_s0163_02",
@@ -3749,7 +3926,8 @@
     "profile_center_x": 127,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "51be9bd33cacf2c454a109acb86f10d3875967f52de22bc62433888eb027bd72"
+    "sha256": "51be9bd33cacf2c454a109acb86f10d3875967f52de22bc62433888eb027bd72",
+    "display_model": "res://assets/display/vessel_s0163_02.glb"
   },
   {
     "id": "vessel_s0163_03",
@@ -3841,7 +4019,8 @@
     "profile_center_x": 144,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "dc280c7f81276881c83079e1515697250f8f9e345c13fc37d3aeeb09d6ee548f"
+    "sha256": "dc280c7f81276881c83079e1515697250f8f9e345c13fc37d3aeeb09d6ee548f",
+    "display_model": "res://assets/display/vessel_s0163_03.glb"
   },
   {
     "id": "vessel_s0175_01",
@@ -3901,7 +4080,8 @@
     "profile_center_x": 121,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "0b5cf079497e853e65f857a8c693d0e8bb98b0c6b039db89973e4adbde56415c"
+    "sha256": "0b5cf079497e853e65f857a8c693d0e8bb98b0c6b039db89973e4adbde56415c",
+    "display_model": "res://assets/display/vessel_s0175_01.glb"
   },
   {
     "id": "vessel_s0175_02",
@@ -3965,7 +4145,8 @@
     "profile_center_x": 121,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "58e330aa053c8944b5595647b3f5854582a574a3b633b4a11d332fff3dde4797"
+    "sha256": "58e330aa053c8944b5595647b3f5854582a574a3b633b4a11d332fff3dde4797",
+    "display_model": "res://assets/display/vessel_s0175_02.glb"
   },
   {
     "id": "vessel_s0175_03",
@@ -4029,7 +4210,8 @@
     "profile_center_x": 122,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "b9268412f211ea019202fe220778f36e4556f23b2295c2171f61a10d17955600"
+    "sha256": "b9268412f211ea019202fe220778f36e4556f23b2295c2171f61a10d17955600",
+    "display_model": "res://assets/display/vessel_s0175_03.glb"
   },
   {
     "id": "vessel_s0175_04",
@@ -4093,6 +4275,1244 @@
     "profile_center_x": 116,
     "status": "CANDIDATE",
     "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
-    "sha256": "6e2f738a71be32bc03247542912b8ced0244d9d24b75c4f22e9565c7812615e1"
+    "sha256": "6e2f738a71be32bc03247542912b8ced0244d9d24b75c4f22e9565c7812615e1",
+    "display_model": "res://assets/display/vessel_s0175_04.glb"
+  },
+  {
+    "id": "relief_s0114",
+    "scan": "s0114",
+    "folio": "57v",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "f7b1610deda6b90543c51dc9654563c2f25c8fefc08a4953de046b40a4c05ce5",
+    "source_width": 3028,
+    "source_height": 3769,
+    "model": "res://assets/models/relief_s0114.glb",
+    "batch": "21",
+    "model_sha256": "34d3c6f23dedb8be709d223ae14598bdc77a96e80ed05cf367184305f1b023ae",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0114.glb"
+  },
+  {
+    "id": "relief_s0121",
+    "scan": "s0121",
+    "folio": "67r",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "f8b4e5c4a73b92af3d9a6e6bd5cdc7e43b3e9c5d721171aa969384198e1579e3",
+    "source_width": 4972,
+    "source_height": 3738,
+    "model": "res://assets/models/relief_s0121.glb",
+    "batch": "21",
+    "model_sha256": "fc687ff9d9d5e579ce19e83988bd1c6c777d408a6877cd0c36270255a85d5d95",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0121.glb"
+  },
+  {
+    "id": "relief_s0122",
+    "scan": "s0122",
+    "folio": "67v",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "801fdf880a4fc356500df69a30ccd02f63f4be0f72d911506ebc1a9e131bccd2",
+    "source_width": 5059,
+    "source_height": 3753,
+    "model": "res://assets/models/relief_s0122.glb",
+    "batch": "21",
+    "model_sha256": "591bf23f6b3f1d626d915d4d84154580b5d0da98f222ce3ff59818b1569f3096",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0122.glb"
+  },
+  {
+    "id": "relief_s0123",
+    "scan": "s0123",
+    "folio": "68r",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "79579366bae64d3fb52710f25c2950d2906e90b8c14ba861847ab58ccd0b51c6",
+    "source_width": 7993,
+    "source_height": 3828,
+    "model": "res://assets/models/relief_s0123.glb",
+    "batch": "21",
+    "model_sha256": "9072d548aa98b0f192f5f689d5ffa0bb3aef3a0bf3c54b269d51f400da454a9c",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0123.glb"
+  },
+  {
+    "id": "relief_s0124",
+    "scan": "s0124",
+    "folio": "68v",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "917b3b9c11ba47916aa77577aefaaa388348461dc1e3abb3104192fd96371ee3",
+    "source_width": 8135,
+    "source_height": 3843,
+    "model": "res://assets/models/relief_s0124.glb",
+    "batch": "21",
+    "model_sha256": "14e615466f91fea4013f8d887ee97f37e8ab0c15f1134ac01b48524df8347ad7",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0124.glb"
+  },
+  {
+    "id": "relief_s0125",
+    "scan": "s0125",
+    "folio": "69r",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "88d2c18503f04744aa0f14b0e3254c59fa06ca2425f1134a3bc0ffda6bd3fc79",
+    "source_width": 2793,
+    "source_height": 3763,
+    "model": "res://assets/models/relief_s0125.glb",
+    "batch": "21",
+    "model_sha256": "0df35f2c383e3fb03045f02a6966332c111c1a5c5aef62650344802d63078cb3",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0125.glb"
+  },
+  {
+    "id": "relief_s0126",
+    "scan": "s0126",
+    "folio": "69v and 70r",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "f42841e04abe30b64711bd016d098f21901b779b12bca9ecae9171f596074009",
+    "source_width": 8886,
+    "source_height": 3876,
+    "model": "res://assets/models/relief_s0126.glb",
+    "batch": "21",
+    "model_sha256": "7501962b755575b7f4b9886e860bf21cc435ecf87903be061a1ad67505edad35",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0126.glb"
+  },
+  {
+    "id": "relief_s0156",
+    "scan": "s0156",
+    "folio": "85r  part  86v  part   part of 85-86 foldout",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "719c844cb0ccf52acd6d8c1b6c381c706d439cdb9fd277ef25be73ba47e99f4f",
+    "source_width": 7754,
+    "source_height": 3890,
+    "model": "res://assets/models/relief_s0156.glb",
+    "batch": "21",
+    "model_sha256": "0c08dac4340ea615da88a0e1a0ac91e4bc4e624caf3fb61e1ac61e2eaeefcc75",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0156.glb"
+  },
+  {
+    "id": "relief_s0158",
+    "scan": "s0158",
+    "folio": "85v and 86r  foldout",
+    "category": "Diagramy · relief 2.5D",
+    "description": "Pełny rysunek i pismo ze skanu; subtelny relief barw/kresek, nie zmierzona głębia.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "db0bbfb090cfeee2301209c055ad65d5ca9d16c7fb6086206f827e315670e317",
+    "source_width": 7925,
+    "source_height": 7268,
+    "model": "res://assets/models/relief_s0158.glb",
+    "batch": "21",
+    "model_sha256": "d14d8dca7d5026825b90ad4d525aca9a59212293785d15634128a4103ea3d91a",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/relief_s0158.glb"
+  },
+  {
+    "id": "spatial_s0158",
+    "scan": "s0158",
+    "folio": "85v and 86r  foldout",
+    "category": "Diagramy · model przestrzenny",
+    "description": "Dziewięć rozet, 13 pasm, 36 otwartych tub, 6 form ozdobnych; rozmieszczenie ze skanu, głębia i tyły interpretacyjne.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "db0bbfb090cfeee2301209c055ad65d5ca9d16c7fb6086206f827e315670e317",
+    "source_width": 7925,
+    "source_height": 7268,
+    "model": "res://assets/models/spatial_s0158.glb",
+    "batch": "21",
+    "model_sha256": "055196c12c90c6b7fb987e43351affa8a6347018bcf80714b96d8e6a91723915",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/spatial_s0158.glb"
+  },
+  {
+    "id": "flows_s0135",
+    "scan": "s0135",
+    "folio": "75r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "b2ec3a214c2bdb6956674644021d748e011387fd40f9a2aa2d0f3fee23cae77d",
+    "source_width": 2852,
+    "source_height": 3759,
+    "model": "res://assets/models/flows_s0135.glb",
+    "batch": "22",
+    "model_sha256": "a88ca0d09935c64c068fa9be30f026f74aba8fee646f84fa046e34e28b3c78ab",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0135.glb"
+  },
+  {
+    "id": "flows_s0136",
+    "scan": "s0136",
+    "folio": "75v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "948b2b17bc917c50b8e30f51168402564f5e944af464f78a79b7f151cc3ac02e",
+    "source_width": 2868,
+    "source_height": 3735,
+    "model": "res://assets/models/flows_s0136.glb",
+    "batch": "22",
+    "model_sha256": "48b1c053c535ee0fb5eec22599332b584fda20c19074923af82f565ed7c19957",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0136.glb"
+  },
+  {
+    "id": "flows_s0138",
+    "scan": "s0138",
+    "folio": "76v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "4b40d2a1bd4d75e6d9dba4d53d12eb19d0353a697499c59d77e6952365bb9db5",
+    "source_width": 2823,
+    "source_height": 3712,
+    "model": "res://assets/models/flows_s0138.glb",
+    "batch": "22",
+    "model_sha256": "41fb32810e05588dfcfa3119e6ec2d5876a03a0d0ba924489cce158847babbfa",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0138.glb"
+  },
+  {
+    "id": "flows_s0139",
+    "scan": "s0139",
+    "folio": "77r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "59ba155f89514e71bcbf0011233542ac2c60c11f655fc058d68ad3b89376cf8c",
+    "source_width": 2793,
+    "source_height": 3752,
+    "model": "res://assets/models/flows_s0139.glb",
+    "batch": "22",
+    "model_sha256": "09adc4457bf35e8dc8998becee08b847e74ec887e3a8cc2357dd5906e53888f4",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0139.glb"
+  },
+  {
+    "id": "flows_s0140",
+    "scan": "s0140",
+    "folio": "77v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "22ba8129496c1975d400c38147094660ef5121b313c8fab4cd69d3a0cac37b72",
+    "source_width": 2861,
+    "source_height": 3697,
+    "model": "res://assets/models/flows_s0140.glb",
+    "batch": "22",
+    "model_sha256": "22805163ad9f335d373b988aaf7ab1ddc6e01c525f236f4d4e2e65709de77da6",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0140.glb"
+  },
+  {
+    "id": "flows_s0141",
+    "scan": "s0141",
+    "folio": "78r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_width": 2793,
+    "source_height": 3761,
+    "model": "res://assets/models/flows_s0141.glb",
+    "batch": "22",
+    "model_sha256": "55d58686af166e87bacd2aa34062bd0622ad0df9ec0e12c8d43657deb8eb5ece",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0141.glb"
+  },
+  {
+    "id": "flows_s0142",
+    "scan": "s0142",
+    "folio": "78v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "ee145b3a24ff41739fd1774d455d60019828f9426f375cb020becde50ff4ac04",
+    "source_width": 2841,
+    "source_height": 3706,
+    "model": "res://assets/models/flows_s0142.glb",
+    "batch": "22",
+    "model_sha256": "3f038c52aa8e1d5f2c4af6902f7a15a1de2ed32e48a08dfd1dc0170a68143846",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0142.glb"
+  },
+  {
+    "id": "flows_s0143",
+    "scan": "s0143",
+    "folio": "79r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "5be18de3b3d831bf2a074e0d695cbc02cfcebd159d037a76169a7fd3885ec101",
+    "source_width": 2784,
+    "source_height": 3755,
+    "model": "res://assets/models/flows_s0143.glb",
+    "batch": "22",
+    "model_sha256": "cc197adf68602213fb82eada7b3a1939f39bc845341977460f81148d951f60bf",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0143.glb"
+  },
+  {
+    "id": "flows_s0144",
+    "scan": "s0144",
+    "folio": "79v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "b1ef7c61c6de659990a05db96ee68e23b1800e5369d613388458ee667d450c3d",
+    "source_width": 2811,
+    "source_height": 3714,
+    "model": "res://assets/models/flows_s0144.glb",
+    "batch": "22",
+    "model_sha256": "72d831a3e7ca7fff9a037bd3811090dab23d35ed10aa6dee1d489d1f8f609ac3",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0144.glb"
+  },
+  {
+    "id": "flows_s0145",
+    "scan": "s0145",
+    "folio": "80r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "a7bcb8e49baa7c409ffc82632196c0388acacc56608d65211a8739f73e917db4",
+    "source_width": 2793,
+    "source_height": 3733,
+    "model": "res://assets/models/flows_s0145.glb",
+    "batch": "22",
+    "model_sha256": "9ab4556ef77cc4441e1623a8999bf34f6b9a1871e8ece43ad1bc6882f22b7fe6",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0145.glb"
+  },
+  {
+    "id": "flows_s0146",
+    "scan": "s0146",
+    "folio": "80v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "995eb6dd53bc717b8cac52acbd861fc145fd810b05d22472c56ba726e1e79932",
+    "source_width": 2837,
+    "source_height": 3712,
+    "model": "res://assets/models/flows_s0146.glb",
+    "batch": "23",
+    "model_sha256": "ea917219a3f1ae4674a15f2d970887b03af49c8fe3fd142f65e2e5ebd24d5dbd",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0146.glb"
+  },
+  {
+    "id": "flows_s0147",
+    "scan": "s0147",
+    "folio": "81r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "0d036f695773f8450b9318676b0837bb1092443d81151b10f8854a09694c539c",
+    "source_width": 2776,
+    "source_height": 3737,
+    "model": "res://assets/models/flows_s0147.glb",
+    "batch": "23",
+    "model_sha256": "c14c3a98986a28739a0ac2e8cd964ac637c74003c07d2ce8353f4e63d086ce6f",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0147.glb"
+  },
+  {
+    "id": "flows_s0148",
+    "scan": "s0148",
+    "folio": "81v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "71c1bfb07d3329e7597dca6c2df5da79cb29e782ecc4485939e2f27470d79af3",
+    "source_width": 2835,
+    "source_height": 3705,
+    "model": "res://assets/models/flows_s0148.glb",
+    "batch": "23",
+    "model_sha256": "726878395581157f3d238d1bd8cc9236d0c73d717af1befa271780aac404dbb1",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0148.glb"
+  },
+  {
+    "id": "flows_s0149",
+    "scan": "s0149",
+    "folio": "82r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "b11f595fca2f77ee547f31b38314f1b9d177c33b471e71be45f06a4efce20831",
+    "source_width": 2753,
+    "source_height": 3745,
+    "model": "res://assets/models/flows_s0149.glb",
+    "batch": "23",
+    "model_sha256": "c8e683d872f217245a5a5c30d2f428803f324497595740f2d71871266ee44de5",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0149.glb"
+  },
+  {
+    "id": "flows_s0150",
+    "scan": "s0150",
+    "folio": "82v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "8ca3b41a581cbd090701f1a2736bf539e6c8807eb9a9ee53bc54873a90d3454e",
+    "source_width": 2821,
+    "source_height": 3709,
+    "model": "res://assets/models/flows_s0150.glb",
+    "batch": "23",
+    "model_sha256": "5116843e2464177a2b9bb421d7b7ab101bff740b17056987f4ceb7a5eaf81b81",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0150.glb"
+  },
+  {
+    "id": "flows_s0151",
+    "scan": "s0151",
+    "folio": "83r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "1ea16d9a117f0c48b737f9aae88042567b157fd1fea9439f79fd74456bb34d90",
+    "source_width": 2753,
+    "source_height": 3745,
+    "model": "res://assets/models/flows_s0151.glb",
+    "batch": "23",
+    "model_sha256": "85d50149960a8963bb41dbccdcaf252a9d97c110224677a0b9cf345157e3d546",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0151.glb"
+  },
+  {
+    "id": "flows_s0152",
+    "scan": "s0152",
+    "folio": "83v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "70c14102f8cc1ad645da192b32da86d127ff00b0fe4fd2aecd090f64b34416e0",
+    "source_width": 2858,
+    "source_height": 3693,
+    "model": "res://assets/models/flows_s0152.glb",
+    "batch": "23",
+    "model_sha256": "ccdaeb19b7b42e2c92922221e87875cba6e63828ad5a45074a99dff6ed3600ad",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0152.glb"
+  },
+  {
+    "id": "flows_s0153",
+    "scan": "s0153",
+    "folio": "84r",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "65b7fe96eed743b00d1b651e70309b00b6367424fda3d2792cbdafc6aef0f4f6",
+    "source_width": 2753,
+    "source_height": 3745,
+    "model": "res://assets/models/flows_s0153.glb",
+    "batch": "23",
+    "model_sha256": "af4f32258e9cad2cb66747aa44a57fbb3b0a1b4fd2dc6f724f52a769dbafee3e",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0153.glb"
+  },
+  {
+    "id": "flows_s0154",
+    "scan": "s0154",
+    "folio": "84v",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "a2d99f0a5126053ae8cffef66bd047faef90c95cc5dd64c0eb3eaa6474e35ea6",
+    "source_width": 2838,
+    "source_height": 3697,
+    "model": "res://assets/models/flows_s0154.glb",
+    "batch": "23",
+    "model_sha256": "842937f32dd8328cca83e9781796172f6f0efc9ac33270d1402b05e4f5e4fd80",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0154.glb"
+  },
+  {
+    "id": "flows_s0157",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Przepływy · relief źródłowy",
+    "description": "Kompletny skan sceny w reliefie. Nazwa przepływy to kategoria robocza; funkcja form niepotwierdzona.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_width": 4897,
+    "source_height": 3788,
+    "model": "res://assets/models/flows_s0157.glb",
+    "batch": "23",
+    "model_sha256": "b50045d9e9861c82243a8a8d22e0e96e9547724fc788cca23a88acf09c47aa2f",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/flows_s0157.glb"
+  },
+  {
+    "id": "marginal_s0003",
+    "scan": "s0003",
+    "folio": "1r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "0dec17193df396c44fc415b48c1fe7302b670526ccb171651ff5d5bd0a8dd57f",
+    "source_width": 2972,
+    "source_height": 3766,
+    "model": "res://assets/models/marginal_s0003.glb",
+    "batch": "24",
+    "model_sha256": "c6ef98f42b2de5b6afcdb1e54a72ce7717c8fbe18bf4677001f06d6202fff760",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0003.glb"
+  },
+  {
+    "id": "marginal_s0115",
+    "scan": "s0115",
+    "folio": "58r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "5f637173524e511b2b093ec7eab0977f2b4c1a2955a59a242ae81ceea74bd562",
+    "source_width": 2793,
+    "source_height": 3749,
+    "model": "res://assets/models/marginal_s0115.glb",
+    "batch": "24",
+    "model_sha256": "24117b027f731bb2c23702a5d3937a2795b6789333ce16b417bd4ba77fc36293",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0115.glb"
+  },
+  {
+    "id": "marginal_s0116",
+    "scan": "s0116",
+    "folio": "58v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "53a8dcfcc68911689661f50b231fa4423982c21e598957c3bc4e398e1ff89573",
+    "source_width": 2986,
+    "source_height": 3769,
+    "model": "res://assets/models/marginal_s0116.glb",
+    "batch": "24",
+    "model_sha256": "8a99fc625ea2f1372a07f99f26db7d9492dc429771b2d572762f5ad9f162ec44",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0116.glb"
+  },
+  {
+    "id": "marginal_s0119",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_width": 2793,
+    "source_height": 3707,
+    "model": "res://assets/models/marginal_s0119.glb",
+    "batch": "24",
+    "model_sha256": "4272d24893910488579dc1082735452d6ff12da368296a0686fe3e0f36be3785",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0119.glb"
+  },
+  {
+    "id": "marginal_s0137",
+    "scan": "s0137",
+    "folio": "76r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "5c79ceec61a32d1551ccae6443b6f941dabe417248d2beda1d4b0be94ab19859",
+    "source_width": 2793,
+    "source_height": 3769,
+    "model": "res://assets/models/marginal_s0137.glb",
+    "batch": "24",
+    "model_sha256": "c0a5f544dda629fef17194d846140b5bc636fc1455f87880847f447012900e3f",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0137.glb"
+  },
+  {
+    "id": "marginal_s0155",
+    "scan": "s0155",
+    "folio": "85r  part   part of 85-86 foldout",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+    "source_width": 2775,
+    "source_height": 3745,
+    "model": "res://assets/models/marginal_s0155.glb",
+    "batch": "24",
+    "model_sha256": "e591440993fa84018faa326c941016ed26589c762aa6a5024cd12ac595299b2d",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0155.glb"
+  },
+  {
+    "id": "marginal_s0157",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_width": 4897,
+    "source_height": 3788,
+    "model": "res://assets/models/marginal_s0157.glb",
+    "batch": "24",
+    "model_sha256": "bc739925faf9282108dad2d74cd0c3fad10f1f14a0221ed16c95ceecc1f378e1",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0157.glb"
+  },
+  {
+    "id": "marginal_s0183",
+    "scan": "s0183",
+    "folio": "103r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "bf8446c9c709fa2814b7bdf4dfcc82b6faa660b954e7c772e6cb91d66a97bd7c",
+    "source_width": 2688,
+    "source_height": 3805,
+    "model": "res://assets/models/marginal_s0183.glb",
+    "batch": "24",
+    "model_sha256": "643fe2987f438e7c80a125a3c697a73a4e158327fe1128d1e020152356467918",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0183.glb"
+  },
+  {
+    "id": "marginal_s0184",
+    "scan": "s0184",
+    "folio": "103v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "b8442f3c29c70bf913d866586851f589fafdf5df26977222d7beacccc059de60",
+    "source_width": 2762,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0184.glb",
+    "batch": "24",
+    "model_sha256": "b57ced2452233f34ef505ece513d8573e7925988c6709b832618f23c8e5ae467",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0184.glb"
+  },
+  {
+    "id": "marginal_s0185",
+    "scan": "s0185",
+    "folio": "104r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "d5bec2ec0afa6afc502837c93deb4e8db3ed0df2a0cb7314dc68631acf23b856",
+    "source_width": 2677,
+    "source_height": 3811,
+    "model": "res://assets/models/marginal_s0185.glb",
+    "batch": "24",
+    "model_sha256": "e510c3373f82860fedb789a5cd1d51817ca0745a27ac5900711bf145044e53f9",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0185.glb"
+  },
+  {
+    "id": "marginal_s0186",
+    "scan": "s0186",
+    "folio": "104v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd",
+    "source_width": 2744,
+    "source_height": 3704,
+    "model": "res://assets/models/marginal_s0186.glb",
+    "batch": "25",
+    "model_sha256": "5c868d7cc8ee8a6efb53385dd41464253a3e228170d0e478d1406cb8141d6801",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0186.glb"
+  },
+  {
+    "id": "marginal_s0187",
+    "scan": "s0187",
+    "folio": "105r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "1f031f283ab07ad7ead14041fd836861f330eb4f588166358f36f5da234d3405",
+    "source_width": 2662,
+    "source_height": 3771,
+    "model": "res://assets/models/marginal_s0187.glb",
+    "batch": "25",
+    "model_sha256": "58dfefccd5bd5f3186b21a5c5fbafe7895124c885021942c62ca33eb4f100218",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0187.glb"
+  },
+  {
+    "id": "marginal_s0188",
+    "scan": "s0188",
+    "folio": "105v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "a5d20d9cfe43179657491b2e1dc640f223921f48b07a7a11d2fef29a52704579",
+    "source_width": 2663,
+    "source_height": 3701,
+    "model": "res://assets/models/marginal_s0188.glb",
+    "batch": "25",
+    "model_sha256": "9ebf47577118061238c499c464626c844cc85e223b1a982134db35ac3b968dea",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0188.glb"
+  },
+  {
+    "id": "marginal_s0189",
+    "scan": "s0189",
+    "folio": "106r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "c071fdf0ae67a732c1dfb9e2f76900371350b97b4e6d33fcbd684f8117e3af4b",
+    "source_width": 2635,
+    "source_height": 3787,
+    "model": "res://assets/models/marginal_s0189.glb",
+    "batch": "25",
+    "model_sha256": "4b4d32220d51c8022c54e326e355da449df7c120132fa62ba5929c8fd5722d2c",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0189.glb"
+  },
+  {
+    "id": "marginal_s0190",
+    "scan": "s0190",
+    "folio": "106v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "abb6fb64407c3cffcb63c27dafd11c9bbec437e36a5a2597591f8c9413feb60a",
+    "source_width": 2670,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0190.glb",
+    "batch": "25",
+    "model_sha256": "7c673d1a45e27a6b62a188efb26ff74b10e954e3d798fb82097b4d326985668f",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0190.glb"
+  },
+  {
+    "id": "marginal_s0191",
+    "scan": "s0191",
+    "folio": "107r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "7f9197ac6e419b4d2e4852f1b6fc9aa6159f96fe6c8c59dc1156f5179ecba6a1",
+    "source_width": 2641,
+    "source_height": 3787,
+    "model": "res://assets/models/marginal_s0191.glb",
+    "batch": "25",
+    "model_sha256": "275f102ca42442d323a5d5edaf5eafbe7a1561e7de18a10cd44c2d72089462a7",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0191.glb"
+  },
+  {
+    "id": "marginal_s0192",
+    "scan": "s0192",
+    "folio": "107v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "8103c5e8dbf410bfe722abe41574be9e336df16c603832d13a57ec448716d1a6",
+    "source_width": 2689,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0192.glb",
+    "batch": "25",
+    "model_sha256": "d2b657776bc0faaea9214fe612c9b93db1cc766d100ac90b90e5b6ec50443d19",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0192.glb"
+  },
+  {
+    "id": "marginal_s0193",
+    "scan": "s0193",
+    "folio": "108r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "099b9a2c1e9bf0817bd461aa2b9c9c0fe4dbacaa6adaa39352fc27a5781a18ee",
+    "source_width": 2641,
+    "source_height": 3787,
+    "model": "res://assets/models/marginal_s0193.glb",
+    "batch": "25",
+    "model_sha256": "f1c14f1f4429deed70adb77e7343f67e24ba8ed04d52b8f286ddcad4679a6272",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0193.glb"
+  },
+  {
+    "id": "marginal_s0194",
+    "scan": "s0194",
+    "folio": "108v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "fb60d8fdb67ddebf5c908e210cd5885da8d1fa9dd8bf84da03d72077395d42b5",
+    "source_width": 2649,
+    "source_height": 3706,
+    "model": "res://assets/models/marginal_s0194.glb",
+    "batch": "25",
+    "model_sha256": "2b1b477a0c1945cbf29697c8775b76e4062954e185479812d4660cdebf8abe4f",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0194.glb"
+  },
+  {
+    "id": "marginal_s0195",
+    "scan": "s0195",
+    "folio": "111r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "f2e5e0c503573b682209ceb23d74cafa9451e1e6694ca6e0ab65d1a6dcc39fdb",
+    "source_width": 2622,
+    "source_height": 3783,
+    "model": "res://assets/models/marginal_s0195.glb",
+    "batch": "25",
+    "model_sha256": "c2cf87e35c1b70f1375fdc35cc389b2089872543132122e81ab21eb750995285",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0195.glb"
+  },
+  {
+    "id": "marginal_s0196",
+    "scan": "s0196",
+    "folio": "111v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "3627fe87d7d3dfa001f20277625388165f6ae790a98a86e949bbb36c995a35b9",
+    "source_width": 2666,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0196.glb",
+    "batch": "26",
+    "model_sha256": "071d20007ea898603febd5d5170d1ccc6b5886826583be99c12117c41a38f804",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0196.glb"
+  },
+  {
+    "id": "marginal_s0197",
+    "scan": "s0197",
+    "folio": "112r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "a2c0924f8816e477d9f20ceaa935592c95aad40a505e81c7027ef1438f3eafd0",
+    "source_width": 2602,
+    "source_height": 3787,
+    "model": "res://assets/models/marginal_s0197.glb",
+    "batch": "26",
+    "model_sha256": "5a767ec37373d6df08bac7d51e2a84dfa70713d44a328618192cf05b48a57048",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0197.glb"
+  },
+  {
+    "id": "marginal_s0198",
+    "scan": "s0198",
+    "folio": "112v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "4ef226569ef778e7961c6d3a7ff113a64e2766166131c1103a1afc64219d9157",
+    "source_width": 2664,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0198.glb",
+    "batch": "26",
+    "model_sha256": "980f3033b70ce499e747422d8aea32b4cae46d5f8b97b838ce864455c337954b",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0198.glb"
+  },
+  {
+    "id": "marginal_s0199",
+    "scan": "s0199",
+    "folio": "113r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "6bf8bf2614a4777d4a9dd843bd2a910a85a255f5122f62de2fa8ec15cd1841b2",
+    "source_width": 2582,
+    "source_height": 3787,
+    "model": "res://assets/models/marginal_s0199.glb",
+    "batch": "26",
+    "model_sha256": "70829f28d8f2d2bf59be4e909ef9070b7cef249e012afa75841e23a1a789b992",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0199.glb"
+  },
+  {
+    "id": "marginal_s0200",
+    "scan": "s0200",
+    "folio": "113v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "396352719995acbbea9704024b72707dbf867811a99a48604e0d69d780d7fe67",
+    "source_width": 2666,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0200.glb",
+    "batch": "26",
+    "model_sha256": "a2d95eb36ea36eb42ba04298fba7fc0a97fb0467e33a3a92eaa6946bd9153aab",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0200.glb"
+  },
+  {
+    "id": "marginal_s0201",
+    "scan": "s0201",
+    "folio": "114r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "f0560783650ea1fa590d1dac025ff6b22d250b6dd828872e0a52c8c2ce70f470",
+    "source_width": 2599,
+    "source_height": 3787,
+    "model": "res://assets/models/marginal_s0201.glb",
+    "batch": "26",
+    "model_sha256": "91b4fc1cbd3299a5f0c2083b2e0188ac4cc9e00627e6ab90b033e266d304aa29",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0201.glb"
+  },
+  {
+    "id": "marginal_s0202",
+    "scan": "s0202",
+    "folio": "114v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "d6566160c2326f35770d0d3b3291fc4f30f6049969adf64f98387f6b453d518d",
+    "source_width": 2671,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0202.glb",
+    "batch": "26",
+    "model_sha256": "06834804b6b14a272a34482a65e816eed71948c2b06438c4ef342b5e02abd8fb",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0202.glb"
+  },
+  {
+    "id": "marginal_s0203",
+    "scan": "s0203",
+    "folio": "115r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "a86f91588bfabded698cb705ac6cd4a9d71bb0efbcac736e2303cf9fc07f5908",
+    "source_width": 2584,
+    "source_height": 3786,
+    "model": "res://assets/models/marginal_s0203.glb",
+    "batch": "26",
+    "model_sha256": "6f93d57c4826adab424b456ea013c74d5000208f01a1591dcdbaee8107f6556b",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0203.glb"
+  },
+  {
+    "id": "marginal_s0204",
+    "scan": "s0204",
+    "folio": "115v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "2122a49cedd0b7feef0ad8fa37961c678ebb02d2b125105f09be4e8255b767e0",
+    "source_width": 2676,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0204.glb",
+    "batch": "26",
+    "model_sha256": "9b915361ca36e603bea98f6783b3ebc2e2f35a5137597ca3026f2c0bea6754a0",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0204.glb"
+  },
+  {
+    "id": "marginal_s0205",
+    "scan": "s0205",
+    "folio": "116r",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "370c16a366a90197afb1d5a9e28833c95b47b879f3f5a119128656463c9d3e8f",
+    "source_width": 2559,
+    "source_height": 3787,
+    "model": "res://assets/models/marginal_s0205.glb",
+    "batch": "26",
+    "model_sha256": "7796c6263b475c1f78beab51e25048848f9949cb8869b5a41976d53348f90609",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0205.glb"
+  },
+  {
+    "id": "marginal_s0206",
+    "scan": "s0206",
+    "folio": "116v",
+    "category": "Tekst i drobne znaki · relief",
+    "description": "Relief całej strony obejmuje drobne znaki. Nie jest katalogiem ręcznie rozdzielonych rysunków.",
+    "status": "CANDIDATE_SOURCE_PROJECTED",
+    "source_sha256": "8ce4862c123bfce98f83ff9ee5ea1a77efa88f00aa30c6d0049df9e9db0e13ee",
+    "source_width": 2686,
+    "source_height": 3697,
+    "model": "res://assets/models/marginal_s0206.glb",
+    "batch": "27",
+    "model_sha256": "f7211bd13d4303ecac1d9f810bcf45da4e6bec0afc3708c5451cfbc5e63e8812",
+    "contour_verified": false,
+    "depth_inferred": true,
+    "display_model": "res://assets/models/marginal_s0206.glb"
+  },
+  {
+    "id": "detail_f66r_figure",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Postać w dolnym marginesie; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_figure.glb",
+    "display_model": "res://assets/models/detail_f66r_figure.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.105,
+      0.864,
+      0.246,
+      0.959
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "42fbbddc06fbb539412afafb56085047d3998e6ff01e7a0da667710e7c1fbdbf"
+  },
+  {
+    "id": "detail_f66r_vessel",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Mała forma naczyniowa obok postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_vessel.glb",
+    "display_model": "res://assets/models/detail_f66r_vessel.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.037,
+      0.925,
+      0.073,
+      0.956
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "63e47e3ce913a37b365865e4e326b962b8df8952a32829252f7d95415b50ae9e"
+  },
+  {
+    "id": "detail_f66r_round_1",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Kolisty detal przy postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_round_1.glb",
+    "display_model": "res://assets/models/detail_f66r_round_1.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.0725,
+      0.9055000000000001,
+      0.09949999999999999,
+      0.9325
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "15423f0da37da7bf390b8e9e89f8b0f2a157d613cfa6c5d44a3d0423d660fc8c"
+  },
+  {
+    "id": "detail_f66r_round_2",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Kolisty detal przy postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_round_2.glb",
+    "display_model": "res://assets/models/detail_f66r_round_2.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.09,
+      0.892,
+      0.126,
+      0.928
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "f0208e092e450e62a536793bb7536b53ccf9f42fbb5f5f2efb11cfd5a838a43d"
+  },
+  {
+    "id": "detail_f116v_animal",
+    "scan": "s0206",
+    "folio": "116v",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Drobna sylwetka zwierzęca w lewym marginesie; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f116v_animal.glb",
+    "display_model": "res://assets/models/detail_f116v_animal.glb",
+    "batch": "28",
+    "source_sha256": "8ce4862c123bfce98f83ff9ee5ea1a77efa88f00aa30c6d0049df9e9db0e13ee",
+    "source_bbox_norm": [
+      0.12,
+      0.115,
+      0.19,
+      0.165
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "632eec68ce157bb3c1d3cc0cec2f1f7457313a53f082d448399e6b708d2ea456"
+  },
+  {
+    "id": "detail_f116v_figure",
+    "scan": "s0206",
+    "folio": "116v",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Postać poniżej sylwetki zwierzęcej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f116v_figure.glb",
+    "display_model": "res://assets/models/detail_f116v_figure.glb",
+    "batch": "28",
+    "source_sha256": "8ce4862c123bfce98f83ff9ee5ea1a77efa88f00aa30c6d0049df9e9db0e13ee",
+    "source_bbox_norm": [
+      0.117,
+      0.168,
+      0.203,
+      0.26
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "d022b6abddc182f06c284a05b8662237d998d380dfd81542804e1867812795d7"
+  },
+  {
+    "id": "detail_f86v_NW",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa NW; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_NW.glb",
+    "display_model": "res://assets/models/detail_f86v_NW.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.486,
+      0.033,
+      0.657,
+      0.3
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "4833d47097de2fd8b9170846cfe0b3531f0810d65a72f95f3bf11bbfcc82c9b0"
+  },
+  {
+    "id": "detail_f86v_NE",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa NE; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_NE.glb",
+    "display_model": "res://assets/models/detail_f86v_NE.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.79,
+      0.045,
+      0.973,
+      0.293
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "97bc5732045880f7f09f297e127ea5a9c3dd4cf550b41d3416994227a1a96163"
+  },
+  {
+    "id": "detail_f86v_SW",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa SW; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_SW.glb",
+    "display_model": "res://assets/models/detail_f86v_SW.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.471,
+      0.633,
+      0.683,
+      0.976
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "31163c38344cb63b627ce1ed6eafebfe0ad7cce023c17bcdc6321705bc3a5679"
+  },
+  {
+    "id": "detail_f86v_SE",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa SE; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_SE.glb",
+    "display_model": "res://assets/models/detail_f86v_SE.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.778,
+      0.565,
+      0.961,
+      0.975
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "e54e63145e06900d89f616833a0c909025ddbacda9b8c8c497ab75c15d017e40"
   }
 ]

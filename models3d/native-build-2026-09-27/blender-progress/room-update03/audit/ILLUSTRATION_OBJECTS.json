@@ -1,0 +1,222 @@
+[
+  {
+    "object_id": "detail_f66r_figure",
+    "parent_id": "s0119",
+    "folio": "66r",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "bbox_norm": [
+      0.105,
+      0.864,
+      0.246,
+      0.959
+    ],
+    "bbox_px": [
+      293,
+      3203,
+      687,
+      3555
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f66r_figure.glb",
+    "note": "Postać w dolnym marginesie; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f66r_vessel",
+    "parent_id": "s0119",
+    "folio": "66r",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "bbox_norm": [
+      0.037,
+      0.925,
+      0.073,
+      0.956
+    ],
+    "bbox_px": [
+      103,
+      3429,
+      204,
+      3544
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f66r_vessel.glb",
+    "note": "Mała forma naczyniowa obok postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f66r_round_1",
+    "parent_id": "s0119",
+    "folio": "66r",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "bbox_norm": [
+      0.0725,
+      0.9055000000000001,
+      0.09949999999999999,
+      0.9325
+    ],
+    "bbox_px": [
+      202,
+      3357,
+      278,
+      3457
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f66r_round_1.glb",
+    "note": "Kolisty detal przy postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f66r_round_2",
+    "parent_id": "s0119",
+    "folio": "66r",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "bbox_norm": [
+      0.09,
+      0.892,
+      0.126,
+      0.928
+    ],
+    "bbox_px": [
+      251,
+      3307,
+      352,
+      3440
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f66r_round_2.glb",
+    "note": "Kolisty detal przy postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f116v_animal",
+    "parent_id": "s0206",
+    "folio": "116v",
+    "source_sha256": "8ce4862c123bfce98f83ff9ee5ea1a77efa88f00aa30c6d0049df9e9db0e13ee",
+    "bbox_norm": [
+      0.12,
+      0.115,
+      0.19,
+      0.165
+    ],
+    "bbox_px": [
+      322,
+      425,
+      510,
+      610
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f116v_animal.glb",
+    "note": "Drobna sylwetka zwierzęca w lewym marginesie; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f116v_figure",
+    "parent_id": "s0206",
+    "folio": "116v",
+    "source_sha256": "8ce4862c123bfce98f83ff9ee5ea1a77efa88f00aa30c6d0049df9e9db0e13ee",
+    "bbox_norm": [
+      0.117,
+      0.168,
+      0.203,
+      0.26
+    ],
+    "bbox_px": [
+      314,
+      621,
+      545,
+      961
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f116v_figure.glb",
+    "note": "Postać poniżej sylwetki zwierzęcej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f86v_NW",
+    "parent_id": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "bbox_norm": [
+      0.486,
+      0.033,
+      0.657,
+      0.3
+    ],
+    "bbox_px": [
+      2380,
+      125,
+      3217,
+      1136
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f86v_NW.glb",
+    "note": "Forma przepływowa NW; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f86v_NE",
+    "parent_id": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "bbox_norm": [
+      0.79,
+      0.045,
+      0.973,
+      0.293
+    ],
+    "bbox_px": [
+      3869,
+      170,
+      4765,
+      1110
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f86v_NE.glb",
+    "note": "Forma przepływowa NE; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f86v_SW",
+    "parent_id": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "bbox_norm": [
+      0.471,
+      0.633,
+      0.683,
+      0.976
+    ],
+    "bbox_px": [
+      2306,
+      2398,
+      3345,
+      3697
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f86v_SW.glb",
+    "note": "Forma przepływowa SW; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  },
+  {
+    "object_id": "detail_f86v_SE",
+    "parent_id": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "bbox_norm": [
+      0.778,
+      0.565,
+      0.961,
+      0.975
+    ],
+    "bbox_px": [
+      3810,
+      2140,
+      4706,
+      3693
+    ],
+    "class": "candidate_marginal_or_flow_form",
+    "status": "CANDIDATE_DEPTH",
+    "model": "res://assets/models/detail_f86v_SE.glb",
+    "note": "Forma przepływowa SE; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne."
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "detail_f66r_figure",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Postać w dolnym marginesie; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_figure.glb",
+    "display_model": "res://assets/models/detail_f66r_figure.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.105,
+      0.864,
+      0.246,
+      0.959
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "42fbbddc06fbb539412afafb56085047d3998e6ff01e7a0da667710e7c1fbdbf"
+  },
+  {
+    "id": "detail_f66r_vessel",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Mała forma naczyniowa obok postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_vessel.glb",
+    "display_model": "res://assets/models/detail_f66r_vessel.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.037,
+      0.925,
+      0.073,
+      0.956
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "63e47e3ce913a37b365865e4e326b962b8df8952a32829252f7d95415b50ae9e"
+  },
+  {
+    "id": "detail_f66r_round_1",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Kolisty detal przy postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_round_1.glb",
+    "display_model": "res://assets/models/detail_f66r_round_1.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.0725,
+      0.9055000000000001,
+      0.09949999999999999,
+      0.9325
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "15423f0da37da7bf390b8e9e89f8b0f2a157d613cfa6c5d44a3d0423d660fc8c"
+  },
+  {
+    "id": "detail_f66r_round_2",
+    "scan": "s0119",
+    "folio": "66r",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Kolisty detal przy postaci; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f66r_round_2.glb",
+    "display_model": "res://assets/models/detail_f66r_round_2.glb",
+    "batch": "28",
+    "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+    "source_bbox_norm": [
+      0.09,
+      0.892,
+      0.126,
+      0.928
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "f0208e092e450e62a536793bb7536b53ccf9f42fbb5f5f2efb11cfd5a838a43d"
+  },
+  {
+    "id": "detail_f116v_animal",
+    "scan": "s0206",
+    "folio": "116v",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Drobna sylwetka zwierzęca w lewym marginesie; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f116v_animal.glb",
+    "display_model": "res://assets/models/detail_f116v_animal.glb",
+    "batch": "28",
+    "source_sha256": "8ce4862c123bfce98f83ff9ee5ea1a77efa88f00aa30c6d0049df9e9db0e13ee",
+    "source_bbox_norm": [
+      0.12,
+      0.115,
+      0.19,
+      0.165
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "632eec68ce157bb3c1d3cc0cec2f1f7457313a53f082d448399e6b708d2ea456"
+  },
+  {
+    "id": "detail_f116v_figure",
+    "scan": "s0206",
+    "folio": "116v",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Postać poniżej sylwetki zwierzęcej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f116v_figure.glb",
+    "display_model": "res://assets/models/detail_f116v_figure.glb",
+    "batch": "28",
+    "source_sha256": "8ce4862c123bfce98f83ff9ee5ea1a77efa88f00aa30c6d0049df9e9db0e13ee",
+    "source_bbox_norm": [
+      0.117,
+      0.168,
+      0.203,
+      0.26
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "d022b6abddc182f06c284a05b8662237d998d380dfd81542804e1867812795d7"
+  },
+  {
+    "id": "detail_f86v_NW",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa NW; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_NW.glb",
+    "display_model": "res://assets/models/detail_f86v_NW.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.486,
+      0.033,
+      0.657,
+      0.3
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "4833d47097de2fd8b9170846cfe0b3531f0810d65a72f95f3bf11bbfcc82c9b0"
+  },
+  {
+    "id": "detail_f86v_NE",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa NE; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_NE.glb",
+    "display_model": "res://assets/models/detail_f86v_NE.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.79,
+      0.045,
+      0.973,
+      0.293
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "97bc5732045880f7f09f297e127ea5a9c3dd4cf550b41d3416994227a1a96163"
+  },
+  {
+    "id": "detail_f86v_SW",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa SW; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_SW.glb",
+    "display_model": "res://assets/models/detail_f86v_SW.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.471,
+      0.633,
+      0.683,
+      0.976
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "31163c38344cb63b627ce1ed6eafebfe0ad7cce023c17bcdc6321705bc3a5679"
+  },
+  {
+    "id": "detail_f86v_SE",
+    "scan": "s0157",
+    "folio": "86v  part   part of 85-86 foldout",
+    "category": "Uzupełnienia · rysunki marginalne",
+    "description": "Forma przepływowa SE; ornament i kontury w teksturze źródłowej; ręcznie wskazany obszar źródła. Kształt przestrzenny przybliżony, tył i głębia hipotetyczne.",
+    "model": "res://assets/models/detail_f86v_SE.glb",
+    "display_model": "res://assets/models/detail_f86v_SE.glb",
+    "batch": "28",
+    "source_sha256": "c3f9c2b497fb1ccbf9f6f0e10b240cbd79625165112a37470c3b509d86689616",
+    "source_bbox_norm": [
+      0.778,
+      0.565,
+      0.961,
+      0.975
+    ],
+    "status": "CANDIDATE_VOLUME",
+    "contour_verified": false,
+    "model_sha256": "e54e63145e06900d89f616833a0c909025ddbacda9b8c8c497ab75c15d017e40"
+  }
+]

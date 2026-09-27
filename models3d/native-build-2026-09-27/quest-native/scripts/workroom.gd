@@ -46,6 +46,10 @@ var record_time := 0.0
 var note_busy := false
 var room_index := 0
 var room_names := ["Pracownia", "Ogród", "Hydraulika", "Diagramy", "Obserwatorium", "Naczynia"]
+var compound: Node3D
+var probe: Node3D
+var fade: Node3D
+var teleporting:=false
 var tarot: Node3D
 var gallery: Node3D
 var drawing := false
@@ -96,11 +100,14 @@ func _ready():
 	tarot = load("res://scripts/tarot_table.gd").new(); add_child(tarot); tarot.setup(self)
 	gallery = Node3D.new(); gallery.name = "GaleriaZrodel"; add_child(gallery)
 	_build_gallery()
+	fade=load("res://addons/godot-xr-tools/effects/fade.tscn").instantiate();camera.add_child(fade)
+	probe=load("res://scripts/color_probe.gd").new();add_child(probe);probe.setup(self)
+	compound=load("res://scripts/compound.gd").new();add_child(compound);compound.setup(self)
 	_build_room()
 	_refresh_menu()
 	_choose(0)
 	if FileAccess.file_exists(SAVE): restore_workspace(JSON.parse_string(FileAccess.get_file_as_string(SAVE)))
-	if room_index==5:origin.position.x=10;place_menu()
+	origin.position=compound.SPAWNS[room_index];place_menu()
 	say("Spust: wybierz · chwyt: podnieś · A/X: 180° · B/Y: panel")
 	if "--smoke" in OS.get_cmdline_user_args(): _smoke()
 	if "--capture" in OS.get_cmdline_user_args(): _capture_test()
@@ -120,32 +127,28 @@ func say(text: String):
 	status.text = text
 
 func _build_room():
-	for child in room.get_children(): room.remove_child(child); child.queue_free()
-	var archive := room_index == 0 or room_index == 5
-	if archive and ResourceLoader.exists("res://assets/room/archive.glb"):
-		room.add_child(load("res://assets/room/archive.glb").instantiate())
-	else:
-		var colors := [Color("263548"), Color("28443a"), Color("263f50"), Color("392f48"), Color("18253d")]
-		box(room, Vector3(0, -0.06, -1), Vector3(14, 0.1, 14), colors[mini(room_index,4)])
-		box(room, Vector3(0, 1.65, -5), Vector3(14, 3.4, 0.1), colors[mini(room_index,4)].darkened(0.35))
-		box(room, Vector3(0, .82, -1.9), Vector3(2.3,.08,1.1), Color("6b5240"))
-		var title := label(room_names[room_index].to_upper(), 56); title.position = Vector3(0, 2.5, -4.85); room.add_child(title)
-	room.visible = not passthrough
-	var offset:=10.0 if room_index==5 else 0.0
-	heading.position.x=offset;status.position.x=offset;scan_panel.position.x=offset+1.5;preview.position.x=offset
-	if tarot:
-		tarot.visible = archive
-		for body in tarot.find_children("*","StaticBody3D",true,false): body.collision_layer = 1 if archive else 0
-	if gallery:
-		gallery.visible = archive
-		for body in gallery.find_children("*","StaticBody3D",true,false): body.collision_layer = 1 if archive else 0
+	if room.get_child_count()==0:room.add_child(load("res://assets/room/compound.glb").instantiate())
+	room.visible=not passthrough
+	_position_workspace()
 
-func switch_room(index: int, move := true):
-	_release_all(); room_index = clampi(index,0,room_names.size()-1); _build_room()
+func _position_workspace():
+	var pos:Vector3=compound.SPAWNS[room_index] if compound else Vector3.ZERO
+	heading.position=pos+Vector3(0,2.4,-2.5);status.position=pos+Vector3(0,.82,-1.3);scan_panel.position=pos+Vector3(1.5,1.65,-1.7);preview.position=pos
+	if compound and compound.active_zone!=room_index:compound.refresh_zone(room_index)
+
+func switch_room(index:int,move:=true):
+	if teleporting:return
+	_release_all();room_index=clampi(index,0,room_names.size()-1)
 	if move:
-		origin.position = Vector3(10 if room_index==5 else 0,0,0); origin.rotation.y = 0
+		teleporting=true
+		var tween=create_tween();tween.tween_method(func(alpha):fade.set_fade_level(self,Color(0,0,0,alpha)),0.0,1.0,.12)
+		await tween.finished
+		var head_offset:=camera.position.rotated(Vector3.UP,origin.rotation.y);origin.rotation.y=0
+		origin.position=compound.SPAWNS[room_index]-Vector3(camera.position.x,0,camera.position.z)
 		place_menu()
-	_refresh_menu(); save_workspace()
+		var incoming=create_tween();incoming.tween_method(func(alpha):fade.set_fade_level(self,Color(0,0,0,alpha)),1.0,0.0,.16)
+		await incoming.finished;teleporting=false
+	_build_room();_refresh_menu();save_workspace()
 
 func _build_gallery():
 	var vessels: Array = catalog.filter(func(c):return c.get("id", "").begins_with("vessel_"))
@@ -174,13 +177,13 @@ func _add_gallery_colliders(root: Node3D, meta: Dictionary):
 func _take_gallery(body, hand: int):
 	if exhibits.find_children("*","Node3D",true,false).filter(func(n):return n.has_meta("source")).size()>=LIMIT: say("Limit 12 modeli roboczych");return
 	checkpoint();var meta: Dictionary=body.get_meta("gallery_source");var object:=_new_exhibit(meta,load(meta.model))
-	object.global_position=body.global_position
+	object.global_position=controllers[hand].global_position-controllers[hand].global_basis.z*.45-Vector3(0,.25,0)
 	selected=object;_grab(object,hand);say("Kopia do pracy · f"+meta.folio)
 
 func _refresh_menu():
 	for n in menu.get_children(): menu.remove_child(n); n.queue_free()
 	var title := label(mode + " · " + room_names[room_index], 28); title.position.y = 0.78; menu.add_child(title)
-	var tabs := ["Katalog", "Obiekt", "Badania", "Pokoje", "Tarot"]
+	var tabs := ["Katalog", "Obiekt", "Badania", "Pokoje", "Tarot", "Kolory"]
 	for j in range(tabs.size()): _menu_button(tabs[j], Vector3((j % 2 - 0.5) * 0.52, 0.57 - (j / 2) * 0.14, 0), func(): mode = tabs[j]; _refresh_menu())
 	var actions: Array = []
 	match mode:
@@ -190,12 +193,16 @@ func _refresh_menu():
 			actions = [["Części" if not pieces_mode else "Cały model", func(): pieces_mode = not pieces_mode; _refresh_menu()], ["Obrót 180°", func(): rotate_selection(Vector3.UP, PI)], ["X +15°", func(): rotate_selection(Vector3.RIGHT, PI/12)], ["Y +15°", func(): rotate_selection(Vector3.UP, PI/12)], ["Z +15°", func(): rotate_selection(Vector3.BACK, PI/12)], ["Większy ×1.1", func(): scale_selection(1.1)], ["Mniejszy ÷1.1", func(): scale_selection(1.0/1.1)], ["Oddziel część", detach_selected], ["Przypnij bazę", pin_selection], ["Połącz z bazą", join_selected], ["Cofnij", undo], ["Zapisz układ", save_workspace]]
 		"Badania":
 			actions = [["Zakończ głos" if recording else "Zdjęcie + głos", toggle_recording], ["Zrób zdjęcie", take_note], ["Pióro: WŁ" if drawing else "Pióro: WYŁ", func(): drawing = not drawing; _refresh_menu()], ["Zapisz szkic", take_note], ["VR / otoczenie", toggle_passthrough], ["Własny widok", place_menu], ["Otwórz atlas", open_atlas], ["Notatki: folder", func(): say("Notatki lokalnie: Android/data/pl.manuskrypt.quest/files/notes")]]
+		"Kolory":
+			actions=probe.menu_actions()
 		"Tarot":
 			actions = tarot.menu_actions()
 		"Pokoje":
 			for i in range(room_names.size()):
 				var index := i
 				actions.append([room_names[i], func(): switch_room(index)])
+			actions.append(["◀ Wystawa",func():compound.change_page(-1)])
+			actions.append(["Wystawa ▶",func():compound.change_page(1)])
 			actions.append(["Zapisz układ", save_workspace])
 	for i in range(actions.size()):
 		_menu_button(actions[i][0], Vector3((i % 2 - 0.5) * 0.52, 0.06 - (i / 2) * 0.145, 0), actions[i][1])
@@ -316,13 +323,11 @@ func _process(dt: float):
 	_update_hover()
 	if xr and xr.is_initialized():
 		var joy := controllers[0].get_vector2("primary")
-		if joy.length() > 0.2 and not hands[0]:
+		if joy.length() > 0.2 and not hands[0] and not teleporting:
 			var forward := -camera.global_basis.z; forward.y = 0; forward = forward.normalized()
 			var previous:=origin.position
 			origin.position += (camera.global_basis.x * joy.x + forward * joy.y) * dt * 1.1
-			if room_index==0 or room_index==5:
-				origin.position.x=clampf(origin.position.x,-4.5,14.5);origin.position.z=clampf(origin.position.z,-5.4,3.4)
-				if absf(origin.position.x-5)<.4 and (origin.position.z < -2.35 or origin.position.z > .05):origin.position=previous
+			if not compound.walkable(camera.global_position):origin.position=previous
 		var turn := controllers[1].get_vector2("primary")
 		if absf(turn.x) < 0.2: turn_lock = false
 		if absf(turn.x) > 0.65 and not turn_lock and not hands[1]:
@@ -335,6 +340,8 @@ func _update_hover():
 	for i in range(2):
 		if rays[i].is_colliding():
 			var b = rays[i].get_collider()
+			if b and b.has_meta("color_probe"):
+				hover_label.text="Spust: próbka "+("A" if probe.target==0 else "B");hover_label.global_position=rays[i].get_collision_point()+Vector3(0,.1,0);hover_label.visible=true;return
 			if b and b.has_meta("tarot"):
 				var card: Node3D=b.get_meta("tarot");hover_label.text=tarot.by_id[card.get_meta("tarot_card")].name
 				hover_label.global_position=rays[i].get_collision_point()+Vector3(0,.13,0);hover_label.visible=true;return
@@ -361,7 +368,9 @@ func _button(action: String, hand: int):
 	if action == "trigger_click":
 		if drawing and hand == 1:
 			_begin_stroke(); return
-		if rays[hand].is_colliding(): _select_body(rays[hand].get_collider())
+		if rays[hand].is_colliding():
+			if rays[hand].get_collider().has_meta("color_probe"):probe.sample_at(rays[hand].get_collision_point())
+			else:_select_body(rays[hand].get_collider())
 	if action == "grip_click" and rays[hand].is_colliding():
 		var body = rays[hand].get_collider()
 		if body and body.has_meta("tarot"):

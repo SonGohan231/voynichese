@@ -1,0 +1,107 @@
+{
+  "name": "Manuskrypt_Quest_0.3.0.apk",
+  "size": 1630778554,
+  "parts": [
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part01",
+      "size": 83886080,
+      "sha256": "accb9ca5771447ef1ead9b08f98e4f7451b35e7fb5c5c0725fb40138213f117f"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part02",
+      "size": 83886080,
+      "sha256": "c534e70beedb92a9bf87cbaf3268271731b3cd0747c20e656c92878c52712673"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part03",
+      "size": 83886080,
+      "sha256": "723a287a1075da9f57d0a123a2d05b803689f9fc4debcb642831dc9e4c554192"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part04",
+      "size": 83886080,
+      "sha256": "e0c98856a6c016372f33fe8477815153b3b69a12421d73edc5f1b6e2e069af28"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part05",
+      "size": 83886080,
+      "sha256": "1213f858cae82d9a71b08c8c34b7e4e8f9b12979f6305cbd810fe9c2484aab6d"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part06",
+      "size": 83886080,
+      "sha256": "1faa8796c5902ea8d0aa1c27de31f971ec38842e9c94333dc50ed47f21a3f133"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part07",
+      "size": 83886080,
+      "sha256": "947c12870da41ac50f89a705a240cb09b52ad4c24604a39d25691d3671815aa7"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part08",
+      "size": 83886080,
+      "sha256": "e8a52ba63f5b75f02959a94c7b3c35b646187400a0b704d0987a4c5986433193"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part09",
+      "size": 83886080,
+      "sha256": "09ba07582ed1ecff3d0a7aecc4a237c8f7052541314288a9882cbfed45a451d1"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part10",
+      "size": 83886080,
+      "sha256": "f04c49240022efd4587f69429dd4c27ff57348cefb92fd5a44aa21432a89da85"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part11",
+      "size": 83886080,
+      "sha256": "93bc535dbd7b2180fc2539531a85f1cdccd4b32e6923cda364efdfdff782ee36"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part12",
+      "size": 83886080,
+      "sha256": "77268109976910aca10e0b9230751ccfcbf4c9876246775cf1c479575a81ba79"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part13",
+      "size": 83886080,
+      "sha256": "4adfe62240b2427168c0573015ea6c066ae05f4b3c04e24184664891761a98bd"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part14",
+      "size": 83886080,
+      "sha256": "3745f4ca05f350cdd420d933a8ace8c951315d8cca743969acd4b8b6b1df15b0"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part15",
+      "size": 83886080,
+      "sha256": "af76edfe4dde052f6b05c570d70baed5c6e7df67a920eab6e4879044bf9232fc"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part16",
+      "size": 83886080,
+      "sha256": "69fc9176cdf0b56b02561b234456d1922152fae7c3913fc8b089e3aed19f794d"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part17",
+      "size": 83886080,
+      "sha256": "b2c7aea7a10507fbf960e976e868c906c786d6d74fb358f08520204cb1aa6690"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part18",
+      "size": 83886080,
+      "sha256": "95b8fb080365c176870540262c30520c0347357868d758de47029181bd320635"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part19",
+      "size": 83886080,
+      "sha256": "32fa990af379e156ba148c5fbc40d74e5821efdca7999cdefa3a5b062bb2554a"
+    },
+    {
+      "name": "Manuskrypt_Quest_0.3.0.apk.part20",
+      "size": 36943034,
+      "sha256": "977ea6e76285410f47392ed0beba6346eb00952c0a95ca451aa46507bbb11acd"
+    }
+  ],
+  "sha256": "24c5db37b93f6247eaa501e93f96edfe5baf44fa3bedb6290cbd6ee79300807c"
+}

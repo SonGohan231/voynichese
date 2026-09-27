@@ -54,7 +54,7 @@ func menu_actions() -> Array:
 	return [["Podejdź do tarota", goto_table], ["Losuj kartę", draw_next], ["◀ Karta", func(): choose(-1)], ["Karta ▶", func(): choose(1)], ["Kolor / Arkana", cycle_category], ["Dodaj wybraną", draw_chosen], ["Pola: %d" % count, change_layout], ["Odwróć 180°", reverse_selected], ["Interpretuj układ", interpret], ["Tekst ▶", next_reading], ["Tasuj pozostałe", shuffle], ["Zbierz karty", clear_cards]]
 
 func goto_table():
-	app.switch_room(0, false)
+	await app.switch_room(0)
 	app.origin.position = Vector3(3,0,.0); app.origin.rotation.y = 0
 	app.mode = "Tarot"; app.place_menu(); app._refresh_menu()
 

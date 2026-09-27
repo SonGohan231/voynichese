@@ -1,0 +1,219 @@
+{
+  "schema": "game-room.opening-schedule.v1",
+  "roomId": "voynich-compound-03",
+  "primaryArrival": {
+    "openingId": "wejscie_ogrod_Pracownia",
+    "exception": ""
+  },
+  "openings": [
+    {
+      "id": "wejscie_ogrod_Pracownia",
+      "type": "door",
+      "wall": "Pracownia_sciana_X-5",
+      "widthMeters": 2.8,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "wejscie_ogrod",
+      "booleanApplied": true
+    },
+    {
+      "id": "pracownia_naczynia_Pracownia",
+      "type": "door",
+      "wall": "Pracownia_sciana_X5",
+      "widthMeters": 2.8,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "pracownia_naczynia",
+      "booleanApplied": true
+    },
+    {
+      "id": "pracownia_korytarz_Pracownia",
+      "type": "door",
+      "wall": "Pracownia_sciana_Y-4",
+      "widthMeters": 3,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "pracownia_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "pracownia_naczynia_Naczynia",
+      "type": "door",
+      "wall": "Naczynia_sciana_X5",
+      "widthMeters": 2.8,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "pracownia_naczynia",
+      "booleanApplied": true
+    },
+    {
+      "id": "naczynia_hydraulika_Naczynia",
+      "type": "door",
+      "wall": "Naczynia_sciana_X15",
+      "widthMeters": 2.8,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "naczynia_hydraulika",
+      "booleanApplied": true
+    },
+    {
+      "id": "naczynia_korytarz_Naczynia",
+      "type": "door",
+      "wall": "Naczynia_sciana_Y-4",
+      "widthMeters": 3,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "naczynia_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "naczynia_hydraulika_Hydraulika",
+      "type": "door",
+      "wall": "Hydraulika_sciana_X15",
+      "widthMeters": 2.8,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "naczynia_hydraulika",
+      "booleanApplied": true
+    },
+    {
+      "id": "hydraulika_korytarz_Hydraulika",
+      "type": "door",
+      "wall": "Hydraulika_sciana_Y-4",
+      "widthMeters": 3,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "hydraulika_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "ogrod_korytarz_Korytarz",
+      "type": "door",
+      "wall": "Korytarz_sciana_X-5",
+      "widthMeters": 3,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "ogrod_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "diagramy_korytarz_Korytarz",
+      "type": "door",
+      "wall": "Korytarz_sciana_Y-8",
+      "widthMeters": 3,
+      "heightMeters": 3.4,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "diagramy_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "obserwatorium_korytarz_Korytarz",
+      "type": "door",
+      "wall": "Korytarz_sciana_Y-8",
+      "widthMeters": 3,
+      "heightMeters": 3.4,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "obserwatorium_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "pracownia_korytarz_Korytarz",
+      "type": "door",
+      "wall": "Korytarz_sciana_Y-4",
+      "widthMeters": 3,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "pracownia_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "naczynia_korytarz_Korytarz",
+      "type": "door",
+      "wall": "Korytarz_sciana_Y-4",
+      "widthMeters": 3,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "naczynia_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "hydraulika_korytarz_Korytarz",
+      "type": "door",
+      "wall": "Korytarz_sciana_Y-4",
+      "widthMeters": 3,
+      "heightMeters": 3.0,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "hydraulika_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "diagramy_ogrod_Diagramy",
+      "type": "door",
+      "wall": "Diagramy_sciana_X-5",
+      "widthMeters": 3,
+      "heightMeters": 3.4,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "diagramy_ogrod",
+      "booleanApplied": true
+    },
+    {
+      "id": "diagramy_obserwatorium_Diagramy",
+      "type": "door",
+      "wall": "Diagramy_sciana_X15",
+      "widthMeters": 3,
+      "heightMeters": 3.4,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "diagramy_obserwatorium",
+      "booleanApplied": true
+    },
+    {
+      "id": "diagramy_korytarz_Diagramy",
+      "type": "door",
+      "wall": "Diagramy_sciana_Y-8",
+      "widthMeters": 3,
+      "heightMeters": 3.4,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "diagramy_korytarz",
+      "booleanApplied": true
+    },
+    {
+      "id": "diagramy_obserwatorium_Obserwatorium",
+      "type": "door",
+      "wall": "Obserwatorium_sciana_X15",
+      "widthMeters": 3,
+      "heightMeters": 3.4,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "diagramy_obserwatorium",
+      "booleanApplied": true
+    },
+    {
+      "id": "obserwatorium_korytarz_Obserwatorium",
+      "type": "door",
+      "wall": "Obserwatorium_sciana_Y-8",
+      "widthMeters": 3,
+      "heightMeters": 3.4,
+      "depthMeters": 0.28,
+      "thresholdMeters": 0,
+      "destination": "obserwatorium_korytarz",
+      "booleanApplied": true
+    }
+  ]
+}

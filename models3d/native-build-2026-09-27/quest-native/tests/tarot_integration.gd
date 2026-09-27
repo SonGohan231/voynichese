@@ -42,9 +42,9 @@ func run():
 	t._draw("03_empress");t._draw("04_emperor");t.interpret()
 	check(t.reading_pages.size()==6,"Five positions plus sequence summary")
 	check(t.reading_pages[5].contains("Kolejność"),"Ordered synthesis exists")
-	app.switch_room(2);check(not t.visible,"Tarot hidden in other rooms")
-	check(t.find_children("*","StaticBody3D",true,false).all(func(b):return b.collision_layer==0),"Hidden cards cannot intercept rays")
-	app.switch_room(5);check(app.origin.position.x==10,"Pharmacy spawn in separate chamber")
+	await app.switch_room(2);check(t.visible,"Tarot remains physically in connected building")
+	check(t.find_children("*","StaticBody3D",true,false).all(func(b):return b.collision_layer==1),"Tarot colliders remain at their table")
+	await app.switch_room(5);check(absf(app.camera.global_position.x-10)<.001,"Pharmacy spawn in separate chamber")
 	var vmeta=app.catalog.filter(func(c):return c.get("id", "")=="vessel_s0161_02")[0]
 	var v=app._new_exhibit(vmeta,load(vmeta.model));v.position=Vector3(10,1,-1)
 	var saved: Dictionary=app.workspace_data();app.restore_workspace(saved)

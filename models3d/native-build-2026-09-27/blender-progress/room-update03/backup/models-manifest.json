@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Manuskrypt_Blender_Partia21_10_Modeli.zip",
+    "size": 123668675,
+    "sha256": "9bbc47246abc7f7ecc35b3f1320c243b03052f29708f87f6e30052f32164ab23",
+    "parts": [
+      {
+        "name": "Manuskrypt_Blender_Partia21_10_Modeli.zip.part01",
+        "size": 83886080,
+        "sha256": "cbd52ab82c4189ff8062600b4b8e126f58869fb7fe0835e37d69334915c8f724"
+      },
+      {
+        "name": "Manuskrypt_Blender_Partia21_10_Modeli.zip.part02",
+        "size": 39782595,
+        "sha256": "a1bf1ff509bd740afd26b2cf48a595dd5f43452532f5b3f335ffa36973f86d40"
+      }
+    ]
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia22_10_Modeli.zip",
+    "size": 110973559,
+    "sha256": "f4ad4372c11bbba5683613d2c20bddbaf6fd6557084b00483b724f9770b72dcc",
+    "parts": [
+      {
+        "name": "Manuskrypt_Blender_Partia22_10_Modeli.zip.part01",
+        "size": 83886080,
+        "sha256": "83b9a70ee8e04c52ee60f54d55ada9902d0e806d08af01f320f017e6988712e6"
+      },
+      {
+        "name": "Manuskrypt_Blender_Partia22_10_Modeli.zip.part02",
+        "size": 27087479,
+        "sha256": "017cb3672def1e8115d1bbed59d251245f066fabe4e87dff23cdd828d86b6d50"
+      }
+    ]
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia23_10_Modeli.zip",
+    "size": 116019637,
+    "sha256": "cffc31f2a38fb34c409a0f6bc597fab6106bea9013accc2dd1fc44f67cdb31af",
+    "parts": [
+      {
+        "name": "Manuskrypt_Blender_Partia23_10_Modeli.zip.part01",
+        "size": 83886080,
+        "sha256": "5b600a31e67d900ded5738470f12a098c0e16ca941b91b3a29d8668c613fba2d"
+      },
+      {
+        "name": "Manuskrypt_Blender_Partia23_10_Modeli.zip.part02",
+        "size": 32133557,
+        "sha256": "dcddc477b030f4724403a6f1d5de04a522afb395e454859634fe768fb9300e94"
+      }
+    ]
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia24_10_Modeli.zip",
+    "size": 105517045,
+    "sha256": "f2650972c6efb97a7246fa59f25ecedfeb2d34a285ab29acc9b44c527afcdd2c",
+    "parts": [
+      {
+        "name": "Manuskrypt_Blender_Partia24_10_Modeli.zip.part01",
+        "size": 83886080,
+        "sha256": "6dad25eb53123a7e4320b530ff21b5945c594df50e7d860123b6c32ec693c45f"
+      },
+      {
+        "name": "Manuskrypt_Blender_Partia24_10_Modeli.zip.part02",
+        "size": 21630965,
+        "sha256": "247b6311ea5eda022e733fa1c4fb934e462f8aa2e7c4a63ab48c4ea2b03aa362"
+      }
+    ]
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia25_10_Modeli.zip",
+    "size": 97303756,
+    "sha256": "293abfb68d753d05bd50173c4890880d0b4d8a579250cdb1978b0ba2474d37c9",
+    "parts": []
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia26_10_Modeli.zip",
+    "size": 93730020,
+    "sha256": "676229cb3144208f741b76d8c8a2085871a05160ecc09fccaa94b6365b68a056",
+    "parts": []
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia27_1_Modeli.zip",
+    "size": 8703114,
+    "sha256": "9f679efa89b407f2c9e5cc52231ab0b073eed32d6802f475d44cd16a2c2b4728",
+    "parts": []
+  },
+  {
+    "name": "Manuskrypt_Blender_Partia28_10_Modeli.zip",
+    "size": 8739907,
+    "sha256": "6a28f2ca70e482af852341d60ec7b6b2840e4359612052b2c00d31be2d73e6e3",
+    "parts": []
+  }
+]
