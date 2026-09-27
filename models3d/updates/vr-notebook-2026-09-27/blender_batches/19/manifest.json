@@ -1,0 +1,32 @@
+[
+  {
+    "scan": "s0181",
+    "folio": "102v  part",
+    "category": "Małe rośliny i naczynia",
+    "description": "Bryła interpretacyjna rysunku; boki i głębia hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "7332098044c4f6361ee51f14bd98f0a93886fab225de4bc08d592e70bc243eb7",
+    "source_width": 2981,
+    "source_height": 3795,
+    "model": "assets/volume19/s0181.glb",
+    "batch": "19",
+    "model_sha256": "21f687b85e60e21c5786d05a44301196e9fdf3efc5022c3c458a69ef853616b1",
+    "blender_project": "20a90a4f-42db-4cff-9c08-a63816388d21",
+    "blender_revision": 1
+  },
+  {
+    "scan": "s0182",
+    "folio": "102v  part",
+    "category": "Małe rośliny i naczynia",
+    "description": "Bryła interpretacyjna rysunku; boki i głębia hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "1e0d67dbd8939627a18ef2feb3170892c9b795e5e0afd9cfee07dea7d56c93b6",
+    "source_width": 2838,
+    "source_height": 3697,
+    "model": "assets/volume19/s0182.glb",
+    "batch": "19",
+    "model_sha256": "6f0c756b2b722ff0932b90542c8505b2fb89355a15c0480c294e86b05385bcba",
+    "blender_project": "20a90a4f-42db-4cff-9c08-a63816388d21",
+    "blender_revision": 1
+  }
+]

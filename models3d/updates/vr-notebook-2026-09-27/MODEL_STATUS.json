@@ -1,0 +1,225 @@
+{
+  "status": "CANDIDATE_VOLUME_INTERPRETATIONS_NOT_CONTOUR_CERTIFIED",
+  "source_scans": 206,
+  "volume_ensembles": 173,
+  "counts_by_category": {
+    "Diagramy": 9,
+    "Małe rośliny i naczynia": 12,
+    "Rośliny": 125,
+    "Sceny i postacie": 19,
+    "Zodiak": 8
+  },
+  "not_volume_modelled": [
+    {
+      "scan": "s0001",
+      "folio": "Front cover",
+      "category": "Okładki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0002",
+      "folio": "Inside front cover",
+      "category": "Okładki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0003",
+      "folio": "1r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0115",
+      "folio": "58r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0116",
+      "folio": "58v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0119",
+      "folio": "66r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0137",
+      "folio": "76r",
+      "category": "Sceny i postacie",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0155",
+      "folio": "85r  part   part of 85-86 foldout",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0157",
+      "folio": "86v  part   part of 85-86 foldout",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0183",
+      "folio": "103r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0184",
+      "folio": "103v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0185",
+      "folio": "104r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0186",
+      "folio": "104v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0187",
+      "folio": "105r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0188",
+      "folio": "105v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0189",
+      "folio": "106r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0190",
+      "folio": "106v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0191",
+      "folio": "107r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0192",
+      "folio": "107v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0193",
+      "folio": "108r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0194",
+      "folio": "108v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0195",
+      "folio": "111r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0196",
+      "folio": "111v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0197",
+      "folio": "112r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0198",
+      "folio": "112v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0199",
+      "folio": "113r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0200",
+      "folio": "113v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0201",
+      "folio": "114r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0202",
+      "folio": "114v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0203",
+      "folio": "115r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0204",
+      "folio": "115v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0205",
+      "folio": "116r",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    },
+    {
+      "scan": "s0206",
+      "folio": "116v",
+      "category": "Tekst i drobne znaki",
+      "status": "SOURCE_SCAN_AND_RELIEF_ONLY; inspect marginal drawings separately"
+    }
+  ],
+  "verification": {
+    "blender_preview_inspected": true,
+    "quest_device_tested": false,
+    "live_openai_call_tested": false,
+    "individual_drawing_coverage_certified": false
+  },
+  "limitations": [
+    "Depth and backs are conjectural.",
+    "Schematic figures, diagram marker counts, and pharmaceutical specimen contours require manual comparison.",
+    "One scene per scan can contain several drawings; no claim that every drawing is individually faithfully reconstructed.",
+    "33 scans retain scan/relief representations only; covers, text and small marginal marks are not all reconstructed as free-standing objects.",
+    "Generation scripts for batches 14–17 were lost in workspace refresh; canonical editable Blender scenes were recovered from exact committed remote revisions."
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "scan": "s0024",
+    "folio": "11v",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "227bf3f3bff6a17e0691460e89ea374739a84ca5b43de15b2cc2101e67989d32",
+    "source_width": 2825,
+    "source_height": 3775,
+    "model": "assets/volume03/s0024.glb",
+    "batch": "03",
+    "model_sha256": "6df94f59284a1ef8a7ecb5eaaa917789cff6cbcd01fbe03d09a59b3a9ab775d6"
+  },
+  {
+    "scan": "s0025",
+    "folio": "13r",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+    "source_width": 2601,
+    "source_height": 3723,
+    "model": "assets/volume03/s0025.glb",
+    "batch": "03",
+    "model_sha256": "a44d29dab0c8f8780a83dfda32d17747a8ba731a4a5a9cf57936f407ea763f7e"
+  },
+  {
+    "scan": "s0026",
+    "folio": "13v",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "03ef9b2b0b18ae104bdba4eb7dd3f2c91069cd998b33ce9e6336eb4e89a784fa",
+    "source_width": 2812,
+    "source_height": 3770,
+    "model": "assets/volume03/s0026.glb",
+    "batch": "03",
+    "model_sha256": "46cba0412993aaedc052d5d54dd92ab0399152fb1780a60bec38e2f1f0a22851"
+  },
+  {
+    "scan": "s0027",
+    "folio": "14r",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "47f12318b2d7e1523fe36ec72ca5ef81c2c64a5bbdf0617193b2273ce439161c",
+    "source_width": 2662,
+    "source_height": 3739,
+    "model": "assets/volume03/s0027.glb",
+    "batch": "03",
+    "model_sha256": "6e88ec14ff2a0baa9e289687592298ba03dbb093a495474ed83dd4db6605d099"
+  },
+  {
+    "scan": "s0028",
+    "folio": "14v",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "3dfdaf7a16e593da0e1d744bbfa65294f0bbb105d13b05350a3c82c8d8bca16b",
+    "source_width": 2812,
+    "source_height": 3772,
+    "model": "assets/volume03/s0028.glb",
+    "batch": "03",
+    "model_sha256": "7f9d6dc14bb8a65706076d3587f46c7d1932d14e5dc415507acc2df9f06a758b"
+  },
+  {
+    "scan": "s0029",
+    "folio": "15r",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "a3288c515c5f2dea124317a36a63e638d4f1727d97852eb45eede7886f04b899",
+    "source_width": 2648,
+    "source_height": 3729,
+    "model": "assets/volume03/s0029.glb",
+    "batch": "03",
+    "model_sha256": "fb158dd2a1da109132ace6bb1f175a1bee651652447a3b013a2e76af51ec864d"
+  },
+  {
+    "scan": "s0030",
+    "folio": "15v",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "828fd948a091aa1d6da8724f939bac38481ca7d4f23d4f4c154fe57b4ab6367a",
+    "source_width": 2835,
+    "source_height": 3776,
+    "model": "assets/volume03/s0030.glb",
+    "batch": "03",
+    "model_sha256": "670e11187f656d6229cc0c89894ffa764962e5413161e90afb582a9de8dd449f"
+  },
+  {
+    "scan": "s0031",
+    "folio": "16r",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "3d01f01d049b5e2a5b00997eaf1bb4b39954723db8158f37f5f647805f756d2e",
+    "source_width": 2658,
+    "source_height": 3758,
+    "model": "assets/volume03/s0031.glb",
+    "batch": "03",
+    "model_sha256": "4f67c1489a6aec33bd427bd2ac2a71b2f8c36b788ae731a1af558848129e460b"
+  },
+  {
+    "scan": "s0032",
+    "folio": "16v",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "a361e78571455ab185d7e0e9ae6cdbc45b32348ebe02a2f1afdf3776282839f1",
+    "source_width": 2840,
+    "source_height": 3793,
+    "model": "assets/volume03/s0032.glb",
+    "batch": "03",
+    "model_sha256": "67a46e267cca387aa521982d9d24d27e9ac9e2e87b05e6e20a58795f4c07f27a"
+  },
+  {
+    "scan": "s0033",
+    "folio": "17r",
+    "description": "Bryła interpretacyjna rysunku; głębia i tył hipotetyczne.",
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_sha256": "53fde2925bbb438555c1bc3e1f6a60fed73b44ef5c68eea531241e42553882f6",
+    "source_width": 2649,
+    "source_height": 3743,
+    "model": "assets/volume03/s0033.glb",
+    "batch": "03",
+    "model_sha256": "36d8ac180bfd1d3c13ff41ef2f2b269bae832a28e6f6a03b8ba6518a74c7e43e"
+  }
+]

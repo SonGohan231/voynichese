@@ -1,0 +1,182 @@
+[
+  {
+    "scan": "s0004",
+    "folio": "1v",
+    "description": "Rozgałęzione łodygi i owalne liście zielono-ochrowe",
+    "source_sha256": "4c90b1a03587dcef05fd673ea302358fc1c9ad2884d093c9faaee39c7e205d77",
+    "source_dimensions": [
+      2804,
+      3797
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "f5387d471270673496e746821636eda41dac1cc58c1b2b59d7ceed525d7d29f8",
+    "visual_reference_file": "references/s0004.jpg",
+    "visual_reference_sha256": "139fef52a66519dd5392fccc9b302792b37f4fc9f4b2c8fb197b617d0af428b6",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0005",
+    "folio": "2r",
+    "description": "Podzielone liście, trzy główki i zawinięte korzenie",
+    "source_sha256": "9ad1ee866c7cf81e40ab88038444893c8691b253217141bb784fcfab49e4fc4f",
+    "source_dimensions": [
+      2691,
+      3770
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "c089b9e2e176026905080b12ae666f8b9759971bce975e0a5efe3bd108806e6c",
+    "visual_reference_file": "references/s0005.jpg",
+    "visual_reference_sha256": "1718d3d9b4964d6d4faacaee86fb9790802852b312c6bc867c6f84d1a9f66bf2",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0006",
+    "folio": "2v",
+    "description": "Nerkowaty liść i jasny kielich",
+    "source_sha256": "f59ccf208f1d5a12096a8579f93dab2e49a4e306b240b8b21c82a9e873f1d90a",
+    "source_dimensions": [
+      2771,
+      3797
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "687d94888307396da7208cfb8934f3dde42230c92b7eee2f1ccd27a8079e883f",
+    "visual_reference_file": "references/s0006.jpg",
+    "visual_reference_sha256": "eefec30ad153f3d34a970596ad65e17ed6e11e6bb386f47573ce0a6b4254788e",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0007",
+    "folio": "3r",
+    "description": "Czerwono-zielone, wygięte liście",
+    "source_sha256": "679c4a73f2b658c832f8e064eb119c1877d09ce5992b35eb5316eb7b810154d6",
+    "source_dimensions": [
+      2691,
+      3770
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "0e8bb506a8775712ba45d5221736d5274da0c4aac2d1d8a19af082573e5af125",
+    "visual_reference_file": "references/s0007.jpg",
+    "visual_reference_sha256": "363fbf737551aecda03d2f834882d5ed9405c7402ae2f20719af37cebdbd01cd",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0008",
+    "folio": "3v",
+    "description": "Segmentowane kłącze, liście klapowane, niebieski kwiat",
+    "source_sha256": "920add9b9c39e736bd540be666e95ed198516998bf71bf4daf77dbfdfadde3b0",
+    "source_dimensions": [
+      2762,
+      3797
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "7fa3bf9532c987e75027da1ae0262a010f11730537d5e799f3f9f22cdfb3d68d",
+    "visual_reference_file": "references/s0008.jpg",
+    "visual_reference_sha256": "fc82beddd9056b4ca6af8870c59055321c27f724ebd571c956bb3e62a00d07e7",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0009",
+    "folio": "4r",
+    "description": "Drobne liście w rozgałęzionych pędach",
+    "source_sha256": "6f7845f7fc85cd17dab7c3605399ca0bee7f47a05a18d8376b063c922c72602f",
+    "source_dimensions": [
+      2682,
+      3740
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "73597e84471af79d5c3462ae943361180202e858fa27a5d6374411b000075efc",
+    "visual_reference_file": "references/s0009.jpg",
+    "visual_reference_sha256": "a911f6896f4c792ec275e46f6494f1667ab6617a52afb6120a5ef3301c830aa3",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0010",
+    "folio": "4v",
+    "description": "Piętrowe bulwy, sierpowate listki i gwiaździste okółki",
+    "source_sha256": "763035b81f54577cb78cdbc44a849a23ac2c48c929e9ac0026bf5ded6149d9b6",
+    "source_dimensions": [
+      2768,
+      3797
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "beeb0411a58df5180293a5b36ef99bf9089af3ab03954a622703957a84c5222b",
+    "visual_reference_file": "references/s0010.jpg",
+    "visual_reference_sha256": "8b8b22a4aa6e8b4b99a6894878b2f95fcc9907f9d2babff439fc10f1aedcc69b",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0011",
+    "folio": "5r",
+    "description": "Kosz łukowatych liści i zwisający pąk",
+    "source_sha256": "7faed82fdc378c97ab8d987fe718654cc68dee58389062eb12ab91084bd10b29",
+    "source_dimensions": [
+      2636,
+      3723
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "7f554310090fa9aaa009c33034a3eabb8da142c61df9496cdbf430a0b205c60f",
+    "visual_reference_file": "references/s0011.jpg",
+    "visual_reference_sha256": "e9783910a659b2aacd91b7cea2c71689dc166f842c8abeda90d988518f6189d7",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0012",
+    "folio": "5v",
+    "description": "Drobne liście dłoniaste i czerwone kwiaty",
+    "source_sha256": "b42019c7a30adf94da6fbc6086b05a9c796b3da8da71c169dd99aadb355718b8",
+    "source_dimensions": [
+      2759,
+      3797
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "0b90ed4c00f8ee59049794d70734d1c306191e6319e29d04e11bcc6ce5269483",
+    "visual_reference_file": "references/s0012.jpg",
+    "visual_reference_sha256": "72f00d9a9f84ae2324bef7709ba64d09b3bc720622edcf106b148e8cd9c5f252",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  },
+  {
+    "scan": "s0013",
+    "folio": "6r",
+    "description": "Trzy grzebieniaste liście i zielone kwiaty rurkowe",
+    "source_sha256": "b4386ec75cf3e9a240136741568c67f6aee2c389fd71cc2842ca3aa7693531d0",
+    "source_dimensions": [
+      2662,
+      3727
+    ],
+    "status": "CANDIDATE_VOLUME_INTERPRETATION",
+    "source_view": "front -Y in Blender, +Z in glTF",
+    "scale": "exhibition metres, not physical original",
+    "depth": "unpictured sides interpreted",
+    "model_sha256": "07aa3916bec851b81f72a56894134b214339cc2626762c0ddc4e311a8943b7b8",
+    "visual_reference_file": "references/s0013.jpg",
+    "visual_reference_sha256": "31d9eccd9b01f9719eb5e738e2c0c606a7d3ac2fd53664dfd0e8360fb8eb05b4",
+    "visual_reference_quality": "800px derivative used for visual modelling, not native pixel measurement"
+  }
+]
