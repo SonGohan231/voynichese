@@ -1,0 +1,930 @@
+{
+  "completed": 10,
+  "batch_size": 10,
+  "models": [
+    {
+      "id": "vessel_s0161_01",
+      "scan": "s0161",
+      "folio": "88r",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0161_01.glb",
+      "source_sha256": "f1692570508fb83e588b65e3dd2d71404dd7f1c08d2ad3d46ff9d6821e1db8ef",
+      "source_bbox_px": [
+        204,
+        265,
+        598,
+        1290
+      ],
+      "profile_reference_size": [
+        799,
+        1100
+      ],
+      "profile_pixels": [
+        [
+          82,
+          13
+        ],
+        [
+          89,
+          20
+        ],
+        [
+          104,
+          17
+        ],
+        [
+          128,
+          19
+        ],
+        [
+          135,
+          31
+        ],
+        [
+          144,
+          35
+        ],
+        [
+          155,
+          30
+        ],
+        [
+          180,
+          28
+        ],
+        [
+          184,
+          35
+        ],
+        [
+          194,
+          29
+        ],
+        [
+          227,
+          27
+        ],
+        [
+          239,
+          22
+        ],
+        [
+          258,
+          8
+        ],
+        [
+          264,
+          14
+        ],
+        [
+          270,
+          8
+        ],
+        [
+          286,
+          11
+        ],
+        [
+          296,
+          25
+        ],
+        [
+          312,
+          27
+        ],
+        [
+          337,
+          25
+        ],
+        [
+          346,
+          31
+        ],
+        [
+          365,
+          39
+        ],
+        [
+          375,
+          34
+        ]
+      ],
+      "profile_center_x": 112,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "493188dd3cd84620adae565f9a4d410ae51559c23395bf7aa241652fd38cfa96"
+    },
+    {
+      "id": "vessel_s0161_02",
+      "scan": "s0161",
+      "folio": "88r",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0161_02.glb",
+      "source_sha256": "f1692570508fb83e588b65e3dd2d71404dd7f1c08d2ad3d46ff9d6821e1db8ef",
+      "source_bbox_px": [
+        265,
+        1290,
+        625,
+        2339
+      ],
+      "profile_reference_size": [
+        799,
+        1100
+      ],
+      "profile_pixels": [
+        [
+          384,
+          3
+        ],
+        [
+          395,
+          6
+        ],
+        [
+          400,
+          3
+        ],
+        [
+          411,
+          15
+        ],
+        [
+          420,
+          23
+        ],
+        [
+          430,
+          26
+        ],
+        [
+          440,
+          28
+        ],
+        [
+          449,
+          33
+        ],
+        [
+          461,
+          31
+        ],
+        [
+          483,
+          29
+        ],
+        [
+          492,
+          34
+        ],
+        [
+          518,
+          31
+        ],
+        [
+          533,
+          40
+        ],
+        [
+          544,
+          42
+        ],
+        [
+          553,
+          32
+        ],
+        [
+          576,
+          15
+        ],
+        [
+          590,
+          11
+        ],
+        [
+          598,
+          18
+        ],
+        [
+          604,
+          9
+        ],
+        [
+          620,
+          14
+        ],
+        [
+          630,
+          29
+        ],
+        [
+          641,
+          34
+        ],
+        [
+          658,
+          33
+        ],
+        [
+          669,
+          24
+        ],
+        [
+          682,
+          42
+        ]
+      ],
+      "profile_center_x": 126,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "b0f8fa0b9cc2f218b190322de52b02eab297c2be2919ec2e7f839d79511e0cde"
+    },
+    {
+      "id": "vessel_s0161_03",
+      "scan": "s0161",
+      "folio": "88r",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0161_03.glb",
+      "source_sha256": "f1692570508fb83e588b65e3dd2d71404dd7f1c08d2ad3d46ff9d6821e1db8ef",
+      "source_bbox_px": [
+        272,
+        2360,
+        608,
+        3392
+      ],
+      "profile_reference_size": [
+        799,
+        1100
+      ],
+      "profile_pixels": [
+        [
+          698,
+          4
+        ],
+        [
+          709,
+          6
+        ],
+        [
+          718,
+          3
+        ],
+        [
+          729,
+          8
+        ],
+        [
+          739,
+          12
+        ],
+        [
+          744,
+          8
+        ],
+        [
+          763,
+          8
+        ],
+        [
+          773,
+          23
+        ],
+        [
+          785,
+          26
+        ],
+        [
+          805,
+          29
+        ],
+        [
+          818,
+          26
+        ],
+        [
+          844,
+          29
+        ],
+        [
+          852,
+          29
+        ],
+        [
+          862,
+          38
+        ],
+        [
+          873,
+          39
+        ],
+        [
+          885,
+          29
+        ],
+        [
+          908,
+          12
+        ],
+        [
+          919,
+          6
+        ],
+        [
+          928,
+          12
+        ],
+        [
+          933,
+          6
+        ],
+        [
+          953,
+          19
+        ],
+        [
+          959,
+          28
+        ],
+        [
+          969,
+          29
+        ],
+        [
+          977,
+          27
+        ],
+        [
+          990,
+          29
+        ]
+      ],
+      "profile_center_x": 128,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "9a69d07041b8894a270cbf165b485ae38160a6bf42c99c824078166685fe2525"
+    },
+    {
+      "id": "vessel_s0163_01",
+      "scan": "s0163",
+      "folio": "89v  part",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0163_01.glb",
+      "source_sha256": "1cec2d65c0f864359937b5e660f0b59d70352847b179195f17343dfa7f23fcd8",
+      "source_bbox_px": [
+        268,
+        291,
+        692,
+        1201
+      ],
+      "profile_reference_size": [
+        1100,
+        996
+      ],
+      "profile_pixels": [
+        [
+          79,
+          2
+        ],
+        [
+          87,
+          5
+        ],
+        [
+          97,
+          3
+        ],
+        [
+          115,
+          3
+        ],
+        [
+          121,
+          11
+        ],
+        [
+          134,
+          21
+        ],
+        [
+          143,
+          29
+        ],
+        [
+          155,
+          29
+        ],
+        [
+          179,
+          22
+        ],
+        [
+          188,
+          17
+        ],
+        [
+          208,
+          19
+        ],
+        [
+          217,
+          34
+        ],
+        [
+          231,
+          38
+        ],
+        [
+          242,
+          41
+        ],
+        [
+          252,
+          33
+        ],
+        [
+          274,
+          18
+        ],
+        [
+          289,
+          10
+        ],
+        [
+          297,
+          41
+        ],
+        [
+          307,
+          43
+        ]
+      ],
+      "profile_center_x": 123,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "e7f07518af0f2812a3593b05183842811fb03703c14ccb7d056350c219ce3d09"
+    },
+    {
+      "id": "vessel_s0163_02",
+      "scan": "s0163",
+      "folio": "89v  part",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0163_02.glb",
+      "source_sha256": "1cec2d65c0f864359937b5e660f0b59d70352847b179195f17343dfa7f23fcd8",
+      "source_bbox_px": [
+        298,
+        1228,
+        703,
+        2306
+      ],
+      "profile_reference_size": [
+        1100,
+        996
+      ],
+      "profile_pixels": [
+        [
+          329,
+          1
+        ],
+        [
+          347,
+          3
+        ],
+        [
+          354,
+          7
+        ],
+        [
+          363,
+          2
+        ],
+        [
+          380,
+          4
+        ],
+        [
+          387,
+          10
+        ],
+        [
+          395,
+          14
+        ],
+        [
+          402,
+          10
+        ],
+        [
+          418,
+          6
+        ],
+        [
+          429,
+          13
+        ],
+        [
+          438,
+          21
+        ],
+        [
+          450,
+          21
+        ],
+        [
+          475,
+          20
+        ],
+        [
+          484,
+          26
+        ],
+        [
+          494,
+          36
+        ],
+        [
+          505,
+          40
+        ],
+        [
+          519,
+          31
+        ],
+        [
+          537,
+          20
+        ],
+        [
+          545,
+          7
+        ],
+        [
+          558,
+          10
+        ],
+        [
+          572,
+          10
+        ],
+        [
+          582,
+          16
+        ],
+        [
+          590,
+          42
+        ],
+        [
+          599,
+          35
+        ]
+      ],
+      "profile_center_x": 127,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "51be9bd33cacf2c454a109acb86f10d3875967f52de22bc62433888eb027bd72"
+    },
+    {
+      "id": "vessel_s0163_03",
+      "scan": "s0163",
+      "folio": "89v  part",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0163_03.glb",
+      "source_sha256": "1cec2d65c0f864359937b5e660f0b59d70352847b179195f17343dfa7f23fcd8",
+      "source_bbox_px": [
+        344,
+        2306,
+        780,
+        3124
+      ],
+      "profile_reference_size": [
+        1100,
+        996
+      ],
+      "profile_pixels": [
+        [
+          607,
+          2
+        ],
+        [
+          616,
+          6
+        ],
+        [
+          626,
+          12
+        ],
+        [
+          632,
+          4
+        ],
+        [
+          646,
+          5
+        ],
+        [
+          656,
+          20
+        ],
+        [
+          668,
+          32
+        ],
+        [
+          681,
+          36
+        ],
+        [
+          704,
+          38
+        ],
+        [
+          721,
+          28
+        ],
+        [
+          731,
+          13
+        ],
+        [
+          741,
+          26
+        ],
+        [
+          748,
+          23
+        ],
+        [
+          752,
+          9
+        ],
+        [
+          770,
+          10
+        ],
+        [
+          785,
+          35
+        ],
+        [
+          800,
+          46
+        ]
+      ],
+      "profile_center_x": 144,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "dc280c7f81276881c83079e1515697250f8f9e345c13fc37d3aeeb09d6ee548f"
+    },
+    {
+      "id": "vessel_s0175_01",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0175_01.glb",
+      "source_sha256": "618099d45e105b58a99f12b05d4905af78fab6045deb5d2f5da2649475bf1558",
+      "source_bbox_px": [
+        257,
+        260,
+        565,
+        852
+      ],
+      "profile_reference_size": [
+        789,
+        1100
+      ],
+      "profile_pixels": [
+        [
+          80,
+          32
+        ],
+        [
+          87,
+          38
+        ],
+        [
+          103,
+          38
+        ],
+        [
+          115,
+          36
+        ],
+        [
+          142,
+          35
+        ],
+        [
+          150,
+          37
+        ],
+        [
+          157,
+          39
+        ],
+        [
+          234,
+          37
+        ],
+        [
+          242,
+          36
+        ]
+      ],
+      "profile_center_x": 121,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "0b5cf079497e853e65f857a8c693d0e8bb98b0c6b039db89973e4adbde56415c"
+    },
+    {
+      "id": "vessel_s0175_02",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0175_02.glb",
+      "source_sha256": "618099d45e105b58a99f12b05d4905af78fab6045deb5d2f5da2649475bf1558",
+      "source_bbox_px": [
+        277,
+        1064,
+        548,
+        1585
+      ],
+      "profile_reference_size": [
+        789,
+        1100
+      ],
+      "profile_pixels": [
+        [
+          316,
+          21
+        ],
+        [
+          323,
+          29
+        ],
+        [
+          334,
+          28
+        ],
+        [
+          340,
+          25
+        ],
+        [
+          358,
+          25
+        ],
+        [
+          367,
+          28
+        ],
+        [
+          374,
+          30
+        ],
+        [
+          438,
+          30
+        ],
+        [
+          452,
+          27
+        ],
+        [
+          459,
+          24
+        ]
+      ],
+      "profile_center_x": 121,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "58e330aa053c8944b5595647b3f5854582a574a3b633b4a11d332fff3dde4797"
+    },
+    {
+      "id": "vessel_s0175_03",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0175_03.glb",
+      "source_sha256": "618099d45e105b58a99f12b05d4905af78fab6045deb5d2f5da2649475bf1558",
+      "source_bbox_px": [
+        257,
+        1639,
+        592,
+        2225
+      ],
+      "profile_reference_size": [
+        789,
+        1100
+      ],
+      "profile_pixels": [
+        [
+          490,
+          20
+        ],
+        [
+          501,
+          28
+        ],
+        [
+          510,
+          27
+        ],
+        [
+          548,
+          28
+        ],
+        [
+          559,
+          33
+        ],
+        [
+          569,
+          29
+        ],
+        [
+          615,
+          30
+        ],
+        [
+          627,
+          29
+        ],
+        [
+          637,
+          44
+        ],
+        [
+          646,
+          36
+        ]
+      ],
+      "profile_center_x": 122,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "b9268412f211ea019202fe220778f36e4556f23b2295c2171f61a10d17955600"
+    },
+    {
+      "id": "vessel_s0175_04",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "model": "res://assets/models/vessel_s0175_04.glb",
+      "source_sha256": "618099d45e105b58a99f12b05d4905af78fab6045deb5d2f5da2649475bf1558",
+      "source_bbox_px": [
+        240,
+        2392,
+        541,
+        2978
+      ],
+      "profile_reference_size": [
+        789,
+        1100
+      ],
+      "profile_pixels": [
+        [
+          705,
+          19
+        ],
+        [
+          713,
+          27
+        ],
+        [
+          725,
+          24
+        ],
+        [
+          754,
+          24
+        ],
+        [
+          762,
+          32
+        ],
+        [
+          772,
+          30
+        ],
+        [
+          839,
+          32
+        ],
+        [
+          848,
+          36
+        ],
+        [
+          858,
+          33
+        ],
+        [
+          864,
+          29
+        ]
+      ],
+      "profile_center_x": 116,
+      "status": "CANDIDATE",
+      "method": "measured front profile + scan texture; inferred rotational depth/back; adjacent root interpretation",
+      "sha256": "6e2f738a71be32bc03247542912b8ced0244d9d24b75c4f22e9565c7812615e1"
+    }
+  ]
+}

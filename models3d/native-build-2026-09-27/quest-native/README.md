@@ -1,11 +1,11 @@
-# Manuskrypt VR · natywna pracownia Quest 0.1.0
+# Manuskrypt VR · natywna pracownia Quest 0.2.0
 
 Wersja testowa APK dla Meta Quest 2, 3/3S i Pro (ARM64, Horizon OS 69 lub nowszy). Godot 4.6 stable, OpenXR,
 oficjalny Godot OpenXR Vendors 5.1.0. Nie jest opakowaniem strony w Android WebView.
 
 ## Zawartość i sterowanie
 
-- Katalog 173 roboczych zestawów przestrzennych; 206 dostarczonych skanów dostępnych offline.
+- Katalog 183 roboczych zestawów przestrzennych; 206 dostarczonych skanów dostępnych offline.
 - Pierwsze 10 roślin rozdzielono w Blenderze na 1002 części bez zmiany trójkątów źródłowych.
 - Podgląd wybranego modelu, źródłowego skanu oraz kategorii. Podgląd zmienia się przyciskami Model i Kategoria.
 - `Dodaj model` wstawia osobny eksponat do Twojego układu. Maksymalnie 12 zestawów/oddzielonych fragmentów naraz.
@@ -22,13 +22,28 @@ oficjalny Godot OpenXR Vendors 5.1.0. Nie jest opakowaniem strony w Android WebV
 - `Pióro` rysuje prawym spustem. Wybierz wcześniej model, żeby szkic był do niego przypięty.
 - `Otwórz atlas` uruchamia systemową przeglądarkę z istniejącą stroną projektu; może wyjść z aplikacji.
 
+## Nowości 0.2.0: sala naczyń i tarot
+
+- **Pokoje → Naczynia** przenosi do osobnej sali. Można też przejść z pracowni przez portal.
+- 10 naczyń / „wieżyczek” z f88r (3), f89v – część (3), f99r (4). Profile przednie są wyprowadzone z rysunków, ornamenty i znaki mają tekstury oryginalnych skanów. Pierścienie ozdobne są osobnymi bryłami.
+- Głębokość obrotowa i tyły naczyń są hipotezą modelarską. Sąsiednie korzenie i liście są roboczymi bryłami do porównywania. Dokładne rysunki i wszystkie napisy pokazują trzy pełne skany na ścianie. Znaki nie zostały przetłumaczone.
+- Skieruj promień na eksponat: pokazuje folio. **Chwyt tworzy kopię do pracy**; wzorzec pozostaje na wystawie. Kopie obsługują wcześniejsze obroty, rozdzielanie i łączenie.
+- Obok otwartego manuskryptu stoi osobny stół tarota. **Tarot → Podejdź do tarota** ustawia widok przy stole.
+- Pełna talia **78 kart** z oryginalnymi ilustracjami RWS 1909; karty są modelami Blendera z awersem, rewersem i grubością.
+- `Losuj kartę` dobiera z przetasowanej pozostałej talii. `◀ Karta / Karta ▶`, `Kolor / Arkana`, `Dodaj wybraną` pozwalają wybrać kartę świadomie.
+- `Pola: 3 / 5` zmienia rozkład. Pola odczytu mają numery od lewej do prawej. Możesz chwytać karty, dowolnie je przemieszczać i układać także poza polami. Po puszczeniu blisko pola karta się dopasowuje; poprzednia karta trafia obok.
+- **A/X lub Odwróć 180°** odwraca wybraną kartę w płaszczyźnie stołu. Odwrócenie podczas odkładania także jest rozpoznawane.
+- Po zapełnieniu pól pojawia się **interpretacja symboliczna**. `Tekst ▶` pokazuje kolejne pozycje i podsumowanie kolejności. `Interpretuj układ` odświeża odczyt. Teksty są po polsku i działają offline.
+- Układ, obroty, pozostała talia i strona interpretacji zapisują się wraz z pracownią. Limit: 12 kart na stole, niezależnie od 12 modeli roboczych. `Zbierz karty` rozpoczyna nowy układ.
+- Tarot służy refleksji; odczyt nie jest prognozą zdarzeń ani dowodem rozwiązania Manuskryptu. Jest lokalnym zestawem reguł i tekstów, bez wywołania AI.
+
 ## Instalacja
 
 Włącz tryb deweloperski Questa i zaakceptuj debugowanie USB. Z komputera z Android Platform Tools:
 
 ```sh
 adb devices
-adb install -r Manuskrypt_Quest_0.1.0.apk
+adb install -r Manuskrypt_Quest_0.2.0.apk
 ```
 
 Uruchom **Manuskrypt VR · Pracownia** z aplikacji z nieznanych źródeł. Jest to podpisany
@@ -49,14 +64,14 @@ W `files/` znajdują się `workspace.json`, kopia `.bak` oraz `notes/<czas>/note
 
 ## Stan i ograniczenia
 
-To pierwsza natywna wersja testowa, a nie ukończenie całego projektu VR.
+To druga natywna wersja testowa, a nie ukończenie całego projektu VR.
 
 - Nie przetestowano fizycznego Questa, stabilności liczby klatek, mikrofonu gogli ani passthrough na urządzeniu.
-- Skany w APK to istniejące pochodne do podglądu (do 1550 px); oryginały pozostają w dostarczonych ZIP-ach.
-- 173 zestawy nie oznaczają wiernej rekonstrukcji każdego pojedynczego rysunku. 33 pozostałe skany nie mają osobnych pełnych brył rysunków. Tyły i głębokość modeli są interpretacją; identyfikacja gatunków nie jest potwierdzona.
+- Trzy skany f88r, f89v (część) i f99r są w pełnej oryginalnej rozdzielczości i zostały sprawdzone SHA256. Pozostałe skany są pochodnymi do podglądu (maksymalnie 1550 px, część 1100 px).
+- 183 zestawy (173 wcześniejsze + 10 naczyń) nie oznaczają wiernej rekonstrukcji każdego pojedynczego rysunku. 33 pozostałe skany nie mają osobnych pełnych brył rysunków. Tyły i głębokość modeli są interpretacją; identyfikacja gatunków nie jest potwierdzona.
 - Wewnętrzne proporcje geometrii są zachowane. Domyślna skala ekspozycyjna nie oznacza wymiarów oryginalnych roślin lub przedmiotów.
 - Wirtualny kodeks jest indeksem 206 skanów, nie rekonstrukcją historycznego szycia, oprawy ani liczby fizycznych kart. Rozkładówki pozostają pojedynczymi skanami. Zmiana kolejności jest dozwolona.
-- Pięć przestrzeni ma na razie wspólny stół i układ pracowni ze zmiennym tłem. Pełne wyposażenie ogrodu, hydrauliki i astronomii wymaga dalszego przeniesienia do wersji natywnej.
+- Pracownia i nowa sala Naczynia są połączonymi, umeblowanymi salami z Blendera. Ogród, Hydraulika, Diagramy i Obserwatorium pozostają wcześniejszymi przestrzeniami roboczymi; ich pełne wyposażenie wymaga kolejnej aktualizacji.
 - W APK nie ma jeszcze dowolnego przecinania siatek z zamknięciem przekroju, podziału 2/3/4, transkrypcji AI, MCP, automatycznego wyzwalania nagrania głosem ani wbudowanej przeglądarki. Oddzielanie istniejących części działa.
 - Obraz notatki obejmuje scenę wirtualną, nie obraz kamer passthrough; kadr jest monokularny i ma własne pole widzenia 75°.
 - Notatki głosowe wymagają ręcznego zakończenia albo limitu 2 minut. W razie wymuszonego zamknięcia procesu nagranie będące w toku może zostać utracone; ukończone notatki i układy są plikami lokalnymi.
@@ -74,11 +89,11 @@ nowy lokalnie wygenerowany klucz oznacza inną tożsamość podpisu.
 ```sh
 godot --headless --xr-mode off --path . --editor --import
 godot --headless --xr-mode off --path . --script tests/integration.gd
-godot --headless --xr-mode off --path . --export-debug "Meta Quest" ../Manuskrypt_Quest_0.1.0.apk
+godot --headless --xr-mode off --path . --export-debug "Meta Quest" ../Manuskrypt_Quest_0.2.0.apk
 ```
 
 Kopia kodu w GitHub zawiera skrypty i konfigurację. prepare_assets.py odtwarza zasoby
-z zapisanych ZIP-ów modeli, aktualizacji partii 01, kodeksu, katalogu skanów
+z zapisanych ZIP-ów modeli, aktualizacji partii 01, partii 20, sal i tarota, kodeksu, katalogu skanów
 z wcześniejszego projektu Sites i oficjalnego archiwum dodatku XR.
 Nie przechowuj kluczy API ani PIN-u VCT w projekcie.
 

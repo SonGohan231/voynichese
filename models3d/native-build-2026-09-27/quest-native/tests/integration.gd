@@ -11,7 +11,7 @@ func run():
 	for i in range(120):
 		if not app.loading: break
 		await process_frame
-	check(app.catalog.size()==173, "All 173 models catalogued")
+	check(app.catalog.size()==183, "All 183 models catalogued")
 	check(app.pages.size()==206, "All 206 scans catalogued")
 	check(app.preview.get_child_count()==1, "Real GLB preview loads")
 	app.restore_workspace({"version":1,"models":[],"strokes":[]})

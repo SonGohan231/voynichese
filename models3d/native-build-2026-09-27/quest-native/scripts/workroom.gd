@@ -45,7 +45,9 @@ var note_dir := ""
 var record_time := 0.0
 var note_busy := false
 var room_index := 0
-var room_names := ["Pracownia", "Ogród", "Hydraulika", "Diagramy", "Obserwatorium"]
+var room_names := ["Pracownia", "Ogród", "Hydraulika", "Diagramy", "Obserwatorium", "Naczynia"]
+var tarot: Node3D
+var gallery: Node3D
 var drawing := false
 var stroke: Array[Vector3] = []
 var stroke_node: MeshInstance3D
@@ -91,10 +93,14 @@ func _ready():
 	hover_label = label("", 24); hover_label.billboard = BaseMaterial3D.BILLBOARD_ENABLED; hover_label.no_depth_test = true; add_child(hover_label)
 	scan_panel = MeshInstance3D.new(); var quad := QuadMesh.new(); quad.size = Vector2(0.72, 1.0); scan_panel.mesh = quad; scan_panel.position = Vector3(1.5, 1.65, -1.7); scan_panel.rotation.y = -0.18; add_child(scan_panel)
 	_setup_notebook()
+	tarot = load("res://scripts/tarot_table.gd").new(); add_child(tarot); tarot.setup(self)
+	gallery = Node3D.new(); gallery.name = "GaleriaZrodel"; add_child(gallery)
+	_build_gallery()
 	_build_room()
 	_refresh_menu()
 	_choose(0)
 	if FileAccess.file_exists(SAVE): restore_workspace(JSON.parse_string(FileAccess.get_file_as_string(SAVE)))
+	if room_index==5:origin.position.x=10;place_menu()
 	say("Spust: wybierz · chwyt: podnieś · A/X: 180° · B/Y: panel")
 	if "--smoke" in OS.get_cmdline_user_args(): _smoke()
 	if "--capture" in OS.get_cmdline_user_args(): _capture_test()
@@ -114,23 +120,68 @@ func say(text: String):
 	status.text = text
 
 func _build_room():
-	for child in room.get_children(): child.queue_free()
-	var colors := [Color("263548"), Color("28443a"), Color("263f50"), Color("392f48"), Color("18253d")]
-	box(room, Vector3(0, -0.06, -1), Vector3(14, 0.1, 14), colors[room_index])
-	box(room, Vector3(0, 1.65, -5), Vector3(14, 3.4, 0.1), colors[room_index].darkened(0.35))
-	box(room, Vector3(0, 0.82, -1.9), Vector3(2.3, 0.08, 1.1), Color("6b5240"))
-	for x in [-1.0, 1.0]:
-		for z in [-2.35, -1.45]: box(room, Vector3(x, 0.4, z), Vector3(0.08, 0.8, 0.08), Color("332c29"))
-	var title := label(room_names[room_index].to_upper(), 56); title.position = Vector3(0, 2.5, -4.85); room.add_child(title)
-	if ResourceLoader.exists("res://assets/room/room.glb"):
-		var props = load("res://assets/room/room.glb").instantiate(); room.add_child(props)
+	for child in room.get_children(): room.remove_child(child); child.queue_free()
+	var archive := room_index == 0 or room_index == 5
+	if archive and ResourceLoader.exists("res://assets/room/archive.glb"):
+		room.add_child(load("res://assets/room/archive.glb").instantiate())
+	else:
+		var colors := [Color("263548"), Color("28443a"), Color("263f50"), Color("392f48"), Color("18253d")]
+		box(room, Vector3(0, -0.06, -1), Vector3(14, 0.1, 14), colors[mini(room_index,4)])
+		box(room, Vector3(0, 1.65, -5), Vector3(14, 3.4, 0.1), colors[mini(room_index,4)].darkened(0.35))
+		box(room, Vector3(0, .82, -1.9), Vector3(2.3,.08,1.1), Color("6b5240"))
+		var title := label(room_names[room_index].to_upper(), 56); title.position = Vector3(0, 2.5, -4.85); room.add_child(title)
 	room.visible = not passthrough
+	var offset:=10.0 if room_index==5 else 0.0
+	heading.position.x=offset;status.position.x=offset;scan_panel.position.x=offset+1.5;preview.position.x=offset
+	if tarot:
+		tarot.visible = archive
+		for body in tarot.find_children("*","StaticBody3D",true,false): body.collision_layer = 1 if archive else 0
+	if gallery:
+		gallery.visible = archive
+		for body in gallery.find_children("*","StaticBody3D",true,false): body.collision_layer = 1 if archive else 0
+
+func switch_room(index: int, move := true):
+	_release_all(); room_index = clampi(index,0,room_names.size()-1); _build_room()
+	if move:
+		origin.position = Vector3(10 if room_index==5 else 0,0,0); origin.rotation.y = 0
+		place_menu()
+	_refresh_menu(); save_workspace()
+
+func _build_gallery():
+	var vessels: Array = catalog.filter(func(c):return c.get("id", "").begins_with("vessel_"))
+	for i in range(vessels.size()):
+		var meta: Dictionary=vessels[i]
+		var object = load(meta.model).instantiate(); gallery.add_child(object); _normalize(object,.98)
+		object.position += Vector3(6.15+float(i%5)*1.75,.99,-4.48 if i<5 else 2.4)
+		_add_gallery_colliders(object,meta)
+		var caption := label("f"+meta.folio+" · "+str(i+1),22); caption.position=Vector3(6.15+float(i%5)*1.75,1.01,-3.91 if i<5 else 3.11); gallery.add_child(caption)
+	for i in range(3):
+		var scan: String=["s0161","s0163","s0175"][i]
+		var t = load("res://assets/scans/"+scan+".jpg"); var q:=QuadMesh.new();q.size=Vector2(minf(1.9,1.96*float(t.get_width())/t.get_height()),1.96)
+		var n:=MeshInstance3D.new();n.mesh=q;var m:=material(Color.WHITE,true);m.albedo_texture=t;n.material_override=m;n.position=Vector3(7.4+i*2.6,2.25,-5.67);gallery.add_child(n)
+		var src: Dictionary=catalog.filter(func(c):return c.scan==scan)[0];_gallery_body(n,n.get_aabb(),src)
+	var book=load("res://assets/room/open_book.glb").instantiate();gallery.add_child(book);book.position=Vector3(0,1.07,-2.12)
+	_add_gallery_colliders(book,{"scan":"codex","folio":"kodeks · 206 skanów","category":"Kodeks","model":"res://assets/room/codex.glb"})
+
+func _gallery_body(mesh: MeshInstance3D, bounds: AABB, meta: Dictionary):
+	var body:=StaticBody3D.new();body.collision_layer=1;body.collision_mask=0;body.set_meta("gallery_source",meta);mesh.add_child(body)
+	var shape:=BoxShape3D.new();shape.size=bounds.size.max(Vector3(.008,.008,.008));var collision:=CollisionShape3D.new();collision.shape=shape;collision.position=bounds.get_center();body.add_child(collision)
+
+func _add_gallery_colliders(root: Node3D, meta: Dictionary):
+	for mesh in root.find_children("*","MeshInstance3D",true,false):
+		_gallery_body(mesh,mesh.get_aabb(),meta)
+
+func _take_gallery(body, hand: int):
+	if exhibits.find_children("*","Node3D",true,false).filter(func(n):return n.has_meta("source")).size()>=LIMIT: say("Limit 12 modeli roboczych");return
+	checkpoint();var meta: Dictionary=body.get_meta("gallery_source");var object:=_new_exhibit(meta,load(meta.model))
+	object.global_position=body.global_position
+	selected=object;_grab(object,hand);say("Kopia do pracy · f"+meta.folio)
 
 func _refresh_menu():
 	for n in menu.get_children(): menu.remove_child(n); n.queue_free()
-	var title := label(mode + " · " + room_names[room_index], 28); title.position.y = 0.62; menu.add_child(title)
-	var tabs := ["Katalog", "Obiekt", "Badania", "Pokoje"]
-	for j in range(4): _menu_button(tabs[j], Vector3((j % 2 - 0.5) * 0.52, 0.43 - (j / 2) * 0.14, 0), func(): mode = tabs[j]; _refresh_menu())
+	var title := label(mode + " · " + room_names[room_index], 28); title.position.y = 0.78; menu.add_child(title)
+	var tabs := ["Katalog", "Obiekt", "Badania", "Pokoje", "Tarot"]
+	for j in range(tabs.size()): _menu_button(tabs[j], Vector3((j % 2 - 0.5) * 0.52, 0.57 - (j / 2) * 0.14, 0), func(): mode = tabs[j]; _refresh_menu())
 	var actions: Array = []
 	match mode:
 		"Katalog":
@@ -139,10 +190,12 @@ func _refresh_menu():
 			actions = [["Części" if not pieces_mode else "Cały model", func(): pieces_mode = not pieces_mode; _refresh_menu()], ["Obrót 180°", func(): rotate_selection(Vector3.UP, PI)], ["X +15°", func(): rotate_selection(Vector3.RIGHT, PI/12)], ["Y +15°", func(): rotate_selection(Vector3.UP, PI/12)], ["Z +15°", func(): rotate_selection(Vector3.BACK, PI/12)], ["Większy ×1.1", func(): scale_selection(1.1)], ["Mniejszy ÷1.1", func(): scale_selection(1.0/1.1)], ["Oddziel część", detach_selected], ["Przypnij bazę", pin_selection], ["Połącz z bazą", join_selected], ["Cofnij", undo], ["Zapisz układ", save_workspace]]
 		"Badania":
 			actions = [["Zakończ głos" if recording else "Zdjęcie + głos", toggle_recording], ["Zrób zdjęcie", take_note], ["Pióro: WŁ" if drawing else "Pióro: WYŁ", func(): drawing = not drawing; _refresh_menu()], ["Zapisz szkic", take_note], ["VR / otoczenie", toggle_passthrough], ["Własny widok", place_menu], ["Otwórz atlas", open_atlas], ["Notatki: folder", func(): say("Notatki lokalnie: Android/data/pl.manuskrypt.quest/files/notes")]]
+		"Tarot":
+			actions = tarot.menu_actions()
 		"Pokoje":
 			for i in range(room_names.size()):
 				var index := i
-				actions.append([room_names[i], func(): room_index = index; _build_room(); _refresh_menu(); save_workspace()])
+				actions.append([room_names[i], func(): switch_room(index)])
 			actions.append(["Zapisz układ", save_workspace])
 	for i in range(actions.size()):
 		_menu_button(actions[i][0], Vector3((i % 2 - 0.5) * 0.52, 0.06 - (i / 2) * 0.145, 0), actions[i][1])
@@ -201,7 +254,7 @@ func _finish_load():
 		_normalize(object, 0.95); object.position += Vector3(0, 1.1, -2.1)
 	else:
 		var root := _new_exhibit(pending_meta, scene)
-		root.position = Vector3(0, 1.0, -1.35); selected = root; save_workspace()
+		root.global_position = camera.global_position - camera.global_basis.z * 1.0 - Vector3(0,.5,0); selected = root; save_workspace()
 	say_loaded()
 
 func say_loaded():
@@ -234,7 +287,7 @@ func _add_colliders(node: Node3D, root: Node3D):
 
 func _add_page():
 	if exhibits.find_children("*", "Node3D", true, false).filter(func(n): return n.has_meta("source")).size() >= LIMIT: say("Limit 12 zestawów"); return
-	checkpoint(); var root := _make_page(pages[page_cursor]); root.position = Vector3(0, 1.4, -1.3); selected = root; save_workspace()
+	checkpoint(); var root := _make_page(pages[page_cursor]); root.global_position = camera.global_position-camera.global_basis.z*1.1; selected = root; save_workspace()
 
 func _make_page(p: Dictionary) -> Node3D:
 	var root := Node3D.new(); exhibits.add_child(root); counter += 1; root.name = "page_%d" % counter
@@ -249,7 +302,7 @@ func _add_book():
 	if not ResourceLoader.exists("res://assets/room/codex.glb"): say("Model kodeksu jeszcze niedostępny"); return
 	if exhibits.find_children("*", "Node3D", true, false).filter(func(n): return n.has_meta("source")).size() >= LIMIT: return
 	checkpoint(); var meta := {"scan":"codex", "folio":"kodeks · 206 skanów", "category":"Kodeks", "model":"res://assets/room/codex.glb"}
-	var root := _new_exhibit(meta, load(meta.model)); root.position = Vector3(0, 1.3, -1.3); selected = root; save_workspace()
+	var root := _new_exhibit(meta, load(meta.model)); root.global_position = camera.global_position-camera.global_basis.z*1.1; selected = root; save_workspace()
 
 func _process(dt: float):
 	if loading: _finish_load()
@@ -265,7 +318,11 @@ func _process(dt: float):
 		var joy := controllers[0].get_vector2("primary")
 		if joy.length() > 0.2 and not hands[0]:
 			var forward := -camera.global_basis.z; forward.y = 0; forward = forward.normalized()
+			var previous:=origin.position
 			origin.position += (camera.global_basis.x * joy.x + forward * joy.y) * dt * 1.1
+			if room_index==0 or room_index==5:
+				origin.position.x=clampf(origin.position.x,-4.5,14.5);origin.position.z=clampf(origin.position.z,-5.4,3.4)
+				if absf(origin.position.x-5)<.4 and (origin.position.z < -2.35 or origin.position.z > .05):origin.position=previous
 		var turn := controllers[1].get_vector2("primary")
 		if absf(turn.x) < 0.2: turn_lock = false
 		if absf(turn.x) > 0.65 and not turn_lock and not hands[1]:
@@ -278,6 +335,12 @@ func _update_hover():
 	for i in range(2):
 		if rays[i].is_colliding():
 			var b = rays[i].get_collider()
+			if b and b.has_meta("tarot"):
+				var card: Node3D=b.get_meta("tarot");hover_label.text=tarot.by_id[card.get_meta("tarot_card")].name
+				hover_label.global_position=rays[i].get_collision_point()+Vector3(0,.13,0);hover_label.visible=true;return
+			if b and b.has_meta("gallery_source"):
+				hover_label.text="f"+b.get_meta("gallery_source").folio+" · chwyt: kopia do pracy"
+				hover_label.global_position=rays[i].get_collision_point()+Vector3(0,.16,0);hover_label.visible=true;return
 			if b and b.has_meta("exhibit"):
 				var root: Node3D = b.get_meta("exhibit"); var source: Dictionary = root.get_meta("source")
 				hover_label.text = "f" + _folio_label(b) + (" · część" if pieces_mode else " · cały model")
@@ -301,11 +364,20 @@ func _button(action: String, hand: int):
 		if rays[hand].is_colliding(): _select_body(rays[hand].get_collider())
 	if action == "grip_click" and rays[hand].is_colliding():
 		var body = rays[hand].get_collider()
+		if body and body.has_meta("tarot"):
+			selected=body.get_meta("tarot");_grab(selected,hand);return
+		if body and body.has_meta("gallery_source"):_take_gallery(body,hand);return
 		if body and body.has_meta("exhibit"):
 			selected = body.get_meta("piece") if pieces_mode and body.get_meta("exhibit").get_meta("kind") != "page" else body.get_meta("exhibit")
 			_grab(selected, hand)
 
 func _select_body(body):
+	if body.has_meta("tarot"):
+		selected=body.get_meta("tarot");tarot.selected_card=selected;say(tarot.by_id[selected.get_meta("tarot_card")].name);return
+	if body.has_meta("gallery_source"):
+		var src: Dictionary=body.get_meta("gallery_source")
+		if src.scan!="codex":_show_scan(src.scan)
+		say("f"+src.folio+" · naciśnij chwyt, aby wziąć kopię");return
 	if body.has_meta("action"): body.get_meta("action").call_deferred(); return
 	if body.has_meta("exhibit"):
 		selected = body.get_meta("piece") if pieces_mode and body.get_meta("exhibit").get_meta("kind") != "page" else body.get_meta("exhibit")
@@ -316,7 +388,9 @@ func _select_body(body):
 func _grab(node: Node3D, hand: int):
 	for h in range(2):
 		if hands[h] and (hands[h].node == node or hands[h].node.is_ancestor_of(node) or node.is_ancestor_of(hands[h].node)): return
-	checkpoint(); hands[hand] = {"node":node, "parent":node.get_parent()}; node.reparent(controllers[hand], true)
+	checkpoint(); hands[hand] = {"node":node, "parent":node.get_parent()}
+	if node.has_meta("tarot_card"): tarot.begin_grab(node)
+	node.reparent(controllers[hand], true)
 
 func _release_button(action: String, hand: int):
 	if action == "grip_click": _release(hand)
@@ -325,23 +399,29 @@ func _release_button(action: String, hand: int):
 func _release(hand: int):
 	if not hands[hand]: return
 	var info: Dictionary = hands[hand]; hands[hand] = null
-	if is_instance_valid(info.node) and is_instance_valid(info.parent): info.node.reparent(info.parent, true)
+	if is_instance_valid(info.node) and is_instance_valid(info.parent):
+		info.node.reparent(info.parent, true)
+		if info.node.has_meta("tarot_card"):tarot.finish_grab(info.node)
 	save_workspace()
 
 func _release_all():
 	for i in range(2): _release(i)
 
 func rotate_selection(axis: Vector3, radians: float):
+	if is_instance_valid(selected) and selected.has_meta("tarot_card"):
+		tarot.selected_card=selected;tarot.reverse_selected();return
 	if not is_instance_valid(selected): say("Najpierw wybierz model spustem"); return
 	checkpoint(); selected.rotate_object_local(axis, radians); save_workspace()
 
 func scale_selection(factor: float):
+	if is_instance_valid(selected) and selected.has_meta("tarot_card"):return
 	if not is_instance_valid(selected): return
 	var current := selected.global_basis.get_scale().length()
 	if current * factor < 0.01 or current * factor > 20: return
 	checkpoint(); selected.scale *= factor; save_workspace()
 
 func detach_selected():
+	if is_instance_valid(selected) and selected.has_meta("tarot_card"):say("Karty przenosisz chwytem jako całość");return
 	if not is_instance_valid(selected) or selected.get_parent() == exhibits: say("Włącz Części i wybierz fragment"); return
 	if exhibits.find_children("*", "Node3D", true, false).filter(func(n): return n.has_meta("source")).size() >= LIMIT: return
 	_release_all(); checkpoint(); var source := _source_for(selected)
@@ -352,17 +432,20 @@ func detach_selected():
 	selected = root; save_workspace(); say("Fragment oddzielony. Możesz ułożyć go dowolnie.")
 
 func _root_for(node: Node3D) -> Node3D:
-	var n := node
+	var n: Node = node
 	while n and not n.has_meta("source"): n = n.get_parent()
-	return n
+	return n as Node3D
 
 func _source_for(node: Node3D) -> Dictionary:
+	if node and node.has_meta("tarot_card"):return {"category":"Tarot","card_id":node.get_meta("tarot_card"),"symbolic":true}
 	var root := _root_for(node); return root.get_meta("source") if root else {}
 
 func pin_selection():
+	if is_instance_valid(selected) and selected.has_meta("tarot_card"):return
 	if is_instance_valid(selected): pinned = selected; say("Baza wybrana. Wybierz inny element i Połącz z bazą.")
 
 func join_selected():
+	if is_instance_valid(selected) and selected.has_meta("tarot_card"):return
 	_release_all()
 	if not is_instance_valid(selected) or not is_instance_valid(pinned) or selected == pinned: return
 	if selected.is_ancestor_of(pinned) or pinned.is_ancestor_of(selected): return
@@ -408,7 +491,7 @@ func workspace_data() -> Dictionary:
 		for part in root.find_children("*", "MeshInstance3D", true, false):
 			if _root_for(part) == root: parts[str(root.get_path_to(part))] = _encode_transform(part.global_transform)
 		data.append({"name":str(root.name),"source":root.get_meta("source"),"kind":root.get_meta("kind"),"transform":_encode_transform(root.global_transform),"parts":parts,"original_path":root.get_meta("original_path", ""),"parent":str(exhibits.get_path_to(root.get_parent()))})
-	return {"version":1,"room":room_index,"models":data,"strokes":all_strokes,"saved_at":Time.get_datetime_string_from_system(true)}
+	return {"version":1,"room":room_index,"tarot":tarot.data() if tarot else {},"models":data,"strokes":all_strokes,"saved_at":Time.get_datetime_string_from_system(true)}
 
 func _atomic_json(path: String, data: Dictionary) -> bool:
 	var file := FileAccess.open(path + ".tmp", FileAccess.WRITE)
@@ -444,7 +527,7 @@ func restore_workspace(data):
 			if matches.is_empty(): continue
 			root = _make_page(matches[0])
 		else:
-			var matches := catalog.filter(func(m): return m.scan == scan)
+			var matches := catalog.filter(func(m): return m.get("id",m.scan)==source.get("id",scan))
 			var meta: Dictionary
 			if scan == "codex": meta = {"scan":"codex","folio":"kodeks · 206 skanów","category":"Kodeks","model":"res://assets/room/codex.glb"}
 			elif not matches.is_empty(): meta = matches[0]
@@ -472,6 +555,7 @@ func restore_workspace(data):
 			var parent = exhibits.get_node_or_null(item.parent)
 			if parent and parent != root and not root.is_ancestor_of(parent): root.reparent(parent, true)
 	room_index = clampi(int(data.get("room", 0)), 0, room_names.size()-1); _build_room()
+	if tarot:tarot.restore(data.get("tarot",{}))
 	all_strokes = data.get("strokes", []); _restore_strokes()
 
 func _setup_notebook():
@@ -517,7 +601,7 @@ func toggle_recording():
 	_refresh_menu()
 
 func _begin_stroke():
-	stroke = []; drawing_anchor = selected if is_instance_valid(selected) else exhibits
+	stroke = []; drawing_anchor = selected if is_instance_valid(selected) and not selected.has_meta("tarot_card") else exhibits
 	stroke_node = MeshInstance3D.new(); drawing_anchor.add_child(stroke_node); stroke_node.material_override = material(Color("ffc45b"), true)
 	_append_stroke(controllers[1].global_position - controllers[1].global_basis.z * 0.2)
 

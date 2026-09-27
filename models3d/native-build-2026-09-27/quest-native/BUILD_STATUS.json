@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engine": "Godot 4.6 stable 89cea1439",
   "xr_vendor": "Godot OpenXR Vendors 5.1.0-stable",
-  "models": 173,
+  "models": 183,
   "scans": 206,
   "refined_models": 10,
   "refined_parts": 1002,
@@ -12,12 +12,23 @@
   "transcription_in_native_apk": "not_connected",
   "gpu_preview": "Mesa llvmpipe OpenGL desktop; not Quest",
   "integration_tests": "passed with actual Godot scenes and GLBs",
-  "apk_bytes": 362135501,
-  "apk_sha256": "614cb08b493556fcba87e1621f033a989b1a7dccb43bb15735b8b7a3637d0e42",
+  "apk_bytes": 492446180,
+  "apk_sha256": "ff7b9ae922378a49d2bb7344f2182e73264724175d8294c56531b98828878383",
   "apk_signature": "verified Android v2",
   "zip_alignment": "verified 16KiB native library alignment",
   "apk_native_abi": "arm64-v8a",
   "horizon_os_min": 69,
   "package": "pl.manuskrypt.quest",
-  "packaged_compiled_script_smoke": "passed using desktop Godot with extracted APK resources; Android XR binaries not executed"
+  "packaged_compiled_script_smoke": "passed using desktop Godot with extracted APK resources; Android XR binaries not executed",
+  "tarot_cards": 78,
+  "new_vessels": 10,
+  "furnished_rooms": 2,
+  "tarot_tests": "passed: physical pickup/drop, occupied slot handling, order, reversed meanings, 3/5 card layout, deck/state persistence",
+  "new_model_status": "CANDIDATE: traced front silhouette and original scan texture, interpreted depth/back and nearby roots",
+  "room_source": "Higgsfield Blender 5.2 revision 2 + local Blender 4.5.4 integration",
+  "high_resolution_scans": [
+    "s0161",
+    "s0163",
+    "s0175"
+  ]
 }
