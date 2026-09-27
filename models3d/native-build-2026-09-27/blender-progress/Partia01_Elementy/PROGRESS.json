@@ -1,0 +1,171 @@
+[
+  {
+    "scan": "s0004",
+    "folio": "1v",
+    "parts": 85,
+    "semantic_counts": {
+      "flowers": 11,
+      "leaves": 46,
+      "roots": 21,
+      "stems": 7
+    },
+    "triangles_before": 14600,
+    "triangles_after": 14600,
+    "glb_sha256": "62403e8b521475bb13e4411019f28dad3619be3a3aafd421846750508fef3525",
+    "source_sha256": "4c90b1a03587dcef05fd673ea302358fc1c9ad2884d093c9faaee39c7e205d77",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0005",
+    "folio": "2r",
+    "parts": 172,
+    "semantic_counts": {
+      "flowers": 114,
+      "leaves": 50,
+      "roots": 1,
+      "stems": 7
+    },
+    "triangles_before": 32816,
+    "triangles_after": 32816,
+    "glb_sha256": "91a67fd360c4233bb50e35be79b47402c753624aab2195be5473e3ef969bbef7",
+    "source_sha256": "9ad1ee866c7cf81e40ab88038444893c8691b253217141bb784fcfab49e4fc4f",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0006",
+    "folio": "2v",
+    "parts": 14,
+    "semantic_counts": {
+      "flowers": 6,
+      "leaves": 1,
+      "roots": 5,
+      "stems": 2
+    },
+    "triangles_before": 2836,
+    "triangles_after": 2836,
+    "glb_sha256": "eb710b5ec78d6d6d3da734bd978a516ab321abb1d3c6b434d253dfe485411ef3",
+    "source_sha256": "f59ccf208f1d5a12096a8579f93dab2e49a4e306b240b8b21c82a9e873f1d90a",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0007",
+    "folio": "3r",
+    "parts": 55,
+    "semantic_counts": {
+      "leaves": 44,
+      "roots": 10,
+      "stems": 1
+    },
+    "triangles_before": 9784,
+    "triangles_after": 9784,
+    "glb_sha256": "6d6100ab58afe3b2139a9288e3704edfeab74c28b6c86dcf777d9fcfba2a3462",
+    "source_sha256": "679c4a73f2b658c832f8e064eb119c1877d09ce5992b35eb5316eb7b810154d6",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0008",
+    "folio": "3v",
+    "parts": 69,
+    "semantic_counts": {
+      "flowers": 2,
+      "leaves": 62,
+      "roots": 1,
+      "stems": 4
+    },
+    "triangles_before": 13344,
+    "triangles_after": 13344,
+    "glb_sha256": "752628d5247badb250062ebe4cd3d864adf934869caba30db5781c545e056d5a",
+    "source_sha256": "920add9b9c39e736bd540be666e95ed198516998bf71bf4daf77dbfdfadde3b0",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0009",
+    "folio": "4r",
+    "parts": 253,
+    "semantic_counts": {
+      "flowers": 55,
+      "leaves": 180,
+      "roots": 12,
+      "stems": 6
+    },
+    "triangles_before": 47858,
+    "triangles_after": 47858,
+    "glb_sha256": "163e2e964772f1f244978f1aebb5db7712a63b7d5a7cc9c660f9ac80cc8d2f17",
+    "source_sha256": "6f7845f7fc85cd17dab7c3605399ca0bee7f47a05a18d8376b063c922c72602f",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0010",
+    "folio": "4v",
+    "parts": 84,
+    "semantic_counts": {
+      "flowers": 2,
+      "leaves": 72,
+      "roots": 9,
+      "stems": 1
+    },
+    "triangles_before": 17506,
+    "triangles_after": 17506,
+    "glb_sha256": "f49302899c360db7830c286a1b1eef7d53ac317f4f88d7ab51f58c27bb8ffac0",
+    "source_sha256": "763035b81f54577cb78cdbc44a849a23ac2c48c929e9ac0026bf5ded6149d9b6",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0011",
+    "folio": "5r",
+    "parts": 15,
+    "semantic_counts": {
+      "flowers": 3,
+      "leaves": 4,
+      "roots": 7,
+      "stems": 1
+    },
+    "triangles_before": 3610,
+    "triangles_after": 3610,
+    "glb_sha256": "0cb3bff56c50b1c6ad077b7e1928266a9ccda9608196f81d26c8d83f994cda14",
+    "source_sha256": "7faed82fdc378c97ab8d987fe718654cc68dee58389062eb12ab91084bd10b29",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0012",
+    "folio": "5v",
+    "parts": 133,
+    "semantic_counts": {
+      "flowers": 60,
+      "leaves": 56,
+      "roots": 8,
+      "stems": 9
+    },
+    "triangles_before": 28214,
+    "triangles_after": 28214,
+    "glb_sha256": "569e3c7cc9be1011680e7de7d8e94924c2e758c79f49d15fdbcf1c58791bb6b3",
+    "source_sha256": "b42019c7a30adf94da6fbc6086b05a9c796b3da8da71c169dd99aadb355718b8",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  },
+  {
+    "scan": "s0013",
+    "folio": "6r",
+    "parts": 122,
+    "semantic_counts": {
+      "flowers": 6,
+      "leaves": 96,
+      "roots": 13,
+      "stems": 7
+    },
+    "triangles_before": 22380,
+    "triangles_after": 22380,
+    "glb_sha256": "82a0694d1186ff99bf2f50bca37b411f693f4e2aaef60d2f00e702c98d062922",
+    "source_sha256": "b4386ec75cf3e9a240136741568c67f6aee2c389fd71cc2842ca3aa7693531d0",
+    "shape_changed": false,
+    "status": "CANDIDATE_VOLUME_INTERPRETATION"
+  }
+]

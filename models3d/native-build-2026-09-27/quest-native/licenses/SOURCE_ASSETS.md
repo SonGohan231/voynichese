@@ -1,0 +1,1 @@
+Scans: user-supplied manuscript archives. Volumes: prior Blender candidate reconstructions, preserved from 19 checkpoint batches. This build includes 10 revised component hierarchies and the 206-scan study codex. No species identification or literal Voynich transcription claims. XR addon licenses are included under addons/godotopenxrvendors.

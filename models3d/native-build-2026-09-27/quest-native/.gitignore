@@ -1,0 +1,11 @@
+.godot/
+android/
+*.apk
+*.keystore
+*.p12
+.env*
+assets/models/
+assets/scans/
+assets/room/
+addons/
+native-preview.png*
