@@ -18,6 +18,7 @@ var exhibits: Node3D
 var preview: Node3D
 var room: Node3D
 var menu: Node3D
+var reader: Node3D
 var scan_panel: MeshInstance3D
 var heading: Label3D
 var status: Label3D
@@ -29,6 +30,7 @@ var rays: Array[RayCast3D] = []
 var hands: Array = [null, null]
 var xr: XRInterface
 var environment: Environment
+var fidelity_mode := true
 var passthrough := false
 var loading := false
 var pending_path := ""
@@ -106,6 +108,7 @@ func _ready():
 	_build_room()
 	_refresh_menu()
 	_choose(0)
+	_apply_fidelity()
 	if FileAccess.file_exists(SAVE): restore_workspace(JSON.parse_string(FileAccess.get_file_as_string(SAVE)))
 	origin.position=compound.SPAWNS[room_index];place_menu()
 	say("Spust: wybierz · chwyt: podnieś · A/X: 180° · B/Y: panel")
@@ -154,16 +157,24 @@ func _build_gallery():
 	var vessels: Array = catalog.filter(func(c):return c.get("id", "").begins_with("vessel_"))
 	for i in range(vessels.size()):
 		var meta: Dictionary=vessels[i]
-		var object = load(meta.model).instantiate(); gallery.add_child(object); _normalize(object,.98)
+		var object = load(meta.model).instantiate(); object.set_meta("hypothesis_geometry", true); gallery.add_child(object); _normalize(object,.98)
 		object.position += Vector3(6.15+float(i%5)*1.75,.99,-4.48 if i<5 else 2.4)
 		_add_gallery_colliders(object,meta)
-		var caption := label("f"+meta.folio+" · "+str(i+1),22); caption.position=Vector3(6.15+float(i%5)*1.75,1.01,-3.91 if i<5 else 3.11); gallery.add_child(caption)
+		var caption := label("f"+meta.folio+" · bryła niezweryfikowana",22); caption.position=Vector3(6.15+float(i%5)*1.75,1.01,-3.91 if i<5 else 3.11); gallery.add_child(caption)
 	for i in range(3):
 		var scan: String=["s0161","s0163","s0175"][i]
 		var t = load("res://assets/scans/"+scan+".jpg"); var q:=QuadMesh.new();q.size=Vector2(minf(1.9,1.96*float(t.get_width())/t.get_height()),1.96)
 		var n:=MeshInstance3D.new();n.mesh=q;var m:=material(Color.WHITE,true);m.albedo_texture=t;n.material_override=m;n.position=Vector3(7.4+i*2.6,2.25,-5.67);gallery.add_child(n)
 		var src: Dictionary=catalog.filter(func(c):return c.scan==scan)[0];_gallery_body(n,n.get_aabb(),src)
 	var book=load("res://assets/room/open_book.glb").instantiate();gallery.add_child(book);book.position=Vector3(0,1.07,-2.12)
+	reader = load("res://scripts/source_reader.gd").new(); add_child(reader); reader.setup(self, scan_panel, book)
+	for poster in gallery.get_children():
+		if poster is MeshInstance3D and poster.mesh is QuadMesh:
+			var bodies := poster.find_children("*", "StaticBody3D", true, false)
+			if not bodies.is_empty() and bodies[0].has_meta("gallery_source"):
+				var scan: String = bodies[0].get_meta("gallery_source").scan
+				var matches := pages.filter(func(p): return p.id == scan)
+				if not matches.is_empty(): reader.bind_page(poster, matches[0], Vector2(1.9, 1.96))
 	_add_gallery_colliders(book,{"scan":"codex","folio":"kodeks · 206 skanów","category":"Kodeks","model":"res://assets/room/codex.glb"})
 
 func _gallery_body(mesh: MeshInstance3D, bounds: AABB, meta: Dictionary):
@@ -172,9 +183,14 @@ func _gallery_body(mesh: MeshInstance3D, bounds: AABB, meta: Dictionary):
 
 func _add_gallery_colliders(root: Node3D, meta: Dictionary):
 	for mesh in root.find_children("*","MeshInstance3D",true,false):
+		if mesh.name.begins_with("Reader") or mesh.name.begins_with("PAGE_"): continue
+		if mesh.get_parent().has_meta("action"): continue
 		_gallery_body(mesh,mesh.get_aabb(),meta)
 
 func _take_gallery(body, hand: int):
+	if body.get_meta("gallery_source").scan == "codex":
+		if exhibits.find_children("*", "Node3D", true, false).filter(func(n): return n.has_meta("source")).size() >= LIMIT: say("Limit 12 zestawów"); return
+		_add_page(); _grab(selected, hand); return
 	if exhibits.find_children("*","Node3D",true,false).filter(func(n):return n.has_meta("source")).size()>=LIMIT: say("Limit 12 modeli roboczych");return
 	checkpoint();var meta: Dictionary=body.get_meta("gallery_source");var object:=_new_exhibit(meta,load(meta.model))
 	object.global_position=controllers[hand].global_position-controllers[hand].global_basis.z*.45-Vector3(0,.25,0)
@@ -188,11 +204,11 @@ func _refresh_menu():
 	var actions: Array = []
 	match mode:
 		"Katalog":
-			actions = [["◀ Model", func(): _choose(-1)], ["Model ▶", func(): _choose(1)], ["Kategoria", _cycle_category], ["Dodaj model", _add_preview], ["◀ Strona", func(): _choose_page(-1)], ["Strona ▶", func(): _choose_page(1)], ["Wyjmij stronę", _add_page], ["Cały kodeks", _add_book], ["Zapisz układ", save_workspace], ["Cofnij", undo]]
+			actions = [["◀ Model", func(): _choose(-1)], ["Model ▶", func(): _choose(1)], ["Kategoria", _cycle_category], ["Dodaj model", _add_preview], ["◀ Strona", func(): _choose_page(-1)], ["Strona ▶", func(): _choose_page(1)], ["Wyjmij stronę", _add_page], ["Czytaj kodeks", _focus_reader], ["Zapisz układ", save_workspace], ["Cofnij", undo]]
 		"Obiekt":
 			actions = [["Części" if not pieces_mode else "Cały model", func(): pieces_mode = not pieces_mode; _refresh_menu()], ["Obrót 180°", func(): rotate_selection(Vector3.UP, PI)], ["X +15°", func(): rotate_selection(Vector3.RIGHT, PI/12)], ["Y +15°", func(): rotate_selection(Vector3.UP, PI/12)], ["Z +15°", func(): rotate_selection(Vector3.BACK, PI/12)], ["Większy ×1.1", func(): scale_selection(1.1)], ["Mniejszy ÷1.1", func(): scale_selection(1.0/1.1)], ["Oddziel część", detach_selected], ["Przypnij bazę", pin_selection], ["Połącz z bazą", join_selected], ["Cofnij", undo], ["Zapisz układ", save_workspace]]
 		"Badania":
-			actions = [["Zakończ głos" if recording else "Zdjęcie + głos", toggle_recording], ["Zrób zdjęcie", take_note], ["Pióro: WŁ" if drawing else "Pióro: WYŁ", func(): drawing = not drawing; _refresh_menu()], ["Zapisz szkic", take_note], ["VR / otoczenie", toggle_passthrough], ["Własny widok", place_menu], ["Otwórz atlas", open_atlas], ["Notatki: folder", func(): say("Notatki lokalnie: Android/data/pl.manuskrypt.quest/files/notes")]]
+			actions = [["Zakończ głos" if recording else "Zdjęcie + głos", toggle_recording], ["Zrób zdjęcie", take_note], ["Pióro: WŁ" if drawing else "Pióro: WYŁ", func(): drawing = not drawing; _refresh_menu()], ["Zapisz szkic", take_note], ["VR / otoczenie", toggle_passthrough], ["Własny widok", place_menu], ["Źródła / hipotezy", _toggle_fidelity], ["Otwórz atlas", open_atlas], ["Notatki: folder", func(): say("Notatki lokalnie: Android/data/pl.manuskrypt.quest/files/notes")]]
 		"Kolory":
 			actions=probe.menu_actions()
 		"Tarot":
@@ -229,14 +245,14 @@ func _choose(delta: int):
 	_request_model(meta, "preview")
 
 func _show_scan(scan: String):
-	var tex = load("res://assets/scans/" + scan + ".jpg")
-	var m := material(Color.WHITE, true); m.albedo_texture = tex; m.cull_mode = BaseMaterial3D.CULL_DISABLED; scan_panel.material_override = m
-	var aspect: float = float(tex.get_width()) / tex.get_height()
-	scan_panel.mesh.size = Vector2(minf(aspect, 1.4), minf(1.0, 1.4/aspect))
+	if reader and reader.select_scan(scan):
+		heading.text = "%s · skan %d/%d" % [pages[page_cursor].label, page_cursor + 1, pages.size()]
 
 func _choose_page(delta: int):
-	page_cursor = posmod(page_cursor + delta, pages.size()); var p: Dictionary = pages[page_cursor]
-	_show_scan(p.id); heading.text = "Strona " + p.label + " · %d/206" % (page_cursor + 1)
+	if not reader: return
+	reader.step(delta)
+	heading.text = "%s · skan %d/%d" % [pages[page_cursor].label, page_cursor + 1, pages.size()]
+	save_workspace()
 
 func _request_model(meta: Dictionary, target: String):
 	if loading: return
@@ -259,13 +275,14 @@ func _finish_load():
 		for n in preview.get_children(): preview.remove_child(n); n.queue_free()
 		var object := scene.instantiate(); preview.add_child(object)
 		_normalize(object, 0.95); object.position += Vector3(0, 1.1, -2.1)
+		preview.visible = not fidelity_mode
 	else:
 		var root := _new_exhibit(pending_meta, scene)
 		root.global_position = camera.global_position - camera.global_basis.z * 1.0 - Vector3(0,.5,0); selected = root; save_workspace()
 	say_loaded()
 
 func say_loaded():
-	say("Gotowe · f" + pending_meta.folio + " · bryła robocza; głębokość interpretowana")
+	say("Gotowe · f" + pending_meta.folio + " · model NIEZWERYFIKOWANY — porównaj ze skanem")
 
 func _new_exhibit(meta: Dictionary, scene: PackedScene) -> Node3D:
 	var root := Node3D.new(); exhibits.add_child(root); counter += 1
@@ -301,8 +318,8 @@ func _make_page(p: Dictionary) -> Node3D:
 	root.set_meta("source", {"scan":p.id, "folio":p.label, "category":p.category}); root.set_meta("kind", "page")
 	var width: float = 0.68 * float(p.width) / float(p.height)
 	box(root, Vector3.ZERO, Vector3(width,0.68,0.004), Color("d8c9a5"))
-	var mesh := MeshInstance3D.new(); var plane := QuadMesh.new(); plane.size = Vector2(width,0.68); mesh.mesh = plane; mesh.position.z = 0.0022; root.add_child(mesh)
-	var mat := material(Color.WHITE, true); mat.albedo_texture = load("res://assets/scans/"+p.id+".jpg"); mesh.material_override = mat
+	var mesh := MeshInstance3D.new(); var plane := QuadMesh.new(); plane.size = Vector2(width,0.68); mesh.mesh = plane; mesh.name = "SourceFace"; mesh.position.z = 0.008; root.add_child(mesh)
+	reader.bind_page(mesh, p, Vector2(width, 0.68))
 	_add_colliders(root, root); return root
 
 func _add_book():
@@ -340,6 +357,8 @@ func _update_hover():
 	for i in range(2):
 		if rays[i].is_colliding():
 			var b = rays[i].get_collider()
+			if b and b.has_meta("reader_control"):
+				hover_label.text = "Spust: " + str(b.get_meta("reader_control")); hover_label.global_position = rays[i].get_collision_point() + Vector3(0,.13,0); hover_label.visible = true; return
 			if b and b.has_meta("color_probe"):
 				hover_label.text="Spust: próbka "+("A" if probe.target==0 else "B");hover_label.global_position=rays[i].get_collision_point()+Vector3(0,.1,0);hover_label.visible=true;return
 			if b and b.has_meta("tarot"):
@@ -350,7 +369,7 @@ func _update_hover():
 				hover_label.global_position=rays[i].get_collision_point()+Vector3(0,.16,0);hover_label.visible=true;return
 			if b and b.has_meta("exhibit"):
 				var root: Node3D = b.get_meta("exhibit"); var source: Dictionary = root.get_meta("source")
-				hover_label.text = "f" + _folio_label(b) + (" · część" if pieces_mode else " · cały model")
+				hover_label.text = "f" + _folio_label(b) + (" · część; niezweryfikowana" if pieces_mode else " · model niezweryfikowany")
 				hover_label.global_position = rays[i].get_collision_point() + Vector3(0, 0.16, 0); hover_label.visible = true; return
 
 func _folio_label(body) -> String:
@@ -366,6 +385,8 @@ func _button(action: String, hand: int):
 	if action == "by_button" or action == "menu_button": menu.visible = not menu.visible; if_menu_visible(); return
 	if action == "ax_button": rotate_selection(Vector3.UP, PI); return
 	if action == "trigger_click":
+		if rays[hand].is_colliding() and rays[hand].get_collider().has_meta("reader_control"):
+			_select_body(rays[hand].get_collider()); return
 		if drawing and hand == 1:
 			_begin_stroke(); return
 		if rays[hand].is_colliding():
@@ -386,6 +407,7 @@ func _select_body(body):
 	if body.has_meta("gallery_source"):
 		var src: Dictionary=body.get_meta("gallery_source")
 		if src.scan!="codex":_show_scan(src.scan)
+		else: _focus_reader()
 		say("f"+src.folio+" · naciśnij chwyt, aby wziąć kopię");return
 	if body.has_meta("action"): body.get_meta("action").call_deferred(); return
 	if body.has_meta("exhibit"):
@@ -500,7 +522,7 @@ func workspace_data() -> Dictionary:
 		for part in root.find_children("*", "MeshInstance3D", true, false):
 			if _root_for(part) == root: parts[str(root.get_path_to(part))] = _encode_transform(part.global_transform)
 		data.append({"name":str(root.name),"source":root.get_meta("source"),"kind":root.get_meta("kind"),"transform":_encode_transform(root.global_transform),"parts":parts,"original_path":root.get_meta("original_path", ""),"parent":str(exhibits.get_path_to(root.get_parent()))})
-	return {"version":1,"room":room_index,"tarot":tarot.data() if tarot else {},"models":data,"strokes":all_strokes,"saved_at":Time.get_datetime_string_from_system(true)}
+	return {"version":1,"reader_scan":pages[page_cursor].id,"fidelity_mode":fidelity_mode,"room":room_index,"tarot":tarot.data() if tarot else {},"models":data,"strokes":all_strokes,"saved_at":Time.get_datetime_string_from_system(true)}
 
 func _atomic_json(path: String, data: Dictionary) -> bool:
 	var file := FileAccess.open(path + ".tmp", FileAccess.WRITE)
@@ -565,6 +587,8 @@ func restore_workspace(data):
 			if parent and parent != root and not root.is_ancestor_of(parent): root.reparent(parent, true)
 	room_index = clampi(int(data.get("room", 0)), 0, room_names.size()-1); _build_room()
 	if tarot:tarot.restore(data.get("tarot",{}))
+	_show_scan(str(data.get("reader_scan", pages[page_cursor].id)))
+	fidelity_mode = bool(data.get("fidelity_mode", true)); _apply_fidelity()
 	all_strokes = data.get("strokes", []); _restore_strokes()
 
 func _setup_notebook():
@@ -675,3 +699,30 @@ func _capture_test():
 	get_viewport().get_texture().get_image().save_png("res://native-preview.png")
 	print("RENDER_CAPTURE_SAVED")
 	get_tree().quit()
+
+func _toggle_fidelity():
+	fidelity_mode = not fidelity_mode
+	_apply_fidelity()
+	say("ŹRÓDŁA: podgląd brył ukryty; własny układ zachowany" if fidelity_mode else "HIPOTEZY: bryły niezweryfikowane; geometria i barwy mogą odbiegać od skanu")
+	save_workspace()
+
+func _apply_fidelity():
+	if xr is OpenXRInterface and xr.is_initialized() and xr.is_foveation_supported():
+		xr.set("foveation_dynamic", not fidelity_mode)
+		xr.set("foveation_level", 0 if fidelity_mode else 2)
+	preview.visible = not fidelity_mode
+	if compound: compound.apply_fidelity()
+	if gallery:
+		for child in gallery.get_children():
+			if child.has_meta("hypothesis_geometry"):
+				child.visible = not fidelity_mode
+				for body in child.find_children("*", "StaticBody3D", true, false): body.collision_layer = 0 if fidelity_mode else 1
+
+func _focus_reader():
+	var direction := -camera.global_basis.z
+	direction.y = 0
+	if direction.length() < .01: direction = Vector3.FORWARD
+	scan_panel.global_position = camera.global_position + direction.normalized() * 1.5
+	scan_panel.look_at(camera.global_position, Vector3.UP, true)
+	_show_scan(pages[page_cursor].id)
+	say("Wszystkie %d skanów · strzałki pod stroną · chwyt księgi wyjmuje bieżący skan" % pages.size())

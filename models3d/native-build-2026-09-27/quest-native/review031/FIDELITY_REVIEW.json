@@ -1,0 +1,2294 @@
+{
+  "version": "0.3.1",
+  "model_count": 254,
+  "scientifically_verified_models": 0,
+  "reason": "User reports source discrepancies in basins, structures, colors and repeated botanical roots. Existing models have not passed an object-by-object projection audit.",
+  "records": [
+    {
+      "id": "s0004",
+      "scan": "s0004",
+      "folio": "1v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0005",
+      "scan": "s0005",
+      "folio": "2r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0006",
+      "scan": "s0006",
+      "folio": "2v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0007",
+      "scan": "s0007",
+      "folio": "3r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0008",
+      "scan": "s0008",
+      "folio": "3v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0009",
+      "scan": "s0009",
+      "folio": "4r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0010",
+      "scan": "s0010",
+      "folio": "4v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0011",
+      "scan": "s0011",
+      "folio": "5r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0012",
+      "scan": "s0012",
+      "folio": "5v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0013",
+      "scan": "s0013",
+      "folio": "6r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0014",
+      "scan": "s0014",
+      "folio": "6v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0015",
+      "scan": "s0015",
+      "folio": "7r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0016",
+      "scan": "s0016",
+      "folio": "7v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0017",
+      "scan": "s0017",
+      "folio": "8r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0018",
+      "scan": "s0018",
+      "folio": "8v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0019",
+      "scan": "s0019",
+      "folio": "9r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0020",
+      "scan": "s0020",
+      "folio": "9v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0021",
+      "scan": "s0021",
+      "folio": "10r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0022",
+      "scan": "s0022",
+      "folio": "10v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0023",
+      "scan": "s0023",
+      "folio": "11r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0024",
+      "scan": "s0024",
+      "folio": "11v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0025",
+      "scan": "s0025",
+      "folio": "13r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0026",
+      "scan": "s0026",
+      "folio": "13v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0027",
+      "scan": "s0027",
+      "folio": "14r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0028",
+      "scan": "s0028",
+      "folio": "14v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0029",
+      "scan": "s0029",
+      "folio": "15r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0030",
+      "scan": "s0030",
+      "folio": "15v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0031",
+      "scan": "s0031",
+      "folio": "16r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0032",
+      "scan": "s0032",
+      "folio": "16v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0033",
+      "scan": "s0033",
+      "folio": "17r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0034",
+      "scan": "s0034",
+      "folio": "17v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0035",
+      "scan": "s0035",
+      "folio": "18r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0036",
+      "scan": "s0036",
+      "folio": "18v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0037",
+      "scan": "s0037",
+      "folio": "19r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0038",
+      "scan": "s0038",
+      "folio": "19v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0039",
+      "scan": "s0039",
+      "folio": "20r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0040",
+      "scan": "s0040",
+      "folio": "20v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0041",
+      "scan": "s0041",
+      "folio": "21r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0042",
+      "scan": "s0042",
+      "folio": "21v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0043",
+      "scan": "s0043",
+      "folio": "22r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0044",
+      "scan": "s0044",
+      "folio": "22v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0045",
+      "scan": "s0045",
+      "folio": "23r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0046",
+      "scan": "s0046",
+      "folio": "23v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0047",
+      "scan": "s0047",
+      "folio": "24r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0048",
+      "scan": "s0048",
+      "folio": "24v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0049",
+      "scan": "s0049",
+      "folio": "25r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0050",
+      "scan": "s0050",
+      "folio": "25v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0051",
+      "scan": "s0051",
+      "folio": "26r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0052",
+      "scan": "s0052",
+      "folio": "26v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0053",
+      "scan": "s0053",
+      "folio": "27r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0054",
+      "scan": "s0054",
+      "folio": "27v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0055",
+      "scan": "s0055",
+      "folio": "28r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0056",
+      "scan": "s0056",
+      "folio": "28v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0057",
+      "scan": "s0057",
+      "folio": "29r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0058",
+      "scan": "s0058",
+      "folio": "29v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0059",
+      "scan": "s0059",
+      "folio": "30r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0060",
+      "scan": "s0060",
+      "folio": "30v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0061",
+      "scan": "s0061",
+      "folio": "31r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0062",
+      "scan": "s0062",
+      "folio": "31v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0063",
+      "scan": "s0063",
+      "folio": "32r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0064",
+      "scan": "s0064",
+      "folio": "32v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0065",
+      "scan": "s0065",
+      "folio": "33r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0066",
+      "scan": "s0066",
+      "folio": "33v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0067",
+      "scan": "s0067",
+      "folio": "34r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0068",
+      "scan": "s0068",
+      "folio": "34v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0069",
+      "scan": "s0069",
+      "folio": "35r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0070",
+      "scan": "s0070",
+      "folio": "35v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0071",
+      "scan": "s0071",
+      "folio": "36r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0072",
+      "scan": "s0072",
+      "folio": "36v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0073",
+      "scan": "s0073",
+      "folio": "37r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0074",
+      "scan": "s0074",
+      "folio": "37v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0075",
+      "scan": "s0075",
+      "folio": "38r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0076",
+      "scan": "s0076",
+      "folio": "38v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0077",
+      "scan": "s0077",
+      "folio": "39r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0078",
+      "scan": "s0078",
+      "folio": "39v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0079",
+      "scan": "s0079",
+      "folio": "40r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0080",
+      "scan": "s0080",
+      "folio": "40v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0081",
+      "scan": "s0081",
+      "folio": "41r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0082",
+      "scan": "s0082",
+      "folio": "41v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0083",
+      "scan": "s0083",
+      "folio": "42r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0084",
+      "scan": "s0084",
+      "folio": "42v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0085",
+      "scan": "s0085",
+      "folio": "43r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0086",
+      "scan": "s0086",
+      "folio": "43v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0087",
+      "scan": "s0087",
+      "folio": "44r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0088",
+      "scan": "s0088",
+      "folio": "44v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0089",
+      "scan": "s0089",
+      "folio": "45r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0090",
+      "scan": "s0090",
+      "folio": "45v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0091",
+      "scan": "s0091",
+      "folio": "46r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0092",
+      "scan": "s0092",
+      "folio": "46v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0093",
+      "scan": "s0093",
+      "folio": "47r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0094",
+      "scan": "s0094",
+      "folio": "47v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0095",
+      "scan": "s0095",
+      "folio": "48r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0096",
+      "scan": "s0096",
+      "folio": "48v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0097",
+      "scan": "s0097",
+      "folio": "49r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0098",
+      "scan": "s0098",
+      "folio": "49v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0099",
+      "scan": "s0099",
+      "folio": "50r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0100",
+      "scan": "s0100",
+      "folio": "50v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0101",
+      "scan": "s0101",
+      "folio": "51r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0102",
+      "scan": "s0102",
+      "folio": "51v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0103",
+      "scan": "s0103",
+      "folio": "52r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0104",
+      "scan": "s0104",
+      "folio": "52v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0105",
+      "scan": "s0105",
+      "folio": "53r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0106",
+      "scan": "s0106",
+      "folio": "53v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0107",
+      "scan": "s0107",
+      "folio": "54r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0108",
+      "scan": "s0108",
+      "folio": "54v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0109",
+      "scan": "s0109",
+      "folio": "55r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0110",
+      "scan": "s0110",
+      "folio": "55v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0111",
+      "scan": "s0111",
+      "folio": "56r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0112",
+      "scan": "s0112",
+      "folio": "56v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0113",
+      "scan": "s0113",
+      "folio": "57r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0114",
+      "scan": "s0114",
+      "folio": "57v",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0117",
+      "scan": "s0117",
+      "folio": "65r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0118",
+      "scan": "s0118",
+      "folio": "65v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0120",
+      "scan": "s0120",
+      "folio": "66v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0121",
+      "scan": "s0121",
+      "folio": "67r",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0122",
+      "scan": "s0122",
+      "folio": "67v",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0123",
+      "scan": "s0123",
+      "folio": "68r",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0124",
+      "scan": "s0124",
+      "folio": "68v",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0125",
+      "scan": "s0125",
+      "folio": "69r",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0126",
+      "scan": "s0126",
+      "folio": "69v and 70r",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0127",
+      "scan": "s0127",
+      "folio": "70v  part",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0128",
+      "scan": "s0128",
+      "folio": "70v  part",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0129",
+      "scan": "s0129",
+      "folio": "71r",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0130",
+      "scan": "s0130",
+      "folio": "71v and 72r",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0131",
+      "scan": "s0131",
+      "folio": "72v  part",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0132",
+      "scan": "s0132",
+      "folio": "72v  part",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0133",
+      "scan": "s0133",
+      "folio": "73r",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0134",
+      "scan": "s0134",
+      "folio": "73v",
+      "category": "Zodiak",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0135",
+      "scan": "s0135",
+      "folio": "75r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0136",
+      "scan": "s0136",
+      "folio": "75v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0138",
+      "scan": "s0138",
+      "folio": "76v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0139",
+      "scan": "s0139",
+      "folio": "77r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0140",
+      "scan": "s0140",
+      "folio": "77v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0141",
+      "scan": "s0141",
+      "folio": "78r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0142",
+      "scan": "s0142",
+      "folio": "78v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0143",
+      "scan": "s0143",
+      "folio": "79r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0144",
+      "scan": "s0144",
+      "folio": "79v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0145",
+      "scan": "s0145",
+      "folio": "80r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0146",
+      "scan": "s0146",
+      "folio": "80v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0147",
+      "scan": "s0147",
+      "folio": "81r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0148",
+      "scan": "s0148",
+      "folio": "81v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0149",
+      "scan": "s0149",
+      "folio": "82r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0150",
+      "scan": "s0150",
+      "folio": "82v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0151",
+      "scan": "s0151",
+      "folio": "83r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0152",
+      "scan": "s0152",
+      "folio": "83v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0153",
+      "scan": "s0153",
+      "folio": "84r",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0154",
+      "scan": "s0154",
+      "folio": "84v",
+      "category": "Sceny i postacie",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0156",
+      "scan": "s0156",
+      "folio": "85r  part  86v  part   part of 85-86 foldout",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0158",
+      "scan": "s0158",
+      "folio": "85v and 86r  foldout",
+      "category": "Diagramy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0159",
+      "scan": "s0159",
+      "folio": "87r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0160",
+      "scan": "s0160",
+      "folio": "87v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0161",
+      "scan": "s0161",
+      "folio": "88r",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0162",
+      "scan": "s0162",
+      "folio": "88v and 89r",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0163",
+      "scan": "s0163",
+      "folio": "89v  part",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0164",
+      "scan": "s0164",
+      "folio": "89v  part  and 90r",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0165",
+      "scan": "s0165",
+      "folio": "90r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0166",
+      "scan": "s0166",
+      "folio": "90v  part",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0167",
+      "scan": "s0167",
+      "folio": "93r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0168",
+      "scan": "s0168",
+      "folio": "93v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0169",
+      "scan": "s0169",
+      "folio": "94r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0170",
+      "scan": "s0170",
+      "folio": "94v and 95r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0171",
+      "scan": "s0171",
+      "folio": "95v  part",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0172",
+      "scan": "s0172",
+      "folio": "95v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0173",
+      "scan": "s0173",
+      "folio": "96r",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0174",
+      "scan": "s0174",
+      "folio": "96v",
+      "category": "Rośliny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0175",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0176",
+      "scan": "s0176",
+      "folio": "99v",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0177",
+      "scan": "s0177",
+      "folio": "100r",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0178",
+      "scan": "s0178",
+      "folio": "100v and 101r",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0179",
+      "scan": "s0179",
+      "folio": "101v  part",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0180",
+      "scan": "s0180",
+      "folio": "101v  part  and 102r",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0181",
+      "scan": "s0181",
+      "folio": "102v  part",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "s0182",
+      "scan": "s0182",
+      "folio": "102v  part",
+      "category": "Małe rośliny i naczynia",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0161_01",
+      "scan": "s0161",
+      "folio": "88r",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0161_02",
+      "scan": "s0161",
+      "folio": "88r",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0161_03",
+      "scan": "s0161",
+      "folio": "88r",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0163_01",
+      "scan": "s0163",
+      "folio": "89v  part",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0163_02",
+      "scan": "s0163",
+      "folio": "89v  part",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0163_03",
+      "scan": "s0163",
+      "folio": "89v  part",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0175_01",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0175_02",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0175_03",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "vessel_s0175_04",
+      "scan": "s0175",
+      "folio": "99r",
+      "category": "Naczynia · profile ze skanów",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0114",
+      "scan": "s0114",
+      "folio": "57v",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0121",
+      "scan": "s0121",
+      "folio": "67r",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0122",
+      "scan": "s0122",
+      "folio": "67v",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0123",
+      "scan": "s0123",
+      "folio": "68r",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0124",
+      "scan": "s0124",
+      "folio": "68v",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0125",
+      "scan": "s0125",
+      "folio": "69r",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0126",
+      "scan": "s0126",
+      "folio": "69v and 70r",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0156",
+      "scan": "s0156",
+      "folio": "85r  part  86v  part   part of 85-86 foldout",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "relief_s0158",
+      "scan": "s0158",
+      "folio": "85v and 86r  foldout",
+      "category": "Diagramy · relief 2.5D",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "spatial_s0158",
+      "scan": "s0158",
+      "folio": "85v and 86r  foldout",
+      "category": "Diagramy · model przestrzenny",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0135",
+      "scan": "s0135",
+      "folio": "75r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0136",
+      "scan": "s0136",
+      "folio": "75v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0138",
+      "scan": "s0138",
+      "folio": "76v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0139",
+      "scan": "s0139",
+      "folio": "77r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0140",
+      "scan": "s0140",
+      "folio": "77v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0141",
+      "scan": "s0141",
+      "folio": "78r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0142",
+      "scan": "s0142",
+      "folio": "78v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0143",
+      "scan": "s0143",
+      "folio": "79r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0144",
+      "scan": "s0144",
+      "folio": "79v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0145",
+      "scan": "s0145",
+      "folio": "80r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0146",
+      "scan": "s0146",
+      "folio": "80v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0147",
+      "scan": "s0147",
+      "folio": "81r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0148",
+      "scan": "s0148",
+      "folio": "81v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0149",
+      "scan": "s0149",
+      "folio": "82r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0150",
+      "scan": "s0150",
+      "folio": "82v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0151",
+      "scan": "s0151",
+      "folio": "83r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0152",
+      "scan": "s0152",
+      "folio": "83v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0153",
+      "scan": "s0153",
+      "folio": "84r",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0154",
+      "scan": "s0154",
+      "folio": "84v",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "flows_s0157",
+      "scan": "s0157",
+      "folio": "86v  part   part of 85-86 foldout",
+      "category": "Przepływy · relief źródłowy",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0003",
+      "scan": "s0003",
+      "folio": "1r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0115",
+      "scan": "s0115",
+      "folio": "58r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0116",
+      "scan": "s0116",
+      "folio": "58v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0119",
+      "scan": "s0119",
+      "folio": "66r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0137",
+      "scan": "s0137",
+      "folio": "76r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0155",
+      "scan": "s0155",
+      "folio": "85r  part   part of 85-86 foldout",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0157",
+      "scan": "s0157",
+      "folio": "86v  part   part of 85-86 foldout",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0183",
+      "scan": "s0183",
+      "folio": "103r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0184",
+      "scan": "s0184",
+      "folio": "103v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0185",
+      "scan": "s0185",
+      "folio": "104r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0186",
+      "scan": "s0186",
+      "folio": "104v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0187",
+      "scan": "s0187",
+      "folio": "105r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0188",
+      "scan": "s0188",
+      "folio": "105v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0189",
+      "scan": "s0189",
+      "folio": "106r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0190",
+      "scan": "s0190",
+      "folio": "106v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0191",
+      "scan": "s0191",
+      "folio": "107r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0192",
+      "scan": "s0192",
+      "folio": "107v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0193",
+      "scan": "s0193",
+      "folio": "108r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0194",
+      "scan": "s0194",
+      "folio": "108v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0195",
+      "scan": "s0195",
+      "folio": "111r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0196",
+      "scan": "s0196",
+      "folio": "111v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0197",
+      "scan": "s0197",
+      "folio": "112r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0198",
+      "scan": "s0198",
+      "folio": "112v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0199",
+      "scan": "s0199",
+      "folio": "113r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0200",
+      "scan": "s0200",
+      "folio": "113v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0201",
+      "scan": "s0201",
+      "folio": "114r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0202",
+      "scan": "s0202",
+      "folio": "114v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0203",
+      "scan": "s0203",
+      "folio": "115r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0204",
+      "scan": "s0204",
+      "folio": "115v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0205",
+      "scan": "s0205",
+      "folio": "116r",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "marginal_s0206",
+      "scan": "s0206",
+      "folio": "116v",
+      "category": "Tekst i drobne znaki · relief",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f66r_figure",
+      "scan": "s0119",
+      "folio": "66r",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f66r_vessel",
+      "scan": "s0119",
+      "folio": "66r",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f66r_round_1",
+      "scan": "s0119",
+      "folio": "66r",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f66r_round_2",
+      "scan": "s0119",
+      "folio": "66r",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f116v_animal",
+      "scan": "s0206",
+      "folio": "116v",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f116v_figure",
+      "scan": "s0206",
+      "folio": "116v",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f86v_NW",
+      "scan": "s0157",
+      "folio": "86v  part   part of 85-86 foldout",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f86v_NE",
+      "scan": "s0157",
+      "folio": "86v  part   part of 85-86 foldout",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f86v_SW",
+      "scan": "s0157",
+      "folio": "86v  part   part of 85-86 foldout",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    },
+    {
+      "id": "detail_f86v_SE",
+      "scan": "s0157",
+      "folio": "86v  part   part of 85-86 foldout",
+      "category": "Uzupełnienia · rysunki marginalne",
+      "status": "unverified_geometry",
+      "depth": "hypothesis",
+      "source_texture_not_equal_to_verified_3d": true
+    }
+  ]
+}

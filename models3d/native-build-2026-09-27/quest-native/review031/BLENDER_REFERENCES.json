@@ -1,0 +1,135 @@
+{
+  "verified_3d_reconstructions": 0,
+  "source_references": [
+    {
+      "id": "REF_01_s0004",
+      "scan": "s0004",
+      "folio": "1v",
+      "sha256": "4c90b1a03587dcef05fd673ea302358fc1c9ad2884d093c9faaee39c7e205d77",
+      "bbox_xyxy": [
+        490,
+        2880,
+        2310,
+        3610
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_02_s0005",
+      "scan": "s0005",
+      "folio": "2r",
+      "sha256": "9ad1ee866c7cf81e40ab88038444893c8691b253217141bb784fcfab49e4fc4f",
+      "bbox_xyxy": [
+        1120,
+        3200,
+        2010,
+        3640
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_03_s0141",
+      "scan": "s0141",
+      "folio": "78r",
+      "sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "bbox_xyxy": [
+        1190,
+        1210,
+        2280,
+        2020
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_04_s0141",
+      "scan": "s0141",
+      "folio": "78r",
+      "sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "bbox_xyxy": [
+        1130,
+        2500,
+        2240,
+        3430
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_05_s0141",
+      "scan": "s0141",
+      "folio": "78r",
+      "sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "bbox_xyxy": [
+        60,
+        85,
+        480,
+        510
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_06_s0141",
+      "scan": "s0141",
+      "folio": "78r",
+      "sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "bbox_xyxy": [
+        1910,
+        150,
+        2430,
+        525
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_07_s0141",
+      "scan": "s0141",
+      "folio": "78r",
+      "sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "bbox_xyxy": [
+        430,
+        310,
+        2000,
+        1260
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_08_s0135",
+      "scan": "s0135",
+      "folio": "75r",
+      "sha256": "b2ec3a214c2bdb6956674644021d748e011387fd40f9a2aa2d0f3fee23cae77d",
+      "bbox_xyxy": [
+        555,
+        155,
+        1810,
+        970
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_09_s0135",
+      "scan": "s0135",
+      "folio": "75r",
+      "sha256": "b2ec3a214c2bdb6956674644021d748e011387fd40f9a2aa2d0f3fee23cae77d",
+      "bbox_xyxy": [
+        890,
+        870,
+        1960,
+        2140
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    },
+    {
+      "id": "REF_10_s0135",
+      "scan": "s0135",
+      "folio": "75r",
+      "sha256": "b2ec3a214c2bdb6956674644021d748e011387fd40f9a2aa2d0f3fee23cae77d",
+      "bbox_xyxy": [
+        1510,
+        2080,
+        2640,
+        3220
+      ],
+      "status": "source_reference_only_not_a_reconstructed_object"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+ERROR: Condition "!FileAccess::exists(path)" is true. Returning: ERR_FILE_NOT_FOUND
+   at: open_dynamic_library (drivers/unix/os_unix.cpp:1061)
+ERROR: Condition "!FileAccess::exists(path)" is true. Returning: ERR_FILE_NOT_FOUND
+   at: open_dynamic_library (drivers/unix/os_unix.cpp:1061)
+ERROR: GDExtension dynamic library not found: 'res://addons/godotopenxrvendors/plugin.gdextension'.
+   at: open_library (core/extension/gdextension.cpp:740)
+ERROR: Error loading extension: 'res://addons/godotopenxrvendors/plugin.gdextension'.
+   at: load_extensions (core/extension/gdextension_manager.cpp:329)
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+{"catalog":254,"failures":[],"passed":true,"scans":206,"tests":"actual Godot scenes, GLBs, transforms, split/join, restart persistence; no headset"}

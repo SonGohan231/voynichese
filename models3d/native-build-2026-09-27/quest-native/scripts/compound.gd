@@ -47,7 +47,7 @@ func _process(dt):
 		timer=0;var zone:=zone_at(app.camera.global_position)
 		if zone!=app.room_index:app.room_index=zone;app._position_workspace();app._refresh_menu()
 		if zone!=active_zone:refresh_zone(zone)
-		heroes.visible=app.camera.global_position.distance_to(Vector3(5,0,20))<28
+		heroes.visible=not app.fidelity_mode and app.camera.global_position.distance_to(Vector3(5,0,20))<28
 	if loading:
 		var state:=ResourceLoader.load_threaded_get_status(request.path)
 		if state==ResourceLoader.THREAD_LOAD_LOADED:
@@ -81,6 +81,8 @@ func _queue_page():
 	legend.visible=not pool.is_empty()
 func _place_display(packed,meta:Dictionary,i:int):
 	var object=packed.instantiate();displays.add_child(object)
+	object.set_meta("hypothesis_geometry", true)
+	object.visible = not app.fidelity_mode
 	app._normalize(object,1.5 if active_zone==1 else (.63 if active_zone==5 else 1.15))
 	var pos:=Vector3.ZERO
 	match active_zone:
@@ -91,7 +93,15 @@ func _place_display(packed,meta:Dictionary,i:int):
 			var a:=TAU*i/8;pos=Vector3(21+4.35*cos(a),.91,18-6.5*sin(a))
 		5:pos=Vector3(9.05+(i%3)*.95,.94,-1.6 if i<3 else -.8)
 	object.position+=pos;_collider(object,meta)
-	var caption=app.label("f"+meta.folio,25);caption.position=pos+Vector3(0,-.02,.7);caption.billboard=BaseMaterial3D.BILLBOARD_ENABLED;caption.pixel_size=.003;displays.add_child(caption)
+	var matches: Array = app.pages.filter(func(p): return p.id == meta.scan)
+	if not matches.is_empty():
+		var source := MeshInstance3D.new(); source.name = "AuthoritativeScan"; source.mesh = QuadMesh.new()
+		displays.add_child(source); source.position = pos + Vector3(0,.8,.78)
+		app.reader.bind_page(source, matches[0], Vector2(1.0,1.2))
+		app._gallery_body(source, source.get_aabb(), meta)
+		# Trigger compares the source; grip still retrieves its explicitly hypothetical model.
+	apply_fidelity()
+	var caption=app.label("f"+meta.folio+" · bryła niezweryfikowana",25);caption.position=pos+Vector3(0,-.02,.7);caption.billboard=BaseMaterial3D.BILLBOARD_ENABLED;caption.pixel_size=.003;displays.add_child(caption)
 func _collider(object:Node3D,meta:Dictionary):
 	var bounds:=AABB();var first:=true
 	for m in object.find_children("*","MeshInstance3D",true,false):
@@ -100,3 +110,11 @@ func _collider(object:Node3D,meta:Dictionary):
 	if first:return
 	var b:=StaticBody3D.new();b.collision_layer=1;b.collision_mask=0;b.set_meta("gallery_source",meta);object.add_child(b)
 	var c:=CollisionShape3D.new();var s:=BoxShape3D.new();s.size=bounds.size.max(Vector3(.01,.01,.01));c.shape=s;c.position=bounds.get_center();b.add_child(c)
+
+func apply_fidelity():
+	heroes.visible = not app.fidelity_mode
+	for child in displays.get_children():
+		if child.has_meta("hypothesis_geometry"):
+			child.visible = not app.fidelity_mode
+			for body in child.find_children("*", "StaticBody3D", true, false):
+				body.collision_layer = 0 if app.fidelity_mode else 1
