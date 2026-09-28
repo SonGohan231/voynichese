@@ -1,0 +1,24 @@
+{
+  "created": "2026-09-28",
+  "assets": [
+    {
+      "name": "Blender_Przebudowa_01_10_Bryl_Roboczych.zip",
+      "size_bytes": 45951434,
+      "sha256": "0da3220e2ae640da83a049d23ed98134920ebf2dd0549563965613ae3f4289ef",
+      "saved": true
+    },
+    {
+      "name": "Blender_Przebudowa_02_10_Bryl_Roboczych.zip",
+      "size_bytes": 28263433,
+      "sha256": "9d716ba988dd263bed6308bdd190a4bcd4db1da5f0538411e3f6f9e98b4a434e",
+      "saved": true
+    },
+    {
+      "name": "Podglad_Przebudowy_20_Bryl.png",
+      "size_bytes": 1262242,
+      "sha256": "48a4fec1ddb4473b74c3303f8f45de78de210a926f004b78fc6126c669b7ac1d",
+      "saved": true
+    }
+  ],
+  "status": "20 draft source-projected volumes; whole corpus incomplete"
+}
