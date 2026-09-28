@@ -1,0 +1,117 @@
+{
+  "file": "Manuskrypt_Quest_0.3.1.apk",
+  "size": 1630273523,
+  "sha256": "e5d3ff497a82f337177d488ac6a93124fbab34922c56fcd7fa849a3f7eceaeed",
+  "md5": "26a4a0deb4530d1a31c9dfbb85eebd4c",
+  "version_code": 4,
+  "base_apk_sha256": "24c5db37b93f6247eaa501e93f96edfe5baf44fa3bedb6290cbd6ee79300807c",
+  "quest_tested": false,
+  "parts": [
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part01",
+      "size": 83886080,
+      "sha256": "0a9fea82d1e0186de4869a37ac33d478170f3ee693009532630cbbde16a96fcc"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part02",
+      "size": 83886080,
+      "sha256": "fb8258f5e85a2cfc448efd72f6136cf285c43cb80d9dab053272d507fddb1601"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part03",
+      "size": 83886080,
+      "sha256": "21a784d5d317d664c834c02b8dfcfead279fb70cbb6d4a6aa537bff54e21fa15"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part04",
+      "size": 83886080,
+      "sha256": "3c298b7d8640ffc8403d68a1cb4467f02874d68de6ce13090f7d4ab664fa924b"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part05",
+      "size": 83886080,
+      "sha256": "0065ecb71056e66b2bc52204d1630d550d1c9e4773dc2d725d4f8e67bd7115f1"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part06",
+      "size": 83886080,
+      "sha256": "b2fbf7711c05c1230a5627ac08a0205f9cc571412a423fae8cb6df9ff08367bf"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part07",
+      "size": 83886080,
+      "sha256": "b93b0e20068500e92b63a8757f0c0fe2d57eaf37b34b91602c5552c522a04f0f"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part08",
+      "size": 83886080,
+      "sha256": "2a41f9d7eda45899f21543e366004e5924fb6732d8b2cbe5e9612b112ec4f5b0"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part09",
+      "size": 83886080,
+      "sha256": "3ee596909e4238f260f1e62e2bfe91f0226b8000dae4fb78516eca1feb775334"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part10",
+      "size": 83886080,
+      "sha256": "27b090c73f79b8df53148219b22c106f67a7efdd878f16fb8cc6439018f469d4"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part11",
+      "size": 83886080,
+      "sha256": "79c1f97a498ac533e9dc301221ab32a61cfe33ce934c29b05838ab9751f09772"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part12",
+      "size": 83886080,
+      "sha256": "d1955ccc05236baaeba95c417ff5e5e19b1a25eb3889467a8d826ff030170182"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part13",
+      "size": 83886080,
+      "sha256": "061a7e91e11399b3ed5563518bad7dcefa586625c8317e3ff1e4fcf35a21cd18"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part14",
+      "size": 83886080,
+      "sha256": "329c432cf24bbf3bb9cd578a84e82881cf0e26c0e43f6979d4dc4fd16556c440"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part15",
+      "size": 83886080,
+      "sha256": "cbdd0a48be92171918d2c8f19a7bb029fbc2e20c886ccb9446359e063483062e"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part16",
+      "size": 83886080,
+      "sha256": "bd706f1534631cfeb533eadfb63859245ea3a96e1d40b3ee071f69499c5eeb3d"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part17",
+      "size": 83886080,
+      "sha256": "4bcaa9a3a11b40f685ecbc0a848dd17c37fb39dbcc505ba62b912bd8a0ece88b"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part18",
+      "size": 83886080,
+      "sha256": "5f7ac19139a1f9b5736d3dd2ee71b14d0f78843d9c1be2ea35c8ed7c5b47e07d"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part19",
+      "size": 83886080,
+      "sha256": "c226992bcc27a5500c262e94f3c4e3b28a1c1743b7f95fa29922845d4ac4021d"
+    },
+    {
+      "file": "Manuskrypt_Quest_0.3.1.apk.part20",
+      "size": 36438003,
+      "sha256": "5409d3919367300f08c22c3dc462eecca5d30658b6f5f6fb503c28e1f39bc0a1"
+    }
+  ],
+  "source_checksums_verified": 206,
+  "reader_assertions_passed": 228,
+  "native_libraries_changed": false,
+  "signed_with_existing_certificate": true,
+  "github_commit": "ec652412b711b36b4aa80aba041a811f0b921833",
+  "gofile_status": "blocked_pending_explicit_user_approval_for_0.3.1"
+}
