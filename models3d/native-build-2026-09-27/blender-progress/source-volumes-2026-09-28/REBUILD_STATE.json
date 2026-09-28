@@ -1,12 +1,10 @@
 {
   "legacy_catalog_entries": 254,
   "legacy_entries_are_not_an_exhaustive_drawing_inventory": true,
-  "rebuilt_draft_fragments": 20,
+  "rebuilt_draft_fragments": 42,
   "completed_and_certified_1_to_1_models": 0,
   "fully_rebuilt_pages": 0,
   "apk_updated": true,
-  "total_checked_rgb_pixels": 2170183,
-  "max_mean_rgb_error_255": 0.0,
   "color_test_limits": "source-view interior only; manual contour and depth not certified",
   "page_queue": [
     {
@@ -875,7 +873,29 @@
         "f78r_flow_03_04",
         "f78r_flow_right_canopy",
         "f78r_flow_06_07",
-        "f78r_river_between_basins"
+        "f78r_river_between_basins",
+        "f78r_figure_upper_01",
+        "f78r_figure_upper_02",
+        "f78r_figure_upper_03",
+        "f78r_figure_upper_04",
+        "f78r_figure_upper_05",
+        "f78r_figure_upper_06",
+        "f78r_figure_upper_07",
+        "f78r_figure_lower_01",
+        "f78r_figure_lower_02",
+        "f78r_figure_lower_03",
+        "f78r_figure_lower_04",
+        "f78r_figure_lower_05",
+        "f78r_figure_lower_06",
+        "f78r_figure_lower_07",
+        "f78r_figure_lower_08",
+        "f78r_upper_rim",
+        "f78r_upper_water",
+        "f78r_lower_rim",
+        "f78r_lower_water",
+        "f78r_flow_04_06",
+        "f78r_flow_05_06",
+        "f78r_flow_07_upper_basin"
       ]
     },
     {
@@ -1273,5 +1293,69 @@
   "apk_version": "0.3.2",
   "integrated_batch": "F01",
   "hollow_tube_candidates": 7,
-  "full_manuscript_complete": false
+  "full_manuscript_complete": false,
+  "integrated_draft_fragments": 20,
+  "new_layered_candidates_not_in_apk": [
+    "f78r_figure_upper_01",
+    "f78r_figure_upper_02",
+    "f78r_figure_upper_03",
+    "f78r_figure_upper_04",
+    "f78r_figure_upper_05",
+    "f78r_figure_upper_06",
+    "f78r_figure_upper_07",
+    "f78r_figure_lower_01",
+    "f78r_figure_lower_02",
+    "f78r_figure_lower_03",
+    "f78r_figure_lower_04",
+    "f78r_figure_lower_05",
+    "f78r_figure_lower_06",
+    "f78r_figure_lower_07",
+    "f78r_figure_lower_08",
+    "f78r_upper_rim",
+    "f78r_upper_water",
+    "f78r_lower_rim",
+    "f78r_lower_water",
+    "f78r_flow_04_06",
+    "f78r_flow_05_06",
+    "f78r_flow_07_upper_basin"
+  ],
+  "historical_pre_hollow_batch_color_test": {
+    "pixels": 2170183,
+    "max_mean_error": 0.0,
+    "scope": "earlier original 20 closed-volume tests, before hollow-tube upgrade; not the latest release-wide metric"
+  },
+  "latest_blender_material_fix": {
+    "fixed_tubes": [
+      "f78r_tube_01",
+      "f78r_tube_02",
+      "f78r_tube_03",
+      "f78r_tube_04",
+      "f78r_tube_05",
+      "f78r_tube_06",
+      "f78r_tube_07"
+    ],
+    "interior_pixels": 1474160,
+    "different_pixels": 0,
+    "max_rgb_error": 0,
+    "mean_rgb_error": 0.0,
+    "scope": "source-view interior only; contours and inferred depth remain unverified",
+    "coverage_lost_vs_baseline": 1,
+    "coverage_added_vs_baseline": 0,
+    "new_closed_models": 0,
+    "newly_certified_1_to_1_models": 0,
+    "glb": {
+      "sha256": "29133ffdea1f2e6b8e1b91ec5c333a872678ca29c71696918766e3cce6929060",
+      "bytes": 38845180,
+      "source_texture_bytes_preserved": true,
+      "unlit": true
+    },
+    "included_in_apk_0_3_2": false
+  },
+  "delivery_checkpoint": {
+    "apk_version": "0.3.2",
+    "apk_sha256": "cc28cb657cb3e28b25798def1e81eb74712577aa7e6752f271077fd5c49d7bcc",
+    "preserved_in_connected_drive": true,
+    "gofile_apk_uploaded": false,
+    "gofile_public_code_checkpoint": "https://gofile.io/d/6JyE7G7c"
+  }
 }

@@ -1,0 +1,442 @@
+{
+  "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+  "new_individual_figures": 15,
+  "new_basin_components": 4,
+  "assembly_meshes": 38,
+  "records": [
+    {
+      "id": "f78r_figure_upper_01",
+      "role": "figure",
+      "vertices": 12844,
+      "triangles": 25680,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0019686705699357584,
+      "mask_pixels": 44250,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_upper_02",
+      "role": "figure",
+      "vertices": 12730,
+      "triangles": 25460,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0015510765993280331,
+      "mask_pixels": 37849,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_upper_03",
+      "role": "figure",
+      "vertices": 12898,
+      "triangles": 25800,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0016607847062328185,
+      "mask_pixels": 39315,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_upper_04",
+      "role": "figure",
+      "vertices": 12932,
+      "triangles": 25860,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0014819844994903937,
+      "mask_pixels": 37459,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_upper_05",
+      "role": "figure",
+      "vertices": 9862,
+      "triangles": 19720,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0012088227903692805,
+      "mask_pixels": 30514,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_upper_06",
+      "role": "figure",
+      "vertices": 12117,
+      "triangles": 24230,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.001411373119281348,
+      "mask_pixels": 33524,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_upper_07",
+      "role": "figure",
+      "vertices": 11951,
+      "triangles": 23898,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.001379745226717244,
+      "mask_pixels": 33269,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_01",
+      "role": "figure",
+      "vertices": 13015,
+      "triangles": 26030,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.00157025192077023,
+      "mask_pixels": 38321,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_02",
+      "role": "figure",
+      "vertices": 11199,
+      "triangles": 22394,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.001535968654188858,
+      "mask_pixels": 35739,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_03",
+      "role": "figure",
+      "vertices": 11335,
+      "triangles": 22670,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0016113639991644578,
+      "mask_pixels": 37235,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_04",
+      "role": "figure",
+      "vertices": 8806,
+      "triangles": 17612,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0010249719580103765,
+      "mask_pixels": 25273,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_05",
+      "role": "figure",
+      "vertices": 12292,
+      "triangles": 24584,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0014716908719211994,
+      "mask_pixels": 35325,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_06",
+      "role": "figure",
+      "vertices": 10696,
+      "triangles": 21388,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.001191686203990452,
+      "mask_pixels": 30048,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_07",
+      "role": "figure",
+      "vertices": 11970,
+      "triangles": 23940,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0018010150376413848,
+      "mask_pixels": 41064,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_figure_lower_08",
+      "role": "figure",
+      "vertices": 12003,
+      "triangles": 23998,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0019018668964422187,
+      "mask_pixels": 42085,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_upper_rim",
+      "role": "rim",
+      "vertices": 17182,
+      "triangles": 34344,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.00692157794015455,
+      "mask_pixels": 89258,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_upper_water",
+      "role": "water",
+      "vertices": 7732,
+      "triangles": 15424,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.002040160180270346,
+      "mask_pixels": 255178,
+      "source_crop": [
+        1180,
+        1230,
+        2280,
+        1990
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_lower_rim",
+      "role": "rim",
+      "vertices": 13551,
+      "triangles": 26906,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.00429016328478162,
+      "mask_pixels": 55262,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_lower_water",
+      "role": "water",
+      "vertices": 7564,
+      "triangles": 15092,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.0018673601156772525,
+      "mask_pixels": 233665,
+      "source_crop": [
+        1150,
+        2600,
+        2210,
+        3390
+      ],
+      "contour_certified": false,
+      "depth_certified": false
+    },
+    {
+      "id": "f78r_flow_04_06",
+      "folio": "78r",
+      "scan": "s0141",
+      "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "crop": [
+        1500,
+        400,
+        2150,
+        1450
+      ],
+      "vertices": 264,
+      "triangles": 524,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.00011848377391363814,
+      "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+      "contour_review": "pending",
+      "depth": "inferred",
+      "front_color": "original scan, unlit",
+      "back_color": "neutral, explicitly unobserved"
+    },
+    {
+      "id": "f78r_flow_05_06",
+      "folio": "78r",
+      "scan": "s0141",
+      "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "crop": [
+        1500,
+        400,
+        2150,
+        1450
+      ],
+      "vertices": 94,
+      "triangles": 184,
+      "non_manifold_edges": 0,
+      "volume_m3": 3.214797594303388e-05,
+      "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+      "contour_review": "pending",
+      "depth": "inferred",
+      "front_color": "original scan, unlit",
+      "back_color": "neutral, explicitly unobserved"
+    },
+    {
+      "id": "f78r_flow_07_upper_basin",
+      "folio": "78r",
+      "scan": "s0141",
+      "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+      "crop": [
+        1500,
+        400,
+        2150,
+        1450
+      ],
+      "vertices": 248,
+      "triangles": 492,
+      "non_manifold_edges": 0,
+      "volume_m3": 0.00012029888250099926,
+      "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+      "contour_review": "pending",
+      "depth": "inferred",
+      "front_color": "original scan, unlit",
+      "back_color": "neutral, explicitly unobserved"
+    }
+  ],
+  "checks": [
+    {
+      "group": "upper",
+      "interior_pixels": 593704,
+      "mean_abs_rgb_error": 0.0,
+      "max_abs_rgb_error": 0.0,
+      "missing_mask_pixels": 801,
+      "excess_mask_pixels": 765,
+      "scope": "orthographic source-view including reported silhouette errors; masks themselves remain unverified"
+    },
+    {
+      "group": "lower",
+      "interior_pixels": 565756,
+      "mean_abs_rgb_error": 0.0,
+      "max_abs_rgb_error": 0.0,
+      "missing_mask_pixels": 918,
+      "excess_mask_pixels": 909,
+      "scope": "orthographic source-view including reported silhouette errors; masks themselves remain unverified"
+    }
+  ],
+  "glb": {
+    "sha256": "aaafa0ab53eaba02ba1d57b0a679d013da23cd2592d366be9359f273522bc53a",
+    "bytes": 38822364,
+    "source_texture_bytes_preserved": true,
+    "unlit": true
+  },
+  "certified_models": 0,
+  "full_manuscript_complete": false,
+  "claim_limits": [
+    "15 visible person silhouettes; occluded anatomy is not reconstructed",
+    "Rim/water boundary is a pigment-based draft partition",
+    "Source RGB registration is separate from contour correctness",
+    "No physical headset or screen calibration performed"
+  ],
+  "packed_original_texture_count": 1,
+  "depth_controls": 15,
+  "mesh_sampling_px": 2,
+  "raster_boundary_error_note": "Source-projected silhouette follows a 2-pixel grid; not subpixel accurate.",
+  "new_flow_connections": 3,
+  "full_assembly_color_check": {
+    "pixels": 1474161,
+    "mean_absolute_rgb_error": 0.0007543273767247946,
+    "max_absolute_rgb_error": 121.0,
+    "scope": "rendered assembly interior; no certification of missing drawings, silhouette or depth",
+    "different_pixels": 20,
+    "exact_pixels": 1474141,
+    "exact_fraction": 0.9999864329608503
+  }
+}

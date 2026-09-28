@@ -1,0 +1,26 @@
+{
+  "fixed_tubes": [
+    "f78r_tube_01",
+    "f78r_tube_02",
+    "f78r_tube_03",
+    "f78r_tube_04",
+    "f78r_tube_05",
+    "f78r_tube_06",
+    "f78r_tube_07"
+  ],
+  "interior_pixels": 1474160,
+  "different_pixels": 0,
+  "max_rgb_error": 0,
+  "mean_rgb_error": 0.0,
+  "scope": "source-view interior only; contours and inferred depth remain unverified",
+  "coverage_lost_vs_baseline": 1,
+  "coverage_added_vs_baseline": 0,
+  "new_closed_models": 0,
+  "newly_certified_1_to_1_models": 0,
+  "glb": {
+    "sha256": "29133ffdea1f2e6b8e1b91ec5c333a872678ca29c71696918766e3cce6929060",
+    "bytes": 38845180,
+    "source_texture_bytes_preserved": true,
+    "unlit": true
+  }
+}

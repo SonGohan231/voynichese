@@ -35,6 +35,7 @@ def main():
  sc.world=bpy.data.worlds.new('Neutral');bpy.ops.object.camera_add();sc.camera=bpy.context.object
  img=bpy.data.images.load(str(source.resolve()));img.colorspace_settings.name='sRGB';img.pack()
  frontmat=material('SOURCE_SRGB_UNLIT',img);backmat=material('UNOBSERVED_BACK_NEUTRAL')
+ frontmat.use_backface_culling=True;backmat.use_backface_culling=True
  parts=[]
  for name in ('annotations.json','annotations_02.json'):parts+=json.loads((HERE/name).read_text())['parts']
  records=[]
@@ -73,7 +74,7 @@ def main():
    center=len(vertices);vertices.append(project(end,0,0))
    for j in range(N):faces.append((offset+K*N+j,offset+K*N+(j+1)%N,center))
   mesh=bpy.data.meshes.new(part['id']+'_hollow');mesh.from_pydata(vertices,[],faces);mesh.update();mesh.materials.append(frontmat);mesh.materials.append(backmat)
-  bm=bmesh.new();bm.from_mesh(mesh);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));nonmanifold=sum(not e.is_manifold for e in bm.edges);volume=abs(bm.calc_volume(signed=True));bm.to_mesh(mesh);bm.free()
+  bm=bmesh.new();bm.from_mesh(mesh);bmesh.ops.triangulate(bm,faces=list(bm.faces),quad_method='FIXED',ngon_method='EAR_CLIP');bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));nonmanifold=sum(not e.is_manifold for e in bm.edges);volume=abs(bm.calc_volume(signed=True));bm.to_mesh(mesh);bm.free()
   assert nonmanifold==0 and volume>0
   uv=mesh.uv_layers.new(name='NativeSourceProjection')
   for f in mesh.polygons:
