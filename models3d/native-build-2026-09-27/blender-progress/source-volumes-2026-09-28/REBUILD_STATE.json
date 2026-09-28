@@ -4,7 +4,7 @@
   "rebuilt_draft_fragments": 20,
   "completed_and_certified_1_to_1_models": 0,
   "fully_rebuilt_pages": 0,
-  "apk_updated": false,
+  "apk_updated": true,
   "total_checked_rgb_pixels": 2170183,
   "max_mean_rgb_error_255": 0.0,
   "color_test_limits": "source-view interior only; manual contour and depth not certified",
@@ -1269,5 +1269,9 @@
       "draft_fragments": []
     }
   ],
-  "pages_in_existing_manifest": 206
+  "pages_in_existing_manifest": 206,
+  "apk_version": "0.3.2",
+  "integrated_batch": "F01",
+  "hollow_tube_candidates": 7,
+  "full_manuscript_complete": false
 }

@@ -9,8 +9,8 @@ ani pełna rekonstrukcja manuskryptu. Każdy plik GLB ma zamkniętą siatkę
 z objętością. Kontury są ręcznie wskazanymi kandydatami; głębokość jest
 interpretacją. Baseny są na tym etapie bryłami z zagłębieniem i obrazem postaci
 na powierzchni. **Postacie nie mają jeszcze osobnych, pełnych brył ciał.**
-Tuleje także wymagają dalszego modelowania wnętrza. To nie są zatwierdzone
-modele naukowe 1:1. Nie włączono ich automatycznie do APK.
+Siedem tulei ma od 0.3.2 modelowane wnętrza; ich przekrój, grubość i dno są interpretacją. To nie są zatwierdzone
+modele naukowe 1:1. Włączono je do APK 0.3.2 jako jawnie roboczą partię F01.
 
 Wszystkie 254 wcześniejsze wpisy katalogu pozostają niezweryfikowane.
 Ta liczba jest liczbą wpisów katalogu, nie pełnym spisem rysunków. Żadnej
@@ -57,7 +57,7 @@ python build_source_volumes.py --sources SCANS --pages ../../quest-native/assets
 ## Kolejne konieczne prace
 
 1. Korekta i niezależna kontrola każdego obrysu w nakładce ze skanem.
-2. Osobne bryły postaci, wnętrza tulei, rozwarstwienie nakładających się części.
+2. Osobne bryły postaci, kontrola wnętrz tulei i rozwarstwienie nakładających się części.
 3. Brakujące połączenia f78r oraz całe pozostałe rośliny, korzenie, baseny,
    diagramy i inne rysunki: kontrolowany spis obiektów strona po stronie.
 4. Dopiero po kontroli modelu: aktualizacja katalogu VR i próba w goglach.

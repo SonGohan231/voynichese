@@ -5514,5 +5514,565 @@
     "status": "CANDIDATE_VOLUME",
     "contour_verified": false,
     "model_sha256": "e54e63145e06900d89f616833a0c909025ddbacda9b8c8c497ab75c15d017e40"
+  },
+  {
+    "id": "rebuilt_f1v_root",
+    "scan": "s0004",
+    "folio": "1v",
+    "title": "f1v root",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Rośliny",
+    "model": "res://assets/models/rebuilt/f1v_root.glb",
+    "display_model": "res://assets/models/rebuilt/f1v_root.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "4c90b1a03587dcef05fd673ea302358fc1c9ad2884d093c9faaee39c7e205d77",
+    "source_bbox_px": [
+      602,
+      2840,
+      2236,
+      3614
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "21a96fa7a308ad161dcddad058994adbbd50758c8f3e67eec474f5430dba8d97",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      1634,
+      774
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f2r_root",
+    "scan": "s0005",
+    "folio": "2r",
+    "title": "f2r root",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Rośliny",
+    "model": "res://assets/models/rebuilt/f2r_root.glb",
+    "display_model": "res://assets/models/rebuilt/f2r_root.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "9ad1ee866c7cf81e40ab88038444893c8691b253217141bb784fcfab49e4fc4f",
+    "source_bbox_px": [
+      1166,
+      3212,
+      1930,
+      3636
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "22a444907778ad3093af7d4b251620b73ee41c13e28722b7851aafdc529fdfe0",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      764,
+      424
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_canopy_left",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "canopy left",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_canopy_left.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_canopy_left.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      91,
+      127,
+      429,
+      482
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "6a63a695e476acb30a72c1b935b07b53e38b201add5823c3f2092df854e86d01",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      338,
+      355
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_canopy_right",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "canopy right",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_canopy_right.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_canopy_right.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1980,
+      208,
+      2364,
+      510
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "42c9dcbddf70d6898e99c8a83d655b1270fff397aa581fc2a2b0789f20420765",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      384,
+      302
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_tube_01",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "tube 01",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_tube_01.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_tube_01.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      839,
+      327,
+      1031,
+      442
+    ],
+    "status": "DRAFT_HOLLOW_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "ea552d00f5609f39ae661fdf641d0a183ed29364c29048e7278c3038163e0f54",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      192,
+      115
+    ],
+    "hollow": true
+  },
+  {
+    "id": "rebuilt_f78r_tube_02",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "tube 02",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_tube_02.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_tube_02.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1026,
+      319,
+      1249,
+      457
+    ],
+    "status": "DRAFT_HOLLOW_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "18df841734d3412d7ede111453e9f0cbb9aa62650ad2e90045caf4623dd8db3f",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      223,
+      138
+    ],
+    "hollow": true
+  },
+  {
+    "id": "rebuilt_f78r_tube_06",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "tube 06",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_tube_06.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_tube_06.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1801,
+      711,
+      1954,
+      980
+    ],
+    "status": "DRAFT_HOLLOW_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "31afdbf57f7f3da6d49858272aafb90a29bcd3da1ed6f34f919c57619af82268",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      153,
+      269
+    ],
+    "hollow": true
+  },
+  {
+    "id": "rebuilt_f78r_tube_07",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "tube 07",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_tube_07.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_tube_07.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1818,
+      1034,
+      1974,
+      1269
+    ],
+    "status": "DRAFT_HOLLOW_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "7079c40823e5596c32d0506c89a8fd9007b3406224ae12456904235bfb169d67",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      156,
+      235
+    ],
+    "hollow": true
+  },
+  {
+    "id": "rebuilt_f78r_basin_upper",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "basin upper",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_basin_upper.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_basin_upper.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1211,
+      1253,
+      2251,
+      1985
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "95220b1591ac18335b65cdb45a0a66dbf852741e43d36492e24f2fa023ac5a24",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      1040,
+      732
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_basin_lower",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "basin lower",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_basin_lower.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_basin_lower.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1148,
+      2647,
+      2201,
+      3390
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "b07aa6df66802a637bafc70e01a8ee461d7c9316fdd6ca4b9c75b7ccad5e7e4f",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      1053,
+      743
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_tube_03",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "tube 03",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_tube_03.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_tube_03.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1302,
+      351,
+      1512,
+      484
+    ],
+    "status": "DRAFT_HOLLOW_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "87640c113cb60c25fcf60784e10a1f7f1a2cc7a243ec4c6ddd2deae7cd6d66e3",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      210,
+      133
+    ],
+    "hollow": true
+  },
+  {
+    "id": "rebuilt_f78r_tube_04",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "tube 04",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_tube_04.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_tube_04.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1594,
+      431,
+      1815,
+      631
+    ],
+    "status": "DRAFT_HOLLOW_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "449cca3346ba3d5b7fab0763648284a2b1ba8b4ed231e96cb75a9db93b5122a2",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      221,
+      200
+    ],
+    "hollow": true
+  },
+  {
+    "id": "rebuilt_f78r_tube_05",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "tube 05",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_tube_05.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_tube_05.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1858,
+      514,
+      2040,
+      710
+    ],
+    "status": "DRAFT_HOLLOW_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "c88785229d1b051134c1283984d4dd06087ad0230db6d687254a990d76b19136",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      182,
+      196
+    ],
+    "hollow": true
+  },
+  {
+    "id": "rebuilt_f78r_flow_left_canopy",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "flow left canopy",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_flow_left_canopy.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_flow_left_canopy.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      316,
+      302,
+      900,
+      454
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "d6e8f1f25914cd02fe55b5231d328f80b6d3c8ecc1cfb068f5c81858002d8848",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      584,
+      152
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_flow_01_02",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "flow 01 02",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_flow_01_02.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_flow_01_02.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1009,
+      364,
+      1101,
+      413
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "73f5aaf1c2070ef1535a8ae551bb3eddc29530ba48663d34ebd059e5807a5fe7",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      92,
+      49
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_flow_02_03",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "flow 02 03",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_flow_02_03.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_flow_02_03.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1227,
+      373,
+      1378,
+      437
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "6c9ec1c328dd060e65c6dd73d79f9634bcb17360126f0b0bbf99d7887f751088",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      151,
+      64
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_flow_03_04",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "flow 03 04",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_flow_03_04.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_flow_03_04.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1481,
+      413,
+      1676,
+      523
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "6c87ad7a4fd409117c6c6b6748253dbdd0954da15d4ef7fd54e8d67340a0f420",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      195,
+      110
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_flow_right_canopy",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "flow right canopy",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_flow_right_canopy.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_flow_right_canopy.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1936,
+      426,
+      2062,
+      607
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "7891981358faf561c0813fa49aaf62689347ead3c90650ced6dbcc39fbd45fbf",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      126,
+      181
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_flow_06_07",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "flow 06 07",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_flow_06_07.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_flow_06_07.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1849,
+      957,
+      1921,
+      1109
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "b00897547cb84741fd0e7192d5a923ed3cf036ef32d9723ee6f9469545c3dfd1",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      72,
+      152
+    ],
+    "hollow": false
+  },
+  {
+    "id": "rebuilt_f78r_river_between_basins",
+    "scan": "s0141",
+    "folio": "78r",
+    "title": "river between basins",
+    "description": "Przebudowana bryła robocza; kolory i wzory ze skanu; geometria niezatwierdzona.",
+    "category": "Przepływy · przebudowa",
+    "model": "res://assets/models/rebuilt/f78r_river_between_basins.glb",
+    "display_model": "res://assets/models/rebuilt/f78r_river_between_basins.glb",
+    "rebuild_batch": "F01",
+    "source_sha256": "6e0f3449af81da50a04a060937fdcdb4c2e2b93be98bcb9b4bd523c1e1b35ce5",
+    "source_bbox_px": [
+      1919,
+      1819,
+      2095,
+      2953
+    ],
+    "status": "DRAFT_SOURCE_PROJECTED_VOLUME",
+    "contour_verified": false,
+    "depth": "inferred; not uniquely determined by source",
+    "model_sha256": "337598857fcf50f78a4df74cecc04a74eeae85cd36a49542c318e488993e6868",
+    "texture_pixels_preserved": true,
+    "texture_dimensions": [
+      176,
+      1134
+    ],
+    "hollow": false
   }
 ]

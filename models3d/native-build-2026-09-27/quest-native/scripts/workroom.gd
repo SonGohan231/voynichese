@@ -204,7 +204,7 @@ func _refresh_menu():
 	var actions: Array = []
 	match mode:
 		"Katalog":
-			actions = [["◀ Model", func(): _choose(-1)], ["Model ▶", func(): _choose(1)], ["Kategoria", _cycle_category], ["Dodaj model", _add_preview], ["◀ Strona", func(): _choose_page(-1)], ["Strona ▶", func(): _choose_page(1)], ["Wyjmij stronę", _add_page], ["Czytaj kodeks", _focus_reader], ["Zapisz układ", save_workspace], ["Cofnij", undo]]
+			actions = [["◀ Model", func(): _choose(-1)], ["Model ▶", func(): _choose(1)], ["Kategoria", _cycle_category], ["Dodaj model", _add_preview], ["◀ Strona", func(): _choose_page(-1)], ["Strona ▶", func(): _choose_page(1)], ["Wyjmij stronę", _add_page], ["Czytaj kodeks", _focus_reader], ["Przebudowane 20", _show_rebuilt], ["Wszystkie modele", _show_all_models], ["Zapisz układ", save_workspace], ["Cofnij", undo]]
 		"Obiekt":
 			actions = [["Części" if not pieces_mode else "Cały model", func(): pieces_mode = not pieces_mode; _refresh_menu()], ["Obrót 180°", func(): rotate_selection(Vector3.UP, PI)], ["X +15°", func(): rotate_selection(Vector3.RIGHT, PI/12)], ["Y +15°", func(): rotate_selection(Vector3.UP, PI/12)], ["Z +15°", func(): rotate_selection(Vector3.BACK, PI/12)], ["Większy ×1.1", func(): scale_selection(1.1)], ["Mniejszy ÷1.1", func(): scale_selection(1.0/1.1)], ["Oddziel część", detach_selected], ["Przypnij bazę", pin_selection], ["Połącz z bazą", join_selected], ["Cofnij", undo], ["Zapisz układ", save_workspace]]
 		"Badania":
@@ -233,6 +233,17 @@ func _cycle_category():
 	category_index = (category_index + 1) % categories.size()
 	filtered = catalog.filter(func(m): return category_index == 0 or m.category == categories[category_index])
 	cursor = 0; _choose(0)
+
+func _show_rebuilt():
+	if loading: return
+	var batch := catalog.filter(func(m): return m.get("rebuild_batch", "") == "F01")
+	if batch.is_empty(): say("Brak przebudowanej partii"); return
+	filtered = batch; cursor = 0; category_index = 0
+	fidelity_mode = false; _apply_fidelity(); _choose(0)
+
+func _show_all_models():
+	if loading: return
+	filtered = catalog.duplicate(); cursor = 0; category_index = 0; _choose(0)
 
 func _choose(delta: int):
 	if loading: return
@@ -282,7 +293,10 @@ func _finish_load():
 	say_loaded()
 
 func say_loaded():
-	say("Gotowe · f" + pending_meta.folio + " · model NIEZWERYFIKOWANY — porównaj ze skanem")
+	if pending_meta.get("rebuild_batch", "") == "F01":
+		say("f" + pending_meta.folio + " · " + pending_meta.get("title", "") + "\nBarwy ze skanu · geometria robocza, głębia interpretacyjna")
+	else:
+		say("Gotowe · f" + pending_meta.folio + " · model NIEZWERYFIKOWANY — porównaj ze skanem")
 
 func _new_exhibit(meta: Dictionary, scene: PackedScene) -> Node3D:
 	var root := Node3D.new(); exhibits.add_child(root); counter += 1

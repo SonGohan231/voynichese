@@ -1,0 +1,25 @@
+{
+  "version": "0.3.2",
+  "version_code": 5,
+  "package": "pl.manuskrypt.quest",
+  "bytes": 1643955609,
+  "sha256": "cc28cb657cb3e28b25798def1e81eb74712577aa7e6752f271077fd5c49d7bcc",
+  "md5": "c3ae87fe126d4272877b788986a91d90",
+  "new_models": 20,
+  "catalog_entries": 274,
+  "hollow_tube_candidates": 7,
+  "headset_tested": false,
+  "verified_complete_1_to_1_models": 0,
+  "full_manuscript_complete": false,
+  "unchanged_native_classes_and_source_entries": 214,
+  "tests": {
+    "checks": 150,
+    "failures": [],
+    "headset_tested": false,
+    "passed": true,
+    "texture_checks": 20
+  },
+  "signing_certificate_sha256": "cf9cd94c9593a09ddf28bc53f05533063e2f29cc6598e0e8d83fb837d1bae9ed",
+  "alignment": "16 KiB verified",
+  "gofile_authorized_by_user": true
+}
