@@ -1,6 +1,6 @@
 # EXP-2026-001 — audit źródła mapy sekcji
 
-Status: **AUTHORITATIVE_SECTION_MAP_RECOVERED / SCRIBE MAP STILL BLOCKS SPLIT**
+Status: **SECTION_AND_SCRIBE_MAPS_READY / ANNOTATION STILL BLOCKS SPLIT**
 Data audytu: 2026-10-04
 
 ## Sprawdzone źródła
@@ -23,8 +23,11 @@ dla sekcji Voynicha.
 
 ## Decyzja
 
-Mapa sekcji jest gotowa jako `DATA`, ale produkcyjny split nadal jest blokowany przez brak
-kompletnej mapy skrybów wymaganej w prerejestracji. Nie rekonstruujemy jej z pamięci.
+Mapa sekcji jest gotowa jako `DATA`. Po tym audycie odzyskano również kompletną,
+wersjonowaną mapę skrybów z pola `$H` Zandbergen–Landini ZL3b i zamrożono ją w
+`scribe_assignments.json`. Obie warstwy są połączone w `section_scribe_strata.json`.
+Produkcja splitu pozostaje zablokowana przez brak niezależnych anotacji i adjudykacji,
+nie przez brak stratyfikacji źródłowej.
 
 Klasyfikacja w manifeście jest wyłącznie `FACT` albo `DATA`; nie wolno użyć etykiety
 sekcji pochodzącej wyłącznie z hipotezy lub interpretacji. Poziom złożoności nie jest
