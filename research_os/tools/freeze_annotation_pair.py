@@ -193,6 +193,10 @@ def main() -> int:
         "--packet-b", type=Path,
         default=Path("research_os/annotation/packets/annotator-b.packet.json"),
     )
+    parser.add_argument("--handoff-packet-a", type=Path, required=True)
+    parser.add_argument("--handoff-packet-b", type=Path, required=True)
+    parser.add_argument("--custody-map-a", type=Path, required=True)
+    parser.add_argument("--custody-map-b", type=Path, required=True)
     args = parser.parse_args()
     try:
         slot_result = verify_slot(
@@ -214,6 +218,30 @@ def main() -> int:
             or packet_a.get("record_universe_sha256") != slot["record_universe_sha256"]
         ):
             raise ValueError("protocol_or_universe_does_not_match_signed_slot")
+
+        handoff_evidence = {}
+        for role, handoff_path, custody_path, canonical_raw in (
+            ("A", args.handoff_packet_a, args.custody_map_a, packet_a_raw),
+            ("B", args.handoff_packet_b, args.custody_map_b, packet_b_raw),
+        ):
+            handoff_raw, handoff = load_json_bytes(handoff_path)
+            custody_raw, custody = load_json_bytes(custody_path)
+            signed = slot["handoff_bindings"][role]
+            if handoff.get("packet_id") != signed["packet_id"]:
+                raise ValueError(f"handoff_packet_id_does_not_match_signed_slot:{role}")
+            if sha256_bytes(handoff_raw) != signed["packet_sha256"]:
+                raise ValueError(f"handoff_packet_bytes_do_not_match_signed_slot:{role}")
+            if sha256_bytes(custody_raw) != signed["custody_map_sha256"]:
+                raise ValueError(f"custody_map_bytes_do_not_match_signed_slot:{role}")
+            if custody.get("seed_commitment_sha256") != signed["seed_commitment_sha256"]:
+                raise ValueError(f"seed_commitment_does_not_match_signed_slot:{role}")
+            if custody.get("handoff_packet_sha256") != sha256_bytes(handoff_raw):
+                raise ValueError(f"custody_map_handoff_binding_invalid:{role}")
+            if custody.get("canonical_packet_sha256") != sha256_bytes(canonical_raw):
+                raise ValueError(f"custody_map_canonical_packet_binding_invalid:{role}")
+            if handoff.get("canonical_packet_sha256") != sha256_bytes(canonical_raw):
+                raise ValueError(f"handoff_canonical_packet_binding_invalid:{role}")
+            handoff_evidence[f"handoff-packet-{role.lower()}.json"] = handoff_raw
         slot_binding = {
             "slot_id": slot["acceptance_slot_id"],
             "slot_sha256": sha256_bytes(args.slot.read_bytes()),
@@ -229,11 +257,13 @@ def main() -> int:
             },
             "protocol_sha256": slot["protocol_sha256"],
             "record_universe_sha256": slot["record_universe_sha256"],
+            "handoff_bindings": slot["handoff_bindings"],
         }
         acceptance_evidence = {
             "acceptance-slot.json": args.slot.read_bytes(),
             "acceptance-slot.json.sig": args.slot_signature.read_bytes(),
             "allowed_signers": args.allowed_signers.read_bytes(),
+            **handoff_evidence,
         }
         manifest, report = freeze_pair(
             args.records_dir, args.annotation_a, args.annotation_b,
