@@ -50,13 +50,15 @@ Jeśli dowolna z bramek 1–6 nie przejdzie, wynik eksperymentu to `INCONCLUSIVE
 - HELD-OUT: 20% foliów; niedostępny dla Geometry, Homology i Perspective do chwili zamrożenia modelu i predykcji.
 - Split jest deterministyczny z zapisanym seedem, stratyfikowany według sekcji, skryby i poziomu złożoności.
 
-Mapa sekcji i mapa skrybów muszą pochodzić z jawnych źródeł z checksumami i pokrywać
-dokładnie wszystkie kwalifikowane rekordy zgodnie z `section_strata.schema.json`.
-Oficjalne zakresy sekcji Beinecke MS 408 zostały odzyskane i deterministycznie przypisane
-do wszystkich 204 rekordów treści. Kompletna, wersjonowana mapa folio→skryba nie została
-jeszcze odnaleziona; samo potwierdzenie istnienia pięciu rąk nie wystarcza. Brak mapy
-skrybów, brak proweniencji albo konflikt sekcji/skryby wewnątrz połączonej grupy liścia
-blokuje split. Braków nie wolno zastępować etykietą `UNKNOWN` ani domysłem.
+Mapa sekcji i mapa skrybów muszą pochodzić z jawnych, zamrożonych źródeł z checksumami
+i pokrywać dokładnie wszystkie kwalifikowane rekordy zgodnie z
+`section_strata.schema.json`. Oficjalne zakresy sekcji Beinecke MS 408 zostały
+deterministycznie przypisane do 204 rekordów treści. Mapę skrybów odzyskano z
+Zandbergen–Landini ZL3b (IVTFF `$H`) i agreguje się ją na poziomie tej samej connected
+manuscript leaf group, której używa split. Trzy grupy są jawnie mieszane:
+folio 57 = `MIXED_1_5`, foldout 85–86 = `MIXED_2_4`, folio 115 = `MIXED_2_3`.
+Etykiety mieszane nie są dodatkowymi rękami i nie wolno ich rozbijać między splity.
+Brak proweniencji lub niespójność etykiety wewnątrz zamrożonej grupy blokuje split.
 
 Poziom złożoności jest wyliczany przez custodiana dopiero z zamrożonej adjudykacji jako
 suma liczby obiektów i skierowanych relacji okluzji w grupie liścia. Grupy uszeregowane
