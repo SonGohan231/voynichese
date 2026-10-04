@@ -6,8 +6,8 @@
   "hypothesis": "H1 Perspective Grammar",
   "null_hypothesis": "Frozen geometry rules do not outperform the strongest preregistered baseline on unseen folios.",
   "data": {
-    "sources_verified": false,
-    "checksums_frozen": false,
+    "sources_verified": true,
+    "checksums_frozen": true,
     "unit_inventory_frozen": false,
     "split_frozen": false,
     "held_out_exposed": false
@@ -16,12 +16,18 @@
   "primary_metric": "macro_f1_joint_ports_occlusions",
   "decision_thresholds": {
     "permutation_p": 0.01,
-    "clustered_ci_lower_bound_above_baseline": true
+    "clustered_ci_lower_bound_above_baseline": true,
+    "annotation_object_f1": 0.8,
+    "annotation_median_iou": 0.75,
+    "annotation_port_count_agreement": 0.8,
+    "annotation_occlusion_agreement": 0.8
   },
   "information_firewall": {
     "geometry_sees_color": false,
     "model_builder_sees_held_out_labels": false,
-    "blind_reviewers_receive_prior_pilot_result": false
+    "blind_reviewers_receive_prior_pilot_result": false,
+    "blind_annotators_see_automated_candidates": false,
+    "blind_annotators_see_split_assignment": false
   },
   "agent_os_mission_id": "0856f1aa-60a8-4fea-a82e-8d15239f5542",
   "readiness_audit": {
@@ -32,9 +38,23 @@
     "eligible_record_count": 0,
     "held_out_exposed": false
   },
+  "source_freeze": {
+    "atlas_project_sha256": "f484323a5b9e537b7a2fd98d7864746acf69cbc671b4bef3ff0f7f031ec2eedf",
+    "validation_report_sha256": "e6f94286dc4629babdd09e1bfe09fe590516b9aa3b74291f409b974563bc97f8",
+    "canonical_folio_record_count": 183
+  },
+  "annotation_gate": {
+    "status": "FROZEN_AWAITING_TWO_SUBMISSIONS",
+    "protocol": "research_os/annotation/README.md",
+    "schema": "research_os/annotation/blind_annotation.schema.json",
+    "schema_sha256": "6e774f666330443aab4c7c5828a35a97c68995cbd118dcd215079f7d6997d4d2",
+    "tool": "research_os/tools/annotation_gate.py",
+    "promotes_to_ground_truth": false,
+    "unlocks_held_out": false
+  },
   "limitations": [
     "Power analysis not yet completed",
-    "Annotator agreement threshold not yet frozen",
+    "Two independent blind annotation submissions have not yet been produced",
     "Source provenance is verified, but required visual units and relations are not annotated",
     "All 206 atlas records remain NOT_REVIEWED",
     "No split was generated; HELD-OUT remains unexposed",
