@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 # Odtworzony stan wcześniejszego projektu
 
 ## Pochodzenie
