@@ -59,8 +59,19 @@
     "promotes_to_ground_truth": false,
     "unlocks_held_out": false
   },
+  "power_plan": {
+    "status": "ADEQUATE_FOR_PREREGISTERED_LARGE_EFFECT",
+    "report": "research_os/experiments/EXP-2026-001/power_plan.json",
+    "independent_folio_groups": 93,
+    "planned_held_out_groups": 19,
+    "alpha": 0.01,
+    "target_power": 0.8,
+    "target_standardized_effect": 0.75,
+    "minimum_detectable_standardized_effect": 0.7267819577024782,
+    "smaller_effect_policy": "INCONCLUSIVE"
+  },
   "limitations": [
-    "Power analysis not yet completed",
+    "Power is adequate only for a large standardized held-out folio-group effect; smaller effects remain inconclusive",
     "Two independent blind annotation submissions have not yet been produced",
     "Source provenance is verified, but required visual units and relations are not annotated",
     "All 206 atlas records remain NOT_REVIEWED",
