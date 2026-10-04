@@ -13,9 +13,9 @@ from typing import Any
 from record_scope import is_manuscript_content
 
 
-HEADER_RE = re.compile(r"^<([^>]+)>\\s+<![^>]*\\$H=([1-5@])(?:\\s|>)")
-SIDE_RE = re.compile(r"\\d+[rv]")
-NUMBER_RE = re.compile(r"\\d+")
+HEADER_RE = re.compile(r"^<([^>]+)>\s+<![^>]*\$H=([1-5@])(?:\s|>)")
+SIDE_RE = re.compile(r"\d+[rv]")
+NUMBER_RE = re.compile(r"\d+")
 
 
 def sha256(path: Path) -> str:
@@ -82,7 +82,7 @@ def source_pages_for_folio(
             return [source_page]
     pages = []
     for token in sorted(folio_tokens):
-        pattern = re.compile(rf"^f{re.escape(token)}(?:\\d+)?$")
+        pattern = re.compile(rf"^f{re.escape(token)}(?:\d+)?$")
         pages.extend(page for page in headers if pattern.fullmatch(page))
     return sorted(set(pages))
 
