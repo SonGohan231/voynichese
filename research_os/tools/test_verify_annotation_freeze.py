@@ -9,6 +9,7 @@ from pathlib import Path
 from freeze_annotation_pair import freeze_pair
 from verify_acceptance_slot import NAMESPACE
 from verify_annotation_freeze import verify_freeze
+from verify_custodian_receipt import NAMESPACE as RECEIPT_NAMESPACE, verify_receipt
 
 
 SHA = "a" * 64
@@ -56,11 +57,11 @@ class VerifyAnnotationFreezeTests(unittest.TestCase):
         packet["packet_id"] = "PACKET-B"
         packet_b = self.root / "packet-b.json"; write_json(packet_b, packet)
 
-        key = self.root / "key"
-        subprocess.run(["ssh-keygen", "-q", "-t", "ed25519", "-N", "", "-f", str(key)], check=True)
-        public = key.with_suffix(".pub").read_text(encoding="utf-8").split()
-        allowed = self.root / "allowed_signers"
-        allowed.write_text(f"custodian@example {public[0]} {public[1]}\n", encoding="utf-8")
+        self.key = self.root / "key"
+        subprocess.run(["ssh-keygen", "-q", "-t", "ed25519", "-N", "", "-f", str(self.key)], check=True)
+        public = self.key.with_suffix(".pub").read_text(encoding="utf-8").split()
+        self.allowed = self.root / "allowed_signers"
+        self.allowed.write_text(f"custodian@example {public[0]} {public[1]}\n", encoding="utf-8")
         slot_value = {
             "schema_version": "1.0", "state": "SEALED_BEFORE_COLLECTION",
             "experiment_id": "EXP-2026-001", "annotation_round": "ROUND-001",
@@ -79,7 +80,7 @@ class VerifyAnnotationFreezeTests(unittest.TestCase):
             "metrics_disclosure_policy": "AFTER_LOCAL_FREEZE_COMMIT", "held_out_access": "FORBIDDEN",
         }
         slot = self.root / "slot.json"; write_json(slot, slot_value)
-        subprocess.run(["ssh-keygen", "-Y", "sign", "-q", "-f", str(key), "-n", NAMESPACE, str(slot)], check=True)
+        subprocess.run(["ssh-keygen", "-Y", "sign", "-q", "-f", str(self.key), "-n", NAMESPACE, str(slot)], check=True)
         signature = Path(f"{slot}.sig")
         binding = {
             "slot_id": "SLOT-001", "slot_sha256": hashlib.sha256(slot.read_bytes()).hexdigest(),
@@ -92,7 +93,7 @@ class VerifyAnnotationFreezeTests(unittest.TestCase):
         evidence = {
             "acceptance-slot.json": slot.read_bytes(),
             "acceptance-slot.json.sig": signature.read_bytes(),
-            "allowed_signers": allowed.read_bytes(),
+            "allowed_signers": self.allowed.read_bytes(),
         }
         self.freeze = self.root / "freeze"
         freeze_pair(records, left, right, packet_a, packet_b, self.freeze, binding, evidence)
@@ -116,6 +117,45 @@ class VerifyAnnotationFreezeTests(unittest.TestCase):
         result = verify_freeze(self.freeze)
         self.assertEqual(result["status"], "FREEZE_INTEGRITY_REJECTED")
         self.assertIn("artifact_digest_mismatch:annotation-a.json", result["errors"])
+
+    def write_and_sign_receipt(self, overrides=None):
+        freeze = verify_freeze(self.freeze)
+        receipt = {
+            "schema_version": "1.0", "state": "FREEZE_RECEIPTED_APPEND_ONLY",
+            "experiment_id": "EXP-2026-001", "acceptance_slot_id": freeze["slot_id"],
+            "manifest_sha256": freeze["manifest_sha256"], "commit_sha256": freeze["commit_sha256"],
+            "freeze_integrity_status": "LOCAL_FREEZE_INTEGRITY_VERIFIED",
+            "agreement_status": freeze["agreement_status"],
+            "custodian_identity": "custodian@example", "issued_at_utc": "2026-10-04T16:00:00+00:00",
+            "registry_uri": "https://example.invalid/append-only/EXP-2026-001/1",
+            "registry_sequence": "1", "metrics_disclosed_before_receipt": False,
+            "held_out_access": "FORBIDDEN", "supersedes_receipt_sha256": None,
+        }
+        receipt.update(overrides or {})
+        path = self.root / "receipt.json"; write_json(path, receipt)
+        signature = Path(f"{path}.sig")
+        subprocess.run(
+            ["ssh-keygen", "-Y", "sign", "-q", "-f", str(self.key),
+             "-n", RECEIPT_NAMESPACE, str(path)], check=True,
+        )
+        return path, signature
+
+    def test_matching_external_receipt_verifies_without_unlocking_heldout(self):
+        receipt, signature = self.write_and_sign_receipt()
+        result = verify_receipt(
+            self.freeze, receipt, signature, self.allowed, "custodian@example"
+        )
+        self.assertEqual(result["status"], "FREEZE_RECEIPT_VERIFIED")
+        self.assertTrue(result["ready_for_adjudication"])
+        self.assertFalse(result["unlocks_held_out"])
+
+    def test_receipt_for_different_manifest_is_rejected(self):
+        receipt, signature = self.write_and_sign_receipt({"manifest_sha256": "0" * 64})
+        result = verify_receipt(
+            self.freeze, receipt, signature, self.allowed, "custodian@example"
+        )
+        self.assertEqual(result["status"], "FREEZE_RECEIPT_REJECTED")
+        self.assertIn("receipt_freeze_mismatch:manifest_sha256", result["errors"])
 
 
 if __name__ == "__main__":

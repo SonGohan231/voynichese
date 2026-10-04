@@ -74,11 +74,12 @@ def verify_signature(
     signature_path: Path,
     allowed_signers_path: Path,
     identity: str,
+    namespace: str = NAMESPACE,
 ) -> tuple[bool, str]:
     process = subprocess.run(
         [
             "ssh-keygen", "-Y", "verify", "-f", str(allowed_signers_path),
-            "-I", identity, "-n", NAMESPACE, "-s", str(signature_path),
+            "-I", identity, "-n", namespace, "-s", str(signature_path),
         ],
         input=slot_bytes,
         capture_output=True,

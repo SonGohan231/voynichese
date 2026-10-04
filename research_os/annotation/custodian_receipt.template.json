@@ -1,0 +1,18 @@
+Failed to connect to bus: Operation not permitted
+{
+  "schema_version": "1.0",
+  "state": "DRAFT_NOT_VALID",
+  "experiment_id": "EXP-2026-001",
+  "acceptance_slot_id": "REPLACE_FROM_VERIFIED_FREEZE",
+  "manifest_sha256": "REPLACE_FROM_VERIFY_ANNOTATION_FREEZE",
+  "commit_sha256": "REPLACE_FROM_VERIFY_ANNOTATION_FREEZE",
+  "freeze_integrity_status": "LOCAL_FREEZE_INTEGRITY_VERIFIED",
+  "agreement_status": "REPLACE_FROM_VERIFIED_FREEZE",
+  "custodian_identity": "REPLACE_WITH_ALLOWED_SIGNER_IDENTITY",
+  "issued_at_utc": "REPLACE_BEFORE_SIGNING",
+  "registry_uri": "https://REPLACE_WITH_APPEND_ONLY_ENTRY",
+  "registry_sequence": "REPLACE_WITH_EXTERNAL_SEQUENCE",
+  "metrics_disclosed_before_receipt": false,
+  "held_out_access": "FORBIDDEN",
+  "supersedes_receipt_sha256": null
+}

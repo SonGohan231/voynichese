@@ -75,6 +75,17 @@ python3 research_os/tools/verify_annotation_freeze.py \
 
 This rechecks `COMMIT.json`, the manifest digest, every annotation, packet, report and acceptance artifact, the embedded custodian signature, filesystem write barriers, and unexpected files. Success is only `LOCAL_FREEZE_INTEGRITY_VERIFIED`; it still reports `custodian_final_receipt_required=true` and cannot unlock HELD-OUT.
 
+The custodian then records the verified manifest and commit digests in an externally append-only registry, fills `custodian_receipt.template.json`, and signs the exact receipt bytes in the separate namespace `voynich-research-os-freeze-receipt-v1`. Verify the returned evidence against the local freeze:
+
+```bash
+python3 research_os/tools/verify_custodian_receipt.py \
+  research_os/runs/EXP-2026-001/annotation-freeze-001 \
+  custodian-receipt.json custodian-receipt.json.sig allowed_signers \
+  --identity CUSTODIAN_IDENTITY
+```
+
+Only `FREEZE_RECEIPT_VERIFIED` with `ready_for_adjudication=true` permits independent adjudication. A valid receipt for a failed agreement gate remains preserved evidence but does not permit adjudication. Receipt verification never promotes annotations to ground truth and never unlocks HELD-OUT.
+
 ## Diagnostic gate only
 
 The lower-level gate remains available for tests and diagnostics:
