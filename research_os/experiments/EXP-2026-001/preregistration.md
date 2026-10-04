@@ -13,7 +13,7 @@ Testy narzędzia używają wyłącznie syntetycznych rekordów i sprawdzają odm
 
 Przed obejrzeniem jakiejkolwiek niezależnej anotacji zamrożono kontrakt w `research_os/annotation/README.md`. Dwa różne identyfikatory annotatorów muszą pokryć pełny kanoniczny zbiór 183 rekordów o roli `FOLIO`, pracując z oryginalnymi skanami i bez dostępu do automatycznych kandydatur, predykcji, etykiet hipotez, drugiej anotacji ani przyszłego splitu.
 
-Przejście do adjudykacji wymaga jednocześnie: F1 detekcji obiektów `>= 0.80` przy IoU klasy zgodnej `>= 0.50`, mediany IoU `>= 0.75`, zgodności liczby portów `>= 0.80` i zgodności skierowanych relacji okluzji `>= 0.80`. Pusty mianownik lub brak relacji daje `NOT_ASSESSED` i blokuje bramkę. PASS tej bramki oznacza wyłącznie `READY_FOR_ADJUDICATION`; nie tworzy ground truth i nie odblokowuje HELD-OUT.
+Przejście do adjudykacji wymaga jednocześnie: F1 detekcji obiektów `>= 0.80` przy IoU klasy zgodnej `>= 0.50`, mediany IoU `>= 0.75`, dokładnej zgodności zbiorów sektorów portów `>= 0.80` i F1 skierowanych relacji okluzji na unii zgłoszonych relacji `>= 0.80`. Dopasowanie obiektów maksymalizuje najpierw liczebność, potem łączny IoU. Pusty mianownik lub brak relacji daje `NOT_ASSESSED` i blokuje bramkę. PASS tej bramki oznacza wyłącznie `READY_FOR_ADJUDICATION`; nie tworzy ground truth i nie odblokowuje HELD-OUT.
 
 ## Hipoteza i null
 
