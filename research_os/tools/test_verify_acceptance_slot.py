@@ -22,6 +22,20 @@ def valid_slot():
             "A": {"packet_id": "PACKET-A", "sha256": "c" * 64},
             "B": {"packet_id": "PACKET-B", "sha256": "d" * 64},
         },
+        "handoff_bindings": {
+            "A": {
+                "packet_id": "HANDOFF-A",
+                "packet_sha256": "1" * 64,
+                "custody_map_sha256": "2" * 64,
+                "seed_commitment_sha256": "3" * 64,
+            },
+            "B": {
+                "packet_id": "HANDOFF-B",
+                "packet_sha256": "4" * 64,
+                "custody_map_sha256": "5" * 64,
+                "seed_commitment_sha256": "6" * 64,
+            },
+        },
         "annotator_bindings": [
             {"role": "A", "annotator_id_sha256": "e" * 64},
             {"role": "B", "annotator_id_sha256": "f" * 64},
@@ -86,6 +100,15 @@ class VerifyAcceptanceSlotTests(unittest.TestCase):
         result = verify_slot(path, signature, self.allowed, "custodian@example")
         self.assertTrue(result["signature_valid"])
         self.assertIn("annotator_id_hashes_not_distinct", result["semantic_errors"])
+
+
+    def test_missing_handoff_binding_is_rejected_even_when_signed(self):
+        value = valid_slot()
+        del value["handoff_bindings"]
+        path, signature = self.write_and_sign(value)
+        result = verify_slot(path, signature, self.allowed, "custodian@example")
+        self.assertTrue(result["signature_valid"])
+        self.assertIn("invalid_handoff_bindings", result["semantic_errors"])
 
     def test_path_traversal_is_rejected_even_when_signed(self):
         value = valid_slot()
