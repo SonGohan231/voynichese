@@ -21,7 +21,7 @@ Production annotators must not receive the repository or the canonical A/B packe
 
 After the two blinded exports are received, the custodian converts them locally with `unblind_annotation.py`. Unblinding may restore only canonical record IDs and source SHA-256 bindings; it must not alter objects, ports, occlusions or blindness attestations.
 
-The signed acceptance slot must bind the exact blinded handoff packet, private custody-map hash and pseudonym-seed commitment for both A and B before collection begins. Pseudonymization reduces avoidable metadata lookup; it cannot hide visual section cues inherent in the manuscript image itself.
+The signed acceptance slot must bind the exact blinded handoff packet, private custody-map hash and pseudonym-seed commitment for both A and B before collection begins. Pseudonymization reduces avoidable metadata lookup; it cannot hide visual section cues or distinctive folio identity inherent in the manuscript pixels themselves. This is metadata blinding, not a claim of perfect visual-identity blinding. Annotators must not use external lookup to recover canonical folio identity, and any spontaneous recognition must be disclosed to the custodian as a protocol deviation.
 
 ## Coordinate and object contract
 
@@ -89,16 +89,22 @@ python3 research_os/tools/verify_annotation_freeze.py \
 
 This rechecks `COMMIT.json`, the manifest digest, every annotation, packet, report and acceptance artifact, the embedded custodian signature, filesystem write barriers, and unexpected files. Success is only `LOCAL_FREEZE_INTEGRITY_VERIFIED`; it still reports `custodian_final_receipt_required=true` and cannot unlock HELD-OUT.
 
-The custodian then records the verified manifest and commit digests in an externally append-only registry, fills `custodian_receipt.template.json`, and signs the exact receipt bytes in the separate namespace `voynich-research-os-freeze-receipt-v1`. Verify the returned evidence against the local freeze:
+The custodian then submits the verified manifest and commit digests to an external append-only registry, fills `custodian_receipt.template.json`, and signs the exact receipt bytes in namespace `voynich-research-os-freeze-receipt-v1`. A URL-shaped string is not accepted as proof of external registration. The external registry must produce a separate `registry-witness.json` using `registry_witness.template.json`, bind the SHA-256 of the exact receipt bytes and its custodian signature, and sign the witness under a distinct registry identity in namespace `voynich-research-os-registry-witness-v1`. The registry signer identity must differ from the custodian identity.
+
+Verify the complete evidence chain against the local freeze:
 
 ```bash
 python3 research_os/tools/verify_custodian_receipt.py \
   research_os/runs/EXP-2026-001/annotation-freeze-001 \
   custodian-receipt.json custodian-receipt.json.sig allowed_signers \
-  --identity CUSTODIAN_IDENTITY
+  --identity CUSTODIAN_IDENTITY \
+  --registry-witness registry-witness.json \
+  --registry-witness-signature registry-witness.json.sig \
+  --registry-allowed-signers registry_allowed_signers \
+  --registry-identity REGISTRY_IDENTITY
 ```
 
-Only `FREEZE_RECEIPT_VERIFIED` with `ready_for_adjudication=true` permits independent adjudication. A valid receipt for a failed agreement gate remains preserved evidence but does not permit adjudication. Receipt verification never promotes annotations to ground truth and never unlocks HELD-OUT.
+Only `FREEZE_RECEIPT_VERIFIED` with `registry_witness_status=REGISTRY_WITNESS_VERIFIED` and `ready_for_adjudication=true` permits independent adjudication. The verifier does not infer append-only behavior from HTTPS or fetch arbitrary network content; it verifies a cryptographic attestation from the separately trusted registry signer. A valid receipt for a failed agreement gate remains preserved evidence but does not permit adjudication. Receipt verification never promotes annotations to ground truth and never unlocks HELD-OUT.
 
 ## Diagnostic gate only
 
