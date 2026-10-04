@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://voynich-research-os.local/custodian_receipt.schema.json",
