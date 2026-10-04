@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 # Blind annotation UI
 
 Static, local-only editor for the frozen A/B packets. It deliberately has no network calls, automated overlays, predictions, hypothesis labels, or split information.
