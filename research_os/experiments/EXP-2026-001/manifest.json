@@ -19,8 +19,8 @@
     "clustered_ci_lower_bound_above_baseline": true,
     "annotation_object_f1": 0.8,
     "annotation_median_iou": 0.75,
-    "annotation_port_count_agreement": 0.8,
-    "annotation_occlusion_agreement": 0.8
+    "annotation_port_set_agreement": 0.8,
+    "annotation_occlusion_f1": 0.8
   },
   "information_firewall": {
     "geometry_sees_color": false,
@@ -50,7 +50,7 @@
     "schema_sha256": "6e774f666330443aab4c7c5828a35a97c68995cbd118dcd215079f7d6997d4d2",
     "tool": "research_os/tools/annotation_gate.py",
     "packet_builder": "research_os/tools/build_blind_packets.py",
-    "protocol_sha256": "2c34d50e3ecfc7a7ab7acb0355673ff8ec54aa9825c51ea8f67e8bf18fa9c40d",
+    "protocol_sha256": "be32aeb464492a7378c3fc3774106d83ba3bb37a4e9a998e0adc25fe59e0485c",
     "record_universe_sha256": "e6342d765d48f4b630b435dd4b05a2aeeec4a2a9c3dee09cd57a52fc859beb9d",
     "packets": [
       "research_os/annotation/packets/annotator-a.packet.json",
