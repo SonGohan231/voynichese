@@ -1,0 +1,7 @@
+Failed to connect to bus: Operation not permitted
+hypothesis,evidence_for,evidence_against,evidence_quality,reproducible,missing_test,status,source_class
+H1 Perspective Grammar,"Istnieją atlas, graf cross-page i wcześniejsza gałąź przestrzenna","Brak zamrożonej minimalnej gramatyki ocenionej na nietkniętych foliach",LOW,NO,"Preregistered held-out prediction of ports and occlusions",PROPOSED,"repo + bootstrap"
+H2a Color Layer,"Bootstrap wymienia Color Gate i pakiety reviewerów","Brak zweryfikowanego łańcucha pigment→warstwa oraz niezależnego od geometrii testu",LOW,NO,"Blind color prediction on frozen geometry graph",PROPOSED,"bootstrap"
+H2b Intensity Depth,"Wcześniejszy kierunek badawczy postulował związek intensywności z głębią","RGB/JPEG miesza pigment, podłoże, oświetlenie, degradację i digitalizację",VERY_LOW,NO,"Within-pigment calibrated held-out test with material controls",PROPOSED,"master prompt + bootstrap"
+Literalization,"Niektóre relacje kontekstowe opisano jako funkcjonalne","readyForLiteralization=0; brak stabilnego mostu znak→dźwięk",LOW,NO,"Allograph stability and independent phonotactic prediction",REJECTED_FOR_NOW,"Drive transfer report"
+Eight loci visual gate,"XML coordinate layer deklarowano jako schema-pass","Brak kompletnych cropów i reviewer outcomes",MEDIUM_FOR_COORDINATES_LOW_FOR_VISUAL,PARTIAL,"Return exact crops with checksums and blind review",INCONCLUSIVE,"bootstrap"
