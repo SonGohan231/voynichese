@@ -9,9 +9,19 @@ Each annotator works from original, checksum-verified scans and the neutral inst
 - the other annotator's work;
 - automated candidates or overlays;
 - model predictions or hypothesis labels;
-- any future split assignment.
+- any future split assignment;
+- section or scribe lookup tables;
+- external folio-identity lookup intended to recover canonical IDs from the blinded handoff.
 
 The automated `AUTO_CANDIDATE_FINAL_V1` bundle may be used only after both independent submissions are frozen, for adjudication support and software QA. It is not an annotation.
+
+## Production pseudonymization firewall
+
+Production annotators must not receive the repository or the canonical A/B packets directly. Before collection, the custodian builds a separate isolated handoff for each annotator with `build_blind_handoff.py`, using different private seeds. The handoff replaces canonical record IDs, source filenames and raw source SHA-256 values with opaque IDs, opaque image filenames and secret-keyed source commitments. The private custody map and seed remain outside the bundle and repository.
+
+After the two blinded exports are received, the custodian converts them locally with `unblind_annotation.py`. Unblinding may restore only canonical record IDs and source SHA-256 bindings; it must not alter objects, ports, occlusions or blindness attestations.
+
+The signed acceptance slot must bind the exact blinded handoff packet, private custody-map hash and pseudonym-seed commitment for both A and B before collection begins. Pseudonymization reduces avoidable metadata lookup; it cannot hide visual section cues inherent in the manuscript image itself.
 
 ## Coordinate and object contract
 
@@ -59,7 +69,11 @@ python3 research_os/tools/freeze_annotation_pair.py \
   --slot acceptance-slot.json \
   --slot-signature acceptance-slot.json.sig \
   --allowed-signers allowed_signers \
-  --custodian-identity CUSTODIAN_IDENTITY
+  --custodian-identity CUSTODIAN_IDENTITY \
+  --handoff-packet-a research_os/runs/EXP-2026-001/handoff-a/research_os/annotation/packets/handoff.packet.json \
+  --handoff-packet-b research_os/runs/EXP-2026-001/handoff-b/research_os/annotation/packets/handoff.packet.json \
+  --custody-map-a research_os/runs/EXP-2026-001/private/custody-map-a.json \
+  --custody-map-b research_os/runs/EXP-2026-001/private/custody-map-b.json
 ```
 
 The destination must not already exist. The command atomically reserves it, validates stable byte snapshots against both complete source universes and packet/protocol agreement, records SHA-256 digests, writes all artifacts exclusively, and writes `COMMIT.json` last. Existing and partial run directories are never overwritten or automatically removed. A frozen pair never unlocks HELD-OUT and never becomes ground truth automatically.
