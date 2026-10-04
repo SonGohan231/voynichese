@@ -1,0 +1,81 @@
+Failed to connect to bus: Operation not permitted
+# EXP-2026-001 — held-out visual-grammar prediction
+
+Status: **DRAFT / NOT RUN**  
+Cel: wybrać test o największej wartości informacyjnej, zdolny osłabić H1 bez używania koloru do budowy geometrii.
+
+## Hipoteza i null
+
+- H1: mały, zamrożony katalog transformacji geometrii przewiduje porty i relacje okluzji homologicznych struktur na niewidzianych foliach lepiej niż proste baseline.
+- H0: trafność nie przekracza baseline uwzględniającego częstości klas, sekcję, folio i złożoność rysunku.
+
+H2a/H2b nie są testowane w fazie geometrii. Kolor pozostaje zasłonięty.
+
+## Jednostka analizy
+
+Jednostką jest wcześniej zdefiniowany obiekt/region z jednoznacznym identyfikatorem folio, zamrożonym obrysem, listą portów i relacjami okluzji. Jednostki nie mogą być tworzone po obejrzeniu HELD-OUT.
+
+## Dane minimalne i bramki
+
+1. Oryginalne identyfikatory foliów i źródła skanów.
+2. Checksumy wszystkich obrazów i masek.
+3. Zamrożony katalog homologii i dopuszczalnych transformacji.
+4. Kontury/wypełnienia znormalizowane tak, aby nie przekazywać informacji o kolorze ani intensywności.
+5. Co najmniej dwa niezależne blind annotations dla portów i okluzji oraz adjudykacja bez znajomości predykcji modelu.
+6. Grupowy split po folio, z kontrolą sekcji i skryby; żaden crop z jednego folio nie może trafić do różnych części splitu.
+
+Jeśli dowolna z bramek 1–6 nie przejdzie, wynik eksperymentu to `INCONCLUSIVE_NOT_RUN`.
+
+## Podział
+
+- TRAIN: 60% foliów.
+- VALIDATION: 20% foliów; wyłącznie wybór z góry ograniczonego wariantu modelu.
+- HELD-OUT: 20% foliów; niedostępny dla Geometry, Homology i Perspective do chwili zamrożenia modelu i predykcji.
+- Split jest deterministyczny z zapisanym seedem, stratyfikowany według sekcji i poziomu złożoności.
+
+Dokładna liczebność zostanie wpisana przed uruchomieniem po audycie dostępnych jednostek; nie wolno dobierać liczby po wyniku.
+
+## Role i firewall
+
+- Data custodian: przygotowuje split i przechowuje HELD-OUT.
+- Geometry agent: widzi wyłącznie znormalizowaną geometrię TRAIN.
+- Homology agent: korzysta tylko z zamrożonego katalogu transformacji.
+- Perspective agent: buduje minimalną gramatykę na TRAIN i zamraża predykcje.
+- Statistics agent: otrzymuje predykcje i etykiety po zamrożeniu; liczy baseline, uncertainty i permutacje.
+- Red team: sprawdza leakage, selekcję, zależności wewnątrz foliów i alternatywne wyjaśnienia.
+- Color agent nie uczestniczy w EXP-2026-001.
+
+## Predykcje
+
+Dla każdego obiektu HELD-OUT przed odsłonięciem etykiet model zapisuje:
+
+- liczbę portów,
+- położenie portów w zamrożonych sektorach,
+- relacje przed–za / okluzję,
+- orientację lokalną,
+- pewność predykcji.
+
+## Baseline i statystyka
+
+- baseline większościowy,
+- baseline warunkowy na sekcję i złożoność,
+- prosty model bez homologii,
+- permutacje etykiet w obrębie właściwych bloków folio/sekcja,
+- bootstrap klastrowy po folio dla przedziałów ufności,
+- jedna pierwotna miara: makro-F1 dla wspólnego wektora portów i relacji,
+- miary wtórne raportowane opisowo z kontrolą FDR.
+
+## Zamrożone kryteria decyzji
+
+- PASS: przewaga nad najlepszym baseline ma dolną granicę 95% klastrowego CI > 0 oraz permutacyjne `p < 0.01`, a efekt utrzymuje się w każdej z co najmniej dwóch sekcji bez odwrócenia znaku.
+- FAIL: wynik nie przewyższa najlepszego baseline albo wcześniej określona predykcja kierunkowa ma stabilnie przeciwny znak przy wystarczającej mocy.
+- INCONCLUSIVE: niedostateczna moc, niezgodność annotatorów poniżej zamrożonego progu, naruszenie firewalla, brak artefaktów albo wynik zależny od jednej sekcji/specyfikacji.
+
+Próg zgodności annotatorów i analiza mocy muszą zostać dodane przed odślepieniem; ich brak blokuje start.
+
+## Zakazy
+
+- Zakaz zmiany homologii i transformacji po obejrzeniu HELD-OUT.
+- Zakaz doboru foliów lub regionów na podstawie tego, czy pasują wizualnie.
+- Zakaz używania grayscale zachowującego informację o intensywności jako jedynego zabezpieczenia koloru.
+- Zakaz interpretacji semantycznej wyniku jako odszyfrowania manuskryptu.
