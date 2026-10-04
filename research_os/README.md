@@ -1,3 +1,4 @@
+Failed to connect to bus: Operation not permitted
 # Voynich Research OS
 
 Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promptem z 2026-10-04.
@@ -23,6 +24,9 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `artifacts/AUTO_CANDIDATE_FINAL_V1.json` — proweniencja pełnego przebiegu 206 automatycznych kandydatur; nie są ground truth ani blind annotations.
 - `artifacts/AUTO_CANDIDATE_WORKLOAD_PROFILE.json` — wyłącznie profil obciążenia anotacyjnego, bez prawa użycia jako etykiety lub dowód hipotezy.
 - `annotation/packets/` — dwa hermetyczne pakiety źródłowe dla niezależnych annotatorów; każdy obejmuje ten sam zamrożony zbiór 183 foliów i nie zawiera kandydatur, predykcji ani splitu.
+- `annotation/ui/` — lokalny edytor niezależnych adnotacji bez kandydatur i splitu.
+- `annotation/acceptance_slot.*` oraz `custodian_receipt.*` — podpisywane bramki jednej pary i zewnętrznego receipt.
+- `adjudication/` — neutralny kontrakt adjudykacji oraz schemat zweryfikowanego wyniku.
 
 Status dokumentów jest jawny. Prerejestracja jest projektem protokołu, nie wynikiem eksperymentu.
 
@@ -37,3 +41,19 @@ python3 research_os/tools/readiness.py atlas/records \
 ```
 
 Kod wyjścia `2` oznacza bezpieczne niespełnienie bramek naukowych. W tym stanie split nie jest zapisywany, a HELD-OUT pozostaje nieodsłonięty. Split można zmaterializować dopiero po statusie `READY_FOR_SPLIT`, z jawnie zamrożonym seedem i ścieżką `--split`.
+
+Po podpisanym freeze, receipt i zakończonej adjudykacji readiness sam ponownie sprawdza dokładne bajty pakietu i submission:
+
+```bash
+python3 research_os/tools/readiness.py atlas/records \
+  --freeze-directory research_os/runs/EXP-2026-001/annotation-freeze-001 \
+  --custodian-receipt custodian-receipt.json \
+  --receipt-signature custodian-receipt.json.sig \
+  --allowed-signers allowed_signers \
+  --custodian-identity CUSTODIAN_IDENTITY \
+  --adjudication-packet adjudication-packet.json \
+  --adjudication adjudication-submission.json \
+  --report research_os/experiments/EXP-2026-001/readiness_report.json
+```
+
+Nie należy przekazywać gotowego raportu walidacyjnego jako substytutu danych wejściowych. `readiness.py` ponownie weryfikuje podpisany receipt, lokalny freeze, powiązanie receipt→pakiet, dokładne bajty adjudykacji, kompletny zbiór `FOLIO`, checksumy źródeł i co najmniej 15 niezależnych grup liści.

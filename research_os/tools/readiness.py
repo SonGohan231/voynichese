@@ -1,3 +1,4 @@
+Failed to connect to bus: Operation not permitted
 #!/usr/bin/env python3
 """Fail-closed readiness audit and grouped split planner for EXP-2026-001."""
 
@@ -11,6 +12,9 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Iterable
+
+from validate_adjudication import validate_adjudication
+from verify_custodian_receipt import verify_receipt
 
 
 SPLITS = (("TRAIN", 0.60), ("VALIDATION", 0.20), ("HELD_OUT", 0.20))
@@ -61,7 +65,7 @@ def group_keys(records: Iterable[dict[str, Any]]) -> dict[str, str]:
     return result
 
 
-def audit_record(record: dict[str, Any]) -> dict[str, Any]:
+def audit_record(record: dict[str, Any], adjudicated: dict[str, Any] | None = None) -> dict[str, Any]:
     source = record.get("source", {})
     provenance = source.get("provenance", {})
     page_regions = record.get("page_inventory", {}).get("regions", [])
@@ -74,9 +78,12 @@ def audit_record(record: dict[str, Any]) -> dict[str, Any]:
         "native_source_verified": source.get("native_scan_grid_status") == "VERIFIED_NATIVE",
         "provenance_verified": provenance.get("verification_status") == "VERIFIED",
         "sha256_present": bool(re.fullmatch(r"[0-9a-f]{64}", str(source.get("sha256", "")))),
-        "visual_units_present": bool(page_regions or objects or text_regions),
-        "local_relations_present": bool(relations),
-        "independent_review_complete": review_status not in (None, "NOT_REVIEWED"),
+        "visual_units_present": bool(adjudicated.get("objects")) if adjudicated else bool(page_regions or objects or text_regions),
+        "local_relations_present": isinstance(adjudicated.get("occlusions"), list) if adjudicated else bool(relations),
+        "independent_review_complete": bool(adjudicated) if adjudicated else review_status not in (None, "NOT_REVIEWED"),
+        "adjudicated_source_matches": (
+            adjudicated.get("source_sha256") == source.get("sha256") if adjudicated else True
+        ),
     }
     return {
         "record_id": record.get("record_id"),
@@ -93,8 +100,15 @@ def audit_record(record: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def build_readiness_report(records: list[dict[str, Any]]) -> dict[str, Any]:
-    audited = [audit_record(record) for record in records]
+def build_readiness_report(
+    records: list[dict[str, Any]],
+    adjudication: dict[str, Any] | None = None,
+    adjudication_validation: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    adjudicated_records = {
+        item["record_id"]: item for item in (adjudication or {}).get("records", [])
+    }
+    audited = [audit_record(record, adjudicated_records.get(record["record_id"])) for record in records]
     failures = Counter(
         name for item in audited for name, passed in item["checks"].items() if not passed
     )
@@ -113,12 +127,25 @@ def build_readiness_report(records: list[dict[str, Any]]) -> dict[str, Any]:
         "all_eligible_units_reviewed": bool(eligible)
         and all(item["checks"]["independent_review_complete"] for item in eligible),
     }
+    if adjudication is not None:
+        gates["adjudication_revalidated"] = bool(adjudication_validation) and (
+            adjudication_validation.get("status") == "ADJUDICATION_VALIDATED"
+            and adjudication_validation.get("structurally_valid_for_readiness_chain") is True
+        )
+        gates["adjudication_covers_all_folios"] = {
+            record["record_id"]
+            for record in records
+            if record.get("source", {}).get("logical_role") == "FOLIO"
+        } == set(adjudicated_records)
     ready = all(gates.values())
     return {
         "schema_version": "1.0",
         "experiment_id": "EXP-2026-001",
         "status": "READY_FOR_SPLIT" if ready else "INCONCLUSIVE_NOT_RUN",
         "held_out_exposed": False,
+        "adjudication_packet_sha256": (
+            adjudication_validation.get("packet_sha256") if adjudication_validation else None
+        ),
         "summary": {
             "record_count": len(audited),
             "eligible_record_count": len(eligible),
@@ -133,6 +160,28 @@ def build_readiness_report(records: list[dict[str, Any]]) -> dict[str, Any]:
             for item in audited
             if not item["eligible"]
         },
+    }
+
+
+def bind_adjudication_evidence_chain(
+    validation: dict[str, Any],
+    receipt_verification: dict[str, Any],
+    receipt_bytes: bytes,
+    packet: dict[str, Any],
+) -> dict[str, Any]:
+    receipt_sha256 = hashlib.sha256(receipt_bytes).hexdigest()
+    if (
+        receipt_verification.get("status") == "FREEZE_RECEIPT_VERIFIED"
+        and receipt_verification.get("ready_for_adjudication") is True
+        and packet.get("receipt_sha256") == receipt_sha256
+        and packet.get("freeze_manifest_sha256") == receipt_verification.get("manifest_sha256")
+    ):
+        return validation
+    return {
+        **validation,
+        "status": "ADJUDICATION_REJECTED",
+        "structurally_valid_for_readiness_chain": False,
+        "errors": sorted(set(validation.get("errors", [])) | {"adjudication_evidence_chain_invalid"}),
     }
 
 
@@ -180,9 +229,40 @@ def main() -> int:
     parser.add_argument("--report", type=Path)
     parser.add_argument("--split", type=Path)
     parser.add_argument("--seed")
+    parser.add_argument("--adjudication-packet", type=Path)
+    parser.add_argument("--adjudication", type=Path)
+    parser.add_argument("--freeze-directory", type=Path)
+    parser.add_argument("--custodian-receipt", type=Path)
+    parser.add_argument("--receipt-signature", type=Path)
+    parser.add_argument("--allowed-signers", type=Path)
+    parser.add_argument("--custodian-identity")
     args = parser.parse_args()
     records = load_records(args.records_dir)
-    report = build_readiness_report(records)
+    if bool(args.adjudication_packet) != bool(args.adjudication):
+        parser.error("--adjudication-packet and --adjudication must be provided together")
+    adjudication = validation = None
+    if args.adjudication_packet:
+        chain_args = (
+            args.freeze_directory, args.custodian_receipt, args.receipt_signature,
+            args.allowed_signers, args.custodian_identity,
+        )
+        if any(value is None for value in chain_args):
+            parser.error(
+                "adjudication readiness also requires --freeze-directory, --custodian-receipt, "
+                "--receipt-signature, --allowed-signers, and --custodian-identity"
+            )
+        receipt_verification = verify_receipt(
+            args.freeze_directory, args.custodian_receipt, args.receipt_signature,
+            args.allowed_signers, args.custodian_identity,
+        )
+        packet_bytes = args.adjudication_packet.read_bytes()
+        packet = json.loads(packet_bytes.decode("utf-8"))
+        adjudication = json.loads(args.adjudication.read_text(encoding="utf-8"))
+        validation = validate_adjudication(packet_bytes, packet, adjudication)
+        validation = bind_adjudication_evidence_chain(
+            validation, receipt_verification, args.custodian_receipt.read_bytes(), packet
+        )
+    report = build_readiness_report(records, adjudication, validation)
     rendered = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)

@@ -21,3 +21,29 @@ python3 research_os/tools/build_adjudication_packet.py \
   research_os/runs/EXP-2026-001/adjudication-packet-001 \
   --identity CUSTODIAN_IDENTITY
 ```
+
+Validate the completed submission against the exact packet bytes before it enters readiness:
+
+```bash
+python3 research_os/tools/validate_adjudication.py \
+  adjudication-packet.json adjudication-submission.json \
+  --report adjudication-validation.json
+```
+
+The validator requires the complete packet record universe, original source checksums, exact packet SHA-256, all blindness attestations, valid canonical geometry and ports, non-orphaned relations, valid anonymized source references, and rationale/source consistency. Success is `ADJUDICATION_VALIDATED` and only establishes structural validity. It does not itself establish the signed receipt chain or produce `READY_FOR_SPLIT`.
+
+Run the final readiness audit from the exact packet and submission, not from a previously rendered validation report:
+
+```bash
+python3 research_os/tools/readiness.py atlas/records \
+  --freeze-directory research_os/runs/EXP-2026-001/annotation-freeze-001 \
+  --custodian-receipt custodian-receipt.json \
+  --receipt-signature custodian-receipt.json.sig \
+  --allowed-signers allowed_signers \
+  --custodian-identity CUSTODIAN_IDENTITY \
+  --adjudication-packet adjudication-packet.json \
+  --adjudication adjudication-submission.json \
+  --report research_os/experiments/EXP-2026-001/readiness_report.json
+```
+
+Only `READY_FOR_SPLIT` permits materializing the preregistered grouped split. Readiness still returns `held_out_exposed=false`; downstream tooling must keep the HELD-OUT assignment from model developers and annotators.

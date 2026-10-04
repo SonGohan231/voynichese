@@ -1,7 +1,14 @@
+Failed to connect to bus: Operation not permitted
 import copy
+import hashlib
 import unittest
 
-from readiness import build_readiness_report, deterministic_group_split, group_keys
+from readiness import (
+    bind_adjudication_evidence_chain,
+    build_readiness_report,
+    deterministic_group_split,
+    group_keys,
+)
 
 
 def record(record_id, folio, reviewed=True):
@@ -51,6 +58,75 @@ class ReadinessTests(unittest.TestCase):
         records = [record("R69", "69v_and_70r"), record("R70", "70v")]
         keys = group_keys(records)
         self.assertEqual(keys["R69"], keys["R70"])
+
+    def test_validated_adjudication_can_supply_independent_review(self):
+        records = [record(f"R{i:02d}", f"{i}r", reviewed=False) for i in range(1, 21)]
+        for item in records:
+            item["page_inventory"]["regions"] = []
+            item["local_relations"] = []
+        adjudication = {
+            "packet_sha256": "b" * 64,
+            "records": [{
+                "record_id": item["record_id"],
+                "source_sha256": item["source"]["sha256"],
+                "objects": [{"adjudicated_id": "O1"}],
+                "occlusions": [],
+            } for item in records],
+        }
+        validation = {
+            "status": "ADJUDICATION_VALIDATED",
+            "structurally_valid_for_readiness_chain": True,
+            "packet_sha256": "b" * 64,
+        }
+        report = build_readiness_report(records, adjudication, validation)
+        self.assertEqual(report["status"], "READY_FOR_SPLIT")
+        self.assertTrue(report["gates"]["adjudication_revalidated"])
+        self.assertTrue(report["gates"]["adjudication_covers_all_folios"])
+        self.assertFalse(report["held_out_exposed"])
+
+    def test_unvalidated_adjudication_fails_closed(self):
+        records = self.eligible_records()
+        adjudication = {"records": []}
+        validation = {"status": "ADJUDICATION_REJECTED", "structurally_valid_for_readiness_chain": False}
+        report = build_readiness_report(records, adjudication, validation)
+        self.assertEqual(report["status"], "INCONCLUSIVE_NOT_RUN")
+        self.assertFalse(report["gates"]["adjudication_revalidated"])
+
+    def test_adjudication_chain_binds_exact_receipt_and_manifest(self):
+        receipt = b"signed receipt bytes\n"
+        validation = {
+            "status": "ADJUDICATION_VALIDATED",
+            "structurally_valid_for_readiness_chain": True,
+            "errors": [],
+        }
+        verified = {
+            "status": "FREEZE_RECEIPT_VERIFIED",
+            "ready_for_adjudication": True,
+            "manifest_sha256": "a" * 64,
+        }
+        packet = {
+            "receipt_sha256": hashlib.sha256(receipt).hexdigest(),
+            "freeze_manifest_sha256": "a" * 64,
+        }
+        self.assertEqual(
+            bind_adjudication_evidence_chain(validation, verified, receipt, packet), validation
+        )
+
+    def test_adjudication_chain_rejects_forged_packet_status(self):
+        validation = {
+            "status": "ADJUDICATION_VALIDATED",
+            "structurally_valid_for_readiness_chain": True,
+            "errors": [],
+        }
+        verified = {
+            "status": "FREEZE_RECEIPT_VERIFIED",
+            "ready_for_adjudication": True,
+            "manifest_sha256": "a" * 64,
+        }
+        forged = {"receipt_sha256": "0" * 64, "freeze_manifest_sha256": "a" * 64}
+        result = bind_adjudication_evidence_chain(validation, verified, b"receipt", forged)
+        self.assertEqual(result["status"], "ADJUDICATION_REJECTED")
+        self.assertIn("adjudication_evidence_chain_invalid", result["errors"])
 
 
 if __name__ == "__main__":

@@ -93,6 +93,8 @@ def verify_receipt(
         "signature_valid": signature_valid,
         "signature_detail": signature_detail,
         "local_freeze_status": freeze["status"],
+        "manifest_sha256": freeze.get("manifest_sha256"),
+        "commit_sha256": freeze.get("commit_sha256"),
         "agreement_status": receipt.get("agreement_status"),
         "ready_for_adjudication": ready,
         "errors": sorted(set(errors)),

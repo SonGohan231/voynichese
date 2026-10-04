@@ -41,7 +41,7 @@ Failed to connect to bus: Operation not permitted
                 "bbox": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number", "minimum": 0, "maximum": 1}},
                 "ports": {"type": "array", "uniqueItems": true, "items": {"enum": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]}},
                 "source_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^SIDE_[12]:S[12]-O[0-9]{4}$"}},
-                "rationale_code": {"enum": ["AGREE", "SELECT_SIDE_1", "SELECT_SIDE_2", "MERGED", "INDEPENDENT_REDRAW", "EXCLUDE_ARTIFACT"]}
+                "rationale_code": {"enum": ["AGREE", "SELECT_SIDE_1", "SELECT_SIDE_2", "MERGED", "INDEPENDENT_REDRAW"]}
               },
               "additionalProperties": false
             }
