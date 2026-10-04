@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 #!/usr/bin/env python3
 """Encrypt the full split and emit an opaque TRAIN/VALIDATION developer package."""
 
