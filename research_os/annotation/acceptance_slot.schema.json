@@ -1,59 +1,175 @@
-Failed to connect to bus: Operation not permitted
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://voynich-research-os.local/acceptance_slot.schema.json",
   "title": "Blind annotation acceptance-slot precommitment",
   "type": "object",
   "required": [
-    "schema_version", "state", "experiment_id", "annotation_round",
-    "acceptance_slot_id", "max_accepted_pairs", "output_path",
-    "protocol_sha256", "record_universe_sha256", "packets",
-    "annotator_bindings", "custodian_identity", "sealed_at_utc",
-    "metrics_disclosure_policy", "held_out_access"
+    "schema_version",
+    "state",
+    "experiment_id",
+    "annotation_round",
+    "acceptance_slot_id",
+    "max_accepted_pairs",
+    "output_path",
+    "protocol_sha256",
+    "record_universe_sha256",
+    "packets",
+    "handoff_bindings",
+    "annotator_bindings",
+    "custodian_identity",
+    "sealed_at_utc",
+    "metrics_disclosure_policy",
+    "held_out_access"
   ],
   "properties": {
-    "schema_version": {"const": "1.0"},
-    "state": {"const": "SEALED_BEFORE_COLLECTION"},
-    "experiment_id": {"const": "EXP-2026-001"},
-    "annotation_round": {"type": "string", "minLength": 1},
-    "acceptance_slot_id": {"type": "string", "minLength": 1},
-    "max_accepted_pairs": {"const": 1},
-    "output_path": {"type": "string", "pattern": "^research_os/runs/EXP-2026-001/[A-Za-z0-9._/-]+$"},
-    "protocol_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-    "record_universe_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "schema_version": {
+      "const": "1.0"
+    },
+    "state": {
+      "const": "SEALED_BEFORE_COLLECTION"
+    },
+    "experiment_id": {
+      "const": "EXP-2026-001"
+    },
+    "annotation_round": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptance_slot_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "max_accepted_pairs": {
+      "const": 1
+    },
+    "output_path": {
+      "type": "string",
+      "pattern": "^research_os/runs/EXP-2026-001/[A-Za-z0-9._/-]+$"
+    },
+    "protocol_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "record_universe_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
     "packets": {
       "type": "object",
-      "required": ["A", "B"],
+      "required": [
+        "A",
+        "B"
+      ],
       "properties": {
-        "A": {"$ref": "#/$defs/packet"},
-        "B": {"$ref": "#/$defs/packet"}
+        "A": {
+          "$ref": "#/$defs/packet"
+        },
+        "B": {
+          "$ref": "#/$defs/packet"
+        }
       },
       "additionalProperties": false
     },
     "annotator_bindings": {
-      "type": "array", "minItems": 2, "maxItems": 2,
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
       "items": {
         "type": "object",
-        "required": ["role", "annotator_id_sha256"],
+        "required": [
+          "role",
+          "annotator_id_sha256"
+        ],
         "properties": {
-          "role": {"enum": ["A", "B"]},
-          "annotator_id_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+          "role": {
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "annotator_id_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
         },
         "additionalProperties": false
       }
     },
-    "custodian_identity": {"type": "string", "minLength": 1},
-    "sealed_at_utc": {"type": "string", "minLength": 1},
-    "metrics_disclosure_policy": {"const": "AFTER_LOCAL_FREEZE_COMMIT"},
-    "held_out_access": {"const": "FORBIDDEN"}
+    "custodian_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sealed_at_utc": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metrics_disclosure_policy": {
+      "const": "AFTER_LOCAL_FREEZE_COMMIT"
+    },
+    "held_out_access": {
+      "const": "FORBIDDEN"
+    },
+    "handoff_bindings": {
+      "type": "object",
+      "required": [
+        "A",
+        "B"
+      ],
+      "properties": {
+        "A": {
+          "$ref": "#/$defs/handoff"
+        },
+        "B": {
+          "$ref": "#/$defs/handoff"
+        }
+      },
+      "additionalProperties": false
+    }
   },
   "$defs": {
     "packet": {
       "type": "object",
-      "required": ["packet_id", "sha256"],
+      "required": [
+        "packet_id",
+        "sha256"
+      ],
       "properties": {
-        "packet_id": {"type": "string", "minLength": 1},
-        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        "packet_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "handoff": {
+      "type": "object",
+      "required": [
+        "packet_id",
+        "packet_sha256",
+        "custody_map_sha256",
+        "seed_commitment_sha256"
+      ],
+      "properties": {
+        "packet_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "packet_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "custody_map_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "seed_commitment_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
       },
       "additionalProperties": false
     }
