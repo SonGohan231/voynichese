@@ -15,6 +15,12 @@ Przed obejrzeniem jakiejkolwiek niezależnej anotacji zamrożono kontrakt w `res
 
 Przejście do adjudykacji wymaga jednocześnie: F1 detekcji obiektów `>= 0.80` przy IoU klasy zgodnej `>= 0.50`, mediany IoU `>= 0.75`, dokładnej zgodności zbiorów sektorów portów `>= 0.80` i F1 skierowanych relacji okluzji na unii zgłoszonych relacji `>= 0.80`. Dopasowanie obiektów maksymalizuje najpierw liczebność, potem łączny IoU. Pusty mianownik lub brak relacji daje `NOT_ASSESSED` i blokuje bramkę. PASS tej bramki oznacza wyłącznie `READY_FOR_ADJUDICATION`; nie tworzy ground truth i nie odblokowuje HELD-OUT.
 
+## Zamrożony plan mocy
+
+183 rekordy `FOLIO` tworzą 93 niezależne grupy liści po połączeniu recto/verso i stron złożonych. Planowany HELD-OUT 20% daje około 19 grup. Dla jednostronnego `alpha = 0.01` i mocy 0,80 normalne przybliżenie dla sparowanych różnic wyniku na poziomie grupy wymaga 18 grup dla standaryzowanego efektu `d = 0.75`; przy 19 grupach minimalny wykrywalny efekt wynosi około `d = 0.727`.
+
+Oznacza to moc wyłącznie dla dużego efektu. Mniejszy efekt nie może być po fakcie przedstawiony jako potwierdzenie: otrzymuje `INCONCLUSIVE`, chyba że przed odślepieniem zostanie zamrożona osobna dokładna analiza mocy. Pseudoreplikacja rekordów, obiektów lub portów jako niezależnych obserwacji jest zabroniona. Raport: `power_plan.json`.
+
 ## Hipoteza i null
 
 - H1: mały, zamrożony katalog transformacji geometrii przewiduje porty i relacje okluzji homologicznych struktur na niewidzianych foliach lepiej niż proste baseline.
