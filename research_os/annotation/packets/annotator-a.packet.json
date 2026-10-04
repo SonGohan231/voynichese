@@ -3,7 +3,7 @@
   "packet_id": "EXP-2026-001-ANNOTATOR-A",
   "purpose": "INDEPENDENT_BLIND_ANNOTATION_EXP_2026_001",
   "protocol_path": "research_os/annotation/README.md",
-  "protocol_sha256": "2c34d50e3ecfc7a7ab7acb0355673ff8ec54aa9825c51ea8f67e8bf18fa9c40d",
+  "protocol_sha256": "be32aeb464492a7378c3fc3774106d83ba3bb37a4e9a998e0adc25fe59e0485c",
   "record_universe_sha256": "e6342d765d48f4b630b435dd4b05a2aeeec4a2a9c3dee09cd57a52fc859beb9d",
   "record_count": 183,
   "forbidden_inputs": [
