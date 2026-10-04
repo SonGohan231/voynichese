@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 "use strict";
 
 const state={packet:null,records:[],annotations:new Map(),current:0,selected:null,tool:"select",zoom:1,annotator:"",blind:false,draft:null};
