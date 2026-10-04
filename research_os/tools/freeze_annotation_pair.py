@@ -1,0 +1,173 @@
+Failed to connect to bus: Operation not permitted
+#!/usr/bin/env python3
+"""Freeze two independent submissions before exposing agreement metrics."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+from annotation_gate import agreement_report, load_atlas, validate_submission
+
+
+def sha256_bytes(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def durable_write(path: Path, data: bytes) -> None:
+    """Create one artifact exclusively and flush its bytes before returning."""
+    with path.open("xb") as handle:
+        handle.write(data)
+        handle.flush()
+        os.fsync(handle.fileno())
+
+
+def load_json_bytes(path: Path) -> tuple[bytes, dict[str, Any]]:
+    raw = path.read_bytes()
+    return raw, json.loads(raw.decode("utf-8"))
+
+
+def freeze_pair(
+    records_dir: Path,
+    left_path: Path,
+    right_path: Path,
+    packet_a_path: Path,
+    packet_b_path: Path,
+    output_dir: Path,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    atlas = load_atlas(records_dir)
+    left_raw, left = load_json_bytes(left_path)
+    right_raw, right = load_json_bytes(right_path)
+    packet_a_raw, packet_a = load_json_bytes(packet_a_path)
+    packet_b_raw, packet_b = load_json_bytes(packet_b_path)
+
+    errors = {
+        "left": validate_submission(left, atlas),
+        "right": validate_submission(right, atlas),
+        "pair": [],
+        "packets": [],
+    }
+    left_records = {record.get("record_id") for record in left.get("records", [])}
+    right_records = {record.get("record_id") for record in right.get("records", [])}
+    if left.get("annotator_id") == right.get("annotator_id"):
+        errors["pair"].append("annotator_ids_not_distinct")
+    if left_records != set(atlas) or right_records != set(atlas):
+        errors["pair"].append("record_universe_incomplete")
+    packet_keys = ("schema_version", "record_count", "record_universe_sha256", "protocol_sha256")
+    for key in packet_keys:
+        if packet_a.get(key) != packet_b.get(key):
+            errors["packets"].append(f"packet_mismatch:{key}")
+    if packet_a.get("record_count") != len(atlas):
+        errors["packets"].append("packet_atlas_count_mismatch")
+    packet_records = {record.get("record_id"): record.get("source_sha256") for record in packet_a.get("records", [])}
+    if packet_records != atlas:
+        errors["packets"].append("packet_atlas_universe_mismatch")
+    if any(errors.values()):
+        raise ValueError(json.dumps(errors, sort_keys=True))
+
+    report = agreement_report(left, right, atlas)
+    report_raw = (json.dumps(report, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
+    created_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    manifest = {
+        "schema_version": "1.0",
+        "freeze_status": "LOCAL_FREEZE_AWAITING_CUSTODIAN_RECEIPT",
+        "created_at_utc": created_at,
+        "protocol_sha256": packet_a["protocol_sha256"],
+        "record_universe_sha256": packet_a["record_universe_sha256"],
+        "record_count": len(atlas),
+        "packet_a": {"packet_id": packet_a["packet_id"], "sha256": sha256_bytes(packet_a_raw)},
+        "packet_b": {"packet_id": packet_b["packet_id"], "sha256": sha256_bytes(packet_b_raw)},
+        "annotation_a": {
+            "path": "annotation-a.json",
+            "annotation_id": left["annotation_id"],
+            "annotator_id": left["annotator_id"],
+            "sha256": sha256_bytes(left_raw),
+        },
+        "annotation_b": {
+            "path": "annotation-b.json",
+            "annotation_id": right["annotation_id"],
+            "annotator_id": right["annotator_id"],
+            "sha256": sha256_bytes(right_raw),
+        },
+        "agreement_report": {
+            "path": "agreement-report.json",
+            "status": report["status"],
+            "sha256": sha256_bytes(report_raw),
+        },
+        "acceptance_scope": "LOCAL_SINGLE_DIRECTORY_ONLY",
+        "custodian_receipt_required": True,
+        "promotes_to_ground_truth": False,
+        "unlocks_held_out": False,
+    }
+
+    output_dir.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        # mkdir is the no-replace publication boundary: exactly one writer can
+        # reserve a run path. A crash leaves an incomplete, non-reusable audit trail.
+        output_dir.mkdir()
+    except FileExistsError as error:
+        raise ValueError(f"refusing_to_overwrite_existing_freeze:{output_dir}") from error
+    try:
+        durable_write(output_dir / "annotation-a.json", left_raw)
+        durable_write(output_dir / "annotation-b.json", right_raw)
+        durable_write(output_dir / "agreement-report.json", report_raw)
+        manifest_raw = (json.dumps(manifest, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
+        durable_write(output_dir / "freeze-manifest.json", manifest_raw)
+        commit = {
+            "schema_version": "1.0",
+            "state": "LOCAL_FREEZE_COMMITTED",
+            "manifest_sha256": sha256_bytes(manifest_raw),
+            "custodian_receipt_required": True,
+        }
+        durable_write(
+            output_dir / "COMMIT.json",
+            (json.dumps(commit, indent=2, sort_keys=True) + "\n").encode("utf-8"),
+        )
+        directory_fd = os.open(output_dir, os.O_RDONLY)
+        try:
+            os.fsync(directory_fd)
+        finally:
+            os.close(directory_fd)
+        for artifact in output_dir.iterdir():
+            artifact.chmod(0o444)
+        output_dir.chmod(0o555)
+    except Exception:
+        # Never remove or reuse a partial run: its existence is evidence of an attempt.
+        raise
+    return manifest, report
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("records_dir", type=Path)
+    parser.add_argument("annotation_a", type=Path)
+    parser.add_argument("annotation_b", type=Path)
+    parser.add_argument("output_dir", type=Path)
+    parser.add_argument(
+        "--packet-a", type=Path,
+        default=Path("research_os/annotation/packets/annotator-a.packet.json"),
+    )
+    parser.add_argument(
+        "--packet-b", type=Path,
+        default=Path("research_os/annotation/packets/annotator-b.packet.json"),
+    )
+    args = parser.parse_args()
+    try:
+        manifest, report = freeze_pair(
+            args.records_dir, args.annotation_a, args.annotation_b,
+            args.packet_a, args.packet_b, args.output_dir,
+        )
+    except (OSError, ValueError, json.JSONDecodeError) as error:
+        print(json.dumps({"status": "FREEZE_REFUSED", "error": str(error)}, indent=2))
+        return 2
+    print(json.dumps({"manifest": manifest, "gate_status": report["status"]}, indent=2))
+    return 0 if report["status"] == "READY_FOR_ADJUDICATION" else 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
