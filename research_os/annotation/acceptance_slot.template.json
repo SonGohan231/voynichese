@@ -20,8 +20,8 @@ Failed to connect to bus: Operation not permitted
     }
   },
   "annotator_bindings": [
-    {"role": "A", "identity_commitment_sha256": "REPLACE_BEFORE_SEALING"},
-    {"role": "B", "identity_commitment_sha256": "REPLACE_BEFORE_SEALING"}
+    {"role": "A", "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"},
+    {"role": "B", "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"}
   ],
   "custodian_identity": "REPLACE_WITH_ALLOWED_SIGNER_IDENTITY",
   "sealed_at_utc": "REPLACE_BEFORE_SEALING",

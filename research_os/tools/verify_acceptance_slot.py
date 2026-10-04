@@ -59,13 +59,13 @@ def semantic_errors(slot: dict[str, Any], expected_identity: str) -> list[str]:
         errors.append("invalid_annotator_bindings")
     else:
         roles = {item.get("role") for item in bindings if isinstance(item, dict)}
-        commitments = [item.get("identity_commitment_sha256") for item in bindings if isinstance(item, dict)]
+        commitments = [item.get("annotator_id_sha256") for item in bindings if isinstance(item, dict)]
         if roles != {"A", "B"}:
             errors.append("annotator_roles_not_a_b")
         if len(commitments) != 2 or any(not isinstance(value, str) or not HEX64.fullmatch(value) for value in commitments):
-            errors.append("invalid_identity_commitment")
+            errors.append("invalid_annotator_id_hash")
         elif len(set(commitments)) != 2:
-            errors.append("annotator_identity_commitments_not_distinct")
+            errors.append("annotator_id_hashes_not_distinct")
     return sorted(set(errors))
 
 

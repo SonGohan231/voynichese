@@ -24,8 +24,8 @@ def valid_slot():
             "B": {"packet_id": "PACKET-B", "sha256": "d" * 64},
         },
         "annotator_bindings": [
-            {"role": "A", "identity_commitment_sha256": "e" * 64},
-            {"role": "B", "identity_commitment_sha256": "f" * 64},
+            {"role": "A", "annotator_id_sha256": "e" * 64},
+            {"role": "B", "annotator_id_sha256": "f" * 64},
         ],
         "custodian_identity": "custodian@example",
         "sealed_at_utc": "2026-10-04T15:00:00+00:00",
@@ -82,11 +82,11 @@ class VerifyAcceptanceSlotTests(unittest.TestCase):
 
     def test_same_annotator_commitment_is_rejected_even_when_signed(self):
         value = valid_slot()
-        value["annotator_bindings"][1]["identity_commitment_sha256"] = "e" * 64
+        value["annotator_bindings"][1]["annotator_id_sha256"] = "e" * 64
         path, signature = self.write_and_sign(value)
         result = verify_slot(path, signature, self.allowed, "custodian@example")
         self.assertTrue(result["signature_valid"])
-        self.assertIn("annotator_identity_commitments_not_distinct", result["semantic_errors"])
+        self.assertIn("annotator_id_hashes_not_distinct", result["semantic_errors"])
 
     def test_path_traversal_is_rejected_even_when_signed(self):
         value = valid_slot()

@@ -70,6 +70,22 @@ def freeze_pair(
     packet_records = {record.get("record_id"): record.get("source_sha256") for record in packet_a.get("records", [])}
     if packet_records != atlas:
         errors["packets"].append("packet_atlas_universe_mismatch")
+    if acceptance_slot:
+        expected_ids = acceptance_slot.get("annotator_id_sha256", {})
+        actual_ids = {
+            "A": sha256_bytes(str(left.get("annotator_id", "")).encode("utf-8")),
+            "B": sha256_bytes(str(right.get("annotator_id", "")).encode("utf-8")),
+        }
+        if expected_ids != actual_ids:
+            errors["pair"].append("annotator_ids_do_not_match_signed_slot")
+        expected_packets = acceptance_slot.get("packet_sha256", {})
+        actual_packets = {"A": sha256_bytes(packet_a_raw), "B": sha256_bytes(packet_b_raw)}
+        if expected_packets != actual_packets:
+            errors["packets"].append("packet_bytes_do_not_match_signed_slot")
+        if acceptance_slot.get("protocol_sha256") != packet_a.get("protocol_sha256"):
+            errors["packets"].append("protocol_does_not_match_signed_slot")
+        if acceptance_slot.get("record_universe_sha256") != packet_a.get("record_universe_sha256"):
+            errors["packets"].append("record_universe_does_not_match_signed_slot")
     if any(errors.values()):
         raise ValueError(json.dumps(errors, sort_keys=True))
 
@@ -86,8 +102,8 @@ def freeze_pair(
         "protocol_sha256": packet_a["protocol_sha256"],
         "record_universe_sha256": packet_a["record_universe_sha256"],
         "record_count": len(atlas),
-        "packet_a": {"packet_id": packet_a["packet_id"], "sha256": sha256_bytes(packet_a_raw)},
-        "packet_b": {"packet_id": packet_b["packet_id"], "sha256": sha256_bytes(packet_b_raw)},
+        "packet_a": {"path": "packet-a.json", "packet_id": packet_a["packet_id"], "sha256": sha256_bytes(packet_a_raw)},
+        "packet_b": {"path": "packet-b.json", "packet_id": packet_b["packet_id"], "sha256": sha256_bytes(packet_b_raw)},
         "annotation_a": {
             "path": "annotation-a.json",
             "annotation_id": left["annotation_id"],
@@ -127,6 +143,8 @@ def freeze_pair(
     try:
         durable_write(output_dir / "annotation-a.json", left_raw)
         durable_write(output_dir / "annotation-b.json", right_raw)
+        durable_write(output_dir / "packet-a.json", packet_a_raw)
+        durable_write(output_dir / "packet-b.json", packet_b_raw)
         for name, data in sorted((acceptance_evidence or {}).items()):
             if Path(name).name != name:
                 raise ValueError(f"unsafe_acceptance_evidence_name:{name}")
@@ -203,6 +221,15 @@ def main() -> int:
             "custodian_identity": args.custodian_identity,
             "signature_namespace": slot_result["signature_namespace"],
             "signature_valid": True,
+            "annotator_id_sha256": {
+                item["role"]: item["annotator_id_sha256"]
+                for item in slot["annotator_bindings"]
+            },
+            "packet_sha256": {
+                role: slot["packets"][role]["sha256"] for role in ("A", "B")
+            },
+            "protocol_sha256": slot["protocol_sha256"],
+            "record_universe_sha256": slot["record_universe_sha256"],
         }
         acceptance_evidence = {
             "acceptance-slot.json": args.slot.read_bytes(),

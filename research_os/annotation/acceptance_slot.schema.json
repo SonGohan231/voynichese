@@ -34,10 +34,10 @@ Failed to connect to bus: Operation not permitted
       "type": "array", "minItems": 2, "maxItems": 2,
       "items": {
         "type": "object",
-        "required": ["role", "identity_commitment_sha256"],
+        "required": ["role", "annotator_id_sha256"],
         "properties": {
           "role": {"enum": ["A", "B"]},
-          "identity_commitment_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+          "annotator_id_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
         },
         "additionalProperties": false
       }

@@ -48,7 +48,7 @@ ssh-keygen -Y sign -f CUSTODIAN_PRIVATE_KEY \
   -n voynich-research-os-acceptance-slot-v1 acceptance-slot.json
 ```
 
-Never place the private key, salts, or identity-to-commitment mapping in this repository. The custodian keeps that mapping independently. `allowed_signers` contains only the approved public key and identity in OpenSSH allowed-signers format.
+The two slot bindings are SHA-256 digests of the exact pseudonymous annotator IDs that will be typed into the editor. The custodian assigns each pseudonym privately, verifies that two different people receive A and B, and keeps the real-identity mapping outside the repository. Never place the private key or real-identity mapping here. `allowed_signers` contains only the approved public key and custodian identity in OpenSSH allowed-signers format.
 
 After both exports have arrived independently, freeze the exact pair and disclose metrics only from the path signed into that slot:
 
@@ -64,7 +64,16 @@ python3 research_os/tools/freeze_annotation_pair.py \
 
 The destination must not already exist. The command atomically reserves it, validates stable byte snapshots against both complete source universes and packet/protocol agreement, records SHA-256 digests, writes all artifacts exclusively, and writes `COMMIT.json` last. Existing and partial run directories are never overwritten or automatically removed. A frozen pair never unlocks HELD-OUT and never becomes ground truth automatically.
 
-The CLI rejects unsigned, altered, draft, path-traversing, multi-pair, or self-identified slots, and binds the verified slot digest into the freeze manifest. `LOCAL_FREEZE_COMMITTED` is still not a globally accepted experimental run: the custodian or append-only registry must receipt the final manifest digest before metrics are accepted. This prevents adaptive retries in fresh directories; local filesystem rules cannot prove that property across machines. See `dyrygent_balanced_freeze_red_team_2026-10-04.md`.
+The CLI rejects unsigned, altered, draft, path-traversing, multi-pair, or duplicate-ID slots. It verifies the exact A/B pseudonym hashes and packet bytes again from the snapshots that are frozen, then binds the verified slot digest into the manifest. `LOCAL_FREEZE_COMMITTED` is still not a globally accepted experimental run: the custodian or append-only registry must receipt the final manifest digest before metrics are accepted. This prevents adaptive retries in fresh directories; local filesystem rules cannot prove that property across machines. See `dyrygent_balanced_freeze_red_team_2026-10-04.md`.
+
+Before requesting that final receipt, independently reverify the complete local evidence bundle:
+
+```bash
+python3 research_os/tools/verify_annotation_freeze.py \
+  research_os/runs/EXP-2026-001/annotation-freeze-001
+```
+
+This rechecks `COMMIT.json`, the manifest digest, every annotation, packet, report and acceptance artifact, the embedded custodian signature, filesystem write barriers, and unexpected files. Success is only `LOCAL_FREEZE_INTEGRITY_VERIFIED`; it still reports `custodian_final_receipt_required=true` and cannot unlock HELD-OUT.
 
 ## Diagnostic gate only
 

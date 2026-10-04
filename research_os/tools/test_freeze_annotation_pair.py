@@ -106,6 +106,16 @@ class FreezeAnnotationPairTests(unittest.TestCase):
             "custodian_identity": "custodian@example",
             "signature_namespace": "voynich-research-os-acceptance-slot-v1",
             "signature_valid": True,
+            "annotator_id_sha256": {
+                "A": hashlib.sha256(b"annotator-a").hexdigest(),
+                "B": hashlib.sha256(b"annotator-b").hexdigest(),
+            },
+            "packet_sha256": {
+                "A": hashlib.sha256(self.packet_a.read_bytes()).hexdigest(),
+                "B": hashlib.sha256(self.packet_b.read_bytes()).hexdigest(),
+            },
+            "protocol_sha256": "c" * 64,
+            "record_universe_sha256": "b" * 64,
         }
         evidence = {
             "acceptance-slot.json": b"slot\n",
@@ -124,6 +134,27 @@ class FreezeAnnotationPairTests(unittest.TestCase):
             (self.root / "frozen" / "acceptance-slot.json").read_bytes(), b"slot\n"
         )
         self.assertIn("acceptance-slot.json.sig", manifest["acceptance_evidence"])
+
+    def test_signed_slot_binding_rejects_substituted_annotator_id(self):
+        binding = {
+            "slot_id": "SLOT-001",
+            "slot_sha256": "1" * 64,
+            "custodian_identity": "custodian@example",
+            "signature_namespace": "voynich-research-os-acceptance-slot-v1",
+            "signature_valid": True,
+            "annotator_id_sha256": {"A": "0" * 64, "B": "1" * 64},
+            "packet_sha256": {
+                "A": hashlib.sha256(self.packet_a.read_bytes()).hexdigest(),
+                "B": hashlib.sha256(self.packet_b.read_bytes()).hexdigest(),
+            },
+            "protocol_sha256": "c" * 64,
+            "record_universe_sha256": "b" * 64,
+        }
+        with self.assertRaisesRegex(ValueError, "annotator_ids_do_not_match_signed_slot"):
+            freeze_pair(
+                self.records, self.left, self.right, self.packet_a, self.packet_b,
+                self.root / "frozen", binding, {"acceptance-slot.json": b"slot\n"},
+            )
 
     def test_refuses_same_annotator_identity(self):
         value = submission("B", "annotator-a")

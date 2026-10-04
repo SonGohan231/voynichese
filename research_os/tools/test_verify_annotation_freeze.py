@@ -1,0 +1,122 @@
+Failed to connect to bus: Operation not permitted
+import hashlib
+import json
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+
+from freeze_annotation_pair import freeze_pair
+from verify_acceptance_slot import NAMESPACE
+from verify_annotation_freeze import verify_freeze
+
+
+SHA = "a" * 64
+
+
+def write_json(path, value):
+    path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
+
+
+class VerifyAnnotationFreezeTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.root = Path(self.temporary.name)
+        records = self.root / "records"
+        records.mkdir()
+        write_json(records / "r1.annotation.json", {
+            "record_id": "R1", "source": {"logical_role": "FOLIO", "sha256": SHA},
+        })
+        blindness = {
+            "other_annotation_unseen": True, "automated_candidates_unseen": True,
+            "model_predictions_unseen": True, "hypothesis_labels_unseen": True,
+            "split_assignment_unseen": True,
+        }
+        def submission(annotation_id, annotator_id):
+            return {
+                "schema_version": "1.0", "annotation_id": annotation_id,
+                "annotator_id": annotator_id, "blindness": blindness,
+                "records": [{
+                    "record_id": "R1", "source_sha256": SHA,
+                    "objects": [
+                        {"local_id": "O1", "class": "DIAGRAM", "bbox": [0.1, 0.1, 0.3, 0.3], "ports": ["N"]},
+                        {"local_id": "O2", "class": "TEXT_FIELD", "bbox": [0.5, 0.5, 0.8, 0.8], "ports": ["S"]},
+                    ],
+                    "occlusions": [{"source_id": "O1", "target_id": "O2", "relation": "IN_FRONT_OF"}],
+                }],
+            }
+        left = self.root / "left.json"; write_json(left, submission("A", "annotator-a"))
+        right = self.root / "right.json"; write_json(right, submission("B", "annotator-b"))
+        packet = {
+            "schema_version": "1.0", "packet_id": "PACKET-A", "record_count": 1,
+            "record_universe_sha256": "b" * 64, "protocol_sha256": "c" * 64,
+            "records": [{"record_id": "R1", "source_sha256": SHA}],
+        }
+        packet_a = self.root / "packet-a.json"; write_json(packet_a, packet)
+        packet["packet_id"] = "PACKET-B"
+        packet_b = self.root / "packet-b.json"; write_json(packet_b, packet)
+
+        key = self.root / "key"
+        subprocess.run(["ssh-keygen", "-q", "-t", "ed25519", "-N", "", "-f", str(key)], check=True)
+        public = key.with_suffix(".pub").read_text(encoding="utf-8").split()
+        allowed = self.root / "allowed_signers"
+        allowed.write_text(f"custodian@example {public[0]} {public[1]}\n", encoding="utf-8")
+        slot_value = {
+            "schema_version": "1.0", "state": "SEALED_BEFORE_COLLECTION",
+            "experiment_id": "EXP-2026-001", "annotation_round": "ROUND-001",
+            "acceptance_slot_id": "SLOT-001", "max_accepted_pairs": 1,
+            "output_path": "research_os/runs/EXP-2026-001/annotation-freeze-001",
+            "protocol_sha256": "c" * 64, "record_universe_sha256": "b" * 64,
+            "packets": {
+                "A": {"packet_id": "PACKET-A", "sha256": hashlib.sha256(packet_a.read_bytes()).hexdigest()},
+                "B": {"packet_id": "PACKET-B", "sha256": hashlib.sha256(packet_b.read_bytes()).hexdigest()},
+            },
+            "annotator_bindings": [
+                {"role": "A", "annotator_id_sha256": hashlib.sha256(b"annotator-a").hexdigest()},
+                {"role": "B", "annotator_id_sha256": hashlib.sha256(b"annotator-b").hexdigest()},
+            ],
+            "custodian_identity": "custodian@example", "sealed_at_utc": "2026-10-04T15:00:00+00:00",
+            "metrics_disclosure_policy": "AFTER_LOCAL_FREEZE_COMMIT", "held_out_access": "FORBIDDEN",
+        }
+        slot = self.root / "slot.json"; write_json(slot, slot_value)
+        subprocess.run(["ssh-keygen", "-Y", "sign", "-q", "-f", str(key), "-n", NAMESPACE, str(slot)], check=True)
+        signature = Path(f"{slot}.sig")
+        binding = {
+            "slot_id": "SLOT-001", "slot_sha256": hashlib.sha256(slot.read_bytes()).hexdigest(),
+            "custodian_identity": "custodian@example", "signature_namespace": NAMESPACE,
+            "signature_valid": True,
+            "annotator_id_sha256": {item["role"]: item["annotator_id_sha256"] for item in slot_value["annotator_bindings"]},
+            "packet_sha256": {role: slot_value["packets"][role]["sha256"] for role in ("A", "B")},
+            "protocol_sha256": "c" * 64, "record_universe_sha256": "b" * 64,
+        }
+        evidence = {
+            "acceptance-slot.json": slot.read_bytes(),
+            "acceptance-slot.json.sig": signature.read_bytes(),
+            "allowed_signers": allowed.read_bytes(),
+        }
+        self.freeze = self.root / "freeze"
+        freeze_pair(records, left, right, packet_a, packet_b, self.freeze, binding, evidence)
+
+    def tearDown(self):
+        for path in self.root.rglob("*"):
+            path.chmod(0o755 if path.is_dir() else 0o644)
+        self.temporary.cleanup()
+
+    def test_complete_signed_freeze_verifies(self):
+        result = verify_freeze(self.freeze)
+        self.assertEqual(result["status"], "LOCAL_FREEZE_INTEGRITY_VERIFIED")
+        self.assertEqual(result["acceptance_slot_status"], "ACCEPTANCE_SLOT_VERIFIED")
+        self.assertTrue(result["custodian_final_receipt_required"])
+        self.assertFalse(result["unlocks_held_out"])
+
+    def test_post_freeze_mutation_is_detected(self):
+        target = self.freeze / "annotation-a.json"
+        target.chmod(0o644)
+        target.write_text("{}\n", encoding="utf-8")
+        result = verify_freeze(self.freeze)
+        self.assertEqual(result["status"], "FREEZE_INTEGRITY_REJECTED")
+        self.assertIn("artifact_digest_mismatch:annotation-a.json", result["errors"])
+
+
+if __name__ == "__main__":
+    unittest.main()
