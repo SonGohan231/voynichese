@@ -1,0 +1,49 @@
+{
+  "artifact_id": "AUTO_CANDIDATE_FINAL_V1",
+  "classification": "DATA",
+  "scientific_status": "AUTOMATED_CANDIDATE_NOT_INDEPENDENT_ANNOTATION",
+  "created_at": "2026-10-04T14:01:15Z",
+  "producer": {
+    "workflow": "Build full visual atlas annotation v1",
+    "workflow_run_id": 37207481374,
+    "workflow_job_id": 111451602510,
+    "head_branch": "research/voynich-research-os-bootstrap-2026-10-04",
+    "head_sha": "8112aed6d450eae3b359a6fac29b6ab19852adb0"
+  },
+  "validation": {
+    "status": "PASS",
+    "expected_records": 206,
+    "completed_records": 206,
+    "failed_records": 0,
+    "overlay_count": 206,
+    "record_count": 206,
+    "graph_node_count": 206,
+    "graph_edge_count": 473,
+    "manual_review_status": "REQUIRED",
+    "source_policy": "Original JPEG files were SHA-verified and never modified."
+  },
+  "artifact": {
+    "github_artifact_id": 11305232758,
+    "name": "voynich-annotated-final-v1",
+    "uploaded_archive_bytes": 121046399,
+    "uploaded_archive_sha256": "40c898a4dda3639a4d4c59b4c995a3ae40e6d4702cd4b629802858a8ed93548b",
+    "inner_bundle_bytes": 110244284,
+    "inner_bundle_sha256": "710764e14db243a154bb6fb1e08217e6289d09c75d761d99ed98563abbe77fd1",
+    "expires_at": "2026-11-03T14:01:14Z",
+    "run_url": "https://github.com/SonGohan231/voynichese/actions/runs/37207481374"
+  },
+  "use_policy": {
+    "allowed": [
+      "candidate proposal for independent annotation workflow",
+      "overlay quality-control planning",
+      "software and schema testing"
+    ],
+    "forbidden": [
+      "counting candidates as ground truth",
+      "counting candidates as either independent blind annotation",
+      "training and evaluating on the same automated candidates",
+      "unlocking HELD-OUT",
+      "claiming support for Perspective Grammar, Color Layer or Intensity Depth"
+    ]
+  }
+}

@@ -1,0 +1,1047 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "EXP-2026-001",
+  "status": "INCONCLUSIVE_NOT_RUN",
+  "held_out_exposed": false,
+  "adjudication_packet_sha256": null,
+  "summary": {
+    "record_count": 204,
+    "eligible_record_count": 0,
+    "eligible_group_count": 0,
+    "minimum_eligible_groups": 15
+  },
+  "gates": {
+    "records_present": true,
+    "all_sources_verified": true,
+    "minimum_eligible_groups": false,
+    "all_eligible_units_reviewed": false
+  },
+  "failure_counts": {
+    "independent_review_complete": 204,
+    "local_relations_present": 204,
+    "visual_units_present": 204
+  },
+  "eligible_record_ids": [],
+  "ineligible_records": {
+    "CANVAS-0003-1r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0004-1v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0005-2r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0006-2v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0007-3r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0008-3v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0009-4r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0010-4v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0011-5r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0012-5v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0013-6r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0014-6v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0015-7r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0016-7v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0017-8r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0018-8v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0019-9r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0020-9v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0021-10r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0022-10v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0023-11r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0024-11v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0025-13r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0026-13v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0027-14r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0028-14v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0029-15r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0030-15v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0031-16r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0032-16v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0033-17r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0034-17v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0035-18r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0036-18v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0037-19r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0038-19v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0039-20r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0040-20v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0041-21r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0042-21v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0043-22r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0044-22v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0045-23r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0046-23v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0047-24r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0048-24v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0049-25r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0050-25v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0051-26r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0052-26v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0053-27r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0054-27v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0055-28r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0056-28v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0057-29r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0058-29v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0059-30r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0060-30v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0061-31r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0062-31v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0063-32r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0064-32v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0065-33r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0066-33v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0067-34r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0068-34v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0069-35r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0070-35v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0071-36r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0072-36v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0073-37r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0074-37v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0075-38r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0076-38v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0077-39r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0078-39v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0079-40r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0080-40v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0081-41r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0082-41v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0083-42r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0084-42v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0085-43r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0086-43v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0087-44r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0088-44v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0089-45r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0090-45v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0091-46r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0092-46v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0093-47r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0094-47v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0095-48r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0096-48v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0097-49r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0098-49v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0099-50r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0100-50v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0101-51r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0102-51v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0103-52r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0104-52v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0105-53r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0106-53v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0107-54r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0108-54v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0109-55r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0110-55v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0111-56r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0112-56v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0113-57r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0114-57v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0115-58r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0116-58v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0117-65r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0118-65v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0119-66r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0120-66v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0121-67r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0122-67v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0123-68r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0124-68v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0125-69r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0126-69v_and_70r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0127-70v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0128-70v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0129-71r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0130-71v_and_72r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0131-72v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0132-72v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0133-73r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0134-73v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0135-75r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0136-75v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0137-76r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0138-76v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0139-77r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0140-77v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0141-78r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0142-78v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0143-79r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0144-79v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0145-80r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0146-80v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0147-81r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0148-81v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0149-82r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0150-82v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0151-83r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0152-83v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0153-84r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0154-84v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0155-85r_part_part_of_85-86_foldout": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0156-85r_part_86v_part_part_of_85-86_foldout": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0157-86v_part_part_of_85-86_foldout": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0158-85v_and_86r_foldout": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0159-87r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0160-87v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0161-88r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0162-88v_and_89r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0163-89v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0164-89v_part_and_90r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0165-90r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0166-90v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0167-93r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0168-93v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0169-94r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0170-94v_and_95r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0171-95v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0172-95v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0173-96r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0174-96v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0175-99r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0176-99v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0177-100r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0178-100v_and_101r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0179-101v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0180-101v_part_and_102r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0181-102v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0182-102v_part": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0183-103r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0184-103v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0185-104r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0186-104v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0187-105r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0188-105v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0189-106r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0190-106v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0191-107r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0192-107v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0193-108r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0194-108v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0195-111r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0196-111v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0197-112r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0198-112v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0199-113r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0200-113v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0201-114r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0202-114v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0203-115r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0204-115v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0205-116r": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ],
+    "CANVAS-0206-116v": [
+      "visual_units_present",
+      "local_relations_present",
+      "independent_review_complete"
+    ]
+  }
+}

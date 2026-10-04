@@ -1,0 +1,63 @@
+name: Research OS gates
+
+on:
+  push:
+    branches:
+      - research/voynich-research-os-bootstrap-2026-10-04
+    paths:
+      - "research_os/**"
+      - "atlas/records/**"
+      - ".github/workflows/research-os-gates.yml"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "research_os/**"
+      - "atlas/records/**"
+      - ".github/workflows/research-os-gates.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run Research OS unit tests
+        run: python3 -m unittest discover -s research_os/tools -p 'test_*.py' -v
+      - name: Verify fail-closed pre-annotation readiness
+        shell: bash
+        run: |
+          set +e
+          python3 research_os/tools/readiness.py atlas/records --report /tmp/readiness.json
+          rc=$?
+          set -e
+          test "$rc" -eq 2
+          python3 - <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, "research_os/tools")
+          from readiness import load_records
+          from record_scope import is_manuscript_content
+
+          report = json.loads(Path("/tmp/readiness.json").read_text())
+          records = load_records(Path("atlas/records"))
+          expected_content_count = sum(1 for record in records if is_manuscript_content(record))
+          assert report["status"] == "INCONCLUSIVE_NOT_RUN", report
+          assert report["held_out_exposed"] is False, report
+          assert report["summary"]["record_count"] == expected_content_count, (report, expected_content_count)
+          assert report["summary"]["eligible_record_count"] == 0, report
+          print(json.dumps({
+              "status": report["status"],
+              "held_out_exposed": report["held_out_exposed"],
+              "record_count": report["summary"]["record_count"],
+              "eligible_record_count": report["summary"]["eligible_record_count"],
+          }, indent=2))
+          PY

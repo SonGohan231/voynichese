@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "source_id": "ZL3B_IVTFF_SCRIBE_HANDS_2025-05-13",
+  "claim_class": "DATA",
+  "source_url": "https://www.voynich.nu/data/ZL3b-n.txt",
+  "source_version": "3b",
+  "source_date": "2025-05-13",
+  "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+  "field": "$H",
+  "field_semantics": "Lisa Fagin Davis scribal hand identifier in IVTFF; values 1-5 are individual hands and @ marks a mixed-hand page",
+  "pinned_mirror": {
+    "repository": "matthewdgreen/cipher_benchmark",
+    "commit": "729aad62d12483c549e64a2541d4f9255538c8cf",
+    "path": "benchmark/unsolved/sources/voynich/transcriptions/ZL3b-n.txt",
+    "git_blob_sha1": "2a4533ab9bdfa85db9bad602d590978953055df1"
+  },
+  "aliases": [
+    {
+      "source_page": "fRos",
+      "atlas_folio_tokens": [
+        "85v",
+        "86r"
+      ],
+      "note": "Rosettes sheet represented in atlas as the 85v/86r foldout."
+    }
+  ],
+  "mixed_pages": {
+    "f115r": {
+      "source_value": "@",
+      "hand_set": [
+        "2",
+        "3"
+      ],
+      "detail": "Lisa Fagin Davis identifies lines 1-12 as Hand 2 and the remainder as Hand 3."
+    }
+  }
+}

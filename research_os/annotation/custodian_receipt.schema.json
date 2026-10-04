@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://voynich-research-os.local/custodian_receipt.schema.json",
+  "title": "Final external receipt for one frozen blind-annotation pair",
+  "type": "object",
+  "required": [
+    "schema_version", "state", "experiment_id", "acceptance_slot_id",
+    "manifest_sha256", "commit_sha256", "freeze_integrity_status",
+    "agreement_status", "custodian_identity", "issued_at_utc",
+    "registry_uri", "registry_sequence", "metrics_disclosed_before_receipt",
+    "held_out_access"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "state": {"const": "FREEZE_RECEIPTED_APPEND_ONLY"},
+    "experiment_id": {"const": "EXP-2026-001"},
+    "acceptance_slot_id": {"type": "string", "minLength": 1},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "commit_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "freeze_integrity_status": {"const": "LOCAL_FREEZE_INTEGRITY_VERIFIED"},
+    "agreement_status": {"enum": ["READY_FOR_ADJUDICATION", "INCONCLUSIVE_ANNOTATION_GATE_FAILED"]},
+    "custodian_identity": {"type": "string", "minLength": 1},
+    "issued_at_utc": {"type": "string", "minLength": 1},
+    "registry_uri": {"type": "string", "pattern": "^https://"},
+    "registry_sequence": {"type": "string", "minLength": 1},
+    "metrics_disclosed_before_receipt": {"const": false},
+    "held_out_access": {"const": "FORBIDDEN"},
+    "supersedes_receipt_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

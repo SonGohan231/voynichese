@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - full-visual-atlas-annotation-v1-2026-07-23
+      - research/voynich-research-os-bootstrap-2026-10-04
     paths:
       - tools/annotate_full_corpus_v1.py
       - .github/workflows/full-visual-atlas-annotation-v1.yml
@@ -29,13 +30,15 @@ concurrency:
 
 jobs:
   annotate:
-    if: github.event_name != 'pull_request' || github.head_ref == 'full-visual-atlas-annotation-v1-2026-07-23'
+    if: >-
+      github.event_name != 'pull_request' ||
+      github.head_ref == 'full-visual-atlas-annotation-v1-2026-07-23' ||
+      github.head_ref == 'research/voynich-research-os-bootstrap-2026-10-04'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: full-visual-atlas-annotation-v1-2026-07-23
           lfs: false
 
       - uses: actions/setup-python@v5

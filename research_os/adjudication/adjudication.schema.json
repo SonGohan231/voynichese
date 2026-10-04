@@ -1,0 +1,69 @@
+Failed to connect to bus: Operation not permitted
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://voynich-research-os.local/adjudication.schema.json",
+  "title": "Independent blind adjudication submission",
+  "type": "object",
+  "required": ["schema_version", "packet_sha256", "adjudication_id", "adjudicator_id", "blindness", "records"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "packet_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "adjudication_id": {"type": "string", "minLength": 1},
+    "adjudicator_id": {"type": "string", "minLength": 1},
+    "blindness": {
+      "type": "object",
+      "required": ["annotator_identities_unseen", "automated_candidates_unseen", "model_predictions_unseen", "hypothesis_labels_unseen", "split_assignment_unseen"],
+      "properties": {
+        "annotator_identities_unseen": {"const": true},
+        "automated_candidates_unseen": {"const": true},
+        "model_predictions_unseen": {"const": true},
+        "hypothesis_labels_unseen": {"const": true},
+        "split_assignment_unseen": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["record_id", "source_sha256", "objects", "occlusions"],
+        "properties": {
+          "record_id": {"type": "string"},
+          "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "objects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["adjudicated_id", "class", "bbox", "ports", "source_refs", "rationale_code"],
+              "properties": {
+                "adjudicated_id": {"type": "string", "minLength": 1},
+                "class": {"enum": ["ILLUSTRATION_OBJECT", "ILLUSTRATION_FIELD", "TEXT_FIELD", "DIAGRAM"]},
+                "bbox": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number", "minimum": 0, "maximum": 1}},
+                "ports": {"type": "array", "uniqueItems": true, "items": {"enum": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]}},
+                "source_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^SIDE_[12]:S[12]-O[0-9]{4}$"}},
+                "rationale_code": {"enum": ["AGREE", "SELECT_SIDE_1", "SELECT_SIDE_2", "MERGED", "INDEPENDENT_REDRAW"]}
+              },
+              "additionalProperties": false
+            }
+          },
+          "occlusions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source_id", "target_id", "relation", "rationale_code"],
+              "properties": {
+                "source_id": {"type": "string"},
+                "target_id": {"type": "string"},
+                "relation": {"enum": ["IN_FRONT_OF", "BEHIND", "AMBIGUOUS"]},
+                "rationale_code": {"enum": ["AGREE", "SELECT_SIDE_1", "SELECT_SIDE_2", "INDEPENDENT_DECISION"]}
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

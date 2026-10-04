@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://voynich-research-os.local/registry_witness.schema.json",
+  "title": "Independent external-registry witness for a custodian receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "state",
+    "experiment_id",
+    "receipt_sha256",
+    "receipt_signature_sha256",
+    "registry_uri",
+    "registry_sequence",
+    "registry_identity",
+    "recorded_at_utc"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "state": {"const": "EXTERNAL_REGISTRY_WITNESS"},
+    "experiment_id": {"const": "EXP-2026-001"},
+    "receipt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "receipt_signature_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "registry_uri": {"type": "string", "pattern": "^https://"},
+    "registry_sequence": {"type": "string", "minLength": 1},
+    "registry_identity": {"type": "string", "minLength": 1},
+    "recorded_at_utc": {"type": "string", "minLength": 1},
+    "previous_witness_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

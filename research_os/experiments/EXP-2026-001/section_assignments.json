@@ -1,0 +1,1035 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "EXP-2026-001",
+  "claim_class": "DATA",
+  "source": {
+    "source_id": "BEINECKE-MS408-CATALOG-SECTIONS",
+    "source_url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.htm",
+    "register_path": "research_os/sources/beinecke_ms408_section_register.json",
+    "register_sha256": "ca5d4325473a7f10769a8fca438f44fa97a9c6df437e3578f030c783fbbc9f3e"
+  },
+  "record_count": 204,
+  "assignments_sha256": "7c25e76049b2550154af09ed7111dab39659effc659c5e4703befc37cbbdd0dd",
+  "records": [
+    {
+      "record_id": "CANVAS-0003-1r",
+      "folio_id": "1r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0004-1v",
+      "folio_id": "1v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0005-2r",
+      "folio_id": "2r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0006-2v",
+      "folio_id": "2v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0007-3r",
+      "folio_id": "3r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0008-3v",
+      "folio_id": "3v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0009-4r",
+      "folio_id": "4r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0010-4v",
+      "folio_id": "4v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0011-5r",
+      "folio_id": "5r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0012-5v",
+      "folio_id": "5v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0013-6r",
+      "folio_id": "6r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0014-6v",
+      "folio_id": "6v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0015-7r",
+      "folio_id": "7r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0016-7v",
+      "folio_id": "7v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0017-8r",
+      "folio_id": "8r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0018-8v",
+      "folio_id": "8v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0019-9r",
+      "folio_id": "9r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0020-9v",
+      "folio_id": "9v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0021-10r",
+      "folio_id": "10r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0022-10v",
+      "folio_id": "10v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0023-11r",
+      "folio_id": "11r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0024-11v",
+      "folio_id": "11v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0025-13r",
+      "folio_id": "13r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0026-13v",
+      "folio_id": "13v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0027-14r",
+      "folio_id": "14r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0028-14v",
+      "folio_id": "14v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0029-15r",
+      "folio_id": "15r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0030-15v",
+      "folio_id": "15v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0031-16r",
+      "folio_id": "16r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0032-16v",
+      "folio_id": "16v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0033-17r",
+      "folio_id": "17r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0034-17v",
+      "folio_id": "17v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0035-18r",
+      "folio_id": "18r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0036-18v",
+      "folio_id": "18v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0037-19r",
+      "folio_id": "19r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0038-19v",
+      "folio_id": "19v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0039-20r",
+      "folio_id": "20r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0040-20v",
+      "folio_id": "20v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0041-21r",
+      "folio_id": "21r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0042-21v",
+      "folio_id": "21v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0043-22r",
+      "folio_id": "22r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0044-22v",
+      "folio_id": "22v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0045-23r",
+      "folio_id": "23r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0046-23v",
+      "folio_id": "23v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0047-24r",
+      "folio_id": "24r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0048-24v",
+      "folio_id": "24v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0049-25r",
+      "folio_id": "25r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0050-25v",
+      "folio_id": "25v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0051-26r",
+      "folio_id": "26r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0052-26v",
+      "folio_id": "26v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0053-27r",
+      "folio_id": "27r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0054-27v",
+      "folio_id": "27v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0055-28r",
+      "folio_id": "28r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0056-28v",
+      "folio_id": "28v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0057-29r",
+      "folio_id": "29r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0058-29v",
+      "folio_id": "29v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0059-30r",
+      "folio_id": "30r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0060-30v",
+      "folio_id": "30v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0061-31r",
+      "folio_id": "31r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0062-31v",
+      "folio_id": "31v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0063-32r",
+      "folio_id": "32r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0064-32v",
+      "folio_id": "32v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0065-33r",
+      "folio_id": "33r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0066-33v",
+      "folio_id": "33v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0067-34r",
+      "folio_id": "34r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0068-34v",
+      "folio_id": "34v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0069-35r",
+      "folio_id": "35r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0070-35v",
+      "folio_id": "35v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0071-36r",
+      "folio_id": "36r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0072-36v",
+      "folio_id": "36v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0073-37r",
+      "folio_id": "37r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0074-37v",
+      "folio_id": "37v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0075-38r",
+      "folio_id": "38r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0076-38v",
+      "folio_id": "38v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0077-39r",
+      "folio_id": "39r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0078-39v",
+      "folio_id": "39v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0079-40r",
+      "folio_id": "40r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0080-40v",
+      "folio_id": "40v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0081-41r",
+      "folio_id": "41r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0082-41v",
+      "folio_id": "41v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0083-42r",
+      "folio_id": "42r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0084-42v",
+      "folio_id": "42v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0085-43r",
+      "folio_id": "43r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0086-43v",
+      "folio_id": "43v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0087-44r",
+      "folio_id": "44r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0088-44v",
+      "folio_id": "44v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0089-45r",
+      "folio_id": "45r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0090-45v",
+      "folio_id": "45v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0091-46r",
+      "folio_id": "46r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0092-46v",
+      "folio_id": "46v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0093-47r",
+      "folio_id": "47r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0094-47v",
+      "folio_id": "47v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0095-48r",
+      "folio_id": "48r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0096-48v",
+      "folio_id": "48v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0097-49r",
+      "folio_id": "49r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0098-49v",
+      "folio_id": "49v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0099-50r",
+      "folio_id": "50r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0100-50v",
+      "folio_id": "50v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0101-51r",
+      "folio_id": "51r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0102-51v",
+      "folio_id": "51v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0103-52r",
+      "folio_id": "52r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0104-52v",
+      "folio_id": "52v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0105-53r",
+      "folio_id": "53r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0106-53v",
+      "folio_id": "53v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0107-54r",
+      "folio_id": "54r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0108-54v",
+      "folio_id": "54v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0109-55r",
+      "folio_id": "55r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0110-55v",
+      "folio_id": "55v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0111-56r",
+      "folio_id": "56r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0112-56v",
+      "folio_id": "56v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0113-57r",
+      "folio_id": "57r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0114-57v",
+      "folio_id": "57v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0115-58r",
+      "folio_id": "58r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0116-58v",
+      "folio_id": "58v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0117-65r",
+      "folio_id": "65r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0118-65v",
+      "folio_id": "65v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0119-66r",
+      "folio_id": "66r",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0120-66v",
+      "folio_id": "66v",
+      "section_label": "BOTANICAL"
+    },
+    {
+      "record_id": "CANVAS-0121-67r",
+      "folio_id": "67r",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0122-67v",
+      "folio_id": "67v",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0123-68r",
+      "folio_id": "68r",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0124-68v",
+      "folio_id": "68v",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0125-69r",
+      "folio_id": "69r",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0126-69v_and_70r",
+      "folio_id": "69v and 70r",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0127-70v_part",
+      "folio_id": "70v (part)",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0128-70v_part",
+      "folio_id": "70v (part)",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0129-71r",
+      "folio_id": "71r",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0130-71v_and_72r",
+      "folio_id": "71v and 72r",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0131-72v_part",
+      "folio_id": "72v (part)",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0132-72v_part",
+      "folio_id": "72v (part)",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0133-73r",
+      "folio_id": "73r",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0134-73v",
+      "folio_id": "73v",
+      "section_label": "ASTRONOMICAL_ASTROLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0135-75r",
+      "folio_id": "75r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0136-75v",
+      "folio_id": "75v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0137-76r",
+      "folio_id": "76r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0138-76v",
+      "folio_id": "76v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0139-77r",
+      "folio_id": "77r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0140-77v",
+      "folio_id": "77v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0141-78r",
+      "folio_id": "78r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0142-78v",
+      "folio_id": "78v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0143-79r",
+      "folio_id": "79r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0144-79v",
+      "folio_id": "79v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0145-80r",
+      "folio_id": "80r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0146-80v",
+      "folio_id": "80v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0147-81r",
+      "folio_id": "81r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0148-81v",
+      "folio_id": "81v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0149-82r",
+      "folio_id": "82r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0150-82v",
+      "folio_id": "82v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0151-83r",
+      "folio_id": "83r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0152-83v",
+      "folio_id": "83v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0153-84r",
+      "folio_id": "84r",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0154-84v",
+      "folio_id": "84v",
+      "section_label": "BIOLOGICAL"
+    },
+    {
+      "record_id": "CANVAS-0155-85r_part_part_of_85-86_foldout",
+      "folio_id": "85r (part) (part of 85-86 foldout)",
+      "section_label": "COSMOLOGICAL_MEDALLIONS"
+    },
+    {
+      "record_id": "CANVAS-0156-85r_part_86v_part_part_of_85-86_foldout",
+      "folio_id": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "section_label": "COSMOLOGICAL_MEDALLIONS"
+    },
+    {
+      "record_id": "CANVAS-0157-86v_part_part_of_85-86_foldout",
+      "folio_id": "86v (part) (part of 85-86 foldout)",
+      "section_label": "COSMOLOGICAL_MEDALLIONS"
+    },
+    {
+      "record_id": "CANVAS-0158-85v_and_86r_foldout",
+      "folio_id": "85v and 86r (foldout)",
+      "section_label": "COSMOLOGICAL_MEDALLIONS"
+    },
+    {
+      "record_id": "CANVAS-0159-87r",
+      "folio_id": "87r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0160-87v",
+      "folio_id": "87v",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0161-88r",
+      "folio_id": "88r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0162-88v_and_89r",
+      "folio_id": "88v and 89r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0163-89v_part",
+      "folio_id": "89v (part)",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0164-89v_part_and_90r",
+      "folio_id": "89v (part) and 90r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0165-90r",
+      "folio_id": "90r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0166-90v_part",
+      "folio_id": "90v (part)",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0167-93r",
+      "folio_id": "93r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0168-93v",
+      "folio_id": "93v",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0169-94r",
+      "folio_id": "94r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0170-94v_and_95r",
+      "folio_id": "94v and 95r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0171-95v_part",
+      "folio_id": "95v (part)",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0172-95v",
+      "folio_id": "95v",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0173-96r",
+      "folio_id": "96r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0174-96v",
+      "folio_id": "96v",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0175-99r",
+      "folio_id": "99r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0176-99v",
+      "folio_id": "99v",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0177-100r",
+      "folio_id": "100r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0178-100v_and_101r",
+      "folio_id": "100v and 101r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0179-101v_part",
+      "folio_id": "101v (part)",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0180-101v_part_and_102r",
+      "folio_id": "101v (part) and 102r",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0181-102v_part",
+      "folio_id": "102v (part)",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0182-102v_part",
+      "folio_id": "102v (part)",
+      "section_label": "PHARMACEUTICAL"
+    },
+    {
+      "record_id": "CANVAS-0183-103r",
+      "folio_id": "103r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0184-103v",
+      "folio_id": "103v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0185-104r",
+      "folio_id": "104r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0186-104v",
+      "folio_id": "104v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0187-105r",
+      "folio_id": "105r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0188-105v",
+      "folio_id": "105v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0189-106r",
+      "folio_id": "106r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0190-106v",
+      "folio_id": "106v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0191-107r",
+      "folio_id": "107r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0192-107v",
+      "folio_id": "107v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0193-108r",
+      "folio_id": "108r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0194-108v",
+      "folio_id": "108v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0195-111r",
+      "folio_id": "111r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0196-111v",
+      "folio_id": "111v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0197-112r",
+      "folio_id": "112r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0198-112v",
+      "folio_id": "112v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0199-113r",
+      "folio_id": "113r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0200-113v",
+      "folio_id": "113v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0201-114r",
+      "folio_id": "114r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0202-114v",
+      "folio_id": "114v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0203-115r",
+      "folio_id": "115r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0204-115v",
+      "folio_id": "115v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0205-116r",
+      "folio_id": "116r",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    },
+    {
+      "record_id": "CANVAS-0206-116v",
+      "folio_id": "116v",
+      "section_label": "CONTINUOUS_TEXT_STAR_ENTRIES"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "EXP-2026-001",
+  "status": "ADEQUATE_FOR_PREREGISTERED_LARGE_EFFECT",
+  "method": "one-sided normal approximation on independent manuscript-leaf-group paired score differences",
+  "assumptions": {
+    "alpha": 0.01,
+    "target_power": 0.8,
+    "held_out_fraction": 0.2,
+    "target_standardized_effect": 0.75,
+    "effect_definition": "mean held-out leaf-group score advantage divided by SD of leaf-group paired differences",
+    "independent_unit": "connected manuscript leaf group"
+  },
+  "inventory": {
+    "manuscript_content_records": 204,
+    "independent_leaf_groups": 94,
+    "planned_held_out_groups": 19
+  },
+  "calculation": {
+    "z_alpha": 2.3263478740408408,
+    "z_power": 0.8416212335729144,
+    "required_held_out_groups": 18,
+    "minimum_detectable_standardized_effect_at_planned_n": 0.7267819577024782
+  },
+  "decision_policy": {
+    "smaller_effect": "INCONCLUSIVE unless a separately preregistered exact power analysis supports it",
+    "post_hoc_power": "FORBIDDEN",
+    "record_level_pseudoreplication": "FORBIDDEN",
+    "held_out_labels_used": false
+  },
+  "limitations": [
+    "Normal approximation is a planning calculation, not the final permutation test.",
+    "Power can fall after stratification, exclusions, annotation failure, or missing groups.",
+    "The calculation does not validate automated candidates or any Voynich hypothesis."
+  ]
+}

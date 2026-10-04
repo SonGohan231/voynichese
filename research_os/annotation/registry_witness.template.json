@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "state": "EXTERNAL_REGISTRY_WITNESS",
+  "experiment_id": "EXP-2026-001",
+  "receipt_sha256": "REPLACE_WITH_SHA256_OF_EXACT_CUSTODIAN_RECEIPT_BYTES",
+  "receipt_signature_sha256": "REPLACE_WITH_SHA256_OF_EXACT_CUSTODIAN_RECEIPT_SIGNATURE_BYTES",
+  "registry_uri": "https://REPLACE_WITH_REAL_REGISTRY_ENTRY",
+  "registry_sequence": "REPLACE_WITH_REGISTRY_SEQUENCE",
+  "registry_identity": "REPLACE_WITH_INDEPENDENT_REGISTRY_SIGNER_IDENTITY",
+  "recorded_at_utc": "REPLACE_WHEN_REGISTRY_ACCEPTS_ENTRY",
+  "previous_witness_sha256": null
+}

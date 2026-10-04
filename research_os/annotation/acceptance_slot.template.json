@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "state": "DRAFT_NOT_VALID_FOR_COLLECTION",
+  "experiment_id": "EXP-2026-001",
+  "annotation_round": "ROUND-001",
+  "acceptance_slot_id": "EXP-2026-001-ROUND-001-PAIR-001",
+  "max_accepted_pairs": 1,
+  "output_path": "research_os/runs/EXP-2026-001/annotation-freeze-001",
+  "protocol_sha256": "baa60373c0839a647d4fbff965bd4942840777fdc31e469d31b278eb41d9d6e4",
+  "record_universe_sha256": "af494e23e637d725068259734edc1d1a160169e9d9c6e3645e5887b9b121f8c5",
+  "packets": {
+    "A": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-A",
+      "sha256": "b6667e31edb00bd9b0275992b26aee22e86e4a53fe8dba13555fb7dad307a456"
+    },
+    "B": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-B",
+      "sha256": "be8fa4f05a69a2171681f580a12ef7b5ce93b2f2c7bcb7d11644a4269cb27426"
+    }
+  },
+  "annotator_bindings": [
+    {
+      "role": "A",
+      "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"
+    },
+    {
+      "role": "B",
+      "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"
+    }
+  ],
+  "custodian_identity": "REPLACE_WITH_ALLOWED_SIGNER_IDENTITY",
+  "sealed_at_utc": "REPLACE_BEFORE_SEALING",
+  "metrics_disclosure_policy": "AFTER_LOCAL_FREEZE_COMMIT",
+  "held_out_access": "FORBIDDEN",
+  "handoff_bindings": {
+    "A": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-A-BLINDED-HANDOFF",
+      "packet_sha256": "REPLACE_WITH_SHA256_OF_BLINDED_HANDOFF_PACKET_A",
+      "custody_map_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_CUSTODY_MAP_A",
+      "seed_commitment_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_PSEUDONYM_SEED_A"
+    },
+    "B": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-B-BLINDED-HANDOFF",
+      "packet_sha256": "REPLACE_WITH_SHA256_OF_BLINDED_HANDOFF_PACKET_B",
+      "custody_map_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_CUSTODY_MAP_B",
+      "seed_commitment_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_PSEUDONYM_SEED_B"
+    }
+  }
+}
