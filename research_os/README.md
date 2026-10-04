@@ -16,6 +16,7 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 
 - `tool_audit_2026-10-04.md` — faktycznie sprawdzone narzędzia i ograniczenia.
 - `recovered_state_2026-10-04.md` — odtworzony stan poprzedniej pracy.
+- `dyrygent_max_audit_2026-10-04.md` — częściowy audyt MAX wraz z dowodem awarii planera.
 - `evidence_register.csv` — początkowy rejestr dowodów i hipotez.
 - `experiments/EXP-2026-001/preregistration.md` — zamrożony szkic pierwszego testu.
 - `experiments/EXP-2026-001/manifest.json` — maszynowy manifest stanu eksperymentu.
