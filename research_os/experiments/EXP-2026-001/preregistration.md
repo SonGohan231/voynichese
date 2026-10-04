@@ -5,7 +5,7 @@ Cel: wybrać test o największej wartości informacyjnej, zdolny osłabić H1 be
 
 ## Audyt gotowości 2026-10-04
 
-`research_os/tools/readiness.py` sprawdził 206 rekordów atlasu. Proweniencja źródeł i checksumy przechodzą, ale żaden rekord nie zawiera jeszcze kwalifikowanej kombinacji jednostki wizualnej, relacji lokalnej i niezależnego przeglądu. Wynik to `INCONCLUSIVE_NOT_RUN`; generator splitu odmówił pracy i nie ujawnił HELD-OUT. Pełny, maszynowy dowód znajduje się w `readiness_report.json`.
+`research_os/tools/readiness.py` sprawdził kanoniczny zakres 204 rekordów treści rękopisu (z 206 rekordów atlasu; dwie okładki są wyłączone). Proweniencja źródeł i checksumy przechodzą, ale żaden rekord nie zawiera jeszcze kwalifikowanej kombinacji jednostki wizualnej, relacji lokalnej i niezależnego przeglądu. Wynik to `INCONCLUSIVE_NOT_RUN`; generator splitu odmówił pracy i nie ujawnił HELD-OUT. Pełny, maszynowy dowód znajduje się w `readiness_report.json`.
 
 Testy narzędzia używają wyłącznie syntetycznych rekordów i sprawdzają odmowę dla danych niegotowych, deterministyczność, rozłączność splitów oraz połączenie stron złożonych/foldoutów w jedną grupę.
 
@@ -48,13 +48,15 @@ Jeśli dowolna z bramek 1–6 nie przejdzie, wynik eksperymentu to `INCONCLUSIVE
 - TRAIN: 60% foliów.
 - VALIDATION: 20% foliów; wyłącznie wybór z góry ograniczonego wariantu modelu.
 - HELD-OUT: 20% foliów; niedostępny dla Geometry, Homology i Perspective do chwili zamrożenia modelu i predykcji.
-- Split jest deterministyczny z zapisanym seedem, stratyfikowany według sekcji i poziomu złożoności.
+- Split jest deterministyczny z zapisanym seedem, stratyfikowany według sekcji, skryby i poziomu złożoności.
 
-Mapa sekcji musi pochodzić z jawnego źródła z checksumą i pokrywać dokładnie wszystkie
-kwalifikowane rekordy zgodnie z `section_strata.schema.json`. Indeks bootstrap Drive z
-2026-05-17 oraz ukierunkowane wyszukiwanie Drive nie ujawniły autorytatywnej mapy
-folio→sekcja, dlatego żadna mapa nie została odtworzona z pamięci ani domysłu. Brak mapy,
-brak proweniencji lub różne sekcje wewnątrz połączonej grupy liścia blokują split.
+Mapa sekcji i mapa skrybów muszą pochodzić z jawnych źródeł z checksumami i pokrywać
+dokładnie wszystkie kwalifikowane rekordy zgodnie z `section_strata.schema.json`.
+Oficjalne zakresy sekcji Beinecke MS 408 zostały odzyskane i deterministycznie przypisane
+do wszystkich 204 rekordów treści. Kompletna, wersjonowana mapa folio→skryba nie została
+jeszcze odnaleziona; samo potwierdzenie istnienia pięciu rąk nie wystarcza. Brak mapy
+skrybów, brak proweniencji albo konflikt sekcji/skryby wewnątrz połączonej grupy liścia
+blokuje split. Braków nie wolno zastępować etykietą `UNKNOWN` ani domysłem.
 
 Poziom złożoności jest wyliczany przez custodiana dopiero z zamrożonej adjudykacji jako
 suma liczby obiektów i skierowanych relacji okluzji w grupie liścia. Grupy uszeregowane
