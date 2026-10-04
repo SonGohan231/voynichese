@@ -9,6 +9,7 @@ from freeze_annotation_pair import freeze_pair
 from verify_acceptance_slot import NAMESPACE
 from verify_annotation_freeze import verify_freeze
 from verify_custodian_receipt import NAMESPACE as RECEIPT_NAMESPACE, verify_receipt
+from verify_registry_witness import NAMESPACE as REGISTRY_NAMESPACE
 
 
 SHA = "a" * 64
@@ -61,6 +62,17 @@ class VerifyAnnotationFreezeTests(unittest.TestCase):
         public = self.key.with_suffix(".pub").read_text(encoding="utf-8").split()
         self.allowed = self.root / "allowed_signers"
         self.allowed.write_text(f"custodian@example {public[0]} {public[1]}\n", encoding="utf-8")
+        self.registry_key = self.root / "registry-key"
+        subprocess.run(
+            ["ssh-keygen", "-q", "-t", "ed25519", "-N", "", "-f", str(self.registry_key)],
+            check=True,
+        )
+        registry_public = self.registry_key.with_suffix(".pub").read_text(encoding="utf-8").split()
+        self.registry_allowed = self.root / "registry_allowed_signers"
+        self.registry_allowed.write_text(
+            f"registry@example {registry_public[0]} {registry_public[1]}\n",
+            encoding="utf-8",
+        )
         slot_value = {
             "schema_version": "1.0", "state": "SEALED_BEFORE_COLLECTION",
             "experiment_id": "EXP-2026-001", "annotation_round": "ROUND-001",
@@ -153,22 +165,70 @@ class VerifyAnnotationFreezeTests(unittest.TestCase):
         )
         return path, signature
 
+    def write_and_sign_registry_witness(self, receipt, receipt_signature, overrides=None):
+        receipt_value = json.loads(receipt.read_text(encoding="utf-8"))
+        witness = {
+            "schema_version": "1.0",
+            "state": "EXTERNAL_REGISTRY_WITNESS",
+            "experiment_id": "EXP-2026-001",
+            "receipt_sha256": hashlib.sha256(receipt.read_bytes()).hexdigest(),
+            "receipt_signature_sha256": hashlib.sha256(receipt_signature.read_bytes()).hexdigest(),
+            "registry_uri": receipt_value["registry_uri"],
+            "registry_sequence": receipt_value["registry_sequence"],
+            "registry_identity": "registry@example",
+            "recorded_at_utc": "2026-10-04T16:01:00+00:00",
+            "previous_witness_sha256": None,
+        }
+        witness.update(overrides or {})
+        path = self.root / "registry-witness.json"; write_json(path, witness)
+        subprocess.run(
+            [
+                "ssh-keygen", "-Y", "sign", "-q", "-f", str(self.registry_key),
+                "-n", REGISTRY_NAMESPACE, str(path),
+            ],
+            check=True,
+        )
+        return path, Path(f"{path}.sig")
+
+    def verify_receipt_chain(self, receipt, signature, witness, witness_signature):
+        return verify_receipt(
+            self.freeze, receipt, signature, self.allowed, "custodian@example",
+            witness, witness_signature, self.registry_allowed, "registry@example",
+        )
+
     def test_matching_external_receipt_verifies_without_unlocking_heldout(self):
         receipt, signature = self.write_and_sign_receipt()
-        result = verify_receipt(
-            self.freeze, receipt, signature, self.allowed, "custodian@example"
-        )
+        witness, witness_signature = self.write_and_sign_registry_witness(receipt, signature)
+        result = self.verify_receipt_chain(receipt, signature, witness, witness_signature)
         self.assertEqual(result["status"], "FREEZE_RECEIPT_VERIFIED")
         self.assertTrue(result["ready_for_adjudication"])
         self.assertFalse(result["unlocks_held_out"])
 
     def test_receipt_for_different_manifest_is_rejected(self):
         receipt, signature = self.write_and_sign_receipt({"manifest_sha256": "0" * 64})
-        result = verify_receipt(
-            self.freeze, receipt, signature, self.allowed, "custodian@example"
-        )
+        witness, witness_signature = self.write_and_sign_registry_witness(receipt, signature)
+        result = self.verify_receipt_chain(receipt, signature, witness, witness_signature)
         self.assertEqual(result["status"], "FREEZE_RECEIPT_REJECTED")
         self.assertIn("receipt_freeze_mismatch:manifest_sha256", result["errors"])
+
+    def test_receipt_without_matching_registry_witness_is_rejected(self):
+        receipt, signature = self.write_and_sign_receipt()
+        witness, witness_signature = self.write_and_sign_registry_witness(
+            receipt, signature, {"receipt_sha256": "0" * 64}
+        )
+        result = self.verify_receipt_chain(receipt, signature, witness, witness_signature)
+        self.assertEqual(result["status"], "FREEZE_RECEIPT_REJECTED")
+        self.assertIn("external_registry_witness_invalid", result["errors"])
+
+    def test_registry_signer_cannot_be_custodian_identity(self):
+        receipt, signature = self.write_and_sign_receipt()
+        witness, witness_signature = self.write_and_sign_registry_witness(receipt, signature)
+        result = verify_receipt(
+            self.freeze, receipt, signature, self.allowed, "custodian@example",
+            witness, witness_signature, self.registry_allowed, "custodian@example",
+        )
+        self.assertEqual(result["status"], "FREEZE_RECEIPT_REJECTED")
+        self.assertIn("registry_identity_must_differ_from_custodian", result["errors"])
 
 
 if __name__ == "__main__":
