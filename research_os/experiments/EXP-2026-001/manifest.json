@@ -49,6 +49,13 @@
     "schema": "research_os/annotation/blind_annotation.schema.json",
     "schema_sha256": "6e774f666330443aab4c7c5828a35a97c68995cbd118dcd215079f7d6997d4d2",
     "tool": "research_os/tools/annotation_gate.py",
+    "packet_builder": "research_os/tools/build_blind_packets.py",
+    "protocol_sha256": "2c34d50e3ecfc7a7ab7acb0355673ff8ec54aa9825c51ea8f67e8bf18fa9c40d",
+    "record_universe_sha256": "e6342d765d48f4b630b435dd4b05a2aeeec4a2a9c3dee09cd57a52fc859beb9d",
+    "packets": [
+      "research_os/annotation/packets/annotator-a.packet.json",
+      "research_os/annotation/packets/annotator-b.packet.json"
+    ],
     "promotes_to_ground_truth": false,
     "unlocks_held_out": false
   },
