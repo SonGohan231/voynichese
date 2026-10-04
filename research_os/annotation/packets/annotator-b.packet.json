@@ -1,0 +1,1299 @@
+{
+  "schema_version": "1.0",
+  "packet_id": "EXP-2026-001-ANNOTATOR-B",
+  "purpose": "INDEPENDENT_BLIND_ANNOTATION_EXP_2026_001",
+  "protocol_path": "research_os/annotation/README.md",
+  "protocol_sha256": "2c34d50e3ecfc7a7ab7acb0355673ff8ec54aa9825c51ea8f67e8bf18fa9c40d",
+  "record_universe_sha256": "e6342d765d48f4b630b435dd4b05a2aeeec4a2a9c3dee09cd57a52fc859beb9d",
+  "record_count": 183,
+  "forbidden_inputs": [
+    "automated candidate records and overlays",
+    "other annotator submissions",
+    "model predictions",
+    "hypothesis labels and prior pilot outcomes",
+    "TRAIN, VALIDATION or HELD_OUT assignments"
+  ],
+  "records": [
+    {
+      "record_id": "CANVAS-0003-1r",
+      "source_path": "data/yale_hq_scans/1/0003_1r.jpg",
+      "source_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+      "width": 2972,
+      "height": 3766
+    },
+    {
+      "record_id": "CANVAS-0004-1v",
+      "source_path": "data/yale_hq_scans/1/0004_1v.jpg",
+      "source_sha256": "43065eacad8a743816eb2b7d9acd8cf882a9bb498f1cea84602d12fede99f77d",
+      "width": 2804,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0005-2r",
+      "source_path": "data/yale_hq_scans/1/0005_2r.jpg",
+      "source_sha256": "826533a0760798acf5a4caa01ac29fe95eb1ed13a9fb26ac82900a8aea11d53f",
+      "width": 2691,
+      "height": 3770
+    },
+    {
+      "record_id": "CANVAS-0006-2v",
+      "source_path": "data/yale_hq_scans/1/0006_2v.jpg",
+      "source_sha256": "ae2e9591c75389fe093e7f35d5c670781d196c253d472030dd4a1d1c86ae1cb7",
+      "width": 2771,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0007-3r",
+      "source_path": "data/yale_hq_scans/1/0007_3r.jpg",
+      "source_sha256": "6ea4d4023a3b199463eee9e30508726a9314391f05a613bce3f87ae8d23fd151",
+      "width": 2691,
+      "height": 3770
+    },
+    {
+      "record_id": "CANVAS-0008-3v",
+      "source_path": "data/yale_hq_scans/1/0008_3v.jpg",
+      "source_sha256": "b9c19a872d6456fa58f76f15dec1d61bc80cc353fceff33f11abdaae87ce199e",
+      "width": 2762,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0009-4r",
+      "source_path": "data/yale_hq_scans/1/0009_4r.jpg",
+      "source_sha256": "fb166d0fe36d8cb635bb73b1d70b7d62e51a5f1ebf896f51921bd1854a06d904",
+      "width": 2682,
+      "height": 3740
+    },
+    {
+      "record_id": "CANVAS-0010-4v",
+      "source_path": "data/yale_hq_scans/1/0010_4v.jpg",
+      "source_sha256": "afec0f17556cb8cec1f1bc529ba4b572fc32363702091bacda4c7c1e0ebf37bc",
+      "width": 2768,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0011-5r",
+      "source_path": "data/yale_hq_scans/1/0011_5r.jpg",
+      "source_sha256": "e0e966c2a24f6b434b34cd1e1d4ee9aef2cec281c6ad071847e8e8b50d799acb",
+      "width": 2636,
+      "height": 3723
+    },
+    {
+      "record_id": "CANVAS-0012-5v",
+      "source_path": "data/yale_hq_scans/1/0012_5v.jpg",
+      "source_sha256": "c294a7576438c7673149f7b6294378127721daa5a48d045643feb812a6c49f40",
+      "width": 2759,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0013-6r",
+      "source_path": "data/yale_hq_scans/1/0013_6r.jpg",
+      "source_sha256": "2e9e318c945c1a961ab676c81827b4ee71c993d3d02a1adb9365bbb007ffa4dc",
+      "width": 2662,
+      "height": 3727
+    },
+    {
+      "record_id": "CANVAS-0014-6v",
+      "source_path": "data/yale_hq_scans/1/0014_6v.jpg",
+      "source_sha256": "c05ffc33745eca87cb0387cf47868f2a0a62f2cf6c3f7929a35a2e64834c40dc",
+      "width": 2753,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0015-7r",
+      "source_path": "data/yale_hq_scans/1/0015_7r.jpg",
+      "source_sha256": "fd4529ff994cfaefe9bf75966a59eede9ab0ea59e3514bf3aaf0a45c0df0e2a0",
+      "width": 2656,
+      "height": 3721
+    },
+    {
+      "record_id": "CANVAS-0016-7v",
+      "source_path": "data/yale_hq_scans/1/0016_7v.jpg",
+      "source_sha256": "81fed5fa8e1b174ff1176899b76d08003148445bdc6f68f3c7f59f8c6729e841",
+      "width": 2806,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0017-8r",
+      "source_path": "data/yale_hq_scans/1/0017_8r.jpg",
+      "source_sha256": "2dfbbfab02ca4220a7ad1ade4b6be69d0401df9a64762e3883ffa87640e07e7e",
+      "width": 2660,
+      "height": 3719
+    },
+    {
+      "record_id": "CANVAS-0018-8v",
+      "source_path": "data/yale_hq_scans/1/0018_8v.jpg",
+      "source_sha256": "726c5a8de19709f2286423802e7d1e18f2c58cc558d5680e57a3377e9623ca1c",
+      "width": 2791,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0019-9r",
+      "source_path": "data/yale_hq_scans/1/0019_9r.jpg",
+      "source_sha256": "a5f3a7b1a3f9c0e791a3365d801884c64d996749719d84ffb11f0f06fbb30925",
+      "width": 2691,
+      "height": 3737
+    },
+    {
+      "record_id": "CANVAS-0020-9v",
+      "source_path": "data/yale_hq_scans/1/0020_9v.jpg",
+      "source_sha256": "790a7493a31133cf9375fb7471d1d1167df4988bcadeb74ea2528a0ba562e693",
+      "width": 2812,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0021-10r",
+      "source_path": "data/yale_hq_scans/1/0021_10r.jpg",
+      "source_sha256": "8d8d5636691bae1be1ff908afad1388c25c53154e8808be572675ae8500c2ac5",
+      "width": 2691,
+      "height": 3739
+    },
+    {
+      "record_id": "CANVAS-0022-10v",
+      "source_path": "data/yale_hq_scans/1/0022_10v.jpg",
+      "source_sha256": "5cff25a923f5e8173a2a8ad21ec247d7c9bd090ac379322d5dda4d17be916403",
+      "width": 2839,
+      "height": 3797
+    },
+    {
+      "record_id": "CANVAS-0023-11r",
+      "source_path": "data/yale_hq_scans/1/0023_11r.jpg",
+      "source_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "width": 2672,
+      "height": 3744
+    },
+    {
+      "record_id": "CANVAS-0024-11v",
+      "source_path": "data/yale_hq_scans/2/0024_11v.jpg",
+      "source_sha256": "896a5297fd4ac6a4ca215ae5e000ac8d6a50ea6063283a28b42ba1974d681d51",
+      "width": 2825,
+      "height": 3775
+    },
+    {
+      "record_id": "CANVAS-0025-13r",
+      "source_path": "data/yale_hq_scans/2/0025_13r.jpg",
+      "source_sha256": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+      "width": 2601,
+      "height": 3723
+    },
+    {
+      "record_id": "CANVAS-0026-13v",
+      "source_path": "data/yale_hq_scans/2/0026_13v.jpg",
+      "source_sha256": "79ac3ff85ed178229cd4bafc6332c606684dd0eba37221758a7ec430c86544f0",
+      "width": 2812,
+      "height": 3770
+    },
+    {
+      "record_id": "CANVAS-0027-14r",
+      "source_path": "data/yale_hq_scans/2/0027_14r.jpg",
+      "source_sha256": "1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c",
+      "width": 2662,
+      "height": 3739
+    },
+    {
+      "record_id": "CANVAS-0028-14v",
+      "source_path": "data/yale_hq_scans/2/0028_14v.jpg",
+      "source_sha256": "97dbdbe273597957d62db2cf3a6d9769a0121cba1d0bb682c8008a6d2de622a6",
+      "width": 2812,
+      "height": 3772
+    },
+    {
+      "record_id": "CANVAS-0029-15r",
+      "source_path": "data/yale_hq_scans/2/0029_15r.jpg",
+      "source_sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+      "width": 2648,
+      "height": 3729
+    },
+    {
+      "record_id": "CANVAS-0030-15v",
+      "source_path": "data/yale_hq_scans/2/0030_15v.jpg",
+      "source_sha256": "d224773e2e39ef02719c25560e8072e6407bdea9f8d1bdf8da515adb5c2fc127",
+      "width": 2835,
+      "height": 3776
+    },
+    {
+      "record_id": "CANVAS-0031-16r",
+      "source_path": "data/yale_hq_scans/2/0031_16r.jpg",
+      "source_sha256": "1a7e9d3d9e6c647d73899317cf21c2967ded0e30517c5020e7c2093f6d99f265",
+      "width": 2658,
+      "height": 3758
+    },
+    {
+      "record_id": "CANVAS-0032-16v",
+      "source_path": "data/yale_hq_scans/2/0032_16v.jpg",
+      "source_sha256": "0001f9fb64430a47afa2c9dfa94e8eba1b6423ab0d3c3b9ae2a7c43e406d3a5e",
+      "width": 2840,
+      "height": 3793
+    },
+    {
+      "record_id": "CANVAS-0033-17r",
+      "source_path": "data/yale_hq_scans/2/0033_17r.jpg",
+      "source_sha256": "9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f",
+      "width": 2649,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0034-17v",
+      "source_path": "data/yale_hq_scans/2/0034_17v.jpg",
+      "source_sha256": "61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec",
+      "width": 2843,
+      "height": 3775
+    },
+    {
+      "record_id": "CANVAS-0035-18r",
+      "source_path": "data/yale_hq_scans/2/0035_18r.jpg",
+      "source_sha256": "01659aa94a6176b56c621f50c9cbe8c467836d6265a03d8edb1e97e236126e78",
+      "width": 2649,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0036-18v",
+      "source_path": "data/yale_hq_scans/2/0036_18v.jpg",
+      "source_sha256": "a0f14ccc11f76d832def734e32e33dccea82222e0b198ac3d73c93e8d1fcc47f",
+      "width": 2846,
+      "height": 3781
+    },
+    {
+      "record_id": "CANVAS-0037-19r",
+      "source_path": "data/yale_hq_scans/2/0037_19r.jpg",
+      "source_sha256": "c05e13bd154a93d77e2f601f11d9bd886fdf4524a49dbae0339b0bd864f7283c",
+      "width": 2649,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0038-19v",
+      "source_path": "data/yale_hq_scans/2/0038_19v.jpg",
+      "source_sha256": "7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0039-20r",
+      "source_path": "data/yale_hq_scans/2/0039_20r.jpg",
+      "source_sha256": "2090ee8a14985ae1db08d465bb9229a7490620ac9f5c288118f3c37cc4c9398e",
+      "width": 2649,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0040-20v",
+      "source_path": "data/yale_hq_scans/2/0040_20v.jpg",
+      "source_sha256": "472ca57a0abf61ab000cd26c6065b007073a95a0cf662ff4cc7d4158c94b52b7",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0041-21r",
+      "source_path": "data/yale_hq_scans/2/0041_21r.jpg",
+      "source_sha256": "0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88",
+      "width": 2649,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0042-21v",
+      "source_path": "data/yale_hq_scans/2/0042_21v.jpg",
+      "source_sha256": "f10bf37a910e69fb8ea1f34d74b79522b6c7d0bebed77fe13ce40240f792ab53",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0043-22r",
+      "source_path": "data/yale_hq_scans/2/0043_22r.jpg",
+      "source_sha256": "7bfb7bf49850d6d8df30ebae5a1ea8adc7b27bb714cb0e24453724805bd72a3e",
+      "width": 2649,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0044-22v",
+      "source_path": "data/yale_hq_scans/2/0044_22v.jpg",
+      "source_sha256": "0243271c28759a1a45350cd058270a12ea131860652cf1a3f7c14e47fe4ed6b2",
+      "width": 2849,
+      "height": 3795
+    },
+    {
+      "record_id": "CANVAS-0045-23r",
+      "source_path": "data/yale_hq_scans/3/0045_23r.jpg",
+      "source_sha256": "accaf5bdc2bcbbb97171d591f8352258329671eb68d095f4fe3f556979ff2e07",
+      "width": 2650,
+      "height": 3705
+    },
+    {
+      "record_id": "CANVAS-0046-23v",
+      "source_path": "data/yale_hq_scans/3/0046_23v.jpg",
+      "source_sha256": "4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3",
+      "width": 2849,
+      "height": 3780
+    },
+    {
+      "record_id": "CANVAS-0047-24r",
+      "source_path": "data/yale_hq_scans/3/0047_24r.jpg",
+      "source_sha256": "3700fe396154e836b0acd3da86aef1d307f9d2da773208e476ee9db2e80de9e6",
+      "width": 2688,
+      "height": 3719
+    },
+    {
+      "record_id": "CANVAS-0048-24v",
+      "source_path": "data/yale_hq_scans/3/0048_24v.jpg",
+      "source_sha256": "0b814f58b56dff9351ae0d2f0db18a965fd6d67bb9f8302265b76f8ce5cd9f87",
+      "width": 2864,
+      "height": 3771
+    },
+    {
+      "record_id": "CANVAS-0049-25r",
+      "source_path": "data/yale_hq_scans/3/0049_25r.jpg",
+      "source_sha256": "1089c404ba05823109860af916e7dba2833cf99b98834c1534f3c66fcfaad1a4",
+      "width": 2709,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0050-25v",
+      "source_path": "data/yale_hq_scans/3/0050_25v.jpg",
+      "source_sha256": "0f135a9525a84dfccf038a2221c7178dfbfb3b1a1fe4b6d0f62aeb6e8b655d73",
+      "width": 2863,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0051-26r",
+      "source_path": "data/yale_hq_scans/3/0051_26r.jpg",
+      "source_sha256": "a593efb741d70ec23ae25c3725dbf2c8e8b3f8d2392cea6eb06921ac5949a6db",
+      "width": 2727,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0052-26v",
+      "source_path": "data/yale_hq_scans/3/0052_26v.jpg",
+      "source_sha256": "3378e154f7ef8a45405cb008277aa1dc2229388c456cd3c66438bcca54d02c6b",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0053-27r",
+      "source_path": "data/yale_hq_scans/3/0053_27r.jpg",
+      "source_sha256": "978616e82efb3a452075ab98f7cde7351c373af0ecf668896c77af4f48abb9d5",
+      "width": 2708,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0054-27v",
+      "source_path": "data/yale_hq_scans/3/0054_27v.jpg",
+      "source_sha256": "a84bedb17fc768a2e3c5e335b158c86cbef92636d010ef5811fa90b68951d608",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0055-28r",
+      "source_path": "data/yale_hq_scans/3/0055_28r.jpg",
+      "source_sha256": "b7c3fa283b7d2647e512dac6a665c5d37945e5aab8e21798292069ef26d67c04",
+      "width": 2727,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0056-28v",
+      "source_path": "data/yale_hq_scans/3/0056_28v.jpg",
+      "source_sha256": "2d325310e4ec264132340974cb71ec7f0cdb2f62820f97e644145dec72d84605",
+      "width": 2885,
+      "height": 3780
+    },
+    {
+      "record_id": "CANVAS-0057-29r",
+      "source_path": "data/yale_hq_scans/3/0057_29r.jpg",
+      "source_sha256": "ea8217a4cea6a3861e183a95e82d3e4ee3308aef8025bc2e9c9bce8a7a0c92d6",
+      "width": 2718,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0058-29v",
+      "source_path": "data/yale_hq_scans/3/0058_29v.jpg",
+      "source_sha256": "1739f36ccfddb9121b2acec4faea712136aeeb4ad5fb2889ba5484549d791503",
+      "width": 2876,
+      "height": 3777
+    },
+    {
+      "record_id": "CANVAS-0059-30r",
+      "source_path": "data/yale_hq_scans/3/0059_30r.jpg",
+      "source_sha256": "df1a0812c502a83e77529d664416c5fec91f23353fd83f75f9d40c12fceb03b6",
+      "width": 2742,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0060-30v",
+      "source_path": "data/yale_hq_scans/3/0060_30v.jpg",
+      "source_sha256": "d6eed32377c25b7c13b88e83cb6981a9d16b5dcbe3c433b7611c4e0105cb0035",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0061-31r",
+      "source_path": "data/yale_hq_scans/3/0061_31r.jpg",
+      "source_sha256": "3968b083d7346a556796d60e97a9ea66a4bb911fa1d085cfa046e9e0b37edc64",
+      "width": 2717,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0062-31v",
+      "source_path": "data/yale_hq_scans/3/0062_31v.jpg",
+      "source_sha256": "666bd3a13edd196866270ff7d8034b8c65695139087cd4ae0da6fdfa31133921",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0063-32r",
+      "source_path": "data/yale_hq_scans/3/0063_32r.jpg",
+      "source_sha256": "fd6f925e17822b61b6339a768dff769f29b132ed6cb0ccb7efee616a1d4db26b",
+      "width": 2734,
+      "height": 3731
+    },
+    {
+      "record_id": "CANVAS-0064-32v",
+      "source_path": "data/yale_hq_scans/3/0064_32v.jpg",
+      "source_sha256": "e664856322574dcfb8bcf225a9d880ce28ab6d65bf6236e47624ae05c7d3764b",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0065-33r",
+      "source_path": "data/yale_hq_scans/3/0065_33r.jpg",
+      "source_sha256": "28e6d9f02b9ca96b85275b7c6dd6e94453d3a2f5c6038d9966933d0229da9e74",
+      "width": 2766,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0066-33v",
+      "source_path": "data/yale_hq_scans/3/0066_33v.jpg",
+      "source_sha256": "41b148c40e9cf73c63044c5415d3c2bbeebffc20153a36762f35e8134da42941",
+      "width": 2871,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0067-34r",
+      "source_path": "data/yale_hq_scans/4/0067_34r.jpg",
+      "source_sha256": "4108828356258d68d2b53ef29d484f0648c269ecc4984781248e7803ba51e353",
+      "width": 2777,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0068-34v",
+      "source_path": "data/yale_hq_scans/4/0068_34v.jpg",
+      "source_sha256": "2f68183982075a405f7e2cc11ea06b76b263f80f20f01083279e7f03dcb4f78a",
+      "width": 2881,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0069-35r",
+      "source_path": "data/yale_hq_scans/4/0069_35r.jpg",
+      "source_sha256": "d190cd19497ea5e59b702d3abaf8513b3b706b79f16cd24947b5615efa455d71",
+      "width": 2793,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0070-35v",
+      "source_path": "data/yale_hq_scans/4/0070_35v.jpg",
+      "source_sha256": "564412e99b04406f51afe2c8f9ab20320518b3e71b91deee48fb16ee1ad3ffbd",
+      "width": 2853,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0071-36r",
+      "source_path": "data/yale_hq_scans/4/0071_36r.jpg",
+      "source_sha256": "807e9b5aa1ea72b90c39f71c5ae1cfa4aa0c303b4dd889340c2814f1cff62da2",
+      "width": 2793,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0072-36v",
+      "source_path": "data/yale_hq_scans/4/0072_36v.jpg",
+      "source_sha256": "fbbf69e740ae7a922f7e4f6cff836004827df15ab917eb6bcc43430a5c89edc2",
+      "width": 2849,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0073-37r",
+      "source_path": "data/yale_hq_scans/4/0073_37r.jpg",
+      "source_sha256": "4daf7373cfed96fcd9e3d6cb6a9a50cf413e27cc93cf507fee17bee93d8f6d28",
+      "width": 2793,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0074-37v",
+      "source_path": "data/yale_hq_scans/4/0074_37v.jpg",
+      "source_sha256": "56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0075-38r",
+      "source_path": "data/yale_hq_scans/4/0075_38r.jpg",
+      "source_sha256": "9e4ea17ac6b9b184dae0a423bea8feab3eab48eb203dddcf786b3201e6e76b2a",
+      "width": 2793,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0076-38v",
+      "source_path": "data/yale_hq_scans/4/0076_38v.jpg",
+      "source_sha256": "4a24360ad6ad267cbc3f8cc3b50a5b84e332b8d2bb655e85683e8b5de2768161",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0077-39r",
+      "source_path": "data/yale_hq_scans/4/0077_39r.jpg",
+      "source_sha256": "c86b9bc0182e1385136465d92ce9c43f31320bfab55d7b2e87e1ea81a7330bf0",
+      "width": 2793,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0078-39v",
+      "source_path": "data/yale_hq_scans/4/0078_39v.jpg",
+      "source_sha256": "13cafc785fd69c7471bc670480becc6338cf20682e1d196c2ef14f03abee8586",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0079-40r",
+      "source_path": "data/yale_hq_scans/4/0079_40r.jpg",
+      "source_sha256": "540cff9e3a031c5de5ba9d5c7e388cd50980b0d225a1f89b97bda2c6f0de60b7",
+      "width": 2793,
+      "height": 3734
+    },
+    {
+      "record_id": "CANVAS-0080-40v",
+      "source_path": "data/yale_hq_scans/4/0080_40v.jpg",
+      "source_sha256": "bce0c42319b096126ad9fe0558ecfb8a61335867cbd1869e0865eaacf54c1087",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0081-41r",
+      "source_path": "data/yale_hq_scans/4/0081_41r.jpg",
+      "source_sha256": "7631b874dbb3e2f48ade864485a0210cb207f2c7878181e458582beba86877ba",
+      "width": 2840,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0082-41v",
+      "source_path": "data/yale_hq_scans/4/0082_41v.jpg",
+      "source_sha256": "bc753d5f30cfcbd5ad6479bb16205652d55b94da16fcbba1d78574674e3743ea",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0083-42r",
+      "source_path": "data/yale_hq_scans/4/0083_42r.jpg",
+      "source_sha256": "5e86508e3ecdb425b791fdcba0305f51cdf9a78182d082055a3da0b55012660a",
+      "width": 2843,
+      "height": 3743
+    },
+    {
+      "record_id": "CANVAS-0084-42v",
+      "source_path": "data/yale_hq_scans/4/0084_42v.jpg",
+      "source_sha256": "bd2a7f2bbaf4c789d51f239248d81c151f4fc1c9f5ab6f51c148646a9d301f66",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0085-43r",
+      "source_path": "data/yale_hq_scans/4/0085_43r.jpg",
+      "source_sha256": "cf92565c8f400c987e59359d77c297fc52afc2f6996bd60e5421cbc1074a4bd2",
+      "width": 2837,
+      "height": 3751
+    },
+    {
+      "record_id": "CANVAS-0086-43v",
+      "source_path": "data/yale_hq_scans/4/0086_43v.jpg",
+      "source_sha256": "13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0087-44r",
+      "source_path": "data/yale_hq_scans/4/0087_44r.jpg",
+      "source_sha256": "f9cd059bb34057bf9635a1d1443cafd3b358cdb64ec0c5e1ff73bfc091da0eb3",
+      "width": 2799,
+      "height": 3728
+    },
+    {
+      "record_id": "CANVAS-0088-44v",
+      "source_path": "data/yale_hq_scans/4/0088_44v.jpg",
+      "source_sha256": "dd57f4055f9c933913cf550f76b2786cdeeeeea74fd9641c55f148903e4cd3db",
+      "width": 2882,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0089-45r",
+      "source_path": "data/yale_hq_scans/5/0089_45r.jpg",
+      "source_sha256": "32afa9bda4154db2e3236081b0d7603dfc34bf11b1844a5084881b764dafe4f8",
+      "width": 2823,
+      "height": 3706
+    },
+    {
+      "record_id": "CANVAS-0090-45v",
+      "source_path": "data/yale_hq_scans/5/0090_45v.jpg",
+      "source_sha256": "f49fcf1b8abb327483cdf272104a0dc628f31394a413908c866eb0094bd2d224",
+      "width": 2900,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0091-46r",
+      "source_path": "data/yale_hq_scans/5/0091_46r.jpg",
+      "source_sha256": "bc11de34e89d67f2b61c63473c3273256aa45d3d6beac4195c95625c07422740",
+      "width": 2865,
+      "height": 3719
+    },
+    {
+      "record_id": "CANVAS-0092-46v",
+      "source_path": "data/yale_hq_scans/5/0092_46v.jpg",
+      "source_sha256": "bee511bff7d50d8ef83a70b598e1c2d8733cd1e6ad72b070f7fbd4e2171cb0ec",
+      "width": 2938,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0093-47r",
+      "source_path": "data/yale_hq_scans/5/0093_47r.jpg",
+      "source_sha256": "5a0a7f262b1fbccb44cd7e6ae69097476b92ff38f4124a50532a79e4f2619033",
+      "width": 2826,
+      "height": 3716
+    },
+    {
+      "record_id": "CANVAS-0094-47v",
+      "source_path": "data/yale_hq_scans/5/0094_47v.jpg",
+      "source_sha256": "bcdae68e9bf1f172ad100b598b3189a2eff85cb7b67a151f7bb4a44f1f56f94e",
+      "width": 2932,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0095-48r",
+      "source_path": "data/yale_hq_scans/5/0095_48r.jpg",
+      "source_sha256": "f34ccbd6fbb72b5a469ca16b1b07ded862be76e01e0dcf9133940ffdd10c672e",
+      "width": 2859,
+      "height": 3719
+    },
+    {
+      "record_id": "CANVAS-0096-48v",
+      "source_path": "data/yale_hq_scans/5/0096_48v.jpg",
+      "source_sha256": "c0ecc85912878c5c27ad64d560dd088e703ea95e68a87aaecb112a4aabcbe516",
+      "width": 2950,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0097-49r",
+      "source_path": "data/yale_hq_scans/5/0097_49r.jpg",
+      "source_sha256": "c125a5ffc5121e31e07dbaebd4515d6375e2f71feff312690dc943e62e0d8d56",
+      "width": 2837,
+      "height": 3762
+    },
+    {
+      "record_id": "CANVAS-0098-49v",
+      "source_path": "data/yale_hq_scans/5/0098_49v.jpg",
+      "source_sha256": "3c03e0e8b3d3e75f93ba7a7619a029b7ffbe33d7243f32222ad59ac7555dfd96",
+      "width": 2935,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0099-50r",
+      "source_path": "data/yale_hq_scans/5/0099_50r.jpg",
+      "source_sha256": "a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d",
+      "width": 2840,
+      "height": 3751
+    },
+    {
+      "record_id": "CANVAS-0100-50v",
+      "source_path": "data/yale_hq_scans/5/0100_50v.jpg",
+      "source_sha256": "bbd4d60e069704fdfe91394ac07387022341c6cf08eb7d6d2160a34ea5b7677d",
+      "width": 2942,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0101-51r",
+      "source_path": "data/yale_hq_scans/5/0101_51r.jpg",
+      "source_sha256": "d3335f9fe15abe0d4473e881f411f658fe7a4db70fcb03c13dad8a2f49cf6cc1",
+      "width": 2835,
+      "height": 3764
+    },
+    {
+      "record_id": "CANVAS-0102-51v",
+      "source_path": "data/yale_hq_scans/5/0102_51v.jpg",
+      "source_sha256": "7e794abb1dfddce9f2cee013a7f1aaec880b86e884ae17298354863b0108734e",
+      "width": 2927,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0103-52r",
+      "source_path": "data/yale_hq_scans/5/0103_52r.jpg",
+      "source_sha256": "002748147666ab2ec1d81be186248a7a9b58e001a8b61a53498b8d7f49193206",
+      "width": 2826,
+      "height": 3757
+    },
+    {
+      "record_id": "CANVAS-0104-52v",
+      "source_path": "data/yale_hq_scans/5/0104_52v.jpg",
+      "source_sha256": "9792c5070fa339a220781439d0b8864d48b2e2dc071cd051b24e501d565ddb39",
+      "width": 2935,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0105-53r",
+      "source_path": "data/yale_hq_scans/5/0105_53r.jpg",
+      "source_sha256": "a415de024d9cf57a8a607c764d9a8d038803dcaabda8a77f7325645fa0c73f89",
+      "width": 2793,
+      "height": 3707
+    },
+    {
+      "record_id": "CANVAS-0106-53v",
+      "source_path": "data/yale_hq_scans/5/0106_53v.jpg",
+      "source_sha256": "717481f74b5552c603f38ec3b2ae4de2f447320e18d3aaf368a8ccd211e1df11",
+      "width": 2940,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0107-54r",
+      "source_path": "data/yale_hq_scans/5/0107_54r.jpg",
+      "source_sha256": "471b393530cf2f80116e8bcfb9712b43e991db175b919e594a1587cca21f2eaa",
+      "width": 2793,
+      "height": 3718
+    },
+    {
+      "record_id": "CANVAS-0108-54v",
+      "source_path": "data/yale_hq_scans/5/0108_54v.jpg",
+      "source_sha256": "97c02cfada6ad1c2450bdac0e345cddc4d4788570813b84ac65ccdcd360dbc13",
+      "width": 2999,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0109-55r",
+      "source_path": "data/yale_hq_scans/5/0109_55r.jpg",
+      "source_sha256": "24e4b496a7e198a6bcd8d98044112d45418c157f2f2a54fdf997e01de6d53126",
+      "width": 2793,
+      "height": 3738
+    },
+    {
+      "record_id": "CANVAS-0110-55v",
+      "source_path": "data/yale_hq_scans/5/0110_55v.jpg",
+      "source_sha256": "0e9b1dac025cad189bc7258f41fb8cafc6fcff70f9c4e5bb4f85c9bb79ad5a80",
+      "width": 2979,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0111-56r",
+      "source_path": "data/yale_hq_scans/6/0111_56r.jpg",
+      "source_sha256": "d81272aa14671b1b6672fe7556c15ac177c734685d9ef7448237a2cc08dc899d",
+      "width": 2793,
+      "height": 3707
+    },
+    {
+      "record_id": "CANVAS-0112-56v",
+      "source_path": "data/yale_hq_scans/6/0112_56v.jpg",
+      "source_sha256": "d92ba733bf53dc49e8d81df2d1873d5f36c52f98cf67292ea43e66a844a61cc9",
+      "width": 2979,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0113-57r",
+      "source_path": "data/yale_hq_scans/6/0113_57r.jpg",
+      "source_sha256": "473727b2ea1dd000a4a15eaa57302a48c410d4f6e670abdd607cd7c7461ff98c",
+      "width": 2823,
+      "height": 3733
+    },
+    {
+      "record_id": "CANVAS-0114-57v",
+      "source_path": "data/yale_hq_scans/6/0114_57v.jpg",
+      "source_sha256": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+      "width": 3028,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0115-58r",
+      "source_path": "data/yale_hq_scans/6/0115_58r.jpg",
+      "source_sha256": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+      "width": 2793,
+      "height": 3749
+    },
+    {
+      "record_id": "CANVAS-0116-58v",
+      "source_path": "data/yale_hq_scans/6/0116_58v.jpg",
+      "source_sha256": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+      "width": 2986,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0117-65r",
+      "source_path": "data/yale_hq_scans/6/0117_65r.jpg",
+      "source_sha256": "dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f",
+      "width": 2793,
+      "height": 3707
+    },
+    {
+      "record_id": "CANVAS-0118-65v",
+      "source_path": "data/yale_hq_scans/6/0118_65v.jpg",
+      "source_sha256": "d3ebd8bfcf12a0a98f9ecc96ee345e82c7cc15d5c786c93c63ccd2f923ea1714",
+      "width": 3010,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0119-66r",
+      "source_path": "data/yale_hq_scans/6/0119_66r.jpg",
+      "source_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+      "width": 2793,
+      "height": 3707
+    },
+    {
+      "record_id": "CANVAS-0120-66v",
+      "source_path": "data/yale_hq_scans/6/0120_66v.jpg",
+      "source_sha256": "8304c6ba3605207c67f4f843974e60e947b423f21255a06656d6af3055fa53ce",
+      "width": 2997,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0121-67r",
+      "source_path": "data/yale_hq_scans/6/0121_67r.jpg",
+      "source_sha256": "0518312a566ee713a46c9887d8b8b9d7141d14095e360661789c1dad9b5c0d1c",
+      "width": 4972,
+      "height": 3738
+    },
+    {
+      "record_id": "CANVAS-0122-67v",
+      "source_path": "data/yale_hq_scans/6/0122_67v.jpg",
+      "source_sha256": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+      "width": 5059,
+      "height": 3753
+    },
+    {
+      "record_id": "CANVAS-0123-68r",
+      "source_path": "data/yale_hq_scans/6/0123_68r.jpg",
+      "source_sha256": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+      "width": 7993,
+      "height": 3828
+    },
+    {
+      "record_id": "CANVAS-0124-68v",
+      "source_path": "data/yale_hq_scans/6/0124_68v.jpg",
+      "source_sha256": "06d33798cd4f901771b9869078d3f29f7e7ef5a490a9abc6dd09f3a3adec867f",
+      "width": 8135,
+      "height": 3843
+    },
+    {
+      "record_id": "CANVAS-0125-69r",
+      "source_path": "data/yale_hq_scans/6/0125_69r.jpg",
+      "source_sha256": "b830e74480830c0d5e8f7b56025473e051743f9ec50685b6fe316ecd493f0f01",
+      "width": 2793,
+      "height": 3763
+    },
+    {
+      "record_id": "CANVAS-0129-71r",
+      "source_path": "data/yale_hq_scans/8/0129_71r.jpg",
+      "source_sha256": "6405841a75a8fa24dd9e5c93ad090ee56bf26c77757f3b1634487e27b509e61b",
+      "width": 2793,
+      "height": 3762
+    },
+    {
+      "record_id": "CANVAS-0133-73r",
+      "source_path": "data/yale_hq_scans/8/0133_73r.jpg",
+      "source_sha256": "5bc8e07dbd61cc1f218cfc4449cd527be118aa7884878ec4c8e568e9c2d89bad",
+      "width": 2834,
+      "height": 3761
+    },
+    {
+      "record_id": "CANVAS-0134-73v",
+      "source_path": "data/yale_hq_scans/8/0134_73v.jpg",
+      "source_sha256": "4227e5261bb5986e605ddb4f58fa1526640955d778c06916a1c34734bb431141",
+      "width": 2979,
+      "height": 3724
+    },
+    {
+      "record_id": "CANVAS-0135-75r",
+      "source_path": "data/yale_hq_scans/8/0135_75r.jpg",
+      "source_sha256": "6fd33917722a97ef0c93f905885963332645c1a1c81f60f03a165b12007a7fc3",
+      "width": 2852,
+      "height": 3759
+    },
+    {
+      "record_id": "CANVAS-0136-75v",
+      "source_path": "data/yale_hq_scans/8/0136_75v.jpg",
+      "source_sha256": "654edf15a65d1a2bb0d7bb4995f8f6fba1625d5eed847c9b6969d1c44e385a23",
+      "width": 2868,
+      "height": 3735
+    },
+    {
+      "record_id": "CANVAS-0137-76r",
+      "source_path": "data/yale_hq_scans/8/0137_76r.jpg",
+      "source_sha256": "39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68",
+      "width": 2793,
+      "height": 3769
+    },
+    {
+      "record_id": "CANVAS-0138-76v",
+      "source_path": "data/yale_hq_scans/8/0138_76v.jpg",
+      "source_sha256": "affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e",
+      "width": 2823,
+      "height": 3712
+    },
+    {
+      "record_id": "CANVAS-0139-77r",
+      "source_path": "data/yale_hq_scans/8/0139_77r.jpg",
+      "source_sha256": "9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad",
+      "width": 2793,
+      "height": 3752
+    },
+    {
+      "record_id": "CANVAS-0140-77v",
+      "source_path": "data/yale_hq_scans/8/0140_77v.jpg",
+      "source_sha256": "e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2",
+      "width": 2861,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0141-78r",
+      "source_path": "data/yale_hq_scans/8/0141_78r.jpg",
+      "source_sha256": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893",
+      "width": 2793,
+      "height": 3761
+    },
+    {
+      "record_id": "CANVAS-0142-78v",
+      "source_path": "data/yale_hq_scans/8/0142_78v.jpg",
+      "source_sha256": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+      "width": 2841,
+      "height": 3706
+    },
+    {
+      "record_id": "CANVAS-0143-79r",
+      "source_path": "data/yale_hq_scans/9/0143_79r.jpg",
+      "source_sha256": "a0f51d21267270b55ac69fc947a4a3443e2a32fc263b162c51a27ad9745eb979",
+      "width": 2784,
+      "height": 3755
+    },
+    {
+      "record_id": "CANVAS-0144-79v",
+      "source_path": "data/yale_hq_scans/9/0144_79v.jpg",
+      "source_sha256": "81d647bbc752211d5bf671f7791c59fc8dceaa60e20e7f7a075319b44ed879c1",
+      "width": 2811,
+      "height": 3714
+    },
+    {
+      "record_id": "CANVAS-0145-80r",
+      "source_path": "data/yale_hq_scans/9/0145_80r.jpg",
+      "source_sha256": "81223a0b0aa0a24fe821cf62a9bdf4ac504f222ab3cfcb89fcedd7946bceada0",
+      "width": 2793,
+      "height": 3733
+    },
+    {
+      "record_id": "CANVAS-0146-80v",
+      "source_path": "data/yale_hq_scans/9/0146_80v.jpg",
+      "source_sha256": "29c94fba8ec872eb71faab93fc4a02e09cd4ef31d1b9001bd44f011d141cfb0b",
+      "width": 2837,
+      "height": 3712
+    },
+    {
+      "record_id": "CANVAS-0147-81r",
+      "source_path": "data/yale_hq_scans/9/0147_81r.jpg",
+      "source_sha256": "e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe",
+      "width": 2776,
+      "height": 3737
+    },
+    {
+      "record_id": "CANVAS-0148-81v",
+      "source_path": "data/yale_hq_scans/9/0148_81v.jpg",
+      "source_sha256": "bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf",
+      "width": 2835,
+      "height": 3705
+    },
+    {
+      "record_id": "CANVAS-0149-82r",
+      "source_path": "data/yale_hq_scans/9/0149_82r.jpg",
+      "source_sha256": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+      "width": 2753,
+      "height": 3745
+    },
+    {
+      "record_id": "CANVAS-0150-82v",
+      "source_path": "data/yale_hq_scans/9/0150_82v.jpg",
+      "source_sha256": "4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142",
+      "width": 2821,
+      "height": 3709
+    },
+    {
+      "record_id": "CANVAS-0151-83r",
+      "source_path": "data/yale_hq_scans/9/0151_83r.jpg",
+      "source_sha256": "dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729",
+      "width": 2753,
+      "height": 3745
+    },
+    {
+      "record_id": "CANVAS-0152-83v",
+      "source_path": "data/yale_hq_scans/9/0152_83v.jpg",
+      "source_sha256": "dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9",
+      "width": 2858,
+      "height": 3693
+    },
+    {
+      "record_id": "CANVAS-0153-84r",
+      "source_path": "data/yale_hq_scans/9/0153_84r.jpg",
+      "source_sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe",
+      "width": 2753,
+      "height": 3745
+    },
+    {
+      "record_id": "CANVAS-0154-84v",
+      "source_path": "data/yale_hq_scans/9/0154_84v.jpg",
+      "source_sha256": "e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f",
+      "width": 2838,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0159-87r",
+      "source_path": "data/yale_hq_scans/10/0159_87r.jpg",
+      "source_sha256": "eb9c7020f670d4d9070a4d37130db9e250b9b4ecf33ab34ffb0596512fa53a6c",
+      "width": 2753,
+      "height": 3745
+    },
+    {
+      "record_id": "CANVAS-0160-87v",
+      "source_path": "data/yale_hq_scans/10/0160_87v.jpg",
+      "source_sha256": "3bac9e01c7bd848fa947b4877d1166f8e9f38822c7bd209e9574a88f6cb181c0",
+      "width": 2893,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0161-88r",
+      "source_path": "data/yale_hq_scans/10/0161_88r.jpg",
+      "source_sha256": "a1d21ccad0df430b47f3b3df2829bbefb8c4d1644cb70310e6d1de4b01c20013",
+      "width": 2714,
+      "height": 3735
+    },
+    {
+      "record_id": "CANVAS-0165-90r",
+      "source_path": "data/yale_hq_scans/10/0165_90r.jpg",
+      "source_sha256": "f315895bc403e9b78bdda4d207789ed7b5a38654a47715e4571fdfc140c619c6",
+      "width": 2737,
+      "height": 3752
+    },
+    {
+      "record_id": "CANVAS-0167-93r",
+      "source_path": "data/yale_hq_scans/10/0167_93r.jpg",
+      "source_sha256": "e8ab4d7dcf7d758e2f0e05f9579ef5366a846c273f309ae603616a5e74bbec3a",
+      "width": 2718,
+      "height": 3758
+    },
+    {
+      "record_id": "CANVAS-0168-93v",
+      "source_path": "data/yale_hq_scans/10/0168_93v.jpg",
+      "source_sha256": "ed9a4f5e3c4be33611749ce05c303aa7553c5cf3523882d87d05c7aac86e0e32",
+      "width": 2838,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0169-94r",
+      "source_path": "data/yale_hq_scans/10/0169_94r.jpg",
+      "source_sha256": "ad33592ad7f29a6e9fc6b9e45444286231f06a903d95b54d1195b17cfdca417b",
+      "width": 2728,
+      "height": 3754
+    },
+    {
+      "record_id": "CANVAS-0172-95v",
+      "source_path": "data/yale_hq_scans/10/0172_95v.jpg",
+      "source_sha256": "e9f7a4ceb162f393086b1f0be4d5c11edf4d72b8e8ea3420fdb13d8ff58efb51",
+      "width": 2838,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0173-96r",
+      "source_path": "data/yale_hq_scans/10/0173_96r.jpg",
+      "source_sha256": "3feb9d44f6498e7dc085dd9f3eee9a5f29db941d2d401accd54948d5fae3b613",
+      "width": 2699,
+      "height": 3745
+    },
+    {
+      "record_id": "CANVAS-0174-96v",
+      "source_path": "data/yale_hq_scans/10/0174_96v.jpg",
+      "source_sha256": "7aad14a896b53ddc78f3c7239d358389f215654c26fd9db7dfc43329439c1f15",
+      "width": 2858,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0175-99r",
+      "source_path": "data/yale_hq_scans/10/0175_99r.jpg",
+      "source_sha256": "f17eba5496a1b1d92f589c33ee9be256a379ec8d2bba3da1ebe2ff5a2e3e2901",
+      "width": 2702,
+      "height": 3765
+    },
+    {
+      "record_id": "CANVAS-0176-99v",
+      "source_path": "data/yale_hq_scans/10/0176_99v.jpg",
+      "source_sha256": "111f6dfc34b8ecb9230cb5a0d144afef4cbd788048ddda2f440108941c91d5e5",
+      "width": 2802,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0177-100r",
+      "source_path": "data/yale_hq_scans/10/0177_100r.jpg",
+      "source_sha256": "6dcf72a0d7eac14da2232987c9cc1521e6d70c9f0f92d3eb39b55fc075520429",
+      "width": 2676,
+      "height": 3756
+    },
+    {
+      "record_id": "CANVAS-0183-103r",
+      "source_path": "data/yale_hq_scans/10/0183_103r.jpg",
+      "source_sha256": "28a65644ebf9a16dc41c073e6535117d924765fae6af474dbd1e3fe2b167beda",
+      "width": 2688,
+      "height": 3805
+    },
+    {
+      "record_id": "CANVAS-0184-103v",
+      "source_path": "data/yale_hq_scans/10/0184_103v.jpg",
+      "source_sha256": "dd2444928b8dd5d1e60fbd58e04e4be38ed877f9d491058a7c6b779ceb18a75b",
+      "width": 2762,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0185-104r",
+      "source_path": "data/yale_hq_scans/10/0185_104r.jpg",
+      "source_sha256": "2ee5f2a32ed2e242d60dcb34398c9b8be6af0341872a476e3905f1314ebe716f",
+      "width": 2677,
+      "height": 3811
+    },
+    {
+      "record_id": "CANVAS-0186-104v",
+      "source_path": "data/yale_hq_scans/10/0186_104v.jpg",
+      "source_sha256": "c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd",
+      "width": 2744,
+      "height": 3704
+    },
+    {
+      "record_id": "CANVAS-0187-105r",
+      "source_path": "data/yale_hq_scans/10/0187_105r.jpg",
+      "source_sha256": "0401750e6d83ed74cd4fea79f99c2aba5e2c8dcd90ed0f2641be81c7b722e82f",
+      "width": 2662,
+      "height": 3771
+    },
+    {
+      "record_id": "CANVAS-0188-105v",
+      "source_path": "data/yale_hq_scans/11/0188_105v.jpg",
+      "source_sha256": "540787c3d0aa7a13c1cc620fe222a13d0b2409eaa69e19de56d2544cfdf3c678",
+      "width": 2663,
+      "height": 3701
+    },
+    {
+      "record_id": "CANVAS-0189-106r",
+      "source_path": "data/yale_hq_scans/11/0189_106r.jpg",
+      "source_sha256": "1aad6bd53b227df51ba6f9b19812558a8b4f4313f97dd1a8b272ee4c60fefb31",
+      "width": 2635,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0190-106v",
+      "source_path": "data/yale_hq_scans/11/0190_106v.jpg",
+      "source_sha256": "41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5",
+      "width": 2670,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0191-107r",
+      "source_path": "data/yale_hq_scans/11/0191_107r.jpg",
+      "source_sha256": "eb97d7b784be55eaa92781031d3ccefc3e37f9eda41314a9ed996e711a041a58",
+      "width": 2641,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0192-107v",
+      "source_path": "data/yale_hq_scans/11/0192_107v.jpg",
+      "source_sha256": "46316d4cb82f2ccdd1c8d414ee99ad60f72d6154c28b888d00c484245d75704c",
+      "width": 2689,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0193-108r",
+      "source_path": "data/yale_hq_scans/11/0193_108r.jpg",
+      "source_sha256": "afad28189500567259ef2041cd1c591644bf6d6c86ac6a39cd1c09503693ad76",
+      "width": 2641,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0194-108v",
+      "source_path": "data/yale_hq_scans/11/0194_108v.jpg",
+      "source_sha256": "df3fce237ad489c5fcdc1c8dab2a5b21b7c338bc3b88ca588cc79434f9499a7b",
+      "width": 2649,
+      "height": 3706
+    },
+    {
+      "record_id": "CANVAS-0195-111r",
+      "source_path": "data/yale_hq_scans/11/0195_111r.jpg",
+      "source_sha256": "12ea5325dcdc68d0ea9480bb369d1d95b4dc3accd1ff0d9b84beea8827cfdf31",
+      "width": 2622,
+      "height": 3783
+    },
+    {
+      "record_id": "CANVAS-0196-111v",
+      "source_path": "data/yale_hq_scans/11/0196_111v.jpg",
+      "source_sha256": "00729a36de336f57b387fc364441057b31b4bc51f6c5e915352d9185121cbcbf",
+      "width": 2666,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0197-112r",
+      "source_path": "data/yale_hq_scans/11/0197_112r.jpg",
+      "source_sha256": "f59b3420ff3fdbe6f360c12993304a12b11acdef1a2978784efcd77541c0d9b3",
+      "width": 2602,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0198-112v",
+      "source_path": "data/yale_hq_scans/11/0198_112v.jpg",
+      "source_sha256": "c421f574928c767cada83c01295370c078b66234610d262e286079a7a5a4cc1a",
+      "width": 2664,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0199-113r",
+      "source_path": "data/yale_hq_scans/11/0199_113r.jpg",
+      "source_sha256": "ad748f9012b174be520b7ac837fdadf913e49a696323920ca655ecf5474afb5c",
+      "width": 2582,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0200-113v",
+      "source_path": "data/yale_hq_scans/11/0200_113v.jpg",
+      "source_sha256": "d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3",
+      "width": 2666,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0201-114r",
+      "source_path": "data/yale_hq_scans/11/0201_114r.jpg",
+      "source_sha256": "fc76cfcb2e6f8911b3928c59772c9c4eca7854dd2a260bec81972f78b883aa37",
+      "width": 2599,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0202-114v",
+      "source_path": "data/yale_hq_scans/11/0202_114v.jpg",
+      "source_sha256": "159d08488392d651c1818e825d3defce83187ad6997610d179dbfe76be30e4e3",
+      "width": 2671,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0203-115r",
+      "source_path": "data/yale_hq_scans/11/0203_115r.jpg",
+      "source_sha256": "6de34408de10afa401805534c691341824f0660e054d836f9be5e8620cb17668",
+      "width": 2584,
+      "height": 3786
+    },
+    {
+      "record_id": "CANVAS-0204-115v",
+      "source_path": "data/yale_hq_scans/11/0204_115v.jpg",
+      "source_sha256": "5700486404459fe1abfc11f6347aa0171bd651e39bcf71d594beecfb170ed8a3",
+      "width": 2676,
+      "height": 3697
+    },
+    {
+      "record_id": "CANVAS-0205-116r",
+      "source_path": "data/yale_hq_scans/11/0205_116r.jpg",
+      "source_sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c",
+      "width": 2559,
+      "height": 3787
+    },
+    {
+      "record_id": "CANVAS-0206-116v",
+      "source_path": "data/yale_hq_scans/11/0206_116v.jpg",
+      "source_sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+      "width": 2686,
+      "height": 3697
+    }
+  ]
+}
