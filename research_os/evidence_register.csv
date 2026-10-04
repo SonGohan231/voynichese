@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 hypothesis,evidence_for,evidence_against,evidence_quality,reproducible,missing_test,status,source_class
 H1 Perspective Grammar,"Istnieją atlas, graf cross-page i wcześniejsza gałąź przestrzenna","Brak zamrożonej minimalnej gramatyki ocenionej na nietkniętych foliach",LOW,NO,"Preregistered held-out prediction of ports and occlusions",PROPOSED,"repo + bootstrap"
 H2a Color Layer,"Bootstrap wymienia Color Gate i pakiety reviewerów","Brak zweryfikowanego łańcucha pigment→warstwa oraz niezależnego od geometrii testu",LOW,NO,"Blind color prediction on frozen geometry graph",PROPOSED,"bootstrap"
