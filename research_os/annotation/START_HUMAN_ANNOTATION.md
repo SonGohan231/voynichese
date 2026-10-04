@@ -101,7 +101,9 @@ python3 research_os/tools/freeze_annotation_pair.py \
   --custody-map-b research_os/runs/EXP-2026-001/private/custody-map-b.json
 ```
 
-Then reverify the frozen evidence bundle and obtain the external append-only custodian receipt before adjudication. Passing agreement means only `READY_FOR_ADJUDICATION`; it is not ground truth and does not unlock HELD-OUT.
+Then reverify the frozen evidence bundle. Before adjudication, the custodian receipt must be independently witnessed by the external registry: the registry signs `registry-witness.json`, binding the exact receipt bytes, receipt signature, registry URI and sequence. A custodian-signed receipt containing only an HTTPS URL is insufficient. Passing agreement means only `READY_FOR_ADJUDICATION`; it is not ground truth and does not unlock HELD-OUT.
+
+The blinded bundles still contain the original manuscript pixels. Opaque IDs and filenames prevent metadata linkage, but visually distinctive folios may still be recognizable. A/B must not perform outside lookup to recover canonical identity; spontaneous recognition must be reported to the custodian and logged as a protocol deviation.
 
 ## Human-only checklist
 
