@@ -53,6 +53,19 @@ def semantic_errors(slot: dict[str, Any], expected_identity: str) -> list[str]:
             if not isinstance(packet, dict) or not packet.get("packet_id") or not HEX64.fullmatch(str(packet.get("sha256", ""))):
                 errors.append(f"invalid_packet_{role}")
 
+    handoffs = slot.get("handoff_bindings")
+    if not isinstance(handoffs, dict) or set(handoffs) != {"A", "B"}:
+        errors.append("invalid_handoff_bindings")
+    else:
+        for role in ("A", "B"):
+            handoff = handoffs[role]
+            if not isinstance(handoff, dict) or not handoff.get("packet_id"):
+                errors.append(f"invalid_handoff_{role}")
+                continue
+            for key in ("packet_sha256", "custody_map_sha256", "seed_commitment_sha256"):
+                if not HEX64.fullmatch(str(handoff.get(key, ""))):
+                    errors.append(f"invalid_handoff_{role}_{key}")
+
     bindings = slot.get("annotator_bindings")
     if not isinstance(bindings, list) or len(bindings) != 2:
         errors.append("invalid_annotator_bindings")
