@@ -48,23 +48,55 @@ def semantic_errors(slot: dict[str, Any], expected_identity: str) -> list[str]:
     if not isinstance(packets, dict) or set(packets) != {"A", "B"}:
         errors.append("invalid_packets")
     else:
+        packet_ids = []
+        packet_hashes = []
         for role in ("A", "B"):
             packet = packets[role]
             if not isinstance(packet, dict) or not packet.get("packet_id") or not HEX64.fullmatch(str(packet.get("sha256", ""))):
                 errors.append(f"invalid_packet_{role}")
+                continue
+            packet_ids.append(packet["packet_id"])
+            packet_hashes.append(packet["sha256"])
+        if len(packet_ids) == 2 and len(set(packet_ids)) != 2:
+            errors.append("packet_ids_not_distinct")
+        if len(packet_hashes) == 2 and len(set(packet_hashes)) != 2:
+            errors.append("packet_hashes_not_distinct")
 
     handoffs = slot.get("handoff_bindings")
     if not isinstance(handoffs, dict) or set(handoffs) != {"A", "B"}:
         errors.append("invalid_handoff_bindings")
     else:
+        handoff_packet_ids = []
+        handoff_packet_hashes = []
+        custody_map_hashes = []
+        seed_commitments = []
         for role in ("A", "B"):
             handoff = handoffs[role]
             if not isinstance(handoff, dict) or not handoff.get("packet_id"):
                 errors.append(f"invalid_handoff_{role}")
                 continue
+            handoff_packet_ids.append(handoff["packet_id"])
+            values = {}
             for key in ("packet_sha256", "custody_map_sha256", "seed_commitment_sha256"):
-                if not HEX64.fullmatch(str(handoff.get(key, ""))):
+                value = handoff.get(key)
+                if not HEX64.fullmatch(str(value or "")):
                     errors.append(f"invalid_handoff_{role}_{key}")
+                else:
+                    values[key] = value
+            if "packet_sha256" in values:
+                handoff_packet_hashes.append(values["packet_sha256"])
+            if "custody_map_sha256" in values:
+                custody_map_hashes.append(values["custody_map_sha256"])
+            if "seed_commitment_sha256" in values:
+                seed_commitments.append(values["seed_commitment_sha256"])
+        if len(handoff_packet_ids) == 2 and len(set(handoff_packet_ids)) != 2:
+            errors.append("handoff_packet_ids_not_distinct")
+        if len(handoff_packet_hashes) == 2 and len(set(handoff_packet_hashes)) != 2:
+            errors.append("handoff_packet_hashes_not_distinct")
+        if len(custody_map_hashes) == 2 and len(set(custody_map_hashes)) != 2:
+            errors.append("custody_map_hashes_not_distinct")
+        if len(seed_commitments) == 2 and len(set(seed_commitments)) != 2:
+            errors.append("seed_commitments_not_distinct")
 
     bindings = slot.get("annotator_bindings")
     if not isinstance(bindings, list) or len(bindings) != 2:
