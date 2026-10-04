@@ -14,8 +14,8 @@ IOU_MATCH = 0.50
 THRESHOLDS = {
     "object_f1": 0.80,
     "median_iou": 0.75,
-    "port_count_agreement": 0.80,
-    "occlusion_agreement": 0.80,
+    "port_set_agreement": 0.80,
+    "occlusion_f1": 0.80,
 }
 BLINDNESS_KEYS = (
     "other_annotation_unseen",
@@ -100,21 +100,76 @@ def validate_submission(submission: dict[str, Any], atlas: dict[str, str]) -> li
     return sorted(set(errors))
 
 
+def _maximum_weight_assignment(weights: list[list[float]]) -> list[tuple[int, int]]:
+    """Hungarian assignment for a square maximum-weight matrix."""
+    size = len(weights)
+    if not size:
+        return []
+    maximum = max(max(row) for row in weights)
+    costs = [[maximum - value for value in row] for row in weights]
+    u = [0.0] * (size + 1)
+    v = [0.0] * (size + 1)
+    p = [0] * (size + 1)
+    way = [0] * (size + 1)
+    for i in range(1, size + 1):
+        p[0] = i
+        j0 = 0
+        minimum = [float("inf")] * (size + 1)
+        used = [False] * (size + 1)
+        while True:
+            used[j0] = True
+            i0 = p[j0]
+            delta = float("inf")
+            j1 = 0
+            for j in range(1, size + 1):
+                if not used[j]:
+                    current = costs[i0 - 1][j - 1] - u[i0] - v[j]
+                    if current < minimum[j]:
+                        minimum[j] = current
+                        way[j] = j0
+                    if minimum[j] < delta:
+                        delta = minimum[j]
+                        j1 = j
+            for j in range(size + 1):
+                if used[j]:
+                    u[p[j]] += delta
+                    v[j] -= delta
+                else:
+                    minimum[j] -= delta
+            j0 = j1
+            if p[j0] == 0:
+                break
+        while True:
+            j1 = way[j0]
+            p[j0] = p[j1]
+            j0 = j1
+            if j0 == 0:
+                break
+    return [(p[j] - 1, j - 1) for j in range(1, size + 1)]
+
+
 def match_objects(left: list[dict[str, Any]], right: list[dict[str, Any]]) -> list[tuple[int, int, float]]:
-    candidates = []
+    """Maximum-cardinality, then maximum-IoU same-class matching."""
+    size = max(len(left), len(right))
+    if not size:
+        return []
+    cardinality_base = size + 1.0
+    weights = [[0.0] * size for _ in range(size)]
+    ious = [[0.0] * len(right) for _ in range(len(left))]
     for left_index, left_object in enumerate(left):
         for right_index, right_object in enumerate(right):
             if left_object["class"] == right_object["class"]:
                 score = bbox_iou(left_object["bbox"], right_object["bbox"])
+                ious[left_index][right_index] = score
                 if score >= IOU_MATCH:
-                    candidates.append((score, left_index, right_index))
-    matches, used_left, used_right = [], set(), set()
-    for score, left_index, right_index in sorted(candidates, reverse=True):
-        if left_index not in used_left and right_index not in used_right:
-            matches.append((left_index, right_index, score))
-            used_left.add(left_index)
-            used_right.add(right_index)
-    return matches
+                    weights[left_index][right_index] = cardinality_base + score
+    result = []
+    for left_index, right_index in _maximum_weight_assignment(weights):
+        if left_index < len(left) and right_index < len(right):
+            score = ious[left_index][right_index]
+            if score >= IOU_MATCH and left[left_index]["class"] == right[right_index]["class"]:
+                result.append((left_index, right_index, score))
+    return sorted(result)
 
 
 def comparable_occlusions(record: dict[str, Any], mapping: dict[str, str]) -> dict[tuple[str, str], str]:
@@ -145,6 +200,7 @@ def agreement_report(left: dict[str, Any], right: dict[str, Any], atlas: dict[st
     ious: list[float] = []
     left_relations: dict[tuple[str, str, str], str] = {}
     right_relations: dict[tuple[str, str, str], str] = {}
+    per_record: dict[str, dict[str, Any]] = {}
     for record_id in common:
         left_objects = left_records[record_id].get("objects", [])
         right_objects = right_records[record_id].get("objects", [])
@@ -159,26 +215,57 @@ def agreement_report(left: dict[str, Any], right: dict[str, Any], atlas: dict[st
             canonical = f"M{index:05d}"
             left_to_canonical[left_objects[left_index]["local_id"]] = canonical
             right_to_canonical[right_objects[right_index]["local_id"]] = canonical
-            if len(left_objects[left_index]["ports"]) == len(right_objects[right_index]["ports"]):
+            if set(left_objects[left_index]["ports"]) == set(right_objects[right_index]["ports"]):
                 port_matches += 1
-        for key, value in comparable_occlusions(left_records[record_id], left_to_canonical).items():
+        record_left_relations = comparable_occlusions(left_records[record_id], left_to_canonical)
+        record_right_relations = comparable_occlusions(right_records[record_id], right_to_canonical)
+        for key, value in record_left_relations.items():
             left_relations[(record_id, *key)] = value
-        for key, value in comparable_occlusions(right_records[record_id], right_to_canonical).items():
+        for key, value in record_right_relations.items():
             right_relations[(record_id, *key)] = value
+        record_relation_keys = set(record_left_relations) & set(record_right_relations)
+        record_exact_relations = sum(
+            record_left_relations[key] == record_right_relations[key] for key in record_relation_keys
+        )
+        record_match_ious = [match[2] for match in matches]
+        record_port_matches = sum(
+            set(left_objects[left_index]["ports"]) == set(right_objects[right_index]["ports"])
+            for left_index, right_index, _ in matches
+        )
+        per_record[record_id] = {
+            "left_objects": len(left_objects),
+            "right_objects": len(right_objects),
+            "matched_objects": len(matches),
+            "object_f1": (
+                2 * len(matches) / (len(left_objects) + len(right_objects))
+                if left_objects or right_objects
+                else 1.0
+            ),
+            "median_iou": statistics.median(record_match_ious) if record_match_ious else None,
+            "port_set_agreement": record_port_matches / len(matches) if matches else None,
+            "left_occlusions": len(record_left_relations),
+            "right_occlusions": len(record_right_relations),
+            "occlusion_f1": (
+                2 * record_exact_relations / (len(record_left_relations) + len(record_right_relations))
+                if record_left_relations or record_right_relations
+                else None
+            ),
+        }
     object_f1 = 2 * total_matches / (total_left + total_right) if total_left + total_right else None
     median_iou = statistics.median(ious) if ious else None
     port_agreement = port_matches / total_matches if total_matches else None
     comparable = set(left_relations) & set(right_relations)
-    occlusion_agreement = (
-        sum(left_relations[key] == right_relations[key] for key in comparable) / len(comparable)
-        if comparable
+    exact_relations = sum(left_relations[key] == right_relations[key] for key in comparable)
+    occlusion_f1 = (
+        2 * exact_relations / (len(left_relations) + len(right_relations))
+        if left_relations or right_relations
         else None
     )
     metrics = {
         "object_f1": object_f1,
         "median_iou": median_iou,
-        "port_count_agreement": port_agreement,
-        "occlusion_agreement": occlusion_agreement,
+        "port_set_agreement": port_agreement,
+        "occlusion_f1": occlusion_f1,
     }
     gates = {
         "submissions_valid": not left_errors and not right_errors and not pair_errors,
@@ -201,9 +288,23 @@ def agreement_report(left: dict[str, Any], right: dict[str, Any], atlas: dict[st
             "left_objects": total_left,
             "right_objects": total_right,
             "matched_objects": total_matches,
-            "comparable_occlusions": len(comparable),
+            "left_occlusions": len(left_relations),
+            "right_occlusions": len(right_relations),
+            "exact_occlusions": exact_relations,
         },
         "metrics": metrics,
+        "diagnostics": {
+            "macro_object_f1": statistics.mean(item["object_f1"] for item in per_record.values())
+            if per_record
+            else None,
+            "records_with_no_matched_objects": sum(
+                item["matched_objects"] == 0 for item in per_record.values()
+            ),
+            "records_with_no_comparable_occlusion_denominator": sum(
+                item["occlusion_f1"] is None for item in per_record.values()
+            ),
+            "per_record": per_record,
+        },
         "gates": gates,
     }
 
