@@ -19,6 +19,8 @@ Faktycznie sprawdzono publiczne endpointy diagnostyczne TelefonMCP2 3.0.0.
 
 Dyrygent jest dostępny jako integracja hosta. Dwie próby audytu zakończyły się awaryjnym fallbackiem Astra po błędzie parsera planera. Uzyskano użyteczne uwagi metodologiczne, ale nie pełny wieloagentowy audyt. Wynik zapisano w misji Agent OS jako częściowy, z jawnym ograniczeniem.
 
+Po udostępnieniu interfejsu Cloud Run wykonano także jeden jawnie zatwierdzony audyt `MAX`. Ponownie wystąpił `astra-direct-fallback` po niepoprawnym JSON-ie planera; jedno wywołanie Astra zużyło 2202 tokeny, a raport został ucięty. Szczegóły zapisano w `dyrygent_max_audit_2026-10-04.md`. Kolejne zadania mają domyślnie korzystać z trybu `BALANCED`.
+
 ## Voynich Spatial Lab / Sites
 
 - Projekt Sites `Voynich Spatial Lab` istnieje i jest aktywny, wersja 6.
