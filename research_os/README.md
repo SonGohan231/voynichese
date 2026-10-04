@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 # Voynich Research OS
 
 Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promptem z 2026-10-04.
@@ -11,6 +10,7 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - Główny indeks wcześniejszego projektu został odnaleziony na Google Drive.
 - Finalna literalizacja, alfabet, fonetyka i tłumaczenie pozostają zablokowane (`readyForLiteralization = 0`).
 - Pierwsza misja Agent OS: `ce415186-4323-4d79-8f73-b8e124585264`, zakończona jako `INCONCLUSIVE`.
+- Bieżąca misja wykonawcza Agent OS: `0856f1aa-60a8-4fea-a82e-8d15239f5542`.
 
 ## Artefakty tej inicjalizacji
 
@@ -22,3 +22,15 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `experiments/EXP-2026-001/manifest.json` — maszynowy manifest stanu eksperymentu.
 
 Status dokumentów jest jawny. Prerejestracja jest projektem protokołu, nie wynikiem eksperymentu.
+
+## Reprodukowalny audyt gotowości
+
+Uruchom z katalogu głównego repozytorium:
+
+```bash
+python3 -m unittest discover -s research_os/tools -p 'test_*.py' -v
+python3 research_os/tools/readiness.py atlas/records \
+  --report research_os/experiments/EXP-2026-001/readiness_report.json
+```
+
+Kod wyjścia `2` oznacza bezpieczne niespełnienie bramek naukowych. W tym stanie split nie jest zapisywany, a HELD-OUT pozostaje nieodsłonięty. Split można zmaterializować dopiero po statusie `READY_FOR_SPLIT`, z jawnie zamrożonym seedem i ścieżką `--split`.
