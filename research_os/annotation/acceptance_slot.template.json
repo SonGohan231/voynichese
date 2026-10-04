@@ -19,11 +19,31 @@
     }
   },
   "annotator_bindings": [
-    {"role": "A", "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"},
-    {"role": "B", "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"}
+    {
+      "role": "A",
+      "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"
+    },
+    {
+      "role": "B",
+      "annotator_id_sha256": "REPLACE_WITH_SHA256_OF_EXACT_PSEUDONYMOUS_ID"
+    }
   ],
   "custodian_identity": "REPLACE_WITH_ALLOWED_SIGNER_IDENTITY",
   "sealed_at_utc": "REPLACE_BEFORE_SEALING",
   "metrics_disclosure_policy": "AFTER_LOCAL_FREEZE_COMMIT",
-  "held_out_access": "FORBIDDEN"
+  "held_out_access": "FORBIDDEN",
+  "handoff_bindings": {
+    "A": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-A-BLINDED-HANDOFF",
+      "packet_sha256": "REPLACE_WITH_SHA256_OF_BLINDED_HANDOFF_PACKET_A",
+      "custody_map_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_CUSTODY_MAP_A",
+      "seed_commitment_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_PSEUDONYM_SEED_A"
+    },
+    "B": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-B-BLINDED-HANDOFF",
+      "packet_sha256": "REPLACE_WITH_SHA256_OF_BLINDED_HANDOFF_PACKET_B",
+      "custody_map_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_CUSTODY_MAP_B",
+      "seed_commitment_sha256": "REPLACE_WITH_SHA256_OF_PRIVATE_PSEUDONYM_SEED_B"
+    }
+  }
 }
