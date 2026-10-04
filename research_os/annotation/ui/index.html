@@ -1,0 +1,118 @@
+Failed to connect to bus: Operation not permitted
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Voynich Blind Annotation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Voynich Blind Annotation</h1>
+    <div class="top-status" aria-live="polite">
+      <span id="packetStatus" class="status-dot">Packet checking</span>
+      <span>Local only</span>
+      <span id="progressTop">0 / 0</span>
+      <button id="exportButton" class="primary">Export JSON</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="record-rail" aria-label="Records">
+      <div class="rail-controls">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search records"></label>
+        <button id="loadPacketButton" class="secondary">Load packet</button>
+        <input id="packetFile" type="file" accept="application/json" hidden>
+      </div>
+      <div id="recordList" class="record-list"></div>
+    </aside>
+
+    <section class="canvas-column">
+      <div class="toolbar" role="toolbar" aria-label="Canvas tools">
+        <button id="selectTool" class="tool active" aria-pressed="true">Select</button>
+        <button id="drawTool" class="tool" aria-pressed="false">Draw box</button>
+        <span id="recordLabel" class="record-label">No packet loaded</span>
+      </div>
+      <div id="canvasViewport" class="canvas-viewport">
+        <div id="canvasStage" class="canvas-stage">
+          <img id="scanImage" alt="Original manuscript scan">
+          <svg id="overlay" aria-label="Annotation overlay"></svg>
+          <div id="emptyCanvas" class="empty-canvas">Load a frozen packet to begin.</div>
+        </div>
+      </div>
+      <footer class="canvas-status">
+        <div class="zoom-controls"><button id="zoomOut" aria-label="Zoom out">−</button><span id="zoomValue">100%</span><button id="zoomIn" aria-label="Zoom in">+</button></div>
+        <span id="coordinateReadout">x: 0&nbsp;&nbsp; y: 0&nbsp;&nbsp; w: 0&nbsp;&nbsp; h: 0</span>
+      </footer>
+    </section>
+
+    <aside class="inspector" aria-label="Object inspector">
+      <section>
+        <h2>Selected object</h2>
+        <label>Local ID<input id="objectId" type="text" readonly></label>
+        <label>Class<select id="objectClass">
+          <option value="ILLUSTRATION_OBJECT">Illustration object</option>
+          <option value="ILLUSTRATION_FIELD">Illustration field</option>
+          <option value="TEXT_FIELD">Text field</option>
+          <option value="DIAGRAM">Diagram</option>
+        </select></label>
+        <button id="deleteObject" class="danger" disabled>Delete selected</button>
+      </section>
+
+      <section>
+        <h2>Port sectors</h2>
+        <div id="portGrid" class="port-grid" aria-label="Eight port sectors">
+          <label class="p-nw"><input type="checkbox" value="NW"><span>NW</span></label>
+          <label class="p-n"><input type="checkbox" value="N"><span>N</span></label>
+          <label class="p-ne"><input type="checkbox" value="NE"><span>NE</span></label>
+          <label class="p-w"><input type="checkbox" value="W"><span>W</span></label>
+          <div class="port-center" aria-hidden="true"></div>
+          <label class="p-e"><input type="checkbox" value="E"><span>E</span></label>
+          <label class="p-sw"><input type="checkbox" value="SW"><span>SW</span></label>
+          <label class="p-s"><input type="checkbox" value="S"><span>S</span></label>
+          <label class="p-se"><input type="checkbox" value="SE"><span>SE</span></label>
+        </div>
+      </section>
+
+      <section>
+        <h2>Occlusion relations</h2>
+        <div class="relation-form">
+          <select id="relationSource" aria-label="Relation source"></select>
+          <select id="relationType" aria-label="Relation type">
+            <option value="IN_FRONT_OF">in front of</option>
+            <option value="BEHIND">behind</option>
+            <option value="AMBIGUOUS">ambiguous with</option>
+          </select>
+          <select id="relationTarget" aria-label="Relation target"></select>
+          <button id="addRelation" class="secondary">Add</button>
+        </div>
+        <div id="relationList" class="relation-list">No relations</div>
+      </section>
+
+      <section>
+        <h2>Validation</h2>
+        <div id="validationList" class="validation-list">Load a packet to validate.</div>
+      </section>
+    </aside>
+  </main>
+
+  <dialog id="identityDialog">
+    <form id="identityForm" method="dialog">
+      <h2>Start blind annotation</h2>
+      <p>Use a pseudonymous annotator ID. Work is stored only in this browser until export.</p>
+      <label>Annotator ID<input id="annotatorInput" required minlength="1" autocomplete="off"></label>
+      <fieldset>
+        <legend>Blindness attestation</legend>
+        <label><input type="checkbox" name="blind" required>I have not seen the other annotation.</label>
+        <label><input type="checkbox" name="blind" required>I have not seen automated candidates or overlays.</label>
+        <label><input type="checkbox" name="blind" required>I have not seen model predictions or hypothesis labels.</label>
+        <label><input type="checkbox" name="blind" required>I have not seen a split assignment.</label>
+      </fieldset>
+      <menu><button value="cancel" class="secondary">Cancel</button><button id="startButton" value="default" class="primary">Begin</button></menu>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
