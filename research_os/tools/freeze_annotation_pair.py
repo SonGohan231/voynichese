@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 #!/usr/bin/env python3
 """Freeze two independent submissions before exposing agreement metrics."""
 
