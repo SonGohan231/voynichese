@@ -25,6 +25,8 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `annotation/packets/` — dwa hermetyczne pakiety źródłowe dla niezależnych annotatorów; każdy obejmuje ten sam zamrożony zbiór 204 skanów treści, łącznie z częściami foldoutów, i nie zawiera kandydatur, predykcji ani splitu.
 - `annotation/ui/` — lokalny edytor niezależnych adnotacji bez kandydatur i splitu.
 - `annotation/acceptance_slot.*` oraz `custodian_receipt.*` — podpisywane bramki jednej pary i zewnętrznego receipt.
+- `experiments/EXP-2026-001/scribe_assignments.json` — kompletna, wersjonowana mapa 204 rekordów do 94 grup skrybów, z trzema jawnymi grupami `MIXED_*`.
+- `experiments/EXP-2026-001/section_scribe_strata.json` — zamrożony manifest sekcja+skryba dla przyszłego splitu.
 - `adjudication/` — neutralny kontrakt adjudykacji oraz schemat zweryfikowanego wyniku.
 
 Status dokumentów jest jawny. Prerejestracja jest projektem protokołu, nie wynikiem eksperymentu.
@@ -59,6 +61,6 @@ python3 research_os/tools/readiness.py atlas/records \
   --report research_os/experiments/EXP-2026-001/readiness_report.json
 ```
 
-Nie należy przekazywać gotowego raportu walidacyjnego jako substytutu danych wejściowych. `readiness.py` ponownie weryfikuje podpisany receipt, lokalny freeze, powiązanie receipt→pakiet, dokładne bajty adjudykacji, kompletny zbiór `FOLIO`, checksumy źródeł i co najmniej 15 niezależnych grup liści. Manifest sekcji musi spełniać `experiments/EXP-2026-001/section_strata.schema.json`, pokrywać dokładnie kwalifikowane rekordy i zawierać proweniencję z SHA-256; bez niego split jest odrzucany. Seed musi mieć co najmniej 32 losowe bajty, być zwykłym plikiem bez dostępu dla grupy/innych i nigdy nie trafić do repozytorium. Certyfikat jest publicznym certyfikatem szyfrującym custodiana; klucz prywatny pozostaje poza środowiskiem badawczym.
+Nie należy przekazywać gotowego raportu walidacyjnego jako substytutu danych wejściowych. `readiness.py` ponownie weryfikuje podpisany receipt, lokalny freeze, powiązanie receipt→pakiet, dokładne bajty adjudykacji, kompletny zbiór `FOLIO`, checksumy źródeł i co najmniej 15 niezależnych grup liści. Manifest sekcja+skryba musi spełniać `experiments/EXP-2026-001/section_strata.schema.json`, pokrywać dokładnie kwalifikowane rekordy i zawierać proweniencję z SHA-256 dla obu warstw; bez niego split jest odrzucany. Seed musi mieć co najmniej 32 losowe bajty, być zwykłym plikiem bez dostępu dla grupy/innych i nigdy nie trafić do repozytorium. Certyfikat jest publicznym certyfikatem szyfrującym custodiana; klucz prywatny pozostaje poza środowiskiem badawczym.
 
 Wynikiem sealed workflow są: zaszyfrowany CMS `custodian-split.p7m`, publiczny manifest commitmentów oraz `model-development.json`. Ten ostatni zawiera wyłącznie TRAIN/VALIDATION, pseudonimowe ID HMAC i geometrię/etykiety adjudykacyjne; nie zawiera folio, ścieżek, source checksum, source refs ani rekordów HELD_OUT.
