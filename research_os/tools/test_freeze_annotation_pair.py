@@ -81,7 +81,7 @@ class FreezeAnnotationPairTests(unittest.TestCase):
         manifest, report = freeze_pair(
             self.records, self.left, self.right, self.packet_a, self.packet_b, output
         )
-        self.assertEqual(manifest["freeze_status"], "LOCAL_FREEZE_AWAITING_CUSTODIAN_RECEIPT")
+        self.assertEqual(manifest["freeze_status"], "LOCAL_DIAGNOSTIC_FREEZE_NO_SLOT")
         self.assertEqual(report["status"], "READY_FOR_ADJUDICATION")
         self.assertFalse(manifest["unlocks_held_out"])
         self.assertEqual(
@@ -98,6 +98,32 @@ class FreezeAnnotationPairTests(unittest.TestCase):
         freeze_pair(self.records, self.left, self.right, self.packet_a, self.packet_b, output)
         with self.assertRaisesRegex(ValueError, "refusing_to_overwrite"):
             freeze_pair(self.records, self.left, self.right, self.packet_a, self.packet_b, output)
+
+    def test_manifest_records_verified_slot_binding(self):
+        binding = {
+            "slot_id": "SLOT-001",
+            "slot_sha256": "1" * 64,
+            "custodian_identity": "custodian@example",
+            "signature_namespace": "voynich-research-os-acceptance-slot-v1",
+            "signature_valid": True,
+        }
+        evidence = {
+            "acceptance-slot.json": b"slot\n",
+            "acceptance-slot.json.sig": b"signature\n",
+            "allowed_signers": b"custodian@example ssh-ed25519 test\n",
+        }
+        manifest, _ = freeze_pair(
+            self.records, self.left, self.right, self.packet_a, self.packet_b,
+            self.root / "frozen", binding, evidence,
+        )
+        self.assertEqual(
+            manifest["freeze_status"], "LOCAL_FREEZE_BOUND_TO_SIGNED_ACCEPTANCE_SLOT"
+        )
+        self.assertEqual(manifest["acceptance_slot"], binding)
+        self.assertEqual(
+            (self.root / "frozen" / "acceptance-slot.json").read_bytes(), b"slot\n"
+        )
+        self.assertIn("acceptance-slot.json.sig", manifest["acceptance_evidence"])
 
     def test_refuses_same_annotator_identity(self):
         value = submission("B", "annotator-a")

@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any
 
 from annotation_gate import agreement_report, load_atlas, validate_submission
+from verify_acceptance_slot import verify_slot
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -39,6 +40,8 @@ def freeze_pair(
     packet_a_path: Path,
     packet_b_path: Path,
     output_dir: Path,
+    acceptance_slot: dict[str, Any] | None = None,
+    acceptance_evidence: dict[str, bytes] | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     atlas = load_atlas(records_dir)
     left_raw, left = load_json_bytes(left_path)
@@ -75,7 +78,10 @@ def freeze_pair(
     created_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     manifest = {
         "schema_version": "1.0",
-        "freeze_status": "LOCAL_FREEZE_AWAITING_CUSTODIAN_RECEIPT",
+        "freeze_status": (
+            "LOCAL_FREEZE_BOUND_TO_SIGNED_ACCEPTANCE_SLOT"
+            if acceptance_slot else "LOCAL_DIAGNOSTIC_FREEZE_NO_SLOT"
+        ),
         "created_at_utc": created_at,
         "protocol_sha256": packet_a["protocol_sha256"],
         "record_universe_sha256": packet_a["record_universe_sha256"],
@@ -99,11 +105,17 @@ def freeze_pair(
             "status": report["status"],
             "sha256": sha256_bytes(report_raw),
         },
-        "acceptance_scope": "LOCAL_SINGLE_DIRECTORY_ONLY",
+        "acceptance_scope": "SIGNED_SINGLE_SLOT_LOCAL_COMMIT" if acceptance_slot else "DIAGNOSTIC_ONLY",
         "custodian_receipt_required": True,
         "promotes_to_ground_truth": False,
         "unlocks_held_out": False,
     }
+    if acceptance_slot:
+        manifest["acceptance_slot"] = acceptance_slot
+        manifest["acceptance_evidence"] = {
+            name: {"path": name, "sha256": sha256_bytes(data)}
+            for name, data in sorted((acceptance_evidence or {}).items())
+        }
 
     output_dir.parent.mkdir(parents=True, exist_ok=True)
     try:
@@ -115,6 +127,10 @@ def freeze_pair(
     try:
         durable_write(output_dir / "annotation-a.json", left_raw)
         durable_write(output_dir / "annotation-b.json", right_raw)
+        for name, data in sorted((acceptance_evidence or {}).items()):
+            if Path(name).name != name:
+                raise ValueError(f"unsafe_acceptance_evidence_name:{name}")
+            durable_write(output_dir / name, data)
         durable_write(output_dir / "agreement-report.json", report_raw)
         manifest_raw = (json.dumps(manifest, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
         durable_write(output_dir / "freeze-manifest.json", manifest_raw)
@@ -148,6 +164,10 @@ def main() -> int:
     parser.add_argument("annotation_a", type=Path)
     parser.add_argument("annotation_b", type=Path)
     parser.add_argument("output_dir", type=Path)
+    parser.add_argument("--slot", type=Path, required=True)
+    parser.add_argument("--slot-signature", type=Path, required=True)
+    parser.add_argument("--allowed-signers", type=Path, required=True)
+    parser.add_argument("--custodian-identity", required=True)
     parser.add_argument(
         "--packet-a", type=Path,
         default=Path("research_os/annotation/packets/annotator-a.packet.json"),
@@ -158,9 +178,40 @@ def main() -> int:
     )
     args = parser.parse_args()
     try:
+        slot_result = verify_slot(
+            args.slot, args.slot_signature, args.allowed_signers, args.custodian_identity
+        )
+        if slot_result["status"] != "ACCEPTANCE_SLOT_VERIFIED":
+            raise ValueError(json.dumps(slot_result, sort_keys=True))
+        slot = slot_result["slot"]
+        if args.output_dir.as_posix() != slot["output_path"]:
+            raise ValueError("output_path_does_not_match_signed_slot")
+        packet_a_raw, packet_a = load_json_bytes(args.packet_a)
+        packet_b_raw, packet_b = load_json_bytes(args.packet_b)
+        for role, packet, raw in (("A", packet_a, packet_a_raw), ("B", packet_b, packet_b_raw)):
+            signed_packet = slot["packets"][role]
+            if packet.get("packet_id") != signed_packet["packet_id"] or sha256_bytes(raw) != signed_packet["sha256"]:
+                raise ValueError(f"packet_does_not_match_signed_slot:{role}")
+        if (
+            packet_a.get("protocol_sha256") != slot["protocol_sha256"]
+            or packet_a.get("record_universe_sha256") != slot["record_universe_sha256"]
+        ):
+            raise ValueError("protocol_or_universe_does_not_match_signed_slot")
+        slot_binding = {
+            "slot_id": slot["acceptance_slot_id"],
+            "slot_sha256": sha256_bytes(args.slot.read_bytes()),
+            "custodian_identity": args.custodian_identity,
+            "signature_namespace": slot_result["signature_namespace"],
+            "signature_valid": True,
+        }
+        acceptance_evidence = {
+            "acceptance-slot.json": args.slot.read_bytes(),
+            "acceptance-slot.json.sig": args.slot_signature.read_bytes(),
+            "allowed_signers": args.allowed_signers.read_bytes(),
+        }
         manifest, report = freeze_pair(
             args.records_dir, args.annotation_a, args.annotation_b,
-            args.packet_a, args.packet_b, args.output_dir,
+            args.packet_a, args.packet_b, args.output_dir, slot_binding, acceptance_evidence,
         )
     except (OSError, ValueError, json.JSONDecodeError) as error:
         print(json.dumps({"status": "FREEZE_REFUSED", "error": str(error)}, indent=2))

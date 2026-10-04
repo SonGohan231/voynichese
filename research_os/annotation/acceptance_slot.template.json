@@ -1,0 +1,30 @@
+Failed to connect to bus: Operation not permitted
+{
+  "schema_version": "1.0",
+  "state": "DRAFT_NOT_VALID_FOR_COLLECTION",
+  "experiment_id": "EXP-2026-001",
+  "annotation_round": "ROUND-001",
+  "acceptance_slot_id": "EXP-2026-001-ROUND-001-PAIR-001",
+  "max_accepted_pairs": 1,
+  "output_path": "research_os/runs/EXP-2026-001/annotation-freeze-001",
+  "protocol_sha256": "be32aeb464492a7378c3fc3774106d83ba3bb37a4e9a998e0adc25fe59e0485c",
+  "record_universe_sha256": "e6342d765d48f4b630b435dd4b05a2aeeec4a2a9c3dee09cd57a52fc859beb9d",
+  "packets": {
+    "A": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-A",
+      "sha256": "5a9ad0bb4114f04241849ec819f3bfff77b17be97565b010927bb35fa3cee596"
+    },
+    "B": {
+      "packet_id": "EXP-2026-001-ANNOTATOR-B",
+      "sha256": "b1558927f429206373e0c8b2390f0aced9ccaffe31b403d92ec431e8e827157d"
+    }
+  },
+  "annotator_bindings": [
+    {"role": "A", "identity_commitment_sha256": "REPLACE_BEFORE_SEALING"},
+    {"role": "B", "identity_commitment_sha256": "REPLACE_BEFORE_SEALING"}
+  ],
+  "custodian_identity": "REPLACE_WITH_ALLOWED_SIGNER_IDENTITY",
+  "sealed_at_utc": "REPLACE_BEFORE_SEALING",
+  "metrics_disclosure_policy": "AFTER_LOCAL_FREEZE_COMMIT",
+  "held_out_access": "FORBIDDEN"
+}
