@@ -22,14 +22,21 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `experiments/EXP-2026-001/manifest.json` — maszynowy manifest stanu eksperymentu.
 - `artifacts/AUTO_CANDIDATE_FINAL_V1.json` — proweniencja pełnego przebiegu 206 automatycznych kandydatur; nie są ground truth ani blind annotations.
 - `artifacts/AUTO_CANDIDATE_WORKLOAD_PROFILE.json` — wyłącznie profil obciążenia anotacyjnego, bez prawa użycia jako etykiety lub dowód hipotezy.
-- `annotation/packets/` — dwa hermetyczne pakiety źródłowe dla niezależnych annotatorów; każdy obejmuje ten sam zamrożony zbiór 204 skanów treści, łącznie z częściami foldoutów, i nie zawiera kandydatur, predykcji ani splitu.
-- `annotation/ui/` — lokalny edytor niezależnych adnotacji bez kandydatur i splitu.
+- `annotation/packets/` — dwa kanoniczne pakiety custodiana dla tego samego zamrożonego zbioru 204 skanów; nie są przekazywane produkcyjnym annotatorom, ponieważ zawierają kanoniczne ID i ścieżki źródłowe.
+- `annotation/ui/` — lokalny edytor niezależnych adnotacji bez kandydatur i splitu; w produkcji działa wyłącznie z izolowanym pseudonimizowanym handoffem.
+- `tools/build_blind_handoff.py` — tworzy oddzielny bundle A/B z opaque ID, opaque filenames i tajnym source commitmentem; custody map i seed pozostają poza bundle/repo.
+- `tools/unblind_annotation.py` — custodian-only konwersja exportu handoff z powrotem do kanonicznych ID/SHA bez zmiany etykiet.
+- `annotation/blind_handoff_annotation.schema.json` — kontrakt produkcyjnego exportu przed unblindingiem.
 - `annotation/acceptance_slot.*` oraz `custodian_receipt.*` — podpisywane bramki jednej pary i zewnętrznego receipt.
 - `experiments/EXP-2026-001/scribe_assignments.json` — kompletna, wersjonowana mapa 204 rekordów do 94 grup skrybów, z trzema jawnymi grupami `MIXED_*`.
 - `experiments/EXP-2026-001/section_scribe_strata.json` — zamrożony manifest sekcja+skryba dla przyszłego splitu.
 - `adjudication/` — neutralny kontrakt adjudykacji oraz schemat zweryfikowanego wyniku.
 
 Status dokumentów jest jawny. Prerejestracja jest projektem protokołu, nie wynikiem eksperymentu.
+
+## Produkcyjna anotacja
+
+Produkcja nie może udostępniać annotatorom repozytorium ani kanonicznych packetów. Najpierw custodian generuje dwa odrębne handoffy zgodnie z `annotation/START_HUMAN_ANNOTATION.md`, używając dwóch prywatnych seedów. Signed acceptance slot wiąże kanoniczne packety oraz dokładne hashe handoff packetów, custody maps i seed commitments. Po otrzymaniu exportów custodian wykonuje wyłącznie mechaniczny unblinding, a następnie freeze. HELD-OUT nie istnieje jeszcze na tym etapie.
 
 ## Reprodukowalny audyt gotowości
 
