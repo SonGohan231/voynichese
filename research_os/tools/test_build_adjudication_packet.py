@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 import json
 import unittest
 
