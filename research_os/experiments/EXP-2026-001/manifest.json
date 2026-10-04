@@ -30,7 +30,11 @@
     "blind_annotators_see_split_assignment": false,
     "cleartext_split_materialization_disabled": true,
     "model_developer_receives_full_record_universe": false,
-    "production_split_requires_custodian_encryption": true
+    "production_split_requires_custodian_encryption": true,
+    "blind_annotators_see_canonical_folio_ids": false,
+    "blind_annotators_see_raw_source_sha256": false,
+    "blind_annotators_see_section_or_scribe_labels": false,
+    "production_annotation_handoff_pseudonymized": true
   },
   "agent_os_mission_id": "0856f1aa-60a8-4fea-a82e-8d15239f5542",
   "readiness_audit": {
@@ -49,13 +53,13 @@
     "scope_policy": "FOLIO plus numeric UNRESOLVED compound/foldout canvases"
   },
   "annotation_gate": {
-    "status": "FROZEN_AWAITING_TWO_SUBMISSIONS",
+    "status": "FROZEN_AWAITING_TWO_PSEUDONYMIZED_SUBMISSIONS",
     "protocol": "research_os/annotation/README.md",
     "schema": "research_os/annotation/blind_annotation.schema.json",
     "schema_sha256": "6e774f666330443aab4c7c5828a35a97c68995cbd118dcd215079f7d6997d4d2",
     "tool": "research_os/tools/annotation_gate.py",
     "packet_builder": "research_os/tools/build_blind_packets.py",
-    "protocol_sha256": "5aeae93e23f2b6f3fcd94c4038fe84f731c5651d978b5d364ca862211eca06a4",
+    "protocol_sha256": "baa60373c0839a647d4fbff965bd4942840777fdc31e469d31b278eb41d9d6e4",
     "record_universe_sha256": "af494e23e637d725068259734edc1d1a160169e9d9c6e3645e5887b9b121f8c5",
     "record_count": 204,
     "packets": [
@@ -63,7 +67,12 @@
       "research_os/annotation/packets/annotator-b.packet.json"
     ],
     "promotes_to_ground_truth": false,
-    "unlocks_held_out": false
+    "unlocks_held_out": false,
+    "handoff_builder": "research_os/tools/build_blind_handoff.py",
+    "handoff_schema": "research_os/annotation/blind_handoff_annotation.schema.json",
+    "handoff_schema_sha256": "c3ea88cded8b412afb486ce13a5fcea1ac01806b2b492d9613d73cc754a132aa",
+    "unblind_tool": "research_os/tools/unblind_annotation.py",
+    "production_packet_policy": "isolated pseudonymized bundle; canonical packets are custodian/developer inputs only"
   },
   "power_plan": {
     "status": "ADEQUATE_FOR_PREREGISTERED_LARGE_EFFECT",
@@ -77,7 +86,7 @@
     "smaller_effect_policy": "INCONCLUSIVE"
   },
   "stratification_gate": {
-    "status": "SECTION_MAP_READY_SCRIBE_MAP_MISSING",
+    "status": "SECTION_AND_SCRIBE_MAPS_READY_ANNOTATION_MISSING",
     "schema": "research_os/experiments/EXP-2026-001/section_strata.schema.json",
     "schema_sha256": "3a792bff38ae96b26acc89497b6d82017cacb83e7f8944e223dd640bd124d356",
     "source_audit": "research_os/experiments/EXP-2026-001/section_strata_source_audit.md",
@@ -86,16 +95,28 @@
     "scribe_source_audit": "research_os/experiments/EXP-2026-001/scribe_source_audit.md",
     "section_policy": "external FACT/DATA source with per-record provenance; fail closed if absent or inconsistent",
     "complexity_policy": "custodian-derived tertiles of adjudicated object plus occlusion counts",
-    "held_out_exposed": false
+    "held_out_exposed": false,
+    "scribe_source_register": "research_os/sources/zl3b_scribe_source.json",
+    "scribe_source_register_sha256": "48423924a3fc2fa65e9c69e37545d0f94ca03909a467dc894bceed9bcc52a5dd",
+    "scribe_assignments": "research_os/experiments/EXP-2026-001/scribe_assignments.json",
+    "scribe_assignments_sha256": "fc13652c44d1e2473f08d0e0b2e782a337fc7a2cc69564aa45a8fc5fc0174aed",
+    "section_scribe_strata": "research_os/experiments/EXP-2026-001/section_scribe_strata.json",
+    "section_scribe_strata_sha256": "9e2e29f5f1acb39130e875d0d2500c19f6a2664cafd68dff3947166784e0b5ab",
+    "independent_leaf_groups": 94,
+    "mixed_scribe_groups": [
+      "MIXED_1_5",
+      "MIXED_2_4",
+      "MIXED_2_3"
+    ]
   },
   "limitations": [
     "Power is adequate only for a large standardized held-out folio-group effect; smaller effects remain inconclusive",
     "Two independent blind annotation submissions have not yet been produced",
     "Source provenance is verified, but required visual units and relations are not annotated",
-    "All 206 atlas records remain NOT_REVIEWED",
+    "All 204 manuscript-content records remain without independent blind review",
     "No split was generated; HELD-OUT remains unexposed",
     "An authoritative six-section map was recovered from the official Beinecke catalog and covers all 204 manuscript-content records",
-    "No authoritative complete record-to-scribe map was found; the required section-by-scribe stratified split remains blocked",
-    "Dyrygent BALANCED red-team completed from supplied evidence, not a fresh repository inspection"
+    "Dyrygent BALANCED red-team completed from supplied evidence, not a fresh repository inspection",
+    "Section and scribe strata are ready, but split creation remains blocked until independent annotations, freeze/receipt, and adjudication are complete"
   ]
 }
