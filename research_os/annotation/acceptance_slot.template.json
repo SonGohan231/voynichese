@@ -6,16 +6,16 @@
   "acceptance_slot_id": "EXP-2026-001-ROUND-001-PAIR-001",
   "max_accepted_pairs": 1,
   "output_path": "research_os/runs/EXP-2026-001/annotation-freeze-001",
-  "protocol_sha256": "5aeae93e23f2b6f3fcd94c4038fe84f731c5651d978b5d364ca862211eca06a4",
+  "protocol_sha256": "baa60373c0839a647d4fbff965bd4942840777fdc31e469d31b278eb41d9d6e4",
   "record_universe_sha256": "af494e23e637d725068259734edc1d1a160169e9d9c6e3645e5887b9b121f8c5",
   "packets": {
     "A": {
       "packet_id": "EXP-2026-001-ANNOTATOR-A",
-      "sha256": "f6fcee87601388486d6be742128ec94364bf204cb95a61ddef0ccdd589fd66ec"
+      "sha256": "b6667e31edb00bd9b0275992b26aee22e86e4a53fe8dba13555fb7dad307a456"
     },
     "B": {
       "packet_id": "EXP-2026-001-ANNOTATOR-B",
-      "sha256": "bd4209b5d053c3ad2e6061fb760ad9b83182a96cc4c2a8b5c356dbf8839aa0c3"
+      "sha256": "be8fa4f05a69a2171681f580a12ef7b5ce93b2f2c7bcb7d11644a4269cb27426"
     }
   },
   "annotator_bindings": [
