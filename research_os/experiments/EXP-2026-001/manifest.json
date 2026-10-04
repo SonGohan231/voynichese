@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 {
   "experiment_id": "EXP-2026-001",
   "title": "Held-out visual-grammar prediction",
@@ -24,11 +23,21 @@ Failed to connect to bus: Operation not permitted
     "model_builder_sees_held_out_labels": false,
     "blind_reviewers_receive_prior_pilot_result": false
   },
-  "agent_os_mission_id": "ce415186-4323-4d79-8f73-b8e124585264",
+  "agent_os_mission_id": "0856f1aa-60a8-4fea-a82e-8d15239f5542",
+  "readiness_audit": {
+    "tool": "research_os/tools/readiness.py",
+    "report": "research_os/experiments/EXP-2026-001/readiness_report.json",
+    "status": "INCONCLUSIVE_NOT_RUN",
+    "record_count": 206,
+    "eligible_record_count": 0,
+    "held_out_exposed": false
+  },
   "limitations": [
     "Power analysis not yet completed",
     "Annotator agreement threshold not yet frozen",
-    "Required crops and provenance not yet verified",
-    "Dyrygent audit returned parser-fallback output and needs independent completion"
+    "Source provenance is verified, but required visual units and relations are not annotated",
+    "All 206 atlas records remain NOT_REVIEWED",
+    "No split was generated; HELD-OUT remains unexposed",
+    "Dyrygent BALANCED red-team completed from supplied evidence, not a fresh repository inspection"
   ]
 }
