@@ -1,0 +1,3153 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "EXP-2026-001",
+  "claim_class": "DATA",
+  "source": {
+    "source_id": "ZL3B_IVTFF_SCRIBE_HANDS_2025-05-13",
+    "source_url": "https://www.voynich.nu/data/ZL3b-n.txt",
+    "source_version": "3b",
+    "source_date": "2025-05-13",
+    "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "pinned_mirror": {
+      "repository": "matthewdgreen/cipher_benchmark",
+      "commit": "729aad62d12483c549e64a2541d4f9255538c8cf",
+      "path": "benchmark/unsolved/sources/voynich/transcriptions/ZL3b-n.txt",
+      "git_blob_sha1": "2a4533ab9bdfa85db9bad602d590978953055df1"
+    }
+  },
+  "policy": {
+    "unit": "connected manuscript leaf group",
+    "aggregation": "union of source hand sets across every record in the leaf group",
+    "singleton_format": "HAND_<n>",
+    "mixed_format": "MIXED_<sorted hand ids>",
+    "mixed_is_not_new_hand": true,
+    "rosettes_alias": "atlas 85v/86r foldout -> IVTFF fRos",
+    "mixed_page_exception": "IVTFF f115r $H=@ -> hand set {2,3}"
+  },
+  "record_count": 204,
+  "group_count": 94,
+  "group_label_counts": {
+    "HAND_1": 49,
+    "HAND_2": 20,
+    "HAND_3": 14,
+    "HAND_4": 5,
+    "HAND_5": 3,
+    "MIXED_1_5": 1,
+    "MIXED_2_3": 1,
+    "MIXED_2_4": 1
+  },
+  "records": [
+    {
+      "record_id": "CANVAS-0003-1r",
+      "folio_id": "1r",
+      "group_id": "LEAF-0001",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f1r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0004-1v",
+      "folio_id": "1v",
+      "group_id": "LEAF-0001",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f1v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0005-2r",
+      "folio_id": "2r",
+      "group_id": "LEAF-0002",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f2r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0006-2v",
+      "folio_id": "2v",
+      "group_id": "LEAF-0002",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f2v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0007-3r",
+      "folio_id": "3r",
+      "group_id": "LEAF-0003",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f3r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0008-3v",
+      "folio_id": "3v",
+      "group_id": "LEAF-0003",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f3v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0009-4r",
+      "folio_id": "4r",
+      "group_id": "LEAF-0004",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f4r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0010-4v",
+      "folio_id": "4v",
+      "group_id": "LEAF-0004",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f4v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0011-5r",
+      "folio_id": "5r",
+      "group_id": "LEAF-0005",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f5r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0012-5v",
+      "folio_id": "5v",
+      "group_id": "LEAF-0005",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f5v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0013-6r",
+      "folio_id": "6r",
+      "group_id": "LEAF-0006",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f6r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0014-6v",
+      "folio_id": "6v",
+      "group_id": "LEAF-0006",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f6v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0015-7r",
+      "folio_id": "7r",
+      "group_id": "LEAF-0007",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f7r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0016-7v",
+      "folio_id": "7v",
+      "group_id": "LEAF-0007",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f7v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0017-8r",
+      "folio_id": "8r",
+      "group_id": "LEAF-0008",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f8r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0018-8v",
+      "folio_id": "8v",
+      "group_id": "LEAF-0008",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f8v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0019-9r",
+      "folio_id": "9r",
+      "group_id": "LEAF-0009",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f9r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0020-9v",
+      "folio_id": "9v",
+      "group_id": "LEAF-0009",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f9v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0021-10r",
+      "folio_id": "10r",
+      "group_id": "LEAF-0010",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f10r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0022-10v",
+      "folio_id": "10v",
+      "group_id": "LEAF-0010",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f10v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0023-11r",
+      "folio_id": "11r",
+      "group_id": "LEAF-0011",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f11r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0024-11v",
+      "folio_id": "11v",
+      "group_id": "LEAF-0011",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f11v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0025-13r",
+      "folio_id": "13r",
+      "group_id": "LEAF-0013",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f13r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0026-13v",
+      "folio_id": "13v",
+      "group_id": "LEAF-0013",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f13v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0027-14r",
+      "folio_id": "14r",
+      "group_id": "LEAF-0014",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f14r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0028-14v",
+      "folio_id": "14v",
+      "group_id": "LEAF-0014",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f14v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0029-15r",
+      "folio_id": "15r",
+      "group_id": "LEAF-0015",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f15r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0030-15v",
+      "folio_id": "15v",
+      "group_id": "LEAF-0015",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f15v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0031-16r",
+      "folio_id": "16r",
+      "group_id": "LEAF-0016",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f16r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0032-16v",
+      "folio_id": "16v",
+      "group_id": "LEAF-0016",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f16v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0033-17r",
+      "folio_id": "17r",
+      "group_id": "LEAF-0017",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f17r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0034-17v",
+      "folio_id": "17v",
+      "group_id": "LEAF-0017",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f17v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0035-18r",
+      "folio_id": "18r",
+      "group_id": "LEAF-0018",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f18r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0036-18v",
+      "folio_id": "18v",
+      "group_id": "LEAF-0018",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f18v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0037-19r",
+      "folio_id": "19r",
+      "group_id": "LEAF-0019",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f19r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0038-19v",
+      "folio_id": "19v",
+      "group_id": "LEAF-0019",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f19v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0039-20r",
+      "folio_id": "20r",
+      "group_id": "LEAF-0020",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f20r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0040-20v",
+      "folio_id": "20v",
+      "group_id": "LEAF-0020",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f20v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0041-21r",
+      "folio_id": "21r",
+      "group_id": "LEAF-0021",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f21r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0042-21v",
+      "folio_id": "21v",
+      "group_id": "LEAF-0021",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f21v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0043-22r",
+      "folio_id": "22r",
+      "group_id": "LEAF-0022",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f22r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0044-22v",
+      "folio_id": "22v",
+      "group_id": "LEAF-0022",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f22v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0045-23r",
+      "folio_id": "23r",
+      "group_id": "LEAF-0023",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f23r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0046-23v",
+      "folio_id": "23v",
+      "group_id": "LEAF-0023",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f23v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0047-24r",
+      "folio_id": "24r",
+      "group_id": "LEAF-0024",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f24r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0048-24v",
+      "folio_id": "24v",
+      "group_id": "LEAF-0024",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f24v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0049-25r",
+      "folio_id": "25r",
+      "group_id": "LEAF-0025",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f25r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0050-25v",
+      "folio_id": "25v",
+      "group_id": "LEAF-0025",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f25v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0051-26r",
+      "folio_id": "26r",
+      "group_id": "LEAF-0026",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f26r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0052-26v",
+      "folio_id": "26v",
+      "group_id": "LEAF-0026",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f26v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0053-27r",
+      "folio_id": "27r",
+      "group_id": "LEAF-0027",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f27r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0054-27v",
+      "folio_id": "27v",
+      "group_id": "LEAF-0027",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f27v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0055-28r",
+      "folio_id": "28r",
+      "group_id": "LEAF-0028",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f28r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0056-28v",
+      "folio_id": "28v",
+      "group_id": "LEAF-0028",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f28v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0057-29r",
+      "folio_id": "29r",
+      "group_id": "LEAF-0029",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f29r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0058-29v",
+      "folio_id": "29v",
+      "group_id": "LEAF-0029",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f29v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0059-30r",
+      "folio_id": "30r",
+      "group_id": "LEAF-0030",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f30r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0060-30v",
+      "folio_id": "30v",
+      "group_id": "LEAF-0030",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f30v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0061-31r",
+      "folio_id": "31r",
+      "group_id": "LEAF-0031",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f31r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0062-31v",
+      "folio_id": "31v",
+      "group_id": "LEAF-0031",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f31v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0063-32r",
+      "folio_id": "32r",
+      "group_id": "LEAF-0032",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f32r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0064-32v",
+      "folio_id": "32v",
+      "group_id": "LEAF-0032",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f32v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0065-33r",
+      "folio_id": "33r",
+      "group_id": "LEAF-0033",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f33r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0066-33v",
+      "folio_id": "33v",
+      "group_id": "LEAF-0033",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f33v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0067-34r",
+      "folio_id": "34r",
+      "group_id": "LEAF-0034",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f34r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0068-34v",
+      "folio_id": "34v",
+      "group_id": "LEAF-0034",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f34v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0069-35r",
+      "folio_id": "35r",
+      "group_id": "LEAF-0035",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f35r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0070-35v",
+      "folio_id": "35v",
+      "group_id": "LEAF-0035",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f35v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0071-36r",
+      "folio_id": "36r",
+      "group_id": "LEAF-0036",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f36r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0072-36v",
+      "folio_id": "36v",
+      "group_id": "LEAF-0036",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f36v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0073-37r",
+      "folio_id": "37r",
+      "group_id": "LEAF-0037",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f37r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0074-37v",
+      "folio_id": "37v",
+      "group_id": "LEAF-0037",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f37v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0075-38r",
+      "folio_id": "38r",
+      "group_id": "LEAF-0038",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f38r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0076-38v",
+      "folio_id": "38v",
+      "group_id": "LEAF-0038",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f38v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0077-39r",
+      "folio_id": "39r",
+      "group_id": "LEAF-0039",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f39r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0078-39v",
+      "folio_id": "39v",
+      "group_id": "LEAF-0039",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f39v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0079-40r",
+      "folio_id": "40r",
+      "group_id": "LEAF-0040",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f40r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0080-40v",
+      "folio_id": "40v",
+      "group_id": "LEAF-0040",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f40v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0081-41r",
+      "folio_id": "41r",
+      "group_id": "LEAF-0041",
+      "scribe_label": "HAND_5",
+      "record_hand_set": [
+        "5"
+      ],
+      "group_hand_set": [
+        "5"
+      ],
+      "source_pages": [
+        "f41r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0082-41v",
+      "folio_id": "41v",
+      "group_id": "LEAF-0041",
+      "scribe_label": "HAND_5",
+      "record_hand_set": [
+        "5"
+      ],
+      "group_hand_set": [
+        "5"
+      ],
+      "source_pages": [
+        "f41v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0083-42r",
+      "folio_id": "42r",
+      "group_id": "LEAF-0042",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f42r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0084-42v",
+      "folio_id": "42v",
+      "group_id": "LEAF-0042",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f42v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0085-43r",
+      "folio_id": "43r",
+      "group_id": "LEAF-0043",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f43r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0086-43v",
+      "folio_id": "43v",
+      "group_id": "LEAF-0043",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f43v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0087-44r",
+      "folio_id": "44r",
+      "group_id": "LEAF-0044",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f44r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0088-44v",
+      "folio_id": "44v",
+      "group_id": "LEAF-0044",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f44v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0089-45r",
+      "folio_id": "45r",
+      "group_id": "LEAF-0045",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f45r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0090-45v",
+      "folio_id": "45v",
+      "group_id": "LEAF-0045",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f45v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0091-46r",
+      "folio_id": "46r",
+      "group_id": "LEAF-0046",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f46r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0092-46v",
+      "folio_id": "46v",
+      "group_id": "LEAF-0046",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f46v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0093-47r",
+      "folio_id": "47r",
+      "group_id": "LEAF-0047",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f47r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0094-47v",
+      "folio_id": "47v",
+      "group_id": "LEAF-0047",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f47v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0095-48r",
+      "folio_id": "48r",
+      "group_id": "LEAF-0048",
+      "scribe_label": "HAND_5",
+      "record_hand_set": [
+        "5"
+      ],
+      "group_hand_set": [
+        "5"
+      ],
+      "source_pages": [
+        "f48r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0096-48v",
+      "folio_id": "48v",
+      "group_id": "LEAF-0048",
+      "scribe_label": "HAND_5",
+      "record_hand_set": [
+        "5"
+      ],
+      "group_hand_set": [
+        "5"
+      ],
+      "source_pages": [
+        "f48v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0097-49r",
+      "folio_id": "49r",
+      "group_id": "LEAF-0049",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f49r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0098-49v",
+      "folio_id": "49v",
+      "group_id": "LEAF-0049",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f49v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0099-50r",
+      "folio_id": "50r",
+      "group_id": "LEAF-0050",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f50r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0100-50v",
+      "folio_id": "50v",
+      "group_id": "LEAF-0050",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f50v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0101-51r",
+      "folio_id": "51r",
+      "group_id": "LEAF-0051",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f51r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0102-51v",
+      "folio_id": "51v",
+      "group_id": "LEAF-0051",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f51v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0103-52r",
+      "folio_id": "52r",
+      "group_id": "LEAF-0052",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f52r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0104-52v",
+      "folio_id": "52v",
+      "group_id": "LEAF-0052",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f52v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0105-53r",
+      "folio_id": "53r",
+      "group_id": "LEAF-0053",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f53r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0106-53v",
+      "folio_id": "53v",
+      "group_id": "LEAF-0053",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f53v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0107-54r",
+      "folio_id": "54r",
+      "group_id": "LEAF-0054",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f54r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0108-54v",
+      "folio_id": "54v",
+      "group_id": "LEAF-0054",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f54v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0109-55r",
+      "folio_id": "55r",
+      "group_id": "LEAF-0055",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f55r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0110-55v",
+      "folio_id": "55v",
+      "group_id": "LEAF-0055",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f55v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0111-56r",
+      "folio_id": "56r",
+      "group_id": "LEAF-0056",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f56r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0112-56v",
+      "folio_id": "56v",
+      "group_id": "LEAF-0056",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f56v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0113-57r",
+      "folio_id": "57r",
+      "group_id": "LEAF-0057",
+      "scribe_label": "MIXED_1_5",
+      "record_hand_set": [
+        "5"
+      ],
+      "group_hand_set": [
+        "1",
+        "5"
+      ],
+      "source_pages": [
+        "f57r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0114-57v",
+      "folio_id": "57v",
+      "group_id": "LEAF-0057",
+      "scribe_label": "MIXED_1_5",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1",
+        "5"
+      ],
+      "source_pages": [
+        "f57v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0115-58r",
+      "folio_id": "58r",
+      "group_id": "LEAF-0058",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f58r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0116-58v",
+      "folio_id": "58v",
+      "group_id": "LEAF-0058",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f58v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0117-65r",
+      "folio_id": "65r",
+      "group_id": "LEAF-0065",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f65r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0118-65v",
+      "folio_id": "65v",
+      "group_id": "LEAF-0065",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f65v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0119-66r",
+      "folio_id": "66r",
+      "group_id": "LEAF-0066",
+      "scribe_label": "HAND_5",
+      "record_hand_set": [
+        "5"
+      ],
+      "group_hand_set": [
+        "5"
+      ],
+      "source_pages": [
+        "f66r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0120-66v",
+      "folio_id": "66v",
+      "group_id": "LEAF-0066",
+      "scribe_label": "HAND_5",
+      "record_hand_set": [
+        "5"
+      ],
+      "group_hand_set": [
+        "5"
+      ],
+      "source_pages": [
+        "f66v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0121-67r",
+      "folio_id": "67r",
+      "group_id": "LEAF-0067",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f67r1",
+        "f67r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0122-67v",
+      "folio_id": "67v",
+      "group_id": "LEAF-0067",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f67v1",
+        "f67v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0123-68r",
+      "folio_id": "68r",
+      "group_id": "LEAF-0068",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f68r1",
+        "f68r2",
+        "f68r3"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0124-68v",
+      "folio_id": "68v",
+      "group_id": "LEAF-0068",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f68v1",
+        "f68v2",
+        "f68v3"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0125-69r",
+      "folio_id": "69r",
+      "group_id": "LEAF-0069",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f69r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0126-69v_and_70r",
+      "folio_id": "69v and 70r",
+      "group_id": "LEAF-0069",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f69v",
+        "f70r1",
+        "f70r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0127-70v_part",
+      "folio_id": "70v (part)",
+      "group_id": "LEAF-0069",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f70v1",
+        "f70v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0128-70v_part",
+      "folio_id": "70v (part)",
+      "group_id": "LEAF-0069",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f70v1",
+        "f70v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0129-71r",
+      "folio_id": "71r",
+      "group_id": "LEAF-0071",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f71r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0130-71v_and_72r",
+      "folio_id": "71v and 72r",
+      "group_id": "LEAF-0071",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0131-72v_part",
+      "folio_id": "72v (part)",
+      "group_id": "LEAF-0071",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f72v1",
+        "f72v2",
+        "f72v3"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0132-72v_part",
+      "folio_id": "72v (part)",
+      "group_id": "LEAF-0071",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f72v1",
+        "f72v2",
+        "f72v3"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0133-73r",
+      "folio_id": "73r",
+      "group_id": "LEAF-0073",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f73r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0134-73v",
+      "folio_id": "73v",
+      "group_id": "LEAF-0073",
+      "scribe_label": "HAND_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "4"
+      ],
+      "source_pages": [
+        "f73v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0135-75r",
+      "folio_id": "75r",
+      "group_id": "LEAF-0075",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f75r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0136-75v",
+      "folio_id": "75v",
+      "group_id": "LEAF-0075",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f75v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0137-76r",
+      "folio_id": "76r",
+      "group_id": "LEAF-0076",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f76r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0138-76v",
+      "folio_id": "76v",
+      "group_id": "LEAF-0076",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f76v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0139-77r",
+      "folio_id": "77r",
+      "group_id": "LEAF-0077",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f77r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0140-77v",
+      "folio_id": "77v",
+      "group_id": "LEAF-0077",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f77v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0141-78r",
+      "folio_id": "78r",
+      "group_id": "LEAF-0078",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f78r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0142-78v",
+      "folio_id": "78v",
+      "group_id": "LEAF-0078",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f78v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0143-79r",
+      "folio_id": "79r",
+      "group_id": "LEAF-0079",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f79r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0144-79v",
+      "folio_id": "79v",
+      "group_id": "LEAF-0079",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f79v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0145-80r",
+      "folio_id": "80r",
+      "group_id": "LEAF-0080",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f80r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0146-80v",
+      "folio_id": "80v",
+      "group_id": "LEAF-0080",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f80v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0147-81r",
+      "folio_id": "81r",
+      "group_id": "LEAF-0081",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f81r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0148-81v",
+      "folio_id": "81v",
+      "group_id": "LEAF-0081",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f81v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0149-82r",
+      "folio_id": "82r",
+      "group_id": "LEAF-0082",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f82r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0150-82v",
+      "folio_id": "82v",
+      "group_id": "LEAF-0082",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f82v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0151-83r",
+      "folio_id": "83r",
+      "group_id": "LEAF-0083",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f83r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0152-83v",
+      "folio_id": "83v",
+      "group_id": "LEAF-0083",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f83v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0153-84r",
+      "folio_id": "84r",
+      "group_id": "LEAF-0084",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f84r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0154-84v",
+      "folio_id": "84v",
+      "group_id": "LEAF-0084",
+      "scribe_label": "HAND_2",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2"
+      ],
+      "source_pages": [
+        "f84v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0155-85r_part_part_of_85-86_foldout",
+      "folio_id": "85r (part) (part of 85-86 foldout)",
+      "group_id": "LEAF-0085",
+      "scribe_label": "MIXED_2_4",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2",
+        "4"
+      ],
+      "source_pages": [
+        "f85r1",
+        "f85r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0156-85r_part_86v_part_part_of_85-86_foldout",
+      "folio_id": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "group_id": "LEAF-0085",
+      "scribe_label": "MIXED_2_4",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2",
+        "4"
+      ],
+      "source_pages": [
+        "f85r1",
+        "f85r2",
+        "f86v3",
+        "f86v4",
+        "f86v5",
+        "f86v6"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0157-86v_part_part_of_85-86_foldout",
+      "folio_id": "86v (part) (part of 85-86 foldout)",
+      "group_id": "LEAF-0085",
+      "scribe_label": "MIXED_2_4",
+      "record_hand_set": [
+        "2"
+      ],
+      "group_hand_set": [
+        "2",
+        "4"
+      ],
+      "source_pages": [
+        "f86v3",
+        "f86v4",
+        "f86v5",
+        "f86v6"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0158-85v_and_86r_foldout",
+      "folio_id": "85v and 86r (foldout)",
+      "group_id": "LEAF-0085",
+      "scribe_label": "MIXED_2_4",
+      "record_hand_set": [
+        "4"
+      ],
+      "group_hand_set": [
+        "2",
+        "4"
+      ],
+      "source_pages": [
+        "fRos"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0159-87r",
+      "folio_id": "87r",
+      "group_id": "LEAF-0087",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f87r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0160-87v",
+      "folio_id": "87v",
+      "group_id": "LEAF-0087",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f87v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0161-88r",
+      "folio_id": "88r",
+      "group_id": "LEAF-0088",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f88r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0162-88v_and_89r",
+      "folio_id": "88v and 89r",
+      "group_id": "LEAF-0088",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f88v",
+        "f89r1",
+        "f89r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0163-89v_part",
+      "folio_id": "89v (part)",
+      "group_id": "LEAF-0088",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f89v1",
+        "f89v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0164-89v_part_and_90r",
+      "folio_id": "89v (part) and 90r",
+      "group_id": "LEAF-0088",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f89v1",
+        "f89v2",
+        "f90r1",
+        "f90r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0165-90r",
+      "folio_id": "90r",
+      "group_id": "LEAF-0088",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f90r1",
+        "f90r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0166-90v_part",
+      "folio_id": "90v (part)",
+      "group_id": "LEAF-0088",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f90v1",
+        "f90v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0167-93r",
+      "folio_id": "93r",
+      "group_id": "LEAF-0093",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f93r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0168-93v",
+      "folio_id": "93v",
+      "group_id": "LEAF-0093",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f93v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0169-94r",
+      "folio_id": "94r",
+      "group_id": "LEAF-0094",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f94r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0170-94v_and_95r",
+      "folio_id": "94v and 95r",
+      "group_id": "LEAF-0094",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f94v",
+        "f95r1",
+        "f95r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0171-95v_part",
+      "folio_id": "95v (part)",
+      "group_id": "LEAF-0094",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f95v1",
+        "f95v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0172-95v",
+      "folio_id": "95v",
+      "group_id": "LEAF-0094",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f95v1",
+        "f95v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0173-96r",
+      "folio_id": "96r",
+      "group_id": "LEAF-0096",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f96r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0174-96v",
+      "folio_id": "96v",
+      "group_id": "LEAF-0096",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f96v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0175-99r",
+      "folio_id": "99r",
+      "group_id": "LEAF-0099",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f99r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0176-99v",
+      "folio_id": "99v",
+      "group_id": "LEAF-0099",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f99v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0177-100r",
+      "folio_id": "100r",
+      "group_id": "LEAF-0100",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f100r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0178-100v_and_101r",
+      "folio_id": "100v and 101r",
+      "group_id": "LEAF-0100",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f100v",
+        "f101r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0179-101v_part",
+      "folio_id": "101v (part)",
+      "group_id": "LEAF-0100",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f101v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0180-101v_part_and_102r",
+      "folio_id": "101v (part) and 102r",
+      "group_id": "LEAF-0100",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f101v",
+        "f102r1",
+        "f102r2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0181-102v_part",
+      "folio_id": "102v (part)",
+      "group_id": "LEAF-0100",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f102v1",
+        "f102v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0182-102v_part",
+      "folio_id": "102v (part)",
+      "group_id": "LEAF-0100",
+      "scribe_label": "HAND_1",
+      "record_hand_set": [
+        "1"
+      ],
+      "group_hand_set": [
+        "1"
+      ],
+      "source_pages": [
+        "f102v1",
+        "f102v2"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0183-103r",
+      "folio_id": "103r",
+      "group_id": "LEAF-0103",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f103r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0184-103v",
+      "folio_id": "103v",
+      "group_id": "LEAF-0103",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f103v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0185-104r",
+      "folio_id": "104r",
+      "group_id": "LEAF-0104",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f104r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0186-104v",
+      "folio_id": "104v",
+      "group_id": "LEAF-0104",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f104v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0187-105r",
+      "folio_id": "105r",
+      "group_id": "LEAF-0105",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f105r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0188-105v",
+      "folio_id": "105v",
+      "group_id": "LEAF-0105",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f105v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0189-106r",
+      "folio_id": "106r",
+      "group_id": "LEAF-0106",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f106r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0190-106v",
+      "folio_id": "106v",
+      "group_id": "LEAF-0106",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f106v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0191-107r",
+      "folio_id": "107r",
+      "group_id": "LEAF-0107",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f107r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0192-107v",
+      "folio_id": "107v",
+      "group_id": "LEAF-0107",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f107v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0193-108r",
+      "folio_id": "108r",
+      "group_id": "LEAF-0108",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f108r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0194-108v",
+      "folio_id": "108v",
+      "group_id": "LEAF-0108",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f108v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0195-111r",
+      "folio_id": "111r",
+      "group_id": "LEAF-0111",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f111r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0196-111v",
+      "folio_id": "111v",
+      "group_id": "LEAF-0111",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f111v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0197-112r",
+      "folio_id": "112r",
+      "group_id": "LEAF-0112",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f112r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0198-112v",
+      "folio_id": "112v",
+      "group_id": "LEAF-0112",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f112v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0199-113r",
+      "folio_id": "113r",
+      "group_id": "LEAF-0113",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f113r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0200-113v",
+      "folio_id": "113v",
+      "group_id": "LEAF-0113",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f113v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0201-114r",
+      "folio_id": "114r",
+      "group_id": "LEAF-0114",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f114r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0202-114v",
+      "folio_id": "114v",
+      "group_id": "LEAF-0114",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f114v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0203-115r",
+      "folio_id": "115r",
+      "group_id": "LEAF-0115",
+      "scribe_label": "MIXED_2_3",
+      "record_hand_set": [
+        "2",
+        "3"
+      ],
+      "group_hand_set": [
+        "2",
+        "3"
+      ],
+      "source_pages": [
+        "f115r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0204-115v",
+      "folio_id": "115v",
+      "group_id": "LEAF-0115",
+      "scribe_label": "MIXED_2_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "2",
+        "3"
+      ],
+      "source_pages": [
+        "f115v"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0205-116r",
+      "folio_id": "116r",
+      "group_id": "LEAF-0116",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f116r"
+      ]
+    },
+    {
+      "record_id": "CANVAS-0206-116v",
+      "folio_id": "116v",
+      "group_id": "LEAF-0116",
+      "scribe_label": "HAND_3",
+      "record_hand_set": [
+        "3"
+      ],
+      "group_hand_set": [
+        "3"
+      ],
+      "source_pages": [
+        "f116v"
+      ]
+    }
+  ]
+}
