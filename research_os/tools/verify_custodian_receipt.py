@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the external receipt for a complete blind-annotation freeze."""
+"""Verify a signed custodian receipt plus an independent external-registry witness."""
 
 from __future__ import annotations
 
@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 
 from verify_acceptance_slot import verify_signature
 from verify_annotation_freeze import verify_freeze
+from verify_registry_witness import verify_registry_witness
 
 
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
@@ -47,7 +48,9 @@ def receipt_semantic_errors(receipt: dict[str, Any], identity: str) -> list[str]
     if not parsed or parsed.scheme != "https" or not parsed.netloc:
         errors.append("invalid_registry_uri")
     supersedes = receipt.get("supersedes_receipt_sha256")
-    if supersedes is not None and (not isinstance(supersedes, str) or not HEX64.fullmatch(supersedes)):
+    if supersedes is not None and (
+        not isinstance(supersedes, str) or not HEX64.fullmatch(supersedes)
+    ):
         errors.append("invalid_supersedes_receipt_sha256")
     return sorted(set(errors))
 
@@ -58,12 +61,27 @@ def verify_receipt(
     signature_path: Path,
     allowed_signers_path: Path,
     identity: str,
+    registry_witness_path: Path,
+    registry_witness_signature_path: Path,
+    registry_allowed_signers_path: Path,
+    registry_identity: str,
 ) -> dict[str, Any]:
     freeze = verify_freeze(freeze_directory)
     receipt_bytes = receipt_path.read_bytes()
+    receipt_signature_bytes = signature_path.read_bytes()
     receipt = json.loads(receipt_bytes.decode("utf-8"))
     signature_valid, signature_detail = verify_signature(
         receipt_bytes, signature_path, allowed_signers_path, identity, NAMESPACE
+    )
+    registry = verify_registry_witness(
+        receipt_bytes,
+        receipt,
+        receipt_signature_bytes,
+        registry_witness_path,
+        registry_witness_signature_path,
+        registry_allowed_signers_path,
+        registry_identity,
+        identity,
     )
     errors = receipt_semantic_errors(receipt, identity)
     if freeze["status"] != "LOCAL_FREEZE_INTEGRITY_VERIFIED":
@@ -80,6 +98,8 @@ def verify_receipt(
                 errors.append(f"receipt_freeze_mismatch:{key}")
     if not signature_valid:
         errors.append("custodian_receipt_signature_invalid")
+    if registry["status"] != "REGISTRY_WITNESS_VERIFIED":
+        errors.append("external_registry_witness_invalid")
     verified = not errors
     ready = verified and receipt.get("agreement_status") == "READY_FOR_ADJUDICATION"
     return {
@@ -88,6 +108,9 @@ def verify_receipt(
         "acceptance_slot_id": receipt.get("acceptance_slot_id"),
         "registry_uri": receipt.get("registry_uri"),
         "registry_sequence": receipt.get("registry_sequence"),
+        "registry_identity": registry_identity,
+        "registry_witness_status": registry.get("status"),
+        "registry_witness_sha256": registry.get("witness_sha256"),
         "signature_namespace": NAMESPACE,
         "signature_valid": signature_valid,
         "signature_detail": signature_detail,
@@ -96,7 +119,7 @@ def verify_receipt(
         "commit_sha256": freeze.get("commit_sha256"),
         "agreement_status": receipt.get("agreement_status"),
         "ready_for_adjudication": ready,
-        "errors": sorted(set(errors)),
+        "errors": sorted(set(errors) | set(registry.get("errors", []))),
         "promotes_to_ground_truth": False,
         "unlocks_held_out": False,
     }
@@ -109,11 +132,22 @@ def main() -> int:
     parser.add_argument("signature", type=Path)
     parser.add_argument("allowed_signers", type=Path)
     parser.add_argument("--identity", required=True)
+    parser.add_argument("--registry-witness", type=Path, required=True)
+    parser.add_argument("--registry-witness-signature", type=Path, required=True)
+    parser.add_argument("--registry-allowed-signers", type=Path, required=True)
+    parser.add_argument("--registry-identity", required=True)
     args = parser.parse_args()
     try:
         result = verify_receipt(
-            args.freeze_directory, args.receipt, args.signature,
-            args.allowed_signers, args.identity,
+            args.freeze_directory,
+            args.receipt,
+            args.signature,
+            args.allowed_signers,
+            args.identity,
+            args.registry_witness,
+            args.registry_witness_signature,
+            args.registry_allowed_signers,
+            args.registry_identity,
         )
     except (OSError, ValueError, json.JSONDecodeError) as error:
         result = {
