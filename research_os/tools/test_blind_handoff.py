@@ -109,6 +109,30 @@ class BlindHandoffTests(unittest.TestCase):
                 self.bundle, self.bundle / "custody.json",
             )
 
+    def test_protocol_path_cannot_escape_repository(self):
+        packet = json.loads(self.packet.read_text(encoding="utf-8"))
+        outside = self.root / "outside-protocol.md"
+        outside.write_text("outside protocol\n", encoding="utf-8")
+        packet["protocol_path"] = "../outside-protocol.md"
+        packet["protocol_sha256"] = hashlib.sha256(outside.read_bytes()).hexdigest()
+        self.packet.write_text(json.dumps(packet), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "repository root"):
+            build_handoff(
+                self.repo, self.packet, self.ui, self.seed, self.bundle, self.custody
+            )
+
+    def test_source_path_cannot_escape_repository(self):
+        packet = json.loads(self.packet.read_text(encoding="utf-8"))
+        outside = self.root / "outside-image.jpg"
+        outside.write_bytes(b"outside-image")
+        packet["records"][0]["source_path"] = "../outside-image.jpg"
+        packet["records"][0]["source_sha256"] = hashlib.sha256(outside.read_bytes()).hexdigest()
+        self.packet.write_text(json.dumps(packet), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "repository root"):
+            build_handoff(
+                self.repo, self.packet, self.ui, self.seed, self.bundle, self.custody
+            )
+
     def test_world_readable_seed_is_rejected(self):
         self.seed.chmod(0o644)
         with self.assertRaisesRegex(ValueError, "permissions"):

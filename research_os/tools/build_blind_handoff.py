@@ -47,6 +47,21 @@ def ensure_outside_bundle(bundle_dir: Path, custody_map_path: Path) -> None:
         raise ValueError("custody map must be outside the annotator bundle")
 
 
+def resolve_repo_relative_file(repo_root: Path, value: str, label: str) -> tuple[Path, str]:
+    relative = Path(value)
+    if relative.is_absolute():
+        raise ValueError(f"{label} must be repository-relative")
+    root = repo_root.resolve()
+    candidate = (root / relative).resolve()
+    try:
+        normalized = candidate.relative_to(root)
+    except ValueError as error:
+        raise ValueError(f"{label} escapes repository root") from error
+    if not candidate.is_file():
+        raise ValueError(f"{label} file is missing")
+    return candidate, normalized.as_posix()
+
+
 def build_handoff(
     repo_root: Path,
     canonical_packet_path: Path,
@@ -71,14 +86,15 @@ def build_handoff(
     protocol_rel = canonical_packet.get("protocol_path")
     if not isinstance(protocol_rel, str) or not protocol_rel:
         raise ValueError("canonical packet protocol_path missing")
-    protocol_source = repo_root / protocol_rel
-    if not protocol_source.is_file():
-        raise ValueError("canonical protocol file is missing")
+    protocol_source, protocol_rel = resolve_repo_relative_file(
+        repo_root, protocol_rel, "canonical protocol"
+    )
     if sha256_bytes(protocol_source.read_bytes()) != canonical_packet.get("protocol_sha256"):
         raise ValueError("protocol bytes do not match canonical packet")
 
     handoff_records = []
     custody_records = []
+    copy_sources: dict[str, Path] = {}
     seen_opaque = set()
     for record in records:
         original_id = record.get("record_id")
@@ -86,9 +102,9 @@ def build_handoff(
         source_sha = record.get("source_sha256")
         if not all(isinstance(value, str) and value for value in (original_id, original_path, source_sha)):
             raise ValueError("canonical packet record is incomplete")
-        source_file = repo_root / original_path
-        if not source_file.is_file():
-            raise ValueError(f"missing source image:{original_id}")
+        source_file, original_path = resolve_repo_relative_file(
+            repo_root, original_path, f"source image:{original_id}"
+        )
         source_bytes = source_file.read_bytes()
         if sha256_bytes(source_bytes) != source_sha:
             raise ValueError(f"source image SHA-256 mismatch:{original_id}")
@@ -97,6 +113,7 @@ def build_handoff(
         if opaque in seen_opaque:
             raise ValueError("opaque identifier collision")
         seen_opaque.add(opaque)
+        copy_sources[opaque] = source_file
         source_commitment = keyed_hex(seed, "source-commitment", source_sha)
         extension = source_file.suffix.lower() or ".img"
         blinded_path = f"blind_images/{opaque}{extension}"
@@ -168,7 +185,7 @@ def build_handoff(
         handoff_packet_path.write_bytes(handoff_raw)
 
         for item in custody_records:
-            source_file = repo_root / item["original_source_path"]
+            source_file = copy_sources[item["opaque_record_id"]]
             target = bundle_dir / item["bundled_source_path"]
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source_file, target)
