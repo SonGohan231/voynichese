@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 #!/usr/bin/env python3
 """Verify the complete local blind-annotation freeze before receipt/adjudication."""
 
