@@ -21,6 +21,7 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `experiments/EXP-2026-001/preregistration.md` — zamrożony szkic pierwszego testu.
 - `experiments/EXP-2026-001/manifest.json` — maszynowy manifest stanu eksperymentu.
 - `artifacts/AUTO_CANDIDATE_FINAL_V1.json` — proweniencja pełnego przebiegu 206 automatycznych kandydatur; nie są ground truth ani blind annotations.
+- `artifacts/AUTO_CANDIDATE_WORKLOAD_PROFILE.json` — wyłącznie profil obciążenia anotacyjnego, bez prawa użycia jako etykiety lub dowód hipotezy.
 - `annotation/packets/` — dwa hermetyczne pakiety źródłowe dla niezależnych annotatorów; każdy obejmuje ten sam zamrożony zbiór 183 foliów i nie zawiera kandydatur, predykcji ani splitu.
 
 Status dokumentów jest jawny. Prerejestracja jest projektem protokołu, nie wynikiem eksperymentu.
