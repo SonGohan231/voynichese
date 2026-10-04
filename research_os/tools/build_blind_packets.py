@@ -18,6 +18,8 @@ FORBIDDEN_INPUTS = [
     "model predictions",
     "hypothesis labels and prior pilot outcomes",
     "TRAIN, VALIDATION or HELD_OUT assignments",
+    "section or scribe labels and lookup tables",
+    "folio identity lookup beyond the pseudonymized handoff",
 ]
 
 
