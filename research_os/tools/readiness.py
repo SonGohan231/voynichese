@@ -347,6 +347,10 @@ def main() -> int:
     parser.add_argument("--receipt-signature", type=Path)
     parser.add_argument("--allowed-signers", type=Path)
     parser.add_argument("--custodian-identity")
+    parser.add_argument("--registry-witness", type=Path)
+    parser.add_argument("--registry-witness-signature", type=Path)
+    parser.add_argument("--registry-allowed-signers", type=Path)
+    parser.add_argument("--registry-identity")
     parser.add_argument("--sealed-split-directory", type=Path)
     parser.add_argument("--custodian-certificate", type=Path)
     parser.add_argument("--seed-file", type=Path)
@@ -367,15 +371,20 @@ def main() -> int:
         chain_args = (
             args.freeze_directory, args.custodian_receipt, args.receipt_signature,
             args.allowed_signers, args.custodian_identity,
+            args.registry_witness, args.registry_witness_signature,
+            args.registry_allowed_signers, args.registry_identity,
         )
         if any(value is None for value in chain_args):
             parser.error(
-                "adjudication readiness also requires --freeze-directory, --custodian-receipt, "
-                "--receipt-signature, --allowed-signers, and --custodian-identity"
+                "adjudication readiness also requires the complete signed freeze/receipt chain plus "
+                "--registry-witness, --registry-witness-signature, --registry-allowed-signers, "
+                "and --registry-identity"
             )
         receipt_verification = verify_receipt(
             args.freeze_directory, args.custodian_receipt, args.receipt_signature,
             args.allowed_signers, args.custodian_identity,
+            args.registry_witness, args.registry_witness_signature,
+            args.registry_allowed_signers, args.registry_identity,
         )
         packet_bytes = args.adjudication_packet.read_bytes()
         packet = json.loads(packet_bytes.decode("utf-8"))
