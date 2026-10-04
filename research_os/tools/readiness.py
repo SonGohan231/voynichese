@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 #!/usr/bin/env python3
 """Fail-closed readiness audit and grouped split planner for EXP-2026-001."""
 
@@ -188,7 +187,9 @@ def bind_adjudication_evidence_chain(
 
 
 def deterministic_group_split(
-    records: list[dict[str, Any]], report: dict[str, Any], seed: str
+    records: list[dict[str, Any]], report: dict[str, Any], seed: str,
+    strata_manifest: dict[str, Any] | None = None,
+    adjudication: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     if report["status"] != "READY_FOR_SPLIT":
         failed = [name for name, passed in report["gates"].items() if not passed]
@@ -199,16 +200,20 @@ def deterministic_group_split(
     for record in records:
         if record["record_id"] in eligible:
             by_group[keys[record["record_id"]]].append(record["record_id"])
-    groups = sorted(by_group)
-    random.Random(seed).shuffle(groups)
-    total = len(groups)
-    train_end = round(total * SPLITS[0][1])
-    validation_end = train_end + round(total * SPLITS[1][1])
-    assigned = {
-        "TRAIN": groups[:train_end],
-        "VALIDATION": groups[train_end:validation_end],
-        "HELD_OUT": groups[validation_end:],
-    }
+    group_strata = compile_group_strata(records, by_group, strata_manifest, adjudication)
+    strata: dict[str, list[str]] = defaultdict(list)
+    for group, stratum in group_strata.items():
+        strata[stratum].append(group)
+    assigned = {name: [] for name, _ in SPLITS}
+    for stratum in sorted(strata):
+        groups = sorted(strata[stratum])
+        random.Random(f"{seed}:{stratum}").shuffle(groups)
+        counts = proportional_counts(len(groups))
+        offset = 0
+        for (split, _), count in zip(SPLITS, counts):
+            assigned[split].extend(groups[offset:offset + count])
+            offset += count
+    rebalance_global_counts(assigned, group_strata)
     assignments = {
         split: sorted(record_id for group in split_groups for record_id in by_group[group])
         for split, split_groups in assigned.items()
@@ -219,10 +224,104 @@ def deterministic_group_split(
         "experiment_id": "EXP-2026-001",
         "seed": seed,
         "grouping_policy": "connected manuscript leaf numbers; compound/foldout records union groups",
+        "stratification_policy": (
+            "custodian-provided section with provenance; deterministic complexity tertiles from "
+            "adjudicated object plus occlusion counts"
+        ),
+        "stratum_group_counts": dict(sorted(Counter(group_strata.values()).items())),
         "assignments_sha256": hashlib.sha256(digest_input.encode()).hexdigest(),
         "group_counts": {name: len(values) for name, values in assigned.items()},
         "assignments": assignments,
     }
+
+
+def proportional_counts(total: int) -> list[int]:
+    """Largest-remainder 60/20/20 allocation, deterministic on declared split order."""
+    raw = [total * fraction for _, fraction in SPLITS]
+    counts = [int(value) for value in raw]
+    for index in sorted(range(len(raw)), key=lambda i: (-(raw[i] - counts[i]), i))[:total - sum(counts)]:
+        counts[index] += 1
+    return counts
+
+
+def rebalance_global_counts(
+    assigned: dict[str, list[str]], group_strata: dict[str, str]
+) -> None:
+    """Meet exact global ratios while minimizing squared within-stratum deviation."""
+    names = [name for name, _ in SPLITS]
+    targets = dict(zip(names, proportional_counts(len(group_strata))))
+    stratum_totals = Counter(group_strata.values())
+    while any(len(assigned[name]) != targets[name] for name in names):
+        donor = next(name for name in names if len(assigned[name]) > targets[name])
+        receiver = next(name for name in names if len(assigned[name]) < targets[name])
+        before = Counter((group_strata[group], split) for split in names for group in assigned[split])
+
+        def penalty(group: str) -> tuple[float, str]:
+            stratum = group_strata[group]
+            total = stratum_totals[stratum]
+            expected = {name: total * fraction for name, fraction in SPLITS}
+            current = {name: before[(stratum, name)] for name in names}
+            old = sum((current[name] - expected[name]) ** 2 for name in names)
+            current[donor] -= 1
+            current[receiver] += 1
+            new = sum((current[name] - expected[name]) ** 2 for name in names)
+            return new - old, group
+
+        selected = min(assigned[donor], key=penalty)
+        assigned[donor].remove(selected)
+        assigned[receiver].append(selected)
+
+
+def compile_group_strata(
+    records: list[dict[str, Any]],
+    by_group: dict[str, list[str]],
+    manifest: dict[str, Any] | None,
+    adjudication: dict[str, Any] | None,
+) -> dict[str, str]:
+    """Validate external section provenance and derive non-color complexity bins."""
+    if manifest is None or adjudication is None:
+        raise ValueError("split refused; section strata manifest and adjudication are required")
+    if manifest.get("schema_version") != "1.0" or manifest.get("experiment_id") != "EXP-2026-001":
+        raise ValueError("split refused; invalid strata manifest identity")
+    entries = manifest.get("records")
+    if not isinstance(entries, list):
+        raise ValueError("split refused; strata manifest records must be a list")
+    by_record = {}
+    for entry in entries:
+        record_id = entry.get("record_id")
+        provenance = entry.get("provenance", {})
+        if (
+            not record_id or record_id in by_record
+            or not isinstance(entry.get("section_label"), str) or not entry["section_label"].strip()
+            or entry.get("claim_class") not in {"FACT", "DATA"}
+            or not isinstance(provenance.get("source_reference"), str)
+            or not provenance["source_reference"].strip()
+            or not re.fullmatch(r"[0-9a-f]{64}", str(provenance.get("source_sha256", "")))
+        ):
+            raise ValueError("split refused; invalid or duplicate section-strata entry")
+        by_record[record_id] = entry
+    eligible_ids = {record_id for values in by_group.values() for record_id in values}
+    if set(by_record) != eligible_ids:
+        raise ValueError("split refused; section strata must cover exactly all eligible records")
+    adjudicated = {item.get("record_id"): item for item in adjudication.get("records", [])}
+    if not eligible_ids <= set(adjudicated):
+        raise ValueError("split refused; adjudication does not cover all stratified records")
+    group_rows = []
+    for group, record_ids in sorted(by_group.items()):
+        sections = {by_record[record_id]["section_label"].strip() for record_id in record_ids}
+        if len(sections) != 1:
+            raise ValueError(f"split refused; connected group {group} crosses section labels")
+        complexity = sum(
+            len(adjudicated[record_id].get("objects", []))
+            + len(adjudicated[record_id].get("occlusions", []))
+            for record_id in record_ids
+        )
+        group_rows.append((group, next(iter(sections)), complexity))
+    ranked = sorted(group_rows, key=lambda row: (row[2], row[0]))
+    bins = {}
+    for rank, (group, _, _) in enumerate(ranked):
+        bins[group] = ("LOW", "MEDIUM", "HIGH")[min(2, (3 * rank) // len(ranked))]
+    return {group: f"{section}::{bins[group]}" for group, section, _ in group_rows}
 
 
 def main() -> int:
@@ -241,6 +340,7 @@ def main() -> int:
     parser.add_argument("--sealed-split-directory", type=Path)
     parser.add_argument("--custodian-certificate", type=Path)
     parser.add_argument("--seed-file", type=Path)
+    parser.add_argument("--strata-manifest", type=Path)
     args = parser.parse_args()
     if args.split:
         parser.error(
@@ -290,13 +390,18 @@ def main() -> int:
         if args.seed_file.stat().st_mode & (stat.S_IRWXG | stat.S_IRWXO):
             parser.error("seed file permissions must not grant group or other access")
         seed_bytes = args.seed_file.read_bytes()
-        split = deterministic_group_split(records, report, seed_bytes.hex())
+        if args.strata_manifest is None:
+            parser.error("sealed split requires --strata-manifest with section provenance")
         try:
+            strata_manifest = json.loads(args.strata_manifest.read_text(encoding="utf-8"))
+            split = deterministic_group_split(
+                records, report, seed_bytes.hex(), strata_manifest, adjudication
+            )
             sealed_manifest = seal_split(
                 split, adjudication, seed_bytes,
                 args.custodian_certificate, args.sealed_split_directory,
             )
-        except (OSError, ValueError, KeyError) as error:
+        except (OSError, ValueError, KeyError, json.JSONDecodeError) as error:
             parser.error(f"sealed split failed: {error}")
         report["sealed_split"] = {
             "status": sealed_manifest["status"],

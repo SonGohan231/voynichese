@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "section_strata.schema.json",
+  "title": "EXP-2026-001 externally sourced section strata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "experiment_id", "records"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "experiment_id": {"const": "EXP-2026-001"},
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["record_id", "section_label", "claim_class", "provenance"],
+        "properties": {
+          "record_id": {"type": "string", "minLength": 1},
+          "section_label": {"type": "string", "minLength": 1},
+          "claim_class": {"enum": ["FACT", "DATA"]},
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["source_reference", "source_sha256"],
+            "properties": {
+              "source_reference": {"type": "string", "minLength": 1},
+              "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

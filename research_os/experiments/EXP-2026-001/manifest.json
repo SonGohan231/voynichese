@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 {
   "experiment_id": "EXP-2026-001",
   "title": "Held-out visual-grammar prediction",
@@ -74,12 +73,22 @@ Failed to connect to bus: Operation not permitted
     "minimum_detectable_standardized_effect": 0.7267819577024782,
     "smaller_effect_policy": "INCONCLUSIVE"
   },
+  "stratification_gate": {
+    "status": "MISSING_AUTHORITATIVE_SECTION_MAP",
+    "schema": "research_os/experiments/EXP-2026-001/section_strata.schema.json",
+    "schema_sha256": "a981be92328bd870b87fb1911d2ea596b83d883e3047e7e7b16f95a8ab4ee337",
+    "source_audit": "research_os/experiments/EXP-2026-001/section_strata_source_audit.md",
+    "section_policy": "external FACT/DATA source with per-record provenance; fail closed if absent or inconsistent",
+    "complexity_policy": "custodian-derived tertiles of adjudicated object plus occlusion counts",
+    "held_out_exposed": false
+  },
   "limitations": [
     "Power is adequate only for a large standardized held-out folio-group effect; smaller effects remain inconclusive",
     "Two independent blind annotation submissions have not yet been produced",
     "Source provenance is verified, but required visual units and relations are not annotated",
     "All 206 atlas records remain NOT_REVIEWED",
     "No split was generated; HELD-OUT remains unexposed",
+    "No authoritative complete folio-to-section map was found in the Drive bootstrap index or targeted Drive search; stratified split is blocked",
     "Dyrygent BALANCED red-team completed from supplied evidence, not a fresh repository inspection"
   ]
 }

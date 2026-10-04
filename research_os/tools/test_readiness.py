@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 import copy
 import hashlib
 import subprocess
@@ -37,6 +36,27 @@ class ReadinessTests(unittest.TestCase):
     def eligible_records(self):
         return [record(f"R{i:02d}", f"{i}r") for i in range(1, 21)]
 
+    def strata_inputs(self, records):
+        manifest = {
+            "schema_version": "1.0",
+            "experiment_id": "EXP-2026-001",
+            "records": [{
+                "record_id": item["record_id"],
+                "section_label": "SECTION_A" if index < len(records) / 2 else "SECTION_B",
+                "claim_class": "DATA",
+                "provenance": {
+                    "source_reference": "drive:test-section-register",
+                    "source_sha256": "c" * 64,
+                },
+            } for index, item in enumerate(records)],
+        }
+        adjudication = {"records": [{
+            "record_id": item["record_id"],
+            "objects": [{}] * (1 + index % 5),
+            "occlusions": [{}] * (index % 3),
+        } for index, item in enumerate(records)]}
+        return manifest, adjudication
+
     def test_unannotated_data_refuses_split(self):
         item = record("R1", "1r", reviewed=False)
         item["page_inventory"]["regions"] = []
@@ -50,12 +70,41 @@ class ReadinessTests(unittest.TestCase):
     def test_split_is_deterministic_and_disjoint(self):
         records = self.eligible_records()
         report = build_readiness_report(records)
-        left = deterministic_group_split(records, report, "frozen-seed")
-        right = deterministic_group_split(copy.deepcopy(records), report, "frozen-seed")
+        manifest, adjudication = self.strata_inputs(records)
+        left = deterministic_group_split(records, report, "frozen-seed", manifest, adjudication)
+        right = deterministic_group_split(
+            copy.deepcopy(records), report, "frozen-seed", manifest, adjudication
+        )
         self.assertEqual(left, right)
         sets = [set(left["assignments"][name]) for name in ("TRAIN", "VALIDATION", "HELD_OUT")]
         self.assertFalse(sets[0] & sets[1] or sets[0] & sets[2] or sets[1] & sets[2])
         self.assertEqual([12, 4, 4], [len(value) for value in sets])
+        self.assertEqual(6, len(left["stratum_group_counts"]))
+
+    def test_split_refuses_missing_strata(self):
+        records = self.eligible_records()
+        report = build_readiness_report(records)
+        with self.assertRaisesRegex(ValueError, "section strata manifest"):
+            deterministic_group_split(records, report, "seed")
+
+    def test_split_refuses_incomplete_strata(self):
+        records = self.eligible_records()
+        report = build_readiness_report(records)
+        manifest, adjudication = self.strata_inputs(records)
+        manifest["records"].pop()
+        with self.assertRaisesRegex(ValueError, "cover exactly"):
+            deterministic_group_split(records, report, "seed", manifest, adjudication)
+
+    def test_split_refuses_section_conflict_inside_connected_leaf_group(self):
+        records = [record(f"R{i:02d}", f"{i}r") for i in range(1, 20)]
+        records.extend([record("R69", "69v_and_70r"), record("R70", "70v")])
+        report = build_readiness_report(records)
+        manifest, adjudication = self.strata_inputs(records)
+        by_id = {item["record_id"]: item for item in manifest["records"]}
+        by_id["R69"]["section_label"] = "SECTION_A"
+        by_id["R70"]["section_label"] = "SECTION_B"
+        with self.assertRaisesRegex(ValueError, "crosses section labels"):
+            deterministic_group_split(records, report, "seed", manifest, adjudication)
 
     def test_compound_folio_prevents_leaf_leakage(self):
         records = [record("R69", "69v_and_70r"), record("R70", "70v")]

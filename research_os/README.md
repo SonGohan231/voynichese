@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 # Voynich Research OS
 
 Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promptem z 2026-10-04.
@@ -56,9 +55,10 @@ python3 research_os/tools/readiness.py atlas/records \
   --sealed-split-directory research_os/runs/EXP-2026-001/sealed-split-001 \
   --custodian-certificate custodian-encryption-cert.pem \
   --seed-file private-split-seed.bin \
+  --strata-manifest custodian-section-strata.json \
   --report research_os/experiments/EXP-2026-001/readiness_report.json
 ```
 
-Nie należy przekazywać gotowego raportu walidacyjnego jako substytutu danych wejściowych. `readiness.py` ponownie weryfikuje podpisany receipt, lokalny freeze, powiązanie receipt→pakiet, dokładne bajty adjudykacji, kompletny zbiór `FOLIO`, checksumy źródeł i co najmniej 15 niezależnych grup liści. Seed musi mieć co najmniej 32 losowe bajty, być zwykłym plikiem bez dostępu dla grupy/innych i nigdy nie trafić do repozytorium. Certyfikat jest publicznym certyfikatem szyfrującym custodiana; klucz prywatny pozostaje poza środowiskiem badawczym.
+Nie należy przekazywać gotowego raportu walidacyjnego jako substytutu danych wejściowych. `readiness.py` ponownie weryfikuje podpisany receipt, lokalny freeze, powiązanie receipt→pakiet, dokładne bajty adjudykacji, kompletny zbiór `FOLIO`, checksumy źródeł i co najmniej 15 niezależnych grup liści. Manifest sekcji musi spełniać `experiments/EXP-2026-001/section_strata.schema.json`, pokrywać dokładnie kwalifikowane rekordy i zawierać proweniencję z SHA-256; bez niego split jest odrzucany. Seed musi mieć co najmniej 32 losowe bajty, być zwykłym plikiem bez dostępu dla grupy/innych i nigdy nie trafić do repozytorium. Certyfikat jest publicznym certyfikatem szyfrującym custodiana; klucz prywatny pozostaje poza środowiskiem badawczym.
 
 Wynikiem sealed workflow są: zaszyfrowany CMS `custodian-split.p7m`, publiczny manifest commitmentów oraz `model-development.json`. Ten ostatni zawiera wyłącznie TRAIN/VALIDATION, pseudonimowe ID HMAC i geometrię/etykiety adjudykacyjne; nie zawiera folio, ścieżek, source checksum, source refs ani rekordów HELD_OUT.

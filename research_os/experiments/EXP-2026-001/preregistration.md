@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 # EXP-2026-001 — held-out visual-grammar prediction
 
 Status: **DRAFT / NOT RUN**  
@@ -50,6 +49,17 @@ Jeśli dowolna z bramek 1–6 nie przejdzie, wynik eksperymentu to `INCONCLUSIVE
 - VALIDATION: 20% foliów; wyłącznie wybór z góry ograniczonego wariantu modelu.
 - HELD-OUT: 20% foliów; niedostępny dla Geometry, Homology i Perspective do chwili zamrożenia modelu i predykcji.
 - Split jest deterministyczny z zapisanym seedem, stratyfikowany według sekcji i poziomu złożoności.
+
+Mapa sekcji musi pochodzić z jawnego źródła z checksumą i pokrywać dokładnie wszystkie
+kwalifikowane rekordy zgodnie z `section_strata.schema.json`. Indeks bootstrap Drive z
+2026-05-17 oraz ukierunkowane wyszukiwanie Drive nie ujawniły autorytatywnej mapy
+folio→sekcja, dlatego żadna mapa nie została odtworzona z pamięci ani domysłu. Brak mapy,
+brak proweniencji lub różne sekcje wewnątrz połączonej grupy liścia blokują split.
+
+Poziom złożoności jest wyliczany przez custodiana dopiero z zamrożonej adjudykacji jako
+suma liczby obiektów i skierowanych relacji okluzji w grupie liścia. Grupy uszeregowane
+deterministycznie według `(wynik, group_id)` są dzielone na tertyle LOW/MEDIUM/HIGH.
+Kolor, intensywność, wynik modelu ani HELD-OUT nie uczestniczą w tej definicji.
 
 Dokładna liczebność zostanie wpisana przed uruchomieniem po audycie dostępnych jednostek; nie wolno dobierać liczby po wyniku.
 
