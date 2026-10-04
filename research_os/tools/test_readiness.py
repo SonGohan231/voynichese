@@ -1,7 +1,10 @@
 Failed to connect to bus: Operation not permitted
 import copy
 import hashlib
+import subprocess
+import sys
 import unittest
+from pathlib import Path
 
 from readiness import (
     bind_adjudication_evidence_chain,
@@ -127,6 +130,17 @@ class ReadinessTests(unittest.TestCase):
         result = bind_adjudication_evidence_chain(validation, verified, b"receipt", forged)
         self.assertEqual(result["status"], "ADJUDICATION_REJECTED")
         self.assertIn("adjudication_evidence_chain_invalid", result["errors"])
+
+    def test_cli_refuses_cleartext_heldout_materialization(self):
+        tool = Path(__file__).with_name("readiness.py")
+        process = subprocess.run(
+            [sys.executable, str(tool), "unused-records", "--split", "forbidden.json", "--seed", "seed"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(process.returncode, 2)
+        self.assertIn("cleartext --split materialization is disabled", process.stderr)
 
 
 if __name__ == "__main__":

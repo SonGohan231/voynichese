@@ -40,7 +40,7 @@ python3 research_os/tools/readiness.py atlas/records \
   --report research_os/experiments/EXP-2026-001/readiness_report.json
 ```
 
-Kod wyjścia `2` oznacza bezpieczne niespełnienie bramek naukowych. W tym stanie split nie jest zapisywany, a HELD-OUT pozostaje nieodsłonięty. Split można zmaterializować dopiero po statusie `READY_FOR_SPLIT`, z jawnie zamrożonym seedem i ścieżką `--split`.
+Kod wyjścia `2` oznacza bezpieczne niespełnienie bramek naukowych. W tym stanie split nie jest zapisywany, a HELD-OUT pozostaje nieodsłonięty. Dawna ścieżka `--split` jest twardo wyłączona także po `READY_FOR_SPLIT`, ponieważ zapisywała HELD_OUT jawnym tekstem. Produkcja wymaga zaszyfrowanego splitu custodiana i izolowanego pakietu TRAIN/VALIDATION bez pełnego uniwersum rekordów.
 
 Po podpisanym freeze, receipt i zakończonej adjudykacji readiness sam ponownie sprawdza dokładne bajty pakietu i submission:
 

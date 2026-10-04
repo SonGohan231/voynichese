@@ -46,4 +46,4 @@ python3 research_os/tools/readiness.py atlas/records \
   --report research_os/experiments/EXP-2026-001/readiness_report.json
 ```
 
-Only `READY_FOR_SPLIT` permits materializing the preregistered grouped split. Readiness still returns `held_out_exposed=false`; downstream tooling must keep the HELD-OUT assignment from model developers and annotators.
+Only `READY_FOR_SPLIT` permits entering the sealed custodian split workflow. Cleartext `--split` output is disabled. Readiness still returns `held_out_exposed=false`; downstream tooling must encrypt the full assignment and give model developers only an isolated, opaque TRAIN/VALIDATION package that does not reveal the full record universe.

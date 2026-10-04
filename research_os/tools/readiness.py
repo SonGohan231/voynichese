@@ -237,6 +237,11 @@ def main() -> int:
     parser.add_argument("--allowed-signers", type=Path)
     parser.add_argument("--custodian-identity")
     args = parser.parse_args()
+    if args.split:
+        parser.error(
+            "cleartext --split materialization is disabled because it exposes HELD_OUT; "
+            "use the sealed custodian split workflow"
+        )
     records = load_records(args.records_dir)
     if bool(args.adjudication_packet) != bool(args.adjudication):
         parser.error("--adjudication-packet and --adjudication must be provided together")
@@ -269,11 +274,6 @@ def main() -> int:
         args.report.write_text(rendered, encoding="utf-8")
     else:
         print(rendered, end="")
-    if args.split:
-        if not args.seed:
-            parser.error("--split requires --seed")
-        split = deterministic_group_split(records, report, args.seed)
-        args.split.write_text(json.dumps(split, indent=2) + "\n", encoding="utf-8")
     return 0 if report["status"] == "READY_FOR_SPLIT" else 2
 
 

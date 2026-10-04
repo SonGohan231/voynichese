@@ -1,3 +1,4 @@
+Failed to connect to bus: Operation not permitted
 # EXP-2026-001 — held-out visual-grammar prediction
 
 Status: **DRAFT / NOT RUN**  
@@ -51,6 +52,14 @@ Jeśli dowolna z bramek 1–6 nie przejdzie, wynik eksperymentu to `INCONCLUSIVE
 - Split jest deterministyczny z zapisanym seedem, stratyfikowany według sekcji i poziomu złożoności.
 
 Dokładna liczebność zostanie wpisana przed uruchomieniem po audycie dostępnych jednostek; nie wolno dobierać liczby po wyniku.
+
+### Korekta firewalla przed uruchomieniem — 2026-10-04
+
+Pierwotny interfejs diagnostyczny `readiness.py --split` mógł zapisać wszystkie trzy listy, w tym HELD-OUT, jawnym tekstem. Został wyłączony przed powstaniem adnotacji, adjudykacji, seedu lub splitu. Nie zmienia to proporcji 60/20/20, jednostki grupowania, hipotezy, metryki ani planu mocy.
+
+Produkcyjny split musi zostać utworzony w środowisku custodiana. Pełne przypisania, seed i mapowanie identyfikatorów muszą zostać zaszyfrowane dla custodiana. Geometry/Perspective otrzymują wyłącznie izolowany pakiet TRAIN/VALIDATION z nieodwracalnie zamaskowanymi identyfikatorami i bez repozytorium, atlasu, ścieżek źródłowych oraz listy pełnego uniwersum. Zamrożony model jest później uruchamiany przez custodiana na HELD-OUT; deweloper modelu nie otrzymuje jego rekordów ani etykiet.
+
+Samo ukrycie listy HELD-OUT przy jednoczesnym ujawnieniu pełnego uniwersum oraz TRAIN/VALIDATION byłoby niewystarczające, ponieważ dopełnienie zdradzałoby przypisanie. Każdy pakiet deweloperski zawierający taki przeciek unieważnia eksperyment jako `INCONCLUSIVE`.
 
 ## Role i firewall
 
