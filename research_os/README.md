@@ -27,7 +27,7 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `tools/build_blind_handoff.py` — tworzy oddzielny bundle A/B z opaque ID, opaque filenames i tajnym source commitmentem; custody map i seed pozostają poza bundle/repo.
 - `tools/unblind_annotation.py` — custodian-only konwersja exportu handoff z powrotem do kanonicznych ID/SHA bez zmiany etykiet.
 - `annotation/blind_handoff_annotation.schema.json` — kontrakt produkcyjnego exportu przed unblindingiem.
-- `annotation/acceptance_slot.*` oraz `custodian_receipt.*` — podpisywane bramki jednej pary i zewnętrznego receipt.
+- `annotation/acceptance_slot.*`, `custodian_receipt.*` i `registry_witness.*` — podpisywane bramki jednej pary, receipt custodiana oraz niezależne kryptograficzne potwierdzenie zewnętrznego rejestru.
 - `experiments/EXP-2026-001/scribe_assignments.json` — kompletna, wersjonowana mapa 204 rekordów do 94 grup skrybów, z trzema jawnymi grupami `MIXED_*`.
 - `experiments/EXP-2026-001/section_scribe_strata.json` — zamrożony manifest sekcja+skryba dla przyszłego splitu.
 - `adjudication/` — neutralny kontrakt adjudykacji oraz schemat zweryfikowanego wyniku.
@@ -59,6 +59,10 @@ python3 research_os/tools/readiness.py atlas/records \
   --receipt-signature custodian-receipt.json.sig \
   --allowed-signers allowed_signers \
   --custodian-identity CUSTODIAN_IDENTITY \
+  --registry-witness registry-witness.json \
+  --registry-witness-signature registry-witness.json.sig \
+  --registry-allowed-signers registry_allowed_signers \
+  --registry-identity REGISTRY_IDENTITY \
   --adjudication-packet adjudication-packet.json \
   --adjudication adjudication-submission.json \
   --sealed-split-directory research_os/runs/EXP-2026-001/sealed-split-001 \
@@ -68,6 +72,6 @@ python3 research_os/tools/readiness.py atlas/records \
   --report research_os/experiments/EXP-2026-001/readiness_report.json
 ```
 
-Nie należy przekazywać gotowego raportu walidacyjnego jako substytutu danych wejściowych. `readiness.py` ponownie weryfikuje podpisany receipt, lokalny freeze, powiązanie receipt→pakiet, dokładne bajty adjudykacji, kompletny zbiór `FOLIO`, checksumy źródeł i co najmniej 15 niezależnych grup liści. Manifest sekcja+skryba musi spełniać `experiments/EXP-2026-001/section_strata.schema.json`, pokrywać dokładnie kwalifikowane rekordy i zawierać proweniencję z SHA-256 dla obu warstw; bez niego split jest odrzucany. Seed musi mieć co najmniej 32 losowe bajty, być zwykłym plikiem bez dostępu dla grupy/innych i nigdy nie trafić do repozytorium. Certyfikat jest publicznym certyfikatem szyfrującym custodiana; klucz prywatny pozostaje poza środowiskiem badawczym.
+Nie należy przekazywać gotowego raportu walidacyjnego jako substytutu danych wejściowych. `readiness.py` ponownie weryfikuje podpisany receipt, niezależnie podpisany registry witness, lokalny freeze, powiązanie receipt→pakiet, dokładne bajty adjudykacji, kompletny zakres treści rękopisu, checksumy źródeł i co najmniej 15 niezależnych grup liści. Manifest sekcja+skryba musi spełniać `experiments/EXP-2026-001/section_strata.schema.json`, pokrywać dokładnie kwalifikowane rekordy i zawierać proweniencję z SHA-256 dla obu warstw; bez niego split jest odrzucany. Seed musi mieć co najmniej 32 losowe bajty, być zwykłym plikiem bez dostępu dla grupy/innych i nigdy nie trafić do repozytorium. Certyfikat jest publicznym certyfikatem szyfrującym custodiana; klucz prywatny pozostaje poza środowiskiem badawczym.
 
 Wynikiem sealed workflow są: zaszyfrowany CMS `custodian-split.p7m`, publiczny manifest commitmentów oraz `model-development.json`. Ten ostatni zawiera wyłącznie TRAIN/VALIDATION, pseudonimowe ID HMAC i geometrię/etykiety adjudykacyjne; nie zawiera folio, ścieżek, source checksum, source refs ani rekordów HELD_OUT.
