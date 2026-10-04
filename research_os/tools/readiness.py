@@ -9,12 +9,14 @@ import hashlib
 import json
 import random
 import re
+import stat
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Iterable
 
 from validate_adjudication import validate_adjudication
 from verify_custodian_receipt import verify_receipt
+from sealed_split import seal_split
 
 
 SPLITS = (("TRAIN", 0.60), ("VALIDATION", 0.20), ("HELD_OUT", 0.20))
@@ -236,12 +238,17 @@ def main() -> int:
     parser.add_argument("--receipt-signature", type=Path)
     parser.add_argument("--allowed-signers", type=Path)
     parser.add_argument("--custodian-identity")
+    parser.add_argument("--sealed-split-directory", type=Path)
+    parser.add_argument("--custodian-certificate", type=Path)
+    parser.add_argument("--seed-file", type=Path)
     args = parser.parse_args()
     if args.split:
         parser.error(
             "cleartext --split materialization is disabled because it exposes HELD_OUT; "
             "use the sealed custodian split workflow"
         )
+    if args.seed:
+        parser.error("command-line --seed is disabled; use a protected --seed-file with sealed output")
     records = load_records(args.records_dir)
     if bool(args.adjudication_packet) != bool(args.adjudication):
         parser.error("--adjudication-packet and --adjudication must be provided together")
@@ -268,6 +275,35 @@ def main() -> int:
             validation, receipt_verification, args.custodian_receipt.read_bytes(), packet
         )
     report = build_readiness_report(records, adjudication, validation)
+    sealed_args = (
+        args.sealed_split_directory, args.custodian_certificate, args.seed_file,
+    )
+    if any(value is not None for value in sealed_args):
+        if any(value is None for value in sealed_args):
+            parser.error(
+                "sealed split requires --sealed-split-directory, --custodian-certificate, and --seed-file"
+            )
+        if report["status"] != "READY_FOR_SPLIT" or adjudication is None:
+            parser.error("sealed split refused until the complete evidence chain is READY_FOR_SPLIT")
+        if args.seed_file.is_symlink() or not args.seed_file.is_file():
+            parser.error("seed file must be a regular non-symlink file")
+        if args.seed_file.stat().st_mode & (stat.S_IRWXG | stat.S_IRWXO):
+            parser.error("seed file permissions must not grant group or other access")
+        seed_bytes = args.seed_file.read_bytes()
+        split = deterministic_group_split(records, report, seed_bytes.hex())
+        try:
+            sealed_manifest = seal_split(
+                split, adjudication, seed_bytes,
+                args.custodian_certificate, args.sealed_split_directory,
+            )
+        except (OSError, ValueError, KeyError) as error:
+            parser.error(f"sealed split failed: {error}")
+        report["sealed_split"] = {
+            "status": sealed_manifest["status"],
+            "manifest": str(args.sealed_split_directory / "sealed-split-manifest.json"),
+            "seed_commitment_sha256": sealed_manifest["seed_commitment_sha256"],
+            "held_out_exposed": False,
+        }
     rendered = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)

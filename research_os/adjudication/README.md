@@ -43,6 +43,9 @@ python3 research_os/tools/readiness.py atlas/records \
   --custodian-identity CUSTODIAN_IDENTITY \
   --adjudication-packet adjudication-packet.json \
   --adjudication adjudication-submission.json \
+  --sealed-split-directory research_os/runs/EXP-2026-001/sealed-split-001 \
+  --custodian-certificate custodian-encryption-cert.pem \
+  --seed-file private-split-seed.bin \
   --report research_os/experiments/EXP-2026-001/readiness_report.json
 ```
 

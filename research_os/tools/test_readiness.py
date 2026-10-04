@@ -142,6 +142,17 @@ class ReadinessTests(unittest.TestCase):
         self.assertEqual(process.returncode, 2)
         self.assertIn("cleartext --split materialization is disabled", process.stderr)
 
+    def test_cli_refuses_command_line_seed(self):
+        tool = Path(__file__).with_name("readiness.py")
+        process = subprocess.run(
+            [sys.executable, str(tool), "unused-records", "--seed", "leaky-seed"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(process.returncode, 2)
+        self.assertIn("command-line --seed is disabled", process.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()
