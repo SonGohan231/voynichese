@@ -4,10 +4,11 @@ const state={packet:null,records:[],annotations:new Map(),current:0,selected:nul
 const $=id=>document.getElementById(id);
 const els={packetStatus:$("packetStatus"),progressTop:$("progressTop"),recordList:$("recordList"),search:$("searchInput"),packetFile:$("packetFile"),scan:$("scanImage"),overlay:$("overlay"),empty:$("emptyCanvas"),stage:$("canvasStage"),viewport:$("canvasViewport"),recordLabel:$("recordLabel"),selectTool:$("selectTool"),drawTool:$("drawTool"),objectId:$("objectId"),objectClass:$("objectClass"),deleteObject:$("deleteObject"),portGrid:$("portGrid"),relationSource:$("relationSource"),relationType:$("relationType"),relationTarget:$("relationTarget"),relationList:$("relationList"),validation:$("validationList"),zoomValue:$("zoomValue"),coords:$("coordinateReadout"),identity:$("identityDialog"),identityForm:$("identityForm"),annotatorInput:$("annotatorInput")};
 
-function canonicalUniverse(records){return JSON.stringify(records.map(r=>[r.record_id,r.source_sha256]));}
+function sourceBinding(record){return record.source_commitment_sha256?{source_commitment_sha256:record.source_commitment_sha256}:{source_sha256:record.source_sha256};}
+function canonicalUniverse(records){return JSON.stringify(records.map(r=>[r.record_id,r.source_commitment_sha256||r.source_sha256]));}
 async function sha256(text){const bytes=new TextEncoder().encode(text);const digest=await crypto.subtle.digest("SHA-256",bytes);return [...new Uint8Array(digest)].map(v=>v.toString(16).padStart(2,"0")).join("");}
 function storageKey(){return `voynich-blind:${state.packet?.record_universe_sha256}:${state.annotator}`;}
-function annotationFor(recordId){if(!state.annotations.has(recordId))state.annotations.set(recordId,{record_id:recordId,source_sha256:state.records.find(r=>r.record_id===recordId).source_sha256,objects:[],occlusions:[]});return state.annotations.get(recordId);}
+function annotationFor(recordId){if(!state.annotations.has(recordId)){const record=state.records.find(r=>r.record_id===recordId);state.annotations.set(recordId,{record_id:recordId,...sourceBinding(record),objects:[],occlusions:[]});}return state.annotations.get(recordId);}
 function currentRecord(){return state.records[state.current];}
 function currentAnnotation(){const record=currentRecord();return record?annotationFor(record.record_id):null;}
 function save(){if(!state.packet||!state.annotator)return;localStorage.setItem(storageKey(),JSON.stringify({annotations:[...state.annotations.values()],current:state.current}));}
