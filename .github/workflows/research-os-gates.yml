@@ -41,11 +41,18 @@ jobs:
           test "$rc" -eq 2
           python3 - <<'PY'
           import json
+          import sys
           from pathlib import Path
+          sys.path.insert(0, "research_os/tools")
+          from readiness import load_records
+          from record_scope import is_manuscript_content
+
           report = json.loads(Path("/tmp/readiness.json").read_text())
+          records = load_records(Path("atlas/records"))
+          expected_content_count = sum(1 for record in records if is_manuscript_content(record))
           assert report["status"] == "INCONCLUSIVE_NOT_RUN", report
           assert report["held_out_exposed"] is False, report
-          assert report["summary"]["record_count"] == 206, report
+          assert report["summary"]["record_count"] == expected_content_count, (report, expected_content_count)
           assert report["summary"]["eligible_record_count"] == 0, report
           print(json.dumps({
               "status": report["status"],
