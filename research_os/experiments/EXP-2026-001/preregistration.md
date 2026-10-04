@@ -1,8 +1,13 @@
-Failed to connect to bus: Operation not permitted
 # EXP-2026-001 — held-out visual-grammar prediction
 
 Status: **DRAFT / NOT RUN**  
 Cel: wybrać test o największej wartości informacyjnej, zdolny osłabić H1 bez używania koloru do budowy geometrii.
+
+## Audyt gotowości 2026-10-04
+
+`research_os/tools/readiness.py` sprawdził 206 rekordów atlasu. Proweniencja źródeł i checksumy przechodzą, ale żaden rekord nie zawiera jeszcze kwalifikowanej kombinacji jednostki wizualnej, relacji lokalnej i niezależnego przeglądu. Wynik to `INCONCLUSIVE_NOT_RUN`; generator splitu odmówił pracy i nie ujawnił HELD-OUT. Pełny, maszynowy dowód znajduje się w `readiness_report.json`.
+
+Testy narzędzia używają wyłącznie syntetycznych rekordów i sprawdzają odmowę dla danych niegotowych, deterministyczność, rozłączność splitów oraz połączenie stron złożonych/foldoutów w jedną grupę.
 
 ## Hipoteza i null
 
