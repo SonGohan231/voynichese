@@ -71,6 +71,20 @@ class VerifyAnnotationFreezeTests(unittest.TestCase):
                 "A": {"packet_id": "PACKET-A", "sha256": hashlib.sha256(packet_a.read_bytes()).hexdigest()},
                 "B": {"packet_id": "PACKET-B", "sha256": hashlib.sha256(packet_b.read_bytes()).hexdigest()},
             },
+            "handoff_bindings": {
+                "A": {
+                    "packet_id": "HANDOFF-A",
+                    "packet_sha256": "1" * 64,
+                    "custody_map_sha256": "2" * 64,
+                    "seed_commitment_sha256": "3" * 64,
+                },
+                "B": {
+                    "packet_id": "HANDOFF-B",
+                    "packet_sha256": "4" * 64,
+                    "custody_map_sha256": "5" * 64,
+                    "seed_commitment_sha256": "6" * 64,
+                },
+            },
             "annotator_bindings": [
                 {"role": "A", "annotator_id_sha256": hashlib.sha256(b"annotator-a").hexdigest()},
                 {"role": "B", "annotator_id_sha256": hashlib.sha256(b"annotator-b").hexdigest()},
