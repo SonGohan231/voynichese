@@ -20,6 +20,7 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `evidence_register.csv` — początkowy rejestr dowodów i hipotez.
 - `experiments/EXP-2026-001/preregistration.md` — zamrożony szkic pierwszego testu.
 - `experiments/EXP-2026-001/manifest.json` — maszynowy manifest stanu eksperymentu.
+- `artifacts/AUTO_CANDIDATE_FINAL_V1.json` — proweniencja pełnego przebiegu 206 automatycznych kandydatur; nie są ground truth ani blind annotations.
 
 Status dokumentów jest jawny. Prerejestracja jest projektem protokołu, nie wynikiem eksperymentu.
 
