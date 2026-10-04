@@ -3,3 +3,6 @@ __pycache__/
 research_os/runs/
 private-split-seed*
 custodian-key*
+blind-pseudonym-seed*
+blind-custody-map*
+*.custody-map.json
