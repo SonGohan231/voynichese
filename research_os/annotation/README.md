@@ -26,15 +26,17 @@ The automated `AUTO_CANDIDATE_FINAL_V1` bundle may be used only after both indep
 
 The thresholds below are fixed before any independent submission is inspected:
 
-- object detection F1 `>= 0.80` at same-class IoU `>= 0.50`;
+- object detection F1 `>= 0.80` at same-class IoU `>= 0.50`, using maximum-cardinality then maximum-IoU bipartite matching;
 - median IoU of matched objects `>= 0.75`;
-- exact port-count agreement on matched objects `>= 0.80`;
-- directed occlusion agreement on comparable matched relations `>= 0.80`;
+- exact port-sector-set agreement on matched objects `>= 0.80`;
+- directed occlusion F1 across the union of submitted matched-endpoint relations `>= 0.80`; missing and conflicting relations are penalized;
 - complete record and source-checksum agreement;
 - both submissions cover the complete canonical `FOLIO` record universe (covers and non-folio positions are excluded);
 - all blindness attestations true and annotator IDs distinct.
 
 If a denominator is zero, that metric is `NOT_ASSESSED` and the gate fails closed. Passing produces `READY_FOR_ADJUDICATION`, never ground truth and never `READY_FOR_SPLIT`. Adjudication must be performed without model predictions and recorded separately.
+
+`IN_FRONT_OF(A,B)` is normalized as equivalent to `BEHIND(B,A)`. `AMBIGUOUS`, a missing relation, and a contradictory direction remain distinct outcomes. Metrics must be invariant to swapping submissions A and B.
 
 ## Run
 
