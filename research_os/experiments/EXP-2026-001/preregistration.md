@@ -13,6 +13,8 @@ Testy narzędzia używają wyłącznie syntetycznych rekordów i sprawdzają odm
 
 Przed obejrzeniem jakiejkolwiek niezależnej anotacji zamrożono kontrakt w `research_os/annotation/README.md`. Dwa różne identyfikatory annotatorów muszą pokryć pełny kanoniczny zbiór 204 rekordów treści rękopisu (`FOLIO` oraz numeryczne `UNRESOLVED` obejmujące części foldoutów), pracując z oryginalnymi skanami i bez dostępu do automatycznych kandydatur, predykcji, etykiet hipotez, drugiej anotacji ani przyszłego splitu.
 
+Pseudonimizacja chroni metadane i identyfikatory, ale nie może ukryć charakterystycznych cech samych pikseli rękopisu. Dlatego protokół nie traktuje jej jako pełnego visual-identity blinding; zewnętrzne lookupy foliów są zakazane, a spontaniczne rozpoznanie strony musi zostać odnotowane jako odchylenie protokołu.
+
 Przejście do adjudykacji wymaga jednocześnie: F1 detekcji obiektów `>= 0.80` przy IoU klasy zgodnej `>= 0.50`, mediany IoU `>= 0.75`, dokładnej zgodności zbiorów sektorów portów `>= 0.80` i F1 skierowanych relacji okluzji na unii zgłoszonych relacji `>= 0.80`. Dopasowanie obiektów maksymalizuje najpierw liczebność, potem łączny IoU. Pusty mianownik lub brak relacji daje `NOT_ASSESSED` i blokuje bramkę. PASS tej bramki oznacza wyłącznie `READY_FOR_ADJUDICATION`; nie tworzy ground truth i nie odblokowuje HELD-OUT.
 
 ## Zamrożony plan mocy
@@ -76,6 +78,10 @@ rekordów treści rękopisu. Pakiety, commitment uniwersum, plan mocy i szablon 
 wygenerowane ponownie. Covers nadal są wyłączone. Poprzednie commitmenty są nieważne.
 
 Dokładna liczebność zostanie wpisana przed uruchomieniem po audycie dostępnych jednostek; nie wolno dobierać liczby po wyniku.
+
+### Korekta zewnętrznego receipt przed uruchomieniem — 2026-10-04
+
+Sama obecność pola `registry_uri=https://...` nie stanowi dowodu, że receipt został zapisany przez zewnętrzny rejestr. Przed uruchomieniem dodano obowiązkowy, osobno podpisany `registry_witness`, który wiąże dokładne bajty receipt i jego podpis z URI oraz numerem sekwencyjnym. Tożsamość podpisującego rejestru musi różnić się od tożsamości custodiana. Brak lub niezgodność witness blokuje adjudykację fail-closed.
 
 ### Korekta firewalla przed uruchomieniem — 2026-10-04
 
