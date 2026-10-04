@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 # Dyrygent MAX — niezależny audyt metodologiczny
 
 Data: 2026-10-04  
