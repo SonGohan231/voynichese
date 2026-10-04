@@ -3,8 +3,9 @@
   "experiment_id": "EXP-2026-001",
   "status": "INCONCLUSIVE_NOT_RUN",
   "held_out_exposed": false,
+  "adjudication_packet_sha256": null,
   "summary": {
-    "record_count": 206,
+    "record_count": 204,
     "eligible_record_count": 0,
     "eligible_group_count": 0,
     "minimum_eligible_groups": 15
@@ -16,25 +17,12 @@
     "all_eligible_units_reviewed": false
   },
   "failure_counts": {
-    "folio_role": 23,
-    "independent_review_complete": 206,
-    "local_relations_present": 206,
-    "visual_units_present": 206
+    "independent_review_complete": 204,
+    "local_relations_present": 204,
+    "visual_units_present": 204
   },
   "eligible_record_ids": [],
   "ineligible_records": {
-    "CANVAS-0001-Front_cover": [
-      "folio_role",
-      "visual_units_present",
-      "local_relations_present",
-      "independent_review_complete"
-    ],
-    "CANVAS-0002-Inside_front_cover": [
-      "folio_role",
-      "visual_units_present",
-      "local_relations_present",
-      "independent_review_complete"
-    ],
     "CANVAS-0003-1r": [
       "visual_units_present",
       "local_relations_present",
@@ -651,19 +639,16 @@
       "independent_review_complete"
     ],
     "CANVAS-0126-69v_and_70r": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0127-70v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0128-70v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
@@ -674,19 +659,16 @@
       "independent_review_complete"
     ],
     "CANVAS-0130-71v_and_72r": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0131-72v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0132-72v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
@@ -802,25 +784,21 @@
       "independent_review_complete"
     ],
     "CANVAS-0155-85r_part_part_of_85-86_foldout": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0156-85r_part_86v_part_part_of_85-86_foldout": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0157-86v_part_part_of_85-86_foldout": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0158-85v_and_86r_foldout": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
@@ -841,19 +819,16 @@
       "independent_review_complete"
     ],
     "CANVAS-0162-88v_and_89r": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0163-89v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0164-89v_part_and_90r": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
@@ -864,7 +839,6 @@
       "independent_review_complete"
     ],
     "CANVAS-0166-90v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
@@ -885,13 +859,11 @@
       "independent_review_complete"
     ],
     "CANVAS-0170-94v_and_95r": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0171-95v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
@@ -927,31 +899,26 @@
       "independent_review_complete"
     ],
     "CANVAS-0178-100v_and_101r": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0179-101v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0180-101v_part_and_102r": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0181-102v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"
     ],
     "CANVAS-0182-102v_part": [
-      "folio_role",
       "visual_units_present",
       "local_relations_present",
       "independent_review_complete"

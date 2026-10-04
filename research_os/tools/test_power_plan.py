@@ -17,8 +17,8 @@ class PowerPlanTests(unittest.TestCase):
                 }
                 (root / f"{index}.annotation.json").write_text(json.dumps(record), encoding="utf-8")
             report = build_power_plan(root, held_out_fraction=0.5, target_standardized_effect=4.0)
-            self.assertEqual(report["inventory"]["folio_records"], 4)
-            self.assertEqual(report["inventory"]["independent_folio_groups"], 2)
+            self.assertEqual(report["inventory"]["manuscript_content_records"], 4)
+            self.assertEqual(report["inventory"]["independent_leaf_groups"], 2)
             self.assertEqual(report["inventory"]["planned_held_out_groups"], 1)
 
     def test_underpowered_plan_fails_status(self):

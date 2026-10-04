@@ -1,6 +1,6 @@
 # EXP-2026-001 — audit źródła mapy sekcji
 
-Status: **MISSING_AUTHORITATIVE_SECTION_MAP / SPLIT BLOCKED**  
+Status: **AUTHORITATIVE_SECTION_MAP_RECOVERED / SCRIBE MAP STILL BLOCKS SPLIT**
 Data audytu: 2026-10-04
 
 ## Sprawdzone źródła
@@ -12,16 +12,19 @@ Data audytu: 2026-10-04
    klasyfikację sekcji.
 
 Indeks jest miarodajnym punktem wejścia do wcześniejszych prac i potwierdza istnienie
-materiałów Spatial/XML/Color Gate, lecz nie zawiera kompletnej, wersjonowanej mapy
-każdego kwalifikowanego `record_id`/folio do sekcji. Wyniki wyszukiwania również nie
-ujawniły takiego artefaktu.
+materiałów Spatial/XML/Color Gate, lecz nie zawierał kompletnej mapy. Następnie sprawdzono
+oficjalny katalog Beinecke MS 408, który publikuje sześć rozłącznych zakresów foliów.
+Zakresy zapisano w `research_os/sources/beinecke_ms408_section_register.json`, a
+`build_section_assignments.py` przypisał deterministycznie wszystkie 204 rekordy treści.
+
+Plik `tm0696-description.pdf` z Drive został sprawdzony i odrzucony: opisuje inny
+rękopis (*Recipes and Extracts...*, 101 foliów), a nie Beinecke MS 408. Nie jest dowodem
+dla sekcji Voynicha.
 
 ## Decyzja
 
-Nie rekonstruujemy mapy z pamięci, standardowych zakresów foliów ani interpretacji
-ilustracji. Produkcyjny split jest blokowany, dopóki custodian nie dostarczy manifestu
-zgodnego z `section_strata.schema.json`, obejmującego dokładnie kwalifikowany zbiór i
-zawierającego referencję oraz SHA-256 źródła dla każdego przypisania.
+Mapa sekcji jest gotowa jako `DATA`, ale produkcyjny split nadal jest blokowany przez brak
+kompletnej mapy skrybów wymaganej w prerejestracji. Nie rekonstruujemy jej z pamięci.
 
 Klasyfikacja w manifeście jest wyłącznie `FACT` albo `DATA`; nie wolno użyć etykiety
 sekcji pochodzącej wyłącznie z hipotezy lub interpretacji. Poziom złożoności nie jest

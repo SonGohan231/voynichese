@@ -2,18 +2,18 @@
   "schema_version": "1.0",
   "experiment_id": "EXP-2026-001",
   "status": "ADEQUATE_FOR_PREREGISTERED_LARGE_EFFECT",
-  "method": "one-sided normal approximation on independent folio-group paired score differences",
+  "method": "one-sided normal approximation on independent manuscript-leaf-group paired score differences",
   "assumptions": {
     "alpha": 0.01,
     "target_power": 0.8,
     "held_out_fraction": 0.2,
     "target_standardized_effect": 0.75,
-    "effect_definition": "mean held-out folio-group score advantage divided by SD of folio-group paired differences",
+    "effect_definition": "mean held-out leaf-group score advantage divided by SD of leaf-group paired differences",
     "independent_unit": "connected manuscript leaf group"
   },
   "inventory": {
-    "folio_records": 183,
-    "independent_folio_groups": 93,
+    "manuscript_content_records": 204,
+    "independent_leaf_groups": 94,
     "planned_held_out_groups": 19
   },
   "calculation": {

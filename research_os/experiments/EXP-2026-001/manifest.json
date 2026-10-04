@@ -37,14 +37,16 @@
     "tool": "research_os/tools/readiness.py",
     "report": "research_os/experiments/EXP-2026-001/readiness_report.json",
     "status": "INCONCLUSIVE_NOT_RUN",
-    "record_count": 206,
+    "record_count": 204,
     "eligible_record_count": 0,
     "held_out_exposed": false
   },
   "source_freeze": {
     "atlas_project_sha256": "f484323a5b9e537b7a2fd98d7864746acf69cbc671b4bef3ff0f7f031ec2eedf",
     "validation_report_sha256": "e6f94286dc4629babdd09e1bfe09fe590516b9aa3b74291f409b974563bc97f8",
-    "canonical_folio_record_count": 183
+    "canonical_manuscript_content_record_count": 204,
+    "excluded_cover_record_count": 2,
+    "scope_policy": "FOLIO plus numeric UNRESOLVED compound/foldout canvases"
   },
   "annotation_gate": {
     "status": "FROZEN_AWAITING_TWO_SUBMISSIONS",
@@ -53,8 +55,9 @@
     "schema_sha256": "6e774f666330443aab4c7c5828a35a97c68995cbd118dcd215079f7d6997d4d2",
     "tool": "research_os/tools/annotation_gate.py",
     "packet_builder": "research_os/tools/build_blind_packets.py",
-    "protocol_sha256": "be32aeb464492a7378c3fc3774106d83ba3bb37a4e9a998e0adc25fe59e0485c",
-    "record_universe_sha256": "e6342d765d48f4b630b435dd4b05a2aeeec4a2a9c3dee09cd57a52fc859beb9d",
+    "protocol_sha256": "5aeae93e23f2b6f3fcd94c4038fe84f731c5651d978b5d364ca862211eca06a4",
+    "record_universe_sha256": "af494e23e637d725068259734edc1d1a160169e9d9c6e3645e5887b9b121f8c5",
+    "record_count": 204,
     "packets": [
       "research_os/annotation/packets/annotator-a.packet.json",
       "research_os/annotation/packets/annotator-b.packet.json"
@@ -65,7 +68,7 @@
   "power_plan": {
     "status": "ADEQUATE_FOR_PREREGISTERED_LARGE_EFFECT",
     "report": "research_os/experiments/EXP-2026-001/power_plan.json",
-    "independent_folio_groups": 93,
+    "independent_leaf_groups": 94,
     "planned_held_out_groups": 19,
     "alpha": 0.01,
     "target_power": 0.8,
@@ -74,10 +77,13 @@
     "smaller_effect_policy": "INCONCLUSIVE"
   },
   "stratification_gate": {
-    "status": "MISSING_AUTHORITATIVE_SECTION_MAP",
+    "status": "SECTION_MAP_READY_SCRIBE_MAP_MISSING",
     "schema": "research_os/experiments/EXP-2026-001/section_strata.schema.json",
-    "schema_sha256": "a981be92328bd870b87fb1911d2ea596b83d883e3047e7e7b16f95a8ab4ee337",
+    "schema_sha256": "3a792bff38ae96b26acc89497b6d82017cacb83e7f8944e223dd640bd124d356",
     "source_audit": "research_os/experiments/EXP-2026-001/section_strata_source_audit.md",
+    "section_assignments": "research_os/experiments/EXP-2026-001/section_assignments.json",
+    "section_assignments_sha256": "7c25e76049b2550154af09ed7111dab39659effc659c5e4703befc37cbbdd0dd",
+    "scribe_source_audit": "research_os/experiments/EXP-2026-001/scribe_source_audit.md",
     "section_policy": "external FACT/DATA source with per-record provenance; fail closed if absent or inconsistent",
     "complexity_policy": "custodian-derived tertiles of adjudicated object plus occlusion counts",
     "held_out_exposed": false
@@ -88,7 +94,8 @@
     "Source provenance is verified, but required visual units and relations are not annotated",
     "All 206 atlas records remain NOT_REVIEWED",
     "No split was generated; HELD-OUT remains unexposed",
-    "No authoritative complete folio-to-section map was found in the Drive bootstrap index or targeted Drive search; stratified split is blocked",
+    "An authoritative six-section map was recovered from the official Beinecke catalog and covers all 204 manuscript-content records",
+    "No authoritative complete record-to-scribe map was found; the required section-by-scribe stratified split remains blocked",
     "Dyrygent BALANCED red-team completed from supplied evidence, not a fresh repository inspection"
   ]
 }

@@ -1,4 +1,3 @@
-Failed to connect to bus: Operation not permitted
 # Independent blind annotation contract
 
 This package defines the annotation gate that must precede any TRAIN / VALIDATION / HELD-OUT split for `EXP-2026-001`.
@@ -32,7 +31,8 @@ The thresholds below are fixed before any independent submission is inspected:
 - exact port-sector-set agreement on matched objects `>= 0.80`;
 - directed occlusion F1 across the union of submitted matched-endpoint relations `>= 0.80`; missing and conflicting relations are penalized;
 - complete record and source-checksum agreement;
-- both submissions cover the complete canonical `FOLIO` record universe (covers and non-folio positions are excluded);
+- both submissions cover the complete canonical manuscript-content universe: `FOLIO` plus
+  numeric `UNRESOLVED` canvases representing compound pages and foldout parts; covers are excluded;
 - all blindness attestations true and annotator IDs distinct.
 
 If a denominator is zero, that metric is `NOT_ASSESSED` and the gate fails closed. Passing produces `READY_FOR_ADJUDICATION`, never ground truth and never `READY_FOR_SPLIT`. Adjudication must be performed without model predictions and recorded separately.

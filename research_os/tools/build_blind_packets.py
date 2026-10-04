@@ -9,6 +9,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from record_scope import is_manuscript_content
+
 
 FORBIDDEN_INPUTS = [
     "automated candidate records and overlays",
@@ -28,7 +30,7 @@ def build_packet(records_dir: Path, protocol_path: Path, packet_id: str) -> dict
     for path in sorted(records_dir.glob("*.annotation.json")):
         record = json.loads(path.read_text(encoding="utf-8"))
         source = record["source"]
-        if source.get("logical_role") != "FOLIO":
+        if not is_manuscript_content(record):
             continue
         records.append(
             {
@@ -66,7 +68,7 @@ def main() -> int:
     args = parser.parse_args()
     packet = build_packet(args.records_dir, args.protocol, args.packet_id)
     if not packet["records"]:
-        raise SystemExit("no FOLIO records found")
+        raise SystemExit("no manuscript-content records found")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(packet, indent=2) + "\n", encoding="utf-8")
     return 0

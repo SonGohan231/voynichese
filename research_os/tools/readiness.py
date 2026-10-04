@@ -16,6 +16,7 @@ from typing import Any, Iterable
 from validate_adjudication import validate_adjudication
 from verify_custodian_receipt import verify_receipt
 from sealed_split import seal_split
+from record_scope import is_manuscript_content
 
 
 SPLITS = (("TRAIN", 0.60), ("VALIDATION", 0.20), ("HELD_OUT", 0.20))
@@ -75,7 +76,7 @@ def audit_record(record: dict[str, Any], adjudicated: dict[str, Any] | None = No
     relations = record.get("local_relations", [])
     review_status = record.get("quality_control", {}).get("review_status")
     checks = {
-        "folio_role": source.get("logical_role") == "FOLIO",
+        "manuscript_content_role": is_manuscript_content(record),
         "native_source_verified": source.get("native_scan_grid_status") == "VERIFIED_NATIVE",
         "provenance_verified": provenance.get("verification_status") == "VERIFIED",
         "sha256_present": bool(re.fullmatch(r"[0-9a-f]{64}", str(source.get("sha256", "")))),
@@ -106,6 +107,7 @@ def build_readiness_report(
     adjudication: dict[str, Any] | None = None,
     adjudication_validation: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    records = [record for record in records if is_manuscript_content(record)]
     adjudicated_records = {
         item["record_id"]: item for item in (adjudication or {}).get("records", [])
     }
@@ -136,7 +138,7 @@ def build_readiness_report(
         gates["adjudication_covers_all_folios"] = {
             record["record_id"]
             for record in records
-            if record.get("source", {}).get("logical_role") == "FOLIO"
+            if is_manuscript_content(record)
         } == set(adjudicated_records)
     ready = all(gates.values())
     return {
@@ -225,8 +227,8 @@ def deterministic_group_split(
         "seed": seed,
         "grouping_policy": "connected manuscript leaf numbers; compound/foldout records union groups",
         "stratification_policy": (
-            "custodian-provided section with provenance; deterministic complexity tertiles from "
-            "adjudicated object plus occlusion counts"
+            "custodian-provided section and scribe with provenance; deterministic complexity "
+            "tertiles from adjudicated object plus occlusion counts"
         ),
         "stratum_group_counts": dict(sorted(Counter(group_strata.values()).items())),
         "assignments_sha256": hashlib.sha256(digest_input.encode()).hexdigest(),
@@ -289,14 +291,21 @@ def compile_group_strata(
     by_record = {}
     for entry in entries:
         record_id = entry.get("record_id")
-        provenance = entry.get("provenance", {})
+        section_provenance = entry.get("section_provenance", {})
+        scribe_provenance = entry.get("scribe_provenance", {})
         if (
             not record_id or record_id in by_record
             or not isinstance(entry.get("section_label"), str) or not entry["section_label"].strip()
-            or entry.get("claim_class") not in {"FACT", "DATA"}
-            or not isinstance(provenance.get("source_reference"), str)
-            or not provenance["source_reference"].strip()
-            or not re.fullmatch(r"[0-9a-f]{64}", str(provenance.get("source_sha256", "")))
+            or entry.get("section_claim_class") not in {"FACT", "DATA"}
+            or not isinstance(entry.get("scribe_label"), str)
+            or not entry["scribe_label"].strip() or entry["scribe_label"].strip() == "UNKNOWN"
+            or entry.get("scribe_claim_class") not in {"FACT", "DATA"}
+            or any(
+                not isinstance(provenance.get("source_reference"), str)
+                or not provenance["source_reference"].strip()
+                or not re.fullmatch(r"[0-9a-f]{64}", str(provenance.get("source_sha256", "")))
+                for provenance in (section_provenance, scribe_provenance)
+            )
         ):
             raise ValueError("split refused; invalid or duplicate section-strata entry")
         by_record[record_id] = entry
@@ -309,14 +318,15 @@ def compile_group_strata(
     group_rows = []
     for group, record_ids in sorted(by_group.items()):
         sections = {by_record[record_id]["section_label"].strip() for record_id in record_ids}
-        if len(sections) != 1:
-            raise ValueError(f"split refused; connected group {group} crosses section labels")
+        scribes = {by_record[record_id]["scribe_label"].strip() for record_id in record_ids}
+        if len(sections) != 1 or len(scribes) != 1:
+            raise ValueError(f"split refused; connected group {group} crosses section or scribe labels")
         complexity = sum(
             len(adjudicated[record_id].get("objects", []))
             + len(adjudicated[record_id].get("occlusions", []))
             for record_id in record_ids
         )
-        group_rows.append((group, next(iter(sections)), complexity))
+        group_rows.append((group, f"{next(iter(sections))}::{next(iter(scribes))}", complexity))
     ranked = sorted(group_rows, key=lambda row: (row[2], row[0]))
     bins = {}
     for rank, (group, _, _) in enumerate(ranked):

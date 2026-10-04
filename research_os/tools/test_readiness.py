@@ -43,10 +43,16 @@ class ReadinessTests(unittest.TestCase):
             "records": [{
                 "record_id": item["record_id"],
                 "section_label": "SECTION_A" if index < len(records) / 2 else "SECTION_B",
-                "claim_class": "DATA",
-                "provenance": {
+                "section_claim_class": "DATA",
+                "section_provenance": {
                     "source_reference": "drive:test-section-register",
                     "source_sha256": "c" * 64,
+                },
+                "scribe_label": "SCRIBE_1" if index % 2 else "SCRIBE_2",
+                "scribe_claim_class": "DATA",
+                "scribe_provenance": {
+                    "source_reference": "test:scribe-register",
+                    "source_sha256": "d" * 64,
                 },
             } for index, item in enumerate(records)],
         }
@@ -79,7 +85,7 @@ class ReadinessTests(unittest.TestCase):
         sets = [set(left["assignments"][name]) for name in ("TRAIN", "VALIDATION", "HELD_OUT")]
         self.assertFalse(sets[0] & sets[1] or sets[0] & sets[2] or sets[1] & sets[2])
         self.assertEqual([12, 4, 4], [len(value) for value in sets])
-        self.assertEqual(6, len(left["stratum_group_counts"]))
+        self.assertGreaterEqual(len(left["stratum_group_counts"]), 6)
 
     def test_split_refuses_missing_strata(self):
         records = self.eligible_records()
@@ -103,7 +109,16 @@ class ReadinessTests(unittest.TestCase):
         by_id = {item["record_id"]: item for item in manifest["records"]}
         by_id["R69"]["section_label"] = "SECTION_A"
         by_id["R70"]["section_label"] = "SECTION_B"
-        with self.assertRaisesRegex(ValueError, "crosses section labels"):
+        by_id["R69"]["scribe_label"] = by_id["R70"]["scribe_label"]
+        with self.assertRaisesRegex(ValueError, "crosses section or scribe labels"):
+            deterministic_group_split(records, report, "seed", manifest, adjudication)
+
+    def test_split_refuses_unknown_scribe(self):
+        records = self.eligible_records()
+        report = build_readiness_report(records)
+        manifest, adjudication = self.strata_inputs(records)
+        manifest["records"][0]["scribe_label"] = "UNKNOWN"
+        with self.assertRaisesRegex(ValueError, "invalid or duplicate"):
             deterministic_group_split(records, report, "seed", manifest, adjudication)
 
     def test_compound_folio_prevents_leaf_leakage(self):

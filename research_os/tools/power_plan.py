@@ -11,6 +11,7 @@ from statistics import NormalDist
 from typing import Any
 
 from readiness import group_keys, load_records
+from record_scope import is_manuscript_content
 
 
 def build_power_plan(
@@ -26,9 +27,9 @@ def build_power_plan(
         raise ValueError("invalid held-out fraction or target effect")
     records = load_records(records_dir)
     groups = group_keys(records)
-    folio_records = [record for record in records if record["source"].get("logical_role") == "FOLIO"]
-    folio_groups = sorted({groups[record["record_id"]] for record in folio_records})
-    held_out_groups = round(len(folio_groups) * held_out_fraction)
+    content_records = [record for record in records if is_manuscript_content(record)]
+    content_groups = sorted({groups[record["record_id"]] for record in content_records})
+    held_out_groups = round(len(content_groups) * held_out_fraction)
     z_alpha = NormalDist().inv_cdf(1 - alpha)
     z_power = NormalDist().inv_cdf(target_power)
     required_groups = math.ceil(((z_alpha + z_power) / target_standardized_effect) ** 2)
@@ -38,18 +39,18 @@ def build_power_plan(
         "schema_version": "1.0",
         "experiment_id": "EXP-2026-001",
         "status": "ADEQUATE_FOR_PREREGISTERED_LARGE_EFFECT" if adequate else "UNDERPOWERED",
-        "method": "one-sided normal approximation on independent folio-group paired score differences",
+        "method": "one-sided normal approximation on independent manuscript-leaf-group paired score differences",
         "assumptions": {
             "alpha": alpha,
             "target_power": target_power,
             "held_out_fraction": held_out_fraction,
             "target_standardized_effect": target_standardized_effect,
-            "effect_definition": "mean held-out folio-group score advantage divided by SD of folio-group paired differences",
+            "effect_definition": "mean held-out leaf-group score advantage divided by SD of leaf-group paired differences",
             "independent_unit": "connected manuscript leaf group",
         },
         "inventory": {
-            "folio_records": len(folio_records),
-            "independent_folio_groups": len(folio_groups),
+            "manuscript_content_records": len(content_records),
+            "independent_leaf_groups": len(content_groups),
             "planned_held_out_groups": held_out_groups,
         },
         "calculation": {

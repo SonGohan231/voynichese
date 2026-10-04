@@ -22,7 +22,7 @@ Ten katalog rozpoczyna reprodukowalną warstwę badawczą zgodną z master promp
 - `experiments/EXP-2026-001/manifest.json` — maszynowy manifest stanu eksperymentu.
 - `artifacts/AUTO_CANDIDATE_FINAL_V1.json` — proweniencja pełnego przebiegu 206 automatycznych kandydatur; nie są ground truth ani blind annotations.
 - `artifacts/AUTO_CANDIDATE_WORKLOAD_PROFILE.json` — wyłącznie profil obciążenia anotacyjnego, bez prawa użycia jako etykiety lub dowód hipotezy.
-- `annotation/packets/` — dwa hermetyczne pakiety źródłowe dla niezależnych annotatorów; każdy obejmuje ten sam zamrożony zbiór 183 foliów i nie zawiera kandydatur, predykcji ani splitu.
+- `annotation/packets/` — dwa hermetyczne pakiety źródłowe dla niezależnych annotatorów; każdy obejmuje ten sam zamrożony zbiór 204 skanów treści, łącznie z częściami foldoutów, i nie zawiera kandydatur, predykcji ani splitu.
 - `annotation/ui/` — lokalny edytor niezależnych adnotacji bez kandydatur i splitu.
 - `annotation/acceptance_slot.*` oraz `custodian_receipt.*` — podpisywane bramki jednej pary i zewnętrznego receipt.
 - `adjudication/` — neutralny kontrakt adjudykacji oraz schemat zweryfikowanego wyniku.

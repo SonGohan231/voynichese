@@ -9,6 +9,8 @@ import statistics
 from pathlib import Path
 from typing import Any
 
+from record_scope import is_manuscript_content
+
 
 IOU_MATCH = 0.50
 THRESHOLDS = {
@@ -33,7 +35,7 @@ def load_atlas(records_dir: Path) -> dict[str, str]:
     result = {}
     for path in sorted(records_dir.glob("*.annotation.json")):
         record = json.loads(path.read_text(encoding="utf-8"))
-        if record["source"].get("logical_role") == "FOLIO":
+        if is_manuscript_content(record):
             result[record["record_id"]] = record["source"]["sha256"]
     return result
 

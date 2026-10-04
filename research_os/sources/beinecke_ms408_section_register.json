@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "source_id": "BEINECKE-MS408-CATALOG-SECTIONS",
+  "claim_class": "DATA",
+  "title": "Beinecke MS 408 catalog: six illustration-based sections",
+  "source_url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.htm",
+  "retrieved_at": "2026-10-04",
+  "institution": "Yale University, Beinecke Rare Book and Manuscript Library",
+  "ranges": [
+    {"section_label": "BOTANICAL", "first_folio": 1, "last_folio": 66},
+    {"section_label": "ASTRONOMICAL_ASTROLOGICAL", "first_folio": 67, "last_folio": 73},
+    {"section_label": "BIOLOGICAL", "first_folio": 75, "last_folio": 84},
+    {"section_label": "COSMOLOGICAL_MEDALLIONS", "first_folio": 85, "last_folio": 86},
+    {"section_label": "PHARMACEUTICAL", "first_folio": 87, "last_folio": 102},
+    {"section_label": "CONTINUOUS_TEXT_STAR_ENTRIES", "first_folio": 103, "last_folio": 117}
+  ],
+  "scope_note": "These labels reproduce catalog-level visual/content classes; they are not semantic decipherment and do not establish scribal-hand assignments.",
+  "corroboration": {
+    "source_url": "https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript",
+    "note": "The current Beinecke overview independently describes the same six broad content classes but does not publish folio ranges."
+  }
+}
