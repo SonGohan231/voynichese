@@ -3,7 +3,7 @@
   "packet_id": "EXP-2026-001-ANNOTATOR-A",
   "purpose": "INDEPENDENT_BLIND_ANNOTATION_EXP_2026_001",
   "protocol_path": "research_os/annotation/README.md",
-  "protocol_sha256": "5aeae93e23f2b6f3fcd94c4038fe84f731c5651d978b5d364ca862211eca06a4",
+  "protocol_sha256": "baa60373c0839a647d4fbff965bd4942840777fdc31e469d31b278eb41d9d6e4",
   "record_universe_sha256": "af494e23e637d725068259734edc1d1a160169e9d9c6e3645e5887b9b121f8c5",
   "record_count": 204,
   "forbidden_inputs": [
@@ -11,7 +11,9 @@
     "other annotator submissions",
     "model predictions",
     "hypothesis labels and prior pilot outcomes",
-    "TRAIN, VALIDATION or HELD_OUT assignments"
+    "TRAIN, VALIDATION or HELD_OUT assignments",
+    "section or scribe labels and lookup tables",
+    "folio identity lookup beyond the pseudonymized handoff"
   ],
   "records": [
     {
