@@ -1,0 +1,89 @@
+{
+  "analysis": "EXPLORATORY / NOT EXP-2026-001",
+  "source": {
+    "transcription": "ZL3b",
+    "url": "https://www.voynich.nu/data/ZL3b-n.txt",
+    "version": "2025-05-13",
+    "githubBlobSHA": "2a4533ab9bdfa85db9bad602d590978953055df1",
+    "manifest": "SonGohan231/voynichese research_os/experiments/EXP-2026-001/section_scribe_strata.json",
+    "manifestGitBlobSHA": "b8868dfbdfdb77ab1dc736f77c1ec9ef2bcff7c9"
+  },
+  "method": {
+    "unit": "numbered folio (r/v and foldout combined by folio number)",
+    "inclusion": "at least 40 unambiguous length 2-25 lowercase tokens in P0/Pt prose loci; language A or B; non-mixed hand",
+    "features": "frequency-normalized 2-glyph token prefixes and suffixes",
+    "similarity": "cosine",
+    "pairRestriction": "same scribe and Currier language; folio-number gap >=5",
+    "test": "stratified folio-label permutation within hand+Currier",
+    "permutations": 999,
+    "randomSeed": 1729,
+    "oneSided": true,
+    "notPreregistered": true
+  },
+  "audit": {
+    "atlasRecords": 204,
+    "folioGroups": 102,
+    "ivttfTextLoci": 5225,
+    "proseLineCount": 3895,
+    "proseTokensBeforeFiltering": 31610,
+    "cleanTokens": 28109,
+    "foliosUsable": 90,
+    "foliosExcluded": 12,
+    "totalPairs": 1441,
+    "strata": [
+      {
+        "stratum": "HAND_1|A",
+        "folios": 53,
+        "sections": {
+          "BOTANICAL": 43,
+          "PHARMACEUTICAL": 10
+        }
+      },
+      {
+        "stratum": "HAND_2|B",
+        "folios": 20,
+        "sections": {
+          "BOTANICAL": 10,
+          "BIOLOGICAL": 10
+        }
+      },
+      {
+        "stratum": "HAND_5|B",
+        "folios": 3,
+        "sections": {
+          "BOTANICAL": 3
+        }
+      },
+      {
+        "stratum": "HAND_3|A",
+        "folios": 1,
+        "sections": {
+          "BOTANICAL": 1
+        }
+      },
+      {
+        "stratum": "HAND_3|B",
+        "folios": 13,
+        "sections": {
+          "PHARMACEUTICAL": 2,
+          "CONTINUOUS_TEXT_STAR_ENTRIES": 11
+        }
+      }
+    ]
+  },
+  "observed": {
+    "meanSame": 0.8289917181275219,
+    "meanDifferent": 0.797809116124929,
+    "withinPairs": 889,
+    "crossPairs": 552,
+    "delta": 0.03118260200259293
+  },
+  "permutationsValid": 999,
+  "pExploratory": 0.001,
+  "warnings": [
+    "Not an independent replication; tokens are transcription-dependent and folio grouping is approximate for physical bifolia.",
+    "Not a prespecified primary endpoint; exploratory p-value cannot be used as confirmatory evidence.",
+    "Hand/section structural confounding may leave limited within-stratum contrast; examine strata breakdown.",
+    "Requires independent byte-identical reproduction and parser review before scientific acceptance."
+  ]
+}
