@@ -76,3 +76,10 @@ E. Design two independent blind codings for corner-face orientation; define one 
 - It is correct for unready experiments to remain INCONCLUSIVE_NOT_RUN.
 - No decoding/translation claims on the basis of structural regularities.
 - Do not touch EXP-2026-001 HELD-OUT, annotations, freeze or custodian material.
+
+## 6. Independent host cross-check and data provenance correction
+
+- The actual input analyzed was the GitHub mirror `Aspect-Research/voynich-autoexploration/data/transcriptions/eva_zl3b.txt` at blob SHA `2a4533ab9bdfa85db9bad602d590978953055df1`. The original maintainer's `ZL3b-n.txt` is a distinct URL, and **byte-for-byte equality was not verified**. For replication, verify and use the exact mirror bytes or explicitly compare all loci and headers with the maintainer's current variant. Do not label the mirror a proven byte-identical copy.
+- Second fresh JavaScript implementation fetched the same exact mirror and section/scribe manifest through GitHub, independently parsed 3,895 P0/Pt prose loci / 31,610 separated entries / 28,109 retained tokens, recovered 90 eligible folios and 1,441 pairs, and reproduced within-section similarity 0.828991718127522, cross-section 0.797809116124929 and delta +0.03118260200259304.
+- Independent host implementation also reproduced **zero** exceedances out of 999 blocked label permutations (seed 1729), largest permuted delta 0.025918705289794897, giving plus-one exploratory p=0.001.
+- This is **implementation agreement on the same inputs, within the same host**, not data-independent or researcher-independent confirmation. Python script in branch remains **unexecuted on the full source corpus** due local source-fetch restrictions; do not claim a successful Python parity run.
