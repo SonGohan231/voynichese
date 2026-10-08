@@ -1,0 +1,5791 @@
+{
+  "schema": "exp-2026-002/yale-iiif-canvas-physical-group-crosswalk-v1",
+  "generated_date": "2026-10-09",
+  "status": "METADATA_MAPPING_ONLY_NOT_PHYSICAL_OBSERVATION",
+  "provenance": {
+    "official_yale_iiif_manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+    "retrieval_channel": "Exa web_fetch_exa; JSON payload parsed successfully",
+    "source_bytes_sha256": null,
+    "source_bytes_digest_status": "NOT_INDEPENDENTLY_ARCHIVED_OR_RAW_BYTES_HASHED",
+    "linked_physical_group_graph": "research_os/experiments/EXP-2026-002/physical_order_constraint_graph_v1.json",
+    "independent_original_image_inspection": false,
+    "transcription_statistics_influenced_mapping": false
+  },
+  "statistics": {
+    "yale_canvases": 213,
+    "present_physical_groups": 52,
+    "present_groups_with_canvas_label_links": 52,
+    "missing_bifolio_placeholder_groups": 6,
+    "non_folio_scans": 9,
+    "folio_scans_without_existing_physical_group": 0,
+    "composite_foldout_scans": 21,
+    "scans_with_links_to_multiple_groups": 2,
+    "groups_with_independent_pixel_review": 0
+  },
+  "interpretation": [
+    "The mapping is a literal folio number + recto/verso correspondence from Yale canvas LABELS to already registered physical leaf numbers; it does not verify physical connections or folio-to-IT2a-panel geometry.",
+    "One composite image label can refer to multiple leaves or groups, and one leaf can appear in multiple photographed segments. Preserve every original canvas unaltered.",
+    "Missing physical bifolios have zero image canvas IDs; never create an image for a missing folio.",
+    "A checked metadata mapping is not an independent image inspection or scientific validation. O2 stays UNKNOWN and science INCONCLUSIVE_NOT_RUN."
+  ],
+  "special_cases": {
+    "q09": [
+      {
+        "oid": "1006194",
+        "label": "67r",
+        "groups": [
+          "QI-B1"
+        ]
+      },
+      {
+        "oid": "1006195",
+        "label": "67v",
+        "groups": [
+          "QI-B1"
+        ]
+      },
+      {
+        "oid": "1006196",
+        "label": "68r",
+        "groups": [
+          "QI-B1"
+        ]
+      },
+      {
+        "oid": "1006197",
+        "label": "68v",
+        "groups": [
+          "QI-B1"
+        ]
+      }
+    ],
+    "q14": [
+      {
+        "oid": "1006228",
+        "label": "85r (part) (part of 85-86 foldout)",
+        "groups": [
+          "QN-B1"
+        ]
+      },
+      {
+        "oid": "1006229",
+        "label": "85r (part) 86v (part) (part of 85-86 foldout)",
+        "groups": [
+          "QN-B1"
+        ]
+      },
+      {
+        "oid": "1006230",
+        "label": "86v (part) (part of 85-86 foldout)",
+        "groups": [
+          "QN-B1"
+        ]
+      },
+      {
+        "oid": "1006231",
+        "label": "85v and 86r (foldout)",
+        "groups": [
+          "QN-B1"
+        ]
+      }
+    ]
+  },
+  "physical_groups": {
+    "QA-B1": {
+      "quire": 1,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f1",
+        "f8"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f1r",
+        "f1v",
+        "f8r",
+        "f8v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006076",
+        "1006077",
+        "1006090",
+        "1006091"
+      ],
+      "yale_image_labels": [
+        "1r",
+        "1v",
+        "8r",
+        "8v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QA-B2": {
+      "quire": 1,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f2",
+        "f7"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f2r",
+        "f2v",
+        "f7r",
+        "f7v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006078",
+        "1006079",
+        "1006088",
+        "1006089"
+      ],
+      "yale_image_labels": [
+        "2r",
+        "2v",
+        "7r",
+        "7v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QA-B3": {
+      "quire": 1,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f3",
+        "f6"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f3r",
+        "f3v",
+        "f6r",
+        "f6v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006080",
+        "1006081",
+        "1006086",
+        "1006087"
+      ],
+      "yale_image_labels": [
+        "3r",
+        "3v",
+        "6r",
+        "6v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QA-B4": {
+      "quire": 1,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f4",
+        "f5"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f4r",
+        "f4v",
+        "f5r",
+        "f5v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006082",
+        "1006083",
+        "1006084",
+        "1006085"
+      ],
+      "yale_image_labels": [
+        "4r",
+        "4v",
+        "5r",
+        "5v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QB-B1": {
+      "quire": 2,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f9",
+        "f16"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f9r",
+        "f9v",
+        "f16r",
+        "f16v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006092",
+        "1006093",
+        "1006104",
+        "1006105"
+      ],
+      "yale_image_labels": [
+        "9r",
+        "9v",
+        "16r",
+        "16v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QB-B2": {
+      "quire": 2,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f10",
+        "f15"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f10r",
+        "f10v",
+        "f15r",
+        "f15v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006094",
+        "1006095",
+        "1006102",
+        "1006103"
+      ],
+      "yale_image_labels": [
+        "10r",
+        "10v",
+        "15r",
+        "15v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QB-B3": {
+      "quire": 2,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f11",
+        "f14"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f11r",
+        "f11v",
+        "f14r",
+        "f14v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006096",
+        "1006097",
+        "1006100",
+        "1006101"
+      ],
+      "yale_image_labels": [
+        "11r",
+        "11v",
+        "14r",
+        "14v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QB-B4": {
+      "quire": 2,
+      "physical_presence": "PARTIAL_BIFOLIO",
+      "present_leaves": [
+        "f13"
+      ],
+      "missing_leaves": [
+        "f12"
+      ],
+      "expected_it2a_page_ids": [
+        "f13r",
+        "f13v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006098",
+        "1006099"
+      ],
+      "yale_image_labels": [
+        "13r",
+        "13v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QC-B1": {
+      "quire": 3,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f17",
+        "f24"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f17r",
+        "f17v",
+        "f24r",
+        "f24v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006106",
+        "1006107",
+        "1006120",
+        "1006121"
+      ],
+      "yale_image_labels": [
+        "17r",
+        "17v",
+        "24r",
+        "24v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QC-B2": {
+      "quire": 3,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f18",
+        "f23"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f18r",
+        "f18v",
+        "f23r",
+        "f23v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006108",
+        "1006109",
+        "1006118",
+        "1006119"
+      ],
+      "yale_image_labels": [
+        "18r",
+        "18v",
+        "23r",
+        "23v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QC-B3": {
+      "quire": 3,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f19",
+        "f22"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f19r",
+        "f19v",
+        "f22r",
+        "f22v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006110",
+        "1006111",
+        "1006116",
+        "1006117"
+      ],
+      "yale_image_labels": [
+        "19r",
+        "19v",
+        "22r",
+        "22v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QC-B4": {
+      "quire": 3,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f20",
+        "f21"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f20r",
+        "f20v",
+        "f21r",
+        "f21v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006112",
+        "1006113",
+        "1006114",
+        "1006115"
+      ],
+      "yale_image_labels": [
+        "20r",
+        "20v",
+        "21r",
+        "21v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QD-B1": {
+      "quire": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f25",
+        "f32"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f25r",
+        "f25v",
+        "f32r",
+        "f32v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006122",
+        "1006123",
+        "1006136",
+        "1006137"
+      ],
+      "yale_image_labels": [
+        "25r",
+        "25v",
+        "32r",
+        "32v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QD-B2": {
+      "quire": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f26",
+        "f31"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f26r",
+        "f26v",
+        "f31r",
+        "f31v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006124",
+        "1006125",
+        "1006134",
+        "1006135"
+      ],
+      "yale_image_labels": [
+        "26r",
+        "26v",
+        "31r",
+        "31v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QD-B3": {
+      "quire": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f27",
+        "f30"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f27r",
+        "f27v",
+        "f30r",
+        "f30v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006126",
+        "1006127",
+        "1006132",
+        "1006133"
+      ],
+      "yale_image_labels": [
+        "27r",
+        "27v",
+        "30r",
+        "30v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QD-B4": {
+      "quire": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f28",
+        "f29"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f28r",
+        "f28v",
+        "f29r",
+        "f29v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006128",
+        "1006129",
+        "1006130",
+        "1006131"
+      ],
+      "yale_image_labels": [
+        "28r",
+        "28v",
+        "29r",
+        "29v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QE-B1": {
+      "quire": 5,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f33",
+        "f40"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f33r",
+        "f33v",
+        "f40r",
+        "f40v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006138",
+        "1006139",
+        "1006152",
+        "1006153"
+      ],
+      "yale_image_labels": [
+        "33r",
+        "33v",
+        "40r",
+        "40v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QE-B2": {
+      "quire": 5,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f34",
+        "f39"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006140",
+        "1006141",
+        "1006150",
+        "1006151"
+      ],
+      "yale_image_labels": [
+        "34r",
+        "34v",
+        "39r",
+        "39v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QE-B3": {
+      "quire": 5,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f35",
+        "f38"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f35r",
+        "f35v",
+        "f38r",
+        "f38v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006142",
+        "1006143",
+        "1006148",
+        "1006149"
+      ],
+      "yale_image_labels": [
+        "35r",
+        "35v",
+        "38r",
+        "38v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QE-B4": {
+      "quire": 5,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f36",
+        "f37"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f36r",
+        "f36v",
+        "f37r",
+        "f37v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006144",
+        "1006145",
+        "1006146",
+        "1006147"
+      ],
+      "yale_image_labels": [
+        "36r",
+        "36v",
+        "37r",
+        "37v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QF-B1": {
+      "quire": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f41",
+        "f48"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f41r",
+        "f41v",
+        "f48r",
+        "f48v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006154",
+        "1006155",
+        "1006168",
+        "1006169"
+      ],
+      "yale_image_labels": [
+        "41r",
+        "41v",
+        "48r",
+        "48v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QF-B2": {
+      "quire": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f42",
+        "f47"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f42r",
+        "f42v",
+        "f47r",
+        "f47v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006156",
+        "1006157",
+        "1006166",
+        "1006167"
+      ],
+      "yale_image_labels": [
+        "42r",
+        "42v",
+        "47r",
+        "47v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QF-B3": {
+      "quire": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f43",
+        "f46"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006158",
+        "1006159",
+        "1006164",
+        "1006165"
+      ],
+      "yale_image_labels": [
+        "43r",
+        "43v",
+        "46r",
+        "46v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QF-B4": {
+      "quire": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f44",
+        "f45"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f44r",
+        "f44v",
+        "f45r",
+        "f45v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006160",
+        "1006161",
+        "1006162",
+        "1006163"
+      ],
+      "yale_image_labels": [
+        "44r",
+        "44v",
+        "45r",
+        "45v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QG-B1": {
+      "quire": 7,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f49",
+        "f56"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f49r",
+        "f49v",
+        "f56r",
+        "f56v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006170",
+        "1006171",
+        "1006184",
+        "1006185"
+      ],
+      "yale_image_labels": [
+        "49r",
+        "49v",
+        "56r",
+        "56v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QG-B2": {
+      "quire": 7,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f50",
+        "f55"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f50r",
+        "f50v",
+        "f55r",
+        "f55v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006172",
+        "1006173",
+        "1006182",
+        "1006183"
+      ],
+      "yale_image_labels": [
+        "50r",
+        "50v",
+        "55r",
+        "55v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QG-B3": {
+      "quire": 7,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f51",
+        "f54"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f51r",
+        "f51v",
+        "f54r",
+        "f54v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006174",
+        "1006175",
+        "1006180",
+        "1006181"
+      ],
+      "yale_image_labels": [
+        "51r",
+        "51v",
+        "54r",
+        "54v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QG-B4": {
+      "quire": 7,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f52",
+        "f53"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f52r",
+        "f52v",
+        "f53r",
+        "f53v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006176",
+        "1006177",
+        "1006178",
+        "1006179"
+      ],
+      "yale_image_labels": [
+        "52r",
+        "52v",
+        "53r",
+        "53v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QH-B1": {
+      "quire": 8,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f57",
+        "f66"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f57r",
+        "f57v",
+        "f66r",
+        "f66v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006186",
+        "1006187",
+        "1006192",
+        "1006193"
+      ],
+      "yale_image_labels": [
+        "57r",
+        "57v",
+        "66r",
+        "66v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QH-B2": {
+      "quire": 8,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f58",
+        "f65"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f58r",
+        "f58v",
+        "f65r",
+        "f65v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006188",
+        "1006189",
+        "1006190",
+        "1006191"
+      ],
+      "yale_image_labels": [
+        "58r",
+        "58v",
+        "65r",
+        "65v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QH-B3": {
+      "quire": 8,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "present_leaves": [],
+      "missing_leaves": [
+        "f59",
+        "f64"
+      ],
+      "expected_it2a_page_ids": [],
+      "yale_canvas_oids_by_folio_label": [],
+      "yale_image_labels": [],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QH-B4": {
+      "quire": 8,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "present_leaves": [],
+      "missing_leaves": [
+        "f60",
+        "f63"
+      ],
+      "expected_it2a_page_ids": [],
+      "yale_canvas_oids_by_folio_label": [],
+      "yale_image_labels": [],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QH-B5": {
+      "quire": 8,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "present_leaves": [],
+      "missing_leaves": [
+        "f61",
+        "f62"
+      ],
+      "expected_it2a_page_ids": [],
+      "yale_canvas_oids_by_folio_label": [],
+      "yale_image_labels": [],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QI-B1": {
+      "quire": 9,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f67",
+        "f68"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f67r1",
+        "f67r2",
+        "f67v2",
+        "f67v1",
+        "f68r1",
+        "f68r2",
+        "f68r3",
+        "f68v3",
+        "f68v2",
+        "f68v1"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006194",
+        "1006195",
+        "1006196",
+        "1006197"
+      ],
+      "yale_image_labels": [
+        "67r",
+        "67v",
+        "68r",
+        "68v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QJ-B1": {
+      "quire": 10,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f69",
+        "f70"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f69r",
+        "f69v",
+        "f70r1",
+        "f70r2",
+        "f70v2",
+        "f70v1"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006198",
+        "1006199",
+        "1006200",
+        "1006201"
+      ],
+      "yale_image_labels": [
+        "69r",
+        "69v and 70r",
+        "70v (part)",
+        "70v (part)"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QK-B1": {
+      "quire": 11,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f71",
+        "f72"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f71r",
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3",
+        "f72v3",
+        "f72v2",
+        "f72v1"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006202",
+        "1006203",
+        "1006204",
+        "1006205"
+      ],
+      "yale_image_labels": [
+        "71r",
+        "71v and 72r",
+        "72v (part)",
+        "72v (part)"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QL-B1": {
+      "quire": 12,
+      "physical_presence": "PARTIAL_BIFOLIO",
+      "present_leaves": [
+        "f73"
+      ],
+      "missing_leaves": [
+        "f74"
+      ],
+      "expected_it2a_page_ids": [
+        "f73r",
+        "f73v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006206",
+        "1006207"
+      ],
+      "yale_image_labels": [
+        "73r",
+        "73v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QM-B1": {
+      "quire": 13,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f75",
+        "f84"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f75r",
+        "f75v",
+        "f84r",
+        "f84v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006208",
+        "1006209",
+        "1006226",
+        "1006227"
+      ],
+      "yale_image_labels": [
+        "75r",
+        "75v",
+        "84r",
+        "84v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QM-B2": {
+      "quire": 13,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f76",
+        "f83"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f76r",
+        "f76v",
+        "f83r",
+        "f83v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006210",
+        "1006211",
+        "1006224",
+        "1006225"
+      ],
+      "yale_image_labels": [
+        "76r",
+        "76v",
+        "83r",
+        "83v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QM-B3": {
+      "quire": 13,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f77",
+        "f82"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f77r",
+        "f77v",
+        "f82r",
+        "f82v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006212",
+        "1006213",
+        "1006222",
+        "1006223"
+      ],
+      "yale_image_labels": [
+        "77r",
+        "77v",
+        "82r",
+        "82v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QM-B4": {
+      "quire": 13,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f78",
+        "f81"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f78r",
+        "f78v",
+        "f81r",
+        "f81v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006214",
+        "1006215",
+        "1006220",
+        "1006221"
+      ],
+      "yale_image_labels": [
+        "78r",
+        "78v",
+        "81r",
+        "81v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QM-B5": {
+      "quire": 13,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f79",
+        "f80"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006216",
+        "1006217",
+        "1006218",
+        "1006219"
+      ],
+      "yale_image_labels": [
+        "79r",
+        "79v",
+        "80r",
+        "80v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QN-B1": {
+      "quire": 14,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f85",
+        "f86"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f85r1",
+        "f85r2",
+        "f86v4",
+        "f86v6",
+        "f86v5",
+        "f86v3"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006228",
+        "1006229",
+        "1006230",
+        "1006231"
+      ],
+      "yale_image_labels": [
+        "85r (part) (part of 85-86 foldout)",
+        "85r (part) 86v (part) (part of 85-86 foldout)",
+        "86v (part) (part of 85-86 foldout)",
+        "85v and 86r (foldout)"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QO-B1": {
+      "quire": 15,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f87",
+        "f90"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f87r",
+        "f87v",
+        "f90r1",
+        "f90r2",
+        "f90v2",
+        "f90v1"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006232",
+        "1043429",
+        "1006235",
+        "1006236",
+        "1006237"
+      ],
+      "yale_image_labels": [
+        "87r",
+        "87v",
+        "89v (part) and 90r",
+        "90r",
+        "90v (part)"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QO-B2": {
+      "quire": 15,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f88",
+        "f89"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f88r",
+        "f88v",
+        "f89r1",
+        "f89r2",
+        "f89v2",
+        "f89v1"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1037112",
+        "1006233",
+        "1006234",
+        "1006235"
+      ],
+      "yale_image_labels": [
+        "88r",
+        "88v and 89r",
+        "89v (part)",
+        "89v (part) and 90r"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QP-B1": {
+      "quire": 16,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "present_leaves": [],
+      "missing_leaves": [
+        "f91",
+        "f92"
+      ],
+      "expected_it2a_page_ids": [],
+      "yale_canvas_oids_by_folio_label": [],
+      "yale_image_labels": [],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QQ-B1": {
+      "quire": 17,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f93",
+        "f96"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f93r",
+        "f93v",
+        "f96r",
+        "f96v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006238",
+        "1006239",
+        "1006244",
+        "1006245"
+      ],
+      "yale_image_labels": [
+        "93r",
+        "93v",
+        "96r",
+        "96v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QQ-B2": {
+      "quire": 17,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f94",
+        "f95"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v2",
+        "f95v1"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006240",
+        "1006241",
+        "1006242",
+        "1006243"
+      ],
+      "yale_image_labels": [
+        "94r",
+        "94v and 95r",
+        "95v (part)",
+        "95v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QR-B1": {
+      "quire": 18,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "present_leaves": [],
+      "missing_leaves": [
+        "f97",
+        "f98"
+      ],
+      "expected_it2a_page_ids": [],
+      "yale_canvas_oids_by_folio_label": [],
+      "yale_image_labels": [],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QS-B1": {
+      "quire": 19,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f99",
+        "f102"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f99r",
+        "f99v",
+        "f102r1",
+        "f102r2",
+        "f102v2",
+        "f102v1"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006246",
+        "1006247",
+        "1006251",
+        "1006252",
+        "1006253"
+      ],
+      "yale_image_labels": [
+        "99r",
+        "99v",
+        "101v (part) and 102r",
+        "102v (part)",
+        "102v (part)"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QS-B2": {
+      "quire": 19,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f100",
+        "f101"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f100r",
+        "f100v",
+        "f101r",
+        "f101v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006248",
+        "1006249",
+        "1006250",
+        "1006251"
+      ],
+      "yale_image_labels": [
+        "100r",
+        "100v and 101r",
+        "101v (part)",
+        "101v (part) and 102r"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QT-B1": {
+      "quire": 20,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f103",
+        "f116"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f103r",
+        "f103v",
+        "f116r"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006254",
+        "1006255",
+        "1006276",
+        "1006277"
+      ],
+      "yale_image_labels": [
+        "103r",
+        "103v",
+        "116r",
+        "116v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QT-B2": {
+      "quire": 20,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f104",
+        "f115"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f104r",
+        "f104v",
+        "f115r",
+        "f115v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006256",
+        "1006257",
+        "1006274",
+        "1006275"
+      ],
+      "yale_image_labels": [
+        "104r",
+        "104v",
+        "115r",
+        "115v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QT-B3": {
+      "quire": 20,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f105",
+        "f114"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f105r",
+        "f105v",
+        "f114r",
+        "f114v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006258",
+        "1006259",
+        "1006272",
+        "1006273"
+      ],
+      "yale_image_labels": [
+        "105r",
+        "105v",
+        "114r",
+        "114v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QT-B4": {
+      "quire": 20,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f106",
+        "f113"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f106r",
+        "f106v",
+        "f113r",
+        "f113v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006260",
+        "1006261",
+        "1006270",
+        "1006271"
+      ],
+      "yale_image_labels": [
+        "106r",
+        "106v",
+        "113r",
+        "113v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QT-B5": {
+      "quire": 20,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f107",
+        "f112"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f107r",
+        "f107v",
+        "f112r",
+        "f112v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006262",
+        "1006263",
+        "1006268",
+        "1006269"
+      ],
+      "yale_image_labels": [
+        "107r",
+        "107v",
+        "112r",
+        "112v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QT-B6": {
+      "quire": 20,
+      "physical_presence": "EXTANT_GROUP",
+      "present_leaves": [
+        "f108",
+        "f111"
+      ],
+      "missing_leaves": [],
+      "expected_it2a_page_ids": [
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v"
+      ],
+      "yale_canvas_oids_by_folio_label": [
+        "1006264",
+        "1006265",
+        "1006266",
+        "1006267"
+      ],
+      "yale_image_labels": [
+        "108r",
+        "108v",
+        "111r",
+        "111v"
+      ],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    },
+    "QT-B7": {
+      "quire": 20,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "present_leaves": [],
+      "missing_leaves": [
+        "f109",
+        "f110"
+      ],
+      "expected_it2a_page_ids": [],
+      "yale_canvas_oids_by_folio_label": [],
+      "yale_image_labels": [],
+      "evidence_level": "MANIFEST_LABEL_MAPPING_ONLY",
+      "direct_pixel_review": false,
+      "panel_geometry_verified": false
+    }
+  },
+  "image_canvases": [
+    {
+      "sequence_index": 0,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006074",
+      "oid": "1006074",
+      "label": "[Front cover]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006074/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2931,
+      "height": 3865,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 1,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006075",
+      "oid": "1006075",
+      "label": "[Inside front cover]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006075/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2812,
+      "height": 3797,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 2,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+      "oid": "1006076",
+      "label": "1r",
+      "folio_sides_from_label": [
+        "f1r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2972,
+      "height": 3766,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 3,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006077",
+      "oid": "1006077",
+      "label": "1v",
+      "folio_sides_from_label": [
+        "f1v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006077/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2804,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 4,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006078",
+      "oid": "1006078",
+      "label": "2r",
+      "folio_sides_from_label": [
+        "f2r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006078/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2691,
+      "height": 3770,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 5,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006079",
+      "oid": "1006079",
+      "label": "2v",
+      "folio_sides_from_label": [
+        "f2v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006079/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2771,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 6,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006080",
+      "oid": "1006080",
+      "label": "3r",
+      "folio_sides_from_label": [
+        "f3r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006080/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2691,
+      "height": 3770,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 7,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006081",
+      "oid": "1006081",
+      "label": "3v",
+      "folio_sides_from_label": [
+        "f3v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006081/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2762,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 8,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006082",
+      "oid": "1006082",
+      "label": "4r",
+      "folio_sides_from_label": [
+        "f4r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006082/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2682,
+      "height": 3740,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 9,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006083",
+      "oid": "1006083",
+      "label": "4v",
+      "folio_sides_from_label": [
+        "f4v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006083/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2768,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 10,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006084",
+      "oid": "1006084",
+      "label": "5r",
+      "folio_sides_from_label": [
+        "f5r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006084/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2636,
+      "height": 3723,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 11,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006085",
+      "oid": "1006085",
+      "label": "5v",
+      "folio_sides_from_label": [
+        "f5v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006085/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2759,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 12,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006086",
+      "oid": "1006086",
+      "label": "6r",
+      "folio_sides_from_label": [
+        "f6r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006086/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2662,
+      "height": 3727,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 13,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006087",
+      "oid": "1006087",
+      "label": "6v",
+      "folio_sides_from_label": [
+        "f6v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006087/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2753,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 14,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006088",
+      "oid": "1006088",
+      "label": "7r",
+      "folio_sides_from_label": [
+        "f7r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006088/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2656,
+      "height": 3721,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 15,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006089",
+      "oid": "1006089",
+      "label": "7v",
+      "folio_sides_from_label": [
+        "f7v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006089/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2806,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 16,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006090",
+      "oid": "1006090",
+      "label": "8r",
+      "folio_sides_from_label": [
+        "f8r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006090/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2660,
+      "height": 3719,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 17,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006091",
+      "oid": "1006091",
+      "label": "8v",
+      "folio_sides_from_label": [
+        "f8v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QA-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006091/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2791,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 18,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006092",
+      "oid": "1006092",
+      "label": "9r",
+      "folio_sides_from_label": [
+        "f9r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006092/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2691,
+      "height": 3737,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 19,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006093",
+      "oid": "1006093",
+      "label": "9v",
+      "folio_sides_from_label": [
+        "f9v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006093/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2812,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 20,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006094",
+      "oid": "1006094",
+      "label": "10r",
+      "folio_sides_from_label": [
+        "f10r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006094/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2691,
+      "height": 3739,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 21,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006095",
+      "oid": "1006095",
+      "label": "10v",
+      "folio_sides_from_label": [
+        "f10v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006095/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2839,
+      "height": 3797,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 22,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006096",
+      "oid": "1006096",
+      "label": "11r",
+      "folio_sides_from_label": [
+        "f11r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006096/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2672,
+      "height": 3744,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 23,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006097",
+      "oid": "1006097",
+      "label": "11v",
+      "folio_sides_from_label": [
+        "f11v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006097/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2825,
+      "height": 3775,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 24,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006098",
+      "oid": "1006098",
+      "label": "13r",
+      "folio_sides_from_label": [
+        "f13r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006098/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2601,
+      "height": 3723,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 25,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006099",
+      "oid": "1006099",
+      "label": "13v",
+      "folio_sides_from_label": [
+        "f13v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006099/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2812,
+      "height": 3770,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 26,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006100",
+      "oid": "1006100",
+      "label": "14r",
+      "folio_sides_from_label": [
+        "f14r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006100/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2662,
+      "height": 3739,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 27,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006101",
+      "oid": "1006101",
+      "label": "14v",
+      "folio_sides_from_label": [
+        "f14v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006101/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2812,
+      "height": 3772,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 28,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006102",
+      "oid": "1006102",
+      "label": "15r",
+      "folio_sides_from_label": [
+        "f15r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006102/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2648,
+      "height": 3729,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 29,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006103",
+      "oid": "1006103",
+      "label": "15v",
+      "folio_sides_from_label": [
+        "f15v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006103/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2835,
+      "height": 3776,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 30,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006104",
+      "oid": "1006104",
+      "label": "16r",
+      "folio_sides_from_label": [
+        "f16r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006104/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2658,
+      "height": 3758,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 31,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006105",
+      "oid": "1006105",
+      "label": "16v",
+      "folio_sides_from_label": [
+        "f16v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QB-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006105/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2840,
+      "height": 3793,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 32,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006106",
+      "oid": "1006106",
+      "label": "17r",
+      "folio_sides_from_label": [
+        "f17r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006106/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2649,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 33,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006107",
+      "oid": "1006107",
+      "label": "17v",
+      "folio_sides_from_label": [
+        "f17v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006107/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2843,
+      "height": 3775,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 34,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006108",
+      "oid": "1006108",
+      "label": "18r",
+      "folio_sides_from_label": [
+        "f18r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006108/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2649,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 35,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006109",
+      "oid": "1006109",
+      "label": "18v",
+      "folio_sides_from_label": [
+        "f18v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006109/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2846,
+      "height": 3781,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 36,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006110",
+      "oid": "1006110",
+      "label": "19r",
+      "folio_sides_from_label": [
+        "f19r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006110/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2649,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 37,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006111",
+      "oid": "1006111",
+      "label": "19v",
+      "folio_sides_from_label": [
+        "f19v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006111/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 38,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006112",
+      "oid": "1006112",
+      "label": "20r",
+      "folio_sides_from_label": [
+        "f20r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006112/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2649,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 39,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006113",
+      "oid": "1006113",
+      "label": "20v",
+      "folio_sides_from_label": [
+        "f20v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006113/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 40,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006114",
+      "oid": "1006114",
+      "label": "21r",
+      "folio_sides_from_label": [
+        "f21r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006114/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2649,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 41,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006115",
+      "oid": "1006115",
+      "label": "21v",
+      "folio_sides_from_label": [
+        "f21v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006115/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 42,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006116",
+      "oid": "1006116",
+      "label": "22r",
+      "folio_sides_from_label": [
+        "f22r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006116/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2649,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 43,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006117",
+      "oid": "1006117",
+      "label": "22v",
+      "folio_sides_from_label": [
+        "f22v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006117/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3795,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 44,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006118",
+      "oid": "1006118",
+      "label": "23r",
+      "folio_sides_from_label": [
+        "f23r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006118/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2650,
+      "height": 3705,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 45,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006119",
+      "oid": "1006119",
+      "label": "23v",
+      "folio_sides_from_label": [
+        "f23v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006119/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3780,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 46,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006120",
+      "oid": "1006120",
+      "label": "24r",
+      "folio_sides_from_label": [
+        "f24r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006120/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2688,
+      "height": 3719,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 47,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006121",
+      "oid": "1006121",
+      "label": "24v",
+      "folio_sides_from_label": [
+        "f24v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QC-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006121/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2864,
+      "height": 3771,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 48,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006122",
+      "oid": "1006122",
+      "label": "25r",
+      "folio_sides_from_label": [
+        "f25r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006122/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2709,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 49,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006123",
+      "oid": "1006123",
+      "label": "25v",
+      "folio_sides_from_label": [
+        "f25v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006123/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2863,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 50,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006124",
+      "oid": "1006124",
+      "label": "26r",
+      "folio_sides_from_label": [
+        "f26r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006124/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2727,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 51,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006125",
+      "oid": "1006125",
+      "label": "26v",
+      "folio_sides_from_label": [
+        "f26v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006125/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 52,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006126",
+      "oid": "1006126",
+      "label": "27r",
+      "folio_sides_from_label": [
+        "f27r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006126/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2708,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 53,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006127",
+      "oid": "1006127",
+      "label": "27v",
+      "folio_sides_from_label": [
+        "f27v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006127/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 54,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006128",
+      "oid": "1006128",
+      "label": "28r",
+      "folio_sides_from_label": [
+        "f28r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006128/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2727,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 55,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006129",
+      "oid": "1006129",
+      "label": "28v",
+      "folio_sides_from_label": [
+        "f28v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006129/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2885,
+      "height": 3780,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 56,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006130",
+      "oid": "1006130",
+      "label": "29r",
+      "folio_sides_from_label": [
+        "f29r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006130/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2718,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 57,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006131",
+      "oid": "1006131",
+      "label": "29v",
+      "folio_sides_from_label": [
+        "f29v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006131/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2876,
+      "height": 3777,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 58,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006132",
+      "oid": "1006132",
+      "label": "30r",
+      "folio_sides_from_label": [
+        "f30r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006132/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2742,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 59,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006133",
+      "oid": "1006133",
+      "label": "30v",
+      "folio_sides_from_label": [
+        "f30v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006133/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 60,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006134",
+      "oid": "1006134",
+      "label": "31r",
+      "folio_sides_from_label": [
+        "f31r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006134/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2717,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 61,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006135",
+      "oid": "1006135",
+      "label": "31v",
+      "folio_sides_from_label": [
+        "f31v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006135/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 62,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006136",
+      "oid": "1006136",
+      "label": "32r",
+      "folio_sides_from_label": [
+        "f32r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006136/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2734,
+      "height": 3731,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 63,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006137",
+      "oid": "1006137",
+      "label": "32v",
+      "folio_sides_from_label": [
+        "f32v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QD-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006137/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 64,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006138",
+      "oid": "1006138",
+      "label": "33r",
+      "folio_sides_from_label": [
+        "f33r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006138/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2766,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 65,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006139",
+      "oid": "1006139",
+      "label": "33v",
+      "folio_sides_from_label": [
+        "f33v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006139/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2871,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 66,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006140",
+      "oid": "1006140",
+      "label": "34r",
+      "folio_sides_from_label": [
+        "f34r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006140/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2777,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 67,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006141",
+      "oid": "1006141",
+      "label": "34v",
+      "folio_sides_from_label": [
+        "f34v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006141/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2881,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 68,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006142",
+      "oid": "1006142",
+      "label": "35r",
+      "folio_sides_from_label": [
+        "f35r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006142/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 69,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006143",
+      "oid": "1006143",
+      "label": "35v",
+      "folio_sides_from_label": [
+        "f35v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006143/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2853,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 70,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006144",
+      "oid": "1006144",
+      "label": "36r",
+      "folio_sides_from_label": [
+        "f36r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006144/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 71,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006145",
+      "oid": "1006145",
+      "label": "36v",
+      "folio_sides_from_label": [
+        "f36v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006145/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2849,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 72,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006146",
+      "oid": "1006146",
+      "label": "37r",
+      "folio_sides_from_label": [
+        "f37r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006146/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 73,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006147",
+      "oid": "1006147",
+      "label": "37v",
+      "folio_sides_from_label": [
+        "f37v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006147/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 74,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006148",
+      "oid": "1006148",
+      "label": "38r",
+      "folio_sides_from_label": [
+        "f38r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006148/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 75,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006149",
+      "oid": "1006149",
+      "label": "38v",
+      "folio_sides_from_label": [
+        "f38v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006149/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 76,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006150",
+      "oid": "1006150",
+      "label": "39r",
+      "folio_sides_from_label": [
+        "f39r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006150/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 77,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006151",
+      "oid": "1006151",
+      "label": "39v",
+      "folio_sides_from_label": [
+        "f39v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006151/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 78,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006152",
+      "oid": "1006152",
+      "label": "40r",
+      "folio_sides_from_label": [
+        "f40r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006152/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3734,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 79,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006153",
+      "oid": "1006153",
+      "label": "40v",
+      "folio_sides_from_label": [
+        "f40v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QE-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006153/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 80,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006154",
+      "oid": "1006154",
+      "label": "41r",
+      "folio_sides_from_label": [
+        "f41r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006154/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2840,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 81,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006155",
+      "oid": "1006155",
+      "label": "41v",
+      "folio_sides_from_label": [
+        "f41v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006155/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 82,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006156",
+      "oid": "1006156",
+      "label": "42r",
+      "folio_sides_from_label": [
+        "f42r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006156/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2843,
+      "height": 3743,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 83,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006157",
+      "oid": "1006157",
+      "label": "42v",
+      "folio_sides_from_label": [
+        "f42v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006157/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 84,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006158",
+      "oid": "1006158",
+      "label": "43r",
+      "folio_sides_from_label": [
+        "f43r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006158/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2837,
+      "height": 3751,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 85,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006159",
+      "oid": "1006159",
+      "label": "43v",
+      "folio_sides_from_label": [
+        "f43v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006159/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 86,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006160",
+      "oid": "1006160",
+      "label": "44r",
+      "folio_sides_from_label": [
+        "f44r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006160/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2799,
+      "height": 3728,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 87,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006161",
+      "oid": "1006161",
+      "label": "44v",
+      "folio_sides_from_label": [
+        "f44v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006161/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2882,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 88,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006162",
+      "oid": "1006162",
+      "label": "45r",
+      "folio_sides_from_label": [
+        "f45r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006162/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2823,
+      "height": 3706,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 89,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006163",
+      "oid": "1006163",
+      "label": "45v",
+      "folio_sides_from_label": [
+        "f45v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006163/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2900,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 90,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006164",
+      "oid": "1006164",
+      "label": "46r",
+      "folio_sides_from_label": [
+        "f46r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006164/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2865,
+      "height": 3719,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 91,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006165",
+      "oid": "1006165",
+      "label": "46v",
+      "folio_sides_from_label": [
+        "f46v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006165/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2938,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 92,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006166",
+      "oid": "1006166",
+      "label": "47r",
+      "folio_sides_from_label": [
+        "f47r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006166/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2826,
+      "height": 3716,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 93,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006167",
+      "oid": "1006167",
+      "label": "47v",
+      "folio_sides_from_label": [
+        "f47v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006167/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2932,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 94,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006168",
+      "oid": "1006168",
+      "label": "48r",
+      "folio_sides_from_label": [
+        "f48r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006168/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2859,
+      "height": 3719,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 95,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006169",
+      "oid": "1006169",
+      "label": "48v",
+      "folio_sides_from_label": [
+        "f48v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QF-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006169/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2950,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 96,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006170",
+      "oid": "1006170",
+      "label": "49r",
+      "folio_sides_from_label": [
+        "f49r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006170/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2837,
+      "height": 3762,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 97,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006171",
+      "oid": "1006171",
+      "label": "49v",
+      "folio_sides_from_label": [
+        "f49v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006171/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2935,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 98,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006172",
+      "oid": "1006172",
+      "label": "50r",
+      "folio_sides_from_label": [
+        "f50r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006172/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2840,
+      "height": 3751,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 99,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006173",
+      "oid": "1006173",
+      "label": "50v",
+      "folio_sides_from_label": [
+        "f50v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006173/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2942,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 100,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006174",
+      "oid": "1006174",
+      "label": "51r",
+      "folio_sides_from_label": [
+        "f51r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006174/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2835,
+      "height": 3764,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 101,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006175",
+      "oid": "1006175",
+      "label": "51v",
+      "folio_sides_from_label": [
+        "f51v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006175/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2927,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 102,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006176",
+      "oid": "1006176",
+      "label": "52r",
+      "folio_sides_from_label": [
+        "f52r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006176/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2826,
+      "height": 3757,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 103,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006177",
+      "oid": "1006177",
+      "label": "52v",
+      "folio_sides_from_label": [
+        "f52v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006177/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2935,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 104,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006178",
+      "oid": "1006178",
+      "label": "53r",
+      "folio_sides_from_label": [
+        "f53r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006178/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3707,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 105,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006179",
+      "oid": "1006179",
+      "label": "53v",
+      "folio_sides_from_label": [
+        "f53v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006179/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2940,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 106,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006180",
+      "oid": "1006180",
+      "label": "54r",
+      "folio_sides_from_label": [
+        "f54r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006180/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3718,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 107,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006181",
+      "oid": "1006181",
+      "label": "54v",
+      "folio_sides_from_label": [
+        "f54v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006181/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2999,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 108,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006182",
+      "oid": "1006182",
+      "label": "55r",
+      "folio_sides_from_label": [
+        "f55r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006182/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3738,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 109,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006183",
+      "oid": "1006183",
+      "label": "55v",
+      "folio_sides_from_label": [
+        "f55v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006183/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2979,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 110,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006184",
+      "oid": "1006184",
+      "label": "56r",
+      "folio_sides_from_label": [
+        "f56r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006184/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3707,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 111,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006185",
+      "oid": "1006185",
+      "label": "56v",
+      "folio_sides_from_label": [
+        "f56v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QG-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006185/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2979,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 112,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006186",
+      "oid": "1006186",
+      "label": "57r",
+      "folio_sides_from_label": [
+        "f57r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006186/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2823,
+      "height": 3733,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 113,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006187",
+      "oid": "1006187",
+      "label": "57v",
+      "folio_sides_from_label": [
+        "f57v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006187/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 3028,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 114,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006188",
+      "oid": "1006188",
+      "label": "58r",
+      "folio_sides_from_label": [
+        "f58r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006188/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3749,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 115,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006189",
+      "oid": "1006189",
+      "label": "58v",
+      "folio_sides_from_label": [
+        "f58v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006189/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2986,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 116,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006190",
+      "oid": "1006190",
+      "label": "65r",
+      "folio_sides_from_label": [
+        "f65r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006190/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3707,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 117,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006191",
+      "oid": "1006191",
+      "label": "65v",
+      "folio_sides_from_label": [
+        "f65v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006191/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 3010,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 118,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006192",
+      "oid": "1006192",
+      "label": "66r",
+      "folio_sides_from_label": [
+        "f66r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006192/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3707,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 119,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006193",
+      "oid": "1006193",
+      "label": "66v",
+      "folio_sides_from_label": [
+        "f66v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QH-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006193/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2997,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 120,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+      "oid": "1006194",
+      "label": "67r",
+      "folio_sides_from_label": [
+        "f67r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QI-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006194/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 4972,
+      "height": 3738,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 121,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006195",
+      "oid": "1006195",
+      "label": "67v",
+      "folio_sides_from_label": [
+        "f67v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QI-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006195/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 5059,
+      "height": 3753,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 122,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+      "oid": "1006196",
+      "label": "68r",
+      "folio_sides_from_label": [
+        "f68r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QI-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006196/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 7993,
+      "height": 3828,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 123,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006197",
+      "oid": "1006197",
+      "label": "68v",
+      "folio_sides_from_label": [
+        "f68v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QI-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006197/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 8135,
+      "height": 3843,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 124,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006198",
+      "oid": "1006198",
+      "label": "69r",
+      "folio_sides_from_label": [
+        "f69r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QJ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006198/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3763,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 125,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006199",
+      "oid": "1006199",
+      "label": "69v and 70r",
+      "folio_sides_from_label": [
+        "f69v",
+        "f70r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QJ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006199/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 8886,
+      "height": 3876,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 126,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006200",
+      "oid": "1006200",
+      "label": "70v (part)",
+      "folio_sides_from_label": [
+        "f70v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QJ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 3945,
+      "height": 3772,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 127,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006201",
+      "oid": "1006201",
+      "label": "70v (part)",
+      "folio_sides_from_label": [
+        "f70v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QJ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006201/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2979,
+      "height": 3700,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 128,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006202",
+      "oid": "1006202",
+      "label": "71r",
+      "folio_sides_from_label": [
+        "f71r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QK-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3762,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 129,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006203",
+      "oid": "1006203",
+      "label": "71v and 72r",
+      "folio_sides_from_label": [
+        "f71v",
+        "f72r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QK-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 8865,
+      "height": 3018,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 130,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006204",
+      "oid": "1006204",
+      "label": "72v (part)",
+      "folio_sides_from_label": [
+        "f72v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QK-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 5976,
+      "height": 3794,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 131,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006205",
+      "oid": "1006205",
+      "label": "72v (part)",
+      "folio_sides_from_label": [
+        "f72v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QK-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2979,
+      "height": 3712,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 132,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006206",
+      "oid": "1006206",
+      "label": "73r",
+      "folio_sides_from_label": [
+        "f73r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QL-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2834,
+      "height": 3761,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 133,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006207",
+      "oid": "1006207",
+      "label": "73v",
+      "folio_sides_from_label": [
+        "f73v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QL-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2979,
+      "height": 3724,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 134,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006208",
+      "oid": "1006208",
+      "label": "75r",
+      "folio_sides_from_label": [
+        "f75r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006208/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2852,
+      "height": 3759,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 135,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006209",
+      "oid": "1006209",
+      "label": "75v",
+      "folio_sides_from_label": [
+        "f75v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006209/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2868,
+      "height": 3735,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 136,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006210",
+      "oid": "1006210",
+      "label": "76r",
+      "folio_sides_from_label": [
+        "f76r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006210/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3769,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 137,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006211",
+      "oid": "1006211",
+      "label": "76v",
+      "folio_sides_from_label": [
+        "f76v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006211/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2823,
+      "height": 3712,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 138,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006212",
+      "oid": "1006212",
+      "label": "77r",
+      "folio_sides_from_label": [
+        "f77r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006212/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3752,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 139,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006213",
+      "oid": "1006213",
+      "label": "77v",
+      "folio_sides_from_label": [
+        "f77v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006213/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2861,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 140,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006214",
+      "oid": "1006214",
+      "label": "78r",
+      "folio_sides_from_label": [
+        "f78r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006214/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3761,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 141,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006215",
+      "oid": "1006215",
+      "label": "78v",
+      "folio_sides_from_label": [
+        "f78v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006215/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2841,
+      "height": 3706,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 142,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006216",
+      "oid": "1006216",
+      "label": "79r",
+      "folio_sides_from_label": [
+        "f79r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006216/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2784,
+      "height": 3755,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 143,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006217",
+      "oid": "1006217",
+      "label": "79v",
+      "folio_sides_from_label": [
+        "f79v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006217/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2811,
+      "height": 3714,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 144,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006218",
+      "oid": "1006218",
+      "label": "80r",
+      "folio_sides_from_label": [
+        "f80r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006218/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2793,
+      "height": 3733,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 145,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006219",
+      "oid": "1006219",
+      "label": "80v",
+      "folio_sides_from_label": [
+        "f80v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006219/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2837,
+      "height": 3712,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 146,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006220",
+      "oid": "1006220",
+      "label": "81r",
+      "folio_sides_from_label": [
+        "f81r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006220/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2776,
+      "height": 3737,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 147,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006221",
+      "oid": "1006221",
+      "label": "81v",
+      "folio_sides_from_label": [
+        "f81v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006221/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2835,
+      "height": 3705,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 148,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006222",
+      "oid": "1006222",
+      "label": "82r",
+      "folio_sides_from_label": [
+        "f82r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006222/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2753,
+      "height": 3745,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 149,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006223",
+      "oid": "1006223",
+      "label": "82v",
+      "folio_sides_from_label": [
+        "f82v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006223/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2821,
+      "height": 3709,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 150,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006224",
+      "oid": "1006224",
+      "label": "83r",
+      "folio_sides_from_label": [
+        "f83r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006224/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2753,
+      "height": 3745,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 151,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006225",
+      "oid": "1006225",
+      "label": "83v",
+      "folio_sides_from_label": [
+        "f83v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006225/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2858,
+      "height": 3693,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 152,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+      "oid": "1006226",
+      "label": "84r",
+      "folio_sides_from_label": [
+        "f84r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006226/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2753,
+      "height": 3745,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 153,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006227",
+      "oid": "1006227",
+      "label": "84v",
+      "folio_sides_from_label": [
+        "f84v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QM-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006227/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2838,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 154,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006228",
+      "oid": "1006228",
+      "label": "85r (part) (part of 85-86 foldout)",
+      "folio_sides_from_label": [
+        "f85r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QN-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006228/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2775,
+      "height": 3745,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 155,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+      "oid": "1006229",
+      "label": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "folio_sides_from_label": [
+        "f85r",
+        "f86v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QN-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006229/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 7754,
+      "height": 3890,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 156,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006230",
+      "oid": "1006230",
+      "label": "86v (part) (part of 85-86 foldout)",
+      "folio_sides_from_label": [
+        "f86v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QN-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006230/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 4897,
+      "height": 3788,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 157,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+      "oid": "1006231",
+      "label": "85v and 86r (foldout)",
+      "folio_sides_from_label": [
+        "f85v",
+        "f86r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QN-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006231/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 7925,
+      "height": 7268,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 158,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006232",
+      "oid": "1006232",
+      "label": "87r",
+      "folio_sides_from_label": [
+        "f87r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006232/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2753,
+      "height": 3745,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 159,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1043429",
+      "oid": "1043429",
+      "label": "87v",
+      "folio_sides_from_label": [
+        "f87v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1043429/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2893,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 160,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037112",
+      "oid": "1037112",
+      "label": "88r",
+      "folio_sides_from_label": [
+        "f88r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1037112/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2714,
+      "height": 3735,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 161,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006233",
+      "oid": "1006233",
+      "label": "88v and 89r",
+      "folio_sides_from_label": [
+        "f88v",
+        "f89r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006233/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 9078,
+      "height": 3777,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 162,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006234",
+      "oid": "1006234",
+      "label": "89v (part)",
+      "folio_sides_from_label": [
+        "f89v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006234/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 4204,
+      "height": 3809,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 163,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235",
+      "oid": "1006235",
+      "label": "89v (part) and 90r",
+      "folio_sides_from_label": [
+        "f89v",
+        "f90r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B2",
+        "QO-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006235/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 7796,
+      "height": 3761,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 164,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006236",
+      "oid": "1006236",
+      "label": "90r",
+      "folio_sides_from_label": [
+        "f90r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006236/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2737,
+      "height": 3752,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 165,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006237",
+      "oid": "1006237",
+      "label": "90v (part)",
+      "folio_sides_from_label": [
+        "f90v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QO-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006237/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2838,
+      "height": 3697,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 166,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006238",
+      "oid": "1006238",
+      "label": "93r",
+      "folio_sides_from_label": [
+        "f93r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006238/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2718,
+      "height": 3758,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 167,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006239",
+      "oid": "1006239",
+      "label": "93v",
+      "folio_sides_from_label": [
+        "f93v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006239/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2838,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 168,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006240",
+      "oid": "1006240",
+      "label": "94r",
+      "folio_sides_from_label": [
+        "f94r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006240/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2728,
+      "height": 3754,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 169,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006241",
+      "oid": "1006241",
+      "label": "94v and 95r",
+      "folio_sides_from_label": [
+        "f94v",
+        "f95r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006241/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 7642,
+      "height": 3801,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 170,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006242",
+      "oid": "1006242",
+      "label": "95v (part)",
+      "folio_sides_from_label": [
+        "f95v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006242/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2731,
+      "height": 3750,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 171,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006243",
+      "oid": "1006243",
+      "label": "95v",
+      "folio_sides_from_label": [
+        "f95v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006243/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2838,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 172,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006244",
+      "oid": "1006244",
+      "label": "96r",
+      "folio_sides_from_label": [
+        "f96r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006244/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2699,
+      "height": 3745,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 173,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006245",
+      "oid": "1006245",
+      "label": "96v",
+      "folio_sides_from_label": [
+        "f96v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QQ-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006245/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2858,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 174,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006246",
+      "oid": "1006246",
+      "label": "99r",
+      "folio_sides_from_label": [
+        "f99r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006246/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2702,
+      "height": 3765,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 175,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006247",
+      "oid": "1006247",
+      "label": "99v",
+      "folio_sides_from_label": [
+        "f99v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006247/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2802,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 176,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006248",
+      "oid": "1006248",
+      "label": "100r",
+      "folio_sides_from_label": [
+        "f100r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006248/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2676,
+      "height": 3756,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 177,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006249",
+      "oid": "1006249",
+      "label": "100v and 101r",
+      "folio_sides_from_label": [
+        "f100v",
+        "f101r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006249/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 7486,
+      "height": 3715,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 178,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006250",
+      "oid": "1006250",
+      "label": "101v (part)",
+      "folio_sides_from_label": [
+        "f101v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006250/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2698,
+      "height": 3779,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 179,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+      "oid": "1006251",
+      "label": "101v (part) and 102r",
+      "folio_sides_from_label": [
+        "f101v",
+        "f102r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B2",
+        "QS-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006251/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 8176,
+      "height": 3864,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 180,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006252",
+      "oid": "1006252",
+      "label": "102v (part)",
+      "folio_sides_from_label": [
+        "f102v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006252/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2981,
+      "height": 3795,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 181,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006253",
+      "oid": "1006253",
+      "label": "102v (part)",
+      "folio_sides_from_label": [
+        "f102v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QS-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006253/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2838,
+      "height": 3697,
+      "mapping_kind": "COMPOSITE_OR_FOLDOUT_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 182,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006254",
+      "oid": "1006254",
+      "label": "103r",
+      "folio_sides_from_label": [
+        "f103r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006254/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2688,
+      "height": 3805,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 183,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006255",
+      "oid": "1006255",
+      "label": "103v",
+      "folio_sides_from_label": [
+        "f103v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006255/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2762,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 184,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006256",
+      "oid": "1006256",
+      "label": "104r",
+      "folio_sides_from_label": [
+        "f104r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006256/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2677,
+      "height": 3811,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 185,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006257",
+      "oid": "1006257",
+      "label": "104v",
+      "folio_sides_from_label": [
+        "f104v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006257/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2744,
+      "height": 3704,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 186,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006258",
+      "oid": "1006258",
+      "label": "105r",
+      "folio_sides_from_label": [
+        "f105r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006258/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2662,
+      "height": 3771,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 187,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006259",
+      "oid": "1006259",
+      "label": "105v",
+      "folio_sides_from_label": [
+        "f105v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006259/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2663,
+      "height": 3701,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 188,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006260",
+      "oid": "1006260",
+      "label": "106r",
+      "folio_sides_from_label": [
+        "f106r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006260/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2635,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 189,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006261",
+      "oid": "1006261",
+      "label": "106v",
+      "folio_sides_from_label": [
+        "f106v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006261/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2670,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 190,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006262",
+      "oid": "1006262",
+      "label": "107r",
+      "folio_sides_from_label": [
+        "f107r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006262/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2641,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 191,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006263",
+      "oid": "1006263",
+      "label": "107v",
+      "folio_sides_from_label": [
+        "f107v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006263/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2689,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 192,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006264",
+      "oid": "1006264",
+      "label": "108r",
+      "folio_sides_from_label": [
+        "f108r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B6"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006264/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2641,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 193,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006265",
+      "oid": "1006265",
+      "label": "108v",
+      "folio_sides_from_label": [
+        "f108v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B6"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006265/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2649,
+      "height": 3706,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 194,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006266",
+      "oid": "1006266",
+      "label": "111r",
+      "folio_sides_from_label": [
+        "f111r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B6"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006266/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2622,
+      "height": 3783,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 195,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006267",
+      "oid": "1006267",
+      "label": "111v",
+      "folio_sides_from_label": [
+        "f111v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B6"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006267/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2666,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 196,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006268",
+      "oid": "1006268",
+      "label": "112r",
+      "folio_sides_from_label": [
+        "f112r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006268/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2602,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 197,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006269",
+      "oid": "1006269",
+      "label": "112v",
+      "folio_sides_from_label": [
+        "f112v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B5"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006269/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2664,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 198,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006270",
+      "oid": "1006270",
+      "label": "113r",
+      "folio_sides_from_label": [
+        "f113r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006270/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2582,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 199,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006271",
+      "oid": "1006271",
+      "label": "113v",
+      "folio_sides_from_label": [
+        "f113v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B4"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006271/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2666,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 200,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006272",
+      "oid": "1006272",
+      "label": "114r",
+      "folio_sides_from_label": [
+        "f114r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006272/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2599,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 201,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006273",
+      "oid": "1006273",
+      "label": "114v",
+      "folio_sides_from_label": [
+        "f114v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B3"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006273/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2671,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 202,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006274",
+      "oid": "1006274",
+      "label": "115r",
+      "folio_sides_from_label": [
+        "f115r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006274/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2584,
+      "height": 3786,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 203,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006275",
+      "oid": "1006275",
+      "label": "115v",
+      "folio_sides_from_label": [
+        "f115v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B2"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006275/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2676,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 204,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006276",
+      "oid": "1006276",
+      "label": "116r",
+      "folio_sides_from_label": [
+        "f116r"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006276/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2559,
+      "height": 3787,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 205,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006277",
+      "oid": "1006277",
+      "label": "116v",
+      "folio_sides_from_label": [
+        "f116v"
+      ],
+      "physical_group_ids_by_leaf_label": [
+        "QT-B1"
+      ],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006277/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2686,
+      "height": 3697,
+      "mapping_kind": "ORDINARY_FOLIO_SIDE_LABEL",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 206,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1037113",
+      "oid": "1037113",
+      "label": "[Back flyleaf recto]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1037113/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2570,
+      "height": 3787,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 207,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006278",
+      "oid": "1006278",
+      "label": "[Back flyleaf verso-inside back cover]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006278/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 5342,
+      "height": 3822,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 208,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868207",
+      "oid": "11868207",
+      "label": "[Head]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/11868207/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2829,
+      "height": 1221,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 209,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868208",
+      "oid": "11868208",
+      "label": "[Tail]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/11868208/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2875,
+      "height": 1237,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 210,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868209",
+      "oid": "11868209",
+      "label": "[Fore-edge]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/11868209/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 1255,
+      "height": 3838,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 211,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/11868210",
+      "oid": "11868210",
+      "label": "[Spine]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/11868210/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 1030,
+      "height": 3833,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    },
+    {
+      "sequence_index": 212,
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006279",
+      "oid": "1006279",
+      "label": "[Back cover]",
+      "folio_sides_from_label": [],
+      "physical_group_ids_by_leaf_label": [],
+      "image_resource_url": "https://collections.library.yale.edu/iiif/2/1006279/full/full/0/default.jpg",
+      "image_service_url": null,
+      "width": 2889,
+      "height": 3861,
+      "mapping_kind": "NON_FOLIO_CANVAS",
+      "pixel_inspected": false,
+      "exact_it2a_panel_mapping_validated": false
+    }
+  ],
+  "evidence_gates": [
+    "Independent archival original-manifest SHA-256",
+    "Human/vision direct physical fold/stitch/cut examination for 52 groups",
+    "Independent quire expert verdict including q9, q14 and source disagreements",
+    "Do not unseal replication data or infer old order from textual statistics"
+  ],
+  "science_status": "INCONCLUSIVE_NOT_RUN"
+}
