@@ -89,5 +89,23 @@
     "Hand/section structural confounding may leave limited within-stratum contrast; examine strata breakdown.",
     "Requires independent byte-identical reproduction and parser review before scientific acceptance.",
     "Source URL corrected to the actual mirror processed. The maintainer's -n variant was not shown to be byte-identical and may have different preprocessing/comment lines."
-  ]
+  ],
+  "hostReplication": {
+    "status": "SECOND_INDEPENDENT_JS_IMPLEMENTATION_REPRODUCED; NOT EXTERNAL SCIENTIFIC REPLICATION",
+    "execution": "fresh JavaScript implementation, same host and exact mirror+manifest inputs",
+    "eligibleFolios": 90,
+    "proseLines": 3895,
+    "rawTokens": 31610,
+    "filteredTokens": 28109,
+    "pairCount": 1441,
+    "meanSame": 0.828991718127522,
+    "meanDifferent": 0.797809116124929,
+    "difference": 0.03118260200259304,
+    "exceedances": 0,
+    "permutations": 999,
+    "seed": 1729,
+    "pExploratory": 0.001,
+    "maxNullDelta": 0.025918705289794897,
+    "pythonScriptValidatedOnFullCorpus": false
+  }
 }
