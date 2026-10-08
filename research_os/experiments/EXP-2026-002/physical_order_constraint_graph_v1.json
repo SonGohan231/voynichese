@@ -1,0 +1,3111 @@
+{
+  "schema": "exp-2026-002/physical-order-constraints-v1",
+  "generated_at": "2026-10-08",
+  "scope": "Physical inference only. Does not identify original total order or validate a scientific effect.",
+  "status": {
+    "present_sheet_group_coverage": "ALL_52_FROM_PINNED_IT2A",
+    "physical_missing_positions": "RECONSTRUCTED_FROM_DAVIS_2025_CURRENT_COLLATION",
+    "independent_52_sheet_scan_review": "NOT_DONE",
+    "original_total_order": "NOT_IDENTIFIABLE",
+    "order_families": "FORMALLY_DEFINED_BUT_NOT_EXPERIMENT_FROZEN",
+    "scientific_result": "INCONCLUSIVE_NOT_RUN"
+  },
+  "provenance": {
+    "base_metadata_path": "research_os/experiments/EXP-2026-002/it2a_independent_source_audit.json",
+    "it2a_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+    "davis_collation": "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/",
+    "zandbergen_q09": "https://www.voynich.nu/q09/index.html",
+    "zandbergen_q14": "https://www.voynich.nu/q14/index.html",
+    "historical_chart": "https://ic.unicamp.br/~stolfi/voynich/mirror/reeds/docs/quires.txt"
+  },
+  "counts": {
+    "numbered_quires": 20,
+    "observed_quires_with_surviving_content": 18,
+    "extant_physical_groups": 52,
+    "fully_missing_sheet_units": 6,
+    "physical_units_inferred_total": 58,
+    "present_folio_leaves": 102,
+    "missing_folio_leaves": 14,
+    "missing_folio_leaves_exact": [
+      "f12",
+      "f59",
+      "f60",
+      "f61",
+      "f62",
+      "f63",
+      "f64",
+      "f74",
+      "f91",
+      "f92",
+      "f97",
+      "f98",
+      "f109",
+      "f110"
+    ],
+    "folio_leaves_original_estimate": 116
+  },
+  "quires": [
+    {
+      "quire_number": 1,
+      "bifolios_all": [
+        "QA-B1",
+        "QA-B2",
+        "QA-B3",
+        "QA-B4"
+      ],
+      "bifolios_extant": [
+        "QA-B1",
+        "QA-B2",
+        "QA-B3",
+        "QA-B4"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f1",
+        "f8",
+        "f2",
+        "f7",
+        "f3",
+        "f6",
+        "f4",
+        "f5"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 2,
+      "bifolios_all": [
+        "QB-B1",
+        "QB-B2",
+        "QB-B3",
+        "QB-B4"
+      ],
+      "bifolios_extant": [
+        "QB-B1",
+        "QB-B2",
+        "QB-B3",
+        "QB-B4"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f9",
+        "f16",
+        "f10",
+        "f15",
+        "f11",
+        "f14",
+        "f13"
+      ],
+      "missing_leaves": [
+        "f12"
+      ]
+    },
+    {
+      "quire_number": 3,
+      "bifolios_all": [
+        "QC-B1",
+        "QC-B2",
+        "QC-B3",
+        "QC-B4"
+      ],
+      "bifolios_extant": [
+        "QC-B1",
+        "QC-B2",
+        "QC-B3",
+        "QC-B4"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f17",
+        "f24",
+        "f18",
+        "f23",
+        "f19",
+        "f22",
+        "f20",
+        "f21"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 4,
+      "bifolios_all": [
+        "QD-B1",
+        "QD-B2",
+        "QD-B3",
+        "QD-B4"
+      ],
+      "bifolios_extant": [
+        "QD-B1",
+        "QD-B2",
+        "QD-B3",
+        "QD-B4"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f25",
+        "f32",
+        "f26",
+        "f31",
+        "f27",
+        "f30",
+        "f28",
+        "f29"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 5,
+      "bifolios_all": [
+        "QE-B1",
+        "QE-B2",
+        "QE-B3",
+        "QE-B4"
+      ],
+      "bifolios_extant": [
+        "QE-B1",
+        "QE-B2",
+        "QE-B3",
+        "QE-B4"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f33",
+        "f40",
+        "f34",
+        "f39",
+        "f35",
+        "f38",
+        "f36",
+        "f37"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 6,
+      "bifolios_all": [
+        "QF-B1",
+        "QF-B2",
+        "QF-B3",
+        "QF-B4"
+      ],
+      "bifolios_extant": [
+        "QF-B1",
+        "QF-B2",
+        "QF-B3",
+        "QF-B4"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f41",
+        "f48",
+        "f42",
+        "f47",
+        "f43",
+        "f46",
+        "f44",
+        "f45"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 7,
+      "bifolios_all": [
+        "QG-B1",
+        "QG-B2",
+        "QG-B3",
+        "QG-B4"
+      ],
+      "bifolios_extant": [
+        "QG-B1",
+        "QG-B2",
+        "QG-B3",
+        "QG-B4"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f49",
+        "f56",
+        "f50",
+        "f55",
+        "f51",
+        "f54",
+        "f52",
+        "f53"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 8,
+      "bifolios_all": [
+        "QH-B1",
+        "QH-B2",
+        "QH-B3",
+        "QH-B4",
+        "QH-B5"
+      ],
+      "bifolios_extant": [
+        "QH-B1",
+        "QH-B2"
+      ],
+      "bifolios_missing": [
+        "QH-B3",
+        "QH-B4",
+        "QH-B5"
+      ],
+      "present_leaves": [
+        "f57",
+        "f66",
+        "f58",
+        "f65"
+      ],
+      "missing_leaves": [
+        "f59",
+        "f64",
+        "f60",
+        "f63",
+        "f61",
+        "f62"
+      ]
+    },
+    {
+      "quire_number": 9,
+      "bifolios_all": [
+        "QI-B1"
+      ],
+      "bifolios_extant": [
+        "QI-B1"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f67",
+        "f68"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 10,
+      "bifolios_all": [
+        "QJ-B1"
+      ],
+      "bifolios_extant": [
+        "QJ-B1"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f69",
+        "f70"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 11,
+      "bifolios_all": [
+        "QK-B1"
+      ],
+      "bifolios_extant": [
+        "QK-B1"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f71",
+        "f72"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 12,
+      "bifolios_all": [
+        "QL-B1"
+      ],
+      "bifolios_extant": [
+        "QL-B1"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f73"
+      ],
+      "missing_leaves": [
+        "f74"
+      ]
+    },
+    {
+      "quire_number": 13,
+      "bifolios_all": [
+        "QM-B1",
+        "QM-B2",
+        "QM-B3",
+        "QM-B4",
+        "QM-B5"
+      ],
+      "bifolios_extant": [
+        "QM-B1",
+        "QM-B2",
+        "QM-B3",
+        "QM-B4",
+        "QM-B5"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f75",
+        "f84",
+        "f76",
+        "f83",
+        "f77",
+        "f82",
+        "f78",
+        "f81",
+        "f79",
+        "f80"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 14,
+      "bifolios_all": [
+        "QN-B1"
+      ],
+      "bifolios_extant": [
+        "QN-B1"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f85",
+        "f86"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 15,
+      "bifolios_all": [
+        "QO-B1",
+        "QO-B2"
+      ],
+      "bifolios_extant": [
+        "QO-B1",
+        "QO-B2"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f87",
+        "f90",
+        "f88",
+        "f89"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 16,
+      "bifolios_all": [
+        "QP-B1"
+      ],
+      "bifolios_extant": [],
+      "bifolios_missing": [
+        "QP-B1"
+      ],
+      "present_leaves": [],
+      "missing_leaves": [
+        "f91",
+        "f92"
+      ]
+    },
+    {
+      "quire_number": 17,
+      "bifolios_all": [
+        "QQ-B1",
+        "QQ-B2"
+      ],
+      "bifolios_extant": [
+        "QQ-B1",
+        "QQ-B2"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f93",
+        "f96",
+        "f94",
+        "f95"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 18,
+      "bifolios_all": [
+        "QR-B1"
+      ],
+      "bifolios_extant": [],
+      "bifolios_missing": [
+        "QR-B1"
+      ],
+      "present_leaves": [],
+      "missing_leaves": [
+        "f97",
+        "f98"
+      ]
+    },
+    {
+      "quire_number": 19,
+      "bifolios_all": [
+        "QS-B1",
+        "QS-B2"
+      ],
+      "bifolios_extant": [
+        "QS-B1",
+        "QS-B2"
+      ],
+      "bifolios_missing": [],
+      "present_leaves": [
+        "f99",
+        "f102",
+        "f100",
+        "f101"
+      ],
+      "missing_leaves": []
+    },
+    {
+      "quire_number": 20,
+      "bifolios_all": [
+        "QT-B1",
+        "QT-B2",
+        "QT-B3",
+        "QT-B4",
+        "QT-B5",
+        "QT-B6",
+        "QT-B7"
+      ],
+      "bifolios_extant": [
+        "QT-B1",
+        "QT-B2",
+        "QT-B3",
+        "QT-B4",
+        "QT-B5",
+        "QT-B6"
+      ],
+      "bifolios_missing": [
+        "QT-B7"
+      ],
+      "present_leaves": [
+        "f103",
+        "f116",
+        "f104",
+        "f115",
+        "f105",
+        "f114",
+        "f106",
+        "f113",
+        "f107",
+        "f112",
+        "f108",
+        "f111"
+      ],
+      "missing_leaves": [
+        "f109",
+        "f110"
+      ]
+    }
+  ],
+  "groups": {
+    "QA-B1": {
+      "group_id": "QA-B1",
+      "quire_number": 1,
+      "quire_code": "A",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f1",
+        "f8"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f1r",
+        "f1v",
+        "f8r",
+        "f8v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f1r",
+          "f1v",
+          "f8r",
+          "f8v"
+        ],
+        "outside_surface": [
+          "f1r",
+          "f8v"
+        ],
+        "inside_surface": [
+          "f1v",
+          "f8r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QA-B2": {
+      "group_id": "QA-B2",
+      "quire_number": 1,
+      "quire_code": "A",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f2",
+        "f7"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f2r",
+        "f2v",
+        "f7r",
+        "f7v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f2r",
+          "f2v",
+          "f7r",
+          "f7v"
+        ],
+        "outside_surface": [
+          "f2r",
+          "f7v"
+        ],
+        "inside_surface": [
+          "f2v",
+          "f7r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QA-B3": {
+      "group_id": "QA-B3",
+      "quire_number": 1,
+      "quire_code": "A",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f3",
+        "f6"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f3r",
+        "f3v",
+        "f6r",
+        "f6v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f3r",
+          "f3v",
+          "f6r",
+          "f6v"
+        ],
+        "outside_surface": [
+          "f3r",
+          "f6v"
+        ],
+        "inside_surface": [
+          "f3v",
+          "f6r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QA-B4": {
+      "group_id": "QA-B4",
+      "quire_number": 1,
+      "quire_code": "A",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f4",
+        "f5"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f4r",
+        "f4v",
+        "f5r",
+        "f5v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f4r",
+          "f4v",
+          "f5r",
+          "f5v"
+        ],
+        "outside_surface": [
+          "f4r",
+          "f5v"
+        ],
+        "inside_surface": [
+          "f4v",
+          "f5r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QB-B1": {
+      "group_id": "QB-B1",
+      "quire_number": 2,
+      "quire_code": "B",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f9",
+        "f16"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f9r",
+        "f9v",
+        "f16r",
+        "f16v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f9r",
+          "f9v",
+          "f16r",
+          "f16v"
+        ],
+        "outside_surface": [
+          "f9r",
+          "f16v"
+        ],
+        "inside_surface": [
+          "f9v",
+          "f16r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QB-B2": {
+      "group_id": "QB-B2",
+      "quire_number": 2,
+      "quire_code": "B",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f10",
+        "f15"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f10r",
+        "f10v",
+        "f15r",
+        "f15v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f10r",
+          "f10v",
+          "f15r",
+          "f15v"
+        ],
+        "outside_surface": [
+          "f10r",
+          "f15v"
+        ],
+        "inside_surface": [
+          "f10v",
+          "f15r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QB-B3": {
+      "group_id": "QB-B3",
+      "quire_number": 2,
+      "quire_code": "B",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f11",
+        "f14"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f11r",
+        "f11v",
+        "f14r",
+        "f14v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f11r",
+          "f11v",
+          "f14r",
+          "f14v"
+        ],
+        "outside_surface": [
+          "f11r",
+          "f14v"
+        ],
+        "inside_surface": [
+          "f11v",
+          "f14r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QB-B4": {
+      "group_id": "QB-B4",
+      "quire_number": 2,
+      "quire_code": "B",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f13"
+      ],
+      "missing_leaves": [
+        "f12"
+      ],
+      "source_page_ids": [
+        "f13r",
+        "f13v"
+      ],
+      "present_page_count": 2,
+      "physical_presence": "PARTIAL_BIFOLIO",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QC-B1": {
+      "group_id": "QC-B1",
+      "quire_number": 3,
+      "quire_code": "C",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f17",
+        "f24"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f17r",
+        "f17v",
+        "f24r",
+        "f24v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f17r",
+          "f17v",
+          "f24r",
+          "f24v"
+        ],
+        "outside_surface": [
+          "f17r",
+          "f24v"
+        ],
+        "inside_surface": [
+          "f17v",
+          "f24r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QC-B2": {
+      "group_id": "QC-B2",
+      "quire_number": 3,
+      "quire_code": "C",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f18",
+        "f23"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f18r",
+        "f18v",
+        "f23r",
+        "f23v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f18r",
+          "f18v",
+          "f23r",
+          "f23v"
+        ],
+        "outside_surface": [
+          "f18r",
+          "f23v"
+        ],
+        "inside_surface": [
+          "f18v",
+          "f23r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QC-B3": {
+      "group_id": "QC-B3",
+      "quire_number": 3,
+      "quire_code": "C",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f19",
+        "f22"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f19r",
+        "f19v",
+        "f22r",
+        "f22v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f19r",
+          "f19v",
+          "f22r",
+          "f22v"
+        ],
+        "outside_surface": [
+          "f19r",
+          "f22v"
+        ],
+        "inside_surface": [
+          "f19v",
+          "f22r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QC-B4": {
+      "group_id": "QC-B4",
+      "quire_number": 3,
+      "quire_code": "C",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f20",
+        "f21"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f20r",
+        "f20v",
+        "f21r",
+        "f21v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f20r",
+          "f20v",
+          "f21r",
+          "f21v"
+        ],
+        "outside_surface": [
+          "f20r",
+          "f21v"
+        ],
+        "inside_surface": [
+          "f20v",
+          "f21r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QD-B1": {
+      "group_id": "QD-B1",
+      "quire_number": 4,
+      "quire_code": "D",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f25",
+        "f32"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f25r",
+        "f25v",
+        "f32r",
+        "f32v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f25r",
+          "f25v",
+          "f32r",
+          "f32v"
+        ],
+        "outside_surface": [
+          "f25r",
+          "f32v"
+        ],
+        "inside_surface": [
+          "f25v",
+          "f32r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QD-B2": {
+      "group_id": "QD-B2",
+      "quire_number": 4,
+      "quire_code": "D",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f26",
+        "f31"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f26r",
+        "f26v",
+        "f31r",
+        "f31v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f26r",
+          "f26v",
+          "f31r",
+          "f31v"
+        ],
+        "outside_surface": [
+          "f26r",
+          "f31v"
+        ],
+        "inside_surface": [
+          "f26v",
+          "f31r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QD-B3": {
+      "group_id": "QD-B3",
+      "quire_number": 4,
+      "quire_code": "D",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f27",
+        "f30"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f27r",
+        "f27v",
+        "f30r",
+        "f30v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f27r",
+          "f27v",
+          "f30r",
+          "f30v"
+        ],
+        "outside_surface": [
+          "f27r",
+          "f30v"
+        ],
+        "inside_surface": [
+          "f27v",
+          "f30r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QD-B4": {
+      "group_id": "QD-B4",
+      "quire_number": 4,
+      "quire_code": "D",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f28",
+        "f29"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f28r",
+        "f28v",
+        "f29r",
+        "f29v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f28r",
+          "f28v",
+          "f29r",
+          "f29v"
+        ],
+        "outside_surface": [
+          "f28r",
+          "f29v"
+        ],
+        "inside_surface": [
+          "f28v",
+          "f29r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QE-B1": {
+      "group_id": "QE-B1",
+      "quire_number": 5,
+      "quire_code": "E",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f33",
+        "f40"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f33r",
+        "f33v",
+        "f40r",
+        "f40v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f33r",
+          "f33v",
+          "f40r",
+          "f40v"
+        ],
+        "outside_surface": [
+          "f33r",
+          "f40v"
+        ],
+        "inside_surface": [
+          "f33v",
+          "f40r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QE-B2": {
+      "group_id": "QE-B2",
+      "quire_number": 5,
+      "quire_code": "E",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f34",
+        "f39"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f34r",
+          "f34v",
+          "f39r",
+          "f39v"
+        ],
+        "outside_surface": [
+          "f34r",
+          "f39v"
+        ],
+        "inside_surface": [
+          "f34v",
+          "f39r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QE-B3": {
+      "group_id": "QE-B3",
+      "quire_number": 5,
+      "quire_code": "E",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f35",
+        "f38"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f35r",
+        "f35v",
+        "f38r",
+        "f38v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f35r",
+          "f35v",
+          "f38r",
+          "f38v"
+        ],
+        "outside_surface": [
+          "f35r",
+          "f38v"
+        ],
+        "inside_surface": [
+          "f35v",
+          "f38r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QE-B4": {
+      "group_id": "QE-B4",
+      "quire_number": 5,
+      "quire_code": "E",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f36",
+        "f37"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f36r",
+        "f36v",
+        "f37r",
+        "f37v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f36r",
+          "f36v",
+          "f37r",
+          "f37v"
+        ],
+        "outside_surface": [
+          "f36r",
+          "f37v"
+        ],
+        "inside_surface": [
+          "f36v",
+          "f37r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QF-B1": {
+      "group_id": "QF-B1",
+      "quire_number": 6,
+      "quire_code": "F",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f41",
+        "f48"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f41r",
+        "f41v",
+        "f48r",
+        "f48v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f41r",
+          "f41v",
+          "f48r",
+          "f48v"
+        ],
+        "outside_surface": [
+          "f41r",
+          "f48v"
+        ],
+        "inside_surface": [
+          "f41v",
+          "f48r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QF-B2": {
+      "group_id": "QF-B2",
+      "quire_number": 6,
+      "quire_code": "F",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f42",
+        "f47"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f42r",
+        "f42v",
+        "f47r",
+        "f47v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f42r",
+          "f42v",
+          "f47r",
+          "f47v"
+        ],
+        "outside_surface": [
+          "f42r",
+          "f47v"
+        ],
+        "inside_surface": [
+          "f42v",
+          "f47r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QF-B3": {
+      "group_id": "QF-B3",
+      "quire_number": 6,
+      "quire_code": "F",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f43",
+        "f46"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f43r",
+          "f43v",
+          "f46r",
+          "f46v"
+        ],
+        "outside_surface": [
+          "f43r",
+          "f46v"
+        ],
+        "inside_surface": [
+          "f43v",
+          "f46r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QF-B4": {
+      "group_id": "QF-B4",
+      "quire_number": 6,
+      "quire_code": "F",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f44",
+        "f45"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f44r",
+        "f44v",
+        "f45r",
+        "f45v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f44r",
+          "f44v",
+          "f45r",
+          "f45v"
+        ],
+        "outside_surface": [
+          "f44r",
+          "f45v"
+        ],
+        "inside_surface": [
+          "f44v",
+          "f45r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QG-B1": {
+      "group_id": "QG-B1",
+      "quire_number": 7,
+      "quire_code": "G",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f49",
+        "f56"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f49r",
+        "f49v",
+        "f56r",
+        "f56v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f49r",
+          "f49v",
+          "f56r",
+          "f56v"
+        ],
+        "outside_surface": [
+          "f49r",
+          "f56v"
+        ],
+        "inside_surface": [
+          "f49v",
+          "f56r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QG-B2": {
+      "group_id": "QG-B2",
+      "quire_number": 7,
+      "quire_code": "G",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f50",
+        "f55"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f50r",
+        "f50v",
+        "f55r",
+        "f55v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f50r",
+          "f50v",
+          "f55r",
+          "f55v"
+        ],
+        "outside_surface": [
+          "f50r",
+          "f55v"
+        ],
+        "inside_surface": [
+          "f50v",
+          "f55r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QG-B3": {
+      "group_id": "QG-B3",
+      "quire_number": 7,
+      "quire_code": "G",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f51",
+        "f54"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f51r",
+        "f51v",
+        "f54r",
+        "f54v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f51r",
+          "f51v",
+          "f54r",
+          "f54v"
+        ],
+        "outside_surface": [
+          "f51r",
+          "f54v"
+        ],
+        "inside_surface": [
+          "f51v",
+          "f54r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QG-B4": {
+      "group_id": "QG-B4",
+      "quire_number": 7,
+      "quire_code": "G",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f52",
+        "f53"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f52r",
+        "f52v",
+        "f53r",
+        "f53v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f52r",
+          "f52v",
+          "f53r",
+          "f53v"
+        ],
+        "outside_surface": [
+          "f52r",
+          "f53v"
+        ],
+        "inside_surface": [
+          "f52v",
+          "f53r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QH-B1": {
+      "group_id": "QH-B1",
+      "quire_number": 8,
+      "quire_code": "H",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f57",
+        "f66"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f57r",
+        "f57v",
+        "f66r",
+        "f66v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f57r",
+          "f57v",
+          "f66r",
+          "f66v"
+        ],
+        "outside_surface": [
+          "f57r",
+          "f66v"
+        ],
+        "inside_surface": [
+          "f57v",
+          "f66r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QH-B2": {
+      "group_id": "QH-B2",
+      "quire_number": 8,
+      "quire_code": "H",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f58",
+        "f65"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f58r",
+        "f58v",
+        "f65r",
+        "f65v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f58r",
+          "f58v",
+          "f65r",
+          "f65v"
+        ],
+        "outside_surface": [
+          "f58r",
+          "f65v"
+        ],
+        "inside_surface": [
+          "f58v",
+          "f65r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QH-B3": {
+      "group_id": "QH-B3",
+      "quire_number": 8,
+      "quire_code": "H",
+      "position_outer_to_inner": 3,
+      "present_leaves": [],
+      "missing_leaves": [
+        "f59",
+        "f64"
+      ],
+      "source_page_ids": [],
+      "present_page_count": 0,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QH-B4": {
+      "group_id": "QH-B4",
+      "quire_number": 8,
+      "quire_code": "H",
+      "position_outer_to_inner": 4,
+      "present_leaves": [],
+      "missing_leaves": [
+        "f60",
+        "f63"
+      ],
+      "source_page_ids": [],
+      "present_page_count": 0,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QH-B5": {
+      "group_id": "QH-B5",
+      "quire_number": 8,
+      "quire_code": "H",
+      "position_outer_to_inner": 5,
+      "present_leaves": [],
+      "missing_leaves": [
+        "f61",
+        "f62"
+      ],
+      "source_page_ids": [],
+      "present_page_count": 0,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QI-B1": {
+      "group_id": "QI-B1",
+      "quire_number": 9,
+      "quire_code": "I",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f67",
+        "f68"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f67r1",
+        "f67r2",
+        "f67v2",
+        "f67v1",
+        "f68r1",
+        "f68r2",
+        "f68r3",
+        "f68v3",
+        "f68v2",
+        "f68v1"
+      ],
+      "present_page_count": 10,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QJ-B1": {
+      "group_id": "QJ-B1",
+      "quire_number": 10,
+      "quire_code": "J",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f69",
+        "f70"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f69r",
+        "f69v",
+        "f70r1",
+        "f70r2",
+        "f70v2",
+        "f70v1"
+      ],
+      "present_page_count": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QK-B1": {
+      "group_id": "QK-B1",
+      "quire_number": 11,
+      "quire_code": "K",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f71",
+        "f72"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f71r",
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3",
+        "f72v3",
+        "f72v2",
+        "f72v1"
+      ],
+      "present_page_count": 8,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QL-B1": {
+      "group_id": "QL-B1",
+      "quire_number": 12,
+      "quire_code": "L",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f73"
+      ],
+      "missing_leaves": [
+        "f74"
+      ],
+      "source_page_ids": [
+        "f73r",
+        "f73v"
+      ],
+      "present_page_count": 2,
+      "physical_presence": "PARTIAL_BIFOLIO",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QM-B1": {
+      "group_id": "QM-B1",
+      "quire_number": 13,
+      "quire_code": "M",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f75",
+        "f84"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f75r",
+        "f75v",
+        "f84r",
+        "f84v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f75r",
+          "f75v",
+          "f84r",
+          "f84v"
+        ],
+        "outside_surface": [
+          "f75r",
+          "f84v"
+        ],
+        "inside_surface": [
+          "f75v",
+          "f84r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QM-B2": {
+      "group_id": "QM-B2",
+      "quire_number": 13,
+      "quire_code": "M",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f76",
+        "f83"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f76r",
+        "f76v",
+        "f83r",
+        "f83v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f76r",
+          "f76v",
+          "f83r",
+          "f83v"
+        ],
+        "outside_surface": [
+          "f76r",
+          "f83v"
+        ],
+        "inside_surface": [
+          "f76v",
+          "f83r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QM-B3": {
+      "group_id": "QM-B3",
+      "quire_number": 13,
+      "quire_code": "M",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f77",
+        "f82"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f77r",
+        "f77v",
+        "f82r",
+        "f82v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f77r",
+          "f77v",
+          "f82r",
+          "f82v"
+        ],
+        "outside_surface": [
+          "f77r",
+          "f82v"
+        ],
+        "inside_surface": [
+          "f77v",
+          "f82r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QM-B4": {
+      "group_id": "QM-B4",
+      "quire_number": 13,
+      "quire_code": "M",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f78",
+        "f81"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f78r",
+        "f78v",
+        "f81r",
+        "f81v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f78r",
+          "f78v",
+          "f81r",
+          "f81v"
+        ],
+        "outside_surface": [
+          "f78r",
+          "f81v"
+        ],
+        "inside_surface": [
+          "f78v",
+          "f81r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QM-B5": {
+      "group_id": "QM-B5",
+      "quire_number": 13,
+      "quire_code": "M",
+      "position_outer_to_inner": 5,
+      "present_leaves": [
+        "f79",
+        "f80"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f79r",
+          "f79v",
+          "f80r",
+          "f80v"
+        ],
+        "outside_surface": [
+          "f79r",
+          "f80v"
+        ],
+        "inside_surface": [
+          "f79v",
+          "f80r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QN-B1": {
+      "group_id": "QN-B1",
+      "quire_number": 14,
+      "quire_code": "N",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f85",
+        "f86"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f85r1",
+        "f85r2",
+        "f86v4",
+        "f86v6",
+        "f86v5",
+        "f86v3"
+      ],
+      "present_page_count": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QO-B1": {
+      "group_id": "QO-B1",
+      "quire_number": 15,
+      "quire_code": "O",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f87",
+        "f90"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f87r",
+        "f87v",
+        "f90r1",
+        "f90r2",
+        "f90v2",
+        "f90v1"
+      ],
+      "present_page_count": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QO-B2": {
+      "group_id": "QO-B2",
+      "quire_number": 15,
+      "quire_code": "O",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f88",
+        "f89"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f88r",
+        "f88v",
+        "f89r1",
+        "f89r2",
+        "f89v2",
+        "f89v1"
+      ],
+      "present_page_count": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QP-B1": {
+      "group_id": "QP-B1",
+      "quire_number": 16,
+      "quire_code": "P",
+      "position_outer_to_inner": 1,
+      "present_leaves": [],
+      "missing_leaves": [
+        "f91",
+        "f92"
+      ],
+      "source_page_ids": [],
+      "present_page_count": 0,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QQ-B1": {
+      "group_id": "QQ-B1",
+      "quire_number": 17,
+      "quire_code": "Q",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f93",
+        "f96"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f93r",
+        "f93v",
+        "f96r",
+        "f96v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QQ-B2": {
+      "group_id": "QQ-B2",
+      "quire_number": 17,
+      "quire_code": "Q",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f94",
+        "f95"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v2",
+        "f95v1"
+      ],
+      "present_page_count": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QR-B1": {
+      "group_id": "QR-B1",
+      "quire_number": 18,
+      "quire_code": "R",
+      "position_outer_to_inner": 1,
+      "present_leaves": [],
+      "missing_leaves": [
+        "f97",
+        "f98"
+      ],
+      "source_page_ids": [],
+      "present_page_count": 0,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QS-B1": {
+      "group_id": "QS-B1",
+      "quire_number": 19,
+      "quire_code": "S",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f99",
+        "f102"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f99r",
+        "f99v",
+        "f102r1",
+        "f102r2",
+        "f102v2",
+        "f102v1"
+      ],
+      "present_page_count": 6,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QS-B2": {
+      "group_id": "QS-B2",
+      "quire_number": 19,
+      "quire_code": "S",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f100",
+        "f101"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f100r",
+        "f100v",
+        "f101r",
+        "f101v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "SPECIAL_FOLDOUT_OR_INCOMPLETE_QUIRE",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QT-B1": {
+      "group_id": "QT-B1",
+      "quire_number": 20,
+      "quire_code": "T",
+      "position_outer_to_inner": 1,
+      "present_leaves": [
+        "f103",
+        "f116"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f103r",
+        "f103v",
+        "f116r"
+      ],
+      "present_page_count": 3,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    },
+    "QT-B2": {
+      "group_id": "QT-B2",
+      "quire_number": 20,
+      "quire_code": "T",
+      "position_outer_to_inner": 2,
+      "present_leaves": [
+        "f104",
+        "f115"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f104r",
+        "f104v",
+        "f115r",
+        "f115v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f104r",
+          "f104v",
+          "f115r",
+          "f115v"
+        ],
+        "outside_surface": [
+          "f104r",
+          "f115v"
+        ],
+        "inside_surface": [
+          "f104v",
+          "f115r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QT-B3": {
+      "group_id": "QT-B3",
+      "quire_number": 20,
+      "quire_code": "T",
+      "position_outer_to_inner": 3,
+      "present_leaves": [
+        "f105",
+        "f114"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f105r",
+        "f105v",
+        "f114r",
+        "f114v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f105r",
+          "f105v",
+          "f114r",
+          "f114v"
+        ],
+        "outside_surface": [
+          "f105r",
+          "f114v"
+        ],
+        "inside_surface": [
+          "f105v",
+          "f114r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QT-B4": {
+      "group_id": "QT-B4",
+      "quire_number": 20,
+      "quire_code": "T",
+      "position_outer_to_inner": 4,
+      "present_leaves": [
+        "f106",
+        "f113"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f106r",
+        "f106v",
+        "f113r",
+        "f113v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f106r",
+          "f106v",
+          "f113r",
+          "f113v"
+        ],
+        "outside_surface": [
+          "f106r",
+          "f113v"
+        ],
+        "inside_surface": [
+          "f106v",
+          "f113r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QT-B5": {
+      "group_id": "QT-B5",
+      "quire_number": 20,
+      "quire_code": "T",
+      "position_outer_to_inner": 5,
+      "present_leaves": [
+        "f107",
+        "f112"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f107r",
+        "f107v",
+        "f112r",
+        "f112v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f107r",
+          "f107v",
+          "f112r",
+          "f112v"
+        ],
+        "outside_surface": [
+          "f107r",
+          "f112v"
+        ],
+        "inside_surface": [
+          "f107v",
+          "f112r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QT-B6": {
+      "group_id": "QT-B6",
+      "quire_number": 20,
+      "quire_code": "T",
+      "position_outer_to_inner": 6,
+      "present_leaves": [
+        "f108",
+        "f111"
+      ],
+      "missing_leaves": [],
+      "source_page_ids": [
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v"
+      ],
+      "present_page_count": 4,
+      "physical_presence": "EXTANT_GROUP",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "folded_singulion_reading_pages": [
+          "f108r",
+          "f108v",
+          "f111r",
+          "f111v"
+        ],
+        "outside_surface": [
+          "f108r",
+          "f111v"
+        ],
+        "inside_surface": [
+          "f108v",
+          "f111r"
+        ],
+        "status": "STANDARD_FOLD_CONVENTION_ONLY",
+        "source": "https://www.voynich.ninja/thread-5186.html"
+      }
+    },
+    "QT-B7": {
+      "group_id": "QT-B7",
+      "quire_number": 20,
+      "quire_code": "T",
+      "position_outer_to_inner": 7,
+      "present_leaves": [],
+      "missing_leaves": [
+        "f109",
+        "f110"
+      ],
+      "source_page_ids": [],
+      "present_page_count": 0,
+      "physical_presence": "MISSING_BIFOLIO_INFERRED_FROM_FOLIATION",
+      "binding_status": "CURRENT_NESTED_STANDARD",
+      "source_links": [
+        "https://www.voynich.nu/data/IT2a-n.txt",
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_original_scan_review": "NOT_DONE",
+      "fold_orientation": {
+        "status": "CUSTOM_OR_MISSING_GEOMETRY_NOT_FIXED",
+        "folded_singulion_reading_pages": null,
+        "outside_surface": null,
+        "inside_surface": null
+      }
+    }
+  },
+  "physical_evidence_constraints": [
+    {
+      "id": "C_FOLD_Q09",
+      "subject": "QI-B1",
+      "class": "DIRECT_CODEXOLOGICAL_DESCRIPTION_WITH_COMPETING_HISTORICAL_INTERPRETATIONS",
+      "source": "https://www.voynich.nu/q09/index.html",
+      "observation": "One conjoined multi-panel f67/f68 foldout, unusual gathering mark f67r1, extra sewn parchment strip",
+      "hypotheses": [
+        "current-axis",
+        "alternate-preparation-axis"
+      ],
+      "decision": "KEEP_BOTH; NO ORIGINAL ORIENTATION CLAIM"
+    },
+    {
+      "id": "C_ROSETTES_Q14",
+      "subject": "QN-B1",
+      "class": "EXPERT_PHYSICAL_LAYOUT_DESCRIPTION",
+      "source": "https://voynich.nu/q14/index.html",
+      "observation": "One six-panel sheet in a 3x2 grid, one horizontal and two vertical creases, bound lower vertical fold; nine-rosettes illustration spans f85v/f86r",
+      "decision": "NO_PANEL_PERMUTATIONS; IGNORE IT2A ABSENCE OF fRos AS PROOF OF PHYSICAL_ABSENCE"
+    },
+    {
+      "id": "C_BRIDGE_Q13",
+      "subject": "QM-B4",
+      "class": "PHYSICAL_VISUAL_CONTINUITY_PLUS_INTERPRETIVE_PLACEMENT",
+      "source": "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/",
+      "observation": "Water flows from f78v to conjoint f81r; original centered position is a hypothesis",
+      "decision": "POSSIBLE_CENTRAL_POS_FLAG, NOT HARD SEQUENCE ORDER"
+    },
+    {
+      "id": "C_MISSING",
+      "subject": "QB-B4 QH-B3..5 QL-B1 QP-B1 QR-B1 QT-B7",
+      "class": "FOLIATION_AND_COLLATION_INFERENCES",
+      "source": "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/",
+      "observation": "14 gaps according to current collation; no imputation of contents or original place beyond physical same-sheet pairing",
+      "decision": "EXPLICIT_HOLES_AND_ABSENT_GROUPS"
+    },
+    {
+      "id": "C_QA_B2",
+      "subject": "QA-B2",
+      "class": "CORROBORATED_EXPERT_COLLATION_WITH_HISTORICAL_TYPO",
+      "source": "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/",
+      "observation": "Q1 standard nested 8 leaves => f2/f7; old 1996 ASCII chart repeats 006, inconsistent",
+      "decision": "PRESERVE_SOURCE_DISAGREEMENT_AND_SOURCE_LINK; IT2A f2/f7"
+    },
+    {
+      "id": "C_Q20",
+      "subject": "QT-B1..7",
+      "class": "EXPERT_COLLATION_PLUS_LOST_INNER_BIFOLIO",
+      "source": "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/",
+      "observation": "Q20 current nested 14 leaf positions with f109/f110 absent; hypothetical singulion sequence based on LSA is inadmissible for physical-only O2 selection",
+      "decision": "ANY_SHEET_ORDER_WITHOUT_PHYSICAL_RESTRICTING_EDGE_REMAINS_UNKNOWN"
+    }
+  ],
+  "order_scenarios": {
+    "O1_BOUND": {
+      "id": "O1_BOUND",
+      "type": "CURRENT_CATALOG_BOUND_PAGE_ORDER",
+      "status": "OBSERVED_CURRENT_ORDER_NOT_ORIGINAL",
+      "order_page_headers": [
+        "f1r",
+        "f1v",
+        "f2r",
+        "f2v",
+        "f3r",
+        "f3v",
+        "f4r",
+        "f4v",
+        "f5r",
+        "f5v",
+        "f6r",
+        "f6v",
+        "f7r",
+        "f7v",
+        "f8r",
+        "f8v",
+        "f9r",
+        "f9v",
+        "f10r",
+        "f10v",
+        "f11r",
+        "f11v",
+        "f13r",
+        "f13v",
+        "f14r",
+        "f14v",
+        "f15r",
+        "f15v",
+        "f16r",
+        "f16v",
+        "f17r",
+        "f17v",
+        "f18r",
+        "f18v",
+        "f19r",
+        "f19v",
+        "f20r",
+        "f20v",
+        "f21r",
+        "f21v",
+        "f22r",
+        "f22v",
+        "f23r",
+        "f23v",
+        "f24r",
+        "f24v",
+        "f25r",
+        "f25v",
+        "f26r",
+        "f26v",
+        "f27r",
+        "f27v",
+        "f28r",
+        "f28v",
+        "f29r",
+        "f29v",
+        "f30r",
+        "f30v",
+        "f31r",
+        "f31v",
+        "f32r",
+        "f32v",
+        "f33r",
+        "f33v",
+        "f34r",
+        "f34v",
+        "f35r",
+        "f35v",
+        "f36r",
+        "f36v",
+        "f37r",
+        "f37v",
+        "f38r",
+        "f38v",
+        "f39r",
+        "f39v",
+        "f40r",
+        "f40v",
+        "f41r",
+        "f41v",
+        "f42r",
+        "f42v",
+        "f43r",
+        "f43v",
+        "f44r",
+        "f44v",
+        "f45r",
+        "f45v",
+        "f46r",
+        "f46v",
+        "f47r",
+        "f47v",
+        "f48r",
+        "f48v",
+        "f49r",
+        "f49v",
+        "f50r",
+        "f50v",
+        "f51r",
+        "f51v",
+        "f52r",
+        "f52v",
+        "f53r",
+        "f53v",
+        "f54r",
+        "f54v",
+        "f55r",
+        "f55v",
+        "f56r",
+        "f56v",
+        "f57r",
+        "f57v",
+        "f58r",
+        "f58v",
+        "f65r",
+        "f65v",
+        "f66r",
+        "f66v",
+        "f67r1",
+        "f67r2",
+        "f67v2",
+        "f67v1",
+        "f68r1",
+        "f68r2",
+        "f68r3",
+        "f68v3",
+        "f68v2",
+        "f68v1",
+        "f69r",
+        "f69v",
+        "f70r1",
+        "f70r2",
+        "f70v2",
+        "f70v1",
+        "f71r",
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3",
+        "f72v3",
+        "f72v2",
+        "f72v1",
+        "f73r",
+        "f73v",
+        "f75r",
+        "f75v",
+        "f76r",
+        "f76v",
+        "f77r",
+        "f77v",
+        "f78r",
+        "f78v",
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v",
+        "f81r",
+        "f81v",
+        "f82r",
+        "f82v",
+        "f83r",
+        "f83v",
+        "f84r",
+        "f84v",
+        "f85r1",
+        "f85r2",
+        "f86v4",
+        "f86v6",
+        "f86v5",
+        "f86v3",
+        "f87r",
+        "f87v",
+        "f88r",
+        "f88v",
+        "f89r1",
+        "f89r2",
+        "f89v2",
+        "f89v1",
+        "f90r1",
+        "f90r2",
+        "f90v2",
+        "f90v1",
+        "f93r",
+        "f93v",
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v2",
+        "f95v1",
+        "f96r",
+        "f96v",
+        "f99r",
+        "f99v",
+        "f100r",
+        "f100v",
+        "f101r",
+        "f101v",
+        "f102r1",
+        "f102r2",
+        "f102v2",
+        "f102v1",
+        "f103r",
+        "f103v",
+        "f104r",
+        "f104v",
+        "f105r",
+        "f105v",
+        "f106r",
+        "f106v",
+        "f107r",
+        "f107v",
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v",
+        "f112r",
+        "f112v",
+        "f113r",
+        "f113v",
+        "f114r",
+        "f114v",
+        "f115r",
+        "f115v",
+        "f116r"
+      ],
+      "source": "IT2a page header ordinal; panel headers NOT equal to complete physical scan display order",
+      "notes": "Bifolio IDs cannot substitute for bound folio page order. Present current order is not a candidate historically inferred original."
+    },
+    "O2A_SINGULION_WITHIN_QUIRE": {
+      "id": "O2A_SINGULION_WITHIN_QUIRE",
+      "type": "CONSTRAINT_FAMILY_NOT_TOTAL_ORDER",
+      "status": "MODEL_ASSUMPTION_PHYSICALLY_POSSIBLE_BUT_UNVERIFIED_ORIGINAL",
+      "blocks": 20,
+      "units": "intact bifolios; complete extant sheets never split; missing groups retained as explicit placeholders",
+      "constraint": "For each present quire, arbitrary permutations of intact group_id units, preserving source sheet integrity and observed fold geometry. No preference or ranking. No inter-quire exchange as a conservative model assumption ONLY, not evidence of original grouping.",
+      "unidentified_edge_policy": "NO_EDGE",
+      "priority": "NONE",
+      "science_scores_allowed_in_generation": false
+    },
+    "O2B_FOLD_VARIANT_Q09": {
+      "id": "O2B_FOLD_VARIANT_Q09",
+      "type": "FOLDED_PANEL_ORIENTATION_HYPOTHESES_NOT_TOTAL_ORDER",
+      "status": "UNRESOLVED",
+      "options": [
+        {
+          "id": "Q09_CURRENT_SEWN_FOLD",
+          "confidence": "CURRENT_BINDING_OBSERVED",
+          "hypothesis": "Fold via extant current sewing axis; quire mark at f67r1",
+          "source": "https://www.voynich.nu/q09/index.html"
+        },
+        {
+          "id": "Q09_ALTERNATIVE_PREPARATORY_FOLD",
+          "confidence": "POSSIBLE_HISTORICAL_ORIENTATION_NOT_CONSENSUS",
+          "hypothesis": "Alternative f67 folding axis would move quiremark; supposed seam holes historically disputed as unused preparatory cuts, NOT confirmed prior stitching",
+          "source": "https://www.voynich.nu/extra/sp_origin.html"
+        }
+      ],
+      "disallowed": [
+        "DO_NOT_RENUMBER_PANELS_AS_INDEPENDENT_FOLIOS",
+        "DO_NOT_CLAIM_UNSEWN_CUTS_ARE_OLD_STITCHES"
+      ]
+    },
+    "O2C_GLOBAL_HISTORICAL": {
+      "id": "O2C_GLOBAL_HISTORICAL",
+      "type": "POTENTIAL_CROSS_QUIRE_SINGULION_REORDERING",
+      "status": "NOT_IDENTIFIABLE_FROM_FROZEN_PHYSICAL_DATA",
+      "constraints": "Keep entire physical bifolios intact; physical quire membership indicates current gatherings not necessarily original",
+      "reconstruction_order": null,
+      "science_scores_allowed_in_generation": false
+    },
+    "O3_CONSTRAINED_NULLS": {
+      "id": "O3_CONSTRAINED_NULLS",
+      "type": "NULL_ENSEMBLE_DEFINITION",
+      "status": "NOT_GENERATED_BEFORE_INDEPENDENT_KEEPER_FREEZE",
+      "n_requested": 999,
+      "units": "whole physical sheets, within current quire as EXPLICIT_MODEL_ASSUMPTION",
+      "exclude_missing_from_executable_order": true,
+      "log_seed_commit_before_run": true,
+      "science_scores_allowed_in_generation": false
+    }
+  },
+  "evidence_gates": {
+    "physical_map": "PARTIAL_CURRENT_COLLATION",
+    "validation": "KEEPER_MUST_VERIFY_ALL_SHEETS_AND_IIIF_FOLDOUT_PANELS",
+    "falsification": "Do not select O2 by textual similarity; if no physically supported direction/orientation mark unknown; no original order asserted"
+  }
+}
