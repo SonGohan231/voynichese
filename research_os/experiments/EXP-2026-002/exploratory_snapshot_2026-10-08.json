@@ -8,8 +8,11 @@
     "manifest": "SonGohan231/voynichese research_os/experiments/EXP-2026-001/section_scribe_strata.json",
     "manifestGitBlobSHA": "b8868dfbdfdb77ab1dc736f77c1ec9ef2bcff7c9",
     "upstreamUrl": "https://www.voynich.nu/data/ZL3b-n.txt",
-    "byteIdentityToUpstream": "UNVERIFIED; source analyzed is the GitHub mirror file, not the maintainer's -n file",
-    "mirrorCharacters": 411671
+    "byteIdentityToUpstream": "Archival copies equal; direct byte parity with current author-hosted response not established, as web extractor altered manuscript markup.",
+    "mirrorCharacters": 411671,
+    "independentArchiveUrl": "https://github.com/matthewdgreen/cipher_benchmark/blob/main/benchmark/unsolved/sources/voynich/transcriptions/ZL3b-n.txt",
+    "archivalCrossCheck": "PASS: 411671 chars, exact string equality between independently stored GitHub corpus copies, same Git blob SHA 2a4533ab9bdfa85db9bad602d590978953055df1",
+    "authorLiveBytesVerified": false
   },
   "method": {
     "unit": "numbered folio (r/v and foldout combined by folio number)",
@@ -88,7 +91,8 @@
     "Not a prespecified primary endpoint; exploratory p-value cannot be used as confirmatory evidence.",
     "Hand/section structural confounding may leave limited within-stratum contrast; examine strata breakdown.",
     "Requires independent byte-identical reproduction and parser review before scientific acceptance.",
-    "Source URL corrected to the actual mirror processed. The maintainer's -n variant was not shown to be byte-identical and may have different preprocessing/comment lines."
+    "Source URL corrected to the actual mirror processed. The maintainer's -n variant was not shown to be byte-identical and may have different preprocessing/comment lines.",
+    "Corrigendum: earlier 851 line differences were observed in an HTML-processed Exa extract that stripped IVTFF markup; they do not indicate differences between archival text copies. Two GitHub corpus files were compared exactly and match."
   ],
   "hostReplication": {
     "status": "SECOND_INDEPENDENT_JS_IMPLEMENTATION_REPRODUCED; NOT EXTERNAL SCIENTIFIC REPLICATION",
