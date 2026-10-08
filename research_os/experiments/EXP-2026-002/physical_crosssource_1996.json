@@ -1,0 +1,777 @@
+{
+  "schema": "exp-2026-002/physical-cross-source-v1",
+  "generated_utc": "2026-10-08",
+  "status": {
+    "historical_chart_comparison": "COMPLETED_WITH_ONE_DISAGREEMENT",
+    "formal_independent_codicology": "PENDING",
+    "science": "INCONCLUSIVE_NOT_RUN"
+  },
+  "provenance": {
+    "primary_metadata": "https://www.voynich.nu/data/IT2a-n.txt",
+    "primary_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+    "historical_chart": "https://ic.unicamp.br/~stolfi/voynich/mirror/reeds/docs/quires.txt",
+    "historical_authorship": "Rene Zandbergen chart with Jim Reeds notes, February 1996",
+    "historical_bytes_sha256": null,
+    "historical_source_bytes_verified": false,
+    "derived_via": "Exa extracted page text; byte-identical original chart not verified",
+    "same_creator_correlation_warning": "Both metadata and historical chart stem in part from Zandbergen; this is cross-document corroboration not blinded independent codicological inspection"
+  },
+  "results": {
+    "FULL_MATCH": 49,
+    "DISAGREEMENT": 1,
+    "PARTIAL_MATCH": 1,
+    "NO_SURVIVING_IT2A_PAIR": 6,
+    "total_evaluated": 57,
+    "nonstandard_quires": [
+      {
+        "quire_number": 12,
+        "reason": "NONSTANDARD_OR_DISPUTED_STRUCTURE_IN_1996_CHART"
+      }
+    ],
+    "technical_disagreements": [
+      {
+        "id": "QA-B2",
+        "source_1996_present_leaves": [
+          "f2",
+          "f6"
+        ],
+        "it2a_leaves": [
+          "f2",
+          "f7"
+        ],
+        "status": "DISAGREEMENT",
+        "source_missing_leaf_marks": []
+      }
+    ],
+    "coverage_note": "Only source-supported extant sheets counted; missing/mixed/foldout are not silently normalized",
+    "not_confirmed_orders": [
+      "O2 singulion permutation",
+      "O3 constrained random permutations"
+    ]
+  },
+  "comparisons": [
+    {
+      "id": "QA-B1",
+      "source_1996_present_leaves": [
+        "f1",
+        "f8"
+      ],
+      "it2a_leaves": [
+        "f1",
+        "f8"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QA-B2",
+      "source_1996_present_leaves": [
+        "f2",
+        "f6"
+      ],
+      "it2a_leaves": [
+        "f2",
+        "f7"
+      ],
+      "status": "DISAGREEMENT",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QA-B3",
+      "source_1996_present_leaves": [
+        "f3",
+        "f6"
+      ],
+      "it2a_leaves": [
+        "f3",
+        "f6"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QA-B4",
+      "source_1996_present_leaves": [
+        "f4",
+        "f5"
+      ],
+      "it2a_leaves": [
+        "f4",
+        "f5"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QB-B1",
+      "source_1996_present_leaves": [
+        "f16",
+        "f9"
+      ],
+      "it2a_leaves": [
+        "f16",
+        "f9"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QB-B2",
+      "source_1996_present_leaves": [
+        "f10",
+        "f15"
+      ],
+      "it2a_leaves": [
+        "f10",
+        "f15"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QB-B3",
+      "source_1996_present_leaves": [
+        "f11",
+        "f14"
+      ],
+      "it2a_leaves": [
+        "f11",
+        "f14"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QB-B4",
+      "source_1996_present_leaves": [
+        "f13"
+      ],
+      "it2a_leaves": [
+        "f13"
+      ],
+      "status": "PARTIAL_MATCH",
+      "source_missing_leaf_marks": [
+        "f12"
+      ]
+    },
+    {
+      "id": "QC-B1",
+      "source_1996_present_leaves": [
+        "f17",
+        "f24"
+      ],
+      "it2a_leaves": [
+        "f17",
+        "f24"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QC-B2",
+      "source_1996_present_leaves": [
+        "f18",
+        "f23"
+      ],
+      "it2a_leaves": [
+        "f18",
+        "f23"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QC-B3",
+      "source_1996_present_leaves": [
+        "f19",
+        "f22"
+      ],
+      "it2a_leaves": [
+        "f19",
+        "f22"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QC-B4",
+      "source_1996_present_leaves": [
+        "f20",
+        "f21"
+      ],
+      "it2a_leaves": [
+        "f20",
+        "f21"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QD-B1",
+      "source_1996_present_leaves": [
+        "f25",
+        "f32"
+      ],
+      "it2a_leaves": [
+        "f25",
+        "f32"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QD-B2",
+      "source_1996_present_leaves": [
+        "f26",
+        "f31"
+      ],
+      "it2a_leaves": [
+        "f26",
+        "f31"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QD-B3",
+      "source_1996_present_leaves": [
+        "f27",
+        "f30"
+      ],
+      "it2a_leaves": [
+        "f27",
+        "f30"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QD-B4",
+      "source_1996_present_leaves": [
+        "f28",
+        "f29"
+      ],
+      "it2a_leaves": [
+        "f28",
+        "f29"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QE-B1",
+      "source_1996_present_leaves": [
+        "f33",
+        "f40"
+      ],
+      "it2a_leaves": [
+        "f33",
+        "f40"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QE-B2",
+      "source_1996_present_leaves": [
+        "f34",
+        "f39"
+      ],
+      "it2a_leaves": [
+        "f34",
+        "f39"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QE-B3",
+      "source_1996_present_leaves": [
+        "f35",
+        "f38"
+      ],
+      "it2a_leaves": [
+        "f35",
+        "f38"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QE-B4",
+      "source_1996_present_leaves": [
+        "f36",
+        "f37"
+      ],
+      "it2a_leaves": [
+        "f36",
+        "f37"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QF-B1",
+      "source_1996_present_leaves": [
+        "f41",
+        "f48"
+      ],
+      "it2a_leaves": [
+        "f41",
+        "f48"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QF-B2",
+      "source_1996_present_leaves": [
+        "f42",
+        "f47"
+      ],
+      "it2a_leaves": [
+        "f42",
+        "f47"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QF-B3",
+      "source_1996_present_leaves": [
+        "f43",
+        "f46"
+      ],
+      "it2a_leaves": [
+        "f43",
+        "f46"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QF-B4",
+      "source_1996_present_leaves": [
+        "f44",
+        "f45"
+      ],
+      "it2a_leaves": [
+        "f44",
+        "f45"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QG-B1",
+      "source_1996_present_leaves": [
+        "f49",
+        "f56"
+      ],
+      "it2a_leaves": [
+        "f49",
+        "f56"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QG-B2",
+      "source_1996_present_leaves": [
+        "f50",
+        "f55"
+      ],
+      "it2a_leaves": [
+        "f50",
+        "f55"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QG-B3",
+      "source_1996_present_leaves": [
+        "f51",
+        "f54"
+      ],
+      "it2a_leaves": [
+        "f51",
+        "f54"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QG-B4",
+      "source_1996_present_leaves": [
+        "f52",
+        "f53"
+      ],
+      "it2a_leaves": [
+        "f52",
+        "f53"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QH-B1",
+      "source_1996_present_leaves": [
+        "f57",
+        "f66"
+      ],
+      "it2a_leaves": [
+        "f57",
+        "f66"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QH-B2",
+      "source_1996_present_leaves": [
+        "f58",
+        "f65"
+      ],
+      "it2a_leaves": [
+        "f58",
+        "f65"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QH-B3",
+      "source_1996_present_leaves": [],
+      "it2a_leaves": [],
+      "status": "NO_SURVIVING_IT2A_PAIR",
+      "source_missing_leaf_marks": [
+        "f59",
+        "f64"
+      ]
+    },
+    {
+      "id": "QH-B4",
+      "source_1996_present_leaves": [],
+      "it2a_leaves": [],
+      "status": "NO_SURVIVING_IT2A_PAIR",
+      "source_missing_leaf_marks": [
+        "f60",
+        "f63"
+      ]
+    },
+    {
+      "id": "QH-B5",
+      "source_1996_present_leaves": [],
+      "it2a_leaves": [],
+      "status": "NO_SURVIVING_IT2A_PAIR",
+      "source_missing_leaf_marks": [
+        "f61",
+        "f62"
+      ]
+    },
+    {
+      "id": "QI-B1",
+      "source_1996_present_leaves": [
+        "f67",
+        "f68"
+      ],
+      "it2a_leaves": [
+        "f67",
+        "f68"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QJ-B1",
+      "source_1996_present_leaves": [
+        "f69",
+        "f70"
+      ],
+      "it2a_leaves": [
+        "f69",
+        "f70"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QK-B1",
+      "source_1996_present_leaves": [
+        "f71",
+        "f72"
+      ],
+      "it2a_leaves": [
+        "f71",
+        "f72"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QM-B1",
+      "source_1996_present_leaves": [
+        "f75",
+        "f84"
+      ],
+      "it2a_leaves": [
+        "f75",
+        "f84"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QM-B2",
+      "source_1996_present_leaves": [
+        "f76",
+        "f83"
+      ],
+      "it2a_leaves": [
+        "f76",
+        "f83"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QM-B3",
+      "source_1996_present_leaves": [
+        "f77",
+        "f82"
+      ],
+      "it2a_leaves": [
+        "f77",
+        "f82"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QM-B4",
+      "source_1996_present_leaves": [
+        "f78",
+        "f81"
+      ],
+      "it2a_leaves": [
+        "f78",
+        "f81"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QM-B5",
+      "source_1996_present_leaves": [
+        "f79",
+        "f80"
+      ],
+      "it2a_leaves": [
+        "f79",
+        "f80"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QN-B1",
+      "source_1996_present_leaves": [
+        "f85",
+        "f86"
+      ],
+      "it2a_leaves": [
+        "f85",
+        "f86"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QO-B1",
+      "source_1996_present_leaves": [
+        "f87",
+        "f90"
+      ],
+      "it2a_leaves": [
+        "f87",
+        "f90"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QO-B2",
+      "source_1996_present_leaves": [
+        "f88",
+        "f89"
+      ],
+      "it2a_leaves": [
+        "f88",
+        "f89"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QP-B1",
+      "source_1996_present_leaves": [],
+      "it2a_leaves": [],
+      "status": "NO_SURVIVING_IT2A_PAIR",
+      "source_missing_leaf_marks": [
+        "f91",
+        "f92"
+      ]
+    },
+    {
+      "id": "QQ-B1",
+      "source_1996_present_leaves": [
+        "f93",
+        "f96"
+      ],
+      "it2a_leaves": [
+        "f93",
+        "f96"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QQ-B2",
+      "source_1996_present_leaves": [
+        "f94",
+        "f95"
+      ],
+      "it2a_leaves": [
+        "f94",
+        "f95"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QR-B1",
+      "source_1996_present_leaves": [],
+      "it2a_leaves": [],
+      "status": "NO_SURVIVING_IT2A_PAIR",
+      "source_missing_leaf_marks": [
+        "f97",
+        "f98"
+      ]
+    },
+    {
+      "id": "QS-B1",
+      "source_1996_present_leaves": [
+        "f102",
+        "f99"
+      ],
+      "it2a_leaves": [
+        "f102",
+        "f99"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QS-B2",
+      "source_1996_present_leaves": [
+        "f100",
+        "f101"
+      ],
+      "it2a_leaves": [
+        "f100",
+        "f101"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QT-B1",
+      "source_1996_present_leaves": [
+        "f103",
+        "f116"
+      ],
+      "it2a_leaves": [
+        "f103",
+        "f116"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QT-B2",
+      "source_1996_present_leaves": [
+        "f104",
+        "f115"
+      ],
+      "it2a_leaves": [
+        "f104",
+        "f115"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QT-B3",
+      "source_1996_present_leaves": [
+        "f105",
+        "f114"
+      ],
+      "it2a_leaves": [
+        "f105",
+        "f114"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QT-B4",
+      "source_1996_present_leaves": [
+        "f106",
+        "f113"
+      ],
+      "it2a_leaves": [
+        "f106",
+        "f113"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QT-B5",
+      "source_1996_present_leaves": [
+        "f107",
+        "f112"
+      ],
+      "it2a_leaves": [
+        "f107",
+        "f112"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QT-B6",
+      "source_1996_present_leaves": [
+        "f108",
+        "f111"
+      ],
+      "it2a_leaves": [
+        "f108",
+        "f111"
+      ],
+      "status": "FULL_MATCH",
+      "source_missing_leaf_marks": []
+    },
+    {
+      "id": "QT-B7",
+      "source_1996_present_leaves": [],
+      "it2a_leaves": [],
+      "status": "NO_SURVIVING_IT2A_PAIR",
+      "source_missing_leaf_marks": [
+        "f109",
+        "f110"
+      ]
+    }
+  ]
+}
