@@ -2,11 +2,14 @@
   "analysis": "EXPLORATORY / NOT EXP-2026-001",
   "source": {
     "transcription": "ZL3b",
-    "url": "https://www.voynich.nu/data/ZL3b-n.txt",
+    "url": "https://github.com/Aspect-Research/voynich-autoexploration/blob/master/data/transcriptions/eva_zl3b.txt",
     "version": "2025-05-13",
     "githubBlobSHA": "2a4533ab9bdfa85db9bad602d590978953055df1",
     "manifest": "SonGohan231/voynichese research_os/experiments/EXP-2026-001/section_scribe_strata.json",
-    "manifestGitBlobSHA": "b8868dfbdfdb77ab1dc736f77c1ec9ef2bcff7c9"
+    "manifestGitBlobSHA": "b8868dfbdfdb77ab1dc736f77c1ec9ef2bcff7c9",
+    "upstreamUrl": "https://www.voynich.nu/data/ZL3b-n.txt",
+    "byteIdentityToUpstream": "UNVERIFIED; source analyzed is the GitHub mirror file, not the maintainer's -n file",
+    "mirrorCharacters": 411671
   },
   "method": {
     "unit": "numbered folio (r/v and foldout combined by folio number)",
@@ -84,6 +87,7 @@
     "Not an independent replication; tokens are transcription-dependent and folio grouping is approximate for physical bifolia.",
     "Not a prespecified primary endpoint; exploratory p-value cannot be used as confirmatory evidence.",
     "Hand/section structural confounding may leave limited within-stratum contrast; examine strata breakdown.",
-    "Requires independent byte-identical reproduction and parser review before scientific acceptance."
+    "Requires independent byte-identical reproduction and parser review before scientific acceptance.",
+    "Source URL corrected to the actual mirror processed. The maintainer's -n variant was not shown to be byte-identical and may have different preprocessing/comment lines."
   ]
 }
