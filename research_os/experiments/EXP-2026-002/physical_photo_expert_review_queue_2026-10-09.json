@@ -1,0 +1,3712 @@
+{
+  "schema": "exp-2026-002/physical-codicological-observation-queue-v1",
+  "created_date": "2026-10-09",
+  "role": "INDEPENDENT_VISUAL_CODICOLOGY_REVIEWER",
+  "evidence_summary": {
+    "photo_byte_integrity": "207/207 PASSED IN GITHUB ACTIONS",
+    "ci_run": "https://github.com/SonGohan231/voynichese/actions/runs/37866714094",
+    "ci_receipt_path": "research_os/experiments/EXP-2026-002/yale_207_jpeg_binary_integrity_receipt_2026-10-09.json",
+    "verified_archived_photo_filenames": 207,
+    "photo_archived_unique_canvas_ids": 206,
+    "existing_group_count": 58,
+    "groups_with_surviving_material": 52,
+    "wholly_absent_placeholder_groups": 6,
+    "visually_inspected_groups_in_this_queue": 0
+  },
+  "reviewer_instructions": [
+    "Open each source JPEG from archived GitHub branch and visually inspect the actual material; every positive claim must cite its specific canvas OID and normalized coordinate polygon/rectangle plus date/view.",
+    "The source JPEG hash was verified as archived data in CI, but this does not prove original physical collation or manuscript date.",
+    "Distinguish 'visible photographic observation', 'second-hand codicological expert description', 'physical inference', and 'untested conjecture' with separate provenance.",
+    "Physical foldout/photo boundaries do not map automatically to transcription panel IDs; draw and verify individual panel guides before assigning the orientation.",
+    "For contradictory claims (e.g., q9 old sewing holes versus preparatory cuts, q14 adhesive strips) keep both as alternatives until directly adjudicated.",
+    "Independent Keeper may check completeness and contradictory evidence but may not silently turn missing observations into PASS. Freeze only independently verified hard edges; historical O2 remains UNKNOWN otherwise.",
+    "Do not inspect any lexical/TF-IDF/LSA experiments while judging these physical hypotheses."
+  ],
+  "priority_buckets": {
+    "critical": [
+      "QI-B1",
+      "QN-B1"
+    ],
+    "high": [
+      "QA-B2",
+      "QB-B1",
+      "QB-B2",
+      "QB-B3",
+      "QB-B4",
+      "QH-B1",
+      "QH-B2",
+      "QH-B3",
+      "QH-B4",
+      "QH-B5",
+      "QJ-B1",
+      "QK-B1",
+      "QL-B1",
+      "QM-B1",
+      "QM-B2",
+      "QM-B3",
+      "QM-B4",
+      "QM-B5",
+      "QO-B1",
+      "QO-B2",
+      "QQ-B1",
+      "QQ-B2",
+      "QS-B1",
+      "QS-B2",
+      "QT-B1",
+      "QT-B2",
+      "QT-B3",
+      "QT-B4",
+      "QT-B5",
+      "QT-B6",
+      "QT-B7"
+    ],
+    "normal": [
+      "QA-B1",
+      "QA-B3",
+      "QA-B4",
+      "QC-B1",
+      "QC-B2",
+      "QC-B3",
+      "QC-B4",
+      "QD-B1",
+      "QD-B2",
+      "QD-B3",
+      "QD-B4",
+      "QE-B1",
+      "QE-B2",
+      "QE-B3",
+      "QE-B4",
+      "QF-B1",
+      "QF-B2",
+      "QF-B3",
+      "QF-B4",
+      "QG-B1",
+      "QG-B2",
+      "QG-B3",
+      "QG-B4"
+    ]
+  },
+  "ordered_review_tasks": [
+    {
+      "group_id": "QI-B1",
+      "quire_number": 9,
+      "priority": 1,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f67",
+        "f68"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/6/0121_67r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0518312a566ee713a46c9887d8b8b9d7141d14095e360661789c1dad9b5c0d1c",
+          "canvas_oid": "1006194",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0121_67r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0122_67v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+          "canvas_oid": "1006195",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0122_67v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0123_68r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+          "canvas_oid": "1006196",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0123_68r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0124_68v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "06d33798cd4f901771b9869078d3f29f7e7ef5a490a9abc6dd09f3a3adec867f",
+          "canvas_oid": "1006197",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0124_68v.jpg"
+        }
+      ],
+      "review_target": "Quire 9 — f67/68 one joined bifolio with additional sewn strip and disputed former binding axis",
+      "observational_questions": [
+        "Photograph exact folio 67/68 image junction, fold axes and narrow inserted parchment strip at mapped coordinates.",
+        "Locate quire mark on f67r1; inspect if physical crease location corroborates candidate old binding.",
+        "Distinguish visibly torn sewing perforations from unused preparatory cuts; preserve mutually exclusive interpretations.",
+        "Separately account for f67 double and f68 triple foldout; do not map f67r1/2 or f68r1/2/3 to separate physical sheets."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QN-B1",
+      "quire_number": 14,
+      "priority": 1,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f85",
+        "f86"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/9/0155_85r _part_ _part of 85-86 foldout_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+          "canvas_oid": "1006228",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0155_85r%20_part_%20_part%20of%2085-86%20foldout_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0156_85r _part_ 86v _part_ _part of 85-86 foldout_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "dde619e85e35601b9206051389873f6cb092a17f04a8fcd02b32fe3961ea37ce",
+          "canvas_oid": "1006229",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0156_85r%20_part_%2086v%20_part_%20_part%20of%2085-86%20foldout_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0157_86v _part_ _part of 85-86 foldout_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4c5f7642e7da2be07242968faa92a2d0bb1cb88e8589d30f5d2acbfc3cc7e0be",
+          "canvas_oid": "1006230",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0157_86v%20_part_%20_part%20of%2085-86%20foldout_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0158_85v and 86r _foldout_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4b08afeee514691b0a511099ca299aed544d6fd1782b7dee8df163dfc06354ed",
+          "canvas_oid": "1006231",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0158_85v%20and%2086r%20_foldout_.jpg"
+        }
+      ],
+      "review_target": "Quire 14 — Rosettes 3x2 one physical large sheet, binding/gasket/repair contested",
+      "observational_questions": [
+        "Test topological six-panel sheet model (3 columns x 2 rows), one horizontal and two vertical creases, with accurate image side association.",
+        "Inspect reported binding gutter between f85v1 and f86r3 and quire mark f86v3; attach normalized crop coordinates.",
+        "Look for fold damage / 2009 repair and gasket around the sheet, using dated source photographs.",
+        "Separate possible former adhesive strips in 2004 images from current 2014 archive condition; cannot prove disappearance from one date alone.",
+        "Do not treat absence of fRos IT2a page header as physically missing illustration."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QA-B2",
+      "quire_number": 1,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f2",
+        "f7"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/1/0005_2r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "826533a0760798acf5a4caa01ac29fe95eb1ed13a9fb26ac82900a8aea11d53f",
+          "canvas_oid": "1006078",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0005_2r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0006_2v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "ae2e9591c75389fe093e7f35d5c670781d196c253d472030dd4a1d1c86ae1cb7",
+          "canvas_oid": "1006079",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0006_2v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0015_7r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "fd4529ff994cfaefe9bf75966a59eede9ab0ea59e3514bf3aaf0a45c0df0e2a0",
+          "canvas_oid": "1006088",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0015_7r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0016_7v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "81fed5fa8e1b174ff1176899b76d08003148445bdc6f68f3c7f59f8c6729e841",
+          "canvas_oid": "1006089",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0016_7v.jpg"
+        }
+      ],
+      "review_target": "Quire 1 source discrepancy old 1996 f2/f6 versus IT2a f2/f7",
+      "observational_questions": [
+        "Verify f2–f7 visually as physically conjoined where possible, not merely chronological numerals.",
+        "Compare q1 cross-reference in LFD and old Zandbergen/Reeds chart; preserve original historical conflicting entry."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QB-B1",
+      "quire_number": 2,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f9",
+        "f16"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/1/0019_9r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a5f3a7b1a3f9c0e791a3365d801884c64d996749719d84ffb11f0f06fbb30925",
+          "canvas_oid": "1006092",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0019_9r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0020_9v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "790a7493a31133cf9375fb7471d1d1167df4988bcadeb74ea2528a0ba562e693",
+          "canvas_oid": "1006093",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0020_9v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0031_16r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "1a7e9d3d9e6c647d73899317cf21c2967ded0e30517c5020e7c2093f6d99f265",
+          "canvas_oid": "1006104",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0031_16r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0032_16v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0001f9fb64430a47afa2c9dfa94e8eba1b6423ab0d3c3b9ae2a7c43e406d3a5e",
+          "canvas_oid": "1006105",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0032_16v.jpg"
+        }
+      ],
+      "review_target": "Quire 2 missing f12",
+      "observational_questions": [
+        "Inspect surviving folio f13 and reported cut/stub supporting a missing mate f12."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QB-B2",
+      "quire_number": 2,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f10",
+        "f15"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/1/0021_10r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "8d8d5636691bae1be1ff908afad1388c25c53154e8808be572675ae8500c2ac5",
+          "canvas_oid": "1006094",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0021_10r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0022_10v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "5cff25a923f5e8173a2a8ad21ec247d7c9bd090ac379322d5dda4d17be916403",
+          "canvas_oid": "1006095",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0022_10v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0029_15r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+          "canvas_oid": "1006102",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0029_15r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0030_15v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d224773e2e39ef02719c25560e8072e6407bdea9f8d1bdf8da515adb5c2fc127",
+          "canvas_oid": "1006103",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0030_15v.jpg"
+        }
+      ],
+      "review_target": "Quire 2 missing f12",
+      "observational_questions": [
+        "Inspect surviving folio f13 and reported cut/stub supporting a missing mate f12."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QB-B3",
+      "quire_number": 2,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f11",
+        "f14"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/1/0023_11r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+          "canvas_oid": "1006096",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0023_11r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0023_11r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+          "canvas_oid": "1006096",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0023_11r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0024_11v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "896a5297fd4ac6a4ca215ae5e000ac8d6a50ea6063283a28b42ba1974d681d51",
+          "canvas_oid": "1006097",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0024_11v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0027_14r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c",
+          "canvas_oid": "1006100",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0027_14r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0028_14v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "97dbdbe273597957d62db2cf3a6d9769a0121cba1d0bb682c8008a6d2de622a6",
+          "canvas_oid": "1006101",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0028_14v.jpg"
+        }
+      ],
+      "review_target": "Quire 2 missing f12",
+      "observational_questions": [
+        "Inspect surviving folio f13 and reported cut/stub supporting a missing mate f12."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QB-B4",
+      "quire_number": 2,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f13"
+      ],
+      "missing_leaves": [
+        "f12"
+      ],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/2/0025_13r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+          "canvas_oid": "1006098",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0025_13r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0026_13v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "79ac3ff85ed178229cd4bafc6332c606684dd0eba37221758a7ec430c86544f0",
+          "canvas_oid": "1006099",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0026_13v.jpg"
+        }
+      ],
+      "review_target": "Quire 2 missing f12",
+      "observational_questions": [
+        "Inspect surviving folio f13 and reported cut/stub supporting a missing mate f12."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QH-B1",
+      "quire_number": 8,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f57",
+        "f66"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/6/0113_57r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "473727b2ea1dd000a4a15eaa57302a48c410d4f6e670abdd607cd7c7461ff98c",
+          "canvas_oid": "1006186",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0113_57r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0114_57v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+          "canvas_oid": "1006187",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0114_57v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0119_66r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+          "canvas_oid": "1006192",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0119_66r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0120_66v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "8304c6ba3605207c67f4f843974e60e947b423f21255a06656d6af3055fa53ce",
+          "canvas_oid": "1006193",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0120_66v.jpg"
+        }
+      ],
+      "review_target": "Quire 8 three absent bifolia",
+      "observational_questions": [
+        "Audit physical nesting of remaining f57/f66 and f58/f65, document that f59–64 is absent rather than unreadable."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QH-B2",
+      "quire_number": 8,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f58",
+        "f65"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/6/0115_58r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+          "canvas_oid": "1006188",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0115_58r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0116_58v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+          "canvas_oid": "1006189",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0116_58v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0117_65r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f",
+          "canvas_oid": "1006190",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0117_65r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0118_65v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d3ebd8bfcf12a0a98f9ecc96ee345e82c7cc15d5c786c93c63ccd2f923ea1714",
+          "canvas_oid": "1006191",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0118_65v.jpg"
+        }
+      ],
+      "review_target": "Quire 8 three absent bifolia",
+      "observational_questions": [
+        "Audit physical nesting of remaining f57/f66 and f58/f65, document that f59–64 is absent rather than unreadable."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QH-B3",
+      "quire_number": 8,
+      "priority": 2,
+      "physical_presence": "LOST_PLACEHOLDER",
+      "folio_leaves": [],
+      "missing_leaves": [
+        "f59",
+        "f64"
+      ],
+      "source_filenames": [],
+      "review_target": "Quire 8 three absent bifolia",
+      "observational_questions": [
+        "Audit physical nesting of remaining f57/f66 and f58/f65, document that f59–64 is absent rather than unreadable."
+      ],
+      "source_context_urls": [],
+      "independent_image_review": {
+        "status": "NOT_POSSIBLE_LOST_MATERIAL",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QH-B4",
+      "quire_number": 8,
+      "priority": 2,
+      "physical_presence": "LOST_PLACEHOLDER",
+      "folio_leaves": [],
+      "missing_leaves": [
+        "f60",
+        "f63"
+      ],
+      "source_filenames": [],
+      "review_target": "Quire 8 three absent bifolia",
+      "observational_questions": [
+        "Audit physical nesting of remaining f57/f66 and f58/f65, document that f59–64 is absent rather than unreadable."
+      ],
+      "source_context_urls": [],
+      "independent_image_review": {
+        "status": "NOT_POSSIBLE_LOST_MATERIAL",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QH-B5",
+      "quire_number": 8,
+      "priority": 2,
+      "physical_presence": "LOST_PLACEHOLDER",
+      "folio_leaves": [],
+      "missing_leaves": [
+        "f61",
+        "f62"
+      ],
+      "source_filenames": [],
+      "review_target": "Quire 8 three absent bifolia",
+      "observational_questions": [
+        "Audit physical nesting of remaining f57/f66 and f58/f65, document that f59–64 is absent rather than unreadable."
+      ],
+      "source_context_urls": [],
+      "independent_image_review": {
+        "status": "NOT_POSSIBLE_LOST_MATERIAL",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QJ-B1",
+      "quire_number": 10,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f69",
+        "f70"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/6/0125_69r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "b830e74480830c0d5e8f7b56025473e051743f9ec50685b6fe316ecd493f0f01",
+          "canvas_oid": "1006198",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0125_69r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0126_69v and 70r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "709419c3c6861c216b1746261884e08a38f1b5a2b052ad129e78cdd73697b5e9",
+          "canvas_oid": "1006199",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0126_69v%20and%2070r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0127_70v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "062ff6a9f14d0c16eb12dc8f6dc480771b7c19746ebdb20302b998e66181ccea",
+          "canvas_oid": "1006200",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0127_70v%20_part_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0128_70v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c8f24b6be5451aba49eb793784c43cb7fc8341dca8a58ff43fc1eebf4877b60c",
+          "canvas_oid": "1006201",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0128_70v%20_part_.jpg"
+        }
+      ],
+      "review_target": "Quire 10 f70 foldout",
+      "observational_questions": [
+        "Check f70 fold panel orientation/quire mark f70v1 and shared canvas 69v/70r."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QK-B1",
+      "quire_number": 11,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f71",
+        "f72"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/8/0129_71r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "6405841a75a8fa24dd9e5c93ad090ee56bf26c77757f3b1634487e27b509e61b",
+          "canvas_oid": "1006202",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0129_71r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0130_71v and 72r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "45f7caf4b58744fdcd4928887661b56a135538a5a40a24fea6ca6c5239898269",
+          "canvas_oid": "1006203",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0130_71v%20and%2072r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0131_72v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2552b2eafb7948d182e52ec49e96a5d92a774917924aea594fb1ac3af3bfcdc5",
+          "canvas_oid": "1006204",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0131_72v%20_part_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0132_72v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c0ac0dbc3e4b4a6eb2b8edf26dc762a7f9bf26ac9c385fa6bdc770725622b1e7",
+          "canvas_oid": "1006205",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0132_72v%20_part_.jpg"
+        }
+      ],
+      "review_target": "Quire 11 f72 three-way foldout",
+      "observational_questions": [
+        "Check f72 panel orientation and quire mark f72v1, not as multiple independent sheets."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QL-B1",
+      "quire_number": 12,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f73"
+      ],
+      "missing_leaves": [
+        "f74"
+      ],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/8/0133_73r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "5bc8e07dbd61cc1f218cfc4449cd527be118aa7884878ec4c8e568e9c2d89bad",
+          "canvas_oid": "1006206",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0133_73r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0134_73v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4227e5261bb5986e605ddb4f58fa1526640955d778c06916a1c34734bb431141",
+          "canvas_oid": "1006207",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0134_73v.jpg"
+        }
+      ],
+      "review_target": "Quire 12 f74 lost",
+      "observational_questions": [
+        "Check f73, cut/stub at neighboring f75 and proposed loss f74."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QM-B1",
+      "quire_number": 13,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f75",
+        "f84"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/8/0135_75r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "6fd33917722a97ef0c93f905885963332645c1a1c81f60f03a165b12007a7fc3",
+          "canvas_oid": "1006208",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0135_75r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0136_75v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "654edf15a65d1a2bb0d7bb4995f8f6fba1625d5eed847c9b6969d1c44e385a23",
+          "canvas_oid": "1006209",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0136_75v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0153_84r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe",
+          "canvas_oid": "1006226",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0153_84r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0154_84v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f",
+          "canvas_oid": "1006227",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0154_84v.jpg"
+        }
+      ],
+      "review_target": "Quire 13 f78v/f81r cross-image continuity",
+      "observational_questions": [
+        "Independently assess physical join of f78v/f81r, isolate continuity of illustration from speculative original central placement."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QM-B2",
+      "quire_number": 13,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f76",
+        "f83"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/8/0137_76r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68",
+          "canvas_oid": "1006210",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0137_76r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0138_76v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e",
+          "canvas_oid": "1006211",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0138_76v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0151_83r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729",
+          "canvas_oid": "1006224",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0151_83r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0152_83v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9",
+          "canvas_oid": "1006225",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0152_83v.jpg"
+        }
+      ],
+      "review_target": "Quire 13 f78v/f81r cross-image continuity",
+      "observational_questions": [
+        "Independently assess physical join of f78v/f81r, isolate continuity of illustration from speculative original central placement."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QM-B3",
+      "quire_number": 13,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f77",
+        "f82"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/8/0139_77r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad",
+          "canvas_oid": "1006212",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0139_77r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0140_77v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2",
+          "canvas_oid": "1006213",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0140_77v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0149_82r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+          "canvas_oid": "1006222",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0149_82r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0150_82v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142",
+          "canvas_oid": "1006223",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0150_82v.jpg"
+        }
+      ],
+      "review_target": "Quire 13 f78v/f81r cross-image continuity",
+      "observational_questions": [
+        "Independently assess physical join of f78v/f81r, isolate continuity of illustration from speculative original central placement."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QM-B4",
+      "quire_number": 13,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f78",
+        "f81"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/8/0141_78r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893",
+          "canvas_oid": "1006214",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0141_78r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/8/0142_78v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+          "canvas_oid": "1006215",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/8/0142_78v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0147_81r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe",
+          "canvas_oid": "1006220",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0147_81r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0148_81v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf",
+          "canvas_oid": "1006221",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0148_81v.jpg"
+        }
+      ],
+      "review_target": "Quire 13 f78v/f81r cross-image continuity",
+      "observational_questions": [
+        "Independently assess physical join of f78v/f81r, isolate continuity of illustration from speculative original central placement."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QM-B5",
+      "quire_number": 13,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f79",
+        "f80"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/9/0143_79r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a0f51d21267270b55ac69fc947a4a3443e2a32fc263b162c51a27ad9745eb979",
+          "canvas_oid": "1006216",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0143_79r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0144_79v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "81d647bbc752211d5bf671f7791c59fc8dceaa60e20e7f7a075319b44ed879c1",
+          "canvas_oid": "1006217",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0144_79v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0145_80r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "81223a0b0aa0a24fe821cf62a9bdf4ac504f222ab3cfcb89fcedd7946bceada0",
+          "canvas_oid": "1006218",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0145_80r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/9/0146_80v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "29c94fba8ec872eb71faab93fc4a02e09cd4ef31d1b9001bd44f011d141cfb0b",
+          "canvas_oid": "1006219",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/9/0146_80v.jpg"
+        }
+      ],
+      "review_target": "Quire 13 f78v/f81r cross-image continuity",
+      "observational_questions": [
+        "Independently assess physical join of f78v/f81r, isolate continuity of illustration from speculative original central placement."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QO-B1",
+      "quire_number": 15,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f87",
+        "f90"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0159_87r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "eb9c7020f670d4d9070a4d37130db9e250b9b4ecf33ab34ffb0596512fa53a6c",
+          "canvas_oid": "1006232",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0159_87r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0160_87v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "3bac9e01c7bd848fa947b4877d1166f8e9f38822c7bd209e9574a88f6cb181c0",
+          "canvas_oid": "1043429",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0160_87v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0164_89v _part_ and 90r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "6aaa777945f288a8ba206921709292eaaf4ea972f9a0bb59cdf3040aaed3e15a",
+          "canvas_oid": "1006235",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0164_89v%20_part_%20and%2090r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0165_90r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "f315895bc403e9b78bdda4d207789ed7b5a38654a47715e4571fdfc140c619c6",
+          "canvas_oid": "1006236",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0165_90r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0166_90v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4fe01cc0f7c1424c62cdd0fbd83092ab928493b908970b05eb112ab9d91a7793",
+          "canvas_oid": "1006237",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0166_90v%20_part_.jpg"
+        }
+      ],
+      "review_target": "Quire 15 f89/f90 foldouts",
+      "observational_questions": [
+        "Check f89/f90 panel geometry, gutter folds, q15 f90v1 quire mark."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QO-B2",
+      "quire_number": 15,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f88",
+        "f89"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0161_88r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a1d21ccad0df430b47f3b3df2829bbefb8c4d1644cb70310e6d1de4b01c20013",
+          "canvas_oid": "1037112",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0161_88r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0162_88v and 89r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "3b553c70d0c068cb39a276d391127165c5d9d868ec08e7f5eb2e73b32bb95d1e",
+          "canvas_oid": "1006233",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0162_88v%20and%2089r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0163_89v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "b6b0dd8ba7cd316f3b09a8b156d1eed0eb36ad8ec9086b975969f4f8f7dd5406",
+          "canvas_oid": "1006234",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0163_89v%20_part_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0164_89v _part_ and 90r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "6aaa777945f288a8ba206921709292eaaf4ea972f9a0bb59cdf3040aaed3e15a",
+          "canvas_oid": "1006235",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0164_89v%20_part_%20and%2090r.jpg"
+        }
+      ],
+      "review_target": "Quire 15 f89/f90 foldouts",
+      "observational_questions": [
+        "Check f89/f90 panel geometry, gutter folds, q15 f90v1 quire mark."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QQ-B1",
+      "quire_number": 17,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f93",
+        "f96"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0167_93r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e8ab4d7dcf7d758e2f0e05f9579ef5366a846c273f309ae603616a5e74bbec3a",
+          "canvas_oid": "1006238",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0167_93r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0168_93v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "ed9a4f5e3c4be33611749ce05c303aa7553c5cf3523882d87d05c7aac86e0e32",
+          "canvas_oid": "1006239",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0168_93v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0173_96r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "3feb9d44f6498e7dc085dd9f3eee9a5f29db941d2d401accd54948d5fae3b613",
+          "canvas_oid": "1006244",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0173_96r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0174_96v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "7aad14a896b53ddc78f3c7239d358389f215654c26fd9db7dfc43329439c1f15",
+          "canvas_oid": "1006245",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0174_96v.jpg"
+        }
+      ],
+      "review_target": "Quire 17 f95 and sewn accessory strip",
+      "observational_questions": [
+        "Inspect f95 foldout and separate narrow strip sewn between f94/f95; do not classify strip as independent ordinary leaf."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QQ-B2",
+      "quire_number": 17,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f94",
+        "f95"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0169_94r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "ad33592ad7f29a6e9fc6b9e45444286231f06a903d95b54d1195b17cfdca417b",
+          "canvas_oid": "1006240",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0169_94r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0170_94v and 95r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "04405b1d121a3c73571bad7f5b887b8cf3776a829ee6482e8a82ca095918071d",
+          "canvas_oid": "1006241",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0170_94v%20and%2095r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0171_95v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "9cdbb63ffcc2b43314bf5b9d812e59f1c0f0ce17c811270bc977a1ae71e7a960",
+          "canvas_oid": "1006242",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0171_95v%20_part_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0172_95v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e9f7a4ceb162f393086b1f0be4d5c11edf4d72b8e8ea3420fdb13d8ff58efb51",
+          "canvas_oid": "1006243",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0172_95v.jpg"
+        }
+      ],
+      "review_target": "Quire 17 f95 and sewn accessory strip",
+      "observational_questions": [
+        "Inspect f95 foldout and separate narrow strip sewn between f94/f95; do not classify strip as independent ordinary leaf."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QS-B1",
+      "quire_number": 19,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f99",
+        "f102"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0175_99r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "f17eba5496a1b1d92f589c33ee9be256a379ec8d2bba3da1ebe2ff5a2e3e2901",
+          "canvas_oid": "1006246",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0175_99r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0176_99v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "111f6dfc34b8ecb9230cb5a0d144afef4cbd788048ddda2f440108941c91d5e5",
+          "canvas_oid": "1006247",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0176_99v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0180_101v _part_ and 102r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "30fd529fc6bf8999d5be48024ee6a1676af55e8d66dc0a4f77993fe2565e9d94",
+          "canvas_oid": "1006251",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0180_101v%20_part_%20and%20102r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0181_102v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "8cdb1030d805b968932146124915cb0d86f7abf853167ffec028b59599820fad",
+          "canvas_oid": "1006252",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0181_102v%20_part_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0182_102v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e3ed770ad77b1c1127b8e60b2ee2d9e226ab4089d4861b85dbf22299925397ce",
+          "canvas_oid": "1006253",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0182_102v%20_part_.jpg"
+        }
+      ],
+      "review_target": "Quire 19 f101/f102 foldouts",
+      "observational_questions": [
+        "Trace both multi-panel folds and quire mark f102v1; preserve page versus sheet identity."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QS-B2",
+      "quire_number": 19,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f100",
+        "f101"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0177_100r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "6dcf72a0d7eac14da2232987c9cc1521e6d70c9f0f92d3eb39b55fc075520429",
+          "canvas_oid": "1006248",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0177_100r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0178_100v and 101r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "72637b9770f40f7a8ff6b96a551e64775e88994ae69bafec0b43d48974364c33",
+          "canvas_oid": "1006249",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0178_100v%20and%20101r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0179_101v _part_.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "1122f1b13afdf1509402334816f95e5e9baa2b6c94aa9e347b04aa2e4e54f36b",
+          "canvas_oid": "1006250",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0179_101v%20_part_.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0180_101v _part_ and 102r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "30fd529fc6bf8999d5be48024ee6a1676af55e8d66dc0a4f77993fe2565e9d94",
+          "canvas_oid": "1006251",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0180_101v%20_part_%20and%20102r.jpg"
+        }
+      ],
+      "review_target": "Quire 19 f101/f102 foldouts",
+      "observational_questions": [
+        "Trace both multi-panel folds and quire mark f102v1; preserve page versus sheet identity."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QT-B1",
+      "quire_number": 20,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f103",
+        "f116"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0183_103r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "28a65644ebf9a16dc41c073e6535117d924765fae6af474dbd1e3fe2b167beda",
+          "canvas_oid": "1006254",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0183_103r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0184_103v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "dd2444928b8dd5d1e60fbd58e04e4be38ed877f9d491058a7c6b779ceb18a75b",
+          "canvas_oid": "1006255",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0184_103v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0205_116r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c",
+          "canvas_oid": "1006276",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0205_116r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0206_116v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+          "canvas_oid": "1006277",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0206_116v.jpg"
+        }
+      ],
+      "review_target": "Quire 20 anomalous quire-mark at f103r and lost f109/f110",
+      "observational_questions": [
+        "Inspect q20 mark at f103r and orientation of six surviving bifolios relative to absent central f109/f110.",
+        "Treat inferred order as candidate and evidence-limited, not statistically optimized."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QT-B2",
+      "quire_number": 20,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f104",
+        "f115"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0185_104r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2ee5f2a32ed2e242d60dcb34398c9b8be6af0341872a476e3905f1314ebe716f",
+          "canvas_oid": "1006256",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0185_104r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/10/0186_104v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd",
+          "canvas_oid": "1006257",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0186_104v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0203_115r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "6de34408de10afa401805534c691341824f0660e054d836f9be5e8620cb17668",
+          "canvas_oid": "1006274",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0203_115r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0204_115v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "5700486404459fe1abfc11f6347aa0171bd651e39bcf71d594beecfb170ed8a3",
+          "canvas_oid": "1006275",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0204_115v.jpg"
+        }
+      ],
+      "review_target": "Quire 20 anomalous quire-mark at f103r and lost f109/f110",
+      "observational_questions": [
+        "Inspect q20 mark at f103r and orientation of six surviving bifolios relative to absent central f109/f110.",
+        "Treat inferred order as candidate and evidence-limited, not statistically optimized."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QT-B3",
+      "quire_number": 20,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f105",
+        "f114"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/10/0187_105r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0401750e6d83ed74cd4fea79f99c2aba5e2c8dcd90ed0f2641be81c7b722e82f",
+          "canvas_oid": "1006258",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/10/0187_105r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0188_105v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "540787c3d0aa7a13c1cc620fe222a13d0b2409eaa69e19de56d2544cfdf3c678",
+          "canvas_oid": "1006259",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0188_105v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0201_114r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "fc76cfcb2e6f8911b3928c59772c9c4eca7854dd2a260bec81972f78b883aa37",
+          "canvas_oid": "1006272",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0201_114r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0202_114v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "159d08488392d651c1818e825d3defce83187ad6997610d179dbfe76be30e4e3",
+          "canvas_oid": "1006273",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0202_114v.jpg"
+        }
+      ],
+      "review_target": "Quire 20 anomalous quire-mark at f103r and lost f109/f110",
+      "observational_questions": [
+        "Inspect q20 mark at f103r and orientation of six surviving bifolios relative to absent central f109/f110.",
+        "Treat inferred order as candidate and evidence-limited, not statistically optimized."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QT-B4",
+      "quire_number": 20,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f106",
+        "f113"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/11/0189_106r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "1aad6bd53b227df51ba6f9b19812558a8b4f4313f97dd1a8b272ee4c60fefb31",
+          "canvas_oid": "1006260",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0189_106r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0190_106v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5",
+          "canvas_oid": "1006261",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0190_106v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0199_113r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "ad748f9012b174be520b7ac837fdadf913e49a696323920ca655ecf5474afb5c",
+          "canvas_oid": "1006270",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0199_113r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0200_113v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3",
+          "canvas_oid": "1006271",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0200_113v.jpg"
+        }
+      ],
+      "review_target": "Quire 20 anomalous quire-mark at f103r and lost f109/f110",
+      "observational_questions": [
+        "Inspect q20 mark at f103r and orientation of six surviving bifolios relative to absent central f109/f110.",
+        "Treat inferred order as candidate and evidence-limited, not statistically optimized."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QT-B5",
+      "quire_number": 20,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f107",
+        "f112"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/11/0191_107r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "eb97d7b784be55eaa92781031d3ccefc3e37f9eda41314a9ed996e711a041a58",
+          "canvas_oid": "1006262",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0191_107r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0192_107v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "46316d4cb82f2ccdd1c8d414ee99ad60f72d6154c28b888d00c484245d75704c",
+          "canvas_oid": "1006263",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0192_107v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0197_112r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "f59b3420ff3fdbe6f360c12993304a12b11acdef1a2978784efcd77541c0d9b3",
+          "canvas_oid": "1006268",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0197_112r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0198_112v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c421f574928c767cada83c01295370c078b66234610d262e286079a7a5a4cc1a",
+          "canvas_oid": "1006269",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0198_112v.jpg"
+        }
+      ],
+      "review_target": "Quire 20 anomalous quire-mark at f103r and lost f109/f110",
+      "observational_questions": [
+        "Inspect q20 mark at f103r and orientation of six surviving bifolios relative to absent central f109/f110.",
+        "Treat inferred order as candidate and evidence-limited, not statistically optimized."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QT-B6",
+      "quire_number": 20,
+      "priority": 2,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f108",
+        "f111"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/11/0193_108r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "afad28189500567259ef2041cd1c591644bf6d6c86ac6a39cd1c09503693ad76",
+          "canvas_oid": "1006264",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0193_108r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0194_108v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "df3fce237ad489c5fcdc1c8dab2a5b21b7c338bc3b88ca588cc79434f9499a7b",
+          "canvas_oid": "1006265",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0194_108v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0195_111r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "12ea5325dcdc68d0ea9480bb369d1d95b4dc3accd1ff0d9b84beea8827cfdf31",
+          "canvas_oid": "1006266",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0195_111r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/11/0196_111v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "00729a36de336f57b387fc364441057b31b4bc51f6c5e915352d9185121cbcbf",
+          "canvas_oid": "1006267",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/11/0196_111v.jpg"
+        }
+      ],
+      "review_target": "Quire 20 anomalous quire-mark at f103r and lost f109/f110",
+      "observational_questions": [
+        "Inspect q20 mark at f103r and orientation of six surviving bifolios relative to absent central f109/f110.",
+        "Treat inferred order as candidate and evidence-limited, not statistically optimized."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QT-B7",
+      "quire_number": 20,
+      "priority": 2,
+      "physical_presence": "LOST_PLACEHOLDER",
+      "folio_leaves": [],
+      "missing_leaves": [
+        "f109",
+        "f110"
+      ],
+      "source_filenames": [],
+      "review_target": "Quire 20 anomalous quire-mark at f103r and lost f109/f110",
+      "observational_questions": [
+        "Inspect q20 mark at f103r and orientation of six surviving bifolios relative to absent central f109/f110.",
+        "Treat inferred order as candidate and evidence-limited, not statistically optimized."
+      ],
+      "source_context_urls": [],
+      "independent_image_review": {
+        "status": "NOT_POSSIBLE_LOST_MATERIAL",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QA-B1",
+      "quire_number": 1,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f1",
+        "f8"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/1/0003_1r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+          "canvas_oid": "1006076",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0003_1r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0004_1v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "43065eacad8a743816eb2b7d9acd8cf882a9bb498f1cea84602d12fede99f77d",
+          "canvas_oid": "1006077",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0004_1v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0017_8r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2dfbbfab02ca4220a7ad1ade4b6be69d0401df9a64762e3883ffa87640e07e7e",
+          "canvas_oid": "1006090",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0017_8r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0018_8v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "726c5a8de19709f2286423802e7d1e18f2c58cc558d5680e57a3377e9623ca1c",
+          "canvas_oid": "1006091",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0018_8v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QA-B3",
+      "quire_number": 1,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f3",
+        "f6"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/1/0007_3r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "6ea4d4023a3b199463eee9e30508726a9314391f05a613bce3f87ae8d23fd151",
+          "canvas_oid": "1006080",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0007_3r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0008_3v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "b9c19a872d6456fa58f76f15dec1d61bc80cc353fceff33f11abdaae87ce199e",
+          "canvas_oid": "1006081",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0008_3v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0013_6r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2e9e318c945c1a961ab676c81827b4ee71c993d3d02a1adb9365bbb007ffa4dc",
+          "canvas_oid": "1006086",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0013_6r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0014_6v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c05ffc33745eca87cb0387cf47868f2a0a62f2cf6c3f7929a35a2e64834c40dc",
+          "canvas_oid": "1006087",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0014_6v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QA-B4",
+      "quire_number": 1,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f4",
+        "f5"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/1/0009_4r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "fb166d0fe36d8cb635bb73b1d70b7d62e51a5f1ebf896f51921bd1854a06d904",
+          "canvas_oid": "1006082",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0009_4r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0010_4v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "afec0f17556cb8cec1f1bc529ba4b572fc32363702091bacda4c7c1e0ebf37bc",
+          "canvas_oid": "1006083",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0010_4v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0011_5r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e0e966c2a24f6b434b34cd1e1d4ee9aef2cec281c6ad071847e8e8b50d799acb",
+          "canvas_oid": "1006084",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0011_5r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/1/0012_5v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c294a7576438c7673149f7b6294378127721daa5a48d045643feb812a6c49f40",
+          "canvas_oid": "1006085",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/1/0012_5v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QC-B1",
+      "quire_number": 3,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f17",
+        "f24"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/2/0033_17r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f",
+          "canvas_oid": "1006106",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0033_17r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0034_17v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec",
+          "canvas_oid": "1006107",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0034_17v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0047_24r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "3700fe396154e836b0acd3da86aef1d307f9d2da773208e476ee9db2e80de9e6",
+          "canvas_oid": "1006120",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0047_24r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0048_24v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0b814f58b56dff9351ae0d2f0db18a965fd6d67bb9f8302265b76f8ce5cd9f87",
+          "canvas_oid": "1006121",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0048_24v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QC-B2",
+      "quire_number": 3,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f18",
+        "f23"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/2/0035_18r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "01659aa94a6176b56c621f50c9cbe8c467836d6265a03d8edb1e97e236126e78",
+          "canvas_oid": "1006108",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0035_18r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0036_18v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a0f14ccc11f76d832def734e32e33dccea82222e0b198ac3d73c93e8d1fcc47f",
+          "canvas_oid": "1006109",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0036_18v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0045_23r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "accaf5bdc2bcbbb97171d591f8352258329671eb68d095f4fe3f556979ff2e07",
+          "canvas_oid": "1006118",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0045_23r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0046_23v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3",
+          "canvas_oid": "1006119",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0046_23v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QC-B3",
+      "quire_number": 3,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f19",
+        "f22"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/2/0037_19r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c05e13bd154a93d77e2f601f11d9bd886fdf4524a49dbae0339b0bd864f7283c",
+          "canvas_oid": "1006110",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0037_19r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0038_19v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3",
+          "canvas_oid": "1006111",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0038_19v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0043_22r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "7bfb7bf49850d6d8df30ebae5a1ea8adc7b27bb714cb0e24453724805bd72a3e",
+          "canvas_oid": "1006116",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0043_22r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0044_22v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0243271c28759a1a45350cd058270a12ea131860652cf1a3f7c14e47fe4ed6b2",
+          "canvas_oid": "1006117",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0044_22v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QC-B4",
+      "quire_number": 3,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f20",
+        "f21"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/2/0039_20r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2090ee8a14985ae1db08d465bb9229a7490620ac9f5c288118f3c37cc4c9398e",
+          "canvas_oid": "1006112",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0039_20r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0040_20v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "472ca57a0abf61ab000cd26c6065b007073a95a0cf662ff4cc7d4158c94b52b7",
+          "canvas_oid": "1006113",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0040_20v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0041_21r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88",
+          "canvas_oid": "1006114",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0041_21r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/2/0042_21v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "f10bf37a910e69fb8ea1f34d74b79522b6c7d0bebed77fe13ce40240f792ab53",
+          "canvas_oid": "1006115",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/2/0042_21v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QD-B1",
+      "quire_number": 4,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f25",
+        "f32"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/3/0049_25r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "1089c404ba05823109860af916e7dba2833cf99b98834c1534f3c66fcfaad1a4",
+          "canvas_oid": "1006122",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0049_25r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0050_25v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0f135a9525a84dfccf038a2221c7178dfbfb3b1a1fe4b6d0f62aeb6e8b655d73",
+          "canvas_oid": "1006123",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0050_25v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0063_32r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "fd6f925e17822b61b6339a768dff769f29b132ed6cb0ccb7efee616a1d4db26b",
+          "canvas_oid": "1006136",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0063_32r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0064_32v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "e664856322574dcfb8bcf225a9d880ce28ab6d65bf6236e47624ae05c7d3764b",
+          "canvas_oid": "1006137",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0064_32v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QD-B2",
+      "quire_number": 4,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f26",
+        "f31"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/3/0051_26r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a593efb741d70ec23ae25c3725dbf2c8e8b3f8d2392cea6eb06921ac5949a6db",
+          "canvas_oid": "1006124",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0051_26r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0052_26v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "3378e154f7ef8a45405cb008277aa1dc2229388c456cd3c66438bcca54d02c6b",
+          "canvas_oid": "1006125",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0052_26v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0061_31r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "3968b083d7346a556796d60e97a9ea66a4bb911fa1d085cfa046e9e0b37edc64",
+          "canvas_oid": "1006134",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0061_31r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0062_31v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "666bd3a13edd196866270ff7d8034b8c65695139087cd4ae0da6fdfa31133921",
+          "canvas_oid": "1006135",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0062_31v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QD-B3",
+      "quire_number": 4,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f27",
+        "f30"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/3/0053_27r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "978616e82efb3a452075ab98f7cde7351c373af0ecf668896c77af4f48abb9d5",
+          "canvas_oid": "1006126",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0053_27r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0054_27v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a84bedb17fc768a2e3c5e335b158c86cbef92636d010ef5811fa90b68951d608",
+          "canvas_oid": "1006127",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0054_27v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0059_30r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "df1a0812c502a83e77529d664416c5fec91f23353fd83f75f9d40c12fceb03b6",
+          "canvas_oid": "1006132",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0059_30r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0060_30v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d6eed32377c25b7c13b88e83cb6981a9d16b5dcbe3c433b7611c4e0105cb0035",
+          "canvas_oid": "1006133",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0060_30v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QD-B4",
+      "quire_number": 4,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f28",
+        "f29"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/3/0055_28r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "b7c3fa283b7d2647e512dac6a665c5d37945e5aab8e21798292069ef26d67c04",
+          "canvas_oid": "1006128",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0055_28r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0056_28v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2d325310e4ec264132340974cb71ec7f0cdb2f62820f97e644145dec72d84605",
+          "canvas_oid": "1006129",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0056_28v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0057_29r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "ea8217a4cea6a3861e183a95e82d3e4ee3308aef8025bc2e9c9bce8a7a0c92d6",
+          "canvas_oid": "1006130",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0057_29r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0058_29v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "1739f36ccfddb9121b2acec4faea712136aeeb4ad5fb2889ba5484549d791503",
+          "canvas_oid": "1006131",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0058_29v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QE-B1",
+      "quire_number": 5,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f33",
+        "f40"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/3/0065_33r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "28e6d9f02b9ca96b85275b7c6dd6e94453d3a2f5c6038d9966933d0229da9e74",
+          "canvas_oid": "1006138",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0065_33r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/3/0066_33v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "41b148c40e9cf73c63044c5415d3c2bbeebffc20153a36762f35e8134da42941",
+          "canvas_oid": "1006139",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/3/0066_33v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0079_40r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "540cff9e3a031c5de5ba9d5c7e388cd50980b0d225a1f89b97bda2c6f0de60b7",
+          "canvas_oid": "1006152",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0079_40r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0080_40v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bce0c42319b096126ad9fe0558ecfb8a61335867cbd1869e0865eaacf54c1087",
+          "canvas_oid": "1006153",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0080_40v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QE-B2",
+      "quire_number": 5,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f34",
+        "f39"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/4/0067_34r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4108828356258d68d2b53ef29d484f0648c269ecc4984781248e7803ba51e353",
+          "canvas_oid": "1006140",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0067_34r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0068_34v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "2f68183982075a405f7e2cc11ea06b76b263f80f20f01083279e7f03dcb4f78a",
+          "canvas_oid": "1006141",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0068_34v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0077_39r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c86b9bc0182e1385136465d92ce9c43f31320bfab55d7b2e87e1ea81a7330bf0",
+          "canvas_oid": "1006150",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0077_39r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0078_39v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "13cafc785fd69c7471bc670480becc6338cf20682e1d196c2ef14f03abee8586",
+          "canvas_oid": "1006151",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0078_39v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QE-B3",
+      "quire_number": 5,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f35",
+        "f38"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/4/0069_35r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d190cd19497ea5e59b702d3abaf8513b3b706b79f16cd24947b5615efa455d71",
+          "canvas_oid": "1006142",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0069_35r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0070_35v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "564412e99b04406f51afe2c8f9ab20320518b3e71b91deee48fb16ee1ad3ffbd",
+          "canvas_oid": "1006143",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0070_35v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0075_38r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "9e4ea17ac6b9b184dae0a423bea8feab3eab48eb203dddcf786b3201e6e76b2a",
+          "canvas_oid": "1006148",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0075_38r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0076_38v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4a24360ad6ad267cbc3f8cc3b50a5b84e332b8d2bb655e85683e8b5de2768161",
+          "canvas_oid": "1006149",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0076_38v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QE-B4",
+      "quire_number": 5,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f36",
+        "f37"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/4/0071_36r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "807e9b5aa1ea72b90c39f71c5ae1cfa4aa0c303b4dd889340c2814f1cff62da2",
+          "canvas_oid": "1006144",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0071_36r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0072_36v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "fbbf69e740ae7a922f7e4f6cff836004827df15ab917eb6bcc43430a5c89edc2",
+          "canvas_oid": "1006145",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0072_36v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0073_37r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "4daf7373cfed96fcd9e3d6cb6a9a50cf413e27cc93cf507fee17bee93d8f6d28",
+          "canvas_oid": "1006146",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0073_37r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0074_37v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649",
+          "canvas_oid": "1006147",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0074_37v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QF-B1",
+      "quire_number": 6,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f41",
+        "f48"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/4/0081_41r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "7631b874dbb3e2f48ade864485a0210cb207f2c7878181e458582beba86877ba",
+          "canvas_oid": "1006154",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0081_41r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0082_41v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bc753d5f30cfcbd5ad6479bb16205652d55b94da16fcbba1d78574674e3743ea",
+          "canvas_oid": "1006155",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0082_41v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0095_48r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "f34ccbd6fbb72b5a469ca16b1b07ded862be76e01e0dcf9133940ffdd10c672e",
+          "canvas_oid": "1006168",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0095_48r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0096_48v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c0ecc85912878c5c27ad64d560dd088e703ea95e68a87aaecb112a4aabcbe516",
+          "canvas_oid": "1006169",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0096_48v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QF-B2",
+      "quire_number": 6,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f42",
+        "f47"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/4/0083_42r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "5e86508e3ecdb425b791fdcba0305f51cdf9a78182d082055a3da0b55012660a",
+          "canvas_oid": "1006156",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0083_42r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0084_42v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bd2a7f2bbaf4c789d51f239248d81c151f4fc1c9f5ab6f51c148646a9d301f66",
+          "canvas_oid": "1006157",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0084_42v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0093_47r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "5a0a7f262b1fbccb44cd7e6ae69097476b92ff38f4124a50532a79e4f2619033",
+          "canvas_oid": "1006166",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0093_47r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0094_47v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bcdae68e9bf1f172ad100b598b3189a2eff85cb7b67a151f7bb4a44f1f56f94e",
+          "canvas_oid": "1006167",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0094_47v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QF-B3",
+      "quire_number": 6,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f43",
+        "f46"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/4/0085_43r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "cf92565c8f400c987e59359d77c297fc52afc2f6996bd60e5421cbc1074a4bd2",
+          "canvas_oid": "1006158",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0085_43r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0086_43v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133",
+          "canvas_oid": "1006159",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0086_43v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0091_46r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bc11de34e89d67f2b61c63473c3273256aa45d3d6beac4195c95625c07422740",
+          "canvas_oid": "1006164",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0091_46r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0092_46v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bee511bff7d50d8ef83a70b598e1c2d8733cd1e6ad72b070f7fbd4e2171cb0ec",
+          "canvas_oid": "1006165",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0092_46v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QF-B4",
+      "quire_number": 6,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f44",
+        "f45"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/4/0087_44r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "f9cd059bb34057bf9635a1d1443cafd3b358cdb64ec0c5e1ff73bfc091da0eb3",
+          "canvas_oid": "1006160",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0087_44r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/4/0088_44v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "dd57f4055f9c933913cf550f76b2786cdeeeeea74fd9641c55f148903e4cd3db",
+          "canvas_oid": "1006161",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/4/0088_44v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0089_45r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "32afa9bda4154db2e3236081b0d7603dfc34bf11b1844a5084881b764dafe4f8",
+          "canvas_oid": "1006162",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0089_45r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0090_45v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "f49fcf1b8abb327483cdf272104a0dc628f31394a413908c866eb0094bd2d224",
+          "canvas_oid": "1006163",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0090_45v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QG-B1",
+      "quire_number": 7,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f49",
+        "f56"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/5/0097_49r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "c125a5ffc5121e31e07dbaebd4515d6375e2f71feff312690dc943e62e0d8d56",
+          "canvas_oid": "1006170",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0097_49r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0098_49v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "3c03e0e8b3d3e75f93ba7a7619a029b7ffbe33d7243f32222ad59ac7555dfd96",
+          "canvas_oid": "1006171",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0098_49v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0111_56r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d81272aa14671b1b6672fe7556c15ac177c734685d9ef7448237a2cc08dc899d",
+          "canvas_oid": "1006184",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0111_56r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/6/0112_56v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d92ba733bf53dc49e8d81df2d1873d5f36c52f98cf67292ea43e66a844a61cc9",
+          "canvas_oid": "1006185",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/6/0112_56v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QG-B2",
+      "quire_number": 7,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f50",
+        "f55"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/5/0099_50r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d",
+          "canvas_oid": "1006172",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0099_50r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0100_50v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "bbd4d60e069704fdfe91394ac07387022341c6cf08eb7d6d2160a34ea5b7677d",
+          "canvas_oid": "1006173",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0100_50v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0109_55r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "24e4b496a7e198a6bcd8d98044112d45418c157f2f2a54fdf997e01de6d53126",
+          "canvas_oid": "1006182",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0109_55r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0110_55v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "0e9b1dac025cad189bc7258f41fb8cafc6fcff70f9c4e5bb4f85c9bb79ad5a80",
+          "canvas_oid": "1006183",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0110_55v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QG-B3",
+      "quire_number": 7,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f51",
+        "f54"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/5/0101_51r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "d3335f9fe15abe0d4473e881f411f658fe7a4db70fcb03c13dad8a2f49cf6cc1",
+          "canvas_oid": "1006174",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0101_51r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0102_51v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "7e794abb1dfddce9f2cee013a7f1aaec880b86e884ae17298354863b0108734e",
+          "canvas_oid": "1006175",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0102_51v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0107_54r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "471b393530cf2f80116e8bcfb9712b43e991db175b919e594a1587cca21f2eaa",
+          "canvas_oid": "1006180",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0107_54r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0108_54v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "97c02cfada6ad1c2450bdac0e345cddc4d4788570813b84ac65ccdcd360dbc13",
+          "canvas_oid": "1006181",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0108_54v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QG-B4",
+      "quire_number": 7,
+      "priority": 3,
+      "physical_presence": "SURVIVING_FULL_OR_PARTIAL",
+      "folio_leaves": [
+        "f52",
+        "f53"
+      ],
+      "missing_leaves": [],
+      "source_filenames": [
+        {
+          "path": "data/yale_hq_scans/5/0103_52r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "002748147666ab2ec1d81be186248a7a9b58e001a8b61a53498b8d7f49193206",
+          "canvas_oid": "1006176",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0103_52r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0104_52v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "9792c5070fa339a220781439d0b8864d48b2e2dc071cd051b24e501d565ddb39",
+          "canvas_oid": "1006177",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0104_52v.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0105_53r.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "a415de024d9cf57a8a607c764d9a8d038803dcaabda8a77f7325645fa0c73f89",
+          "canvas_oid": "1006178",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0105_53r.jpg"
+        },
+        {
+          "path": "data/yale_hq_scans/5/0106_53v.jpg",
+          "image_sha256_verified_by_ci_2026_10_09": true,
+          "sha256": "717481f74b5552c603f38ec3b2ae4de2f447320e18d3aaf368a8ccd211e1df11",
+          "canvas_oid": "1006179",
+          "source_link": "https://github.com/SonGohan231/voynichese/blob/import-voynich-yale-scans-2026-07-23/data/yale_hq_scans/5/0106_53v.jpg"
+        }
+      ],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [
+        "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/"
+      ],
+      "independent_image_review": {
+        "status": "NOT_STARTED",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QP-B1",
+      "quire_number": 16,
+      "priority": 3,
+      "physical_presence": "LOST_PLACEHOLDER",
+      "folio_leaves": [],
+      "missing_leaves": [
+        "f91",
+        "f92"
+      ],
+      "source_filenames": [],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [],
+      "independent_image_review": {
+        "status": "NOT_POSSIBLE_LOST_MATERIAL",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    },
+    {
+      "group_id": "QR-B1",
+      "quire_number": 18,
+      "priority": 3,
+      "physical_presence": "LOST_PLACEHOLDER",
+      "folio_leaves": [],
+      "missing_leaves": [
+        "f97",
+        "f98"
+      ],
+      "source_filenames": [],
+      "review_target": "Standard-group physical fold, stitched edge, foliation, any page transitions and contrary evidence",
+      "observational_questions": [
+        "Does the photo show a fold/sewn joint and can its geometry be positively assigned?",
+        "Document anomalies, edge cuts, historic repair traces with image crop coordinates, otherwise UNKNOWN."
+      ],
+      "source_context_urls": [],
+      "independent_image_review": {
+        "status": "NOT_POSSIBLE_LOST_MATERIAL",
+        "inspected_by": null,
+        "reviewed_at_utc": null,
+        "pixels_examined": false,
+        "findings": [],
+        "counterevidence": [],
+        "crop_coordinates": [],
+        "sewing_stitch_details": null,
+        "fold_axis_evidence": null,
+        "appended_parchment_strip": null,
+        "crease_or_repair_evidence": null,
+        "confirmed_sheet_join": null,
+        "admissible_physical_constraints": [],
+        "historian_notes": null,
+        "independent_verdict": "PENDING"
+      }
+    }
+  ],
+  "science_status": "INCONCLUSIVE_NOT_RUN",
+  "physical_order_freeze": "NOT_APPROVED"
+}
