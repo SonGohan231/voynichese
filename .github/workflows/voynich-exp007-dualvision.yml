@@ -141,8 +141,15 @@ jobs:
           python-version: "3.11"
       - uses: actions/download-artifact@v4
         with:
-          pattern: exp007-*
-          merge-multiple: true
+          name: exp007-frozen-Yale-source-pixels
+      - uses: actions/download-artifact@v4
+        with:
+          name: exp007-real-blind-blip-model-A
+          path: research_os/experiments/EXP-2026-007/dual_vision
+      - uses: actions/download-artifact@v4
+        with:
+          name: exp007-real-blind-clip-model-B
+          path: research_os/experiments/EXP-2026-007/dual_vision
       - name: Audit two actual independent AI image predictions, preserve UNKNOWN
         run: |
           python research_os/tools/exp007_dualvision_blind_review.py audit
