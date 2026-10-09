@@ -18,7 +18,7 @@ from itertools import combinations
 HERE=Path(__file__).resolve().parents[1]/"experiments"/"EXP-2026-004"
 SOURCE_URL="https://www.voynich.nu/data/ZL3b-n.txt"
 PAGE_RE=re.compile(r"^<(f\d+[rv]\d*|fRos)>\s*(?:<!\s*(.*?)\s*>)?")
-LOCUS_RE=re.compile(r"^<(?P<folio>f[^.>]+)\.(?P<line>\d+[a-z]?),(?P<mark>[@+\-=*])(?P<locus>[PLCR])(?P<rest>[^>]*)>\s*(?P<value>.*)$")
+LOCUS_RE=re.compile(r"^<(?P<folio>f[^.>]+)\.(?P<line>\d+[a-z]?),(?P<mark>[@+\-=*&])(?P<locus>[PLCR])(?P<rest>[^>]*)>\s*(?P<value>.*)$")
 VARS_RE=re.compile(r"\$([A-Z])=([A-Za-z0-9]+)")
 COMMENT_RE=re.compile(r"<!.*?>")
 OTHER_TAG_RE=re.compile(r"<[^>]*>")
@@ -69,7 +69,7 @@ def source_key_to_canvas(label):
 
 def build(content):
     folios,lines,unparsed=parse_file(content)
-    if len(folios)<100 or len(lines)<1500:
+    if len(folios)<100 or len(lines)<5350:
         raise ValueError("Source file failed corpus coverage checks")
     label_occurrences=defaultdict(list)
     for folio,d in folios.items():
