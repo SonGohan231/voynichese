@@ -1,0 +1,105 @@
+name: Voynich MV import archived automatic object candidates
+
+on:
+  push:
+    branches:
+      - research/voynich-multiview-2026-10-09
+    paths:
+      - '.github/workflows/voynich-multiview-import-candidates.yml'
+      - 'research_os/experiments/MV-2026-10-09/initialize_catalog.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  import-archive-to-object-catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout protocol and source
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            research_os/experiments/MV-2026-10-09
+          sparse-checkout-cone-mode: false
+      - name: Download previously generated automatic annotation archive
+        uses: actions/download-artifact@v4
+        with:
+          name: voynich-annotated-final-v1
+          repository: SonGohan231/voynichese
+          run-id: 37207481374
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: candidate-artifact
+      - name: Import only annotation JSON (no inference)
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import shutil, json
+          src = Path("candidate-artifact")
+          dest = Path("auto-records")
+          dest.mkdir(exist_ok=True)
+          zips = sorted(src.rglob("*.zip"))
+          seen = set()
+          if zips:
+              with ZipFile(zips[0]) as archive:
+                  for name in archive.namelist():
+                      if "/records/" not in "/" + name or not name.endswith(".annotation.json"):
+                          continue
+                      basename = Path(name).name
+                      if basename in seen:
+                          raise RuntimeError("duplicate source annotation basename")
+                      seen.add(basename)
+                      (dest / basename).write_bytes(archive.read(name))
+          else:
+              for file in sorted(src.rglob("*.annotation.json")):
+                  if file.name in seen:
+                      raise RuntimeError("duplicate source annotation basename")
+                  seen.add(file.name)
+                  shutil.copy2(file, dest / file.name)
+          if len(seen) != 206:
+              raise RuntimeError(f"expected 206 previous automatic candidates, received {len(seen)}")
+          for item in dest.glob("*.annotation.json"):
+              data = json.loads(item.read_text(encoding="utf-8"))
+              if data.get("execution_status") != "AUTO_ANNOTATED_CANDIDATE":
+                  raise RuntimeError(f"not an automatic source annotation: {item}")
+          print("Imported", len(seen), "automatic-candidate records (not ground truth)")
+          PY
+      - name: Build low-confidence object catalog
+        run: |
+          python3 research_os/experiments/MV-2026-10-09/initialize_catalog.py \
+            --records auto-records --output mv-auto-catalog --permit-auto-candidates
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("mv-auto-catalog/catalog_qc.json").read_text())
+          assert report["status"] == "AUTO_CANDIDATE_ONLY", report
+          assert report["counts"]["scanned_records"] == 206, report
+          assert report["counts"]["objects"] > 0, report
+          assert report["counts"]["invalid_records"] == 0, report
+          assert report["mv2_mv3_mv4_candidates"] == 0, report
+          assert report["scientific_status"] == "INCONCLUSIVE_NOT_RUN", report
+          assert not report["pair_matching_performed"], report
+          print("PASS: candidate object catalog generated without scientific identity claims")
+          PY
+          cat > mv-auto-catalog/source_provenance.json <<'JSON'
+          {
+            "source_workflow_run_id": 37207481374,
+            "source_github_artifact_id": 11305232758,
+            "source_artifact_name": "voynich-annotated-final-v1",
+            "source_upstream_checksum_sha256": "40c898a4dda3639a4d4c59b4c995a3ae40e6d4702cd4b629802858a8ed93548b",
+            "scientific_status": "AUTOMATED_CANDIDATE_NOT_INDEPENDENT_ANNOTATION",
+            "original_manuscript_images_used_in_current_stage": false,
+            "original_sha_reverification_in_current_stage": false,
+            "independent_adjudication": false
+          }
+          JSON
+      - name: Publish generated candidate manifest
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mv-2026-10-09-auto-object-catalog
+          path: mv-auto-catalog/
+          if-no-files-found: error
