@@ -12,6 +12,7 @@ import math
 from pathlib import Path
 import cv2
 import numpy as np
+from skimage.morphology import skeletonize
 from exp003_multiscale_contour_audit import (LEDGER, LABELS, normalize,
     extract, compare, SHAPE_SIZE)
 from exp003_yale_visual_inventory import fetch_image
@@ -27,17 +28,8 @@ NEIGHBOR_KERNEL=np.ones((3,3), dtype=np.uint8)
 
 
 def morphological_skeleton(mask):
-    """Only an exploratory skeleton, morphology may add spurs/junctions."""
-    src=(mask>0).astype(np.uint8)
-    out=np.zeros_like(src)
-    elt=cv2.getStructuringElement(cv2.MORPH_CROSS,(3,3))
-    for _ in range(max(src.shape)):
-        if not src.any():break
-        eroded=cv2.erode(src,elt)
-        opened=cv2.dilate(eroded,elt)
-        out=np.maximum(out,src-opened)
-        src=eroded
-    return out
+    """Zhang-Suen style thinning: geometry probe only, not validated anatomy."""
+    return skeletonize(mask>0).astype(np.uint8)
 
 
 def signature(mask):
@@ -60,7 +52,15 @@ def signature(mask):
     solidity=area/max(1.,cv2.contourArea(hull))
     x,y,w,h=cv2.boundingRect(contour)
     hull_idx=cv2.convexHull(contour,returnPoints=False)
-    defects=cv2.convexityDefects(contour,hull_idx) if hull_idx is not None and len(hull_idx)>3 and len(contour)>4 else None
+    # Archive scans may contain self-crossing pixel contours: in that case the
+    # OpenCV hull index requirement is not satisfied. Mark as unmeasurable, not 0.
+    defects=None
+    defects_reliable=True
+    if hull_idx is not None and len(hull_idx)>3 and len(contour)>4:
+        try:
+            defects=cv2.convexityDefects(contour,hull_idx)
+        except cv2.error:
+            defects_reliable=False
     dents=[]
     if defects is not None:
         for z in defects[:,0]:
@@ -89,6 +89,7 @@ def signature(mask):
     return {"endpoints":int(np.count_nonzero(endpoints)),
             "junctions":int(junctions),"notches":len(dents),
             "notch_depth_median":round(float(np.median(dents)),4) if dents else 0.,
+            "notch_measurement_reliable":defects_reliable,
             "aspect":round(w/max(1,h),4),"radial_peaks":len(peak_idx),
             "radial_spacing":[round(float(x),4) for x in spacing],
             "skeleton_pixels":int(np.count_nonzero(sk)),
@@ -116,7 +117,10 @@ def alignment_score(fa,fb,baseline):
           0.6*gap_err+0.08*min(3,branch_size_err))
     # Original IoU score dominates for simple silhouettes; explicitly
     # disqualify bland blobs from evidence of *complex branching*.
-    is_simple=min(fa["junctions"],fb["junctions"])<1 or min(fa["notches"],fb["notches"])<2
+    is_simple=(min(fa["junctions"],fb["junctions"])<1 or
+               min(fa["notches"],fb["notches"])<2 or
+               not fa["notch_measurement_reliable"] or
+               not fb["notch_measurement_reliable"])
     raw=round(float(0.4*baseline["shape_score"]+0.6*math.exp(-loss)),5)
     return {"structural_score_exploratory":raw,"different_branch_complexity":is_simple,
             "structural_comparison_eligible":not is_simple,
