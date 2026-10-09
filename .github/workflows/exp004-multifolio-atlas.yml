@@ -5,11 +5,13 @@ on:
       - research/exp-2026-002-sectional-locality-prereg-20261008
     paths:
       - "research_os/tools/exp004_multifolio_object_atlas.py"
+      - "research_os/tools/exp004_native_candidate_contact_sheet.py"
       - ".github/workflows/exp004-multifolio-atlas.yml"
   pull_request:
     branches: [master]
     paths:
       - "research_os/tools/exp004_multifolio_object_atlas.py"
+      - "research_os/tools/exp004_native_candidate_contact_sheet.py"
       - ".github/workflows/exp004-multifolio-atlas.yml"
   workflow_dispatch:
 permissions:
@@ -33,6 +35,15 @@ jobs:
           python research_os/tools/exp004_multifolio_object_atlas.py \
             --output research_os/experiments/EXP-2026-004/multifolio_object_atlas_v1.json \
             --tsv research_os/experiments/EXP-2026-004/ranked_roi_matches_v1.tsv
+      - name: Install source-native image crop tooling
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Crop function synthetic smoke test
+        run: python research_os/tools/exp004_native_candidate_contact_sheet.py --selftest
+      - name: Build 12-pair visual contact sheet from original SHA-verified Yale bytes
+        run: |
+          python research_os/tools/exp004_native_candidate_contact_sheet.py \
+            --atlas research_os/experiments/EXP-2026-004/multifolio_object_atlas_v1.json \
+            --out research_os/experiments/EXP-2026-004/paired_native_image_review_board.png
       - name: Store all evidence including unavailable categories
         if: always()
         uses: actions/upload-artifact@v4
@@ -41,5 +52,6 @@ jobs:
           path: |
             research_os/experiments/EXP-2026-004/multifolio_object_atlas_v1.json
             research_os/experiments/EXP-2026-004/ranked_roi_matches_v1.tsv
+            research_os/experiments/EXP-2026-004/paired_native_image_review_board.png
           if-no-files-found: warn
           retention-days: 30
