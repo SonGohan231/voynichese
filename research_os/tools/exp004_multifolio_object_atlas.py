@@ -123,6 +123,12 @@ def build_roi_records(index, source):
             rows.append(item)
     return rows
 
+def near_photograph_border(bbox):
+    """Reject photographic framing and outer sheet borders from object identity."""
+    x,y,w,h=[float(v) for v in bbox]
+    return x<.12 or y<.08 or x+w>.88 or y+h>.92
+
+
 def annotate_color_absence(rois):
     by_canvas=defaultdict(list)
     for r in rois:by_canvas[r["canvas_oid"]].append(r)
@@ -136,7 +142,7 @@ def annotate_color_absence(rois):
             overlap=max((bbox_overlap_fraction(r["source_bbox_xywh_norm"],other["source_bbox_xywh_norm"])
                          for other in colored),default=0.)
             r["max_overlap_fraction_of_color_component_bbox"]=round(overlap,4)
-            if overlap<.05:
+            if overlap<.05 and not near_photograph_border(r["source_bbox_xywh_norm"]):
                 r["colorless_outline_hypothesis"]="UNVERIFIED_CANDIDATE_LOW_COLOR_BBOX_OVERLAP"
                 proxies.append(r["id"])
             else:r["colorless_outline_hypothesis"]="NO_CLAIM"
@@ -204,7 +210,14 @@ def find_pairs(rois,limit=125):
                                  c["dhash_hamming_64"],
                                  abs(math.log(c["aspect_ratio_ratio"])),
                                  c["roi_a"],c["roi_b"]))
-    return candidates[:limit],len(candidates)
+    # A native-photo visual inspection showed the highest dark matches were
+    # repeated black photographic corners and sheet edges. Exclude *both*
+    # kinds of border-touching shapes from same-object identity ranking.
+    by_id={x["id"]:x for x in rois}
+    cleaned=[p for p in candidates
+             if not near_photograph_border(by_id[p["roi_a"]]["source_bbox_xywh_norm"])
+             and not near_photograph_border(by_id[p["roi_b"]]["source_bbox_xywh_norm"])]
+    return cleaned[:limit],len(candidates),len(candidates)-len(cleaned)
 
 def foldout_inventory(path):
     doc=json.loads(Path(path).read_text(encoding="utf-8"))
@@ -232,7 +245,7 @@ def execute(index,cross,fold,out,tsv):
     doc,sources=load_sources(index,cross)
     rois=build_roi_records(doc,sources)
     low_color_proposals=annotate_color_absence(rois)
-    pairs,total=find_pairs(rois)
+    pairs,total,border_rejected=find_pairs(rois)
     folds=foldout_inventory(fold)
     report={
       "schema":"voynich-exp004/multifolio-object-candidates-v1",
@@ -247,6 +260,7 @@ def execute(index,cross,fold,out,tsv):
         "low_color_bbox_overlap_outline_proposals":len(low_color_proposals),
         "cross_physical_group_pairs_below_dhash_threshold":total,
         "retained_ranked_pairs":len(pairs),
+        "photographic_border_pairs_excluded":border_rejected,
         "human_semantic_rois_accepted":0,"different_view_object_identity_accepted":0
       },
       "semantic_attribute_registry":{k:{"status":v,"human_verified_count":None}
@@ -270,6 +284,7 @@ def execute(index,cross,fold,out,tsv):
           "Hashes do not normalize arbitrary rotation, skew or projection; full-resolution landmarks and graph topology required.",
           "Low overlap of digital paint ROI bboxes is NOT demonstrated intentional absence of paint.",
           "Brown-yellow appearance candidates are explicitly deprioritized because parchment may be mislabeled as ochre.",
+          "Image margin/sheet-edge ROIs were excluded from identity ranking after review showed black-edge contamination. Genuine border ornaments must be annotated in a separate class.",
           "No star/woman/tower count is inferred from generic geometry.",
           "Folios with shared physical-group IDs cannot serve as independent folds.",
           "No heldout EXP001/002 data touched and same screenshot-selection data not used as independent test.",
@@ -290,6 +305,9 @@ def execute(index,cross,fold,out,tsv):
 def selftest():
     assert hamming64("0"*16,"f"*16)==64
     assert hamming64("f"*16,"f"*16)==0
+    assert near_photograph_border([.03,.02,.08,.04])
+    assert near_photograph_border([.86,.22,.14,.45])
+    assert not near_photograph_border([.2,.2,.15,.15])
     a=[.1,.2,.3,.4];b=[.2,.3,.1,.4]
     assert bbox_overlap_fraction(a,b)>.1
     r=lambda oid,g:{"canvas_oid":oid,"physical_groups":[g],"cv_proxy_class":"gray_outline_candidate",
