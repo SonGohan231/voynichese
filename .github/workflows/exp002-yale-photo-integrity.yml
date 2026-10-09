@@ -36,6 +36,7 @@ jobs:
           retention-days: 30
 
   verify-entire-yale-photo-archive:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 22
     steps:
