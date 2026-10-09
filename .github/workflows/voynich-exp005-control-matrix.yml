@@ -1,0 +1,60 @@
+name: Voynich EXP005 three-proxy null-screen and graph skeletons
+
+on:
+  push:
+    branches:
+      - research/mv-semantic-review-20261009
+    paths:
+      - "research_os/tools/exp005_multi_family_controls.py"
+      - ".github/workflows/voynich-exp005-control-matrix.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  graph-color-outline-controls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install reproducible dependencies
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12' 'scikit-image>=0.24,<0.26'
+      - name: Unit-test both image feature algorithms
+        run: |
+          python research_os/tools/exp005_semantic_source_pack.py --selftest
+          python research_os/tools/exp005_multi_family_controls.py --selftest
+      - name: Generate original-source Yale review pack with SHA verified JPEGs
+        run: |
+          python research_os/tools/exp005_semantic_source_pack.py --out research_os/experiments/EXP-2026-005/native_semantic_review
+      - name: Compare object-free feature proxies to section-matched null pairs
+        run: |
+          python research_os/tools/exp005_multi_family_controls.py --out research_os/experiments/EXP-2026-005/multi_family_feature_test
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("research_os/experiments/EXP-2026-005/multi_family_feature_test")
+          r=json.loads((p/"three_proxy_control_report.json").read_text())
+          assert r["image_crops_with_sha_verified"]==27
+          assert r["preselected_pairs"]==5
+          assert r["background_control_photo_pairs"]>=20
+          assert r["paired_physical_independent_photos"]==r["preselected_pairs"]+r["background_control_photo_pairs"]
+          assert r["nulls"]["text_only"].startswith("NOT_ASSESSED")
+          assert r["mv2_or_above_accepted"]==0
+          assert r["source_heldout_used"] is False
+          assert r["no_adjusted_p_values"] is True
+          assert all(x["all_9_window_pairs_tested"]==9 for x in r["primary_results"])
+          assert all(x["control_pairs_in_same_section_relation"]>=5 for x in r["primary_results"])
+          print("EXP005_MATRIX_QA_PASS",r["paired_physical_independent_photos"],r["background_control_photo_pairs"])
+          PY
+      - name: Upload completed source-linked statistics and per-crop graph features
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: voynich-exp005-multifamily-controls
+          path: research_os/experiments/EXP-2026-005/multi_family_feature_test/
+          if-no-files-found: warn
+          retention-days: 30
