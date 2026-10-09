@@ -1,0 +1,58 @@
+name: Voynich EXP005 background and ROI selection ablation
+
+on:
+  push:
+    branches:
+      - research/mv-semantic-review-20261009
+    paths:
+      - "research_os/tools/exp005_background_ablation.py"
+      - ".github/workflows/voynich-exp005-ablation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  background-vs-outline-control:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install source-image analysis dependencies
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12' 'scikit-image>=0.24,<0.26'
+      - name: Test nuisance models before testing the manuscript
+        run: |
+          python research_os/tools/exp005_background_ablation.py --selftest
+          python research_os/tools/exp005_multi_family_controls.py --selftest
+      - name: Reproduce verified original crop data
+        run: |
+          python research_os/tools/exp005_semantic_source_pack.py --out research_os/experiments/EXP-2026-005/native_semantic_review
+          python research_os/tools/exp005_multi_family_controls.py --out research_os/experiments/EXP-2026-005/multi_family_feature_test
+      - name: Ablate color, photographic background and machine-candidate selection
+        run: |
+          python research_os/tools/exp005_background_ablation.py
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          d=Path("research_os/experiments/EXP-2026-005/multi_family_feature_test/paper_and_selection_ablation.json")
+          j=json.loads(d.read_text())
+          assert j["physical_pair_count"]==35
+          assert j["primary_count"]==5
+          assert j["control_count"]==30
+          assert j["mv3_mv4_confirmed"]==0
+          assert j["EXP001_heldout_used"] is False
+          assert j["text_only"]=="NOT_ASSESSED"
+          assert all(p["controls_same_section_relation"]>=8 for p in j["primary"])
+          print("EXP005_ABLATION_QA_PASS: no semantic identity or significance claims")
+          PY
+      - name: Upload nuisance ablation results, exact source descriptions and per-crop features
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: voynich-exp005-paper-roi-ablation
+          path: research_os/experiments/EXP-2026-005/multi_family_feature_test/
+          if-no-files-found: warn
+          retention-days: 30
