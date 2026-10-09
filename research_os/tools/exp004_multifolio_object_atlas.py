@@ -187,7 +187,21 @@ def find_pairs(rois,limit=125):
                     "3d_occlusion_consistency":"NOT_MEASURED",
                     "independent_reviewer_decision":"PENDING",
                 })
-    candidates.sort(key=lambda c:(c["dhash_hamming_64"],
+    # The pre-existing HSV screen notoriously mistakes yellow parchment for
+    # ochre; rank independent grayscale/darker line proposals before ochre,
+    # even if yellow shapes have a dHash of zero.
+    def evidence_priority(row):
+        if row["color_appearance_label"] == "żółto-ochrowy":return 3
+        if row["cv_proxy_class"] == "gray_outline_candidate":return 0
+        if row["cv_proxy_class"] == "dark_paint_or_ink_candidate":return 1
+        return 2
+    for row in candidates:
+        row["parchment_yellow_confound_risk"] = (
+            "HIGH" if row["color_appearance_label"]=="żółto-ochrowy" else "UNKNOWN"
+        )
+        row["review_priority_class"] = evidence_priority(row)
+    candidates.sort(key=lambda c:(c["review_priority_class"],
+                                 c["dhash_hamming_64"],
                                  abs(math.log(c["aspect_ratio_ratio"])),
                                  c["roi_a"],c["roi_b"]))
     return candidates[:limit],len(candidates)
@@ -255,6 +269,7 @@ def execute(index,cross,fold,out,tsv):
           "High dHash resemblance across sections does not prove same historical object or perspective.",
           "Hashes do not normalize arbitrary rotation, skew or projection; full-resolution landmarks and graph topology required.",
           "Low overlap of digital paint ROI bboxes is NOT demonstrated intentional absence of paint.",
+          "Brown-yellow appearance candidates are explicitly deprioritized because parchment may be mislabeled as ochre.",
           "No star/woman/tower count is inferred from generic geometry.",
           "Folios with shared physical-group IDs cannot serve as independent folds.",
           "No heldout EXP001/002 data touched and same screenshot-selection data not used as independent test.",
