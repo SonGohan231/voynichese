@@ -1,0 +1,219 @@
+# EXP-2026-004 — multifolio object, perspective, color and text pilot
+
+**Date:** 2026-10-09. **Agent OS mission:** `6bc4aa31-a68a-48a1-adb9-4e0d6a3271ff` (do not infer completion or scientific success from mission admission). **Current scientific verdict: INCONCLUSIVE / no established same-object other-perspective instance.**
+
+## Audited computer results
+
+| Workstream | Real workflow result | Actual measurement | Important limit |
+|---|---|---|---|
+| All-Yale computer candidate atlas | [#37890540768](https://github.com/SonGohan231/voynichese/actions/runs/37890540768) SUCCESS, artifact `11598316336` | 206 independent archived photographic canvases; 4,800 digital ROI candidates, 991 cross-folio similarities, 125 queued | Images are source-verified in upstream EXP003; shapes are *not* semantically identified |
+| Updated background-aware ranking | [#37892002245](https://github.com/SonGohan231/voynichese/actions/runs/37892002245) SUCCESS, artifact `11598509078` | Top 125 contains 89 dark-ink components, 11 red, 1 green, 24 ochre; ochre has background confound so deprioritized | Short shape dHash does not prove object identity |
+| Ring/spoke geometry | [#37890949802](https://github.com/SonGohan231/voynichese/actions/runs/37890949802) SUCCESS, artifact `11598497317` | 37 proposed circular regions in 7 original foldout canvas photos; 186 comparisons of different physical units, 25 candidate rich radial profiles | Radial edge peaks are NOT human-verified ring, star or sector counts |
+| Placa spatial tokens of Nine Rosettes | [#37891194941](https://github.com/SonGohan231/voynichese/actions/runs/37891194941) SUCCESS, artifact `11598078968` | 539 positioned token entries; 44 token-bearing regions; 363 unique forms and 63 forms appearing in more than one region | 46 polygon/regions in source; only 44 have listed tokens; Placa image coordinates not yet matched to Yale original JPEG |
+| ZL3b Voynich text by folio | [#37892110672](https://github.com/SonGohan231/voynichese/actions/runs/37892110672) SUCCESS, artifact `11598618811` | 227 text page headings, 5,385 IVTFF loci parsed, 64 folios containing L/C/R tokens; 742 pairs of folio headings share at least one selectively filtered L/C/R form | Different folio numbering and partial foldout sheets; labels are not actual ROIs without registration, numerous generic forms |
+
+### Independent visual red-team check: initial ranked ink marks were photographic borders
+
+A native-photo 12-pair contact sheet from verified original scans was generated in
+[GitHub Actions #37892282679](https://github.com/SonGohan231/voynichese/actions/runs/37892282679)
+(artifact `exp004-multifolio-candidate-atlas`, including `paired_native_image_review_board.png`).
+**Manual inspection clearly showed all of its highest-ranked dark-ink matches were the
+outer photographic/page borders, black margins or sheet-edge textures, NOT manuscript
+drawing motifs.** Therefore the initially listed f30v↔f31v, f28v↔f34v and related
+dark image-shape matches are **REJECTED AS PHOTO-BORDER FALSE POSITIVES** for
+same-object interpretation. Treat them solely as forensic examples of detector failure.
+
+Implementation updated at commit `91333a7f9b4cf07056e265ee2ca063781182edb0`
+to remove ROI bounding boxes close to photographic margins from primary same-object
+ranking and from low-color candidate evidence. Border ornaments should be a separate
+human-native-source labeling track, not automatically conflated with photo edges.
+A corrected workflow run must finish and the next contact sheet must be independently
+inspected before displaying new rankings as research leads. Earlier shortlist remains
+in audit history for reproducibility; never cite those pairs as meaningful object recurrence.
+
+### Specific folios (only review candidates, never scientific discoveries)
+
+**Superseded pre-border-filter examples (FALSE POSITIVE PHOTO EDGES — not object candidates):**
+- **f30v ↔ f31v**: dHash Hamming 2 / 64;
+- **f28v ↔ f34v**: dHash Hamming 2 / 64;
+- **f22v ↔ f23v**: Hamming 3 / 64;
+- **f32v ↔ f33v**: Hamming 3 / 64;
+- **f28v ↔ f31v**: Hamming 3 / 64;
+- **f45r ↔ f46r**: Hamming 3 / 64.
+
+Direct source-photo inspection found these particular top matches to be image/sheet edges. They should be **excluded** from any inference about repeated manuscript iconography; replacement rankings await photo-border filter validation.
+
+**Roundel/radial review priorities**: f67v ↔ f85v/f86r and f67v ↔ parts of f86v (exploratory matching scores ~0.45–0.46, insufficient to establish correspondence). Outlines from foldout views belonging to the same physical sheet cannot be independent heldouts.
+
+**Text comparison**: IVTFF locus types P (paragraph), L (label), C (circular text), R (radial text) enable controlled comparison of signs and labels; source-derived token forms `ol`, `or`, `otedy` recur in multiple annotated Nine Rosettes regions. No decipherment; compare after independent source-coordinate registration and sensitivity to alternative transcription.
+
+### Provenance of third-party data
+
+- Yale Beinecke MS 408 archival JPEG source: `https://collections.library.yale.edu/manifests/2002046`; base 206-photo corpus already SHA-verified in EXP003, original per-image SHA references carried through the atlas and native-image radial pilot.
+- `https://github.com/alessandroplaca-uro/voynich-spatial-data`: Alessandro Placa, **CC BY 4.0**, snapshot commit `7580dafa624cf23a63665f4819022003f8d128ef`, 539 positioned tokens; attribution includes Takahashi and Zandbergen–Landini where used. This is a derivative transliteration, not a historically deciphered language.
+- `https://www.voynich.nu/data/ZL3b-n.txt`: René Zandbergen ZL3b version dated 2025-05-13, observed source SHA256 `bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc` (hash based on retrieved source bytes). Full original not republished in our repo, only derived counts and folio recurrence.
+
+### Falsification / requirements to claim same object in another view
+
+1. Require two independent annotators to label object class, segmentation polygon, number and order of merlons, spokes, rings, stars, faces, limbs and attachments at full native Yale resolution.
+2. Human presence, presentation as a woman and direction of a face must NOT be output from shape proposals, and a machine **miss** is an unknown rather than a zero figure count.
+3. Enumerate all colored regions, *unpainted after native-resolution confirmation*, physical folds vs paint and digitization shadow. No chemical inference from RGB or deliberate intentional blankness from low color bounding-box overlap.
+4. Characterize every candidate object as graph degree/ports/cyclic order, angular sector and fringe sequence, scale-invariant landmark lengths, separate similarity/rotation/reflection and limited 2.5D consistency tests.
+5. Test 2D medieval ornamental null, section/Currier/scribe and physical-unit matched null, an unexamined foldout-level heldout; correct multiple tests and use independent Keeper verification before any PASS.
+6. Register text ROIs via checked coordinate transform. No word or direction semantics inferred from token co-location by itself.
+
+**Scientific status:** actual 206-canvas proposals have been produced, but `accepted_same_object_across_different_perspectives=0`. This **does not disprove** recurrence; it marks current absence of evidence. Distinct from workflow `SUCCESS` and from independent Agent OS Keeper acceptance.
+
+### Reproducibility / artifacts
+
+- `research_os/tools/exp004_multifolio_object_atlas.py`; workflow `.github/workflows/exp004-multifolio-atlas.yml`
+- `research_os/tools/exp004_radial_rosette_comparison.py`; workflow `.github/workflows/exp004-rosette-radial.yml`
+- `research_os/tools/exp004_rosettes_positioned_tokens.py`; workflow `.github/workflows/exp004-rosettes-token-layout.yml`
+- `research_os/tools/exp004_ivtff_folio_token_recurrence.py`; workflow `.github/workflows/exp004-ivtff-folio-tokens.yml`
+- `research_os/tools/exp004_native_candidate_contact_sheet.py`; workflow contact-sheet step added to `.github/workflows/exp004-multifolio-atlas.yml` (verify latest run before claiming its artifact success).
+- Source-linked candidate gallery, rankings and token positioning are GitHub Action artifacts; public repo includes the generator code and this report. No master merge requested or performed.
+
+### Second red-team filter: border-excluded result (supersedes prior rankings)
+
+GitHub Actions [#37892567111](https://github.com/SonGohan231/voynichese/actions/runs/37892567111)
+SUCCESS with actual source-JPEG crop board (artifact `11598941762`,
+ZIP SHA256 `8c9fdd3fa59b220ff9a92c21afdd095d98c90ea72cbef37dcf60d433dc694e6e`).
+
+Of 991 low-level matching proposals, **990 were eliminated by an intentionally
+strict photographic-margin/sheet-edge bbox filter**. Only one proposed pair
+remained, **f6v ↔ f7v**, digital green-color appearance, dHash Hamming **8/64**.
+Native-source contact sheet shows two superficially comparable green leaf-like
+parts, without evidence of exact identity or alternative projection.
+The photo-border filter can also remove **real marginal decorations**, so the
+number 990 is a *screening exclusion count*, not 990 empirically falsified
+independent art hypotheses; margin iconography must be annotated separately.
+
+Updated scope: 206 source-verified photographs, 4800 computer ROI candidates,
+991 pre-screen same-feature pairs, 990 border-screen excluded, **1 retained
+unverified pair**, 66 low-color-overlap outline proposals (no intentional
+uncolored conclusion), **0 verified SAME_OBJECT from a different view**.
+
+**Methodological finding:** the prior all-folio connected-component pipeline
+primarily recovers the photograph/parchment edge and low-level pigment patches.
+Further automated whole-object identity requires source-native *semantic
+object masks* (figures, faces, towers, merlons, ring sectors, stars,
+ducts and continuous ornaments), blind expert review and null correction.
+Automatic data alone cannot provide trusted per-folio counts of women or
+stars. A PASS code test is not evidence of historical meaning.
+
+
+## Follow-up: verified Yale native source reviewer packet and digital blue radial stability
+
+**Goal:** rectify prior colored ROI and photographic border pseudo-matches by
+reviewing coherent historical regions from genuine source photos.
+
+### Six original-image packets (CI completed)
+
+- Code \`research_os/tools/exp004_native_annotation_packets.py\`
+- [GitHub Actions #37894533281](https://github.com/SonGohan231/voynichese/actions/runs/37894533281), **SUCCESS**
+- Full artifact \`exp004-original-yale-native-object-annotation-packets\`,
+  ID **11599672233**; archive SHA-256
+  \`c091f02a484a85905037d8362fb7197d02f5ada2b2d10d6119973286f81f761d\`
+- 6 source photos independently downloaded and verified against their archived
+  SHA-256 before cropping: f67v, f68v, f85v/f86r Rosettes,
+  f75v, f78r, f79r.
+- 9 reviewer tiles per source = **54 source-coordinate original-photo region
+  proposals**, 6 photographic overview panels, empty independent-anotator CSV,
+  all tile records with Yale IIIF reference, source OID, normalized + native
+  pixel rectangle, and original JPEG SHA256.
+- **11 unverified Hough round-feature proposals** within those 6 source images.
+- Saved review JPEG tiles are resized to <= 1000px longest side but the cut
+  locations refer back to full original native JPEG coordinates in the JSON
+  and Yale IIIF. They are **not direct native-resolution pixel files**.
+- No count of women, women orientation, star count, tower count or same-object
+  identity is accepted. Two independent qualified annotators must populate
+  the blank fields. Crop boundaries can split one object into adjacent tiles;
+  deduplicate at original folio/source coordinates.
+
+### Digital blue radial patterns, f68v vs Rosettes
+
+- Code \`research_os/tools/exp004_blue_radial_components.py\`
+- [GitHub Actions #37894903363](https://github.com/SonGohan231/voynichese/actions/runs/37894903363), **SUCCESS**
+- Artifact \`exp004-blue-radial-patterns-and-source-images\`,
+  ID **11599473307**, ZIP SHA256
+  \`bc13c043dfbdaa6521873de8e5ffd32b665ac3f0883d17d4a4d50cff44db1e84\`
+- 3 original f68v and 7 original f85v-f86r round-Hough candidates =
+  **10 features**; **21 cross-source comparisons**, with both source
+  photographs SHA-verified. Sampling images capped at 2000px longest axis,
+  3 saturation thresholds and 3 angular-occupancy thresholds per feature.
+- **Zero pairs** meet the prespecified *digital blue-run stability*
+  heuristic. Illustrative exploratory scores: first f68v circular feature
+  versus first Rosettes = **0.3348**; second f68v circular feature versus
+  first Rosettes = **0.2915**. These are neither probabilities nor
+  statistical significance.
+- Representative blue appearance **run count** is highly threshold-sensitive:
+  f68v first candidate median 8 (range 3-12),
+  f68v second median 15 (range 7-16),
+  upper-middle Rosettes median 13 (range 12-15).
+  These **are not observed historic spoke/star counts**, even where a
+  local numeric value looks plausible.
+- The machine vision currently does not have a stable basis for treating
+  blue-radial structures as one object, even when the shapes look similar by
+  eye. It also has not ruled out same-object interpretations because sample
+  selection and measurement power are weak.
+
+### Next decisive validation gates
+
+1. High-resolution original Yale crop showing whole object, not overlapping
+   ROI painted components or paper edges.
+2. Double-blind independent object annotation with each source photograph
+   folio-verified; count women/figures separately; face direction has
+   UNKNOWN and OBSCURED choices; count and label blue radial wedges, ring
+   sectors, tower crenellations and original outline connectors.
+3. Inter-annotator agreement; resolve geometry disagreements with source
+   crop and log an evidence-backed adjudication.
+4. Compare topology and cyclic landmark/sector-order and side-by-side
+   original-scale/normalized views. Rotation/reflection and occlusion/2.5D
+   must be separate model families.
+5. Independent physically grouped heldout matched by drawing type and
+   manuscript section, scribe/Currier, with shuffled/random null and
+   multiple-comparison correction. No resort to sealed EXP001/002 data.
+
+**Status remains INCONCLUSIVE / 0 independently established same-object
+different-perspective findings.** A technical CI PASS validates the
+generator and measurements only, not interpretation.
+
+### Follow-up diagnostic: source-cropped blue central motifs, unblinded ROI seeds
+
+Independent visual assessment of the prior automated Hough sheet shows some
+large "circular candidates" encompass **multiple adjacent objects**, not a
+single radial component. This explains some of the earlier false-negative
+blue-ray counts, especially near the lower Rosettes motif. Preserve prior
+results as the original automated detector baseline, not overwrite them.
+
+- Source: \`research_os/tools/exp004_curated_blue_core_pilot.py\`
+- [GitHub Actions #37895645943](https://github.com/SonGohan231/voynichese/actions/runs/37895645943) **SUCCESS**
+- Archive artifact \`exp004-source-blue-central-motifs-unblinded\`, ID
+  \`11600645680\`, ZIP SHA256
+  \`402f3a9496059c06fb5b88531e00b3e9df33eb8592c5e87e0fa498ccb60de684\`.
+- Four *visually seeded unblinded* central blue motifs, two each from f68v and
+  f85v–86r; 4 cross-folio comparisons.
+- Median **digital blue/angular occupancy runs** under nine sensitivity
+  settings (3 saturation × 3 occupancy thresholds):
+
+| Approximate blue motif | Digital run median | Threshold range | Status |
+|---|---:|---:|---|
+| f68v small lobed motif | 7 | 4–9 | Unstable |
+| f68v long blue spokes | 15 | 11–16 | Unstable |
+| f85v–86r top blue spokes | 13 | 10–15 | Unstable |
+| f85v–86r lower blue rays | 8 | 8–10 | More stable digitally |
+
+The highest exploratory score was **0.3629** (f68v long rays vs top
+Rosettes), followed by **0.2905** (f68v small lobed vs lower Rosettes).
+**0 of 4** pair comparisons met *both-features-stable* requirement.
+The blue fields visually share a radial-lobed grammar, but varying numbers
+and detailed text/border settings make "same object from another view"
+unsubstantiated. They may be repeated stylistic motif categories instead.
+
+**Serious epistemic caution:** centers and radii were chosen after inspection
+by the assistant, i.e. unblinded. They must not be construed as ground-truth
+object segmentation or confirmatory p-values. The counts are *blue appearance
+run proxies*, not manually accepted historical sectors/star counts. True
+cardinality after faded pigment and overlapping ink can only be established
+by original-resolution, two-reviewer annotation and adjudication.
+

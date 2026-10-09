@@ -1,0 +1,477 @@
+{
+  "schema": "exp-2026-002/geometry-only-control-orders-v1",
+  "version_date": "2026-10-08",
+  "warning": "These two TOTAL LISTS ARE DETERMINISTIC MODEL CONTROLS, NOT EXPERT RECONSTRUCTIONS OF ORIGINAL READ ORDER. They must not be renamed to confirmatory O2 from preregistration. Unknown physical cross-quire sheet sequencing and disputed fold orientation remain unresolved.",
+  "source_ledger": "physical_order_constraint_graph_v1.json",
+  "method": "Current-quire blocks sorted by conventional ascending numbers. Within each block use deterministic outer-to-inner or inner-to-outer ordering of WHOLE physical bifolios. Gaps remain as explicit placeholder groups, never imputed. No LSA/TF-IDF/tokens/Currier classification used.",
+  "group_set_size": 58,
+  "source_status": "EXPLORATORY_CONSTRAINT_ENSEMBLE_NOT_ANCIENT_ORDER",
+  "geometric_validity": {
+    "whole_sheet_integrity": "PRESERVED_BY_DESIGN",
+    "intra_quire_nesting": "NOT_REQUIRED_FOR_SINGULION_STACK",
+    "foldout_panel_orientation": "NOT_REORDERED; must be resolved by scan geometry",
+    "inter_quire_reorder": "FORBIDDEN_AS_MODEL_RESTRICTION_ONLY"
+  },
+  "variants": [
+    {
+      "id": "GEO_CONTROL_A_OUTER_FIRST",
+      "description": "Quire-number ascending, per-quire bifolio outer-to-inner; deterministic arbitrary singulion stack",
+      "current_quire_units": [
+        {
+          "quire": 1,
+          "units": [
+            "QA-B1",
+            "QA-B2",
+            "QA-B3",
+            "QA-B4"
+          ]
+        },
+        {
+          "quire": 2,
+          "units": [
+            "QB-B1",
+            "QB-B2",
+            "QB-B3",
+            "QB-B4"
+          ]
+        },
+        {
+          "quire": 3,
+          "units": [
+            "QC-B1",
+            "QC-B2",
+            "QC-B3",
+            "QC-B4"
+          ]
+        },
+        {
+          "quire": 4,
+          "units": [
+            "QD-B1",
+            "QD-B2",
+            "QD-B3",
+            "QD-B4"
+          ]
+        },
+        {
+          "quire": 5,
+          "units": [
+            "QE-B1",
+            "QE-B2",
+            "QE-B3",
+            "QE-B4"
+          ]
+        },
+        {
+          "quire": 6,
+          "units": [
+            "QF-B1",
+            "QF-B2",
+            "QF-B3",
+            "QF-B4"
+          ]
+        },
+        {
+          "quire": 7,
+          "units": [
+            "QG-B1",
+            "QG-B2",
+            "QG-B3",
+            "QG-B4"
+          ]
+        },
+        {
+          "quire": 8,
+          "units": [
+            "QH-B1",
+            "QH-B2",
+            "QH-B3",
+            "QH-B4",
+            "QH-B5"
+          ]
+        },
+        {
+          "quire": 9,
+          "units": [
+            "QI-B1"
+          ]
+        },
+        {
+          "quire": 10,
+          "units": [
+            "QJ-B1"
+          ]
+        },
+        {
+          "quire": 11,
+          "units": [
+            "QK-B1"
+          ]
+        },
+        {
+          "quire": 12,
+          "units": [
+            "QL-B1"
+          ]
+        },
+        {
+          "quire": 13,
+          "units": [
+            "QM-B1",
+            "QM-B2",
+            "QM-B3",
+            "QM-B4",
+            "QM-B5"
+          ]
+        },
+        {
+          "quire": 14,
+          "units": [
+            "QN-B1"
+          ]
+        },
+        {
+          "quire": 15,
+          "units": [
+            "QO-B1",
+            "QO-B2"
+          ]
+        },
+        {
+          "quire": 16,
+          "units": [
+            "QP-B1"
+          ]
+        },
+        {
+          "quire": 17,
+          "units": [
+            "QQ-B1",
+            "QQ-B2"
+          ]
+        },
+        {
+          "quire": 18,
+          "units": [
+            "QR-B1"
+          ]
+        },
+        {
+          "quire": 19,
+          "units": [
+            "QS-B1",
+            "QS-B2"
+          ]
+        },
+        {
+          "quire": 20,
+          "units": [
+            "QT-B1",
+            "QT-B2",
+            "QT-B3",
+            "QT-B4",
+            "QT-B5",
+            "QT-B6",
+            "QT-B7"
+          ]
+        }
+      ],
+      "all_units": [
+        "QA-B1",
+        "QA-B2",
+        "QA-B3",
+        "QA-B4",
+        "QB-B1",
+        "QB-B2",
+        "QB-B3",
+        "QB-B4",
+        "QC-B1",
+        "QC-B2",
+        "QC-B3",
+        "QC-B4",
+        "QD-B1",
+        "QD-B2",
+        "QD-B3",
+        "QD-B4",
+        "QE-B1",
+        "QE-B2",
+        "QE-B3",
+        "QE-B4",
+        "QF-B1",
+        "QF-B2",
+        "QF-B3",
+        "QF-B4",
+        "QG-B1",
+        "QG-B2",
+        "QG-B3",
+        "QG-B4",
+        "QH-B1",
+        "QH-B2",
+        "QH-B3",
+        "QH-B4",
+        "QH-B5",
+        "QI-B1",
+        "QJ-B1",
+        "QK-B1",
+        "QL-B1",
+        "QM-B1",
+        "QM-B2",
+        "QM-B3",
+        "QM-B4",
+        "QM-B5",
+        "QN-B1",
+        "QO-B1",
+        "QO-B2",
+        "QP-B1",
+        "QQ-B1",
+        "QQ-B2",
+        "QR-B1",
+        "QS-B1",
+        "QS-B2",
+        "QT-B1",
+        "QT-B2",
+        "QT-B3",
+        "QT-B4",
+        "QT-B5",
+        "QT-B6",
+        "QT-B7"
+      ],
+      "claim": "GEOMETRIC_CONTROLS_ONLY"
+    },
+    {
+      "id": "GEO_CONTROL_B_INNER_FIRST",
+      "description": "Quire-number ascending, per-quire bifolio inner-to-outer; deterministic reverse singulion stack",
+      "current_quire_units": [
+        {
+          "quire": 1,
+          "units": [
+            "QA-B4",
+            "QA-B3",
+            "QA-B2",
+            "QA-B1"
+          ]
+        },
+        {
+          "quire": 2,
+          "units": [
+            "QB-B4",
+            "QB-B3",
+            "QB-B2",
+            "QB-B1"
+          ]
+        },
+        {
+          "quire": 3,
+          "units": [
+            "QC-B4",
+            "QC-B3",
+            "QC-B2",
+            "QC-B1"
+          ]
+        },
+        {
+          "quire": 4,
+          "units": [
+            "QD-B4",
+            "QD-B3",
+            "QD-B2",
+            "QD-B1"
+          ]
+        },
+        {
+          "quire": 5,
+          "units": [
+            "QE-B4",
+            "QE-B3",
+            "QE-B2",
+            "QE-B1"
+          ]
+        },
+        {
+          "quire": 6,
+          "units": [
+            "QF-B4",
+            "QF-B3",
+            "QF-B2",
+            "QF-B1"
+          ]
+        },
+        {
+          "quire": 7,
+          "units": [
+            "QG-B4",
+            "QG-B3",
+            "QG-B2",
+            "QG-B1"
+          ]
+        },
+        {
+          "quire": 8,
+          "units": [
+            "QH-B5",
+            "QH-B4",
+            "QH-B3",
+            "QH-B2",
+            "QH-B1"
+          ]
+        },
+        {
+          "quire": 9,
+          "units": [
+            "QI-B1"
+          ]
+        },
+        {
+          "quire": 10,
+          "units": [
+            "QJ-B1"
+          ]
+        },
+        {
+          "quire": 11,
+          "units": [
+            "QK-B1"
+          ]
+        },
+        {
+          "quire": 12,
+          "units": [
+            "QL-B1"
+          ]
+        },
+        {
+          "quire": 13,
+          "units": [
+            "QM-B5",
+            "QM-B4",
+            "QM-B3",
+            "QM-B2",
+            "QM-B1"
+          ]
+        },
+        {
+          "quire": 14,
+          "units": [
+            "QN-B1"
+          ]
+        },
+        {
+          "quire": 15,
+          "units": [
+            "QO-B2",
+            "QO-B1"
+          ]
+        },
+        {
+          "quire": 16,
+          "units": [
+            "QP-B1"
+          ]
+        },
+        {
+          "quire": 17,
+          "units": [
+            "QQ-B2",
+            "QQ-B1"
+          ]
+        },
+        {
+          "quire": 18,
+          "units": [
+            "QR-B1"
+          ]
+        },
+        {
+          "quire": 19,
+          "units": [
+            "QS-B2",
+            "QS-B1"
+          ]
+        },
+        {
+          "quire": 20,
+          "units": [
+            "QT-B7",
+            "QT-B6",
+            "QT-B5",
+            "QT-B4",
+            "QT-B3",
+            "QT-B2",
+            "QT-B1"
+          ]
+        }
+      ],
+      "all_units": [
+        "QA-B4",
+        "QA-B3",
+        "QA-B2",
+        "QA-B1",
+        "QB-B4",
+        "QB-B3",
+        "QB-B2",
+        "QB-B1",
+        "QC-B4",
+        "QC-B3",
+        "QC-B2",
+        "QC-B1",
+        "QD-B4",
+        "QD-B3",
+        "QD-B2",
+        "QD-B1",
+        "QE-B4",
+        "QE-B3",
+        "QE-B2",
+        "QE-B1",
+        "QF-B4",
+        "QF-B3",
+        "QF-B2",
+        "QF-B1",
+        "QG-B4",
+        "QG-B3",
+        "QG-B2",
+        "QG-B1",
+        "QH-B5",
+        "QH-B4",
+        "QH-B3",
+        "QH-B2",
+        "QH-B1",
+        "QI-B1",
+        "QJ-B1",
+        "QK-B1",
+        "QL-B1",
+        "QM-B5",
+        "QM-B4",
+        "QM-B3",
+        "QM-B2",
+        "QM-B1",
+        "QN-B1",
+        "QO-B2",
+        "QO-B1",
+        "QP-B1",
+        "QQ-B2",
+        "QQ-B1",
+        "QR-B1",
+        "QS-B2",
+        "QS-B1",
+        "QT-B7",
+        "QT-B6",
+        "QT-B5",
+        "QT-B4",
+        "QT-B3",
+        "QT-B2",
+        "QT-B1"
+      ],
+      "claim": "GEOMETRIC_CONTROLS_ONLY"
+    }
+  ],
+  "unidentified": {
+    "cross_quire_historical_order": "UNRESOLVED",
+    "q09_actual_first_visible_panel": "UNRESOLVED_WITH_PHYSICAL_RIVAL_AXES",
+    "q14_panel_grid": "FIXED_SIX_PANEL_SHEET_BUT_TRANSCRIPTION_ONLY_INCOMPLETE",
+    "q13_original_center": "DEBATED",
+    "herbal_original_bifolio_order": "UNIDENTIFIABLE_WITH_CURRENT_PHYSICAL_DATA",
+    "q20_original_bifolio_order": "UNIDENTIFIABLE_WITHOUT_TEXT_EXCLUDED_BY_DESIGN"
+  },
+  "no_science_selection": true,
+  "no_statistical_results": true
+}

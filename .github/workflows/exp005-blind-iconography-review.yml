@@ -1,0 +1,48 @@
+name: Voynich EXP005 specialist two-blind iconography review preparation
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp005_blind_iconography_review.py"
+      - ".github/workflows/exp005-blind-iconography-review.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp005_blind_iconography_review.py"
+      - ".github/workflows/exp005-blind-iconography-review.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  create-independent-24-source-review-tasks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test source-aware blind double-annotation and missing-not-zero policy
+        run: python research_os/tools/exp005_blind_iconography_review.py --selftest
+      - name: Install source JPEG reading dependencies
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Verify 6 Yale original photographs and generate 54 preview source tiles
+        run: |
+          python research_os/tools/exp004_native_annotation_packets.py \
+            --out research_os/experiments/EXP-2026-004/native_review_packets
+      - name: Build independent 24-tile blinded assignments for candidate specialist evaluation
+        run: |
+          python research_os/tools/exp005_blind_iconography_review.py \
+            --source research_os/experiments/EXP-2026-004/native_review_packets/native_annotation_packet_index.json \
+            --out research_os/experiments/EXP-2026-005/blinded_review_assignments
+      - name: Preserve independent tasks and guard verdict, never invent annotated objects
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp005-24-roi-double-blind-voynich-review
+          path: research_os/experiments/EXP-2026-005/blinded_review_assignments/
+          if-no-files-found: warn
+          retention-days: 30

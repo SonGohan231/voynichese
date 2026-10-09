@@ -1,0 +1,57 @@
+name: Voynich EXP-2026-003 full image computer vision atlas
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp003_yale_visual_inventory.py"
+      - ".github/workflows/exp003-visual-atlas.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: exp003-visual-atlas-research
+  cancel-in-progress: false
+
+jobs:
+  analyze-all-original-yale-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deterministic CV runtime
+        run: |
+          python3 -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84'
+      - name: Analyze all 206 unique archived Yale photographs
+        run: |
+          mkdir -p research_os/experiments/EXP-2026-003
+          python3 research_os/tools/exp003_yale_visual_inventory.py \
+            --output research_os/experiments/EXP-2026-003/cv_full_2026-10-09.json \
+            --summary research_os/experiments/EXP-2026-003/visual_scan_index_2026-10-09.json
+      - name: Preserve verifiable computer-vision data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp003-full-voynich-computer-vision-atlas
+          path: research_os/experiments/EXP-2026-003/*.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Publish source-linked atlas results in research branch
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research_os/experiments/EXP-2026-003
+          if ! git diff --cached --quiet; then
+            git commit -m "research(exp003): computed Yale 206-scan color and motif candidates"
+            git pull --rebase origin research/exp-2026-002-sectional-locality-prereg-20261008
+            git push origin HEAD:research/exp-2026-002-sectional-locality-prereg-20261008
+          fi

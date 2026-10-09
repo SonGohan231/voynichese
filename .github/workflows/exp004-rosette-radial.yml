@@ -1,0 +1,46 @@
+name: Voynich EXP004 rosette ring radial sector candidates
+
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp004_radial_rosette_comparison.py"
+      - ".github/workflows/exp004-rosette-radial.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp004_radial_rosette_comparison.py"
+      - ".github/workflows/exp004-rosette-radial.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rosette-compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned image analysis dependencies
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84'
+      - name: Verify cyclic signatures and false-negative controls
+        run: python research_os/tools/exp004_radial_rosette_comparison.py --selftest
+      - name: Compare foldout circular structures on 8 verified Yale images
+        run: |
+          python research_os/tools/exp004_radial_rosette_comparison.py \
+            --output research_os/experiments/EXP-2026-004/foldout_radial_matches_v1.json
+      - name: Persist original-image references and geometry evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp004-radial-rosettes-evidence
+          path: research_os/experiments/EXP-2026-004/foldout_radial_matches_v1.json
+          if-no-files-found: warn
+          retention-days: 30

@@ -1,0 +1,61 @@
+name: EXP-2026-003 foldout geometric imagery probes
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp003_foldout_geometry_probe.py"
+      - ".github/workflows/exp003-foldout-geometry.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  native-foldout-probes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned image-analysis packages
+        run: |
+          python3 -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84'
+      - name: Synthetic nine-ring detection smoke test (no actual Voynich assertions)
+        run: |
+          python3 research_os/experiments/EXP-2026-003/geometry_synthetic_smoke.py
+      - name: Re-fetch eight original Yale JPEGs with SHA-256 verification
+        run: |
+          python3 research_os/tools/exp003_foldout_geometry_probe.py \
+            --output research_os/experiments/EXP-2026-003/foldout_geometry_probe_2026-10-09.json
+      - name: Preserve source-linked geometry measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp003-q9-q14-highres-geometry-probes
+          path: research_os/experiments/EXP-2026-003/foldout_geometry_probe_2026-10-09.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Publish geometry report when measurements succeeded
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          REPORT='research_os/experiments/EXP-2026-003/foldout_geometry_probe_2026-10-09.json'
+          git fetch origin research/exp-2026-002-sectional-locality-prereg-20261008
+          if git cat-file -e "FETCH_HEAD:$REPORT" 2>/dev/null; then
+            echo 'A report at this exact path is already committed on the shared research branch.'
+            echo 'Avoid replacing concurrent scientific evidence; independent run artifact is preserved.'
+            exit 0
+          fi
+          git add "$REPORT"
+          if ! git diff --cached --quiet; then
+            git commit -m "research(exp003): 8-source Yale foldout circle and line candidates"
+            git pull --rebase origin research/exp-2026-002-sectional-locality-prereg-20261008
+            git push origin HEAD:research/exp-2026-002-sectional-locality-prereg-20261008
+          fi

@@ -1,0 +1,43 @@
+name: Voynich EXP004 native object-level human review packets
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp004_native_annotation_packets.py"
+      - ".github/workflows/exp004-native-annotation-packets.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp004_native_annotation_packets.py"
+      - ".github/workflows/exp004-native-annotation-packets.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  create-verified-native-folio-tiles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install image and annotation packet runtime
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Verify geometry and non-semantic annotation safety
+        run: python research_os/tools/exp004_native_annotation_packets.py --selftest
+      - name: Verify Yale photo SHA and render native crops for 6 folios
+        run: |
+          python research_os/tools/exp004_native_annotation_packets.py \
+            --out research_os/experiments/EXP-2026-004/native_review_packets
+      - name: Upload source crop boards and independent annotation templates
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp004-original-yale-native-object-annotation-packets
+          path: research_os/experiments/EXP-2026-004/native_review_packets/
+          if-no-files-found: warn
+          retention-days: 30

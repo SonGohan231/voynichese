@@ -1,0 +1,46 @@
+name: Voynich EXP003 branch structure vs scale pilot
+
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp003_branch_geometry_pilot.py"
+      - ".github/workflows/exp003-branch-geometry.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp003_branch_geometry_pilot.py"
+      - ".github/workflows/exp003-branch-geometry.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  morphology-branch-shape-differential:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned image runtime
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'scikit-image==0.24.0' 'Pillow>=10,<12'
+      - name: Synthetic branch and simple-shape negative-control tests
+        run: python research_os/tools/exp003_branch_geometry_pilot.py --selftest
+      - name: Audit six hash-verified Yale JPEGs and compare normalized branching features
+        run: |
+          python research_os/tools/exp003_branch_geometry_pilot.py \
+            --output research_os/experiments/EXP-2026-003/branch_geometry_pilot_2026-10-09.json
+      - name: Preserve evidence and null description
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp003-branch-geometry-exploratory
+          path: research_os/experiments/EXP-2026-003/branch_geometry_pilot_2026-10-09.json
+          if-no-files-found: warn
+          retention-days: 30

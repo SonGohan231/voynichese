@@ -1,0 +1,1336 @@
+{
+  "schema": "exp-2026-002/yale-manifest-current-bound-order-label-audit-v1",
+  "date_utc": "2026-10-09",
+  "status": "METADATA_ORDER_CONCORDANCE_ONLY_NOT_PHYSICAL_FOLD_RECONSTRUCTION",
+  "provenance": {
+    "yale_manifest_source": "https://collections.library.yale.edu/manifests/2002046",
+    "crosswalk": "research_os/experiments/EXP-2026-002/yale_iiif_canvas_group_crosswalk_2026-10-09.json",
+    "independent_it2a_side_order": "research_os/experiments/EXP-2026-002/physical_order_constraint_graph_v1.json / order_scenarios.O1_BOUND.order_page_headers",
+    "raw_yale_manifest_sha256": null,
+    "source_warning": "The manifest is acquired through an external text extraction intermediary, so no byte-identical original manifest digest is claimed."
+  },
+  "method": [
+    "For O1 IT2a page headers, collapse panel suffixes f67r1 -> f67r, preserve FIRST ordinal occurrence per folio side.",
+    "Use exclusively clean one-side Yale image labels matching /^[0-9]+[rv]$/ for the ordered concordance check; no image pixels or token metrics.",
+    "Ignore multi-side/composite/foldout labels in pairwise order comparison, but list their folio sides for coverage diagnostics.",
+    "Compare mapped simple-label image sequence to O1 first-occurrence index using strict monotonicity; log inversions if present.",
+    "Differences in coverage and missing transcription are not missing physical pages: f85v/f86r label belongs to unique rosettes illustration and f116v is extra image absent in IT2a."
+  ],
+  "counts": {
+    "yale_manifest_canvas_count": 213,
+    "it2a_page_headers": 225,
+    "it2a_distinct_folio_sides": 201,
+    "image_distinct_folio_sides": 204,
+    "yale_clean_single_side_canvas_count": 183,
+    "same_side_comparable_canvases": 182,
+    "compared_order_inversions": 0,
+    "missing_in_yale_canvas_folio_labels": 0,
+    "available_in_yale_not_it2a": 3
+  },
+  "exceptional_sides": {
+    "yale_label_sides_absent_from_it2a": [
+      "f85v",
+      "f86r",
+      "f116v"
+    ],
+    "it2a_sides_without_yale_label": [],
+    "clean_image_side_absent_from_it2a": [
+      {
+        "label": "116v",
+        "canvas_oid": "1006277",
+        "manifest_index": 205,
+        "base_id": "f116v",
+        "o1_first_header_index": null
+      }
+    ]
+  },
+  "ordering_differences": [],
+  "per_clean_canvas": [
+    {
+      "label": "1r",
+      "canvas_oid": "1006076",
+      "manifest_index": 2,
+      "base_id": "f1r",
+      "o1_first_header_index": 0
+    },
+    {
+      "label": "1v",
+      "canvas_oid": "1006077",
+      "manifest_index": 3,
+      "base_id": "f1v",
+      "o1_first_header_index": 1
+    },
+    {
+      "label": "2r",
+      "canvas_oid": "1006078",
+      "manifest_index": 4,
+      "base_id": "f2r",
+      "o1_first_header_index": 2
+    },
+    {
+      "label": "2v",
+      "canvas_oid": "1006079",
+      "manifest_index": 5,
+      "base_id": "f2v",
+      "o1_first_header_index": 3
+    },
+    {
+      "label": "3r",
+      "canvas_oid": "1006080",
+      "manifest_index": 6,
+      "base_id": "f3r",
+      "o1_first_header_index": 4
+    },
+    {
+      "label": "3v",
+      "canvas_oid": "1006081",
+      "manifest_index": 7,
+      "base_id": "f3v",
+      "o1_first_header_index": 5
+    },
+    {
+      "label": "4r",
+      "canvas_oid": "1006082",
+      "manifest_index": 8,
+      "base_id": "f4r",
+      "o1_first_header_index": 6
+    },
+    {
+      "label": "4v",
+      "canvas_oid": "1006083",
+      "manifest_index": 9,
+      "base_id": "f4v",
+      "o1_first_header_index": 7
+    },
+    {
+      "label": "5r",
+      "canvas_oid": "1006084",
+      "manifest_index": 10,
+      "base_id": "f5r",
+      "o1_first_header_index": 8
+    },
+    {
+      "label": "5v",
+      "canvas_oid": "1006085",
+      "manifest_index": 11,
+      "base_id": "f5v",
+      "o1_first_header_index": 9
+    },
+    {
+      "label": "6r",
+      "canvas_oid": "1006086",
+      "manifest_index": 12,
+      "base_id": "f6r",
+      "o1_first_header_index": 10
+    },
+    {
+      "label": "6v",
+      "canvas_oid": "1006087",
+      "manifest_index": 13,
+      "base_id": "f6v",
+      "o1_first_header_index": 11
+    },
+    {
+      "label": "7r",
+      "canvas_oid": "1006088",
+      "manifest_index": 14,
+      "base_id": "f7r",
+      "o1_first_header_index": 12
+    },
+    {
+      "label": "7v",
+      "canvas_oid": "1006089",
+      "manifest_index": 15,
+      "base_id": "f7v",
+      "o1_first_header_index": 13
+    },
+    {
+      "label": "8r",
+      "canvas_oid": "1006090",
+      "manifest_index": 16,
+      "base_id": "f8r",
+      "o1_first_header_index": 14
+    },
+    {
+      "label": "8v",
+      "canvas_oid": "1006091",
+      "manifest_index": 17,
+      "base_id": "f8v",
+      "o1_first_header_index": 15
+    },
+    {
+      "label": "9r",
+      "canvas_oid": "1006092",
+      "manifest_index": 18,
+      "base_id": "f9r",
+      "o1_first_header_index": 16
+    },
+    {
+      "label": "9v",
+      "canvas_oid": "1006093",
+      "manifest_index": 19,
+      "base_id": "f9v",
+      "o1_first_header_index": 17
+    },
+    {
+      "label": "10r",
+      "canvas_oid": "1006094",
+      "manifest_index": 20,
+      "base_id": "f10r",
+      "o1_first_header_index": 18
+    },
+    {
+      "label": "10v",
+      "canvas_oid": "1006095",
+      "manifest_index": 21,
+      "base_id": "f10v",
+      "o1_first_header_index": 19
+    },
+    {
+      "label": "11r",
+      "canvas_oid": "1006096",
+      "manifest_index": 22,
+      "base_id": "f11r",
+      "o1_first_header_index": 20
+    },
+    {
+      "label": "11v",
+      "canvas_oid": "1006097",
+      "manifest_index": 23,
+      "base_id": "f11v",
+      "o1_first_header_index": 21
+    },
+    {
+      "label": "13r",
+      "canvas_oid": "1006098",
+      "manifest_index": 24,
+      "base_id": "f13r",
+      "o1_first_header_index": 22
+    },
+    {
+      "label": "13v",
+      "canvas_oid": "1006099",
+      "manifest_index": 25,
+      "base_id": "f13v",
+      "o1_first_header_index": 23
+    },
+    {
+      "label": "14r",
+      "canvas_oid": "1006100",
+      "manifest_index": 26,
+      "base_id": "f14r",
+      "o1_first_header_index": 24
+    },
+    {
+      "label": "14v",
+      "canvas_oid": "1006101",
+      "manifest_index": 27,
+      "base_id": "f14v",
+      "o1_first_header_index": 25
+    },
+    {
+      "label": "15r",
+      "canvas_oid": "1006102",
+      "manifest_index": 28,
+      "base_id": "f15r",
+      "o1_first_header_index": 26
+    },
+    {
+      "label": "15v",
+      "canvas_oid": "1006103",
+      "manifest_index": 29,
+      "base_id": "f15v",
+      "o1_first_header_index": 27
+    },
+    {
+      "label": "16r",
+      "canvas_oid": "1006104",
+      "manifest_index": 30,
+      "base_id": "f16r",
+      "o1_first_header_index": 28
+    },
+    {
+      "label": "16v",
+      "canvas_oid": "1006105",
+      "manifest_index": 31,
+      "base_id": "f16v",
+      "o1_first_header_index": 29
+    },
+    {
+      "label": "17r",
+      "canvas_oid": "1006106",
+      "manifest_index": 32,
+      "base_id": "f17r",
+      "o1_first_header_index": 30
+    },
+    {
+      "label": "17v",
+      "canvas_oid": "1006107",
+      "manifest_index": 33,
+      "base_id": "f17v",
+      "o1_first_header_index": 31
+    },
+    {
+      "label": "18r",
+      "canvas_oid": "1006108",
+      "manifest_index": 34,
+      "base_id": "f18r",
+      "o1_first_header_index": 32
+    },
+    {
+      "label": "18v",
+      "canvas_oid": "1006109",
+      "manifest_index": 35,
+      "base_id": "f18v",
+      "o1_first_header_index": 33
+    },
+    {
+      "label": "19r",
+      "canvas_oid": "1006110",
+      "manifest_index": 36,
+      "base_id": "f19r",
+      "o1_first_header_index": 34
+    },
+    {
+      "label": "19v",
+      "canvas_oid": "1006111",
+      "manifest_index": 37,
+      "base_id": "f19v",
+      "o1_first_header_index": 35
+    },
+    {
+      "label": "20r",
+      "canvas_oid": "1006112",
+      "manifest_index": 38,
+      "base_id": "f20r",
+      "o1_first_header_index": 36
+    },
+    {
+      "label": "20v",
+      "canvas_oid": "1006113",
+      "manifest_index": 39,
+      "base_id": "f20v",
+      "o1_first_header_index": 37
+    },
+    {
+      "label": "21r",
+      "canvas_oid": "1006114",
+      "manifest_index": 40,
+      "base_id": "f21r",
+      "o1_first_header_index": 38
+    },
+    {
+      "label": "21v",
+      "canvas_oid": "1006115",
+      "manifest_index": 41,
+      "base_id": "f21v",
+      "o1_first_header_index": 39
+    },
+    {
+      "label": "22r",
+      "canvas_oid": "1006116",
+      "manifest_index": 42,
+      "base_id": "f22r",
+      "o1_first_header_index": 40
+    },
+    {
+      "label": "22v",
+      "canvas_oid": "1006117",
+      "manifest_index": 43,
+      "base_id": "f22v",
+      "o1_first_header_index": 41
+    },
+    {
+      "label": "23r",
+      "canvas_oid": "1006118",
+      "manifest_index": 44,
+      "base_id": "f23r",
+      "o1_first_header_index": 42
+    },
+    {
+      "label": "23v",
+      "canvas_oid": "1006119",
+      "manifest_index": 45,
+      "base_id": "f23v",
+      "o1_first_header_index": 43
+    },
+    {
+      "label": "24r",
+      "canvas_oid": "1006120",
+      "manifest_index": 46,
+      "base_id": "f24r",
+      "o1_first_header_index": 44
+    },
+    {
+      "label": "24v",
+      "canvas_oid": "1006121",
+      "manifest_index": 47,
+      "base_id": "f24v",
+      "o1_first_header_index": 45
+    },
+    {
+      "label": "25r",
+      "canvas_oid": "1006122",
+      "manifest_index": 48,
+      "base_id": "f25r",
+      "o1_first_header_index": 46
+    },
+    {
+      "label": "25v",
+      "canvas_oid": "1006123",
+      "manifest_index": 49,
+      "base_id": "f25v",
+      "o1_first_header_index": 47
+    },
+    {
+      "label": "26r",
+      "canvas_oid": "1006124",
+      "manifest_index": 50,
+      "base_id": "f26r",
+      "o1_first_header_index": 48
+    },
+    {
+      "label": "26v",
+      "canvas_oid": "1006125",
+      "manifest_index": 51,
+      "base_id": "f26v",
+      "o1_first_header_index": 49
+    },
+    {
+      "label": "27r",
+      "canvas_oid": "1006126",
+      "manifest_index": 52,
+      "base_id": "f27r",
+      "o1_first_header_index": 50
+    },
+    {
+      "label": "27v",
+      "canvas_oid": "1006127",
+      "manifest_index": 53,
+      "base_id": "f27v",
+      "o1_first_header_index": 51
+    },
+    {
+      "label": "28r",
+      "canvas_oid": "1006128",
+      "manifest_index": 54,
+      "base_id": "f28r",
+      "o1_first_header_index": 52
+    },
+    {
+      "label": "28v",
+      "canvas_oid": "1006129",
+      "manifest_index": 55,
+      "base_id": "f28v",
+      "o1_first_header_index": 53
+    },
+    {
+      "label": "29r",
+      "canvas_oid": "1006130",
+      "manifest_index": 56,
+      "base_id": "f29r",
+      "o1_first_header_index": 54
+    },
+    {
+      "label": "29v",
+      "canvas_oid": "1006131",
+      "manifest_index": 57,
+      "base_id": "f29v",
+      "o1_first_header_index": 55
+    },
+    {
+      "label": "30r",
+      "canvas_oid": "1006132",
+      "manifest_index": 58,
+      "base_id": "f30r",
+      "o1_first_header_index": 56
+    },
+    {
+      "label": "30v",
+      "canvas_oid": "1006133",
+      "manifest_index": 59,
+      "base_id": "f30v",
+      "o1_first_header_index": 57
+    },
+    {
+      "label": "31r",
+      "canvas_oid": "1006134",
+      "manifest_index": 60,
+      "base_id": "f31r",
+      "o1_first_header_index": 58
+    },
+    {
+      "label": "31v",
+      "canvas_oid": "1006135",
+      "manifest_index": 61,
+      "base_id": "f31v",
+      "o1_first_header_index": 59
+    },
+    {
+      "label": "32r",
+      "canvas_oid": "1006136",
+      "manifest_index": 62,
+      "base_id": "f32r",
+      "o1_first_header_index": 60
+    },
+    {
+      "label": "32v",
+      "canvas_oid": "1006137",
+      "manifest_index": 63,
+      "base_id": "f32v",
+      "o1_first_header_index": 61
+    },
+    {
+      "label": "33r",
+      "canvas_oid": "1006138",
+      "manifest_index": 64,
+      "base_id": "f33r",
+      "o1_first_header_index": 62
+    },
+    {
+      "label": "33v",
+      "canvas_oid": "1006139",
+      "manifest_index": 65,
+      "base_id": "f33v",
+      "o1_first_header_index": 63
+    },
+    {
+      "label": "34r",
+      "canvas_oid": "1006140",
+      "manifest_index": 66,
+      "base_id": "f34r",
+      "o1_first_header_index": 64
+    },
+    {
+      "label": "34v",
+      "canvas_oid": "1006141",
+      "manifest_index": 67,
+      "base_id": "f34v",
+      "o1_first_header_index": 65
+    },
+    {
+      "label": "35r",
+      "canvas_oid": "1006142",
+      "manifest_index": 68,
+      "base_id": "f35r",
+      "o1_first_header_index": 66
+    },
+    {
+      "label": "35v",
+      "canvas_oid": "1006143",
+      "manifest_index": 69,
+      "base_id": "f35v",
+      "o1_first_header_index": 67
+    },
+    {
+      "label": "36r",
+      "canvas_oid": "1006144",
+      "manifest_index": 70,
+      "base_id": "f36r",
+      "o1_first_header_index": 68
+    },
+    {
+      "label": "36v",
+      "canvas_oid": "1006145",
+      "manifest_index": 71,
+      "base_id": "f36v",
+      "o1_first_header_index": 69
+    },
+    {
+      "label": "37r",
+      "canvas_oid": "1006146",
+      "manifest_index": 72,
+      "base_id": "f37r",
+      "o1_first_header_index": 70
+    },
+    {
+      "label": "37v",
+      "canvas_oid": "1006147",
+      "manifest_index": 73,
+      "base_id": "f37v",
+      "o1_first_header_index": 71
+    },
+    {
+      "label": "38r",
+      "canvas_oid": "1006148",
+      "manifest_index": 74,
+      "base_id": "f38r",
+      "o1_first_header_index": 72
+    },
+    {
+      "label": "38v",
+      "canvas_oid": "1006149",
+      "manifest_index": 75,
+      "base_id": "f38v",
+      "o1_first_header_index": 73
+    },
+    {
+      "label": "39r",
+      "canvas_oid": "1006150",
+      "manifest_index": 76,
+      "base_id": "f39r",
+      "o1_first_header_index": 74
+    },
+    {
+      "label": "39v",
+      "canvas_oid": "1006151",
+      "manifest_index": 77,
+      "base_id": "f39v",
+      "o1_first_header_index": 75
+    },
+    {
+      "label": "40r",
+      "canvas_oid": "1006152",
+      "manifest_index": 78,
+      "base_id": "f40r",
+      "o1_first_header_index": 76
+    },
+    {
+      "label": "40v",
+      "canvas_oid": "1006153",
+      "manifest_index": 79,
+      "base_id": "f40v",
+      "o1_first_header_index": 77
+    },
+    {
+      "label": "41r",
+      "canvas_oid": "1006154",
+      "manifest_index": 80,
+      "base_id": "f41r",
+      "o1_first_header_index": 78
+    },
+    {
+      "label": "41v",
+      "canvas_oid": "1006155",
+      "manifest_index": 81,
+      "base_id": "f41v",
+      "o1_first_header_index": 79
+    },
+    {
+      "label": "42r",
+      "canvas_oid": "1006156",
+      "manifest_index": 82,
+      "base_id": "f42r",
+      "o1_first_header_index": 80
+    },
+    {
+      "label": "42v",
+      "canvas_oid": "1006157",
+      "manifest_index": 83,
+      "base_id": "f42v",
+      "o1_first_header_index": 81
+    },
+    {
+      "label": "43r",
+      "canvas_oid": "1006158",
+      "manifest_index": 84,
+      "base_id": "f43r",
+      "o1_first_header_index": 82
+    },
+    {
+      "label": "43v",
+      "canvas_oid": "1006159",
+      "manifest_index": 85,
+      "base_id": "f43v",
+      "o1_first_header_index": 83
+    },
+    {
+      "label": "44r",
+      "canvas_oid": "1006160",
+      "manifest_index": 86,
+      "base_id": "f44r",
+      "o1_first_header_index": 84
+    },
+    {
+      "label": "44v",
+      "canvas_oid": "1006161",
+      "manifest_index": 87,
+      "base_id": "f44v",
+      "o1_first_header_index": 85
+    },
+    {
+      "label": "45r",
+      "canvas_oid": "1006162",
+      "manifest_index": 88,
+      "base_id": "f45r",
+      "o1_first_header_index": 86
+    },
+    {
+      "label": "45v",
+      "canvas_oid": "1006163",
+      "manifest_index": 89,
+      "base_id": "f45v",
+      "o1_first_header_index": 87
+    },
+    {
+      "label": "46r",
+      "canvas_oid": "1006164",
+      "manifest_index": 90,
+      "base_id": "f46r",
+      "o1_first_header_index": 88
+    },
+    {
+      "label": "46v",
+      "canvas_oid": "1006165",
+      "manifest_index": 91,
+      "base_id": "f46v",
+      "o1_first_header_index": 89
+    },
+    {
+      "label": "47r",
+      "canvas_oid": "1006166",
+      "manifest_index": 92,
+      "base_id": "f47r",
+      "o1_first_header_index": 90
+    },
+    {
+      "label": "47v",
+      "canvas_oid": "1006167",
+      "manifest_index": 93,
+      "base_id": "f47v",
+      "o1_first_header_index": 91
+    },
+    {
+      "label": "48r",
+      "canvas_oid": "1006168",
+      "manifest_index": 94,
+      "base_id": "f48r",
+      "o1_first_header_index": 92
+    },
+    {
+      "label": "48v",
+      "canvas_oid": "1006169",
+      "manifest_index": 95,
+      "base_id": "f48v",
+      "o1_first_header_index": 93
+    },
+    {
+      "label": "49r",
+      "canvas_oid": "1006170",
+      "manifest_index": 96,
+      "base_id": "f49r",
+      "o1_first_header_index": 94
+    },
+    {
+      "label": "49v",
+      "canvas_oid": "1006171",
+      "manifest_index": 97,
+      "base_id": "f49v",
+      "o1_first_header_index": 95
+    },
+    {
+      "label": "50r",
+      "canvas_oid": "1006172",
+      "manifest_index": 98,
+      "base_id": "f50r",
+      "o1_first_header_index": 96
+    },
+    {
+      "label": "50v",
+      "canvas_oid": "1006173",
+      "manifest_index": 99,
+      "base_id": "f50v",
+      "o1_first_header_index": 97
+    },
+    {
+      "label": "51r",
+      "canvas_oid": "1006174",
+      "manifest_index": 100,
+      "base_id": "f51r",
+      "o1_first_header_index": 98
+    },
+    {
+      "label": "51v",
+      "canvas_oid": "1006175",
+      "manifest_index": 101,
+      "base_id": "f51v",
+      "o1_first_header_index": 99
+    },
+    {
+      "label": "52r",
+      "canvas_oid": "1006176",
+      "manifest_index": 102,
+      "base_id": "f52r",
+      "o1_first_header_index": 100
+    },
+    {
+      "label": "52v",
+      "canvas_oid": "1006177",
+      "manifest_index": 103,
+      "base_id": "f52v",
+      "o1_first_header_index": 101
+    },
+    {
+      "label": "53r",
+      "canvas_oid": "1006178",
+      "manifest_index": 104,
+      "base_id": "f53r",
+      "o1_first_header_index": 102
+    },
+    {
+      "label": "53v",
+      "canvas_oid": "1006179",
+      "manifest_index": 105,
+      "base_id": "f53v",
+      "o1_first_header_index": 103
+    },
+    {
+      "label": "54r",
+      "canvas_oid": "1006180",
+      "manifest_index": 106,
+      "base_id": "f54r",
+      "o1_first_header_index": 104
+    },
+    {
+      "label": "54v",
+      "canvas_oid": "1006181",
+      "manifest_index": 107,
+      "base_id": "f54v",
+      "o1_first_header_index": 105
+    },
+    {
+      "label": "55r",
+      "canvas_oid": "1006182",
+      "manifest_index": 108,
+      "base_id": "f55r",
+      "o1_first_header_index": 106
+    },
+    {
+      "label": "55v",
+      "canvas_oid": "1006183",
+      "manifest_index": 109,
+      "base_id": "f55v",
+      "o1_first_header_index": 107
+    },
+    {
+      "label": "56r",
+      "canvas_oid": "1006184",
+      "manifest_index": 110,
+      "base_id": "f56r",
+      "o1_first_header_index": 108
+    },
+    {
+      "label": "56v",
+      "canvas_oid": "1006185",
+      "manifest_index": 111,
+      "base_id": "f56v",
+      "o1_first_header_index": 109
+    },
+    {
+      "label": "57r",
+      "canvas_oid": "1006186",
+      "manifest_index": 112,
+      "base_id": "f57r",
+      "o1_first_header_index": 110
+    },
+    {
+      "label": "57v",
+      "canvas_oid": "1006187",
+      "manifest_index": 113,
+      "base_id": "f57v",
+      "o1_first_header_index": 111
+    },
+    {
+      "label": "58r",
+      "canvas_oid": "1006188",
+      "manifest_index": 114,
+      "base_id": "f58r",
+      "o1_first_header_index": 112
+    },
+    {
+      "label": "58v",
+      "canvas_oid": "1006189",
+      "manifest_index": 115,
+      "base_id": "f58v",
+      "o1_first_header_index": 113
+    },
+    {
+      "label": "65r",
+      "canvas_oid": "1006190",
+      "manifest_index": 116,
+      "base_id": "f65r",
+      "o1_first_header_index": 114
+    },
+    {
+      "label": "65v",
+      "canvas_oid": "1006191",
+      "manifest_index": 117,
+      "base_id": "f65v",
+      "o1_first_header_index": 115
+    },
+    {
+      "label": "66r",
+      "canvas_oid": "1006192",
+      "manifest_index": 118,
+      "base_id": "f66r",
+      "o1_first_header_index": 116
+    },
+    {
+      "label": "66v",
+      "canvas_oid": "1006193",
+      "manifest_index": 119,
+      "base_id": "f66v",
+      "o1_first_header_index": 117
+    },
+    {
+      "label": "67r",
+      "canvas_oid": "1006194",
+      "manifest_index": 120,
+      "base_id": "f67r",
+      "o1_first_header_index": 118
+    },
+    {
+      "label": "67v",
+      "canvas_oid": "1006195",
+      "manifest_index": 121,
+      "base_id": "f67v",
+      "o1_first_header_index": 120
+    },
+    {
+      "label": "68r",
+      "canvas_oid": "1006196",
+      "manifest_index": 122,
+      "base_id": "f68r",
+      "o1_first_header_index": 122
+    },
+    {
+      "label": "68v",
+      "canvas_oid": "1006197",
+      "manifest_index": 123,
+      "base_id": "f68v",
+      "o1_first_header_index": 125
+    },
+    {
+      "label": "69r",
+      "canvas_oid": "1006198",
+      "manifest_index": 124,
+      "base_id": "f69r",
+      "o1_first_header_index": 128
+    },
+    {
+      "label": "71r",
+      "canvas_oid": "1006202",
+      "manifest_index": 128,
+      "base_id": "f71r",
+      "o1_first_header_index": 134
+    },
+    {
+      "label": "73r",
+      "canvas_oid": "1006206",
+      "manifest_index": 132,
+      "base_id": "f73r",
+      "o1_first_header_index": 142
+    },
+    {
+      "label": "73v",
+      "canvas_oid": "1006207",
+      "manifest_index": 133,
+      "base_id": "f73v",
+      "o1_first_header_index": 143
+    },
+    {
+      "label": "75r",
+      "canvas_oid": "1006208",
+      "manifest_index": 134,
+      "base_id": "f75r",
+      "o1_first_header_index": 144
+    },
+    {
+      "label": "75v",
+      "canvas_oid": "1006209",
+      "manifest_index": 135,
+      "base_id": "f75v",
+      "o1_first_header_index": 145
+    },
+    {
+      "label": "76r",
+      "canvas_oid": "1006210",
+      "manifest_index": 136,
+      "base_id": "f76r",
+      "o1_first_header_index": 146
+    },
+    {
+      "label": "76v",
+      "canvas_oid": "1006211",
+      "manifest_index": 137,
+      "base_id": "f76v",
+      "o1_first_header_index": 147
+    },
+    {
+      "label": "77r",
+      "canvas_oid": "1006212",
+      "manifest_index": 138,
+      "base_id": "f77r",
+      "o1_first_header_index": 148
+    },
+    {
+      "label": "77v",
+      "canvas_oid": "1006213",
+      "manifest_index": 139,
+      "base_id": "f77v",
+      "o1_first_header_index": 149
+    },
+    {
+      "label": "78r",
+      "canvas_oid": "1006214",
+      "manifest_index": 140,
+      "base_id": "f78r",
+      "o1_first_header_index": 150
+    },
+    {
+      "label": "78v",
+      "canvas_oid": "1006215",
+      "manifest_index": 141,
+      "base_id": "f78v",
+      "o1_first_header_index": 151
+    },
+    {
+      "label": "79r",
+      "canvas_oid": "1006216",
+      "manifest_index": 142,
+      "base_id": "f79r",
+      "o1_first_header_index": 152
+    },
+    {
+      "label": "79v",
+      "canvas_oid": "1006217",
+      "manifest_index": 143,
+      "base_id": "f79v",
+      "o1_first_header_index": 153
+    },
+    {
+      "label": "80r",
+      "canvas_oid": "1006218",
+      "manifest_index": 144,
+      "base_id": "f80r",
+      "o1_first_header_index": 154
+    },
+    {
+      "label": "80v",
+      "canvas_oid": "1006219",
+      "manifest_index": 145,
+      "base_id": "f80v",
+      "o1_first_header_index": 155
+    },
+    {
+      "label": "81r",
+      "canvas_oid": "1006220",
+      "manifest_index": 146,
+      "base_id": "f81r",
+      "o1_first_header_index": 156
+    },
+    {
+      "label": "81v",
+      "canvas_oid": "1006221",
+      "manifest_index": 147,
+      "base_id": "f81v",
+      "o1_first_header_index": 157
+    },
+    {
+      "label": "82r",
+      "canvas_oid": "1006222",
+      "manifest_index": 148,
+      "base_id": "f82r",
+      "o1_first_header_index": 158
+    },
+    {
+      "label": "82v",
+      "canvas_oid": "1006223",
+      "manifest_index": 149,
+      "base_id": "f82v",
+      "o1_first_header_index": 159
+    },
+    {
+      "label": "83r",
+      "canvas_oid": "1006224",
+      "manifest_index": 150,
+      "base_id": "f83r",
+      "o1_first_header_index": 160
+    },
+    {
+      "label": "83v",
+      "canvas_oid": "1006225",
+      "manifest_index": 151,
+      "base_id": "f83v",
+      "o1_first_header_index": 161
+    },
+    {
+      "label": "84r",
+      "canvas_oid": "1006226",
+      "manifest_index": 152,
+      "base_id": "f84r",
+      "o1_first_header_index": 162
+    },
+    {
+      "label": "84v",
+      "canvas_oid": "1006227",
+      "manifest_index": 153,
+      "base_id": "f84v",
+      "o1_first_header_index": 163
+    },
+    {
+      "label": "87r",
+      "canvas_oid": "1006232",
+      "manifest_index": 158,
+      "base_id": "f87r",
+      "o1_first_header_index": 170
+    },
+    {
+      "label": "87v",
+      "canvas_oid": "1043429",
+      "manifest_index": 159,
+      "base_id": "f87v",
+      "o1_first_header_index": 171
+    },
+    {
+      "label": "88r",
+      "canvas_oid": "1037112",
+      "manifest_index": 160,
+      "base_id": "f88r",
+      "o1_first_header_index": 172
+    },
+    {
+      "label": "90r",
+      "canvas_oid": "1006236",
+      "manifest_index": 164,
+      "base_id": "f90r",
+      "o1_first_header_index": 178
+    },
+    {
+      "label": "93r",
+      "canvas_oid": "1006238",
+      "manifest_index": 166,
+      "base_id": "f93r",
+      "o1_first_header_index": 182
+    },
+    {
+      "label": "93v",
+      "canvas_oid": "1006239",
+      "manifest_index": 167,
+      "base_id": "f93v",
+      "o1_first_header_index": 183
+    },
+    {
+      "label": "94r",
+      "canvas_oid": "1006240",
+      "manifest_index": 168,
+      "base_id": "f94r",
+      "o1_first_header_index": 184
+    },
+    {
+      "label": "95v",
+      "canvas_oid": "1006243",
+      "manifest_index": 171,
+      "base_id": "f95v",
+      "o1_first_header_index": 188
+    },
+    {
+      "label": "96r",
+      "canvas_oid": "1006244",
+      "manifest_index": 172,
+      "base_id": "f96r",
+      "o1_first_header_index": 190
+    },
+    {
+      "label": "96v",
+      "canvas_oid": "1006245",
+      "manifest_index": 173,
+      "base_id": "f96v",
+      "o1_first_header_index": 191
+    },
+    {
+      "label": "99r",
+      "canvas_oid": "1006246",
+      "manifest_index": 174,
+      "base_id": "f99r",
+      "o1_first_header_index": 192
+    },
+    {
+      "label": "99v",
+      "canvas_oid": "1006247",
+      "manifest_index": 175,
+      "base_id": "f99v",
+      "o1_first_header_index": 193
+    },
+    {
+      "label": "100r",
+      "canvas_oid": "1006248",
+      "manifest_index": 176,
+      "base_id": "f100r",
+      "o1_first_header_index": 194
+    },
+    {
+      "label": "103r",
+      "canvas_oid": "1006254",
+      "manifest_index": 182,
+      "base_id": "f103r",
+      "o1_first_header_index": 202
+    },
+    {
+      "label": "103v",
+      "canvas_oid": "1006255",
+      "manifest_index": 183,
+      "base_id": "f103v",
+      "o1_first_header_index": 203
+    },
+    {
+      "label": "104r",
+      "canvas_oid": "1006256",
+      "manifest_index": 184,
+      "base_id": "f104r",
+      "o1_first_header_index": 204
+    },
+    {
+      "label": "104v",
+      "canvas_oid": "1006257",
+      "manifest_index": 185,
+      "base_id": "f104v",
+      "o1_first_header_index": 205
+    },
+    {
+      "label": "105r",
+      "canvas_oid": "1006258",
+      "manifest_index": 186,
+      "base_id": "f105r",
+      "o1_first_header_index": 206
+    },
+    {
+      "label": "105v",
+      "canvas_oid": "1006259",
+      "manifest_index": 187,
+      "base_id": "f105v",
+      "o1_first_header_index": 207
+    },
+    {
+      "label": "106r",
+      "canvas_oid": "1006260",
+      "manifest_index": 188,
+      "base_id": "f106r",
+      "o1_first_header_index": 208
+    },
+    {
+      "label": "106v",
+      "canvas_oid": "1006261",
+      "manifest_index": 189,
+      "base_id": "f106v",
+      "o1_first_header_index": 209
+    },
+    {
+      "label": "107r",
+      "canvas_oid": "1006262",
+      "manifest_index": 190,
+      "base_id": "f107r",
+      "o1_first_header_index": 210
+    },
+    {
+      "label": "107v",
+      "canvas_oid": "1006263",
+      "manifest_index": 191,
+      "base_id": "f107v",
+      "o1_first_header_index": 211
+    },
+    {
+      "label": "108r",
+      "canvas_oid": "1006264",
+      "manifest_index": 192,
+      "base_id": "f108r",
+      "o1_first_header_index": 212
+    },
+    {
+      "label": "108v",
+      "canvas_oid": "1006265",
+      "manifest_index": 193,
+      "base_id": "f108v",
+      "o1_first_header_index": 213
+    },
+    {
+      "label": "111r",
+      "canvas_oid": "1006266",
+      "manifest_index": 194,
+      "base_id": "f111r",
+      "o1_first_header_index": 214
+    },
+    {
+      "label": "111v",
+      "canvas_oid": "1006267",
+      "manifest_index": 195,
+      "base_id": "f111v",
+      "o1_first_header_index": 215
+    },
+    {
+      "label": "112r",
+      "canvas_oid": "1006268",
+      "manifest_index": 196,
+      "base_id": "f112r",
+      "o1_first_header_index": 216
+    },
+    {
+      "label": "112v",
+      "canvas_oid": "1006269",
+      "manifest_index": 197,
+      "base_id": "f112v",
+      "o1_first_header_index": 217
+    },
+    {
+      "label": "113r",
+      "canvas_oid": "1006270",
+      "manifest_index": 198,
+      "base_id": "f113r",
+      "o1_first_header_index": 218
+    },
+    {
+      "label": "113v",
+      "canvas_oid": "1006271",
+      "manifest_index": 199,
+      "base_id": "f113v",
+      "o1_first_header_index": 219
+    },
+    {
+      "label": "114r",
+      "canvas_oid": "1006272",
+      "manifest_index": 200,
+      "base_id": "f114r",
+      "o1_first_header_index": 220
+    },
+    {
+      "label": "114v",
+      "canvas_oid": "1006273",
+      "manifest_index": 201,
+      "base_id": "f114v",
+      "o1_first_header_index": 221
+    },
+    {
+      "label": "115r",
+      "canvas_oid": "1006274",
+      "manifest_index": 202,
+      "base_id": "f115r",
+      "o1_first_header_index": 222
+    },
+    {
+      "label": "115v",
+      "canvas_oid": "1006275",
+      "manifest_index": 203,
+      "base_id": "f115v",
+      "o1_first_header_index": 223
+    },
+    {
+      "label": "116r",
+      "canvas_oid": "1006276",
+      "manifest_index": 204,
+      "base_id": "f116r",
+      "o1_first_header_index": 224
+    },
+    {
+      "label": "116v",
+      "canvas_oid": "1006277",
+      "manifest_index": 205,
+      "base_id": "f116v",
+      "o1_first_header_index": null
+    }
+  ],
+  "physical_order_status": "O1_CURRENT_LABEL_ORDER_IS_CONSISTENT_FOR_CLEAN_SINGLE_SIDE_CANVASES_ONLY",
+  "O2_historical_original_order": "UNKNOWN",
+  "panel_level_85_86": "NOT_CHECKABLE_FROM_ONLY_IMAGE_LABELS",
+  "physical_scans_inspected": 0,
+  "science_status": "INCONCLUSIVE_NOT_RUN"
+}

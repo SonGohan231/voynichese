@@ -1,0 +1,44 @@
+name: Voynich EXP004 positioned Rosettes token-angle review
+
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp004_rosettes_positioned_tokens.py"
+      - ".github/workflows/exp004-rosettes-token-layout.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp004_rosettes_positioned_tokens.py"
+      - ".github/workflows/exp004-rosettes-token-layout.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analyze-positioned-transliteration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate angular equivalence and pinned Git blob hashing
+        run: python research_os/tools/exp004_rosettes_positioned_tokens.py --selftest
+      - name: Source-verify 539 positioned Rosettes tokens and summarize orientations
+        run: |
+          python research_os/tools/exp004_rosettes_positioned_tokens.py \
+            --output research_os/experiments/EXP-2026-004/rosettes_positioned_token_audit_v1.json
+      - name: Preserve token location and audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp004-positioned-rosette-token-orientation
+          path: research_os/experiments/EXP-2026-004/rosettes_positioned_token_audit_v1.json
+          if-no-files-found: warn
+          retention-days: 30

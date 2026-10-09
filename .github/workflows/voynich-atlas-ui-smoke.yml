@@ -1,0 +1,44 @@
+name: Voynich Research Atlas UI smoke
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "dashboard/**"
+      - ".github/workflows/voynich-atlas-ui-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dashboard-source-and-script:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Extract and syntax-check dashboard Javascript
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path("dashboard/index.html").read_text(encoding="utf-8")
+          m = re.search(r"<script>(.*?)</script>", html, re.S)
+          assert m, "Missing dashboard script"
+          Path("/tmp/voynich-dashboard.js").write_text(m.group(1), encoding="utf-8")
+          checks = ["id=\"atlas\"","id=\"pigments\"","id=\"depth\"",
+                    "id=\"compare\"","id=\"experiments\"","id=\"missions\"",
+                    "id=\"folioSearch\"","id=\"regions\"","id=\"researchFiles\""]
+          for s in checks:
+              assert s in html, "Missing interactive element " + s
+          print("All key dashboard elements present, JS bytes",len(m.group(1)))
+          PY
+          node --check /tmp/voynich-dashboard.js
+      - name: Check source refs and external URLs
+        run: |
+          grep -q 'yale_iiif_canvas_group_crosswalk_2026-10-09.json' dashboard/index.html
+          grep -q 'collections.library.yale.edu/iiif/2/' dashboard/index.html
+          grep -q 'INCONCLUSIVE_NOT_RUN' dashboard/index.html
