@@ -26,6 +26,9 @@ jobs:
       - name: Install pinned image-analysis packages
         run: |
           python3 -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84'
+      - name: Synthetic nine-ring detection smoke test (no actual Voynich assertions)
+        run: |
+          python3 research_os/experiments/EXP-2026-003/geometry_synthetic_smoke.py
       - name: Re-fetch eight original Yale JPEGs with SHA-256 verification
         run: |
           python3 research_os/tools/exp003_foldout_geometry_probe.py \
