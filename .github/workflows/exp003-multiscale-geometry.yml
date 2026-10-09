@@ -1,0 +1,49 @@
+name: Voynich EXP003 scale-invariant geometry comparison
+
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp003_multiscale_contour_audit.py"
+      - ".github/workflows/exp003-multiscale-geometry.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp003_multiscale_contour_audit.py"
+      - ".github/workflows/exp003-multiscale-geometry.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  archive-source-scale-normalized-candidate-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned shape comparison packages
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Verify scale invariance with synthetic x3 shape
+        run: python research_os/tools/exp003_multiscale_contour_audit.py --selftest
+      - name: Audit six SHA-verified Yale sources for irregular rescaled color contour matches
+        run: |
+          python research_os/tools/exp003_multiscale_contour_audit.py \
+            --output research_os/experiments/EXP-2026-003/multiscale_shape_candidates_2026-10-09.json \
+            --preview research_os/experiments/EXP-2026-003/multiscale_shape_contact_sheet_2026-10-09.png
+      - name: Archive ranked pairs, negative-control distribution and proof sheet
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp003-multiscale-geometry-candidates
+          path: |
+            research_os/experiments/EXP-2026-003/multiscale_shape_candidates_2026-10-09.json
+            research_os/experiments/EXP-2026-003/multiscale_shape_contact_sheet_2026-10-09.png
+          if-no-files-found: warn
+          retention-days: 30
