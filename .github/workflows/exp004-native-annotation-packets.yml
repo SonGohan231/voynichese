@@ -6,6 +6,11 @@ on:
     paths:
       - "research_os/tools/exp004_native_annotation_packets.py"
       - ".github/workflows/exp004-native-annotation-packets.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp004_native_annotation_packets.py"
+      - ".github/workflows/exp004-native-annotation-packets.yml"
   workflow_dispatch:
 permissions:
   contents: read
