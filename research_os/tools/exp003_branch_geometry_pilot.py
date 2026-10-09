@@ -32,6 +32,72 @@ def morphological_skeleton(mask):
     return skeletonize(mask>0).astype(np.uint8)
 
 
+
+def local_arm_angles_and_end_distances(sk, junction_mask, endpoints):
+    """Scale-free local branch-ray proxies. NOT validated geodesic angles.
+
+    Ray directions are measured in annular bands around candidate junction
+    clusters, then normalized to gaps of a complete circle. Segment lengths
+    are normalized *straight-line* distances to nearby skeleton endpoints.
+    """
+    n,labels,stats,centroids=cv2.connectedComponentsWithStats(
+        cv2.dilate(junction_mask,NEIGHBOR_KERNEL,iterations=1))
+    coords=np.argwhere(sk>0)
+    ends=np.argwhere(endpoints)
+    gap_vectors=[]
+    normdist=[]
+    for k in range(1,n):
+        if stats[k,cv2.CC_STAT_AREA]<1:continue
+        cx,cy=centroids[k]
+        if len(coords):
+            dy=coords[:,0]-cy;dx=coords[:,1]-cx
+            rho=np.sqrt(dx*dx+dy*dy)
+            annulus=(rho>=6)&(rho<=10)
+            theta=np.mod(np.arctan2(dy[annulus],dx[annulus]),2*np.pi)
+            # Circular bins represent visible outgoing skeleton rays.
+            hist=np.bincount(np.floor(theta*36/(2*np.pi)).astype(int)%36,minlength=36)
+            valid=hist>0
+            starts=np.flatnonzero(valid & ~np.roll(valid,1))
+            if valid.all():starts=np.array([],dtype=int)
+            local=[]
+            for b in starts:
+                cursor=b
+                group=[]
+                while valid[cursor]:
+                    group.append(cursor)
+                    cursor=(cursor+1)%36
+                    if cursor==b:break
+                # Circular mean of candidate arm direction bins.
+                an=(np.array(group,dtype=float)+0.5)*2*np.pi/36
+                mean=float(np.angle(np.mean(np.exp(1j*an)))%(2*np.pi))
+                local.append(mean)
+            if len(local)>=2:
+                local=sorted(local)
+                gaps=np.diff(np.r_[local,local[0]+2*np.pi])/(2*np.pi)
+                gap_vectors.append(sorted(float(z) for z in gaps))
+        if len(ends):
+            d=np.sqrt((ends[:,1]-cx)**2+(ends[:,0]-cy)**2)
+            nearby=np.sort(d[d>3])
+            if len(nearby):
+                normdist.extend(float(v/max(sk.shape)) for v in nearby[:4])
+    return {
+        "branch_ray_gap_vectors":[[round(v,4) for v in g] for g in gap_vectors[:12]],
+        "branch_local_junctions_with_angle_estimate":len(gap_vectors),
+        "endpoint_chord_distance_proportions":[round(v,4) for v in sorted(normdist)[:20]]
+    }
+
+
+def sequence_distance(left,right,empty_penalty=0.35):
+    """Length-penalized, sorted normalized pattern distance, exploratory."""
+    if not left and not right:return 0.
+    if not left or not right:return empty_penalty
+    a=np.sort(np.array(left,dtype=float))
+    b=np.sort(np.array(right,dtype=float))
+    points=np.linspace(0,1,12)
+    aa=np.interp(points,np.linspace(0,1,len(a)),a)
+    bb=np.interp(points,np.linspace(0,1,len(b)),b)
+    return float(np.mean(np.abs(aa-bb)) + 0.15*abs(len(a)-len(b))/max(len(a),len(b)))
+
 def signature(mask):
     binmask=(mask>0).astype(np.uint8)
     # Removing tiny isolated artifacts also changes thin genuine branches:
@@ -42,6 +108,7 @@ def signature(mask):
     jpix=((sk>0)&(degree>=3)).astype(np.uint8)
     # Cluster nearby junction pixels into centers.
     junctions=cv2.connectedComponents(cv2.dilate(jpix,NEIGHBOR_KERNEL,iterations=1))[0]-1 if jpix.any() else 0
+    branch_geometry=local_arm_angles_and_end_distances(sk,jpix,endpoints)
     conts,_=cv2.findContours(binmask,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
     if not conts:
         return dict(endpoints=0,junctions=0,notches=0,aspect=0,radial_peaks=0,
@@ -94,7 +161,7 @@ def signature(mask):
             "radial_spacing":[round(float(x),4) for x in spacing],
             "skeleton_pixels":int(np.count_nonzero(sk)),
             "area_fraction":round(float(binmask.mean()),5),
-            "solidity":round(float(solidity),5)}
+            "solidity":round(float(solidity),5),**branch_geometry}
 
 
 def alignment_score(fa,fb,baseline):
@@ -110,11 +177,17 @@ def alignment_score(fa,fb,baseline):
         m=min(len(a),len(b))
         gap_err=float(np.mean(np.abs(np.array(a[:m])-np.array(b[:m]))))
     else:gap_err=0.5 if bool(a)!=bool(b) else 0.
+    agap_a=[g for bundle in fa["branch_ray_gap_vectors"] for g in bundle]
+    agap_b=[g for bundle in fb["branch_ray_gap_vectors"] for g in bundle]
+    angle_gap_err=sequence_distance(agap_a,agap_b)
+    chord_err=sequence_distance(fa["endpoint_chord_distance_proportions"],
+                                fb["endpoint_chord_distance_proportions"])
     loss=(0.15*min(3,penalties["endpoints"])+
           0.28*min(3,penalties["junctions"])+
           0.18*min(4,penalties["notches"])+
           0.12*min(4,penalties["radial_peaks"])+
-          0.6*gap_err+0.08*min(3,branch_size_err))
+          0.6*gap_err+0.08*min(3,branch_size_err)+
+          0.50*angle_gap_err+0.24*chord_err)
     # Original IoU score dominates for simple silhouettes; explicitly
     # disqualify bland blobs from evidence of *complex branching*.
     is_simple=(min(fa["junctions"],fb["junctions"])<1 or
@@ -125,7 +198,9 @@ def alignment_score(fa,fb,baseline):
     return {"structural_score_exploratory":raw,"different_branch_complexity":is_simple,
             "structural_comparison_eligible":not is_simple,
             "differences":penalties,"branch_skeleton_log_length_delta":round(branch_size_err,4),
-            "radial_peak_gap_difference":round(gap_err,4)}
+            "radial_peak_gap_difference":round(gap_err,4),
+            "branch_ray_angle_gap_error":round(angle_gap_err,4),
+            "branch_endpoint_relative_chord_error":round(chord_err,4)}
 
 
 def run(out):
@@ -182,6 +257,7 @@ def run(out):
       "best_exploratory_pairs":rows[:25],
       "validation_limits":[
         "Junction and endpoint counts of morphological skeletons are sensitive to pigment gaps and downsampling.",
+        "New branch angles use annular sampled ray proxies and lengths are endpoint-to-junction chords, NOT traced anatomical axes or physical millimetres.",
         "Radial peaks and convexity defects are digital geometric proxies, not independently labelled historical branches.",
         "No independent blinded manual annotations, physical-size calibration or held-out validation.",
         "These source folios were already selected after inspection; null percentiles are descriptive, NOT statistical p-values.",
