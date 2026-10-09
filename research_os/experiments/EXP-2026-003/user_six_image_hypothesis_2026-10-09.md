@@ -75,6 +75,24 @@ For all tests, final alpha is BH-FDR q <= 0.05 across five families, and indepen
 | Prospective test freeze | NOT REGISTERED | No confirmatory p-values, PASS, or causal model claims |
 | EXP001/002 control | MUST PRESERVE | Do not touch sealed held-out, scribe or physical constraints |
 
+## 2026 scholarly order constraint (independent of image fitting)
+
+Before any cross-folio visual co-locality, evaluate the independently motivated
+**singulion** physical-order alternative described by Colin Layfield and Lisa
+Fagin Davis, *Singulion Structure and the Voynich Manuscript*, Digital
+Medievalist 19 (10 July 2026), DOI: [10.4000/16k0a](https://doi.org/10.4000/16k0a),
+[full-text record](https://journals.openedition.org/digitalmedievalist/2331).
+This paper argues that individual folded sheets may have been intended to be
+read in sequence rather than in today's conventional nested arrangement. The
+claim remains a proposal subject to independent physical/codicological review.
+
+Protocol control: prerecord present-bound order, externally supported physical
+bifolio/singulion-compatible variants and uncertainty in their placement; do
+NOT choose fold or page orientation/sequence to optimize color/topology/text
+effects. Repetition of layout across folios is non-independent where sheets
+share a physical unit. Report sensitivity per independently specified order.
+This literature does not decode Voynichese or validate 2.5D.
+
 ## Priority and division of work
 
 - Source & Codicology: screenshot to Yale canvas and conservation archive crosswalk, physical folds, 52 surviving units and unavailable bytes.
