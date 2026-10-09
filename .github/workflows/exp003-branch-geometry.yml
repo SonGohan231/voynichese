@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install pinned image runtime
-        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'scikit-image==0.24.0' 'Pillow>=10,<12'
       - name: Synthetic branch and simple-shape negative-control tests
         run: python research_os/tools/exp003_branch_geometry_pilot.py --selftest
       - name: Audit six hash-verified Yale JPEGs and compare normalized branching features
