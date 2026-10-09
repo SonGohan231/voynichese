@@ -1,0 +1,43 @@
+name: Voynich EXP003 user screenshot -> original Yale candidate match
+
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp003_user_image_source_match.py"
+      - "research_os/experiments/EXP-2026-003/user_six_image_phash_2026-10-09.json"
+      - ".github/workflows/exp003-user-source-match.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  yale-original-source-matching:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deterministic source-comparison runtime
+        run: |
+          python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84'
+      - name: Verify matching algorithm is deterministic on synthetic inputs
+        run: python research_os/tools/exp003_user_image_source_match.py --selftest
+      - name: Hash and rank all 206 Yale archive photos against user image signatures
+        run: |
+          python research_os/tools/exp003_user_image_source_match.py \
+            --output research_os/experiments/EXP-2026-003/user_image_source_match_pilot_2026-10-09.json
+      - name: Preserve complete source-match rankings and failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp003-user-photo-source-matching-results
+          path: research_os/experiments/EXP-2026-003/user_image_source_match_pilot_2026-10-09.json
+          if-no-files-found: warn
+          retention-days: 30
