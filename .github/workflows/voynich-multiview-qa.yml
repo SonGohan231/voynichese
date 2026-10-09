@@ -1,0 +1,59 @@
+name: Voynich MV catalog safety gates
+
+on:
+  push:
+    branches:
+      - research/voynich-multiview-2026-10-09
+    paths:
+      - 'research_os/experiments/MV-2026-10-09/**'
+      - '.github/workflows/voynich-multiview-qa.yml'
+  pull_request:
+    paths:
+      - 'research_os/experiments/MV-2026-10-09/**'
+      - '.github/workflows/voynich-multiview-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mv-contract-and-data-readiness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            atlas/records
+            research_os/experiments/MV-2026-10-09
+          sparse-checkout-cone-mode: false
+      - name: Python contract tests
+        run: python3 -m unittest discover -s research_os/experiments/MV-2026-10-09 -p 'test_*.py' -v
+      - name: Verify baseline atlas is NOT treated as completed comparison
+        run: |
+          set +e
+          python3 research_os/experiments/MV-2026-10-09/initialize_catalog.py \
+            --records atlas/records \
+            --output mv-qc-artifact
+          code=$?
+          set -e
+          test "$code" -eq 2
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("mv-qc-artifact/catalog_qc.json").read_text())
+          assert report["status"] == "BLOCKED_DATA", report
+          assert report["counts"]["scanned_records"] >= 204, report
+          assert report["counts"]["objects"] == 0, report
+          assert report["mv2_mv3_mv4_candidates"] == 0, report
+          assert not report["pair_matching_performed"], report
+          assert not report["held_out_used"], report
+          print("PASS: source-only atlas blocked; no fabricated multiview result.")
+          PY
+      - name: Preserve data-readiness evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mv-2026-10-09-data-readiness
+          path: mv-qc-artifact/
+          if-no-files-found: warn
