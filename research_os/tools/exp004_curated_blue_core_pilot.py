@@ -95,7 +95,7 @@ def main(out,board):
 
 def selftest():
     assert len(SEEDS)==4
-    assert len(set(x["candidate_id"] for x in SEEDS))==4
+    assert len(set(x["name"] for x in SEEDS))==4
     assert all(0.03<x["radius_short"]<.25 for x in SEEDS)
     assert all(0<x["center"][0]<1 and 0<x["center"][1]<1 for x in SEEDS)
     print("EXP004_CURATED_SEED_SELFTEST_PASS nonoverlap IDs, plausible frame coordinates")
