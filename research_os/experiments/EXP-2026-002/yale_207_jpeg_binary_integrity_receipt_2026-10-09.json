@@ -1,0 +1,1901 @@
+{
+  "schema": "exp-2026-002/yale-archive-complete-binary-integrity-receipt-v1",
+  "date": "2026-10-09",
+  "evidence_kind": "GITHUB_ACTIONS_RUNTIME_LOG_AND_ARCHIVAL_HASH_CONCORDANCE",
+  "execution": {
+    "workflow_run_id": 37866714094,
+    "github_run_url": "https://github.com/SonGohan231/voynichese/actions/runs/37866714094",
+    "job_id": 113615052278,
+    "run_commit": "648ed01e2f7b7fa95758a63f176afa70b74a0f48",
+    "evidence_artifact_id": 11588373054,
+    "evidence_artifact_name": "exp002-yale-jpeg-full-archive-integrity",
+    "verification_script": "research_os/tools/exp002_verify_archive_jpeg_bytes.py",
+    "invocation": "python3 research_os/tools/exp002_verify_archive_jpeg_bytes.py --mode all --output $RUNNER_TEMP/exp002_yale_archived_jpeg_full_integrity_report.json",
+    "independently_recomputed_in_GITHUB_CI": true,
+    "hash_algorithm": "SHA-256",
+    "process": "CI downloaded each GitHub-archived JPEG by path and compared bytes/sha with previously recorded import ledger",
+    "branch_rehashed": "import-voynich-yale-scans-2026-07-23"
+  },
+  "aggregate": {
+    "checked": 207,
+    "pass": 207,
+    "fail": 0,
+    "unique_canvas_ids": 206,
+    "deliberate_duplicate_record_count": 1
+  },
+  "evidence_limitations": [
+    "CI independently confirms the *existing GitHub archive's* JPEG bytes match its earlier July import receipt; it is not a cryptographically signed attestation from Yale.",
+    "The Yale IIIF manifest's original raw bytes have not been independently archived and hashed in this run.",
+    "No interpretive inspection of folds, piercings, sewing, joins, handwriting or panel orientations was performed by the model or CI.",
+    "No original historical reading order, decipherment or statistical confirmatory result is claimed."
+  ],
+  "source_crosswalk": "research_os/experiments/EXP-2026-002/yale_archived_jpeg_provenance_crosswalk_2026-10-09.json",
+  "images": [
+    {
+      "ci_log_run_sequence": 1,
+      "archive_file": "data/yale_hq_scans/1/0001__Front cover_.jpg",
+      "yale_label": "[Front cover]",
+      "canvas_oid": "1006074",
+      "declared_sha256": "a2af37b5735b76e49a4fb2033f3ac54187d08aee7d910479c1fd04cb4e8b8a14",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:44.1741220Z [1/207] [Front cover] PASS"
+    },
+    {
+      "ci_log_run_sequence": 2,
+      "archive_file": "data/yale_hq_scans/1/0002__Inside front cover_.jpg",
+      "yale_label": "[Inside front cover]",
+      "canvas_oid": "1006075",
+      "declared_sha256": "1f609ec3e91977e339099d1f864993f985246ac345e89896427392078b601dd2",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:44.3513879Z [2/207] [Inside front cover] PASS"
+    },
+    {
+      "ci_log_run_sequence": 3,
+      "archive_file": "data/yale_hq_scans/1/0003_1r.jpg",
+      "yale_label": "1r",
+      "canvas_oid": "1006076",
+      "declared_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:44.5494943Z [3/207] 1r PASS"
+    },
+    {
+      "ci_log_run_sequence": 4,
+      "archive_file": "data/yale_hq_scans/1/0004_1v.jpg",
+      "yale_label": "1v",
+      "canvas_oid": "1006077",
+      "declared_sha256": "43065eacad8a743816eb2b7d9acd8cf882a9bb498f1cea84602d12fede99f77d",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:44.7415162Z [4/207] 1v PASS"
+    },
+    {
+      "ci_log_run_sequence": 5,
+      "archive_file": "data/yale_hq_scans/1/0005_2r.jpg",
+      "yale_label": "2r",
+      "canvas_oid": "1006078",
+      "declared_sha256": "826533a0760798acf5a4caa01ac29fe95eb1ed13a9fb26ac82900a8aea11d53f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:44.9201663Z [5/207] 2r PASS"
+    },
+    {
+      "ci_log_run_sequence": 6,
+      "archive_file": "data/yale_hq_scans/1/0006_2v.jpg",
+      "yale_label": "2v",
+      "canvas_oid": "1006079",
+      "declared_sha256": "ae2e9591c75389fe093e7f35d5c670781d196c253d472030dd4a1d1c86ae1cb7",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:45.0864755Z [6/207] 2v PASS"
+    },
+    {
+      "ci_log_run_sequence": 7,
+      "archive_file": "data/yale_hq_scans/1/0007_3r.jpg",
+      "yale_label": "3r",
+      "canvas_oid": "1006080",
+      "declared_sha256": "6ea4d4023a3b199463eee9e30508726a9314391f05a613bce3f87ae8d23fd151",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:45.2659527Z [7/207] 3r PASS"
+    },
+    {
+      "ci_log_run_sequence": 8,
+      "archive_file": "data/yale_hq_scans/1/0008_3v.jpg",
+      "yale_label": "3v",
+      "canvas_oid": "1006081",
+      "declared_sha256": "b9c19a872d6456fa58f76f15dec1d61bc80cc353fceff33f11abdaae87ce199e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:45.4453577Z [8/207] 3v PASS"
+    },
+    {
+      "ci_log_run_sequence": 9,
+      "archive_file": "data/yale_hq_scans/1/0009_4r.jpg",
+      "yale_label": "4r",
+      "canvas_oid": "1006082",
+      "declared_sha256": "fb166d0fe36d8cb635bb73b1d70b7d62e51a5f1ebf896f51921bd1854a06d904",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:45.6077270Z [9/207] 4r PASS"
+    },
+    {
+      "ci_log_run_sequence": 10,
+      "archive_file": "data/yale_hq_scans/1/0010_4v.jpg",
+      "yale_label": "4v",
+      "canvas_oid": "1006083",
+      "declared_sha256": "afec0f17556cb8cec1f1bc529ba4b572fc32363702091bacda4c7c1e0ebf37bc",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:45.7808255Z [10/207] 4v PASS"
+    },
+    {
+      "ci_log_run_sequence": 11,
+      "archive_file": "data/yale_hq_scans/1/0011_5r.jpg",
+      "yale_label": "5r",
+      "canvas_oid": "1006084",
+      "declared_sha256": "e0e966c2a24f6b434b34cd1e1d4ee9aef2cec281c6ad071847e8e8b50d799acb",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:45.9689421Z [11/207] 5r PASS"
+    },
+    {
+      "ci_log_run_sequence": 12,
+      "archive_file": "data/yale_hq_scans/1/0012_5v.jpg",
+      "yale_label": "5v",
+      "canvas_oid": "1006085",
+      "declared_sha256": "c294a7576438c7673149f7b6294378127721daa5a48d045643feb812a6c49f40",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:46.1301373Z [12/207] 5v PASS"
+    },
+    {
+      "ci_log_run_sequence": 13,
+      "archive_file": "data/yale_hq_scans/1/0013_6r.jpg",
+      "yale_label": "6r",
+      "canvas_oid": "1006086",
+      "declared_sha256": "2e9e318c945c1a961ab676c81827b4ee71c993d3d02a1adb9365bbb007ffa4dc",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:46.3124045Z [13/207] 6r PASS"
+    },
+    {
+      "ci_log_run_sequence": 14,
+      "archive_file": "data/yale_hq_scans/1/0014_6v.jpg",
+      "yale_label": "6v",
+      "canvas_oid": "1006087",
+      "declared_sha256": "c05ffc33745eca87cb0387cf47868f2a0a62f2cf6c3f7929a35a2e64834c40dc",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:46.4739914Z [14/207] 6v PASS"
+    },
+    {
+      "ci_log_run_sequence": 15,
+      "archive_file": "data/yale_hq_scans/1/0015_7r.jpg",
+      "yale_label": "7r",
+      "canvas_oid": "1006088",
+      "declared_sha256": "fd4529ff994cfaefe9bf75966a59eede9ab0ea59e3514bf3aaf0a45c0df0e2a0",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:46.6266918Z [15/207] 7r PASS"
+    },
+    {
+      "ci_log_run_sequence": 16,
+      "archive_file": "data/yale_hq_scans/1/0016_7v.jpg",
+      "yale_label": "7v",
+      "canvas_oid": "1006089",
+      "declared_sha256": "81fed5fa8e1b174ff1176899b76d08003148445bdc6f68f3c7f59f8c6729e841",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:46.7969808Z [16/207] 7v PASS"
+    },
+    {
+      "ci_log_run_sequence": 17,
+      "archive_file": "data/yale_hq_scans/1/0017_8r.jpg",
+      "yale_label": "8r",
+      "canvas_oid": "1006090",
+      "declared_sha256": "2dfbbfab02ca4220a7ad1ade4b6be69d0401df9a64762e3883ffa87640e07e7e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:46.9579301Z [17/207] 8r PASS"
+    },
+    {
+      "ci_log_run_sequence": 18,
+      "archive_file": "data/yale_hq_scans/1/0018_8v.jpg",
+      "yale_label": "8v",
+      "canvas_oid": "1006091",
+      "declared_sha256": "726c5a8de19709f2286423802e7d1e18f2c58cc558d5680e57a3377e9623ca1c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:47.1365951Z [18/207] 8v PASS"
+    },
+    {
+      "ci_log_run_sequence": 19,
+      "archive_file": "data/yale_hq_scans/1/0019_9r.jpg",
+      "yale_label": "9r",
+      "canvas_oid": "1006092",
+      "declared_sha256": "a5f3a7b1a3f9c0e791a3365d801884c64d996749719d84ffb11f0f06fbb30925",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:47.3009638Z [19/207] 9r PASS"
+    },
+    {
+      "ci_log_run_sequence": 20,
+      "archive_file": "data/yale_hq_scans/1/0020_9v.jpg",
+      "yale_label": "9v",
+      "canvas_oid": "1006093",
+      "declared_sha256": "790a7493a31133cf9375fb7471d1d1167df4988bcadeb74ea2528a0ba562e693",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:47.4950466Z [20/207] 9v PASS"
+    },
+    {
+      "ci_log_run_sequence": 21,
+      "archive_file": "data/yale_hq_scans/1/0021_10r.jpg",
+      "yale_label": "10r",
+      "canvas_oid": "1006094",
+      "declared_sha256": "8d8d5636691bae1be1ff908afad1388c25c53154e8808be572675ae8500c2ac5",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:47.6423132Z [21/207] 10r PASS"
+    },
+    {
+      "ci_log_run_sequence": 22,
+      "archive_file": "data/yale_hq_scans/1/0022_10v.jpg",
+      "yale_label": "10v",
+      "canvas_oid": "1006095",
+      "declared_sha256": "5cff25a923f5e8173a2a8ad21ec247d7c9bd090ac379322d5dda4d17be916403",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:47.8109032Z [22/207] 10v PASS"
+    },
+    {
+      "ci_log_run_sequence": 23,
+      "archive_file": "data/yale_hq_scans/1/0023_11r.jpg",
+      "yale_label": "11r",
+      "canvas_oid": "1006096",
+      "declared_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:47.9780717Z [23/207] 11r PASS"
+    },
+    {
+      "ci_log_run_sequence": 24,
+      "archive_file": "data/yale_hq_scans/2/0023_11r.jpg",
+      "yale_label": "11r",
+      "canvas_oid": "1006096",
+      "declared_sha256": "5307f28c9c4f65506ea6ce6c46182de03463afc0a5cdcb59ca67453a2f18f811",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:48.1497402Z [24/207] 11r PASS"
+    },
+    {
+      "ci_log_run_sequence": 25,
+      "archive_file": "data/yale_hq_scans/2/0024_11v.jpg",
+      "yale_label": "11v",
+      "canvas_oid": "1006097",
+      "declared_sha256": "896a5297fd4ac6a4ca215ae5e000ac8d6a50ea6063283a28b42ba1974d681d51",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:48.3352178Z [25/207] 11v PASS"
+    },
+    {
+      "ci_log_run_sequence": 26,
+      "archive_file": "data/yale_hq_scans/2/0025_13r.jpg",
+      "yale_label": "13r",
+      "canvas_oid": "1006098",
+      "declared_sha256": "454eb5f05db936ed0cf729c3881af0ded0993bc116246c6c8fd0c2789f4e9833",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:48.5109562Z [26/207] 13r PASS"
+    },
+    {
+      "ci_log_run_sequence": 27,
+      "archive_file": "data/yale_hq_scans/2/0026_13v.jpg",
+      "yale_label": "13v",
+      "canvas_oid": "1006099",
+      "declared_sha256": "79ac3ff85ed178229cd4bafc6332c606684dd0eba37221758a7ec430c86544f0",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:48.6988678Z [27/207] 13v PASS"
+    },
+    {
+      "ci_log_run_sequence": 28,
+      "archive_file": "data/yale_hq_scans/2/0027_14r.jpg",
+      "yale_label": "14r",
+      "canvas_oid": "1006100",
+      "declared_sha256": "1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:48.8892869Z [28/207] 14r PASS"
+    },
+    {
+      "ci_log_run_sequence": 29,
+      "archive_file": "data/yale_hq_scans/2/0028_14v.jpg",
+      "yale_label": "14v",
+      "canvas_oid": "1006101",
+      "declared_sha256": "97dbdbe273597957d62db2cf3a6d9769a0121cba1d0bb682c8008a6d2de622a6",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:49.0354677Z [29/207] 14v PASS"
+    },
+    {
+      "ci_log_run_sequence": 30,
+      "archive_file": "data/yale_hq_scans/2/0029_15r.jpg",
+      "yale_label": "15r",
+      "canvas_oid": "1006102",
+      "declared_sha256": "94d811f32199d1a092ff7eedb50ef6b7d3e35fa609093a55cdd3937a056b0edf",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:49.2270295Z [30/207] 15r PASS"
+    },
+    {
+      "ci_log_run_sequence": 31,
+      "archive_file": "data/yale_hq_scans/2/0030_15v.jpg",
+      "yale_label": "15v",
+      "canvas_oid": "1006103",
+      "declared_sha256": "d224773e2e39ef02719c25560e8072e6407bdea9f8d1bdf8da515adb5c2fc127",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:49.4193781Z [31/207] 15v PASS"
+    },
+    {
+      "ci_log_run_sequence": 32,
+      "archive_file": "data/yale_hq_scans/2/0031_16r.jpg",
+      "yale_label": "16r",
+      "canvas_oid": "1006104",
+      "declared_sha256": "1a7e9d3d9e6c647d73899317cf21c2967ded0e30517c5020e7c2093f6d99f265",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:49.5797674Z [32/207] 16r PASS"
+    },
+    {
+      "ci_log_run_sequence": 33,
+      "archive_file": "data/yale_hq_scans/2/0032_16v.jpg",
+      "yale_label": "16v",
+      "canvas_oid": "1006105",
+      "declared_sha256": "0001f9fb64430a47afa2c9dfa94e8eba1b6423ab0d3c3b9ae2a7c43e406d3a5e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:49.7359574Z [33/207] 16v PASS"
+    },
+    {
+      "ci_log_run_sequence": 34,
+      "archive_file": "data/yale_hq_scans/2/0033_17r.jpg",
+      "yale_label": "17r",
+      "canvas_oid": "1006106",
+      "declared_sha256": "9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:49.9515374Z [34/207] 17r PASS"
+    },
+    {
+      "ci_log_run_sequence": 35,
+      "archive_file": "data/yale_hq_scans/2/0034_17v.jpg",
+      "yale_label": "17v",
+      "canvas_oid": "1006107",
+      "declared_sha256": "61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:50.1313034Z [35/207] 17v PASS"
+    },
+    {
+      "ci_log_run_sequence": 36,
+      "archive_file": "data/yale_hq_scans/2/0035_18r.jpg",
+      "yale_label": "18r",
+      "canvas_oid": "1006108",
+      "declared_sha256": "01659aa94a6176b56c621f50c9cbe8c467836d6265a03d8edb1e97e236126e78",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:50.3066510Z [36/207] 18r PASS"
+    },
+    {
+      "ci_log_run_sequence": 37,
+      "archive_file": "data/yale_hq_scans/2/0036_18v.jpg",
+      "yale_label": "18v",
+      "canvas_oid": "1006109",
+      "declared_sha256": "a0f14ccc11f76d832def734e32e33dccea82222e0b198ac3d73c93e8d1fcc47f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:50.4784794Z [37/207] 18v PASS"
+    },
+    {
+      "ci_log_run_sequence": 38,
+      "archive_file": "data/yale_hq_scans/2/0037_19r.jpg",
+      "yale_label": "19r",
+      "canvas_oid": "1006110",
+      "declared_sha256": "c05e13bd154a93d77e2f601f11d9bd886fdf4524a49dbae0339b0bd864f7283c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:50.6421289Z [38/207] 19r PASS"
+    },
+    {
+      "ci_log_run_sequence": 39,
+      "archive_file": "data/yale_hq_scans/2/0038_19v.jpg",
+      "yale_label": "19v",
+      "canvas_oid": "1006111",
+      "declared_sha256": "7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:50.8060461Z [39/207] 19v PASS"
+    },
+    {
+      "ci_log_run_sequence": 40,
+      "archive_file": "data/yale_hq_scans/2/0039_20r.jpg",
+      "yale_label": "20r",
+      "canvas_oid": "1006112",
+      "declared_sha256": "2090ee8a14985ae1db08d465bb9229a7490620ac9f5c288118f3c37cc4c9398e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:50.9767189Z [40/207] 20r PASS"
+    },
+    {
+      "ci_log_run_sequence": 41,
+      "archive_file": "data/yale_hq_scans/2/0040_20v.jpg",
+      "yale_label": "20v",
+      "canvas_oid": "1006113",
+      "declared_sha256": "472ca57a0abf61ab000cd26c6065b007073a95a0cf662ff4cc7d4158c94b52b7",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:51.1397288Z [41/207] 20v PASS"
+    },
+    {
+      "ci_log_run_sequence": 42,
+      "archive_file": "data/yale_hq_scans/2/0041_21r.jpg",
+      "yale_label": "21r",
+      "canvas_oid": "1006114",
+      "declared_sha256": "0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:51.3177507Z [42/207] 21r PASS"
+    },
+    {
+      "ci_log_run_sequence": 43,
+      "archive_file": "data/yale_hq_scans/2/0042_21v.jpg",
+      "yale_label": "21v",
+      "canvas_oid": "1006115",
+      "declared_sha256": "f10bf37a910e69fb8ea1f34d74b79522b6c7d0bebed77fe13ce40240f792ab53",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:51.4830720Z [43/207] 21v PASS"
+    },
+    {
+      "ci_log_run_sequence": 44,
+      "archive_file": "data/yale_hq_scans/2/0043_22r.jpg",
+      "yale_label": "22r",
+      "canvas_oid": "1006116",
+      "declared_sha256": "7bfb7bf49850d6d8df30ebae5a1ea8adc7b27bb714cb0e24453724805bd72a3e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:51.6397537Z [44/207] 22r PASS"
+    },
+    {
+      "ci_log_run_sequence": 45,
+      "archive_file": "data/yale_hq_scans/2/0044_22v.jpg",
+      "yale_label": "22v",
+      "canvas_oid": "1006117",
+      "declared_sha256": "0243271c28759a1a45350cd058270a12ea131860652cf1a3f7c14e47fe4ed6b2",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:51.8021504Z [45/207] 22v PASS"
+    },
+    {
+      "ci_log_run_sequence": 46,
+      "archive_file": "data/yale_hq_scans/3/0045_23r.jpg",
+      "yale_label": "23r",
+      "canvas_oid": "1006118",
+      "declared_sha256": "accaf5bdc2bcbbb97171d591f8352258329671eb68d095f4fe3f556979ff2e07",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:51.9921775Z [46/207] 23r PASS"
+    },
+    {
+      "ci_log_run_sequence": 47,
+      "archive_file": "data/yale_hq_scans/3/0046_23v.jpg",
+      "yale_label": "23v",
+      "canvas_oid": "1006119",
+      "declared_sha256": "4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:52.1617397Z [47/207] 23v PASS"
+    },
+    {
+      "ci_log_run_sequence": 48,
+      "archive_file": "data/yale_hq_scans/3/0047_24r.jpg",
+      "yale_label": "24r",
+      "canvas_oid": "1006120",
+      "declared_sha256": "3700fe396154e836b0acd3da86aef1d307f9d2da773208e476ee9db2e80de9e6",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:52.3457245Z [48/207] 24r PASS"
+    },
+    {
+      "ci_log_run_sequence": 49,
+      "archive_file": "data/yale_hq_scans/3/0048_24v.jpg",
+      "yale_label": "24v",
+      "canvas_oid": "1006121",
+      "declared_sha256": "0b814f58b56dff9351ae0d2f0db18a965fd6d67bb9f8302265b76f8ce5cd9f87",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:52.5622086Z [49/207] 24v PASS"
+    },
+    {
+      "ci_log_run_sequence": 50,
+      "archive_file": "data/yale_hq_scans/3/0049_25r.jpg",
+      "yale_label": "25r",
+      "canvas_oid": "1006122",
+      "declared_sha256": "1089c404ba05823109860af916e7dba2833cf99b98834c1534f3c66fcfaad1a4",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:52.7182523Z [50/207] 25r PASS"
+    },
+    {
+      "ci_log_run_sequence": 51,
+      "archive_file": "data/yale_hq_scans/3/0050_25v.jpg",
+      "yale_label": "25v",
+      "canvas_oid": "1006123",
+      "declared_sha256": "0f135a9525a84dfccf038a2221c7178dfbfb3b1a1fe4b6d0f62aeb6e8b655d73",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:52.8884398Z [51/207] 25v PASS"
+    },
+    {
+      "ci_log_run_sequence": 52,
+      "archive_file": "data/yale_hq_scans/3/0051_26r.jpg",
+      "yale_label": "26r",
+      "canvas_oid": "1006124",
+      "declared_sha256": "a593efb741d70ec23ae25c3725dbf2c8e8b3f8d2392cea6eb06921ac5949a6db",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:53.0644102Z [52/207] 26r PASS"
+    },
+    {
+      "ci_log_run_sequence": 53,
+      "archive_file": "data/yale_hq_scans/3/0052_26v.jpg",
+      "yale_label": "26v",
+      "canvas_oid": "1006125",
+      "declared_sha256": "3378e154f7ef8a45405cb008277aa1dc2229388c456cd3c66438bcca54d02c6b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:53.2766810Z [53/207] 26v PASS"
+    },
+    {
+      "ci_log_run_sequence": 54,
+      "archive_file": "data/yale_hq_scans/3/0053_27r.jpg",
+      "yale_label": "27r",
+      "canvas_oid": "1006126",
+      "declared_sha256": "978616e82efb3a452075ab98f7cde7351c373af0ecf668896c77af4f48abb9d5",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:53.4441716Z [54/207] 27r PASS"
+    },
+    {
+      "ci_log_run_sequence": 55,
+      "archive_file": "data/yale_hq_scans/3/0054_27v.jpg",
+      "yale_label": "27v",
+      "canvas_oid": "1006127",
+      "declared_sha256": "a84bedb17fc768a2e3c5e335b158c86cbef92636d010ef5811fa90b68951d608",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:53.6147634Z [55/207] 27v PASS"
+    },
+    {
+      "ci_log_run_sequence": 56,
+      "archive_file": "data/yale_hq_scans/3/0055_28r.jpg",
+      "yale_label": "28r",
+      "canvas_oid": "1006128",
+      "declared_sha256": "b7c3fa283b7d2647e512dac6a665c5d37945e5aab8e21798292069ef26d67c04",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:53.7927914Z [56/207] 28r PASS"
+    },
+    {
+      "ci_log_run_sequence": 57,
+      "archive_file": "data/yale_hq_scans/3/0056_28v.jpg",
+      "yale_label": "28v",
+      "canvas_oid": "1006129",
+      "declared_sha256": "2d325310e4ec264132340974cb71ec7f0cdb2f62820f97e644145dec72d84605",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:53.9532746Z [57/207] 28v PASS"
+    },
+    {
+      "ci_log_run_sequence": 58,
+      "archive_file": "data/yale_hq_scans/3/0057_29r.jpg",
+      "yale_label": "29r",
+      "canvas_oid": "1006130",
+      "declared_sha256": "ea8217a4cea6a3861e183a95e82d3e4ee3308aef8025bc2e9c9bce8a7a0c92d6",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:54.1356905Z [58/207] 29r PASS"
+    },
+    {
+      "ci_log_run_sequence": 59,
+      "archive_file": "data/yale_hq_scans/3/0058_29v.jpg",
+      "yale_label": "29v",
+      "canvas_oid": "1006131",
+      "declared_sha256": "1739f36ccfddb9121b2acec4faea712136aeeb4ad5fb2889ba5484549d791503",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:54.3010551Z [59/207] 29v PASS"
+    },
+    {
+      "ci_log_run_sequence": 60,
+      "archive_file": "data/yale_hq_scans/3/0059_30r.jpg",
+      "yale_label": "30r",
+      "canvas_oid": "1006132",
+      "declared_sha256": "df1a0812c502a83e77529d664416c5fec91f23353fd83f75f9d40c12fceb03b6",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:54.4836556Z [60/207] 30r PASS"
+    },
+    {
+      "ci_log_run_sequence": 61,
+      "archive_file": "data/yale_hq_scans/3/0060_30v.jpg",
+      "yale_label": "30v",
+      "canvas_oid": "1006133",
+      "declared_sha256": "d6eed32377c25b7c13b88e83cb6981a9d16b5dcbe3c433b7611c4e0105cb0035",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:54.6442452Z [61/207] 30v PASS"
+    },
+    {
+      "ci_log_run_sequence": 62,
+      "archive_file": "data/yale_hq_scans/3/0061_31r.jpg",
+      "yale_label": "31r",
+      "canvas_oid": "1006134",
+      "declared_sha256": "3968b083d7346a556796d60e97a9ea66a4bb911fa1d085cfa046e9e0b37edc64",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:54.8282758Z [62/207] 31r PASS"
+    },
+    {
+      "ci_log_run_sequence": 63,
+      "archive_file": "data/yale_hq_scans/3/0062_31v.jpg",
+      "yale_label": "31v",
+      "canvas_oid": "1006135",
+      "declared_sha256": "666bd3a13edd196866270ff7d8034b8c65695139087cd4ae0da6fdfa31133921",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:55.0506660Z [63/207] 31v PASS"
+    },
+    {
+      "ci_log_run_sequence": 64,
+      "archive_file": "data/yale_hq_scans/3/0063_32r.jpg",
+      "yale_label": "32r",
+      "canvas_oid": "1006136",
+      "declared_sha256": "fd6f925e17822b61b6339a768dff769f29b132ed6cb0ccb7efee616a1d4db26b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:55.2458704Z [64/207] 32r PASS"
+    },
+    {
+      "ci_log_run_sequence": 65,
+      "archive_file": "data/yale_hq_scans/3/0064_32v.jpg",
+      "yale_label": "32v",
+      "canvas_oid": "1006137",
+      "declared_sha256": "e664856322574dcfb8bcf225a9d880ce28ab6d65bf6236e47624ae05c7d3764b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:55.4277415Z [65/207] 32v PASS"
+    },
+    {
+      "ci_log_run_sequence": 66,
+      "archive_file": "data/yale_hq_scans/3/0065_33r.jpg",
+      "yale_label": "33r",
+      "canvas_oid": "1006138",
+      "declared_sha256": "28e6d9f02b9ca96b85275b7c6dd6e94453d3a2f5c6038d9966933d0229da9e74",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:55.5999899Z [66/207] 33r PASS"
+    },
+    {
+      "ci_log_run_sequence": 67,
+      "archive_file": "data/yale_hq_scans/3/0066_33v.jpg",
+      "yale_label": "33v",
+      "canvas_oid": "1006139",
+      "declared_sha256": "41b148c40e9cf73c63044c5415d3c2bbeebffc20153a36762f35e8134da42941",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:55.7878178Z [67/207] 33v PASS"
+    },
+    {
+      "ci_log_run_sequence": 68,
+      "archive_file": "data/yale_hq_scans/4/0067_34r.jpg",
+      "yale_label": "34r",
+      "canvas_oid": "1006140",
+      "declared_sha256": "4108828356258d68d2b53ef29d484f0648c269ecc4984781248e7803ba51e353",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:55.9617124Z [68/207] 34r PASS"
+    },
+    {
+      "ci_log_run_sequence": 69,
+      "archive_file": "data/yale_hq_scans/4/0068_34v.jpg",
+      "yale_label": "34v",
+      "canvas_oid": "1006141",
+      "declared_sha256": "2f68183982075a405f7e2cc11ea06b76b263f80f20f01083279e7f03dcb4f78a",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:56.1750874Z [69/207] 34v PASS"
+    },
+    {
+      "ci_log_run_sequence": 70,
+      "archive_file": "data/yale_hq_scans/4/0069_35r.jpg",
+      "yale_label": "35r",
+      "canvas_oid": "1006142",
+      "declared_sha256": "d190cd19497ea5e59b702d3abaf8513b3b706b79f16cd24947b5615efa455d71",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:56.3495782Z [70/207] 35r PASS"
+    },
+    {
+      "ci_log_run_sequence": 71,
+      "archive_file": "data/yale_hq_scans/4/0070_35v.jpg",
+      "yale_label": "35v",
+      "canvas_oid": "1006143",
+      "declared_sha256": "564412e99b04406f51afe2c8f9ab20320518b3e71b91deee48fb16ee1ad3ffbd",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:56.5274062Z [71/207] 35v PASS"
+    },
+    {
+      "ci_log_run_sequence": 72,
+      "archive_file": "data/yale_hq_scans/4/0071_36r.jpg",
+      "yale_label": "36r",
+      "canvas_oid": "1006144",
+      "declared_sha256": "807e9b5aa1ea72b90c39f71c5ae1cfa4aa0c303b4dd889340c2814f1cff62da2",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:56.6948347Z [72/207] 36r PASS"
+    },
+    {
+      "ci_log_run_sequence": 73,
+      "archive_file": "data/yale_hq_scans/4/0072_36v.jpg",
+      "yale_label": "36v",
+      "canvas_oid": "1006145",
+      "declared_sha256": "fbbf69e740ae7a922f7e4f6cff836004827df15ab917eb6bcc43430a5c89edc2",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:56.8800730Z [73/207] 36v PASS"
+    },
+    {
+      "ci_log_run_sequence": 74,
+      "archive_file": "data/yale_hq_scans/4/0073_37r.jpg",
+      "yale_label": "37r",
+      "canvas_oid": "1006146",
+      "declared_sha256": "4daf7373cfed96fcd9e3d6cb6a9a50cf413e27cc93cf507fee17bee93d8f6d28",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:57.0740141Z [74/207] 37r PASS"
+    },
+    {
+      "ci_log_run_sequence": 75,
+      "archive_file": "data/yale_hq_scans/4/0074_37v.jpg",
+      "yale_label": "37v",
+      "canvas_oid": "1006147",
+      "declared_sha256": "56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:57.2453526Z [75/207] 37v PASS"
+    },
+    {
+      "ci_log_run_sequence": 76,
+      "archive_file": "data/yale_hq_scans/4/0075_38r.jpg",
+      "yale_label": "38r",
+      "canvas_oid": "1006148",
+      "declared_sha256": "9e4ea17ac6b9b184dae0a423bea8feab3eab48eb203dddcf786b3201e6e76b2a",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:57.4052760Z [76/207] 38r PASS"
+    },
+    {
+      "ci_log_run_sequence": 77,
+      "archive_file": "data/yale_hq_scans/4/0076_38v.jpg",
+      "yale_label": "38v",
+      "canvas_oid": "1006149",
+      "declared_sha256": "4a24360ad6ad267cbc3f8cc3b50a5b84e332b8d2bb655e85683e8b5de2768161",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:57.5723667Z [77/207] 38v PASS"
+    },
+    {
+      "ci_log_run_sequence": 78,
+      "archive_file": "data/yale_hq_scans/4/0077_39r.jpg",
+      "yale_label": "39r",
+      "canvas_oid": "1006150",
+      "declared_sha256": "c86b9bc0182e1385136465d92ce9c43f31320bfab55d7b2e87e1ea81a7330bf0",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:57.7342675Z [78/207] 39r PASS"
+    },
+    {
+      "ci_log_run_sequence": 79,
+      "archive_file": "data/yale_hq_scans/4/0078_39v.jpg",
+      "yale_label": "39v",
+      "canvas_oid": "1006151",
+      "declared_sha256": "13cafc785fd69c7471bc670480becc6338cf20682e1d196c2ef14f03abee8586",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:57.9404700Z [79/207] 39v PASS"
+    },
+    {
+      "ci_log_run_sequence": 80,
+      "archive_file": "data/yale_hq_scans/4/0079_40r.jpg",
+      "yale_label": "40r",
+      "canvas_oid": "1006152",
+      "declared_sha256": "540cff9e3a031c5de5ba9d5c7e388cd50980b0d225a1f89b97bda2c6f0de60b7",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:58.1045962Z [80/207] 40r PASS"
+    },
+    {
+      "ci_log_run_sequence": 81,
+      "archive_file": "data/yale_hq_scans/4/0080_40v.jpg",
+      "yale_label": "40v",
+      "canvas_oid": "1006153",
+      "declared_sha256": "bce0c42319b096126ad9fe0558ecfb8a61335867cbd1869e0865eaacf54c1087",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:58.2589126Z [81/207] 40v PASS"
+    },
+    {
+      "ci_log_run_sequence": 82,
+      "archive_file": "data/yale_hq_scans/4/0081_41r.jpg",
+      "yale_label": "41r",
+      "canvas_oid": "1006154",
+      "declared_sha256": "7631b874dbb3e2f48ade864485a0210cb207f2c7878181e458582beba86877ba",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:58.4241444Z [82/207] 41r PASS"
+    },
+    {
+      "ci_log_run_sequence": 83,
+      "archive_file": "data/yale_hq_scans/4/0082_41v.jpg",
+      "yale_label": "41v",
+      "canvas_oid": "1006155",
+      "declared_sha256": "bc753d5f30cfcbd5ad6479bb16205652d55b94da16fcbba1d78574674e3743ea",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:58.5947759Z [83/207] 41v PASS"
+    },
+    {
+      "ci_log_run_sequence": 84,
+      "archive_file": "data/yale_hq_scans/4/0083_42r.jpg",
+      "yale_label": "42r",
+      "canvas_oid": "1006156",
+      "declared_sha256": "5e86508e3ecdb425b791fdcba0305f51cdf9a78182d082055a3da0b55012660a",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:58.7574503Z [84/207] 42r PASS"
+    },
+    {
+      "ci_log_run_sequence": 85,
+      "archive_file": "data/yale_hq_scans/4/0084_42v.jpg",
+      "yale_label": "42v",
+      "canvas_oid": "1006157",
+      "declared_sha256": "bd2a7f2bbaf4c789d51f239248d81c151f4fc1c9f5ab6f51c148646a9d301f66",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:58.9406841Z [85/207] 42v PASS"
+    },
+    {
+      "ci_log_run_sequence": 86,
+      "archive_file": "data/yale_hq_scans/4/0085_43r.jpg",
+      "yale_label": "43r",
+      "canvas_oid": "1006158",
+      "declared_sha256": "cf92565c8f400c987e59359d77c297fc52afc2f6996bd60e5421cbc1074a4bd2",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:59.1086602Z [86/207] 43r PASS"
+    },
+    {
+      "ci_log_run_sequence": 87,
+      "archive_file": "data/yale_hq_scans/4/0086_43v.jpg",
+      "yale_label": "43v",
+      "canvas_oid": "1006159",
+      "declared_sha256": "13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:59.3280352Z [87/207] 43v PASS"
+    },
+    {
+      "ci_log_run_sequence": 88,
+      "archive_file": "data/yale_hq_scans/4/0087_44r.jpg",
+      "yale_label": "44r",
+      "canvas_oid": "1006160",
+      "declared_sha256": "f9cd059bb34057bf9635a1d1443cafd3b358cdb64ec0c5e1ff73bfc091da0eb3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:59.4832173Z [88/207] 44r PASS"
+    },
+    {
+      "ci_log_run_sequence": 89,
+      "archive_file": "data/yale_hq_scans/4/0088_44v.jpg",
+      "yale_label": "44v",
+      "canvas_oid": "1006161",
+      "declared_sha256": "dd57f4055f9c933913cf550f76b2786cdeeeeea74fd9641c55f148903e4cd3db",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:59.6639742Z [89/207] 44v PASS"
+    },
+    {
+      "ci_log_run_sequence": 90,
+      "archive_file": "data/yale_hq_scans/5/0089_45r.jpg",
+      "yale_label": "45r",
+      "canvas_oid": "1006162",
+      "declared_sha256": "32afa9bda4154db2e3236081b0d7603dfc34bf11b1844a5084881b764dafe4f8",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:59.8191760Z [90/207] 45r PASS"
+    },
+    {
+      "ci_log_run_sequence": 91,
+      "archive_file": "data/yale_hq_scans/5/0090_45v.jpg",
+      "yale_label": "45v",
+      "canvas_oid": "1006163",
+      "declared_sha256": "f49fcf1b8abb327483cdf272104a0dc628f31394a413908c866eb0094bd2d224",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:49:59.9851105Z [91/207] 45v PASS"
+    },
+    {
+      "ci_log_run_sequence": 92,
+      "archive_file": "data/yale_hq_scans/5/0091_46r.jpg",
+      "yale_label": "46r",
+      "canvas_oid": "1006164",
+      "declared_sha256": "bc11de34e89d67f2b61c63473c3273256aa45d3d6beac4195c95625c07422740",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:00.2012091Z [92/207] 46r PASS"
+    },
+    {
+      "ci_log_run_sequence": 93,
+      "archive_file": "data/yale_hq_scans/5/0092_46v.jpg",
+      "yale_label": "46v",
+      "canvas_oid": "1006165",
+      "declared_sha256": "bee511bff7d50d8ef83a70b598e1c2d8733cd1e6ad72b070f7fbd4e2171cb0ec",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:00.4015109Z [93/207] 46v PASS"
+    },
+    {
+      "ci_log_run_sequence": 94,
+      "archive_file": "data/yale_hq_scans/5/0093_47r.jpg",
+      "yale_label": "47r",
+      "canvas_oid": "1006166",
+      "declared_sha256": "5a0a7f262b1fbccb44cd7e6ae69097476b92ff38f4124a50532a79e4f2619033",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:00.5758751Z [94/207] 47r PASS"
+    },
+    {
+      "ci_log_run_sequence": 95,
+      "archive_file": "data/yale_hq_scans/5/0094_47v.jpg",
+      "yale_label": "47v",
+      "canvas_oid": "1006167",
+      "declared_sha256": "bcdae68e9bf1f172ad100b598b3189a2eff85cb7b67a151f7bb4a44f1f56f94e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:00.7415996Z [95/207] 47v PASS"
+    },
+    {
+      "ci_log_run_sequence": 96,
+      "archive_file": "data/yale_hq_scans/5/0095_48r.jpg",
+      "yale_label": "48r",
+      "canvas_oid": "1006168",
+      "declared_sha256": "f34ccbd6fbb72b5a469ca16b1b07ded862be76e01e0dcf9133940ffdd10c672e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:00.9226314Z [96/207] 48r PASS"
+    },
+    {
+      "ci_log_run_sequence": 97,
+      "archive_file": "data/yale_hq_scans/5/0096_48v.jpg",
+      "yale_label": "48v",
+      "canvas_oid": "1006169",
+      "declared_sha256": "c0ecc85912878c5c27ad64d560dd088e703ea95e68a87aaecb112a4aabcbe516",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:01.0902425Z [97/207] 48v PASS"
+    },
+    {
+      "ci_log_run_sequence": 98,
+      "archive_file": "data/yale_hq_scans/5/0097_49r.jpg",
+      "yale_label": "49r",
+      "canvas_oid": "1006170",
+      "declared_sha256": "c125a5ffc5121e31e07dbaebd4515d6375e2f71feff312690dc943e62e0d8d56",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:01.2740914Z [98/207] 49r PASS"
+    },
+    {
+      "ci_log_run_sequence": 99,
+      "archive_file": "data/yale_hq_scans/5/0098_49v.jpg",
+      "yale_label": "49v",
+      "canvas_oid": "1006171",
+      "declared_sha256": "3c03e0e8b3d3e75f93ba7a7619a029b7ffbe33d7243f32222ad59ac7555dfd96",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:01.4624439Z [99/207] 49v PASS"
+    },
+    {
+      "ci_log_run_sequence": 100,
+      "archive_file": "data/yale_hq_scans/5/0099_50r.jpg",
+      "yale_label": "50r",
+      "canvas_oid": "1006172",
+      "declared_sha256": "a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:01.6262770Z [100/207] 50r PASS"
+    },
+    {
+      "ci_log_run_sequence": 101,
+      "archive_file": "data/yale_hq_scans/5/0100_50v.jpg",
+      "yale_label": "50v",
+      "canvas_oid": "1006173",
+      "declared_sha256": "bbd4d60e069704fdfe91394ac07387022341c6cf08eb7d6d2160a34ea5b7677d",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:01.7990421Z [101/207] 50v PASS"
+    },
+    {
+      "ci_log_run_sequence": 102,
+      "archive_file": "data/yale_hq_scans/5/0101_51r.jpg",
+      "yale_label": "51r",
+      "canvas_oid": "1006174",
+      "declared_sha256": "d3335f9fe15abe0d4473e881f411f658fe7a4db70fcb03c13dad8a2f49cf6cc1",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:01.9775248Z [102/207] 51r PASS"
+    },
+    {
+      "ci_log_run_sequence": 103,
+      "archive_file": "data/yale_hq_scans/5/0102_51v.jpg",
+      "yale_label": "51v",
+      "canvas_oid": "1006175",
+      "declared_sha256": "7e794abb1dfddce9f2cee013a7f1aaec880b86e884ae17298354863b0108734e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:02.1563828Z [103/207] 51v PASS"
+    },
+    {
+      "ci_log_run_sequence": 104,
+      "archive_file": "data/yale_hq_scans/5/0103_52r.jpg",
+      "yale_label": "52r",
+      "canvas_oid": "1006176",
+      "declared_sha256": "002748147666ab2ec1d81be186248a7a9b58e001a8b61a53498b8d7f49193206",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:02.3680910Z [104/207] 52r PASS"
+    },
+    {
+      "ci_log_run_sequence": 105,
+      "archive_file": "data/yale_hq_scans/5/0104_52v.jpg",
+      "yale_label": "52v",
+      "canvas_oid": "1006177",
+      "declared_sha256": "9792c5070fa339a220781439d0b8864d48b2e2dc071cd051b24e501d565ddb39",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:02.5365372Z [105/207] 52v PASS"
+    },
+    {
+      "ci_log_run_sequence": 106,
+      "archive_file": "data/yale_hq_scans/5/0105_53r.jpg",
+      "yale_label": "53r",
+      "canvas_oid": "1006178",
+      "declared_sha256": "a415de024d9cf57a8a607c764d9a8d038803dcaabda8a77f7325645fa0c73f89",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:02.7462111Z [106/207] 53r PASS"
+    },
+    {
+      "ci_log_run_sequence": 107,
+      "archive_file": "data/yale_hq_scans/5/0106_53v.jpg",
+      "yale_label": "53v",
+      "canvas_oid": "1006179",
+      "declared_sha256": "717481f74b5552c603f38ec3b2ae4de2f447320e18d3aaf368a8ccd211e1df11",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:02.9212627Z [107/207] 53v PASS"
+    },
+    {
+      "ci_log_run_sequence": 108,
+      "archive_file": "data/yale_hq_scans/5/0107_54r.jpg",
+      "yale_label": "54r",
+      "canvas_oid": "1006180",
+      "declared_sha256": "471b393530cf2f80116e8bcfb9712b43e991db175b919e594a1587cca21f2eaa",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:03.1661625Z [108/207] 54r PASS"
+    },
+    {
+      "ci_log_run_sequence": 109,
+      "archive_file": "data/yale_hq_scans/5/0108_54v.jpg",
+      "yale_label": "54v",
+      "canvas_oid": "1006181",
+      "declared_sha256": "97c02cfada6ad1c2450bdac0e345cddc4d4788570813b84ac65ccdcd360dbc13",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:03.3208032Z [109/207] 54v PASS"
+    },
+    {
+      "ci_log_run_sequence": 110,
+      "archive_file": "data/yale_hq_scans/5/0109_55r.jpg",
+      "yale_label": "55r",
+      "canvas_oid": "1006182",
+      "declared_sha256": "24e4b496a7e198a6bcd8d98044112d45418c157f2f2a54fdf997e01de6d53126",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:03.4729597Z [110/207] 55r PASS"
+    },
+    {
+      "ci_log_run_sequence": 111,
+      "archive_file": "data/yale_hq_scans/5/0110_55v.jpg",
+      "yale_label": "55v",
+      "canvas_oid": "1006183",
+      "declared_sha256": "0e9b1dac025cad189bc7258f41fb8cafc6fcff70f9c4e5bb4f85c9bb79ad5a80",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:03.6363747Z [111/207] 55v PASS"
+    },
+    {
+      "ci_log_run_sequence": 112,
+      "archive_file": "data/yale_hq_scans/6/0111_56r.jpg",
+      "yale_label": "56r",
+      "canvas_oid": "1006184",
+      "declared_sha256": "d81272aa14671b1b6672fe7556c15ac177c734685d9ef7448237a2cc08dc899d",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:03.8062855Z [112/207] 56r PASS"
+    },
+    {
+      "ci_log_run_sequence": 113,
+      "archive_file": "data/yale_hq_scans/6/0112_56v.jpg",
+      "yale_label": "56v",
+      "canvas_oid": "1006185",
+      "declared_sha256": "d92ba733bf53dc49e8d81df2d1873d5f36c52f98cf67292ea43e66a844a61cc9",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:03.9907507Z [113/207] 56v PASS"
+    },
+    {
+      "ci_log_run_sequence": 114,
+      "archive_file": "data/yale_hq_scans/6/0113_57r.jpg",
+      "yale_label": "57r",
+      "canvas_oid": "1006186",
+      "declared_sha256": "473727b2ea1dd000a4a15eaa57302a48c410d4f6e670abdd607cd7c7461ff98c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:04.1606174Z [114/207] 57r PASS"
+    },
+    {
+      "ci_log_run_sequence": 115,
+      "archive_file": "data/yale_hq_scans/6/0114_57v.jpg",
+      "yale_label": "57v",
+      "canvas_oid": "1006187",
+      "declared_sha256": "2bf46dbeaaaab4a97075f46f503582da0eef2b352eb92277d7a3b6db1a3a0b8c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:04.3438118Z [115/207] 57v PASS"
+    },
+    {
+      "ci_log_run_sequence": 116,
+      "archive_file": "data/yale_hq_scans/6/0115_58r.jpg",
+      "yale_label": "58r",
+      "canvas_oid": "1006188",
+      "declared_sha256": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:04.5092102Z [116/207] 58r PASS"
+    },
+    {
+      "ci_log_run_sequence": 117,
+      "archive_file": "data/yale_hq_scans/6/0116_58v.jpg",
+      "yale_label": "58v",
+      "canvas_oid": "1006189",
+      "declared_sha256": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:04.6847679Z [117/207] 58v PASS"
+    },
+    {
+      "ci_log_run_sequence": 118,
+      "archive_file": "data/yale_hq_scans/6/0117_65r.jpg",
+      "yale_label": "65r",
+      "canvas_oid": "1006190",
+      "declared_sha256": "dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:04.8485408Z [118/207] 65r PASS"
+    },
+    {
+      "ci_log_run_sequence": 119,
+      "archive_file": "data/yale_hq_scans/6/0118_65v.jpg",
+      "yale_label": "65v",
+      "canvas_oid": "1006191",
+      "declared_sha256": "d3ebd8bfcf12a0a98f9ecc96ee345e82c7cc15d5c786c93c63ccd2f923ea1714",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:05.0317948Z [119/207] 65v PASS"
+    },
+    {
+      "ci_log_run_sequence": 120,
+      "archive_file": "data/yale_hq_scans/6/0119_66r.jpg",
+      "yale_label": "66r",
+      "canvas_oid": "1006192",
+      "declared_sha256": "47d6a239bb7dbdc8d5e1a2238f2e10cf533d8abb409338017761bd3aed0a7554",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:05.1976746Z [120/207] 66r PASS"
+    },
+    {
+      "ci_log_run_sequence": 121,
+      "archive_file": "data/yale_hq_scans/6/0120_66v.jpg",
+      "yale_label": "66v",
+      "canvas_oid": "1006193",
+      "declared_sha256": "8304c6ba3605207c67f4f843974e60e947b423f21255a06656d6af3055fa53ce",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:05.3729580Z [121/207] 66v PASS"
+    },
+    {
+      "ci_log_run_sequence": 122,
+      "archive_file": "data/yale_hq_scans/6/0121_67r.jpg",
+      "yale_label": "67r",
+      "canvas_oid": "1006194",
+      "declared_sha256": "0518312a566ee713a46c9887d8b8b9d7141d14095e360661789c1dad9b5c0d1c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:05.4907049Z [122/207] 67r PASS"
+    },
+    {
+      "ci_log_run_sequence": 123,
+      "archive_file": "data/yale_hq_scans/6/0122_67v.jpg",
+      "yale_label": "67v",
+      "canvas_oid": "1006195",
+      "declared_sha256": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:05.5925867Z [123/207] 67v PASS"
+    },
+    {
+      "ci_log_run_sequence": 124,
+      "archive_file": "data/yale_hq_scans/6/0123_68r.jpg",
+      "yale_label": "68r",
+      "canvas_oid": "1006196",
+      "declared_sha256": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:05.7374835Z [124/207] 68r PASS"
+    },
+    {
+      "ci_log_run_sequence": 125,
+      "archive_file": "data/yale_hq_scans/6/0124_68v.jpg",
+      "yale_label": "68v",
+      "canvas_oid": "1006197",
+      "declared_sha256": "06d33798cd4f901771b9869078d3f29f7e7ef5a490a9abc6dd09f3a3adec867f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:05.8400591Z [125/207] 68v PASS"
+    },
+    {
+      "ci_log_run_sequence": 126,
+      "archive_file": "data/yale_hq_scans/6/0125_69r.jpg",
+      "yale_label": "69r",
+      "canvas_oid": "1006198",
+      "declared_sha256": "b830e74480830c0d5e8f7b56025473e051743f9ec50685b6fe316ecd493f0f01",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:06.0072655Z [126/207] 69r PASS"
+    },
+    {
+      "ci_log_run_sequence": 127,
+      "archive_file": "data/yale_hq_scans/8/0126_69v and 70r.jpg",
+      "yale_label": "69v and 70r",
+      "canvas_oid": "1006199",
+      "declared_sha256": "709419c3c6861c216b1746261884e08a38f1b5a2b052ad129e78cdd73697b5e9",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:06.2653163Z [127/207] 69v and 70r PASS"
+    },
+    {
+      "ci_log_run_sequence": 128,
+      "archive_file": "data/yale_hq_scans/8/0127_70v _part_.jpg",
+      "yale_label": "70v (part)",
+      "canvas_oid": "1006200",
+      "declared_sha256": "062ff6a9f14d0c16eb12dc8f6dc480771b7c19746ebdb20302b998e66181ccea",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:06.4824648Z [128/207] 70v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 129,
+      "archive_file": "data/yale_hq_scans/8/0128_70v _part_.jpg",
+      "yale_label": "70v (part)",
+      "canvas_oid": "1006201",
+      "declared_sha256": "c8f24b6be5451aba49eb793784c43cb7fc8341dca8a58ff43fc1eebf4877b60c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:06.6759752Z [129/207] 70v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 130,
+      "archive_file": "data/yale_hq_scans/8/0129_71r.jpg",
+      "yale_label": "71r",
+      "canvas_oid": "1006202",
+      "declared_sha256": "6405841a75a8fa24dd9e5c93ad090ee56bf26c77757f3b1634487e27b509e61b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:06.8580017Z [130/207] 71r PASS"
+    },
+    {
+      "ci_log_run_sequence": 131,
+      "archive_file": "data/yale_hq_scans/8/0130_71v and 72r.jpg",
+      "yale_label": "71v and 72r",
+      "canvas_oid": "1006203",
+      "declared_sha256": "45f7caf4b58744fdcd4928887661b56a135538a5a40a24fea6ca6c5239898269",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:07.0812188Z [131/207] 71v and 72r PASS"
+    },
+    {
+      "ci_log_run_sequence": 132,
+      "archive_file": "data/yale_hq_scans/8/0131_72v _part_.jpg",
+      "yale_label": "72v (part)",
+      "canvas_oid": "1006204",
+      "declared_sha256": "2552b2eafb7948d182e52ec49e96a5d92a774917924aea594fb1ac3af3bfcdc5",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:07.3288390Z [132/207] 72v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 133,
+      "archive_file": "data/yale_hq_scans/8/0132_72v _part_.jpg",
+      "yale_label": "72v (part)",
+      "canvas_oid": "1006205",
+      "declared_sha256": "c0ac0dbc3e4b4a6eb2b8edf26dc762a7f9bf26ac9c385fa6bdc770725622b1e7",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:07.5028226Z [133/207] 72v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 134,
+      "archive_file": "data/yale_hq_scans/8/0133_73r.jpg",
+      "yale_label": "73r",
+      "canvas_oid": "1006206",
+      "declared_sha256": "5bc8e07dbd61cc1f218cfc4449cd527be118aa7884878ec4c8e568e9c2d89bad",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:07.6587973Z [134/207] 73r PASS"
+    },
+    {
+      "ci_log_run_sequence": 135,
+      "archive_file": "data/yale_hq_scans/8/0134_73v.jpg",
+      "yale_label": "73v",
+      "canvas_oid": "1006207",
+      "declared_sha256": "4227e5261bb5986e605ddb4f58fa1526640955d778c06916a1c34734bb431141",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:07.8151167Z [135/207] 73v PASS"
+    },
+    {
+      "ci_log_run_sequence": 136,
+      "archive_file": "data/yale_hq_scans/8/0135_75r.jpg",
+      "yale_label": "75r",
+      "canvas_oid": "1006208",
+      "declared_sha256": "6fd33917722a97ef0c93f905885963332645c1a1c81f60f03a165b12007a7fc3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:07.9883530Z [136/207] 75r PASS"
+    },
+    {
+      "ci_log_run_sequence": 137,
+      "archive_file": "data/yale_hq_scans/8/0136_75v.jpg",
+      "yale_label": "75v",
+      "canvas_oid": "1006209",
+      "declared_sha256": "654edf15a65d1a2bb0d7bb4995f8f6fba1625d5eed847c9b6969d1c44e385a23",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:08.1268032Z [137/207] 75v PASS"
+    },
+    {
+      "ci_log_run_sequence": 138,
+      "archive_file": "data/yale_hq_scans/8/0137_76r.jpg",
+      "yale_label": "76r",
+      "canvas_oid": "1006210",
+      "declared_sha256": "39d264ab4e6fbb9cad1de45b7efedb6f4b9cb497cb587214926fcbaf6590ec68",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:08.3061210Z [138/207] 76r PASS"
+    },
+    {
+      "ci_log_run_sequence": 139,
+      "archive_file": "data/yale_hq_scans/8/0138_76v.jpg",
+      "yale_label": "76v",
+      "canvas_oid": "1006211",
+      "declared_sha256": "affdb2ff70e84ae277d3d30d18b3a468bd4eded393f70514978ad8b0c48df49e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:08.5009365Z [139/207] 76v PASS"
+    },
+    {
+      "ci_log_run_sequence": 140,
+      "archive_file": "data/yale_hq_scans/8/0139_77r.jpg",
+      "yale_label": "77r",
+      "canvas_oid": "1006212",
+      "declared_sha256": "9ad387ccea37cd8a25ce9602817eb19af5105c545a238203715efe454e5b24ad",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:08.6640985Z [140/207] 77r PASS"
+    },
+    {
+      "ci_log_run_sequence": 141,
+      "archive_file": "data/yale_hq_scans/8/0140_77v.jpg",
+      "yale_label": "77v",
+      "canvas_oid": "1006213",
+      "declared_sha256": "e2e2f629753bfe6a9c111d8157ac63cfc4524966cbf367ddaaffece07cffdab2",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:08.8083223Z [141/207] 77v PASS"
+    },
+    {
+      "ci_log_run_sequence": 142,
+      "archive_file": "data/yale_hq_scans/8/0141_78r.jpg",
+      "yale_label": "78r",
+      "canvas_oid": "1006214",
+      "declared_sha256": "0054f691ac8fddcac324fba6b385f8ad578cd0f2f9879d5498a325bab0310893",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:08.9783344Z [142/207] 78r PASS"
+    },
+    {
+      "ci_log_run_sequence": 143,
+      "archive_file": "data/yale_hq_scans/8/0142_78v.jpg",
+      "yale_label": "78v",
+      "canvas_oid": "1006215",
+      "declared_sha256": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:09.1240764Z [143/207] 78v PASS"
+    },
+    {
+      "ci_log_run_sequence": 144,
+      "archive_file": "data/yale_hq_scans/9/0143_79r.jpg",
+      "yale_label": "79r",
+      "canvas_oid": "1006216",
+      "declared_sha256": "a0f51d21267270b55ac69fc947a4a3443e2a32fc263b162c51a27ad9745eb979",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:09.2636196Z [144/207] 79r PASS"
+    },
+    {
+      "ci_log_run_sequence": 145,
+      "archive_file": "data/yale_hq_scans/9/0144_79v.jpg",
+      "yale_label": "79v",
+      "canvas_oid": "1006217",
+      "declared_sha256": "81d647bbc752211d5bf671f7791c59fc8dceaa60e20e7f7a075319b44ed879c1",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:09.4526180Z [145/207] 79v PASS"
+    },
+    {
+      "ci_log_run_sequence": 146,
+      "archive_file": "data/yale_hq_scans/9/0145_80r.jpg",
+      "yale_label": "80r",
+      "canvas_oid": "1006218",
+      "declared_sha256": "81223a0b0aa0a24fe821cf62a9bdf4ac504f222ab3cfcb89fcedd7946bceada0",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:09.6360394Z [146/207] 80r PASS"
+    },
+    {
+      "ci_log_run_sequence": 147,
+      "archive_file": "data/yale_hq_scans/9/0146_80v.jpg",
+      "yale_label": "80v",
+      "canvas_oid": "1006219",
+      "declared_sha256": "29c94fba8ec872eb71faab93fc4a02e09cd4ef31d1b9001bd44f011d141cfb0b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:09.7951258Z [147/207] 80v PASS"
+    },
+    {
+      "ci_log_run_sequence": 148,
+      "archive_file": "data/yale_hq_scans/9/0147_81r.jpg",
+      "yale_label": "81r",
+      "canvas_oid": "1006220",
+      "declared_sha256": "e5e83f606eb9c3089051035f53ea694bcb1dadb5a93ee0064019c903ec6802fe",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:09.9683714Z [148/207] 81r PASS"
+    },
+    {
+      "ci_log_run_sequence": 149,
+      "archive_file": "data/yale_hq_scans/9/0148_81v.jpg",
+      "yale_label": "81v",
+      "canvas_oid": "1006221",
+      "declared_sha256": "bb1a2316e7fc2966f5761f591d79339c75dcfbc6c2c9ab2b88a37e800266d4bf",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:10.1295294Z [149/207] 81v PASS"
+    },
+    {
+      "ci_log_run_sequence": 150,
+      "archive_file": "data/yale_hq_scans/9/0149_82r.jpg",
+      "yale_label": "82r",
+      "canvas_oid": "1006222",
+      "declared_sha256": "269cb42307824ab82764f80009429e58d98c649371d8efe10d2a1f54132a21ef",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:10.2963985Z [150/207] 82r PASS"
+    },
+    {
+      "ci_log_run_sequence": 151,
+      "archive_file": "data/yale_hq_scans/9/0150_82v.jpg",
+      "yale_label": "82v",
+      "canvas_oid": "1006223",
+      "declared_sha256": "4c86853e2d6e62690ec0106dcc3812c95f009022b06e7edfd347386728003142",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:10.4670582Z [151/207] 82v PASS"
+    },
+    {
+      "ci_log_run_sequence": 152,
+      "archive_file": "data/yale_hq_scans/9/0151_83r.jpg",
+      "yale_label": "83r",
+      "canvas_oid": "1006224",
+      "declared_sha256": "dc353557586906cbe4210f503cc57af58599a3948517fb45b1d222760be96729",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:10.6561717Z [152/207] 83r PASS"
+    },
+    {
+      "ci_log_run_sequence": 153,
+      "archive_file": "data/yale_hq_scans/9/0152_83v.jpg",
+      "yale_label": "83v",
+      "canvas_oid": "1006225",
+      "declared_sha256": "dc4610b14efc89e3eded3b887b28b95f8c98a07adb4bed6d83a10e37daf0c7e9",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:10.8374190Z [153/207] 83v PASS"
+    },
+    {
+      "ci_log_run_sequence": 154,
+      "archive_file": "data/yale_hq_scans/9/0153_84r.jpg",
+      "yale_label": "84r",
+      "canvas_oid": "1006226",
+      "declared_sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:10.9939565Z [154/207] 84r PASS"
+    },
+    {
+      "ci_log_run_sequence": 155,
+      "archive_file": "data/yale_hq_scans/9/0154_84v.jpg",
+      "yale_label": "84v",
+      "canvas_oid": "1006227",
+      "declared_sha256": "e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:11.1479811Z [155/207] 84v PASS"
+    },
+    {
+      "ci_log_run_sequence": 156,
+      "archive_file": "data/yale_hq_scans/9/0155_85r _part_ _part of 85-86 foldout_.jpg",
+      "yale_label": "85r (part) (part of 85-86 foldout)",
+      "canvas_oid": "1006228",
+      "declared_sha256": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:11.2426032Z [156/207] 85r (part) (part of 85-86 foldout) PASS"
+    },
+    {
+      "ci_log_run_sequence": 157,
+      "archive_file": "data/yale_hq_scans/9/0156_85r _part_ 86v _part_ _part of 85-86 foldout_.jpg",
+      "yale_label": "85r (part) 86v (part) (part of 85-86 foldout)",
+      "canvas_oid": "1006229",
+      "declared_sha256": "dde619e85e35601b9206051389873f6cb092a17f04a8fcd02b32fe3961ea37ce",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:11.4083656Z [157/207] 85r (part) 86v (part) (part of 85-86 foldout) PASS"
+    },
+    {
+      "ci_log_run_sequence": 158,
+      "archive_file": "data/yale_hq_scans/9/0157_86v _part_ _part of 85-86 foldout_.jpg",
+      "yale_label": "86v (part) (part of 85-86 foldout)",
+      "canvas_oid": "1006230",
+      "declared_sha256": "4c5f7642e7da2be07242968faa92a2d0bb1cb88e8589d30f5d2acbfc3cc7e0be",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:11.5566318Z [158/207] 86v (part) (part of 85-86 foldout) PASS"
+    },
+    {
+      "ci_log_run_sequence": 159,
+      "archive_file": "data/yale_hq_scans/10/0158_85v and 86r _foldout_.jpg",
+      "yale_label": "85v and 86r (foldout)",
+      "canvas_oid": "1006231",
+      "declared_sha256": "4b08afeee514691b0a511099ca299aed544d6fd1782b7dee8df163dfc06354ed",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:11.7683555Z [159/207] 85v and 86r (foldout) PASS"
+    },
+    {
+      "ci_log_run_sequence": 160,
+      "archive_file": "data/yale_hq_scans/10/0159_87r.jpg",
+      "yale_label": "87r",
+      "canvas_oid": "1006232",
+      "declared_sha256": "eb9c7020f670d4d9070a4d37130db9e250b9b4ecf33ab34ffb0596512fa53a6c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:11.9523611Z [160/207] 87r PASS"
+    },
+    {
+      "ci_log_run_sequence": 161,
+      "archive_file": "data/yale_hq_scans/10/0160_87v.jpg",
+      "yale_label": "87v",
+      "canvas_oid": "1043429",
+      "declared_sha256": "3bac9e01c7bd848fa947b4877d1166f8e9f38822c7bd209e9574a88f6cb181c0",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:12.1298539Z [161/207] 87v PASS"
+    },
+    {
+      "ci_log_run_sequence": 162,
+      "archive_file": "data/yale_hq_scans/10/0161_88r.jpg",
+      "yale_label": "88r",
+      "canvas_oid": "1037112",
+      "declared_sha256": "a1d21ccad0df430b47f3b3df2829bbefb8c4d1644cb70310e6d1de4b01c20013",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:12.2790903Z [162/207] 88r PASS"
+    },
+    {
+      "ci_log_run_sequence": 163,
+      "archive_file": "data/yale_hq_scans/10/0162_88v and 89r.jpg",
+      "yale_label": "88v and 89r",
+      "canvas_oid": "1006233",
+      "declared_sha256": "3b553c70d0c068cb39a276d391127165c5d9d868ec08e7f5eb2e73b32bb95d1e",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:12.5492631Z [163/207] 88v and 89r PASS"
+    },
+    {
+      "ci_log_run_sequence": 164,
+      "archive_file": "data/yale_hq_scans/10/0163_89v _part_.jpg",
+      "yale_label": "89v (part)",
+      "canvas_oid": "1006234",
+      "declared_sha256": "b6b0dd8ba7cd316f3b09a8b156d1eed0eb36ad8ec9086b975969f4f8f7dd5406",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:12.7175928Z [164/207] 89v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 165,
+      "archive_file": "data/yale_hq_scans/10/0164_89v _part_ and 90r.jpg",
+      "yale_label": "89v (part) and 90r",
+      "canvas_oid": "1006235",
+      "declared_sha256": "6aaa777945f288a8ba206921709292eaaf4ea972f9a0bb59cdf3040aaed3e15a",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:12.9512712Z [165/207] 89v (part) and 90r PASS"
+    },
+    {
+      "ci_log_run_sequence": 166,
+      "archive_file": "data/yale_hq_scans/10/0165_90r.jpg",
+      "yale_label": "90r",
+      "canvas_oid": "1006236",
+      "declared_sha256": "f315895bc403e9b78bdda4d207789ed7b5a38654a47715e4571fdfc140c619c6",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:13.1345055Z [166/207] 90r PASS"
+    },
+    {
+      "ci_log_run_sequence": 167,
+      "archive_file": "data/yale_hq_scans/10/0166_90v _part_.jpg",
+      "yale_label": "90v (part)",
+      "canvas_oid": "1006237",
+      "declared_sha256": "4fe01cc0f7c1424c62cdd0fbd83092ab928493b908970b05eb112ab9d91a7793",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:13.3000313Z [167/207] 90v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 168,
+      "archive_file": "data/yale_hq_scans/10/0167_93r.jpg",
+      "yale_label": "93r",
+      "canvas_oid": "1006238",
+      "declared_sha256": "e8ab4d7dcf7d758e2f0e05f9579ef5366a846c273f309ae603616a5e74bbec3a",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:13.4634807Z [168/207] 93r PASS"
+    },
+    {
+      "ci_log_run_sequence": 169,
+      "archive_file": "data/yale_hq_scans/10/0168_93v.jpg",
+      "yale_label": "93v",
+      "canvas_oid": "1006239",
+      "declared_sha256": "ed9a4f5e3c4be33611749ce05c303aa7553c5cf3523882d87d05c7aac86e0e32",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:13.6331197Z [169/207] 93v PASS"
+    },
+    {
+      "ci_log_run_sequence": 170,
+      "archive_file": "data/yale_hq_scans/10/0169_94r.jpg",
+      "yale_label": "94r",
+      "canvas_oid": "1006240",
+      "declared_sha256": "ad33592ad7f29a6e9fc6b9e45444286231f06a903d95b54d1195b17cfdca417b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:13.7969610Z [170/207] 94r PASS"
+    },
+    {
+      "ci_log_run_sequence": 171,
+      "archive_file": "data/yale_hq_scans/10/0170_94v and 95r.jpg",
+      "yale_label": "94v and 95r",
+      "canvas_oid": "1006241",
+      "declared_sha256": "04405b1d121a3c73571bad7f5b887b8cf3776a829ee6482e8a82ca095918071d",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:14.0693080Z [171/207] 94v and 95r PASS"
+    },
+    {
+      "ci_log_run_sequence": 172,
+      "archive_file": "data/yale_hq_scans/10/0171_95v _part_.jpg",
+      "yale_label": "95v (part)",
+      "canvas_oid": "1006242",
+      "declared_sha256": "9cdbb63ffcc2b43314bf5b9d812e59f1c0f0ce17c811270bc977a1ae71e7a960",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:14.2172014Z [172/207] 95v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 173,
+      "archive_file": "data/yale_hq_scans/10/0172_95v.jpg",
+      "yale_label": "95v",
+      "canvas_oid": "1006243",
+      "declared_sha256": "e9f7a4ceb162f393086b1f0be4d5c11edf4d72b8e8ea3420fdb13d8ff58efb51",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:14.4078178Z [173/207] 95v PASS"
+    },
+    {
+      "ci_log_run_sequence": 174,
+      "archive_file": "data/yale_hq_scans/10/0173_96r.jpg",
+      "yale_label": "96r",
+      "canvas_oid": "1006244",
+      "declared_sha256": "3feb9d44f6498e7dc085dd9f3eee9a5f29db941d2d401accd54948d5fae3b613",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:14.5524132Z [174/207] 96r PASS"
+    },
+    {
+      "ci_log_run_sequence": 175,
+      "archive_file": "data/yale_hq_scans/10/0174_96v.jpg",
+      "yale_label": "96v",
+      "canvas_oid": "1006245",
+      "declared_sha256": "7aad14a896b53ddc78f3c7239d358389f215654c26fd9db7dfc43329439c1f15",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:14.7111704Z [175/207] 96v PASS"
+    },
+    {
+      "ci_log_run_sequence": 176,
+      "archive_file": "data/yale_hq_scans/10/0175_99r.jpg",
+      "yale_label": "99r",
+      "canvas_oid": "1006246",
+      "declared_sha256": "f17eba5496a1b1d92f589c33ee9be256a379ec8d2bba3da1ebe2ff5a2e3e2901",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:14.9018069Z [176/207] 99r PASS"
+    },
+    {
+      "ci_log_run_sequence": 177,
+      "archive_file": "data/yale_hq_scans/10/0176_99v.jpg",
+      "yale_label": "99v",
+      "canvas_oid": "1006247",
+      "declared_sha256": "111f6dfc34b8ecb9230cb5a0d144afef4cbd788048ddda2f440108941c91d5e5",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:15.0662146Z [177/207] 99v PASS"
+    },
+    {
+      "ci_log_run_sequence": 178,
+      "archive_file": "data/yale_hq_scans/10/0177_100r.jpg",
+      "yale_label": "100r",
+      "canvas_oid": "1006248",
+      "declared_sha256": "6dcf72a0d7eac14da2232987c9cc1521e6d70c9f0f92d3eb39b55fc075520429",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:15.2521536Z [178/207] 100r PASS"
+    },
+    {
+      "ci_log_run_sequence": 179,
+      "archive_file": "data/yale_hq_scans/10/0178_100v and 101r.jpg",
+      "yale_label": "100v and 101r",
+      "canvas_oid": "1006249",
+      "declared_sha256": "72637b9770f40f7a8ff6b96a551e64775e88994ae69bafec0b43d48974364c33",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:15.5377510Z [179/207] 100v and 101r PASS"
+    },
+    {
+      "ci_log_run_sequence": 180,
+      "archive_file": "data/yale_hq_scans/10/0179_101v _part_.jpg",
+      "yale_label": "101v (part)",
+      "canvas_oid": "1006250",
+      "declared_sha256": "1122f1b13afdf1509402334816f95e5e9baa2b6c94aa9e347b04aa2e4e54f36b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:15.7347421Z [180/207] 101v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 181,
+      "archive_file": "data/yale_hq_scans/10/0180_101v _part_ and 102r.jpg",
+      "yale_label": "101v (part) and 102r",
+      "canvas_oid": "1006251",
+      "declared_sha256": "30fd529fc6bf8999d5be48024ee6a1676af55e8d66dc0a4f77993fe2565e9d94",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:16.0018617Z [181/207] 101v (part) and 102r PASS"
+    },
+    {
+      "ci_log_run_sequence": 182,
+      "archive_file": "data/yale_hq_scans/10/0181_102v _part_.jpg",
+      "yale_label": "102v (part)",
+      "canvas_oid": "1006252",
+      "declared_sha256": "8cdb1030d805b968932146124915cb0d86f7abf853167ffec028b59599820fad",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:16.1668497Z [182/207] 102v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 183,
+      "archive_file": "data/yale_hq_scans/10/0182_102v _part_.jpg",
+      "yale_label": "102v (part)",
+      "canvas_oid": "1006253",
+      "declared_sha256": "e3ed770ad77b1c1127b8e60b2ee2d9e226ab4089d4861b85dbf22299925397ce",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:16.3097375Z [183/207] 102v (part) PASS"
+    },
+    {
+      "ci_log_run_sequence": 184,
+      "archive_file": "data/yale_hq_scans/10/0183_103r.jpg",
+      "yale_label": "103r",
+      "canvas_oid": "1006254",
+      "declared_sha256": "28a65644ebf9a16dc41c073e6535117d924765fae6af474dbd1e3fe2b167beda",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:16.4672570Z [184/207] 103r PASS"
+    },
+    {
+      "ci_log_run_sequence": 185,
+      "archive_file": "data/yale_hq_scans/10/0184_103v.jpg",
+      "yale_label": "103v",
+      "canvas_oid": "1006255",
+      "declared_sha256": "dd2444928b8dd5d1e60fbd58e04e4be38ed877f9d491058a7c6b779ceb18a75b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:16.6619034Z [185/207] 103v PASS"
+    },
+    {
+      "ci_log_run_sequence": 186,
+      "archive_file": "data/yale_hq_scans/10/0185_104r.jpg",
+      "yale_label": "104r",
+      "canvas_oid": "1006256",
+      "declared_sha256": "2ee5f2a32ed2e242d60dcb34398c9b8be6af0341872a476e3905f1314ebe716f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:16.9315286Z [186/207] 104r PASS"
+    },
+    {
+      "ci_log_run_sequence": 187,
+      "archive_file": "data/yale_hq_scans/10/0186_104v.jpg",
+      "yale_label": "104v",
+      "canvas_oid": "1006257",
+      "declared_sha256": "c6caadfdcdcc2afb0351ecb3b9f94cdc8c61be0cf005aa16d16aea024e336ccd",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:17.0805691Z [187/207] 104v PASS"
+    },
+    {
+      "ci_log_run_sequence": 188,
+      "archive_file": "data/yale_hq_scans/10/0187_105r.jpg",
+      "yale_label": "105r",
+      "canvas_oid": "1006258",
+      "declared_sha256": "0401750e6d83ed74cd4fea79f99c2aba5e2c8dcd90ed0f2641be81c7b722e82f",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:17.2546241Z [188/207] 105r PASS"
+    },
+    {
+      "ci_log_run_sequence": 189,
+      "archive_file": "data/yale_hq_scans/11/0188_105v.jpg",
+      "yale_label": "105v",
+      "canvas_oid": "1006259",
+      "declared_sha256": "540787c3d0aa7a13c1cc620fe222a13d0b2409eaa69e19de56d2544cfdf3c678",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:17.4304193Z [189/207] 105v PASS"
+    },
+    {
+      "ci_log_run_sequence": 190,
+      "archive_file": "data/yale_hq_scans/11/0189_106r.jpg",
+      "yale_label": "106r",
+      "canvas_oid": "1006260",
+      "declared_sha256": "1aad6bd53b227df51ba6f9b19812558a8b4f4313f97dd1a8b272ee4c60fefb31",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:17.5900918Z [190/207] 106r PASS"
+    },
+    {
+      "ci_log_run_sequence": 191,
+      "archive_file": "data/yale_hq_scans/11/0190_106v.jpg",
+      "yale_label": "106v",
+      "canvas_oid": "1006261",
+      "declared_sha256": "41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:17.7761379Z [191/207] 106v PASS"
+    },
+    {
+      "ci_log_run_sequence": 192,
+      "archive_file": "data/yale_hq_scans/11/0191_107r.jpg",
+      "yale_label": "107r",
+      "canvas_oid": "1006262",
+      "declared_sha256": "eb97d7b784be55eaa92781031d3ccefc3e37f9eda41314a9ed996e711a041a58",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:17.9344512Z [192/207] 107r PASS"
+    },
+    {
+      "ci_log_run_sequence": 193,
+      "archive_file": "data/yale_hq_scans/11/0192_107v.jpg",
+      "yale_label": "107v",
+      "canvas_oid": "1006263",
+      "declared_sha256": "46316d4cb82f2ccdd1c8d414ee99ad60f72d6154c28b888d00c484245d75704c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:18.0935237Z [193/207] 107v PASS"
+    },
+    {
+      "ci_log_run_sequence": 194,
+      "archive_file": "data/yale_hq_scans/11/0193_108r.jpg",
+      "yale_label": "108r",
+      "canvas_oid": "1006264",
+      "declared_sha256": "afad28189500567259ef2041cd1c591644bf6d6c86ac6a39cd1c09503693ad76",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:18.2793152Z [194/207] 108r PASS"
+    },
+    {
+      "ci_log_run_sequence": 195,
+      "archive_file": "data/yale_hq_scans/11/0194_108v.jpg",
+      "yale_label": "108v",
+      "canvas_oid": "1006265",
+      "declared_sha256": "df3fce237ad489c5fcdc1c8dab2a5b21b7c338bc3b88ca588cc79434f9499a7b",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:18.4383347Z [195/207] 108v PASS"
+    },
+    {
+      "ci_log_run_sequence": 196,
+      "archive_file": "data/yale_hq_scans/11/0195_111r.jpg",
+      "yale_label": "111r",
+      "canvas_oid": "1006266",
+      "declared_sha256": "12ea5325dcdc68d0ea9480bb369d1d95b4dc3accd1ff0d9b84beea8827cfdf31",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:18.6288840Z [196/207] 111r PASS"
+    },
+    {
+      "ci_log_run_sequence": 197,
+      "archive_file": "data/yale_hq_scans/11/0196_111v.jpg",
+      "yale_label": "111v",
+      "canvas_oid": "1006267",
+      "declared_sha256": "00729a36de336f57b387fc364441057b31b4bc51f6c5e915352d9185121cbcbf",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:18.7991643Z [197/207] 111v PASS"
+    },
+    {
+      "ci_log_run_sequence": 198,
+      "archive_file": "data/yale_hq_scans/11/0197_112r.jpg",
+      "yale_label": "112r",
+      "canvas_oid": "1006268",
+      "declared_sha256": "f59b3420ff3fdbe6f360c12993304a12b11acdef1a2978784efcd77541c0d9b3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:19.0046936Z [198/207] 112r PASS"
+    },
+    {
+      "ci_log_run_sequence": 199,
+      "archive_file": "data/yale_hq_scans/11/0198_112v.jpg",
+      "yale_label": "112v",
+      "canvas_oid": "1006269",
+      "declared_sha256": "c421f574928c767cada83c01295370c078b66234610d262e286079a7a5a4cc1a",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:19.1560254Z [199/207] 112v PASS"
+    },
+    {
+      "ci_log_run_sequence": 200,
+      "archive_file": "data/yale_hq_scans/11/0199_113r.jpg",
+      "yale_label": "113r",
+      "canvas_oid": "1006270",
+      "declared_sha256": "ad748f9012b174be520b7ac837fdadf913e49a696323920ca655ecf5474afb5c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:19.3067968Z [200/207] 113r PASS"
+    },
+    {
+      "ci_log_run_sequence": 201,
+      "archive_file": "data/yale_hq_scans/11/0200_113v.jpg",
+      "yale_label": "113v",
+      "canvas_oid": "1006271",
+      "declared_sha256": "d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:19.5066297Z [201/207] 113v PASS"
+    },
+    {
+      "ci_log_run_sequence": 202,
+      "archive_file": "data/yale_hq_scans/11/0201_114r.jpg",
+      "yale_label": "114r",
+      "canvas_oid": "1006272",
+      "declared_sha256": "fc76cfcb2e6f8911b3928c59772c9c4eca7854dd2a260bec81972f78b883aa37",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:19.6643650Z [202/207] 114r PASS"
+    },
+    {
+      "ci_log_run_sequence": 203,
+      "archive_file": "data/yale_hq_scans/11/0202_114v.jpg",
+      "yale_label": "114v",
+      "canvas_oid": "1006273",
+      "declared_sha256": "159d08488392d651c1818e825d3defce83187ad6997610d179dbfe76be30e4e3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:19.8203434Z [203/207] 114v PASS"
+    },
+    {
+      "ci_log_run_sequence": 204,
+      "archive_file": "data/yale_hq_scans/11/0203_115r.jpg",
+      "yale_label": "115r",
+      "canvas_oid": "1006274",
+      "declared_sha256": "6de34408de10afa401805534c691341824f0660e054d836f9be5e8620cb17668",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:19.9808453Z [204/207] 115r PASS"
+    },
+    {
+      "ci_log_run_sequence": 205,
+      "archive_file": "data/yale_hq_scans/11/0204_115v.jpg",
+      "yale_label": "115v",
+      "canvas_oid": "1006275",
+      "declared_sha256": "5700486404459fe1abfc11f6347aa0171bd651e39bcf71d594beecfb170ed8a3",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:20.1628145Z [205/207] 115v PASS"
+    },
+    {
+      "ci_log_run_sequence": 206,
+      "archive_file": "data/yale_hq_scans/11/0205_116r.jpg",
+      "yale_label": "116r",
+      "canvas_oid": "1006276",
+      "declared_sha256": "4451503bbcbf9f9ab541c65c630bd37bfb06991c708abf29b2ad184ee09ac20c",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:20.3383299Z [206/207] 116r PASS"
+    },
+    {
+      "ci_log_run_sequence": 207,
+      "archive_file": "data/yale_hq_scans/11/0206_116v.jpg",
+      "yale_label": "116v",
+      "canvas_oid": "1006277",
+      "declared_sha256": "0f2e8691a66f255159b28f3fc2984633016f96c30c6d4d89cff6396708e5bb17",
+      "verification": "PASS_RECOMPUTED_SHA256_AND_SIZE_AND_JPEG_DIMENSIONS_IF_AVAILABLE",
+      "ci_log_line": "2026-10-09T00:50:20.4933058Z [207/207] 116v PASS"
+    }
+  ],
+  "manuscript_geometry_status": "DIRECT_VISUAL_REVIEW_PENDING",
+  "O2_original_order": "UNKNOWN",
+  "science_status": "INCONCLUSIVE_NOT_RUN"
+}
