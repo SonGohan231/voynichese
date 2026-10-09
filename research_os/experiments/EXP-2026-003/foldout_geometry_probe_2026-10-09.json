@@ -1,0 +1,6572 @@
+{
+  "schema": "exp-2026-003/foldout-geometry-exploratory-v1",
+  "generated_at_utc": "2026-10-09T04:14:52.607585+00:00",
+  "status": "IMAGE_GEOMETRY_EXPLORATORY_NO_PHYSICAL_VERIFICATION",
+  "images_expected": 8,
+  "images_successful": 8,
+  "images_failed": 0,
+  "sources": [
+    {
+      "canvas_oid": "1006194",
+      "native_size_pixels": [
+        4972,
+        3738
+      ],
+      "working_size_pixels": [
+        1800,
+        1353
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.214667,
+            0.011234
+          ],
+          "radius_fraction_of_minimum_axis": 0.274767,
+          "box_xywh": [
+            0.008133,
+            0.0,
+            0.413067,
+            0.286001
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:0.0,0.0,43.507,30.8/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.075111,
+            0.024242
+          ],
+          "radius_fraction_of_minimum_axis": 0.250052,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.263067,
+            0.274294
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:0.0,0.0,28.507,29.629/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.746222,
+            0.034885
+          ],
+          "radius_fraction_of_minimum_axis": 0.074205,
+          "box_xywh": [
+            0.690444,
+            0.0,
+            0.111556,
+            0.109091
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:67.944,0.0,13.356,13.109/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.448444,
+            0.070362
+          ],
+          "radius_fraction_of_minimum_axis": 0.259157,
+          "box_xywh": [
+            0.253644,
+            0.0,
+            0.3896,
+            0.32952
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:24.264,0.0,41.16,35.152/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.905333,
+            0.091648
+          ],
+          "radius_fraction_of_minimum_axis": 0.093718,
+          "box_xywh": [
+            0.834889,
+            0.0,
+            0.140889,
+            0.185366
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:82.389,0.0,16.289,20.737/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.320444,
+            0.146046
+          ],
+          "radius_fraction_of_minimum_axis": 0.126474,
+          "box_xywh": [
+            0.225378,
+            0.019571,
+            0.190133,
+            0.252949
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:21.438,0.857,21.213,27.495/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.593333,
+            0.222912
+          ],
+          "radius_fraction_of_minimum_axis": 0.283873,
+          "box_xywh": [
+            0.379956,
+            0.0,
+            0.426756,
+            0.506785
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:36.896,0.0,44.876,52.879/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.825333,
+            0.243016
+          ],
+          "radius_fraction_of_minimum_axis": 0.209727,
+          "box_xywh": [
+            0.667689,
+            0.033289,
+            0.315289,
+            0.419453
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:65.669,2.229,33.729,44.145/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.191556,
+            0.259571
+          ],
+          "radius_fraction_of_minimum_axis": 0.233141,
+          "box_xywh": [
+            0.016311,
+            0.02643,
+            0.350489,
+            0.466282
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:0.531,1.543,37.249,48.828/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.460889,
+            0.283222
+          ],
+          "radius_fraction_of_minimum_axis": 0.268263,
+          "box_xywh": [
+            0.259244,
+            0.014959,
+            0.403289,
+            0.536526
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:24.824,0.396,42.529,55.853/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.004,
+            0.305691
+          ],
+          "radius_fraction_of_minimum_axis": 0.27867,
+          "box_xywh": [
+            0.0,
+            0.027021,
+            0.213467,
+            0.557339
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:0.0,1.602,23.547,57.934/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.325778,
+            0.34235
+          ],
+          "radius_fraction_of_minimum_axis": 0.106962,
+          "box_xywh": [
+            0.245378,
+            0.235388,
+            0.1608,
+            0.213925
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:23.438,22.439,18.28,23.593/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.723111,
+            0.38374
+          ],
+          "radius_fraction_of_minimum_axis": 0.266962,
+          "box_xywh": [
+            0.522444,
+            0.116778,
+            0.401333,
+            0.533925
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:51.144,10.578,42.333,55.593/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.902667,
+            0.402661
+          ],
+          "radius_fraction_of_minimum_axis": 0.102942,
+          "box_xywh": [
+            0.825289,
+            0.299719,
+            0.154756,
+            0.205883
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:81.429,28.872,17.676,22.788/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.047556,
+            0.481892
+          ],
+          "radius_fraction_of_minimum_axis": 0.27867,
+          "box_xywh": [
+            0.0,
+            0.203222,
+            0.257022,
+            0.557339
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:0.0,19.222,27.902,57.934/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.259111,
+            0.509091
+          ],
+          "radius_fraction_of_minimum_axis": 0.248751,
+          "box_xywh": [
+            0.072133,
+            0.26034,
+            0.373956,
+            0.497502
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:6.113,24.934,39.596,51.95/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.626222,
+            0.544568
+          ],
+          "radius_fraction_of_minimum_axis": 0.243548,
+          "box_xywh": [
+            0.443156,
+            0.30102,
+            0.366133,
+            0.487095
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:43.216,29.002,38.813,50.91/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.487556,
+            0.562306
+          ],
+          "radius_fraction_of_minimum_axis": 0.283873,
+          "box_xywh": [
+            0.274178,
+            0.278433,
+            0.426756,
+            0.567746
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:26.318,26.743,44.876,58.975/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.822667,
+            0.577679
+          ],
+          "radius_fraction_of_minimum_axis": 0.211027,
+          "box_xywh": [
+            0.664044,
+            0.366652,
+            0.317244,
+            0.422055
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:65.304,35.565,33.924,44.406/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.942667,
+            0.677014
+          ],
+          "radius_fraction_of_minimum_axis": 0.07929,
+          "box_xywh": [
+            0.883067,
+            0.597724,
+            0.116933,
+            0.158581
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:87.207,58.672,12.793,18.058/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.389778,
+            0.712491
+          ],
+          "radius_fraction_of_minimum_axis": 0.265661,
+          "box_xywh": [
+            0.190089,
+            0.446829,
+            0.399378,
+            0.531323
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:17.909,43.583,42.138,55.332/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.106222,
+            0.713673
+          ],
+          "radius_fraction_of_minimum_axis": 0.266962,
+          "box_xywh": [
+            0.0,
+            0.446711,
+            0.306889,
+            0.533925
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:0.0,43.571,32.889,55.593/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.578222,
+            0.719586
+          ],
+          "radius_fraction_of_minimum_axis": 0.252653,
+          "box_xywh": [
+            0.388311,
+            0.466933,
+            0.379822,
+            0.505307
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:37.731,45.593,40.182,52.731/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.782667,
+            0.783444
+          ],
+          "radius_fraction_of_minimum_axis": 0.257857,
+          "box_xywh": [
+            0.588844,
+            0.525588,
+            0.387644,
+            0.474412
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:57.784,51.459,40.964,48.541/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.229778,
+            0.805913
+          ],
+          "radius_fraction_of_minimum_axis": 0.277369,
+          "box_xywh": [
+            0.021289,
+            0.528544,
+            0.416978,
+            0.471456
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:1.029,51.754,43.898,48.246/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.482222,
+            0.859128
+          ],
+          "radius_fraction_of_minimum_axis": 0.283873,
+          "box_xywh": [
+            0.268844,
+            0.575255,
+            0.426756,
+            0.424745
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:25.784,56.425,44.876,43.575/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.919556,
+            0.869771
+          ],
+          "radius_fraction_of_minimum_axis": 0.120089,
+          "box_xywh": [
+            0.829289,
+            0.749682,
+            0.170711,
+            0.240177
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:81.829,73.868,18.171,26.132/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.079556,
+            0.895787
+          ],
+          "radius_fraction_of_minimum_axis": 0.07799,
+          "box_xywh": [
+            0.020933,
+            0.817797,
+            0.117244,
+            0.155979
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:0.993,80.68,13.924,17.798/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.66,
+            0.900517
+          ],
+          "radius_fraction_of_minimum_axis": 0.167864,
+          "box_xywh": [
+            0.533822,
+            0.732653,
+            0.252356,
+            0.267347
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:52.282,72.165,27.436,27.835/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.303556,
+            0.975019
+          ],
+          "radius_fraction_of_minimum_axis": 0.19932,
+          "box_xywh": [
+            0.153733,
+            0.775699,
+            0.299644,
+            0.224301
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006194/pct:14.273,76.47,32.164,23.53/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.557778,
+            0.756837
+          ],
+          "end_xy": [
+            0.976667,
+            0.756837
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.418889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.558333,
+            0.756098
+          ],
+          "end_xy": [
+            0.976667,
+            0.756098
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.418333,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.551667,
+            0.757576
+          ],
+          "end_xy": [
+            0.961111,
+            0.757576
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.409444,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.596111,
+            0.755358
+          ],
+          "end_xy": [
+            0.976667,
+            0.755358
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.380556,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.550556,
+            0.759054
+          ],
+          "end_xy": [
+            0.907778,
+            0.759054
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.357222,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.551111,
+            0.758315
+          ],
+          "end_xy": [
+            0.908333,
+            0.758315
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.357222,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.034444,
+            0.81153
+          ],
+          "end_xy": [
+            0.034444,
+            0.476718
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.251667,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.322222,
+            0.021434
+          ],
+          "end_xy": [
+            0.536111,
+            0.011826
+          ],
+          "angle_deg_mod_180": 178.07,
+          "length_fraction_of_long_axis": 0.214011,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.135556,
+            0.164819
+          ],
+          "end_xy": [
+            0.322222,
+            0.160384
+          ],
+          "angle_deg_mod_180": 178.98,
+          "length_fraction_of_long_axis": 0.186696,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.550556,
+            0.759793
+          ],
+          "end_xy": [
+            0.737222,
+            0.759793
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.186667,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.550556,
+            0.760532
+          ],
+          "end_xy": [
+            0.730556,
+            0.760532
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.18,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.02,
+            0.569106
+          ],
+          "end_xy": [
+            0.022778,
+            0.77901
+          ],
+          "angle_deg_mod_180": 88.99,
+          "length_fraction_of_long_axis": 0.157802,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.266667,
+            0.022912
+          ],
+          "end_xy": [
+            0.423333,
+            0.01626
+          ],
+          "angle_deg_mod_180": 178.17,
+          "length_fraction_of_long_axis": 0.156746,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.172778,
+            0.165558
+          ],
+          "end_xy": [
+            0.321111,
+            0.162602
+          ],
+          "angle_deg_mod_180": 179.14,
+          "length_fraction_of_long_axis": 0.14835,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.291667,
+            0.12269
+          ],
+          "end_xy": [
+            0.43,
+            0.12269
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.138333,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.713889,
+            0.754619
+          ],
+          "end_xy": [
+            0.851111,
+            0.754619
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.137222,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.295,
+            0.123429
+          ],
+          "end_xy": [
+            0.431111,
+            0.126386
+          ],
+          "angle_deg_mod_180": 0.94,
+          "length_fraction_of_long_axis": 0.136129,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.018333,
+            0.40946
+          ],
+          "end_xy": [
+            0.020556,
+            0.585366
+          ],
+          "angle_deg_mod_180": 89.04,
+          "length_fraction_of_long_axis": 0.132241,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.113889,
+            0.189948
+          ],
+          "end_xy": [
+            0.245,
+            0.184035
+          ],
+          "angle_deg_mod_180": 178.06,
+          "length_fraction_of_long_axis": 0.131186,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.114444,
+            0.190687
+          ],
+          "end_xy": [
+            0.245,
+            0.184775
+          ],
+          "angle_deg_mod_180": 178.05,
+          "length_fraction_of_long_axis": 0.130631,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.05,
+            0.525499
+          ],
+          "end_xy": [
+            0.173333,
+            0.49963
+          ],
+          "angle_deg_mod_180": 171.04,
+          "length_fraction_of_long_axis": 0.124857,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.037707,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.01106,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.035278,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.01086,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 30,
+      "total_straight_line_candidates": 21,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/6/0121_67r.jpg",
+      "source_sha256_verified": "0518312a566ee713a46c9887d8b8b9d7141d14095e360661789c1dad9b5c0d1c",
+      "yale_original_label": "67r"
+    },
+    {
+      "canvas_oid": "1006195",
+      "native_size_pixels": [
+        5059,
+        3753
+      ],
+      "working_size_pixels": [
+        1800,
+        1335
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.748,
+            0.062921
+          ],
+          "radius_fraction_of_minimum_axis": 0.283955,
+          "box_xywh": [
+            0.5374,
+            0.0,
+            0.4212,
+            0.346876
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:52.64,0.0,44.32,36.888/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.495556,
+            0.094082
+          ],
+          "radius_fraction_of_minimum_axis": 0.072899,
+          "box_xywh": [
+            0.441489,
+            0.021184,
+            0.108133,
+            0.145798
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:43.049,1.018,13.013,16.78/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.860889,
+            0.177978
+          ],
+          "radius_fraction_of_minimum_axis": 0.157393,
+          "box_xywh": [
+            0.744156,
+            0.020584,
+            0.233467,
+            0.314787
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:73.316,0.958,25.547,33.679/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.335556,
+            0.20794
+          ],
+          "radius_fraction_of_minimum_axis": 0.183401,
+          "box_xywh": [
+            0.199533,
+            0.024539,
+            0.272044,
+            0.366802
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:18.853,1.354,29.404,38.88/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.185333,
+            0.224719
+          ],
+          "radius_fraction_of_minimum_axis": 0.207131,
+          "box_xywh": [
+            0.031711,
+            0.017588,
+            0.307244,
+            0.414262
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:2.071,0.659,32.924,43.626/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.600444,
+            0.225918
+          ],
+          "radius_fraction_of_minimum_axis": 0.206172,
+          "box_xywh": [
+            0.447533,
+            0.019745,
+            0.305822,
+            0.412345
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:43.653,0.874,32.782,43.435/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.996,
+            0.230712
+          ],
+          "radius_fraction_of_minimum_axis": 0.204734,
+          "box_xywh": [
+            0.844156,
+            0.025978,
+            0.155844,
+            0.409468
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:83.316,1.498,16.684,43.147/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.462667,
+            0.301423
+          ],
+          "radius_fraction_of_minimum_axis": 0.278682,
+          "box_xywh": [
+            0.255978,
+            0.022742,
+            0.413378,
+            0.557363
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:24.498,1.174,43.538,57.936/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.746222,
+            0.352959
+          ],
+          "radius_fraction_of_minimum_axis": 0.270772,
+          "box_xywh": [
+            0.5454,
+            0.082187,
+            0.401644,
+            0.541543
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:53.44,7.119,42.364,56.354/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.880444,
+            0.440449
+          ],
+          "radius_fraction_of_minimum_axis": 0.12839,
+          "box_xywh": [
+            0.785222,
+            0.31206,
+            0.190444,
+            0.256779
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:77.422,30.106,21.244,27.878/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.204,
+            0.44764
+          ],
+          "radius_fraction_of_minimum_axis": 0.241768,
+          "box_xywh": [
+            0.024689,
+            0.205873,
+            0.358622,
+            0.483536
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:1.369,19.487,38.062,50.554/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.445778,
+            0.485993
+          ],
+          "radius_fraction_of_minimum_axis": 0.244405,
+          "box_xywh": [
+            0.264511,
+            0.241588,
+            0.362533,
+            0.488809
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:25.351,23.059,38.453,51.081/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.608444,
+            0.502772
+          ],
+          "radius_fraction_of_minimum_axis": 0.138936,
+          "box_xywh": [
+            0.5054,
+            0.363835,
+            0.206089,
+            0.277873
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:49.44,35.284,22.809,29.987/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.764889,
+            0.543521
+          ],
+          "radius_fraction_of_minimum_axis": 0.186397,
+          "box_xywh": [
+            0.626644,
+            0.357124,
+            0.276489,
+            0.372794
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:61.564,34.612,29.849,39.479/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.903556,
+            0.62382
+          ],
+          "radius_fraction_of_minimum_axis": 0.100704,
+          "box_xywh": [
+            0.828867,
+            0.523116,
+            0.149378,
+            0.201408
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:81.787,51.212,17.138,22.341/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.066222,
+            0.659775
+          ],
+          "radius_fraction_of_minimum_axis": 0.07194,
+          "box_xywh": [
+            0.012867,
+            0.587835,
+            0.106711,
+            0.14388
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:0.187,57.683,12.871,16.588/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.436,
+            0.689738
+          ],
+          "radius_fraction_of_minimum_axis": 0.283955,
+          "box_xywh": [
+            0.2254,
+            0.405783,
+            0.4212,
+            0.56791
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:21.44,39.478,44.32,58.991/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.656444,
+            0.702921
+          ],
+          "radius_fraction_of_minimum_axis": 0.283955,
+          "box_xywh": [
+            0.445844,
+            0.418966,
+            0.4212,
+            0.56791
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:43.484,40.797,44.32,58.991/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.240444,
+            0.717303
+          ],
+          "radius_fraction_of_minimum_axis": 0.236015,
+          "box_xywh": [
+            0.0654,
+            0.481288,
+            0.350089,
+            0.47203
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:5.44,47.029,37.209,49.403/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.811111,
+            0.76764
+          ],
+          "radius_fraction_of_minimum_axis": 0.208809,
+          "box_xywh": [
+            0.656244,
+            0.558831,
+            0.309733,
+            0.417618
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:64.524,54.783,33.173,43.962/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.921333,
+            0.879101
+          ],
+          "radius_fraction_of_minimum_axis": 0.088719,
+          "box_xywh": [
+            0.855533,
+            0.790382,
+            0.1316,
+            0.177438
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:84.453,77.938,15.36,19.944/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.7,
+            0.885094
+          ],
+          "radius_fraction_of_minimum_axis": 0.101783,
+          "box_xywh": [
+            0.624511,
+            0.783311,
+            0.150978,
+            0.203566
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006195/pct:61.351,77.231,17.298,22.557/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.617778,
+            0.021723
+          ],
+          "end_xy": [
+            0.791667,
+            0.021723
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.173889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.144444,
+            0.01573
+          ],
+          "end_xy": [
+            0.315,
+            0.02397
+          ],
+          "angle_deg_mod_180": 2.05,
+          "length_fraction_of_long_axis": 0.170665,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.213333,
+            0.958052
+          ],
+          "end_xy": [
+            0.374444,
+            0.954307
+          ],
+          "angle_deg_mod_180": 179.01,
+          "length_fraction_of_long_axis": 0.161135,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.786667,
+            0.974532
+          ],
+          "end_xy": [
+            0.939444,
+            0.9603
+          ],
+          "angle_deg_mod_180": 176.05,
+          "length_fraction_of_long_axis": 0.153142,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.016111,
+            0.94382
+          ],
+          "end_xy": [
+            0.021111,
+            0.740075
+          ],
+          "angle_deg_mod_180": 91.9,
+          "length_fraction_of_long_axis": 0.151194,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.961667,
+            0.385019
+          ],
+          "end_xy": [
+            0.964444,
+            0.588015
+          ],
+          "angle_deg_mod_180": 88.94,
+          "length_fraction_of_long_axis": 0.150581,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.800556,
+            0.976779
+          ],
+          "end_xy": [
+            0.926111,
+            0.96779
+          ],
+          "angle_deg_mod_180": 176.96,
+          "length_fraction_of_long_axis": 0.125732,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.96,
+            0.428464
+          ],
+          "end_xy": [
+            0.962222,
+            0.597004
+          ],
+          "angle_deg_mod_180": 88.98,
+          "length_fraction_of_long_axis": 0.12502,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.880556,
+            0.025468
+          ],
+          "end_xy": [
+            0.998889,
+            0.025468
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.118333,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.007209,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.018255,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.00746,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.014536,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 22,
+      "total_straight_line_candidates": 9,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/6/0122_67v.jpg",
+      "source_sha256_verified": "4799e8ebd8d968ea28dae919cfb86065566662b4e77c8b429d12e3e6e685638b",
+      "yale_original_label": "67v"
+    },
+    {
+      "canvas_oid": "1006196",
+      "native_size_pixels": [
+        7993,
+        3828
+      ],
+      "working_size_pixels": [
+        1800,
+        862
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.413778,
+            0.023202
+          ],
+          "radius_fraction_of_minimum_axis": 0.158654,
+          "box_xywh": [
+            0.3378,
+            0.0,
+            0.151956,
+            0.181856
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:32.68,0.0,17.396,20.386/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.263556,
+            0.034339
+          ],
+          "radius_fraction_of_minimum_axis": 0.132668,
+          "box_xywh": [
+            0.200022,
+            0.0,
+            0.127067,
+            0.167007
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:18.902,0.0,14.907,18.901/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.572,
+            0.123434
+          ],
+          "radius_fraction_of_minimum_axis": 0.277077,
+          "box_xywh": [
+            0.439311,
+            0.0,
+            0.265378,
+            0.40051
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:42.831,0.0,28.738,42.251/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.199556,
+            0.162413
+          ],
+          "radius_fraction_of_minimum_axis": 0.182784,
+          "box_xywh": [
+            0.112022,
+            0.0,
+            0.175067,
+            0.345197
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:10.102,0.0,19.707,36.72/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.474222,
+            0.177262
+          ],
+          "radius_fraction_of_minimum_axis": 0.131555,
+          "box_xywh": [
+            0.411222,
+            0.045708,
+            0.126,
+            0.263109
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:40.022,3.471,14.8,28.511/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.668889,
+            0.182831
+          ],
+          "radius_fraction_of_minimum_axis": 0.279118,
+          "box_xywh": [
+            0.535222,
+            0.0,
+            0.267333,
+            0.461949
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:52.422,0.0,28.933,48.395/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.102667,
+            0.19768
+          ],
+          "radius_fraction_of_minimum_axis": 0.182599,
+          "box_xywh": [
+            0.015222,
+            0.015081,
+            0.174889,
+            0.365197
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:0.422,0.408,19.689,38.72/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.359556,
+            0.227378
+          ],
+          "radius_fraction_of_minimum_axis": 0.21174,
+          "box_xywh": [
+            0.258156,
+            0.015638,
+            0.2028,
+            0.42348
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:24.716,0.464,22.48,44.548/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.771111,
+            0.24594
+          ],
+          "radius_fraction_of_minimum_axis": 0.191323,
+          "box_xywh": [
+            0.679489,
+            0.054617,
+            0.183244,
+            0.382645
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:66.849,4.362,20.524,40.465/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.863556,
+            0.299768
+          ],
+          "radius_fraction_of_minimum_axis": 0.248492,
+          "box_xywh": [
+            0.744556,
+            0.051276,
+            0.238,
+            0.496984
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:73.356,4.028,26.0,51.898/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.268889,
+            0.30348
+          ],
+          "radius_fraction_of_minimum_axis": 0.283202,
+          "box_xywh": [
+            0.133267,
+            0.020278,
+            0.271244,
+            0.566404
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:12.227,0.928,29.324,58.84/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.602222,
+            0.323898
+          ],
+          "radius_fraction_of_minimum_axis": 0.277077,
+          "box_xywh": [
+            0.469533,
+            0.046821,
+            0.265378,
+            0.554153
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:45.853,3.582,28.738,57.615/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.430667,
+            0.355452
+          ],
+          "radius_fraction_of_minimum_axis": 0.232158,
+          "box_xywh": [
+            0.319489,
+            0.123295,
+            0.222356,
+            0.464316
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:30.849,11.229,24.436,48.632/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.686667,
+            0.383295
+          ],
+          "radius_fraction_of_minimum_axis": 0.14232,
+          "box_xywh": [
+            0.618511,
+            0.240974,
+            0.136311,
+            0.28464
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:60.751,22.997,15.831,30.664/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.148,
+            0.385151
+          ],
+          "radius_fraction_of_minimum_axis": 0.270951,
+          "box_xywh": [
+            0.018244,
+            0.1142,
+            0.259511,
+            0.541903
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:0.724,10.32,28.151,56.39/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.339111,
+            0.420418
+          ],
+          "radius_fraction_of_minimum_axis": 0.279118,
+          "box_xywh": [
+            0.205444,
+            0.141299,
+            0.267333,
+            0.558237
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:19.444,13.03,28.933,58.024/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.527556,
+            0.433411
+          ],
+          "radius_fraction_of_minimum_axis": 0.283202,
+          "box_xywh": [
+            0.391933,
+            0.150209,
+            0.271244,
+            0.566404
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:38.093,13.921,29.324,58.84/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.884889,
+            0.487239
+          ],
+          "radius_fraction_of_minimum_axis": 0.189281,
+          "box_xywh": [
+            0.794244,
+            0.297958,
+            0.181289,
+            0.378561
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:78.324,28.696,20.329,40.056/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.067111,
+            0.509513
+          ],
+          "radius_fraction_of_minimum_axis": 0.077541,
+          "box_xywh": [
+            0.029978,
+            0.431972,
+            0.074267,
+            0.155081
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:1.898,42.097,9.627,17.708/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.763111,
+            0.509513
+          ],
+          "radius_fraction_of_minimum_axis": 0.26891,
+          "box_xywh": [
+            0.634333,
+            0.240603,
+            0.257556,
+            0.537819
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:62.333,22.96,27.956,55.982/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.258222,
+            0.52993
+          ],
+          "radius_fraction_of_minimum_axis": 0.225847,
+          "box_xywh": [
+            0.150067,
+            0.304084,
+            0.216311,
+            0.451694
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:13.907,29.308,23.831,47.369/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.429778,
+            0.548492
+          ],
+          "radius_fraction_of_minimum_axis": 0.160696,
+          "box_xywh": [
+            0.352822,
+            0.387796,
+            0.153911,
+            0.321392
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:34.182,37.68,17.591,34.339/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.662667,
+            0.572622
+          ],
+          "radius_fraction_of_minimum_axis": 0.138237,
+          "box_xywh": [
+            0.596467,
+            0.434385,
+            0.1324,
+            0.276473
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:58.547,42.339,15.44,29.847/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.179111,
+            0.661717
+          ],
+          "radius_fraction_of_minimum_axis": 0.084408,
+          "box_xywh": [
+            0.138689,
+            0.577309,
+            0.080844,
+            0.168817
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:12.769,56.631,10.284,19.082/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.859111,
+            0.67471
+          ],
+          "radius_fraction_of_minimum_axis": 0.283202,
+          "box_xywh": [
+            0.723489,
+            0.391508,
+            0.271244,
+            0.566404
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:71.249,38.051,28.751,58.84/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.557778,
+            0.683991
+          ],
+          "radius_fraction_of_minimum_axis": 0.272993,
+          "box_xywh": [
+            0.427044,
+            0.410998,
+            0.261467,
+            0.545986
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:41.604,40.0,28.347,56.799/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.092,
+            0.693272
+          ],
+          "radius_fraction_of_minimum_axis": 0.146218,
+          "box_xywh": [
+            0.021978,
+            0.547053,
+            0.140044,
+            0.292436
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:1.098,53.605,16.204,31.444/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.290222,
+            0.711833
+          ],
+          "radius_fraction_of_minimum_axis": 0.264826,
+          "box_xywh": [
+            0.1634,
+            0.447007,
+            0.253644,
+            0.529652
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:15.24,43.601,27.564,55.165/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.399556,
+            0.756381
+          ],
+          "radius_fraction_of_minimum_axis": 0.203202,
+          "box_xywh": [
+            0.302244,
+            0.553179,
+            0.194622,
+            0.406404
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:29.124,54.218,21.662,42.84/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.730222,
+            0.769374
+          ],
+          "radius_fraction_of_minimum_axis": 0.193179,
+          "box_xywh": [
+            0.637711,
+            0.576195,
+            0.185022,
+            0.386357
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:62.671,56.52,20.702,40.836/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.638667,
+            0.776798
+          ],
+          "radius_fraction_of_minimum_axis": 0.178701,
+          "box_xywh": [
+            0.553089,
+            0.598097,
+            0.171156,
+            0.357401
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:54.209,58.71,19.316,37.94/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.144444,
+            0.856613
+          ],
+          "radius_fraction_of_minimum_axis": 0.252575,
+          "box_xywh": [
+            0.023489,
+            0.604037,
+            0.241911,
+            0.395963
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006196/pct:1.249,59.304,26.391,40.696/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.487222,
+            0.047564
+          ],
+          "end_xy": [
+            0.68,
+            0.047564
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.192778,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.971111,
+            0.585847
+          ],
+          "end_xy": [
+            0.983333,
+            0.291183
+          ],
+          "angle_deg_mod_180": 94.95,
+          "length_fraction_of_long_axis": 0.141639,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.337222,
+            0.037123
+          ],
+          "end_xy": [
+            0.47,
+            0.046404
+          ],
+          "angle_deg_mod_180": 1.92,
+          "length_fraction_of_long_axis": 0.132852,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.136667,
+            0.031323
+          ],
+          "end_xy": [
+            0.268333,
+            0.022042
+          ],
+          "angle_deg_mod_180": 178.07,
+          "length_fraction_of_long_axis": 0.131742,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.749444,
+            0.387471
+          ],
+          "end_xy": [
+            0.756667,
+            0.167053
+          ],
+          "angle_deg_mod_180": 93.91,
+          "length_fraction_of_long_axis": 0.105802,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.207778,
+            0.972158
+          ],
+          "end_xy": [
+            0.306667,
+            0.975638
+          ],
+          "angle_deg_mod_180": 0.97,
+          "length_fraction_of_long_axis": 0.098903,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.241667,
+            0.023202
+          ],
+          "end_xy": [
+            0.336667,
+            0.016241
+          ],
+          "angle_deg_mod_180": 177.99,
+          "length_fraction_of_long_axis": 0.095058,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.957778,
+            0.848028
+          ],
+          "end_xy": [
+            0.966111,
+            0.657773
+          ],
+          "angle_deg_mod_180": 95.23,
+          "length_fraction_of_long_axis": 0.091491,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.441667,
+            0.177494
+          ],
+          "end_xy": [
+            0.528333,
+            0.183295
+          ],
+          "angle_deg_mod_180": 1.84,
+          "length_fraction_of_long_axis": 0.086711,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.021111,
+            0.599768
+          ],
+          "end_xy": [
+            0.023889,
+            0.773782
+          ],
+          "angle_deg_mod_180": 88.09,
+          "length_fraction_of_long_axis": 0.08338,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.722778,
+            0.706497
+          ],
+          "end_xy": [
+            0.73,
+            0.535963
+          ],
+          "angle_deg_mod_180": 95.05,
+          "length_fraction_of_long_axis": 0.081985,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.721667,
+            0.701856
+          ],
+          "end_xy": [
+            0.728889,
+            0.535963
+          ],
+          "angle_deg_mod_180": 95.19,
+          "length_fraction_of_long_axis": 0.079772,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.981111,
+            0.359629
+          ],
+          "end_xy": [
+            0.985556,
+            0.193735
+          ],
+          "angle_deg_mod_180": 93.2,
+          "length_fraction_of_long_axis": 0.079569,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.346111,
+            0.140371
+          ],
+          "end_xy": [
+            0.425,
+            0.140371
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.078889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.032778,
+            0.444316
+          ],
+          "end_xy": [
+            0.032778,
+            0.283063
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.077222,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.015019,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.333333,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.020458,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "box_xywh": [
+            0.666667,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.016348,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 32,
+      "total_straight_line_candidates": 15,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/6/0123_68r.jpg",
+      "source_sha256_verified": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+      "yale_original_label": "68r"
+    },
+    {
+      "canvas_oid": "1006197",
+      "native_size_pixels": [
+        8135,
+        3843
+      ],
+      "working_size_pixels": [
+        1800,
+        850
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.579111,
+            0.019765
+          ],
+          "radius_fraction_of_minimum_axis": 0.157271,
+          "box_xywh": [
+            0.504844,
+            0.0,
+            0.148533,
+            0.177035
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:49.384,0.0,17.053,19.903/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.132,
+            0.021647
+          ],
+          "radius_fraction_of_minimum_axis": 0.127718,
+          "box_xywh": [
+            0.071689,
+            0.0,
+            0.120622,
+            0.149365
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:6.069,0.0,14.262,17.137/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.312444,
+            0.021647
+          ],
+          "radius_fraction_of_minimum_axis": 0.126776,
+          "box_xywh": [
+            0.252578,
+            0.0,
+            0.119733,
+            0.148424
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:24.158,0.0,14.173,17.042/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.479556,
+            0.029176
+          ],
+          "radius_fraction_of_minimum_axis": 0.146918,
+          "box_xywh": [
+            0.410178,
+            0.0,
+            0.138756,
+            0.176094
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:39.918,0.0,16.076,19.809/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.054667,
+            0.115765
+          ],
+          "radius_fraction_of_minimum_axis": 0.074635,
+          "box_xywh": [
+            0.019422,
+            0.041129,
+            0.070489,
+            0.149271
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:0.842,3.013,9.249,17.127/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.208444,
+            0.132706
+          ],
+          "radius_fraction_of_minimum_axis": 0.084612,
+          "box_xywh": [
+            0.168489,
+            0.048094,
+            0.079911,
+            0.169224
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:15.749,3.709,10.191,19.122/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.386222,
+            0.134588
+          ],
+          "radius_fraction_of_minimum_axis": 0.242165,
+          "box_xywh": [
+            0.271867,
+            0.0,
+            0.228711,
+            0.376753
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:26.087,0.0,25.071,39.875/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.66,
+            0.153412
+          ],
+          "radius_fraction_of_minimum_axis": 0.279435,
+          "box_xywh": [
+            0.528044,
+            0.0,
+            0.263911,
+            0.432847
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:51.704,0.0,28.591,45.485/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.858222,
+            0.160941
+          ],
+          "radius_fraction_of_minimum_axis": 0.269082,
+          "box_xywh": [
+            0.731156,
+            0.0,
+            0.254133,
+            0.430024
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:72.016,0.0,27.613,45.202/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.283111,
+            0.230588
+          ],
+          "radius_fraction_of_minimum_axis": 0.188329,
+          "box_xywh": [
+            0.194178,
+            0.042259,
+            0.177867,
+            0.376659
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:18.318,3.126,19.987,39.866/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.940889,
+            0.232471
+          ],
+          "radius_fraction_of_minimum_axis": 0.204894,
+          "box_xywh": [
+            0.844133,
+            0.027576,
+            0.155867,
+            0.409788
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:83.313,1.658,16.687,43.179/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.481333,
+            0.24
+          ],
+          "radius_fraction_of_minimum_axis": 0.269082,
+          "box_xywh": [
+            0.354267,
+            0.0,
+            0.254133,
+            0.509082
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:34.327,0.0,27.613,53.108/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.583556,
+            0.264471
+          ],
+          "radius_fraction_of_minimum_axis": 0.175906,
+          "box_xywh": [
+            0.500489,
+            0.088565,
+            0.166133,
+            0.351812
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:48.949,7.757,18.813,37.381/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.749778,
+            0.264471
+          ],
+          "radius_fraction_of_minimum_axis": 0.240094,
+          "box_xywh": [
+            0.6364,
+            0.024376,
+            0.226756,
+            0.480188
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:62.54,1.338,24.876,50.219/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.108,
+            0.300235
+          ],
+          "radius_fraction_of_minimum_axis": 0.1904,
+          "box_xywh": [
+            0.018089,
+            0.109835,
+            0.179822,
+            0.3808
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:0.709,9.883,20.182,40.28/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.205778,
+            0.320941
+          ],
+          "radius_fraction_of_minimum_axis": 0.233882,
+          "box_xywh": [
+            0.095333,
+            0.087059,
+            0.220889,
+            0.467765
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:8.433,7.606,24.289,48.977/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.411111,
+            0.362353
+          ],
+          "radius_fraction_of_minimum_axis": 0.269082,
+          "box_xywh": [
+            0.284044,
+            0.093271,
+            0.254133,
+            0.538165
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:27.304,8.227,27.613,56.017/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.688444,
+            0.4
+          ],
+          "radius_fraction_of_minimum_axis": 0.273224,
+          "box_xywh": [
+            0.559422,
+            0.126776,
+            0.258044,
+            0.546447
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:54.842,11.578,28.004,56.845/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.948,
+            0.426353
+          ],
+          "radius_fraction_of_minimum_axis": 0.188329,
+          "box_xywh": [
+            0.859067,
+            0.238024,
+            0.140933,
+            0.376659
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:84.807,22.702,15.193,39.866/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.557778,
+            0.441412
+          ],
+          "radius_fraction_of_minimum_axis": 0.237459,
+          "box_xywh": [
+            0.445644,
+            0.203953,
+            0.224267,
+            0.474918
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:43.464,19.295,24.627,49.692/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.838667,
+            0.448941
+          ],
+          "radius_fraction_of_minimum_axis": 0.266071,
+          "box_xywh": [
+            0.713022,
+            0.182871,
+            0.251289,
+            0.532141
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:70.202,17.187,27.329,55.414/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.263556,
+            0.469647
+          ],
+          "radius_fraction_of_minimum_axis": 0.180047,
+          "box_xywh": [
+            0.178533,
+            0.2896,
+            0.170044,
+            0.360094
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:16.753,27.86,19.204,38.209/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.084,
+            0.488471
+          ],
+          "radius_fraction_of_minimum_axis": 0.244235,
+          "box_xywh": [
+            0.0,
+            0.244235,
+            0.199333,
+            0.488471
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:0.0,23.323,22.133,51.047/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.350667,
+            0.497882
+          ],
+          "radius_fraction_of_minimum_axis": 0.107576,
+          "box_xywh": [
+            0.299867,
+            0.390306,
+            0.1016,
+            0.215153
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:28.887,37.931,12.36,23.715/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.175556,
+            0.524235
+          ],
+          "radius_fraction_of_minimum_axis": 0.173835,
+          "box_xywh": [
+            0.093467,
+            0.3504,
+            0.164178,
+            0.347671
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:8.247,33.94,18.618,36.967/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.445778,
+            0.586353
+          ],
+          "radius_fraction_of_minimum_axis": 0.275294,
+          "box_xywh": [
+            0.315778,
+            0.311059,
+            0.26,
+            0.550588
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:30.478,30.006,28.2,57.259/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.724889,
+            0.595765
+          ],
+          "radius_fraction_of_minimum_axis": 0.273224,
+          "box_xywh": [
+            0.595867,
+            0.322541,
+            0.258044,
+            0.546447
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:58.487,31.154,28.004,56.845/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.241333,
+            0.648471
+          ],
+          "radius_fraction_of_minimum_axis": 0.148988,
+          "box_xywh": [
+            0.170978,
+            0.499482,
+            0.140711,
+            0.297976
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:15.998,48.848,16.271,31.998/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.850222,
+            0.678588
+          ],
+          "radius_fraction_of_minimum_axis": 0.281506,
+          "box_xywh": [
+            0.717289,
+            0.397082,
+            0.265867,
+            0.563012
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:70.629,38.608,28.787,58.501/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.523111,
+            0.686118
+          ],
+          "radius_fraction_of_minimum_axis": 0.271153,
+          "box_xywh": [
+            0.395067,
+            0.414965,
+            0.256089,
+            0.542306
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:38.407,40.396,27.809,56.431/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.351556,
+            0.688
+          ],
+          "radius_fraction_of_minimum_axis": 0.267012,
+          "box_xywh": [
+            0.225467,
+            0.420988,
+            0.252178,
+            0.534024
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:21.447,40.999,27.418,55.602/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.085778,
+            0.689882
+          ],
+          "radius_fraction_of_minimum_axis": 0.111906,
+          "box_xywh": [
+            0.032933,
+            0.577976,
+            0.105689,
+            0.223812
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006197/pct:2.193,56.698,12.769,24.581/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.105,
+            0.097647
+          ],
+          "end_xy": [
+            0.283889,
+            0.084706
+          ],
+          "angle_deg_mod_180": 178.04,
+          "length_fraction_of_long_axis": 0.178993,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.211667,
+            0.103529
+          ],
+          "end_xy": [
+            0.38,
+            0.109412
+          ],
+          "angle_deg_mod_180": 0.95,
+          "length_fraction_of_long_axis": 0.168356,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.024444,
+            0.547059
+          ],
+          "end_xy": [
+            0.042222,
+            0.856471
+          ],
+          "angle_deg_mod_180": 83.06,
+          "length_fraction_of_long_axis": 0.147189,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.386667,
+            0.044706
+          ],
+          "end_xy": [
+            0.500556,
+            0.044706
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.113889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.018889,
+            0.318824
+          ],
+          "end_xy": [
+            0.025,
+            0.556471
+          ],
+          "angle_deg_mod_180": 86.88,
+          "length_fraction_of_long_axis": 0.112388,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.014444,
+            0.081176
+          ],
+          "end_xy": [
+            0.018333,
+            0.317647
+          ],
+          "angle_deg_mod_180": 88.01,
+          "length_fraction_of_long_axis": 0.111734,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.548889,
+            0.123529
+          ],
+          "end_xy": [
+            0.652778,
+            0.12
+          ],
+          "angle_deg_mod_180": 179.08,
+          "length_fraction_of_long_axis": 0.103902,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.512222,
+            0.138824
+          ],
+          "end_xy": [
+            0.611111,
+            0.138824
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.098889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.593889,
+            0.044706
+          ],
+          "end_xy": [
+            0.688333,
+            0.035294
+          ],
+          "angle_deg_mod_180": 177.31,
+          "length_fraction_of_long_axis": 0.094549,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.183889,
+            0.105882
+          ],
+          "end_xy": [
+            0.272778,
+            0.108235
+          ],
+          "angle_deg_mod_180": 0.72,
+          "length_fraction_of_long_axis": 0.088896,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.777222,
+            0.952941
+          ],
+          "end_xy": [
+            0.863333,
+            0.952941
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.086111,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.802778,
+            0.387059
+          ],
+          "end_xy": [
+            0.887222,
+            0.364706
+          ],
+          "angle_deg_mod_180": 172.87,
+          "length_fraction_of_long_axis": 0.085102,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.785,
+            0.392941
+          ],
+          "end_xy": [
+            0.868889,
+            0.374118
+          ],
+          "angle_deg_mod_180": 173.95,
+          "length_fraction_of_long_axis": 0.084359,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.726111,
+            0.969412
+          ],
+          "end_xy": [
+            0.808333,
+            0.969412
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.082222,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.469444,
+            0.954118
+          ],
+          "end_xy": [
+            0.550556,
+            0.956471
+          ],
+          "angle_deg_mod_180": 0.78,
+          "length_fraction_of_long_axis": 0.081119,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.798333,
+            0.398824
+          ],
+          "end_xy": [
+            0.874444,
+            0.384706
+          ],
+          "angle_deg_mod_180": 174.99,
+          "length_fraction_of_long_axis": 0.076403,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.0338,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.333333,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.03069,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "box_xywh": [
+            0.666667,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.033531,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 32,
+      "total_straight_line_candidates": 16,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/6/0124_68v.jpg",
+      "source_sha256_verified": "06d33798cd4f901771b9869078d3f29f7e7ef5a490a9abc6dd09f3a3adec867f",
+      "yale_original_label": "68v"
+    },
+    {
+      "canvas_oid": "1006228",
+      "native_size_pixels": [
+        2775,
+        3745
+      ],
+      "working_size_pixels": [
+        1334,
+        1800
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.505547,
+            0.056444
+          ],
+          "radius_fraction_of_minimum_axis": 0.282849,
+          "box_xywh": [
+            0.222699,
+            0.0,
+            0.565697,
+            0.266067
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:21.17,0.0,58.77,28.807/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.874963,
+            0.063556
+          ],
+          "radius_fraction_of_minimum_axis": 0.063958,
+          "box_xywh": [
+            0.811005,
+            0.016156,
+            0.127916,
+            0.0948
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:80.001,0.516,14.992,11.68/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.316042,
+            0.072444
+          ],
+          "radius_fraction_of_minimum_axis": 0.255142,
+          "box_xywh": [
+            0.0609,
+            0.0,
+            0.510285,
+            0.261533
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:4.99,0.0,53.229,28.353/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.127736,
+            0.1
+          ],
+          "radius_fraction_of_minimum_axis": 0.102099,
+          "box_xywh": [
+            0.025637,
+            0.024333,
+            0.204198,
+            0.151333
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:1.464,1.333,22.62,17.333/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.735832,
+            0.158667
+          ],
+          "radius_fraction_of_minimum_axis": 0.175982,
+          "box_xywh": [
+            0.55985,
+            0.028244,
+            0.351964,
+            0.260844
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:54.885,1.724,37.396,28.284/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.904948,
+            0.216444
+          ],
+          "radius_fraction_of_minimum_axis": 0.264378,
+          "box_xywh": [
+            0.64057,
+            0.020511,
+            0.35943,
+            0.391867
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:62.957,0.951,37.043,41.387/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.403598,
+            0.229778
+          ],
+          "radius_fraction_of_minimum_axis": 0.281529,
+          "box_xywh": [
+            0.122069,
+            0.021133,
+            0.563059,
+            0.417289
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:11.107,1.013,58.506,43.929/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.090555,
+            0.234222
+          ],
+          "radius_fraction_of_minimum_axis": 0.282849,
+          "box_xywh": [
+            0.0,
+            0.0246,
+            0.373403,
+            0.419244
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:0.0,1.36,39.54,44.124/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.746627,
+            0.307111
+          ],
+          "radius_fraction_of_minimum_axis": 0.201049,
+          "box_xywh": [
+            0.545577,
+            0.158111,
+            0.402099,
+            0.298
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:53.458,14.711,42.41,32.0/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.51994,
+            0.349778
+          ],
+          "radius_fraction_of_minimum_axis": 0.257781,
+          "box_xywh": [
+            0.262159,
+            0.158733,
+            0.515562,
+            0.382089
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:25.116,14.773,53.756,40.409/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.9997,
+            0.351556
+          ],
+          "radius_fraction_of_minimum_axis": 0.092384,
+          "box_xywh": [
+            0.907316,
+            0.283089,
+            0.092684,
+            0.136933
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:89.632,27.209,10.368,15.893/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.307646,
+            0.365778
+          ],
+          "radius_fraction_of_minimum_axis": 0.198411,
+          "box_xywh": [
+            0.109235,
+            0.218733,
+            0.396822,
+            0.294089
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:9.824,20.773,41.882,31.609/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.071364,
+            0.423556
+          ],
+          "radius_fraction_of_minimum_axis": 0.284168,
+          "box_xywh": [
+            0.0,
+            0.212956,
+            0.355532,
+            0.4212
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:0.0,20.196,37.753,44.32/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.693853,
+            0.440444
+          ],
+          "radius_fraction_of_minimum_axis": 0.263058,
+          "box_xywh": [
+            0.430795,
+            0.245489,
+            0.526117,
+            0.389911
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:41.979,23.449,54.812,41.191/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.403598,
+            0.484889
+          ],
+          "radius_fraction_of_minimum_axis": 0.28021,
+          "box_xywh": [
+            0.123388,
+            0.277222,
+            0.56042,
+            0.415333
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:11.239,26.622,58.242,43.733/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.913343,
+            0.487556
+          ],
+          "radius_fraction_of_minimum_axis": 0.28021,
+          "box_xywh": [
+            0.633133,
+            0.279889,
+            0.366867,
+            0.415333
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:62.213,26.889,37.787,43.733/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.004198,
+            0.567556
+          ],
+          "radius_fraction_of_minimum_axis": 0.218201,
+          "box_xywh": [
+            0.0,
+            0.405844,
+            0.222399,
+            0.323422
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:0.0,39.484,24.44,34.542/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.567916,
+            0.570222
+          ],
+          "radius_fraction_of_minimum_axis": 0.198411,
+          "box_xywh": [
+            0.369505,
+            0.423178,
+            0.396822,
+            0.294089
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:35.85,41.218,41.882,31.609/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.258471,
+            0.581778
+          ],
+          "radius_fraction_of_minimum_axis": 0.165427,
+          "box_xywh": [
+            0.093043,
+            0.459178,
+            0.330855,
+            0.2452
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:8.204,44.818,35.286,26.72/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.763418,
+            0.597778
+          ],
+          "radius_fraction_of_minimum_axis": 0.198411,
+          "box_xywh": [
+            0.565008,
+            0.450733,
+            0.396822,
+            0.294089
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:55.401,43.973,41.882,31.609/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.981709,
+            0.629778
+          ],
+          "radius_fraction_of_minimum_axis": 0.092024,
+          "box_xywh": [
+            0.889685,
+            0.561578,
+            0.110315,
+            0.1364
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:87.868,55.058,12.132,15.84/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.425187,
+            0.659111
+          ],
+          "radius_fraction_of_minimum_axis": 0.102099,
+          "box_xywh": [
+            0.323088,
+            0.583444,
+            0.204198,
+            0.151333
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:31.209,57.244,22.62,17.333/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.855772,
+            0.761333
+          ],
+          "radius_fraction_of_minimum_axis": 0.282849,
+          "box_xywh": [
+            0.572924,
+            0.551711,
+            0.427076,
+            0.419244
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:56.192,54.071,43.808,44.124/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.277661,
+            0.775556
+          ],
+          "radius_fraction_of_minimum_axis": 0.284168,
+          "box_xywh": [
+            0.0,
+            0.564956,
+            0.561829,
+            0.4212
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:0.0,55.396,58.383,44.32/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.082159,
+            0.778222
+          ],
+          "radius_fraction_of_minimum_axis": 0.277571,
+          "box_xywh": [
+            0.0,
+            0.572511,
+            0.35973,
+            0.411422
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:0.0,56.151,38.173,43.342/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.645877,
+            0.780889
+          ],
+          "radius_fraction_of_minimum_axis": 0.281529,
+          "box_xywh": [
+            0.364348,
+            0.572244,
+            0.563059,
+            0.417289
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:35.335,56.124,58.506,43.876/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.461169,
+            0.793333
+          ],
+          "radius_fraction_of_minimum_axis": 0.277571,
+          "box_xywh": [
+            0.183598,
+            0.587622,
+            0.555142,
+            0.411422
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:17.26,57.662,57.714,42.338/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.206897,
+            0.901778
+          ],
+          "radius_fraction_of_minimum_axis": 0.113373,
+          "box_xywh": [
+            0.093523,
+            0.817756,
+            0.226747,
+            0.168044
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:8.252,80.676,24.875,19.004/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.69985,
+            0.916
+          ],
+          "radius_fraction_of_minimum_axis": 0.272294,
+          "box_xywh": [
+            0.427556,
+            0.7142,
+            0.544588,
+            0.2858
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:41.656,70.32,56.659,29.68/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.903748,
+            0.916889
+          ],
+          "radius_fraction_of_minimum_axis": 0.069835,
+          "box_xywh": [
+            0.833913,
+            0.865133,
+            0.13967,
+            0.103511
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006228/pct:82.291,85.413,16.167,12.551/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.116942,
+            0.341111
+          ],
+          "end_xy": [
+            0.71964,
+            0.357222
+          ],
+          "angle_deg_mod_180": 2.07,
+          "length_fraction_of_long_axis": 0.446957,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.122189,
+            0.306111
+          ],
+          "end_xy": [
+            0.706897,
+            0.328889
+          ],
+          "angle_deg_mod_180": 3.01,
+          "length_fraction_of_long_axis": 0.433932,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.122939,
+            0.306667
+          ],
+          "end_xy": [
+            0.693403,
+            0.328889
+          ],
+          "angle_deg_mod_180": 3.01,
+          "length_fraction_of_long_axis": 0.423361,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.194903,
+            0.524444
+          ],
+          "end_xy": [
+            0.752624,
+            0.538889
+          ],
+          "angle_deg_mod_180": 2.0,
+          "length_fraction_of_long_axis": 0.413586,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.109445,
+            0.611111
+          ],
+          "end_xy": [
+            0.624438,
+            0.624444
+          ],
+          "angle_deg_mod_180": 2.0,
+          "length_fraction_of_long_axis": 0.381899,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.256372,
+            0.710556
+          ],
+          "end_xy": [
+            0.763868,
+            0.716667
+          ],
+          "angle_deg_mod_180": 0.93,
+          "length_fraction_of_long_axis": 0.376161,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.256372,
+            0.711111
+          ],
+          "end_xy": [
+            0.763118,
+            0.717778
+          ],
+          "angle_deg_mod_180": 1.02,
+          "length_fraction_of_long_axis": 0.375615,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.256372,
+            0.711667
+          ],
+          "end_xy": [
+            0.763118,
+            0.718333
+          ],
+          "angle_deg_mod_180": 1.02,
+          "length_fraction_of_long_axis": 0.375615,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.257121,
+            0.712222
+          ],
+          "end_xy": [
+            0.763118,
+            0.718889
+          ],
+          "angle_deg_mod_180": 1.02,
+          "length_fraction_of_long_axis": 0.375059,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.275112,
+            0.511111
+          ],
+          "end_xy": [
+            0.772864,
+            0.523889
+          ],
+          "angle_deg_mod_180": 1.98,
+          "length_fraction_of_long_axis": 0.36911,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.117691,
+            0.342222
+          ],
+          "end_xy": [
+            0.613193,
+            0.355
+          ],
+          "angle_deg_mod_180": 1.99,
+          "length_fraction_of_long_axis": 0.367444,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.269115,
+            0.712778
+          ],
+          "end_xy": [
+            0.763118,
+            0.719444
+          ],
+          "angle_deg_mod_180": 1.04,
+          "length_fraction_of_long_axis": 0.366172,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.273613,
+            0.511667
+          ],
+          "end_xy": [
+            0.766867,
+            0.524444
+          ],
+          "angle_deg_mod_180": 2.0,
+          "length_fraction_of_long_axis": 0.365779,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.273613,
+            0.512222
+          ],
+          "end_xy": [
+            0.766117,
+            0.525
+          ],
+          "angle_deg_mod_180": 2.0,
+          "length_fraction_of_long_axis": 0.365224,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.266867,
+            0.527222
+          ],
+          "end_xy": [
+            0.751874,
+            0.539444
+          ],
+          "angle_deg_mod_180": 1.95,
+          "length_fraction_of_long_axis": 0.359652,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.296852,
+            0.566667
+          ],
+          "end_xy": [
+            0.766117,
+            0.578333
+          ],
+          "angle_deg_mod_180": 1.92,
+          "length_fraction_of_long_axis": 0.347973,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.958021,
+            0.623333
+          ],
+          "end_xy": [
+            0.973763,
+            0.957778
+          ],
+          "angle_deg_mod_180": 88.0,
+          "length_fraction_of_long_axis": 0.334648,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.296852,
+            0.567778
+          ],
+          "end_xy": [
+            0.744378,
+            0.578889
+          ],
+          "angle_deg_mod_180": 1.92,
+          "length_fraction_of_long_axis": 0.331853,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.116192,
+            0.323889
+          ],
+          "end_xy": [
+            0.561469,
+            0.341111
+          ],
+          "angle_deg_mod_180": 2.99,
+          "length_fraction_of_long_axis": 0.330449,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.326837,
+            0.257222
+          ],
+          "end_xy": [
+            0.76087,
+            0.274444
+          ],
+          "angle_deg_mod_180": 3.06,
+          "length_fraction_of_long_axis": 0.322127,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.332084,
+            0.276111
+          ],
+          "end_xy": [
+            0.763868,
+            0.292778
+          ],
+          "angle_deg_mod_180": 2.98,
+          "length_fraction_of_long_axis": 0.320434,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.17916,
+            0.665556
+          ],
+          "end_xy": [
+            0.604948,
+            0.665556
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.315556,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.128186,
+            0.305556
+          ],
+          "end_xy": [
+            0.544978,
+            0.321667
+          ],
+          "angle_deg_mod_180": 2.99,
+          "length_fraction_of_long_axis": 0.309309,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.251124,
+            0.312778
+          ],
+          "end_xy": [
+            0.661169,
+            0.328889
+          ],
+          "angle_deg_mod_180": 3.03,
+          "length_fraction_of_long_axis": 0.304316,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.051571,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.04327,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.045129,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.030906,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 30,
+      "total_straight_line_candidates": 24,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/9/0155_85r _part_ _part of 85-86 foldout_.jpg",
+      "source_sha256_verified": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+      "yale_original_label": "85r (part) (part of 85-86 foldout)"
+    },
+    {
+      "canvas_oid": "1006229",
+      "native_size_pixels": [
+        7754,
+        3890
+      ],
+      "working_size_pixels": [
+        1800,
+        903
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.844889,
+            0.029236
+          ],
+          "radius_fraction_of_minimum_axis": 0.244563,
+          "box_xywh": [
+            0.7222,
+            0.0,
+            0.245378,
+            0.273798
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:71.12,0.0,26.738,29.58/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.124889,
+            0.121373
+          ],
+          "radius_fraction_of_minimum_axis": 0.181838,
+          "box_xywh": [
+            0.033667,
+            0.0,
+            0.182444,
+            0.303212
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:2.267,0.0,20.444,32.521/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.316889,
+            0.121373
+          ],
+          "radius_fraction_of_minimum_axis": 0.139313,
+          "box_xywh": [
+            0.247,
+            0.0,
+            0.139778,
+            0.260687
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:23.6,0.0,16.178,28.269/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.938222,
+            0.133776
+          ],
+          "radius_fraction_of_minimum_axis": 0.092359,
+          "box_xywh": [
+            0.891889,
+            0.041417,
+            0.092667,
+            0.184718
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:88.089,3.042,11.467,20.672/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.626222,
+            0.135548
+          ],
+          "radius_fraction_of_minimum_axis": 0.258206,
+          "box_xywh": [
+            0.496689,
+            0.0,
+            0.259067,
+            0.393754
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:48.569,0.0,28.107,41.575/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.028,
+            0.151495
+          ],
+          "radius_fraction_of_minimum_axis": 0.089701,
+          "box_xywh": [
+            0.0,
+            0.061794,
+            0.073,
+            0.179402
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:0.0,5.079,9.5,20.14/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.717778,
+            0.174529
+          ],
+          "radius_fraction_of_minimum_axis": 0.277697,
+          "box_xywh": [
+            0.578467,
+            0.0,
+            0.278622,
+            0.452226
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:56.747,0.0,30.062,47.423/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.224444,
+            0.185161
+          ],
+          "radius_fraction_of_minimum_axis": 0.283544,
+          "box_xywh": [
+            0.0822,
+            0.0,
+            0.284489,
+            0.468704
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:7.12,0.0,30.649,49.07/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.493778,
+            0.208195
+          ],
+          "radius_fraction_of_minimum_axis": 0.172447,
+          "box_xywh": [
+            0.407267,
+            0.035748,
+            0.173022,
+            0.344895
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:39.627,2.475,19.502,36.69/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.376444,
+            0.264895
+          ],
+          "radius_fraction_of_minimum_axis": 0.273798,
+          "box_xywh": [
+            0.239089,
+            0.0,
+            0.274711,
+            0.538693
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:22.809,0.0,29.671,56.069/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.829778,
+            0.303876
+          ],
+          "radius_fraction_of_minimum_axis": 0.193887,
+          "box_xywh": [
+            0.732511,
+            0.109989,
+            0.194533,
+            0.387774
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:72.151,9.899,21.653,40.977/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.148889,
+            0.309192
+          ],
+          "radius_fraction_of_minimum_axis": 0.2699,
+          "box_xywh": [
+            0.013489,
+            0.039291,
+            0.2708,
+            0.539801
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:0.249,2.829,29.28,56.18/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.657333,
+            0.323367
+          ],
+          "radius_fraction_of_minimum_axis": 0.279646,
+          "box_xywh": [
+            0.517044,
+            0.043721,
+            0.280578,
+            0.559291
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:50.604,3.272,30.258,58.129/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.935556,
+            0.344629
+          ],
+          "radius_fraction_of_minimum_axis": 0.271849,
+          "box_xywh": [
+            0.799178,
+            0.07278,
+            0.200822,
+            0.543699
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:78.818,6.178,21.182,56.57/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.062667,
+            0.390698
+          ],
+          "radius_fraction_of_minimum_axis": 0.174042,
+          "box_xywh": [
+            0.0,
+            0.216656,
+            0.149978,
+            0.348084
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:0.0,20.566,17.198,37.008/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.543556,
+            0.454485
+          ],
+          "radius_fraction_of_minimum_axis": 0.170498,
+          "box_xywh": [
+            0.458022,
+            0.283987,
+            0.171067,
+            0.340997
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:44.702,27.299,19.307,36.3/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.396,
+            0.459801
+          ],
+          "radius_fraction_of_minimum_axis": 0.281595,
+          "box_xywh": [
+            0.254733,
+            0.178206,
+            0.282533,
+            0.563189
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:24.373,16.721,30.453,58.519/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.752444,
+            0.481063
+          ],
+          "radius_fraction_of_minimum_axis": 0.283544,
+          "box_xywh": [
+            0.6102,
+            0.197519,
+            0.284489,
+            0.567087
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:59.92,18.652,30.649,58.909/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.268889,
+            0.486379
+          ],
+          "radius_fraction_of_minimum_axis": 0.160753,
+          "box_xywh": [
+            0.188244,
+            0.325626,
+            0.161289,
+            0.321506
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:17.724,31.463,18.329,34.351/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.148889,
+            0.495238
+          ],
+          "radius_fraction_of_minimum_axis": 0.20753,
+          "box_xywh": [
+            0.044778,
+            0.287708,
+            0.208222,
+            0.415061
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:3.378,27.671,23.022,43.706/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.633333,
+            0.507641
+          ],
+          "radius_fraction_of_minimum_axis": 0.082791,
+          "box_xywh": [
+            0.5918,
+            0.42485,
+            0.083067,
+            0.165581
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:58.08,41.385,10.507,18.758/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.966667,
+            0.521816
+          ],
+          "radius_fraction_of_minimum_axis": 0.2699,
+          "box_xywh": [
+            0.831267,
+            0.251916,
+            0.168733,
+            0.539801
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:82.027,24.092,17.973,56.18/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.018222,
+            0.596235
+          ],
+          "radius_fraction_of_minimum_axis": 0.061174,
+          "box_xywh": [
+            0.0,
+            0.535061,
+            0.048911,
+            0.122348
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:0.0,52.406,7.091,14.435/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.831556,
+            0.599779
+          ],
+          "radius_fraction_of_minimum_axis": 0.191938,
+          "box_xywh": [
+            0.735267,
+            0.407841,
+            0.192578,
+            0.383876
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:72.427,39.684,21.458,40.588/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.477778,
+            0.633444
+          ],
+          "radius_fraction_of_minimum_axis": 0.143212,
+          "box_xywh": [
+            0.405933,
+            0.490233,
+            0.143689,
+            0.286423
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:39.493,47.923,16.569,30.842/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.384444,
+            0.668882
+          ],
+          "radius_fraction_of_minimum_axis": 0.283544,
+          "box_xywh": [
+            0.2422,
+            0.385338,
+            0.284489,
+            0.567087
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:23.12,37.434,30.649,58.909/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.668889,
+            0.679513
+          ],
+          "radius_fraction_of_minimum_axis": 0.273798,
+          "box_xywh": [
+            0.531533,
+            0.405714,
+            0.274711,
+            0.547597
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:52.053,39.471,29.671,56.96/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.268889,
+            0.681285
+          ],
+          "radius_fraction_of_minimum_axis": 0.279646,
+          "box_xywh": [
+            0.1286,
+            0.401639,
+            0.280578,
+            0.559291
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:11.76,39.064,30.258,58.129/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.144444,
+            0.713178
+          ],
+          "radius_fraction_of_minimum_axis": 0.254308,
+          "box_xywh": [
+            0.016867,
+            0.45887,
+            0.255156,
+            0.508616
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:0.587,44.787,27.716,53.062/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.570222,
+            0.748616
+          ],
+          "radius_fraction_of_minimum_axis": 0.205581,
+          "box_xywh": [
+            0.467089,
+            0.543034,
+            0.206267,
+            0.411163
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:45.609,53.203,22.827,43.316/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.948889,
+            0.762791
+          ],
+          "radius_fraction_of_minimum_axis": 0.283544,
+          "box_xywh": [
+            0.806644,
+            0.479247,
+            0.193356,
+            0.520753
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:79.564,46.825,20.436,53.175/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.744444,
+            0.814175
+          ],
+          "radius_fraction_of_minimum_axis": 0.283544,
+          "box_xywh": [
+            0.6022,
+            0.530631,
+            0.284489,
+            0.469369
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006229/pct:59.12,51.963,30.649,48.037/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.760556,
+            0.615725
+          ],
+          "end_xy": [
+            0.939444,
+            0.634551
+          ],
+          "angle_deg_mod_180": 3.02,
+          "length_fraction_of_long_axis": 0.179138,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.447222,
+            0.376523
+          ],
+          "end_xy": [
+            0.604444,
+            0.315615
+          ],
+          "angle_deg_mod_180": 169.0,
+          "length_fraction_of_long_axis": 0.160164,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.765556,
+            0.48948
+          ],
+          "end_xy": [
+            0.910556,
+            0.504983
+          ],
+          "angle_deg_mod_180": 3.07,
+          "length_fraction_of_long_axis": 0.145208,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.447778,
+            0.383167
+          ],
+          "end_xy": [
+            0.582778,
+            0.335548
+          ],
+          "angle_deg_mod_180": 169.97,
+          "length_fraction_of_long_axis": 0.137097,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.459444,
+            0.3433
+          ],
+          "end_xy": [
+            0.592778,
+            0.385382
+          ],
+          "angle_deg_mod_180": 9.0,
+          "length_fraction_of_long_axis": 0.134994,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.486667,
+            0.520487
+          ],
+          "end_xy": [
+            0.62,
+            0.552602
+          ],
+          "angle_deg_mod_180": 6.89,
+          "length_fraction_of_long_axis": 0.134303,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.452778,
+            0.378738
+          ],
+          "end_xy": [
+            0.583333,
+            0.333333
+          ],
+          "angle_deg_mod_180": 170.1,
+          "length_fraction_of_long_axis": 0.132528,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.013333,
+            0.275748
+          ],
+          "end_xy": [
+            0.015556,
+            0.538206
+          ],
+          "angle_deg_mod_180": 89.03,
+          "length_fraction_of_long_axis": 0.131685,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.973889,
+            0.662237
+          ],
+          "end_xy": [
+            0.982778,
+            0.409745
+          ],
+          "angle_deg_mod_180": 94.01,
+          "length_fraction_of_long_axis": 0.126978,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.456111,
+            0.3433
+          ],
+          "end_xy": [
+            0.582778,
+            0.334441
+          ],
+          "angle_deg_mod_180": 177.99,
+          "length_fraction_of_long_axis": 0.126745,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.755556,
+            0.062016
+          ],
+          "end_xy": [
+            0.882222,
+            0.069767
+          ],
+          "angle_deg_mod_180": 1.76,
+          "length_fraction_of_long_axis": 0.126726,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.753333,
+            0.464009
+          ],
+          "end_xy": [
+            0.879444,
+            0.464009
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.126111,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.96,
+            0.945736
+          ],
+          "end_xy": [
+            0.971111,
+            0.699889
+          ],
+          "angle_deg_mod_180": 95.15,
+          "length_fraction_of_long_axis": 0.123833,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.983333,
+            0.408638
+          ],
+          "end_xy": [
+            0.983333,
+            0.169435
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.12,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.452778,
+            0.389812
+          ],
+          "end_xy": [
+            0.568889,
+            0.341085
+          ],
+          "angle_deg_mod_180": 168.11,
+          "length_fraction_of_long_axis": 0.118656,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.765556,
+            0.465116
+          ],
+          "end_xy": [
+            0.883889,
+            0.465116
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.118333,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.826111,
+            0.479513
+          ],
+          "end_xy": [
+            0.943333,
+            0.482835
+          ],
+          "angle_deg_mod_180": 0.81,
+          "length_fraction_of_long_axis": 0.117234,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.866667,
+            0.06866
+          ],
+          "end_xy": [
+            0.980556,
+            0.076412
+          ],
+          "angle_deg_mod_180": 1.96,
+          "length_fraction_of_long_axis": 0.113955,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.738333,
+            0.507198
+          ],
+          "end_xy": [
+            0.852222,
+            0.51052
+          ],
+          "angle_deg_mod_180": 0.84,
+          "length_fraction_of_long_axis": 0.113901,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.769444,
+            0.380952
+          ],
+          "end_xy": [
+            0.879444,
+            0.380952
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.11,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.814444,
+            0.52381
+          ],
+          "end_xy": [
+            0.922778,
+            0.530454
+          ],
+          "angle_deg_mod_180": 1.76,
+          "length_fraction_of_long_axis": 0.108385,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.785,
+            0.466224
+          ],
+          "end_xy": [
+            0.888889,
+            0.466224
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.103889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.795,
+            0.318937
+          ],
+          "end_xy": [
+            0.898333,
+            0.325581
+          ],
+          "angle_deg_mod_180": 1.85,
+          "length_fraction_of_long_axis": 0.103387,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.496111,
+            0.349945
+          ],
+          "end_xy": [
+            0.598333,
+            0.325581
+          ],
+          "angle_deg_mod_180": 173.18,
+          "length_fraction_of_long_axis": 0.10295,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.020118,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.333333,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.04756,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "box_xywh": [
+            0.666667,
+            0.0,
+            0.333333,
+            1.0
+          ],
+          "edge_pixel_fraction": 0.05782,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 32,
+      "total_straight_line_candidates": 24,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/9/0156_85r _part_ 86v _part_ _part of 85-86 foldout_.jpg",
+      "source_sha256_verified": "dde619e85e35601b9206051389873f6cb092a17f04a8fcd02b32fe3961ea37ce",
+      "yale_original_label": "85r (part) 86v (part) (part of 85-86 foldout)"
+    },
+    {
+      "canvas_oid": "1006230",
+      "native_size_pixels": [
+        4897,
+        3788
+      ],
+      "working_size_pixels": [
+        1800,
+        1392
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.670667,
+            0.001724
+          ],
+          "radius_fraction_of_minimum_axis": 0.200345,
+          "box_xywh": [
+            0.515733,
+            0.0,
+            0.309867,
+            0.202069
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:50.473,0.0,33.187,22.407/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.222667,
+            0.074138
+          ],
+          "radius_fraction_of_minimum_axis": 0.249655,
+          "box_xywh": [
+            0.0296,
+            0.0,
+            0.386133,
+            0.323793
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:1.86,0.0,40.813,34.579/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.052,
+            0.075287
+          ],
+          "radius_fraction_of_minimum_axis": 0.231954,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.231378,
+            0.307241
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:0.0,0.0,25.338,32.924/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.367556,
+            0.082184
+          ],
+          "radius_fraction_of_minimum_axis": 0.282529,
+          "box_xywh": [
+            0.149067,
+            0.0,
+            0.436978,
+            0.364713
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:13.807,0.0,45.898,38.671/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.915111,
+            0.093678
+          ],
+          "radius_fraction_of_minimum_axis": 0.082759,
+          "box_xywh": [
+            0.851111,
+            0.01092,
+            0.128,
+            0.165517
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:84.011,0.0,15.0,18.752/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.529333,
+            0.108621
+          ],
+          "radius_fraction_of_minimum_axis": 0.087701,
+          "box_xywh": [
+            0.461511,
+            0.02092,
+            0.135644,
+            0.175402
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:45.051,0.992,15.764,19.74/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.776444,
+            0.138506
+          ],
+          "radius_fraction_of_minimum_axis": 0.25977,
+          "box_xywh": [
+            0.575556,
+            0.0,
+            0.401778,
+            0.398276
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:56.456,0.0,42.378,42.028/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.881333,
+            0.279885
+          ],
+          "radius_fraction_of_minimum_axis": 0.119425,
+          "box_xywh": [
+            0.788978,
+            0.16046,
+            0.184711,
+            0.238851
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:77.798,14.946,20.671,26.085/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.019111,
+            0.295977
+          ],
+          "radius_fraction_of_minimum_axis": 0.267356,
+          "box_xywh": [
+            0.0,
+            0.028621,
+            0.225867,
+            0.534713
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:0.0,1.762,24.787,55.671/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.388,
+            0.297126
+          ],
+          "radius_fraction_of_minimum_axis": 0.283793,
+          "box_xywh": [
+            0.168533,
+            0.013333,
+            0.438933,
+            0.567586
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:15.753,0.233,46.093,58.959/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.532889,
+            0.305172
+          ],
+          "radius_fraction_of_minimum_axis": 0.283793,
+          "box_xywh": [
+            0.313422,
+            0.021379,
+            0.438933,
+            0.567586
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:30.242,1.038,46.093,58.959/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.202222,
+            0.31092
+          ],
+          "radius_fraction_of_minimum_axis": 0.154828,
+          "box_xywh": [
+            0.082489,
+            0.156092,
+            0.239467,
+            0.309655
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:7.149,14.509,26.147,33.166/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.737333,
+            0.316667
+          ],
+          "radius_fraction_of_minimum_axis": 0.283793,
+          "box_xywh": [
+            0.517867,
+            0.032874,
+            0.438933,
+            0.567586
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:50.687,2.187,46.093,58.959/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.097333,
+            0.453448
+          ],
+          "radius_fraction_of_minimum_axis": 0.278736,
+          "box_xywh": [
+            0.0,
+            0.174713,
+            0.312889,
+            0.557471
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:0.0,16.371,33.489,57.947/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.836,
+            0.463793
+          ],
+          "radius_fraction_of_minimum_axis": 0.178851,
+          "box_xywh": [
+            0.697689,
+            0.284943,
+            0.276622,
+            0.357701
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:68.669,27.394,29.862,37.97/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.266222,
+            0.476437
+          ],
+          "radius_fraction_of_minimum_axis": 0.225632,
+          "box_xywh": [
+            0.091733,
+            0.250805,
+            0.348978,
+            0.451264
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:8.073,23.98,37.098,47.326/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.444889,
+            0.537356
+          ],
+          "radius_fraction_of_minimum_axis": 0.278736,
+          "box_xywh": [
+            0.229333,
+            0.258621,
+            0.431111,
+            0.557471
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:21.833,24.762,45.311,57.947/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.595111,
+            0.561494
+          ],
+          "radius_fraction_of_minimum_axis": 0.264828,
+          "box_xywh": [
+            0.390311,
+            0.296667,
+            0.4096,
+            0.529655
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:37.931,28.567,43.16,55.166/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.999556,
+            0.562644
+          ],
+          "radius_fraction_of_minimum_axis": 0.245862,
+          "box_xywh": [
+            0.809422,
+            0.316782,
+            0.190578,
+            0.491724
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:79.842,30.578,20.158,51.372/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.738222,
+            0.643103
+          ],
+          "radius_fraction_of_minimum_axis": 0.257241,
+          "box_xywh": [
+            0.539289,
+            0.385862,
+            0.397867,
+            0.514483
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:52.829,37.486,41.987,53.648/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.045778,
+            0.668391
+          ],
+          "radius_fraction_of_minimum_axis": 0.283793,
+          "box_xywh": [
+            0.0,
+            0.384598,
+            0.265244,
+            0.567586
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:0.0,37.36,28.724,58.959/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.878667,
+            0.681034
+          ],
+          "radius_fraction_of_minimum_axis": 0.125747,
+          "box_xywh": [
+            0.781422,
+            0.555287,
+            0.194489,
+            0.251494
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:77.042,54.429,21.649,27.349/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.399556,
+            0.713218
+          ],
+          "radius_fraction_of_minimum_axis": 0.262299,
+          "box_xywh": [
+            0.196711,
+            0.45092,
+            0.405689,
+            0.524598
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:18.571,43.992,42.769,54.66/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.209333,
+            0.743103
+          ],
+          "radius_fraction_of_minimum_axis": 0.234483,
+          "box_xywh": [
+            0.028,
+            0.508621,
+            0.362667,
+            0.468966
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:1.7,49.762,38.467,49.097/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.784444,
+            0.820115
+          ],
+          "radius_fraction_of_minimum_axis": 0.164943,
+          "box_xywh": [
+            0.656889,
+            0.655172,
+            0.255111,
+            0.329885
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:64.589,64.417,27.711,35.189/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.940889,
+            0.863793
+          ],
+          "radius_fraction_of_minimum_axis": 0.10931,
+          "box_xywh": [
+            0.856356,
+            0.754483,
+            0.143644,
+            0.218621
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:84.536,74.348,15.464,24.062/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.555111,
+            0.883333
+          ],
+          "radius_fraction_of_minimum_axis": 0.101724,
+          "box_xywh": [
+            0.476444,
+            0.781609,
+            0.157333,
+            0.203448
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:46.544,77.061,17.933,22.545/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.388,
+            0.904023
+          ],
+          "radius_fraction_of_minimum_axis": 0.281264,
+          "box_xywh": [
+            0.170489,
+            0.622759,
+            0.435022,
+            0.377241
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:15.949,61.176,45.702,38.824/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.158667,
+            0.917816
+          ],
+          "radius_fraction_of_minimum_axis": 0.277471,
+          "box_xywh": [
+            0.0,
+            0.640345,
+            0.373244,
+            0.359655
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:0.0,62.935,39.524,37.065/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.677778,
+            0.992529
+          ],
+          "radius_fraction_of_minimum_axis": 0.154828,
+          "box_xywh": [
+            0.558044,
+            0.837701,
+            0.239467,
+            0.162299
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:54.704,82.67,26.147,17.33/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.820889,
+            0.999425
+          ],
+          "radius_fraction_of_minimum_axis": 0.183908,
+          "box_xywh": [
+            0.678667,
+            0.815517,
+            0.284444,
+            0.184483
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006230/pct:66.767,80.452,30.644,19.548/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.087778,
+            0.14727
+          ],
+          "end_xy": [
+            0.422778,
+            0.131466
+          ],
+          "angle_deg_mod_180": 177.91,
+          "length_fraction_of_long_axis": 0.335223,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.095,
+            0.418103
+          ],
+          "end_xy": [
+            0.421111,
+            0.418103
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.326111,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.102222,
+            0.653017
+          ],
+          "end_xy": [
+            0.412778,
+            0.653017
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.310556,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.1,
+            0.596264
+          ],
+          "end_xy": [
+            0.408889,
+            0.596264
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.308889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.104444,
+            0.682471
+          ],
+          "end_xy": [
+            0.413333,
+            0.682471
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.308889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.087778,
+            0.279454
+          ],
+          "end_xy": [
+            0.395556,
+            0.279454
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.307778,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.087222,
+            0.280172
+          ],
+          "end_xy": [
+            0.394444,
+            0.280172
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.307222,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.909444,
+            0.659483
+          ],
+          "end_xy": [
+            0.909444,
+            0.262931
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.306667,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.089444,
+            0.335489
+          ],
+          "end_xy": [
+            0.392778,
+            0.335489
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.303333,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.117222,
+            0.176006
+          ],
+          "end_xy": [
+            0.412222,
+            0.162356
+          ],
+          "angle_deg_mod_180": 177.95,
+          "length_fraction_of_long_axis": 0.295189,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.103333,
+            0.547414
+          ],
+          "end_xy": [
+            0.396111,
+            0.547414
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.292778,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.102222,
+            0.655172
+          ],
+          "end_xy": [
+            0.391111,
+            0.655172
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.288889,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.096111,
+            0.358477
+          ],
+          "end_xy": [
+            0.382778,
+            0.364943
+          ],
+          "angle_deg_mod_180": 1.0,
+          "length_fraction_of_long_axis": 0.28671,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.104444,
+            0.68319
+          ],
+          "end_xy": [
+            0.39,
+            0.68319
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.285556,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.135,
+            0.176006
+          ],
+          "end_xy": [
+            0.411667,
+            0.163793
+          ],
+          "angle_deg_mod_180": 178.04,
+          "length_fraction_of_long_axis": 0.276828,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.11,
+            0.727011
+          ],
+          "end_xy": [
+            0.378889,
+            0.732759
+          ],
+          "angle_deg_mod_180": 0.95,
+          "length_fraction_of_long_axis": 0.268926,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.115,
+            0.280891
+          ],
+          "end_xy": [
+            0.377778,
+            0.280891
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.262778,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.678889,
+            0.825431
+          ],
+          "end_xy": [
+            0.941111,
+            0.813937
+          ],
+          "angle_deg_mod_180": 178.06,
+          "length_fraction_of_long_axis": 0.262373,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.108333,
+            0.716236
+          ],
+          "end_xy": [
+            0.365,
+            0.716236
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.256667,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.147222,
+            0.596983
+          ],
+          "end_xy": [
+            0.400556,
+            0.596983
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.253333,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.558333,
+            0.790948
+          ],
+          "end_xy": [
+            0.562778,
+            0.466236
+          ],
+          "angle_deg_mod_180": 91.01,
+          "length_fraction_of_long_axis": 0.25115,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.091111,
+            0.145833
+          ],
+          "end_xy": [
+            0.332222,
+            0.135057
+          ],
+          "angle_deg_mod_180": 178.02,
+          "length_fraction_of_long_axis": 0.241255,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.897778,
+            0.649425
+          ],
+          "end_xy": [
+            0.902222,
+            0.33908
+          ],
+          "angle_deg_mod_180": 91.06,
+          "length_fraction_of_long_axis": 0.240041,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.149444,
+            0.699713
+          ],
+          "end_xy": [
+            0.389444,
+            0.699713
+          ],
+          "angle_deg_mod_180": 0.0,
+          "length_fraction_of_long_axis": 0.24,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.057219,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.057589,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.036162,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "box_xywh": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "edge_pixel_fraction": 0.046105,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 31,
+      "total_straight_line_candidates": 24,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/9/0157_86v _part_ _part of 85-86 foldout_.jpg",
+      "source_sha256_verified": "4c5f7642e7da2be07242968faa92a2d0bb1cb88e8589d30f5d2acbfc3cc7e0be",
+      "yale_original_label": "86v (part) (part of 85-86 foldout)"
+    },
+    {
+      "canvas_oid": "1006231",
+      "native_size_pixels": [
+        7925,
+        7268
+      ],
+      "working_size_pixels": [
+        1800,
+        1651
+      ],
+      "circles_algorithm": "OpenCV HoughCircles after grayscale median filter",
+      "line_algorithm": "OpenCV Canny + HoughLinesP; near horizontal/vertical orientations",
+      "candidate_circular_regions": [
+        {
+          "center_xy": [
+            0.401333,
+            0.004361
+          ],
+          "radius_fraction_of_minimum_axis": 0.236124,
+          "box_xywh": [
+            0.184756,
+            0.0,
+            0.433156,
+            0.240485
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:17.376,0.0,45.516,26.248/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.994222,
+            0.030527
+          ],
+          "radius_fraction_of_minimum_axis": 0.211605,
+          "box_xywh": [
+            0.800133,
+            0.0,
+            0.199867,
+            0.242132
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:78.913,0.0,21.087,26.413/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.752444,
+            0.040218
+          ],
+          "radius_fraction_of_minimum_axis": 0.249982,
+          "box_xywh": [
+            0.523156,
+            0.0,
+            0.458578,
+            0.2902
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:51.216,0.0,48.058,31.22/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.074222,
+            0.066384
+          ],
+          "radius_fraction_of_minimum_axis": 0.284094,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.3348,
+            0.350479
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:0.0,0.0,35.68,37.248/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.556,
+            0.178801
+          ],
+          "radius_fraction_of_minimum_axis": 0.088916,
+          "box_xywh": [
+            0.474444,
+            0.089885,
+            0.163111,
+            0.177832
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:46.344,7.889,18.511,19.983/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.238667,
+            0.199152
+          ],
+          "radius_fraction_of_minimum_axis": 0.092211,
+          "box_xywh": [
+            0.154089,
+            0.106941,
+            0.169156,
+            0.184422
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:14.309,9.594,19.116,20.642/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.761333,
+            0.227256
+          ],
+          "radius_fraction_of_minimum_axis": 0.209473,
+          "box_xywh": [
+            0.5692,
+            0.017783,
+            0.384267,
+            0.418946
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:55.82,0.678,40.627,44.095/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.075111,
+            0.251484
+          ],
+          "radius_fraction_of_minimum_axis": 0.246784,
+          "box_xywh": [
+            0.0,
+            0.0047,
+            0.301467,
+            0.493568
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:0.0,0.0,32.347,51.557/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.958667,
+            0.263113
+          ],
+          "radius_fraction_of_minimum_axis": 0.235058,
+          "box_xywh": [
+            0.743067,
+            0.028056,
+            0.256933,
+            0.470115
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:73.207,1.706,26.793,49.212/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.355111,
+            0.363901
+          ],
+          "radius_fraction_of_minimum_axis": 0.284094,
+          "box_xywh": [
+            0.094533,
+            0.079806,
+            0.521156,
+            0.568189
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:8.353,6.881,54.316,59.019/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.686667,
+            0.393943
+          ],
+          "radius_fraction_of_minimum_axis": 0.284094,
+          "box_xywh": [
+            0.426089,
+            0.109849,
+            0.521156,
+            0.568189
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:41.509,9.885,54.316,59.019/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.020889,
+            0.434646
+          ],
+          "radius_fraction_of_minimum_axis": 0.284094,
+          "box_xywh": [
+            0.0,
+            0.150551,
+            0.281467,
+            0.568189
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:0.0,13.955,30.347,59.019/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.540889,
+            0.49473
+          ],
+          "radius_fraction_of_minimum_axis": 0.161211,
+          "box_xywh": [
+            0.393022,
+            0.333519,
+            0.295733,
+            0.322423
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:38.202,32.252,31.773,34.442/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.833333,
+            0.497638
+          ],
+          "radius_fraction_of_minimum_axis": 0.091145,
+          "box_xywh": [
+            0.749733,
+            0.406493,
+            0.1672,
+            0.18229
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:73.873,39.549,18.92,20.429/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.204889,
+            0.523804
+          ],
+          "radius_fraction_of_minimum_axis": 0.26917,
+          "box_xywh": [
+            0.0,
+            0.254634,
+            0.451778,
+            0.53834
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:0.0,24.363,47.378,56.034/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.998667,
+            0.53931
+          ],
+          "radius_fraction_of_minimum_axis": 0.267038,
+          "box_xywh": [
+            0.753733,
+            0.272271,
+            0.246267,
+            0.534076
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:74.273,26.127,25.727,55.608/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.379111,
+            0.575167
+          ],
+          "radius_fraction_of_minimum_axis": 0.265972,
+          "box_xywh": [
+            0.135156,
+            0.309194,
+            0.487911,
+            0.531944
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:12.416,29.819,50.991,55.394/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.696444,
+            0.607147
+          ],
+          "radius_fraction_of_minimum_axis": 0.256378,
+          "box_xywh": [
+            0.461289,
+            0.350769,
+            0.470311,
+            0.512756
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:45.029,33.977,49.231,53.476/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.532889,
+            0.696305
+          ],
+          "radius_fraction_of_minimum_axis": 0.283028,
+          "box_xywh": [
+            0.273289,
+            0.413277,
+            0.5192,
+            0.566057
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:26.229,40.228,54.12,58.806/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.979111,
+            0.729255
+          ],
+          "radius_fraction_of_minimum_axis": 0.218001,
+          "box_xywh": [
+            0.779156,
+            0.511254,
+            0.220844,
+            0.436002
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:76.816,50.025,23.184,45.8/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.050222,
+            0.737008
+          ],
+          "radius_fraction_of_minimum_axis": 0.244652,
+          "box_xywh": [
+            0.0,
+            0.492356,
+            0.274622,
+            0.489303
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:0.0,48.136,29.662,51.13/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.252889,
+            0.783525
+          ],
+          "radius_fraction_of_minimum_axis": 0.107135,
+          "box_xywh": [
+            0.154622,
+            0.67639,
+            0.196533,
+            0.21427
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:14.362,66.539,21.853,23.627/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.808444,
+            0.819382
+          ],
+          "radius_fraction_of_minimum_axis": 0.095409,
+          "box_xywh": [
+            0.720933,
+            0.723973,
+            0.175022,
+            0.190818
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:70.993,71.297,19.702,21.282/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.639556,
+            0.902726
+          ],
+          "radius_fraction_of_minimum_axis": 0.280896,
+          "box_xywh": [
+            0.381911,
+            0.621829,
+            0.515289,
+            0.378171
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:37.091,61.083,53.729,38.917/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.181778,
+            0.956027
+          ],
+          "radius_fraction_of_minimum_axis": 0.174294,
+          "box_xywh": [
+            0.021911,
+            0.781732,
+            0.319733,
+            0.218268
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:1.091,77.073,34.173,22.927/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.379111,
+            0.956027
+          ],
+          "radius_fraction_of_minimum_axis": 0.218001,
+          "box_xywh": [
+            0.179156,
+            0.738025,
+            0.399911,
+            0.261975
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:16.816,72.703,42.191,27.297/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        },
+        {
+          "center_xy": [
+            0.903556,
+            0.994791
+          ],
+          "radius_fraction_of_minimum_axis": 0.196681,
+          "box_xywh": [
+            0.723156,
+            0.79811,
+            0.276844,
+            0.20189
+          ],
+          "crop_url": "https://collections.library.yale.edu/iiif/2/1006231/pct:71.216,78.711,28.784,21.289/!1100,1100/0/default.jpg",
+          "label": "ROUND_SHAPE_CANDIDATE_UNKNOWN",
+          "human_verified": false
+        }
+      ],
+      "straight_image_line_candidates": [
+        {
+          "start_xy": [
+            0.015,
+            0.546336
+          ],
+          "end_xy": [
+            0.02,
+            0.863719
+          ],
+          "angle_deg_mod_180": 89.02,
+          "length_fraction_of_long_axis": 0.291154,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.363889,
+            0.239855
+          ],
+          "end_xy": [
+            0.633333,
+            0.229558
+          ],
+          "angle_deg_mod_180": 177.99,
+          "length_fraction_of_long_axis": 0.26961,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.280556,
+            0.392489
+          ],
+          "end_xy": [
+            0.280556,
+            0.099939
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.268333,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.281667,
+            0.393701
+          ],
+          "end_xy": [
+            0.281667,
+            0.142944
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.23,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.283333,
+            0.394912
+          ],
+          "end_xy": [
+            0.283333,
+            0.146578
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.227778,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.283889,
+            0.394912
+          ],
+          "end_xy": [
+            0.283889,
+            0.147184
+          ],
+          "angle_deg_mod_180": 90.0,
+          "length_fraction_of_long_axis": 0.227222,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.405556,
+            0.494246
+          ],
+          "end_xy": [
+            0.625,
+            0.498486
+          ],
+          "angle_deg_mod_180": 1.02,
+          "length_fraction_of_long_axis": 0.219479,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.528889,
+            0.076923
+          ],
+          "end_xy": [
+            0.538889,
+            0.289522
+          ],
+          "angle_deg_mod_180": 87.06,
+          "length_fraction_of_long_axis": 0.195256,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.091111,
+            0.490612
+          ],
+          "end_xy": [
+            0.268889,
+            0.494246
+          ],
+          "angle_deg_mod_180": 1.07,
+          "length_fraction_of_long_axis": 0.177809,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.563889,
+            0.071472
+          ],
+          "end_xy": [
+            0.585556,
+            0.261054
+          ],
+          "angle_deg_mod_180": 82.9,
+          "length_fraction_of_long_axis": 0.175234,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.477222,
+            0.653543
+          ],
+          "end_xy": [
+            0.638889,
+            0.625076
+          ],
+          "angle_deg_mod_180": 170.83,
+          "length_fraction_of_long_axis": 0.163762,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.478889,
+            0.653543
+          ],
+          "end_xy": [
+            0.638333,
+            0.616596
+          ],
+          "angle_deg_mod_180": 168.0,
+          "length_fraction_of_long_axis": 0.163006,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.442222,
+            0.970321
+          ],
+          "end_xy": [
+            0.601667,
+            0.976378
+          ],
+          "angle_deg_mod_180": 2.0,
+          "length_fraction_of_long_axis": 0.159541,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.42,
+            0.596002
+          ],
+          "end_xy": [
+            0.579444,
+            0.592974
+          ],
+          "angle_deg_mod_180": 179.0,
+          "length_fraction_of_long_axis": 0.159469,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.478889,
+            0.660206
+          ],
+          "end_xy": [
+            0.634444,
+            0.630527
+          ],
+          "angle_deg_mod_180": 170.07,
+          "length_fraction_of_long_axis": 0.15792,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.778333,
+            0.789824
+          ],
+          "end_xy": [
+            0.789444,
+            0.618413
+          ],
+          "angle_deg_mod_180": 94.04,
+          "length_fraction_of_long_axis": 0.157614,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.578333,
+            0.259237
+          ],
+          "end_xy": [
+            0.595,
+            0.089643
+          ],
+          "angle_deg_mod_180": 96.12,
+          "length_fraction_of_long_axis": 0.156446,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.777778,
+            0.788007
+          ],
+          "end_xy": [
+            0.788333,
+            0.619624
+          ],
+          "angle_deg_mod_180": 93.91,
+          "length_fraction_of_long_axis": 0.154805,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.776667,
+            0.791036
+          ],
+          "end_xy": [
+            0.787778,
+            0.623259
+          ],
+          "angle_deg_mod_180": 94.13,
+          "length_fraction_of_long_axis": 0.154289,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        },
+        {
+          "start_xy": [
+            0.046667,
+            0.645064
+          ],
+          "end_xy": [
+            0.051667,
+            0.485161
+          ],
+          "angle_deg_mod_180": 91.95,
+          "length_fraction_of_long_axis": 0.146752,
+          "label": "STRAIGHT_IMAGE_LINE_NOT_FOLD_PROOF",
+          "human_verified": false
+        }
+      ],
+      "grid_tile_edge_density": [
+        {
+          "row": 1,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.0,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.040433,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "box_xywh": [
+            0.333333,
+            0.0,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.058391,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "box_xywh": [
+            0.666667,
+            0.0,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.033061,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.333333,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.026183,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "box_xywh": [
+            0.333333,
+            0.333333,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.080457,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "box_xywh": [
+            0.666667,
+            0.333333,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.039211,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "box_xywh": [
+            0.0,
+            0.666667,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.036279,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "box_xywh": [
+            0.333333,
+            0.666667,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.035661,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "box_xywh": [
+            0.666667,
+            0.666667,
+            0.333333,
+            0.333333
+          ],
+          "edge_pixel_fraction": 0.033188,
+          "semantic_role": "UNKNOWN_UNVERIFIED_GRID_TILE"
+        }
+      ],
+      "total_detected_circular_candidates": 27,
+      "total_straight_line_candidates": 20,
+      "confirmed_rosettes": 0,
+      "confirmed_towers": 0,
+      "confirmed_physical_fold_axes": 0,
+      "historical_2point5d_depth": "NOT_MEASURED",
+      "source_path": "data/yale_hq_scans/10/0158_85v and 86r _foldout_.jpg",
+      "source_sha256_verified": "4b08afeee514691b0a511099ca299aed544d6fd1782b7dee8df163dfc06354ed",
+      "yale_original_label": "85v and 86r (foldout)"
+    }
+  ],
+  "failures": [],
+  "physical_fold_hypotheses": "UNKNOWN_AND_NOT_TESTED_AGAINST_A_CONSERVATOR",
+  "perspective": "IMAGE_PLANE_MEASUREMENTS_ONLY",
+  "science_status": "INCONCLUSIVE_NOT_RUN",
+  "annotations_human_verified": 0,
+  "red_flags": [
+    "A circular Hough response does not prove the shape is a Voynich rosette.",
+    "A long line on an image may be writing, a diagram line, a physical crease or a photographic artifact.",
+    "Real fold axes require conservator and codicological confirmation.",
+    "Geometrical 2.5D layers remain alternative assumptions, not depth measurements.",
+    "The source image color is not historic pigment chemistry."
+  ]
+}
