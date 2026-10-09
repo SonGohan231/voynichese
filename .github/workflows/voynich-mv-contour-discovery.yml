@@ -1,0 +1,58 @@
+name: Voynich MV native contour candidate shortlist
+
+on:
+  push:
+    branches:
+      - research/mv-discovery-20261009
+    paths:
+      - "research_os/tools/mv_discovery_contour_pairs.py"
+      - ".github/workflows/voynich-mv-contour-discovery.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contour-crossfolio-original-yale:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install bounded image dependencies
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Verify contour and exclusion controls
+        run: |
+          python research_os/tools/mv_discovery_targeted.py --selftest
+          python research_os/tools/mv_discovery_contour_pairs.py --selftest
+      - name: Recheck original Yale image SHA and compare contour ROIs
+        run: |
+          python research_os/tools/mv_discovery_contour_pairs.py \
+            --out research_os/experiments/EXP-2026-004/mv_contour_followup
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          d=Path("research_os/experiments/EXP-2026-004/mv_contour_followup")
+          j=json.loads((d/"contour_screen_report.json").read_text())
+          assert j["source_candidates"]==229, j
+          assert j["distinct_physical_pair_candidates_hamming_le18"]>=0
+          assert j["source_photos_sha256_rechecked"]>0, j
+          assert j["null_text_only"]=="NOT_ASSESSED"
+          assert j["mv2_or_higher_verdicts"]==0
+          assert j["source_held_out_used"] is False
+          assert (d/"contour_review_board.png").exists()
+          for p in j["unique_pair_review_list"]:
+              assert p["canvas_a"]!=p["canvas_b"]
+              assert not(set(p["physical_groups_a"]) & set(p["physical_groups_b"]))
+          print("MV_CONTOUR_QA_PASS no false scientific verdict or duplicated physical groups")
+          PY
+      - name: Preserve candidate queue and inspected source photos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: voynich-mv-contour-source-review-20261009
+          path: research_os/experiments/EXP-2026-004/mv_contour_followup/
+          retention-days: 30
+          if-no-files-found: warn
