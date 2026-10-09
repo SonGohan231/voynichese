@@ -34,3 +34,25 @@ jobs:
           path: ${{ runner.temp }}/exp002_yale_archived_jpeg_binary_report.json
           if-no-files-found: warn
           retention-days: 30
+
+  verify-entire-yale-photo-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Independently re-fetch and SHA-256 hash every archived JPEG
+        run: |
+          python3 research_os/tools/exp002_verify_archive_jpeg_bytes.py \
+            --mode all \
+            --output "$RUNNER_TEMP/exp002_yale_archived_jpeg_full_integrity_report.json"
+      - name: Persist full image-byte audit (each SHA-256 and failure)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp002-yale-jpeg-full-archive-integrity
+          path: ${{ runner.temp }}/exp002_yale_archived_jpeg_full_integrity_report.json
+          if-no-files-found: warn
+          retention-days: 30
