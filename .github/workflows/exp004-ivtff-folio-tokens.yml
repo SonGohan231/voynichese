@@ -1,0 +1,41 @@
+name: Voynich EXP004 full manuscript IVTFF folio/locus lexical atlas
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp004_ivtff_folio_token_recurrence.py"
+      - ".github/workflows/exp004-ivtff-folio-tokens.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp004_ivtff_folio_token_recurrence.py"
+      - ".github/workflows/exp004-ivtff-folio-tokens.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-linked-locus-tokens:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify IVTFF source grammar and confidence policy
+        run: python research_os/tools/exp004_ivtff_folio_token_recurrence.py --selftest
+      - name: Read ZL3b with source checksum and compare locus label forms across folios
+        run: |
+          python research_os/tools/exp004_ivtff_folio_token_recurrence.py \
+            --output research_os/experiments/EXP-2026-004/zl3b_locus_token_folio_recurrence_v1.json
+      - name: Persist derived counts and source citation; do not redistribute corpus
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp004-full-voynich-folio-token-provenance
+          path: research_os/experiments/EXP-2026-004/zl3b_locus_token_folio_recurrence_v1.json
+          if-no-files-found: warn
+          retention-days: 30
