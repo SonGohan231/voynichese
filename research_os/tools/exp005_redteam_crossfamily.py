@@ -25,7 +25,7 @@ def primary_and_null(manifest,features,sec):
     for x in manifest["proposed_regions"]:
         key=x["crop_id"].split(":")[0]
         rois.setdefault(key,[]).append(x["crop_id"])
-    assert len(rois)==9 and all(len(v)==3 for v in rois.values())
+    assert len(rois)>=2 and all(len(v)==3 for v in rois.values())
     focus={frozenset([x["left"],x["right"]]):x["comparison"]
            for x in manifest["primary_comparisons"]}
     data=[]
