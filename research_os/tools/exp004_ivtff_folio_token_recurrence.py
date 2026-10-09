@@ -18,7 +18,7 @@ from itertools import combinations
 HERE=Path(__file__).resolve().parents[1]/"experiments"/"EXP-2026-004"
 SOURCE_URL="https://www.voynich.nu/data/ZL3b-n.txt"
 PAGE_RE=re.compile(r"^<(f\d+[rv]\d*|fRos)>\s*(?:<!\s*(.*?)\s*>)?")
-LOCUS_RE=re.compile(r"^<(?P<folio>f[^.>]+)\.(?P<line>\d+),(?P<mark>[@+=*])(?P<locus>[PLCR])(?P<rest>[^>]*)>\s*(?P<value>.*)$")
+LOCUS_RE=re.compile(r"^<(?P<folio>f[^.>]+)\.(?P<line>\d+[a-z]?),(?P<mark>[@+\-=*])(?P<locus>[PLCR])(?P<rest>[^>]*)>\s*(?P<value>.*)$")
 VARS_RE=re.compile(r"\$([A-Z])=([A-Za-z0-9]+)")
 COMMENT_RE=re.compile(r"<!.*?>")
 OTHER_TAG_RE=re.compile(r"<[^>]*>")
@@ -34,7 +34,7 @@ def tokenize_strict(value):
     return [t for t in raw if re.fullmatch(r"[a-z]+",t) and not UNCERTAIN_TOKENS.search(t)]
 
 def parse_file(text):
-    folios={};lines=[];current=None
+    folios={};lines=[];current=None;unparsed=[]
     for row in text.splitlines():
         row=row.strip()
         if not row or row.startswith("#"):continue
@@ -57,8 +57,10 @@ def parse_file(text):
             if locus in ("L","C","R"):folios[f]["labels"].update(toks)
             for tok in set(toks):folios[f]["token_loci"][tok].add(locus)
             lines.append({"folio":f,"locus_type":locus,"accepted_token_count":len(toks),
-                          "line_number":int(match.group("line"))})
-    return folios,lines
+                          "line_number":match.group("line")})
+        elif row.startswith("<f"):
+            unparsed.append(row[:160])
+    return folios,lines,unparsed
 
 def source_key_to_canvas(label):
     # 206 original photos group some facing folds and cut pages in one canvas.
@@ -66,7 +68,7 @@ def source_key_to_canvas(label):
     return re.findall(r"(?<!\d)(\d{1,3}[rv]\d?)(?!\d)",text)
 
 def build(content):
-    folios,lines=parse_file(content)
+    folios,lines,unparsed=parse_file(content)
     if len(folios)<100 or len(lines)<1500:
         raise ValueError("Source file failed corpus coverage checks")
     label_occurrences=defaultdict(list)
@@ -99,6 +101,8 @@ def build(content):
         "translation_or_decipherment":"NOT_PERFORMED",
         "status":"EXPLORATORY_NOT_CONFIRMATORY",
         "page_header_count":len(folios),"locus_lines_parsed":len(lines),
+        "unparsed_source_locus_like_line_count":len(unparsed),
+        "unparsed_source_examples":unparsed[:18],
         "counts_by_locus_type":dict(Counter(row["locus_type"] for row in lines)),
         "folios_with_label_tokens":sum(bool(d["labels"]) for d in folios.values()),
         "strict_filtered_token_count":sum(sum(d["tokens"].values()) for d in folios.values()),
@@ -132,8 +136,8 @@ def selftest():
 <f1v> <! $L=A $H=1>
 <f1v.1,@C0> ol.ykal
 """
-    f,rows=parse_file(sample)
-    assert len(f)==2 and len(rows)==3
+    f,rows,unparsed=parse_file(sample)
+    assert len(f)==2 and len(rows)==3 and not unparsed
     assert f["f1r"]["labels"]["ckhaiin"]==1
     assert f["f1v"]["labels"]["ol"]==1
     assert tokenize_strict("okar.[a:o]in.daiin") == ["okar","daiin"]
