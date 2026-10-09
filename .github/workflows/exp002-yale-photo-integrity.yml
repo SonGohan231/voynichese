@@ -1,0 +1,36 @@
+name: EXP-2026-002 Yale archival photo integrity (8 selected images)
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp002_verify_archive_jpeg_bytes.py"
+      - "research_os/experiments/EXP-2026-002/yale_archived_jpeg_provenance_crosswalk_2026-10-09.json"
+      - ".github/workflows/exp002-yale-photo-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-eight-yale-scan-jpegs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Re-fetch and hash 8 archived Yale JPEG bytes (q9 and q14)
+        run: |
+          python3 research_os/tools/exp002_verify_archive_jpeg_bytes.py \
+            --mode priority \
+            --output "$RUNNER_TEMP/exp002_yale_archived_jpeg_binary_report.json"
+      - name: Preserve actual binary-integrity evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp002-yale-jpeg-binary-integrity
+          path: ${{ runner.temp }}/exp002_yale_archived_jpeg_binary_report.json
+          if-no-files-found: warn
+          retention-days: 30
