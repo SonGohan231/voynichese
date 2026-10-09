@@ -58,22 +58,48 @@ def derive_geometry(original,oid):
                             param1=105,param2=35,
                             minRadius=max(25,int(shorter*.055)),
                             maxRadius=max(50,int(shorter*.285)))
+    raw_hough_count=int(len(circles[0])) if circles is not None else 0
+    # A circle detector can invent concentric rings and off-center false hits.
+    # Measure local edge support along each proposed circumference before
+    # considering the candidate worth investigating. Not a probability.
+    def radial_edge_support(x,y,r):
+        angles=np.linspace(0,2*np.pi,240,endpoint=False)
+        cos=np.cos(angles);sin=np.sin(angles)
+        supported=np.zeros(angles.shape,dtype=bool)
+        for delta in (-5,-3,-1,1,3,5):
+            rr=max(1.,r+delta)
+            ix=np.rint(x+rr*cos).astype(np.int32)
+            iy=np.rint(y+rr*sin).astype(np.int32)
+            valid=(ix>=0)&(ix<width)&(iy>=0)&(iy<height)
+            supported[valid]|=edge[iy[valid],ix[valid]]>0
+        return float(supported.mean())
     possible=[]
     if circles is not None:
-        for c in circles[0]:
-            x,y,rad=(float(v) for v in c)
+        for candidate in circles[0]:
+            x,y,rad=(float(v) for v in candidate)
+            support=radial_edge_support(x,y,rad)
+            if support < .32:
+                continue
             box=[normalized(max(0.,x-rad),width),
                  normalized(max(0.,y-rad),height),
                  normalized(min(width,x+rad)-max(0,x-rad),width),
                  normalized(min(height,y+rad)-max(0,y-rad),height)]
             possible.append({"center_xy":[normalized(x,width),normalized(y,height)],
                              "radius_fraction_of_minimum_axis":round(rad/shorter,6),
+                             "edge_support_fraction":round(support,4),
                              "box_xywh":box,
                              "crop_url":image_crop_url(oid,box),
                              "label":"ROUND_SHAPE_CANDIDATE_UNKNOWN",
                              "human_verified":False})
-    possible.sort(key=lambda x:(x["center_xy"][1],x["center_xy"][0]))
-    possible=possible[:32]
+    possible.sort(key=lambda item:-item["edge_support_fraction"])
+    unique=[]
+    for item in possible:
+        if any(math.hypot((item["center_xy"][0]-keep["center_xy"][0])*width,
+                          (item["center_xy"][1]-keep["center_xy"][1])*height)
+               < .075*shorter for keep in unique):
+            continue
+        unique.append(item)
+    possible=sorted(unique[:24],key=lambda item:(item["center_xy"][1],item["center_xy"][0]))
     lines=cv2.HoughLinesP(edge,1,np.pi/180,threshold=max(80,int(shorter*.06)),
                            minLineLength=max(100,int(shorter*.16)),
                            maxLineGap=max(16,int(shorter*.021)))
@@ -115,6 +141,8 @@ def derive_geometry(original,oid):
         "candidate_circular_regions":possible,
         "straight_image_line_candidates":line_candidates,
         "grid_tile_edge_density":sectors,
+        "unfiltered_hough_circle_count":raw_hough_count,
+        "minimum_radial_edge_support_fraction":0.32,
         "total_detected_circular_candidates":len(possible),
         "total_straight_line_candidates":len(line_candidates),
         "confirmed_rosettes":0,
