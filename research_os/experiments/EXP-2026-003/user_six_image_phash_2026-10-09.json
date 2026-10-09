@@ -1,0 +1,110 @@
+{
+  "schema": "voynich-exp003-user-phash-v1",
+  "status": "EXPLORATORY_ONLY_NOT_IMAGE_AUTHENTICATION",
+  "created_utc": "2026-10-09",
+  "transform": "BGR_to_gray; resize 32x32 INTER_AREA; DCT(top-left 8x8); bit=(coef > median(all 63 AC coefficients)); pack 64 bits as 16 lowercase hex chars",
+  "warning": "Screenshots include modern annotations; these signatures are NOT validated crop alignment and are NOT held-out predictions. No pixel data reproduced.",
+  "labels": [
+    "full",
+    "center80",
+    "top55",
+    "bottom55"
+  ],
+  "images": [
+    {
+      "id": "IMG01",
+      "file": "1000062908.jpg",
+      "upload_sha256": "350d42a0c5ae377252f81b32b0f0bc8391731581efc9aca9bcae26a62e08b3bc",
+      "pixels": [
+        1106,
+        1536
+      ],
+      "variants": {
+        "full": "d5a50d3e624b32ae",
+        "center80": "dfa28835e2514a9f",
+        "top55": "d50c724b363b4e35",
+        "bottom55": "d5b662c533e1099e"
+      }
+    },
+    {
+      "id": "IMG02",
+      "file": "1000062866.jpg",
+      "upload_sha256": "aef40a5d86d9e213e86bf9d02ca8820d0c805e6fe2982977718fa08700606fa1",
+      "pixels": [
+        1179,
+        1536
+      ],
+      "variants": {
+        "full": "80e3457a17e21ff4",
+        "center80": "a9e0ed5f6158892b",
+        "top55": "804c5b1b765a6f78",
+        "bottom55": "80fb17e03ba47b86"
+      }
+    },
+    {
+      "id": "IMG03",
+      "file": "1000062887.jpg",
+      "upload_sha256": "983eb1c741e1665d98ebeada41e497e996827f57c49ae23cb543415048338cdf",
+      "pixels": [
+        698,
+        1536
+      ],
+      "variants": {
+        "full": "80ff95625a842ddb",
+        "center80": "c69da962526e7a91",
+        "top55": "82954aa095fa35ef",
+        "bottom55": "826a5b95256de9d2"
+      }
+    },
+    {
+      "id": "IMG05",
+      "file": "1000062408.jpg",
+      "upload_sha256": "ecd04335505fddc2f8f34844cf4a693137f28e72218483b0f3b8db325ce8f5cb",
+      "pixels": [
+        1536,
+        1409
+      ],
+      "variants": {
+        "full": "8002157f7f1919df",
+        "center80": "c6a4a6246533dc5f",
+        "top55": "800c7f195f1a7f1a",
+        "bottom55": "d5aa23c63b813e87"
+      }
+    },
+    {
+      "id": "IMG06",
+      "file": "1000062420.jpg",
+      "upload_sha256": "1dcf44cb66edef3061f0235a707537e38eab7faa26a95ef142fc6e31ff147a0f",
+      "pixels": [
+        1536,
+        764
+      ],
+      "variants": {
+        "full": "9095715a7a97631e",
+        "center80": "d6a9a05a1ce1d8bd",
+        "top55": "90517a437a7a3a3e",
+        "bottom55": "d09e3c9663937385"
+      },
+      "regions": [
+        {
+          "id": "left",
+          "variants": {
+            "full": "809e3b457dab3465"
+          }
+        },
+        {
+          "id": "middle",
+          "variants": {
+            "full": "99bf0e3619af5700"
+          }
+        },
+        {
+          "id": "right",
+          "variants": {
+            "full": "d5d60a7b22e50a7a"
+          }
+        }
+      ]
+    }
+  ]
+}
