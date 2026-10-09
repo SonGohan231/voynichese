@@ -177,3 +177,43 @@ reviewing coherent historical regions from genuine source photos.
 **Status remains INCONCLUSIVE / 0 independently established same-object
 different-perspective findings.** A technical CI PASS validates the
 generator and measurements only, not interpretation.
+
+### Follow-up diagnostic: source-cropped blue central motifs, unblinded ROI seeds
+
+Independent visual assessment of the prior automated Hough sheet shows some
+large "circular candidates" encompass **multiple adjacent objects**, not a
+single radial component. This explains some of the earlier false-negative
+blue-ray counts, especially near the lower Rosettes motif. Preserve prior
+results as the original automated detector baseline, not overwrite them.
+
+- Source: \`research_os/tools/exp004_curated_blue_core_pilot.py\`
+- [GitHub Actions #37895645943](https://github.com/SonGohan231/voynichese/actions/runs/37895645943) **SUCCESS**
+- Archive artifact \`exp004-source-blue-central-motifs-unblinded\`, ID
+  \`11600645680\`, ZIP SHA256
+  \`402f3a9496059c06fb5b88531e00b3e9df33eb8592c5e87e0fa498ccb60de684\`.
+- Four *visually seeded unblinded* central blue motifs, two each from f68v and
+  f85v–86r; 4 cross-folio comparisons.
+- Median **digital blue/angular occupancy runs** under nine sensitivity
+  settings (3 saturation × 3 occupancy thresholds):
+
+| Approximate blue motif | Digital run median | Threshold range | Status |
+|---|---:|---:|---|
+| f68v small lobed motif | 7 | 4–9 | Unstable |
+| f68v long blue spokes | 15 | 11–16 | Unstable |
+| f85v–86r top blue spokes | 13 | 10–15 | Unstable |
+| f85v–86r lower blue rays | 8 | 8–10 | More stable digitally |
+
+The highest exploratory score was **0.3629** (f68v long rays vs top
+Rosettes), followed by **0.2905** (f68v small lobed vs lower Rosettes).
+**0 of 4** pair comparisons met *both-features-stable* requirement.
+The blue fields visually share a radial-lobed grammar, but varying numbers
+and detailed text/border settings make "same object from another view"
+unsubstantiated. They may be repeated stylistic motif categories instead.
+
+**Serious epistemic caution:** centers and radii were chosen after inspection
+by the assistant, i.e. unblinded. They must not be construed as ground-truth
+object segmentation or confirmatory p-values. The counts are *blue appearance
+run proxies*, not manually accepted historical sectors/star counts. True
+cardinality after faded pigment and overlapping ink can only be established
+by original-resolution, two-reviewer annotation and adjudication.
+
