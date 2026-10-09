@@ -46,7 +46,14 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add research_os/experiments/EXP-2026-003/foldout_geometry_probe_2026-10-09.json
+          REPORT='research_os/experiments/EXP-2026-003/foldout_geometry_probe_2026-10-09.json'
+          git fetch origin research/exp-2026-002-sectional-locality-prereg-20261008
+          if git cat-file -e "FETCH_HEAD:$REPORT" 2>/dev/null; then
+            echo 'A report at this exact path is already committed on the shared research branch.'
+            echo 'Avoid replacing concurrent scientific evidence; independent run artifact is preserved.'
+            exit 0
+          fi
+          git add "$REPORT"
           if ! git diff --cached --quiet; then
             git commit -m "research(exp003): 8-source Yale foldout circle and line candidates"
             git pull --rebase origin research/exp-2026-002-sectional-locality-prereg-20261008
