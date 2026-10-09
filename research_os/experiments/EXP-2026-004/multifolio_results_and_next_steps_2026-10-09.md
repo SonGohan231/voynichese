@@ -72,3 +72,32 @@ Direct source-photo inspection found these particular top matches to be image/sh
 - `research_os/tools/exp004_ivtff_folio_token_recurrence.py`; workflow `.github/workflows/exp004-ivtff-folio-tokens.yml`
 - `research_os/tools/exp004_native_candidate_contact_sheet.py`; workflow contact-sheet step added to `.github/workflows/exp004-multifolio-atlas.yml` (verify latest run before claiming its artifact success).
 - Source-linked candidate gallery, rankings and token positioning are GitHub Action artifacts; public repo includes the generator code and this report. No master merge requested or performed.
+
+### Second red-team filter: border-excluded result (supersedes prior rankings)
+
+GitHub Actions [#37892567111](https://github.com/SonGohan231/voynichese/actions/runs/37892567111)
+SUCCESS with actual source-JPEG crop board (artifact `11598941762`,
+ZIP SHA256 `8c9fdd3fa59b220ff9a92c21afdd095d98c90ea72cbef37dcf60d433dc694e6e`).
+
+Of 991 low-level matching proposals, **990 were eliminated by an intentionally
+strict photographic-margin/sheet-edge bbox filter**. Only one proposed pair
+remained, **f6v ↔ f7v**, digital green-color appearance, dHash Hamming **8/64**.
+Native-source contact sheet shows two superficially comparable green leaf-like
+parts, without evidence of exact identity or alternative projection.
+The photo-border filter can also remove **real marginal decorations**, so the
+number 990 is a *screening exclusion count*, not 990 empirically falsified
+independent art hypotheses; margin iconography must be annotated separately.
+
+Updated scope: 206 source-verified photographs, 4800 computer ROI candidates,
+991 pre-screen same-feature pairs, 990 border-screen excluded, **1 retained
+unverified pair**, 66 low-color-overlap outline proposals (no intentional
+uncolored conclusion), **0 verified SAME_OBJECT from a different view**.
+
+**Methodological finding:** the prior all-folio connected-component pipeline
+primarily recovers the photograph/parchment edge and low-level pigment patches.
+Further automated whole-object identity requires source-native *semantic
+object masks* (figures, faces, towers, merlons, ring sectors, stars,
+ducts and continuous ornaments), blind expert review and null correction.
+Automatic data alone cannot provide trusted per-folio counts of women or
+stars. A PASS code test is not evidence of historical meaning.
+
