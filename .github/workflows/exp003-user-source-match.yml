@@ -8,6 +8,12 @@ on:
       - "research_os/tools/exp003_user_image_source_match.py"
       - "research_os/experiments/EXP-2026-003/user_six_image_phash_2026-10-09.json"
       - ".github/workflows/exp003-user-source-match.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp003_user_image_source_match.py"
+      - "research_os/experiments/EXP-2026-003/user_six_image_phash_2026-10-09.json"
+      - ".github/workflows/exp003-user-source-match.yml"
   workflow_dispatch:
 
 permissions:
