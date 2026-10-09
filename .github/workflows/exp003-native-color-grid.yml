@@ -1,6 +1,12 @@
 name: Voynich EXP003 native color-grid exploratory audit
 
 on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp003_native_color_grid_pilot.py"
+      - ".github/workflows/exp003-native-color-grid.yml"
   pull_request:
     branches: [master]
     paths:
