@@ -101,3 +101,79 @@ ducts and continuous ornaments), blind expert review and null correction.
 Automatic data alone cannot provide trusted per-folio counts of women or
 stars. A PASS code test is not evidence of historical meaning.
 
+
+## Follow-up: verified Yale native source reviewer packet and digital blue radial stability
+
+**Goal:** rectify prior colored ROI and photographic border pseudo-matches by
+reviewing coherent historical regions from genuine source photos.
+
+### Six original-image packets (CI completed)
+
+- Code \`research_os/tools/exp004_native_annotation_packets.py\`
+- [GitHub Actions #37894533281](https://github.com/SonGohan231/voynichese/actions/runs/37894533281), **SUCCESS**
+- Full artifact \`exp004-original-yale-native-object-annotation-packets\`,
+  ID **11599672233**; archive SHA-256
+  \`c091f02a484a85905037d8362fb7197d02f5ada2b2d10d6119973286f81f761d\`
+- 6 source photos independently downloaded and verified against their archived
+  SHA-256 before cropping: f67v, f68v, f85v/f86r Rosettes,
+  f75v, f78r, f79r.
+- 9 reviewer tiles per source = **54 source-coordinate original-photo region
+  proposals**, 6 photographic overview panels, empty independent-anotator CSV,
+  all tile records with Yale IIIF reference, source OID, normalized + native
+  pixel rectangle, and original JPEG SHA256.
+- **11 unverified Hough round-feature proposals** within those 6 source images.
+- Saved review JPEG tiles are resized to <= 1000px longest side but the cut
+  locations refer back to full original native JPEG coordinates in the JSON
+  and Yale IIIF. They are **not direct native-resolution pixel files**.
+- No count of women, women orientation, star count, tower count or same-object
+  identity is accepted. Two independent qualified annotators must populate
+  the blank fields. Crop boundaries can split one object into adjacent tiles;
+  deduplicate at original folio/source coordinates.
+
+### Digital blue radial patterns, f68v vs Rosettes
+
+- Code \`research_os/tools/exp004_blue_radial_components.py\`
+- [GitHub Actions #37894903363](https://github.com/SonGohan231/voynichese/actions/runs/37894903363), **SUCCESS**
+- Artifact \`exp004-blue-radial-patterns-and-source-images\`,
+  ID **11599473307**, ZIP SHA256
+  \`bc13c043dfbdaa6521873de8e5ffd32b665ac3f0883d17d4a4d50cff44db1e84\`
+- 3 original f68v and 7 original f85v-f86r round-Hough candidates =
+  **10 features**; **21 cross-source comparisons**, with both source
+  photographs SHA-verified. Sampling images capped at 2000px longest axis,
+  3 saturation thresholds and 3 angular-occupancy thresholds per feature.
+- **Zero pairs** meet the prespecified *digital blue-run stability*
+  heuristic. Illustrative exploratory scores: first f68v circular feature
+  versus first Rosettes = **0.3348**; second f68v circular feature versus
+  first Rosettes = **0.2915**. These are neither probabilities nor
+  statistical significance.
+- Representative blue appearance **run count** is highly threshold-sensitive:
+  f68v first candidate median 8 (range 3-12),
+  f68v second median 15 (range 7-16),
+  upper-middle Rosettes median 13 (range 12-15).
+  These **are not observed historic spoke/star counts**, even where a
+  local numeric value looks plausible.
+- The machine vision currently does not have a stable basis for treating
+  blue-radial structures as one object, even when the shapes look similar by
+  eye. It also has not ruled out same-object interpretations because sample
+  selection and measurement power are weak.
+
+### Next decisive validation gates
+
+1. High-resolution original Yale crop showing whole object, not overlapping
+   ROI painted components or paper edges.
+2. Double-blind independent object annotation with each source photograph
+   folio-verified; count women/figures separately; face direction has
+   UNKNOWN and OBSCURED choices; count and label blue radial wedges, ring
+   sectors, tower crenellations and original outline connectors.
+3. Inter-annotator agreement; resolve geometry disagreements with source
+   crop and log an evidence-backed adjudication.
+4. Compare topology and cyclic landmark/sector-order and side-by-side
+   original-scale/normalized views. Rotation/reflection and occlusion/2.5D
+   must be separate model families.
+5. Independent physically grouped heldout matched by drawing type and
+   manuscript section, scribe/Currier, with shuffled/random null and
+   multiple-comparison correction. No resort to sealed EXP001/002 data.
+
+**Status remains INCONCLUSIVE / 0 independently established same-object
+different-perspective findings.** A technical CI PASS validates the
+generator and measurements only, not interpretation.
