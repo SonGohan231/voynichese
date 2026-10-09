@@ -1,0 +1,45 @@
+name: Voynich EXP004 all-folio multiview atlas and review shortlist
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp004_multifolio_object_atlas.py"
+      - ".github/workflows/exp004-multifolio-atlas.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp004_multifolio_object_atlas.py"
+      - ".github/workflows/exp004-multifolio-atlas.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  profile-all-folios:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Exercise synthetic graph/folio and color-neutral invariants
+        run: |
+          python research_os/tools/exp004_multifolio_object_atlas.py --selftest
+      - name: Build 206-canvas object ROI atlas with SHA-verified upstream evidence
+        run: |
+          python research_os/tools/exp004_multifolio_object_atlas.py \
+            --output research_os/experiments/EXP-2026-004/multifolio_object_atlas_v1.json \
+            --tsv research_os/experiments/EXP-2026-004/ranked_roi_matches_v1.tsv
+      - name: Store all evidence including unavailable categories
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp004-multifolio-candidate-atlas
+          path: |
+            research_os/experiments/EXP-2026-004/multifolio_object_atlas_v1.json
+            research_os/experiments/EXP-2026-004/ranked_roi_matches_v1.tsv
+          if-no-files-found: warn
+          retention-days: 30
