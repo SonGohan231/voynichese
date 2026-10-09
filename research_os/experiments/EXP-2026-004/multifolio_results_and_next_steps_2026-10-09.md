@@ -12,9 +12,28 @@
 | Placa spatial tokens of Nine Rosettes | [#37891194941](https://github.com/SonGohan231/voynichese/actions/runs/37891194941) SUCCESS, artifact `11598078968` | 539 positioned token entries; 44 token-bearing regions; 363 unique forms and 63 forms appearing in more than one region | 46 polygon/regions in source; only 44 have listed tokens; Placa image coordinates not yet matched to Yale original JPEG |
 | ZL3b Voynich text by folio | [#37892110672](https://github.com/SonGohan231/voynichese/actions/runs/37892110672) SUCCESS, artifact `11598618811` | 227 text page headings, 5,385 IVTFF loci parsed, 64 folios containing L/C/R tokens; 742 pairs of folio headings share at least one selectively filtered L/C/R form | Different folio numbering and partial foldout sheets; labels are not actual ROIs without registration, numerous generic forms |
 
+### Independent visual red-team check: initial ranked ink marks were photographic borders
+
+A native-photo 12-pair contact sheet from verified original scans was generated in
+[GitHub Actions #37892282679](https://github.com/SonGohan231/voynichese/actions/runs/37892282679)
+(artifact `exp004-multifolio-candidate-atlas`, including `paired_native_image_review_board.png`).
+**Manual inspection clearly showed all of its highest-ranked dark-ink matches were the
+outer photographic/page borders, black margins or sheet-edge textures, NOT manuscript
+drawing motifs.** Therefore the initially listed f30v↔f31v, f28v↔f34v and related
+dark image-shape matches are **REJECTED AS PHOTO-BORDER FALSE POSITIVES** for
+same-object interpretation. Treat them solely as forensic examples of detector failure.
+
+Implementation updated at commit `91333a7f9b4cf07056e265ee2ca063781182edb0`
+to remove ROI bounding boxes close to photographic margins from primary same-object
+ranking and from low-color candidate evidence. Border ornaments should be a separate
+human-native-source labeling track, not automatically conflated with photo edges.
+A corrected workflow run must finish and the next contact sheet must be independently
+inspected before displaying new rankings as research leads. Earlier shortlist remains
+in audit history for reproducibility; never cite those pairs as meaningful object recurrence.
+
 ### Specific folios (only review candidates, never scientific discoveries)
 
-**Ink-contour appearance candidate shortlist** from reranked 206-photo digital atlas:
+**Superseded pre-border-filter examples (FALSE POSITIVE PHOTO EDGES — not object candidates):**
 - **f30v ↔ f31v**: dHash Hamming 2 / 64;
 - **f28v ↔ f34v**: dHash Hamming 2 / 64;
 - **f22v ↔ f23v**: Hamming 3 / 64;
@@ -22,7 +41,7 @@
 - **f28v ↔ f31v**: Hamming 3 / 64;
 - **f45r ↔ f46r**: Hamming 3 / 64.
 
-All are visually unverified digital ink components. dHash is not invariant to arbitrary 3D projection. The presence of a similar little dark mark on two scans is not historical evidence they are the same thing.
+Direct source-photo inspection found these particular top matches to be image/sheet edges. They should be **excluded** from any inference about repeated manuscript iconography; replacement rankings await photo-border filter validation.
 
 **Roundel/radial review priorities**: f67v ↔ f85v/f86r and f67v ↔ parts of f86v (exploratory matching scores ~0.45–0.46, insufficient to establish correspondence). Outlines from foldout views belonging to the same physical sheet cannot be independent heldouts.
 
