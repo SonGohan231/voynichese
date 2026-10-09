@@ -1,0 +1,80 @@
+name: Voynich EXP006 source-native blind object review and text-registration gates
+
+on:
+  push:
+    branches:
+      - research/voynich-semantic-independent-20261009
+    paths:
+      - "research_os/tools/exp006_blind_object_mask_queue.py"
+      - "research_os/tools/exp006_text_registration_gate.py"
+      - ".github/workflows/voynich-exp006-independent-annotation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  independent-source-geometry-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install reproducible source-only image analysis dependencies
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Test two polygon generators and four-anchor registration gate
+        run: |
+          python research_os/tools/exp005_semantic_source_pack.py --selftest
+          python research_os/tools/exp006_blind_object_mask_queue.py --selftest
+          python research_os/tools/exp006_text_registration_gate.py --selftest
+      - name: Retrieve and verify original Yale source JPEGs; stage original photo coordinates
+        run: |
+          python research_os/tools/exp005_semantic_source_pack.py \
+            --out research_os/experiments/EXP-2026-005/native_semantic_review
+      - name: Generate independent algorithmic polygon proposals for blinded substantive review
+        run: |
+          python research_os/tools/exp006_blind_object_mask_queue.py \
+            --out research_os/experiments/EXP-2026-006/blind_object_review
+      - name: Test the provenance-constrained text image registration gate
+        run: |
+          python research_os/tools/exp006_text_registration_gate.py \
+            --out research_os/experiments/EXP-2026-006/text_coordinate_registration
+      - name: Verify scientific gate semantics and real image assets
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=Path("research_os/experiments/EXP-2026-006/blind_object_review")
+          r=json.loads((a/"disagreement_and_review_queue.json").read_text())
+          assert r["original_yale_photo_count"]==9
+          assert r["verified_crops"]==27
+          assert r["two_independent_algorithmic_proposals"] is True
+          assert r["two_independent_semantic_interpretations"] is False
+          assert r["blinded_human_annotation_count"]==0
+          assert r["accepted_mv2"]==r["accepted_mv3"]==r["accepted_mv4"]==0
+          assert r["sources_exp001_heldout_used"] is False
+          assert len(r["annotation_crops"])==27
+          assert all(x["human_semantic_agreement"]=="NOT_ASSESSED" for x in r["annotation_crops"])
+          for name in ["a_local_ink_proposals.json","b_multiscale_blackhat_proposals.json"]:
+              p=json.loads((a/name).read_text())
+              assert all(x["semantic_label"]=="UNKNOWN" for x in p["proposals"])
+          t=Path("research_os/experiments/EXP-2026-006/text_coordinate_registration/registration_audit.json")
+          j=json.loads(t.read_text())
+          assert j["original_source_photo_count"]==9
+          assert j["registered_photos"]==0
+          assert j["text_object_links_claimed"]==0
+          assert j["sources_heldout_used"] is False
+          print("EXP006_PROVENANCE_GATES_PASS: unknown object semantics and text-registration blocked")
+          PY
+      - name: Publish 54 independent pixel proposals overlays and scientist review queues
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: voynich-exp006-original-polygon-blind-review-and-text-gate
+          path: |
+            research_os/experiments/EXP-2026-006/blind_object_review/
+            research_os/experiments/EXP-2026-006/text_coordinate_registration/
+          if-no-files-found: warn
+          retention-days: 30
