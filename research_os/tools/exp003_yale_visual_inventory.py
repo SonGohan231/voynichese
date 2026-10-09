@@ -101,22 +101,40 @@ def describe_region(mask, contour, im, oid, class_name, index):
 
 
 def classify_pixel_masks(im):
+    """Conservative HSV appearance masks with estimated paper-background rejection.
+
+    Median high-value/low-saturation Lab pixels provide a per-photo parchment
+    reference. Differences are JPEG color distances, NOT chemical Delta-E
+    measurements, pigment identities or validated color calibration.
+    """
     hsv = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
-    h = hsv[:,:,0]
-    s = hsv[:,:,1]
-    v = hsv[:,:,2]
-    # Empirical thresholds classify image pixel appearance, NOT chemical pigments.
-    blue = (h >= 91) & (h <= 136) & (s >= 46) & (v >= 42)
-    green = (h >= 30) & (h < 91) & (s >= 43) & (v >= 38)
-    red = ((h <= 11) | (h >= 170)) & (s >= 65) & (v >= 40) & (v < 245)
-    ochre = (h >= 11) & (h <= 40) & (s >= 42) & (v >= 46) & (v < 229)
-    ink = (v <= 103) & (s <= 165)
-    # Colored classes disjoint, to count each visible pixel once.
+    lab = cv2.cvtColor(im, cv2.COLOR_BGR2LAB)
+    h, s, v = hsv[:,:,0], hsv[:,:,1], hsv[:,:,2]
+    # Use bright and moderately desaturated candidate background pixels.
+    candidates = (v >= 135) & (s <= 145)
+    if np.count_nonzero(candidates) < .08 * v.size:
+        candidates = v >= np.percentile(v, 55)
+    paper = np.median(lab[candidates], axis=0).astype(np.float32)
+    lab_d = lab.astype(np.float32) - paper[None,None,:]
+    chroma_distance = np.sqrt(np.sum(lab_d * lab_d, axis=2))
+    # Conservative minimum contrast. Avoid classifying warm parchment as pigment.
+    colored = chroma_distance >= 26
+    blue = (h >= 91) & (h <= 136) & (s >= 50) & (v >= 42) & colored
+    green = (h >= 30) & (h < 91) & (s >= 52) & (v >= 38) & colored
+    red = ((h <= 11) | (h >= 170)) & (s >= 82) & (v >= 40) & (v < 220) & colored
+    ochre = (h >= 11) & (h <= 40) & (s >= 92) & (v >= 46) & (v < 185) & colored
+    ink = (v <= 103) & (s <= 165) & (chroma_distance >= 22)
     blue &= ~ink
     green &= ~ink & ~blue
     red &= ~ink & ~blue & ~green
     ochre &= ~ink & ~blue & ~green & ~red
-    return dict(zip(COLOR_BINS, (blue, green, red, ochre, ink)))
+    background = {
+        "paper_lab_opencv_median": [round(float(n),2) for n in paper],
+        "estimation": "median bright/desaturated pixels in each scan",
+        "pigment_color_call": "NOT_MADE",
+        "color_space": "OpenCV 8-bit Lab; thresholds are approximate and uncalibrated"
+    }
+    return dict(zip(COLOR_BINS, (blue, green, red, ochre, ink))), background
 
 
 def contours_from_masks(im, oid, masks):
@@ -214,7 +232,7 @@ def build(archive_file,output,summary_file):
             original_size=list(original.shape[:2][::-1])
             im=resize_photo(original)
             del original
-            masks=classify_pixel_masks(im)
+            masks, paper_reference=classify_pixel_masks(im)
             denom=im.shape[0]*im.shape[1]
             percentages={color:round(100*int(np.count_nonzero(m))/denom,3)
                          for color,m in masks.items()}
@@ -227,6 +245,7 @@ def build(archive_file,output,summary_file):
                 "source_path":entry["path"],
                 "jpeg_sha256_recomputed_match":True,
                 "source_dimensions":original_size,
+                "per_image_parchment_reference":paper_reference,
                 "processing_dimensions":list(im.shape[:2][::-1]),
                 "color_appearance_percent_of_pixels":percentages,
                 "roi_candidates":len(rois),"rois":rois,
@@ -247,7 +266,7 @@ def build(archive_file,output,summary_file):
             totals[k].append(v)
     avg={k:round(sum(v)/len(v),3) for k,v in totals.items()}
     report={
-        "schema":"exp-2026-003/yale-cv-pixel-appearance-v1",
+        "schema":"exp-2026-003/yale-cv-pixel-appearance-v2",
         "generated_utc":__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
         "status":"AUTOMATED_IMAGE_MEASUREMENTS_NOT_HUMAN_REVIEW",
         "provenance":"GitHub archival JPEG branch; JPEG bytes verified against historical SHA256 during this run",
@@ -262,7 +281,7 @@ def build(archive_file,output,summary_file):
         },
         "method":{
             "image_resize_max_side_px":WORK_SIZE,
-            "color":"OpenCV HSV hand-set thresholds of JPEG pixels incl. blue, green, red, yellow/ochre and dark, without parchment/color calibration",
+            "color":"Conservative OpenCV HSV color thresholds requiring visual difference from the per-image median bright desaturated parchment reference in OpenCV Lab; not color-chart calibrated",
             "regions":"OpenCV connected-component contours and Canny edges, normalized bounding boxes with dHash64 descriptors",
             "similarity":"cross-canvas perceptual dHash <=7 with aspect and area filters; similarity is NOT object identity",
             "2point5d":"NOT_A_DEPTH_RECONSTRUCTION; only 2D shape proposals",
