@@ -1,0 +1,46 @@
+name: Voynich EXP004 compare blue radial components f68v Rosettes
+on:
+  push:
+    branches:
+      - research/exp-2026-002-sectional-locality-prereg-20261008
+    paths:
+      - "research_os/tools/exp004_blue_radial_components.py"
+      - ".github/workflows/exp004-blue-radial-components.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research_os/tools/exp004_blue_radial_components.py"
+      - ".github/workflows/exp004-blue-radial-components.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  digital-blue-radial-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/exp-2026-002-sectional-locality-prereg-20261008
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install image runtime
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Synthetic eight sectors and blank false-positive controls
+        run: python research_os/tools/exp004_blue_radial_components.py --selftest
+      - name: Check archived SHA and compare native-source blue radial patterns
+        run: |
+          python research_os/tools/exp004_blue_radial_components.py \
+            --out research_os/experiments/EXP-2026-004/source_blue_radial_shape_proxies.json \
+            --board research_os/experiments/EXP-2026-004/source_blue_radial_candidate_board.png
+      - name: Preserve raw metrics and original-source comparison board
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: exp004-blue-radial-patterns-and-source-images
+          path: |
+            research_os/experiments/EXP-2026-004/source_blue_radial_shape_proxies.json
+            research_os/experiments/EXP-2026-004/source_blue_radial_candidate_board.png
+          if-no-files-found: warn
+          retention-days: 30
