@@ -42,3 +42,22 @@ Unlike previous contour matching, topologically inconsistent examples are penali
 ## Interpretation
 
 The targeted comparison supports a **methodological improvement**: contour IoU alone is insufficient; complexity, junctions and notch sequence should be checked jointly. It does **not** yet support an encoded scale-independent vocabulary. Further progress depends on neutral, independently reviewed source annotations and proper held-out controls.
+
+## Follow-up revision: branch-ray angle gaps and relative endpoint lengths
+
+The later, superseding technical implementation includes **annular branch-ray angular gap descriptors** and **straight-line relative distances from candidate junction clusters to endpoints**. They are pixel-geometric proxies; they are neither validated branch insertion angles nor traced historical branch lengths. The angle-gap comparison is orientation-invariant by sorted normalized gap patterns. Dependence on skeletonization and curvature must be tested independently.
+
+- Reproducible completed CI: [GitHub Actions #37889175914](https://github.com/SonGohan231/voynichese/actions/runs/37889175914) **success**.
+- Artifact ID **11597363610**, SHA256 ZIP digest `c4baa3b8294700ce4e3a7742eac646587bdd340fb0c2e1edd83cf34433199bd4`.
+- Source hashes verified again, **188 regions, 4103 cross-source comparisons, 3625 complexity-eligible pairs**; new descriptive 50th/90th/95th/99th percentiles **0.20292 / 0.36853 / 0.43119 / 0.56628**.
+
+| Discovery pair | Updated score with branch angular gaps / endpoint distances | rank / 3625 | normalized branch gap difference | relative chord distance difference |
+|---|---:|---:|---:|---:|
+| f10r:green:2 ↔ f94v–95r:green:22 | 0.50781 | 68 | 0.0719 | 0.1238 |
+| f10r:green:3 ↔ f94v–95r:green:35 | 0.40610 | 243 | 0.3533 | 0.2628 |
+| f10r:green:0 ↔ f94v–95r:green:34 | 0.34311 | 464 | 0.2110 | 0.2671 |
+| f9r:green:13 ↔ f94v–95r:green:0 | 0.30234 | 692 | 0.1844 | 0.1806 |
+
+The earlier table captures the FIRST completed technical version; this addendum supersedes its composite scores. Changes in score do not imply improvement in scientific significance: both scoring formulas were developed and inspected on the same selected folios.
+
+**Open gaps for the assigned Dyrygent/Agent OS science team:** blinded high-resolution tracing of genuine branch junctions, ordered individual branch angles and centerline lengths by human-verified path graph, true same-scribe/section and matched-style negative controls, per-physical-unit held-out evaluation, uncertainty intervals and multiplicity control. This technical follow-up must NOT be reported as a preregistered statistically significant or independently replicated result.
