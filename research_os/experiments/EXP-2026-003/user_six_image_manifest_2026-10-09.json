@@ -1,0 +1,136 @@
+{
+  "schema_id": "voynich-user-images-exp003-v1",
+  "created_utc_date": "2026-10-09",
+  "origin": "ChatGPT user-provided screenshots; sha256/dimensions measured on uploaded JPEG byte sequences",
+  "status": "EXPLORATORY_UNMATCHED",
+  "blind_heldout": false,
+  "annotations_are_historical": false,
+  "photo_authentication": "PENDING_YALE_IMAGE_MATCH",
+  "pipeline_role": "hypothesis_formulation_only",
+  "source_image_bytes_committed": false,
+  "independent_roi_adjudications": 0,
+  "required_review": [
+    "match every frame to Beinecke Yale IIIF native bytes",
+    "mask contemporary arrows/ellipse/writing/white marks before all image-level metrics",
+    "treat IMG06 as montage, not one independent folio",
+    "assert independent manuscript unit at bifolio or codicological group, not region/pixel",
+    "preserve grayscale-only annotation stage"
+  ],
+  "images": [
+    {
+      "id": "IMG01",
+      "file": "1000062908.jpg",
+      "sha256": "350d42a0c5ae377252f81b32b0f0bc8391731581efc9aca9bcae26a62e08b3bc",
+      "width": 1106,
+      "height": 1536,
+      "type": "single_biological_page",
+      "features": [
+        "root_tuber_brown",
+        "branching_stems_red",
+        "lobed_leaves_green",
+        "terminal_clusters_red",
+        "text"
+      ],
+      "later_markup": [
+        "black_arrows",
+        "red_arrows"
+      ],
+      "source_folio": null
+    },
+    {
+      "id": "IMG02",
+      "file": "1000062866.jpg",
+      "sha256": "aef40a5d86d9e213e86bf9d02ca8820d0c805e6fe2982977718fa08700606fa1",
+      "width": 1179,
+      "height": 1536,
+      "type": "single_balneological_page",
+      "features": [
+        "upper_multiple_figures",
+        "lower_multiple_figures",
+        "blue_horizontal_field",
+        "radial_marks",
+        "vertical_thin_lines",
+        "curved_channel",
+        "text"
+      ],
+      "later_markup": [
+        "thick_red_arrows",
+        "blue_ellipse"
+      ],
+      "source_folio": null
+    },
+    {
+      "id": "IMG03",
+      "file": "1000062887.jpg",
+      "sha256": "983eb1c741e1665d98ebeada41e497e996827f57c49ae23cb543415048338cdf",
+      "width": 698,
+      "height": 1536,
+      "type": "colored_detail_crop",
+      "features": [
+        "faces_or_stylized_heads",
+        "green_blue_red_fields",
+        "overlap",
+        "possible_vertical_columns"
+      ],
+      "later_markup": [
+        "black_arrows",
+        "white_arrows",
+        "handwritten_407"
+      ],
+      "source_folio": null
+    },
+    {
+      "id": "IMG04",
+      "file": "1000028298.jpg",
+      "sha256": "4d7ac251065c2b184dd6f1039933af5f72f5f49fe1e2c74368a98a9a891b7db6",
+      "width": 1536,
+      "height": 140,
+      "type": "text_strip_obscured",
+      "features": [
+        "manuscript_glyphs",
+        "text_columns_or_blocks"
+      ],
+      "later_markup": [
+        "white_obscuration"
+      ],
+      "source_folio": null,
+      "usable_for_glyph_transcription": false
+    },
+    {
+      "id": "IMG05",
+      "file": "1000062408.jpg",
+      "sha256": "ecd04335505fddc2f8f34844cf4a693137f28e72218483b0f3b8db325ce8f5cb",
+      "width": 1536,
+      "height": 1409,
+      "type": "rosettes_foldout_composite",
+      "features": [
+        "concentric_diagrams",
+        "radial_spokes",
+        "interconnecting_tracks",
+        "blue_green_marks",
+        "parchment_folds"
+      ],
+      "later_markup": [],
+      "source_folio": null,
+      "folio_candidate": "f85v/f86r rosettes complex; verify via original Yale canvas + conservation"
+    },
+    {
+      "id": "IMG06",
+      "file": "1000062420.jpg",
+      "sha256": "1dcf44cb66edef3061f0235a707537e38eab7faa26a95ef142fc6e31ff147a0f",
+      "width": 1536,
+      "height": 764,
+      "type": "three_botanical_pages_in_one_composite",
+      "features": [
+        "left_multiple_subterranean_storage_organs",
+        "middle_thin_elongate_roots",
+        "right_groundline_or_rhizome",
+        "leaf_and_stem_varieties",
+        "text"
+      ],
+      "later_markup": [],
+      "source_folio": null,
+      "composite_subpage_count": 3
+    }
+  ]
+}
