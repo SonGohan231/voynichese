@@ -1,0 +1,63 @@
+name: Voynich MV targeted native-source discovery
+
+on:
+  push:
+    branches:
+      - research/mv-discovery-20261009
+    paths:
+      - "research_os/tools/mv_discovery_targeted.py"
+      - ".github/workflows/voynich-mv-targeted-discovery.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  geometry-discovery-native-q9-q14:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install native-image dependencies
+        run: python -m pip install --disable-pip-version-check 'numpy>=1.26,<2' 'opencv-python-headless==4.10.0.84' 'Pillow>=10,<12'
+      - name: Check predeclared hypothesis transforms and physical folds
+        run: |
+          python research_os/tools/exp004_radial_rosette_comparison.py --selftest
+          python research_os/tools/mv_discovery_targeted.py --selftest
+      - name: Build radial candidates from original Yale JPEG bytes
+        run: |
+          python research_os/tools/exp004_radial_rosette_comparison.py \
+            --output research_os/experiments/EXP-2026-004/foldout_radial_matches_v1.json
+      - name: Test native geometry independently of digitization color
+        run: |
+          python research_os/tools/mv_discovery_targeted.py \
+            --radial research_os/experiments/EXP-2026-004/foldout_radial_matches_v1.json \
+            --out research_os/experiments/EXP-2026-004/mv_discovery_followup
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result=json.loads(Path('research_os/experiments/EXP-2026-004/mv_discovery_followup/targeted_pairs.json').read_text())
+          assert result['photo_sources_sha256_recomputed_in_this_job'] is True
+          assert result['candidate_radial_shapes'] >= 20
+          assert result['independent_physical_group_pairs'] > 0
+          assert result['claimed_mv3'] == 0 and result['claimed_mv4'] == 0
+          assert result['color_only_control'] == 'NOT_ASSESSED'
+          assert result['text_only_control'] == 'NOT_ASSESSED'
+          assert result['independent_validation'] == 'NOT_RUN'
+          assert Path(result['pair_review_board']).is_file()
+          assert all(not(set(p['groups_a']) & set(p['groups_b'])) for p in result['top_pairs'])
+          print('TARGETED_DISCOVERY_QA_PASS no semantic inference or physical-group leakage')
+          PY
+      - name: Publish exact candidate pairs and native contact sheet
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: voynich-mv-native-geometry-20261009
+          path: |
+            research_os/experiments/EXP-2026-004/foldout_radial_matches_v1.json
+            research_os/experiments/EXP-2026-004/mv_discovery_followup/
+          if-no-files-found: warn
+          retention-days: 30
